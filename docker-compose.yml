@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    image: nexa-paraguay:prod
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.nexa-paraguay.rule=Host(`nexa-paraguay.paragu-ai.com`)"
+      - "traefik.http.routers.nexa-paraguay.entrypoints=websecure"
+      - "traefik.http.services.nexa-paraguay.loadbalancer.server.port=3000"
