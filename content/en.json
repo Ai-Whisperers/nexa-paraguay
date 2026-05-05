@@ -74,7 +74,7 @@
   },
   "home": {
     "seo": {
-      "title": "Nexa Paraguay — Establish your operation in Paraguay",
+      "title": "Nexa Paraguay — Your Paraguay Relocation, Handled End-to-End",
       "description": "Residency, company and bank account in Paraguay. One program, one trip, a full professional team by your side."
     },
     "hero": {
@@ -844,7 +844,7 @@
   "processPage": {
     "seo": {
       "title": "How it works — Nexa Paraguay",
-      "description": "Our 5-step process: from first consultation to final delivery. 8–12 weeks total."
+      "description": "Our 5-step process: select services, parallel processing, operational day, Cédula activation & financial setup, settlement."
     },
     "hero": {
       "headline": "The Ideal Path to Residency",
@@ -957,7 +957,7 @@
   "aboutPage": {
     "seo": {
       "title": "About Nexa Paraguay",
-      "description": "A multidisciplinary technical team: lawyers, accountants, notaries, financial advisors."
+      "description": "Nexa Paraguay: founded by someone who lived the relocation process herself. Residency, banking, real estate & settlement."
     },
     "hero": {
       "headline": "Experience Turned into Expertise",
@@ -1474,8 +1474,8 @@
     },
     "hero": {
       "eyebrow": "Investor program",
-      "headline": "Paraguay, structured for investors.",
-      "subheadline": "Residency, company, bank account, 12-month accounting — integrated, transparent, executed by a local professional team.",
+      "headline": "The Ideal Path to Residency",
+      "subheadline": "A streamlined collaboration between your home country and your new home in Paraguay.",
       "ctaPrimaryText": "Book a free 30-min consultation",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-hero-primary-en",
       "ctaSecondaryText": "See the investor program",
@@ -1484,15 +1484,15 @@
     },
     "process": {
       "eyebrow": "How it works",
-      "title": "4 steps, roughly 8–12 weeks",
+      "title": "5 steps, roughly 8–12 weeks",
       "totalDuration": "Typical total: 8–12 weeks.",
       "ctaLabel": "Start my process",
       "ctaHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-process-en",
       "steps": [
         {
           "number": 1,
-          "title": "Consultation",
-          "description": "We review your goals and select the right tier.",
+          "title": "Select Your Services",
+          "description": "Choose the specific support you need. We create a personalized checklist for your documents in your home country.",
           "icon": "MessageCircle",
           "image": {
             "$img": "process.consultation"
@@ -1500,8 +1500,8 @@
         },
         {
           "number": 2,
-          "title": "Pre-validation",
-          "description": "Documents checked before you travel.",
+          "title": "Parallel Processing",
+          "description": "While you arrange documents at home, we prepare all local Paraguayan filings and translations.",
           "icon": "FileCheck",
           "image": {
             "$img": "process.documents"
@@ -1509,8 +1509,8 @@
         },
         {
           "number": 3,
-          "title": "Operational day",
-          "description": "Residency, company and bank in a single coordinated day.",
+          "title": "The Operational Day",
+          "description": "All in-person steps — migration, police, identification — consolidated in one efficient day.",
           "icon": "MapPin",
           "image": {
             "$img": "process.arrival"
@@ -1518,8 +1518,17 @@
         },
         {
           "number": 4,
-          "title": "Delivery",
-          "description": "You receive final documents; we continue accounting.",
+          "title": "Cédula & Financial Activation",
+          "description": "We activate your RUC and open your bank accounts once your Paraguayan ID is issued.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Settlement & Lifestyle",
+          "description": "We help you find the right home and set up your daily life in Paraguay.",
           "icon": "CheckCircle",
           "image": {
             "$img": "process.completion"
@@ -1595,8 +1604,8 @@
     },
     "hero": {
       "eyebrow": "Institutional trust",
-      "headline": "Serious people. Serious structure.",
-      "subheadline": "We are not an administrative agency. We are a multidisciplinary technical team with relational capital across banks, notaries and authorities.",
+      "headline": "The Ideal Path to Residency",
+      "subheadline": "A streamlined collaboration between your home country and your new home in Paraguay.",
       "ctaPrimaryText": "Book a free 30-min consultation",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-hero-primary-en",
       "ctaSecondaryText": "See our process",
@@ -1612,8 +1621,8 @@
       "steps": [
         {
           "number": 1,
-          "title": "Consultation",
-          "description": "We review your case before anything else.",
+          "title": "Select Your Services",
+          "description": "Choose the specific support you need. We create a personalized checklist for your documents in your home country.",
           "icon": "MessageCircle",
           "image": {
             "$img": "process.consultation"
@@ -1621,8 +1630,8 @@
         },
         {
           "number": 2,
-          "title": "Pre-validation",
-          "description": "Everything verified before your trip.",
+          "title": "Parallel Processing",
+          "description": "While you arrange documents at home, we prepare all local Paraguayan filings and translations.",
           "icon": "FileCheck",
           "image": {
             "$img": "process.documents"
@@ -1630,8 +1639,8 @@
         },
         {
           "number": 3,
-          "title": "Operational day",
-          "description": "All in-person steps in a single day.",
+          "title": "The Operational Day",
+          "description": "All in-person steps — migration, police, identification — consolidated in one efficient day.",
           "icon": "MapPin",
           "image": {
             "$img": "process.arrival"
@@ -1639,8 +1648,17 @@
         },
         {
           "number": 4,
-          "title": "Delivery",
-          "description": "Final documents handed over personally.",
+          "title": "Cédula & Financial Activation",
+          "description": "We activate your RUC and open your bank accounts once your Paraguayan ID is issued.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Settlement & Lifestyle",
+          "description": "We help you find the right home and set up your daily life in Paraguay.",
           "icon": "CheckCircle",
           "image": {
             "$img": "process.completion"
@@ -1715,8 +1733,8 @@
     },
     "hero": {
       "eyebrow": "Quality of life",
-      "headline": "A calmer base in Paraguay.",
-      "subheadline": "Warm climate, growing international community, favourable living costs and a territorial tax system that only taxes local income.",
+      "headline": "The Ideal Path to Residency",
+      "subheadline": "A streamlined collaboration between your home country and your new home in Paraguay.",
       "ctaPrimaryText": "Book a free 30-min consultation",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-hero-primary-en",
       "ctaSecondaryText": "Why Paraguay",
@@ -1725,15 +1743,15 @@
     },
     "process": {
       "eyebrow": "How it works",
-      "title": "4 steps, one trip",
+      "title": "5 steps, one trip",
       "totalDuration": "Typical total: 8–12 weeks.",
       "ctaLabel": "Start my process",
       "ctaHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-process-en",
       "steps": [
         {
           "number": 1,
-          "title": "Consultation",
-          "description": "We review your goals and the right program.",
+          "title": "Select Your Services",
+          "description": "Choose the specific support you need. We create a personalized checklist for your documents in your home country.",
           "icon": "MessageCircle",
           "image": {
             "$img": "process.consultation"
@@ -1741,8 +1759,8 @@
         },
         {
           "number": 2,
-          "title": "Pre-validation",
-          "description": "Documents checked before you travel.",
+          "title": "Parallel Processing",
+          "description": "While you arrange documents at home, we prepare all local Paraguayan filings and translations.",
           "icon": "FileCheck",
           "image": {
             "$img": "process.documents"
@@ -1750,8 +1768,8 @@
         },
         {
           "number": 3,
-          "title": "Operational day",
-          "description": "All in-person steps executed in one day.",
+          "title": "The Operational Day",
+          "description": "All in-person steps — migration, police, identification — consolidated in one efficient day.",
           "icon": "MapPin",
           "image": {
             "$img": "process.arrival"
@@ -1759,8 +1777,17 @@
         },
         {
           "number": 4,
-          "title": "Delivery",
-          "description": "You receive documents and we close the program.",
+          "title": "Cédula & Financial Activation",
+          "description": "We activate your RUC and open your bank accounts once your Paraguayan ID is issued.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Settlement & Lifestyle",
+          "description": "We help you find the right home and set up your daily life in Paraguay.",
           "icon": "CheckCircle",
           "image": {
             "$img": "process.completion"
@@ -1833,8 +1860,8 @@
     },
     "hero": {
       "eyebrow": "Company setup",
-      "headline": "A Paraguayan company, opened properly.",
-      "subheadline": "Residency, company, RUC and a corporate bank account — integrated in one trip, executed by a local professional team.",
+      "headline": "The Ideal Path to Residency",
+      "subheadline": "A streamlined collaboration between your home country and your new home in Paraguay.",
       "ctaPrimaryText": "Book a free 30-min consultation",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-hero-primary-en",
       "ctaSecondaryText": "See the programs",
@@ -1843,15 +1870,15 @@
     },
     "process": {
       "eyebrow": "How it works",
-      "title": "Opening a company in 4 steps",
+      "title": "Setting up in 5 steps",
       "totalDuration": "Typical total: 8–12 weeks.",
       "ctaLabel": "Start my process",
       "ctaHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-process-en",
       "steps": [
         {
           "number": 1,
-          "title": "Consultation",
-          "description": "We map the right legal structure (typically EAS or SA).",
+          "title": "Select Your Services",
+          "description": "Choose the specific support you need. We create a personalized checklist for your documents in your home country.",
           "icon": "MessageCircle",
           "image": {
             "$img": "process.consultation"
@@ -1859,8 +1886,8 @@
         },
         {
           "number": 2,
-          "title": "Pre-validation",
-          "description": "Everything checked before you travel.",
+          "title": "Parallel Processing",
+          "description": "While you arrange documents at home, we prepare all local Paraguayan filings and translations.",
           "icon": "FileCheck",
           "image": {
             "$img": "process.documents"
@@ -1868,8 +1895,8 @@
         },
         {
           "number": 3,
-          "title": "Operational day",
-          "description": "Incorporation, RUC, notarisation — single day.",
+          "title": "The Operational Day",
+          "description": "All in-person steps — migration, police, identification — consolidated in one efficient day.",
           "icon": "MapPin",
           "image": {
             "$img": "process.arrival"
@@ -1877,8 +1904,17 @@
         },
         {
           "number": 4,
-          "title": "Bank + delivery",
-          "description": "Bank account opened and final documents delivered.",
+          "title": "Cédula & Financial Activation",
+          "description": "We activate your RUC and open your bank accounts once your Paraguayan ID is issued.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Settlement & Lifestyle",
+          "description": "We help you find the right home and set up your daily life in Paraguay.",
           "icon": "CheckCircle",
           "image": {
             "$img": "process.completion"
@@ -2274,17 +2310,12 @@
   },
   "intakeWizardPage": {
     "seo": {
-      "title": "Program wizard — Nexa Paraguay",
-      "description": "Answer 4 questions and we'll recommend the right program."
+      "title": "AI Assistant — Nexa Paraguay",
+      "description": "Answer a few questions and get your recommended program instantly."
     },
     "hero": {
-      "headline": "Which program fits your case?",
-      "subheadline": "Answer 4 questions and we'll recommend the right program in under a minute."
-    },
-    "wizard": {
-      "recommendationTitle": "Recommended program",
-      "recommendationCta": "Talk to Nexa",
-      "stepProgressLabel": "Step"
+      "headline": "Find your ideal path to Paraguay",
+      "subheadline": "Answer a few quick questions and we'll recommend the right program for you."
     }
   },
   "beneluxPage": {

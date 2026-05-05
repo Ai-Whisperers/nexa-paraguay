@@ -74,7 +74,7 @@
   },
   "home": {
     "seo": {
-      "title": "Nexa Paraguay — Vestig uw onderneming in Paraguay",
+      "title": "Nexa Paraguay — Je Verhuizing naar Paraguay, Volledig Begeleid",
       "description": "Verblijfsvergunning, vennootschap en bankrekening in Paraguay. Eén programma, één reis, een professioneel team."
     },
     "hero": {
@@ -860,7 +860,7 @@
   "processPage": {
     "seo": {
       "title": "Hoe het werkt — Nexa Paraguay",
-      "description": "Ons proces in 5 stappen: van eerste consult tot oplevering. Totaal 8–12 weken."
+      "description": "Ons 5-stappenproces: kies diensten, parallelle verwerking, operationele dag, Cédula & financiële activering, vestiging."
     },
     "hero": {
       "headline": "Het Ideale Pad naar Verblijf",
@@ -973,7 +973,7 @@
   "aboutPage": {
     "seo": {
       "title": "Over Nexa Paraguay",
-      "description": "Een multidisciplinair technisch team: advocaten, accountants, notarissen en financieel adviseurs."
+      "description": "Nexa Paraguay: opgericht door iemand die het verhuisproces zelf heeft meegemaakt. Verblijf, bankieren, vastgoed & vestiging."
     },
     "hero": {
       "headline": "Ervaring omgezet in Expertise",
@@ -1489,8 +1489,8 @@
     },
     "hero": {
       "eyebrow": "Investeerdersprogramma",
-      "headline": "Paraguay, gestructureerd voor investeerders.",
-      "subheadline": "Residentie, bedrijf, bankrekening en 12 maanden boekhouding — geïntegreerd, transparant, uitgevoerd door een lokaal professioneel team.",
+      "headline": "Het Ideale Pad naar Verblijf",
+      "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay.",
       "ctaPrimaryText": "Boek een gratis consult van 30 min",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-hero-primary-nl",
       "ctaSecondaryText": "Bekijk het investeerdersprogramma",
@@ -1498,16 +1498,16 @@
       "backgroundImage": "@img:whyParaguay.growth"
     },
     "process": {
-      "eyebrow": "Hoe het werkt",
-      "title": "4 stappen, ongeveer 8–12 weken",
-      "totalDuration": "Typisch totaal: 8–12 weken.",
+      "eyebrow": "How it works",
+      "title": "5 stappen, ongeveer 8–12 weken",
+      "totalDuration": "Typical total: 8–12 weeks.",
       "ctaLabel": "Start mijn proces",
       "ctaHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-process-nl",
       "steps": [
         {
           "number": 1,
-          "title": "Consult",
-          "description": "We bekijken uw doelen en kiezen het juiste niveau.",
+          "title": "Kies Je Diensten",
+          "description": "Kies de ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist.",
           "icon": "MessageCircle",
           "image": {
             "$img": "process.consultation"
@@ -1515,8 +1515,8 @@
         },
         {
           "number": 2,
-          "title": "Prevalidatie",
-          "description": "Documenten gecontroleerd vóór u reist.",
+          "title": "Parallelle Verwerking",
+          "description": "Terwijl jij documenten regelt, bereiden wij alle lokale zaken in Paraguay voor.",
           "icon": "FileCheck",
           "image": {
             "$img": "process.documents"
@@ -1524,8 +1524,8 @@
         },
         {
           "number": 3,
-          "title": "Operationele dag",
-          "description": "Residentie, bedrijf en bank in één gecoördineerde dag.",
+          "title": "De Operationele Dag",
+          "description": "Alle persoonlijke afspraken — migratie, politie, identificatie — in één dag.",
           "icon": "MapPin",
           "image": {
             "$img": "process.arrival"
@@ -1533,8 +1533,17 @@
         },
         {
           "number": 4,
-          "title": "Oplevering",
-          "description": "Definitieve documenten; boekhouding loopt door.",
+          "title": "Cédula & Financiële Activering",
+          "description": "We activeren je RUC en openen je bankrekeningen zodra je ID is afgegeven.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Vestiging & Levensstijl",
+          "description": "We helpen je het juiste huis te vinden en je dagelijkse leven in Paraguay op te zetten.",
           "icon": "CheckCircle",
           "image": {
             "$img": "process.completion"
@@ -1610,8 +1619,8 @@
     },
     "hero": {
       "eyebrow": "Institutioneel vertrouwen",
-      "headline": "Serieuze mensen. Serieuze structuur.",
-      "subheadline": "Wij zijn geen administratief bureau. Wij zijn een multidisciplinair technisch team met relationeel kapitaal bij banken, notarissen en autoriteiten.",
+      "headline": "Het Ideale Pad naar Verblijf",
+      "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay.",
       "ctaPrimaryText": "Boek een gratis consult",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-hero-primary-nl",
       "ctaSecondaryText": "Bekijk het proces",
@@ -1619,16 +1628,16 @@
       "backgroundImage": "@img:trust.migraciones"
     },
     "process": {
-      "eyebrow": "Hoe het werkt",
-      "title": "Een helder proces, geen improvisatie",
-      "totalDuration": "Typisch totaal: 8–12 weken.",
+      "eyebrow": "How it works",
+      "title": "Een helder proces, zonder improvisatie",
+      "totalDuration": "Typical total: 8–12 weeks.",
       "ctaLabel": "Start mijn proces",
       "ctaHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-process-nl",
       "steps": [
         {
           "number": 1,
-          "title": "Consult",
-          "description": "We bekijken uw casus eerst.",
+          "title": "Kies Je Diensten",
+          "description": "Kies de ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist.",
           "icon": "MessageCircle",
           "image": {
             "$img": "process.consultation"
@@ -1636,8 +1645,8 @@
         },
         {
           "number": 2,
-          "title": "Prevalidatie",
-          "description": "Alles geverifieerd vóór uw reis.",
+          "title": "Parallelle Verwerking",
+          "description": "Terwijl jij documenten regelt, bereiden wij alle lokale zaken in Paraguay voor.",
           "icon": "FileCheck",
           "image": {
             "$img": "process.documents"
@@ -1645,8 +1654,8 @@
         },
         {
           "number": 3,
-          "title": "Operationele dag",
-          "description": "Alle fysieke stappen in één dag.",
+          "title": "De Operationele Dag",
+          "description": "Alle persoonlijke afspraken — migratie, politie, identificatie — in één dag.",
           "icon": "MapPin",
           "image": {
             "$img": "process.arrival"
@@ -1654,8 +1663,17 @@
         },
         {
           "number": 4,
-          "title": "Oplevering",
-          "description": "Definitieve documenten persoonlijk overhandigd.",
+          "title": "Cédula & Financiële Activering",
+          "description": "We activeren je RUC en openen je bankrekeningen zodra je ID is afgegeven.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Vestiging & Levensstijl",
+          "description": "We helpen je het juiste huis te vinden en je dagelijkse leven in Paraguay op te zetten.",
           "icon": "CheckCircle",
           "image": {
             "$img": "process.completion"
@@ -1730,8 +1748,8 @@
     },
     "hero": {
       "eyebrow": "Levenskwaliteit",
-      "headline": "Een rustigere basis in Paraguay.",
-      "subheadline": "Warm klimaat, groeiende internationale gemeenschap, gunstige leefkosten en een territoriaal belastingsysteem dat alleen lokaal inkomen belast.",
+      "headline": "Het Ideale Pad naar Verblijf",
+      "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay.",
       "ctaPrimaryText": "Boek een gratis consult",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-hero-primary-nl",
       "ctaSecondaryText": "Waarom Paraguay",
@@ -1739,16 +1757,16 @@
       "backgroundImage": "@img:whyParaguay.lifestyle"
     },
     "process": {
-      "eyebrow": "Hoe het werkt",
-      "title": "4 stappen, één reis",
-      "totalDuration": "Typisch totaal: 8–12 weken.",
+      "eyebrow": "How it works",
+      "title": "5 stappen, één reis",
+      "totalDuration": "Typical total: 8–12 weeks.",
       "ctaLabel": "Start mijn proces",
       "ctaHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-process-nl",
       "steps": [
         {
           "number": 1,
-          "title": "Consult",
-          "description": "We bepalen het juiste programma.",
+          "title": "Kies Je Diensten",
+          "description": "Kies de ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist.",
           "icon": "MessageCircle",
           "image": {
             "$img": "process.consultation"
@@ -1756,8 +1774,8 @@
         },
         {
           "number": 2,
-          "title": "Prevalidatie",
-          "description": "Documenten gecontroleerd vóór u reist.",
+          "title": "Parallelle Verwerking",
+          "description": "Terwijl jij documenten regelt, bereiden wij alle lokale zaken in Paraguay voor.",
           "icon": "FileCheck",
           "image": {
             "$img": "process.documents"
@@ -1765,8 +1783,8 @@
         },
         {
           "number": 3,
-          "title": "Operationele dag",
-          "description": "Alle fysieke stappen in één dag.",
+          "title": "De Operationele Dag",
+          "description": "Alle persoonlijke afspraken — migratie, politie, identificatie — in één dag.",
           "icon": "MapPin",
           "image": {
             "$img": "process.arrival"
@@ -1774,8 +1792,17 @@
         },
         {
           "number": 4,
-          "title": "Oplevering",
-          "description": "Definitieve documenten; programma gesloten.",
+          "title": "Cédula & Financiële Activering",
+          "description": "We activeren je RUC en openen je bankrekeningen zodra je ID is afgegeven.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Vestiging & Levensstijl",
+          "description": "We helpen je het juiste huis te vinden en je dagelijkse leven in Paraguay op te zetten.",
           "icon": "CheckCircle",
           "image": {
             "$img": "process.completion"
@@ -1848,8 +1875,8 @@
     },
     "hero": {
       "eyebrow": "Bedrijfsoprichting",
-      "headline": "Een Paraguayaans bedrijf, goed opgericht.",
-      "subheadline": "Residentie, bedrijf, RUC en een zakelijke bankrekening — geïntegreerd in één reis, uitgevoerd door een lokaal professioneel team.",
+      "headline": "Het Ideale Pad naar Verblijf",
+      "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay.",
       "ctaPrimaryText": "Boek een gratis consult",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-hero-primary-nl",
       "ctaSecondaryText": "Bekijk de programmas",
@@ -1857,16 +1884,16 @@
       "backgroundImage": "@img:programs.tierBusiness"
     },
     "process": {
-      "eyebrow": "Hoe het werkt",
-      "title": "Een bedrijf oprichten in 4 stappen",
-      "totalDuration": "Typisch totaal: 8–12 weken.",
+      "eyebrow": "How it works",
+      "title": "Oprichten in 5 stappen",
+      "totalDuration": "Typical total: 8–12 weeks.",
       "ctaLabel": "Start mijn proces",
       "ctaHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-process-nl",
       "steps": [
         {
           "number": 1,
-          "title": "Consult",
-          "description": "We kiezen de juiste juridische structuur (doorgaans EAS of SA).",
+          "title": "Kies Je Diensten",
+          "description": "Kies de ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist.",
           "icon": "MessageCircle",
           "image": {
             "$img": "process.consultation"
@@ -1874,8 +1901,8 @@
         },
         {
           "number": 2,
-          "title": "Prevalidatie",
-          "description": "Alles gecontroleerd vóór u reist.",
+          "title": "Parallelle Verwerking",
+          "description": "Terwijl jij documenten regelt, bereiden wij alle lokale zaken in Paraguay voor.",
           "icon": "FileCheck",
           "image": {
             "$img": "process.documents"
@@ -1883,8 +1910,8 @@
         },
         {
           "number": 3,
-          "title": "Operationele dag",
-          "description": "Oprichting, RUC, notariële akte — één dag.",
+          "title": "De Operationele Dag",
+          "description": "Alle persoonlijke afspraken — migratie, politie, identificatie — in één dag.",
           "icon": "MapPin",
           "image": {
             "$img": "process.arrival"
@@ -1892,8 +1919,17 @@
         },
         {
           "number": 4,
-          "title": "Bank + oplevering",
-          "description": "Rekening geopend en documenten geleverd.",
+          "title": "Cédula & Financiële Activering",
+          "description": "We activeren je RUC en openen je bankrekeningen zodra je ID is afgegeven.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Vestiging & Levensstijl",
+          "description": "We helpen je het juiste huis te vinden en je dagelijkse leven in Paraguay op te zetten.",
           "icon": "CheckCircle",
           "image": {
             "$img": "process.completion"
@@ -2289,17 +2325,12 @@
   },
   "intakeWizardPage": {
     "seo": {
-      "title": "Programma-assistent — Nexa Paraguay",
-      "description": "Beantwoord 4 vragen en we bevelen het juiste programma aan."
+      "title": "AI Assistent — Nexa Paraguay",
+      "description": "Beantwoord een paar vragen en krijg direct je aanbevolen programma."
     },
     "hero": {
-      "headline": "Welk programma past bij uw zaak?",
-      "subheadline": "Beantwoord 4 vragen en we bevelen het juiste programma aan in minder dan een minuut."
-    },
-    "wizard": {
-      "recommendationTitle": "Aanbevolen programma",
-      "recommendationCta": "Praten met Nexa",
-      "stepProgressLabel": "Stap"
+      "headline": "Vind jouw ideale pad naar Paraguay",
+      "subheadline": "Beantwoord een paar snelle vragen en wij adviseren het juiste programma."
     }
   },
   "beneluxPage": {
