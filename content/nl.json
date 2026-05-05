@@ -1,6 +1,6 @@
 {
   "siteName": "Nexa Paraguay",
-  "tagline": "Je verhuizing naar Paraguay, eenvoudig en persoonlijk",
+  "tagline": "Je verhuizing naar Paraguay, begeleid door ervaring",
   "placeholders": {
     "country": "Paraguay",
     "capital": "Asunción",
@@ -82,8 +82,8 @@
       "description": "Verblijf, bankieren, vastgoed en vestiging — alles gecoördineerd door Nexa Paraguay. Diensten naar keuze, gestroomlijnd proces en een professioneel team."
     },
     "hero": {
-      "headline": "Vestig uw onderneming in Paraguay. Professioneel, geïntegreerd, zonder verrassingen.",
-      "subheadline": "Verblijfsvergunning, vennootschap, bankrekening en grondaankoop — gecoördineerd door Nexa Paraguay, uitgevoerd door ons vertrouwde technische team.",
+      "headline": "Je verhuizing naar Paraguay, met de juiste begeleiding vanaf dag één.",
+      "subheadline": "Negen diensten, één team. Kies wat je nodig hebt — verblijf, bankzaken, vastgoed of het volledige pakket. Wij maken het persoonlijk.",
       "ctaPrimaryText": "Plan uw gratis consult",
       "ctaPrimaryHref": "/s/nl/nexa-paraguay/contacto",
       "ctaSecondaryText": "Bekijk programma's",
@@ -91,8 +91,8 @@
       "backgroundImage": "@img:hero.localizedNl",
       "backgroundImageMobile": "@img:hero.homeMobile",
       "trustBadges": [
+        "A-la-carte diensten",
         "8–12 weken",
-        "250+ klanten",
         "Vaste prijs"
       ]
     },
@@ -1107,7 +1107,8 @@
         "We weten precies hoe overweldigend het papierwerk kan zijn, omdat we het zelf hebben meegemaakt.",
         "Onze oprichter is getrouwd met een Nederlander en heeft persoonlijk de complexiteit van internationale verhuizing en documentatie doorlopen. Deze ervaring uit eerste hand maakte duidelijk dat er behoefte is aan een dienst die niet alleen papieren verwerkt, maar mensen echt ondersteunt bij het opbouwen van een fijn leven in Paraguay.",
         "Wij geloven dat je verhuizing meer moet zijn dan alleen 'een vergunning krijgen' — het moet het begin zijn van je beste leven hier. Door onze diepgaande kennis van de Paraguayaanse wet te combineren met een persoonlijke aanpak, helpen we je de rompslomp over te slaan en direct te genieten van alles wat dit prachtige land te bieden heeft."
-      ]
+      ],
+      "_note": "Vervang 'onze oprichter' door de echte naam na goedkeuring."
     }
   },
   "faqPage": {
@@ -1503,7 +1504,7 @@
     },
     "hero": {
       "eyebrow": "Investeerdersprogramma",
-      "headline": "Het Ideale Pad naar Verblijf",
+      "headline": "Gestructureerd pad voor investeerders in Paraguay",
       "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay.",
       "ctaPrimaryText": "Boek een gratis consult van 30 min",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-hero-primary-nl",
@@ -1633,7 +1634,7 @@
     },
     "hero": {
       "eyebrow": "Institutioneel vertrouwen",
-      "headline": "Het Ideale Pad naar Verblijf",
+      "headline": "Professioneel team, institutioneel vertrouwen",
       "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay.",
       "ctaPrimaryText": "Boek een gratis consult",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-hero-primary-nl",
@@ -1762,7 +1763,7 @@
     },
     "hero": {
       "eyebrow": "Levenskwaliteit",
-      "headline": "Het Ideale Pad naar Verblijf",
+      "headline": "Een rustiger basis in Paraguay",
       "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay.",
       "ctaPrimaryText": "Boek een gratis consult",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-hero-primary-nl",
@@ -1889,7 +1890,7 @@
     },
     "hero": {
       "eyebrow": "Bedrijfsoprichting",
-      "headline": "Het Ideale Pad naar Verblijf",
+      "headline": "Open je Paraguayaanse bedrijf correct",
       "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay.",
       "ctaPrimaryText": "Boek een gratis consult",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-hero-primary-nl",

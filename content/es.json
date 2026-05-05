@@ -1,6 +1,6 @@
 {
   "siteName": "Nexa Paraguay",
-  "tagline": "Tu mudanza a Paraguay, hecha simple y personal",
+  "tagline": "Tu mudanza a Paraguay, guiada por la experiencia",
   "placeholders": {
     "country": "Paraguay",
     "capital": "Asunción",
@@ -82,8 +82,8 @@
       "description": "Residencia, banca, bienes raíces e instalación — todo coordinado por Nexa Paraguay. Servicios a tu elección, proceso optimizado y equipo profesional."
     },
     "hero": {
-      "headline": "Establezca su operación en Paraguay. Profesional, integrado, sin sorpresas.",
-      "subheadline": "Residencia, sociedad, cuenta bancaria y compra de tierras — todo coordinado por Nexa Paraguay, ejecutado por nuestro equipo técnico de confianza.",
+      "headline": "Tu mudanza a Paraguay, con la guía adecuada desde el primer día.",
+      "subheadline": "Nueve servicios, un equipo. Elige lo que necesitas — residencia, banca, bienes raíces o el paquete completo. Lo hacemos personal.",
       "ctaPrimaryText": "Agendar consulta gratuita",
       "ctaPrimaryHref": "/s/es/nexa-paraguay/contacto",
       "ctaSecondaryText": "Ver programas",
@@ -91,8 +91,8 @@
       "backgroundImage": "@img:hero.localizedEs",
       "backgroundImageMobile": "@img:hero.homeMobile",
       "trustBadges": [
+        "Servicios a la carta",
         "8–12 semanas",
-        "250+ clientes",
         "Precio fijo"
       ]
     },
@@ -1106,7 +1106,8 @@
         "Entendemos exactamente lo abrumador que puede ser el papeleo porque lo hemos vivido nosotros mismos.",
         "Nuestra fundadora está casada con un neerlandés y navegó personalmente las complejidades de la mudanza y documentación internacional. Esta experiencia de primera mano reveló una clara necesidad: un servicio que no solo procese papeles, sino que realmente apoye a las personas a construir una buena vida en Paraguay.",
         "Creemos que tu mudanza debería ser más que solo \"obtener un permiso\" — debería ser el comienzo de tu mejor vida aquí. Combinando nuestro profundo conocimiento de la ley paraguaya con un toque personal, te ayudamos a saltar los trámites y pasar directamente a disfrutar todo lo que este hermoso país tiene para ofrecer."
-      ]
+      ],
+      "_note": "Reemplazar 'nuestra fundadora' con el nombre real una vez aprobado."
     }
   },
   "faqPage": {
@@ -1502,7 +1503,7 @@
     },
     "hero": {
       "eyebrow": "Programa inversionista",
-      "headline": "El Camino Ideal hacia la Residencia",
+      "headline": "Camino estructurado para inversores en Paraguay",
       "subheadline": "Una colaboración optimizada entre tu país de origen y tu nuevo hogar en Paraguay.",
       "ctaPrimaryText": "Agendá una consulta gratuita de 30 min",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-hero-primary-es",
@@ -1632,7 +1633,7 @@
     },
     "hero": {
       "eyebrow": "Confianza institucional",
-      "headline": "El Camino Ideal hacia la Residencia",
+      "headline": "Equipo profesional, confianza institucional",
       "subheadline": "Una colaboración optimizada entre tu país de origen y tu nuevo hogar en Paraguay.",
       "ctaPrimaryText": "Agendá una consulta gratuita",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-hero-primary-es",
@@ -1761,7 +1762,7 @@
     },
     "hero": {
       "eyebrow": "Calidad de vida",
-      "headline": "El Camino Ideal hacia la Residencia",
+      "headline": "Una base más tranquila en Paraguay",
       "subheadline": "Una colaboración optimizada entre tu país de origen y tu nuevo hogar en Paraguay.",
       "ctaPrimaryText": "Agendá una consulta gratuita",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-hero-primary-es",
@@ -1888,7 +1889,7 @@
     },
     "hero": {
       "eyebrow": "Apertura de empresa",
-      "headline": "El Camino Ideal hacia la Residencia",
+      "headline": "Constituye tu empresa paraguaya correctamente",
       "subheadline": "Una colaboración optimizada entre tu país de origen y tu nuevo hogar en Paraguay.",
       "ctaPrimaryText": "Agendá una consulta gratuita",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-hero-primary-es",

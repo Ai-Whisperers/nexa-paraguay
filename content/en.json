@@ -1,6 +1,6 @@
 {
   "siteName": "Nexa Paraguay",
-  "tagline": "Your Paraguay move, made simple and personal",
+  "tagline": "Your Paraguay move, guided by experience",
   "placeholders": {
     "country": "Paraguay",
     "capital": "Asunción",
@@ -82,8 +82,8 @@
       "description": "Residency, banking, real estate and settlement — all coordinated by Nexa Paraguay. Services you choose, a streamlined process, and a professional team by your side."
     },
     "hero": {
-      "headline": "Your Paraguay move, handled end-to-end.",
-      "subheadline": "Residency, company, bank account and land purchase — coordinated by Nexa Paraguay, executed by our trusted technical team.",
+      "headline": "Your Paraguay move, with the right guidance from day one.",
+      "subheadline": "Nine services, one team. Choose what you need — residency, banking, real estate or the full package. We make it personal.",
       "ctaPrimaryText": "Book a free consultation",
       "ctaPrimaryHref": "/s/en/nexa-paraguay/contacto",
       "ctaSecondaryText": "See programs",
@@ -91,8 +91,8 @@
       "backgroundImage": "@img:hero.localizedEn",
       "backgroundImageMobile": "@img:hero.homeMobile",
       "trustBadges": [
+        "A-la-carte services",
         "8–12 weeks",
-        "250+ clients",
         "Fixed pricing"
       ]
     },
@@ -975,7 +975,8 @@
         "We understand exactly how overwhelming the paperwork can feel because we've lived it ourselves.",
         "Our founder is married to a Dutch national and personally navigated the complexities of international relocation and documentation. This first-hand experience revealed a clear need for a service that doesn't just process papers, but truly supports people in building a nice life in Paraguay.",
         "We believe your move should be more than just \"getting a permit\" — it should be the beginning of your best life here. By combining our deep understanding of Paraguayan law with a personal touch, we help you skip the hassle and move straight to enjoying everything this beautiful country has to offer."
-      ]
+      ],
+      "_note": "Replace 'our founder' with founder's actual name once approved."
     },
     "differentiators": {
       "eyebrow": "Our difference",
@@ -1487,7 +1488,7 @@
     },
     "hero": {
       "eyebrow": "Investor program",
-      "headline": "The Ideal Path to Residency",
+      "headline": "Structured path for Paraguay investors",
       "subheadline": "A streamlined collaboration between your home country and your new home in Paraguay.",
       "ctaPrimaryText": "Book a free 30-min consultation",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-hero-primary-en",
@@ -1617,7 +1618,7 @@
     },
     "hero": {
       "eyebrow": "Institutional trust",
-      "headline": "The Ideal Path to Residency",
+      "headline": "Professional team, institutional trust",
       "subheadline": "A streamlined collaboration between your home country and your new home in Paraguay.",
       "ctaPrimaryText": "Book a free 30-min consultation",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-hero-primary-en",
@@ -1746,7 +1747,7 @@
     },
     "hero": {
       "eyebrow": "Quality of life",
-      "headline": "The Ideal Path to Residency",
+      "headline": "A calmer base in Paraguay",
       "subheadline": "A streamlined collaboration between your home country and your new home in Paraguay.",
       "ctaPrimaryText": "Book a free 30-min consultation",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-hero-primary-en",
@@ -1873,7 +1874,7 @@
     },
     "hero": {
       "eyebrow": "Company setup",
-      "headline": "The Ideal Path to Residency",
+      "headline": "Open your Paraguayan company properly",
       "subheadline": "A streamlined collaboration between your home country and your new home in Paraguay.",
       "ctaPrimaryText": "Book a free 30-min consultation",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-hero-primary-en",

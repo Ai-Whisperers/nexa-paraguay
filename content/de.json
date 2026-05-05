@@ -3,7 +3,7 @@
     "notes": "Seeded MT output. Needs professional DE translation before production. Flagged in sites/nexa-paraguay/docs/LAUNCH.md item #8."
   },
   "siteName": "Nexa Paraguay",
-  "tagline": "Ihr Umzug nach Paraguay, einfach und persönlich",
+  "tagline": "Ihr Umzug nach Paraguay, begleitet von Erfahrung",
   "placeholders": {
     "country": "Paraguay",
     "capital": "Asunción",
@@ -85,8 +85,8 @@
       "description": "Aufenthalt, Bankwesen, Immobilien und Niederlassung — alles koordiniert von Nexa Paraguay. Dienstleistungen nach Wahl, optimierter Prozess und ein professionelles Team."
     },
     "hero": {
-      "headline": "Etablieren Sie Ihre Geschäftstätigkeit in Paraguay. Professionell, integriert, ohne Überraschungen.",
-      "subheadline": "Aufenthaltserlaubnis, Gesellschaft, Bankkonto und Landkauf — koordiniert von Nexa Paraguay, ausgeführt von unserem vertrauten Fachteam.",
+      "headline": "Ihr Umzug nach Paraguay, mit der richtigen Begleitung von Tag eins an.",
+      "subheadline": "Neun Dienstleistungen, ein Team. Wählen Sie, was Sie brauchen — Aufenthalt, Bankwesen, Immobilien oder das Komplettpaket. Wir machen es persönlich.",
       "ctaPrimaryText": "Kostenloses Beratungsgespräch",
       "ctaPrimaryHref": "/s/de/nexa-paraguay/contacto",
       "ctaSecondaryText": "Programme ansehen",
@@ -94,9 +94,9 @@
       "backgroundImage": "@img:hero.localizedDe",
       "backgroundImageMobile": "@img:hero.homeMobile",
       "trustBadges": [
+        "Einzeldienstleistungen",
         "8–12 Wochen",
-        "250+ Kunden",
-        "Festpreis"
+        "Feste Preise"
       ]
     },
     "trust": {
@@ -1110,7 +1110,8 @@
         "Wir verstehen genau, wie überwältigend der Papierkram sein kann, weil wir es selbst erlebt haben.",
         "Unsere Gründerin ist mit einem Niederländer verheiratet und hat die Komplexität eines internationalen Umzugs und der Dokumentation persönlich gemeistert. Diese Erfahrung aus erster Hand zeigte, dass ein Dienst gebraucht wird, der nicht nur Papier verarbeitet, sondern Menschen wirklich dabei unterstützt, ein schönes Leben in Paraguay aufzubauen.",
         "Wir glauben, dass Ihr Umzug mehr sein sollte als nur 'eine Genehmigung zu bekommen' — es sollte der Beginn Ihres besten Lebens hier sein. Durch die Kombination unseres tiefen Verständnisses des paraguayischen Rechts mit einer persönlichen Note helfen wir Ihnen, den Aufwand zu überspringen und direkt zu genießen, was dieses wunderschöne Land zu bieten hat."
-      ]
+      ],
+      "_note": "Ersetzen Sie 'unsere Gründerin' durch den tatsächlichen Namen nach Genehmigung."
     }
   },
   "faqPage": {
@@ -1506,7 +1507,7 @@
     },
     "hero": {
       "eyebrow": "Investorenprogramm",
-      "headline": "Der Ideale Weg zum Aufenthalt",
+      "headline": "Strukturierter Weg für Investoren in Paraguay",
       "subheadline": "Eine optimierte Zusammenarbeit zwischen Ihrem Heimatland und Paraguay.",
       "ctaPrimaryText": "Kostenloses 30-Min-Gespräch buchen",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-hero-primary-de",
@@ -1636,7 +1637,7 @@
     },
     "hero": {
       "eyebrow": "Institutionelles Vertrauen",
-      "headline": "Der Ideale Weg zum Aufenthalt",
+      "headline": "Professionelles Team, institutionelles Vertrauen",
       "subheadline": "Eine optimierte Zusammenarbeit zwischen Ihrem Heimatland und Paraguay.",
       "ctaPrimaryText": "Kostenloses Gespräch buchen",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-hero-primary-de",
@@ -1765,7 +1766,7 @@
     },
     "hero": {
       "eyebrow": "Lebensqualität",
-      "headline": "Der Ideale Weg zum Aufenthalt",
+      "headline": "Eine ruhigere Basis in Paraguay",
       "subheadline": "Eine optimierte Zusammenarbeit zwischen Ihrem Heimatland und Paraguay.",
       "ctaPrimaryText": "Kostenloses Gespräch buchen",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-hero-primary-de",
@@ -1892,7 +1893,7 @@
     },
     "hero": {
       "eyebrow": "Unternehmensgründung",
-      "headline": "Der Ideale Weg zum Aufenthalt",
+      "headline": "Gründen Sie Ihre paraguayische Firma richtig",
       "subheadline": "Eine optimierte Zusammenarbeit zwischen Ihrem Heimatland und Paraguay.",
       "ctaPrimaryText": "Kostenloses Gespräch buchen",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-hero-primary-de",
