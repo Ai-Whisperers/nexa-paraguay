@@ -97,16 +97,35 @@ Mailchimp API Key:      ___________
 
 ---
 
-## 4. Calendly — Already set up
+## 4. Calendly — Needs setup
 
-**Status: ✅ Already done**
+**Status: ❌ Link returns 404**
 
-Your Calendly is configured at:
+Your Calendly account needs to be created and the event type published.
+
+### Step-by-step
+
+1. Go to https://calendly.com and click **Get started** (free plan works)
+2. Create an account with your Nexa Paraguay email
+3. Once logged in, go to **Event Types** → **New event type**
+4. Choose **One-on-one**
+5. Name: **Free Consultation** (or "Consulta Gratuita")
+6. Location: **Phone Call** or **Zoom / Google Meet** (your choice)
+7. Duration: **30 minutes**
+8. Set your availability (business hours, timezone America/Asuncion)
+9. Click **Continue** → **Save and close**
+10. Copy the booking link — it looks like `https://calendly.com/nexaparaguay/30min` or similar
+
+### Send us
+
 ```
-https://calendly.com/nexaparaguay/consulta
+Calendly booking URL: https://calendly.com/_________________
+Calendly account email: _________________
 ```
 
-If you need to change the booking URL, send us the new one.
+After we receive this, we'll:
+- Replace the current broken link with the real one
+- Add the inline embed widget on the Contact page
 
 ---
 
@@ -165,6 +184,10 @@ API Key:      __________________
 LinkedIn: https://www.linkedin.com/company/_________
 Facebook: https://facebook.com/_________  (or "No Facebook page")
 Instagram: ✅ Already set
+
+--- CALENDLY ---
+Booking URL:  https://calendly.com/_________________
+Account email: _________________
 
 --- CONTACT — please confirm ---
 WhatsApp:  +595 982 515 138  (correct? Y/N)
