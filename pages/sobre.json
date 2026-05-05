@@ -20,8 +20,8 @@
     },
     {
       "id": "why-destination",
-      "variant": "three-col",
-      "content": "aboutPage.differentiators"
+      "variant": "pillars",
+      "content": "aboutPage.whyNexa"
     },
     {
       "id": "team",

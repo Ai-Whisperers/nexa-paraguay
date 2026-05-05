@@ -220,21 +220,21 @@
       "ctaHref": "/s/en/nexa-paraguay/contacto",
       "items": [
         {
-          "quote": "Company + bank + residency in 9 weeks. Nexa ran everything end-to-end while I was still winding down in Munich. Zero friction on my end.",
-          "author": "Marco W.",
-          "role": "Consultant, Germany",
+          "author": "J. van der L.",
+          "role": "Business owner, Netherlands",
+          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
           "rating": 5
         },
         {
-          "quote": "I needed the Investor program because my tax structure was complex. Worth every cent — they coordinated legal and accounting for the first year.",
-          "author": "Laura v.d. M.",
-          "role": "Investor, Netherlands",
+          "author": "M. S.",
+          "role": "Investor, Germany",
+          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
           "rating": 5
         },
         {
-          "quote": "Got my cédula and was operating in Paraguay faster than I got my NIE in Spain. Honest pricing, no surprises.",
-          "author": "Carlos G.",
+          "author": "C. R.",
           "role": "Freelancer, Spain",
+          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
           "rating": 5
         }
       ]
@@ -719,21 +719,21 @@
       "subtitle": "Real stories from people who established their operations in Paraguay",
       "items": [
         {
-          "quote": "Company + bank + residency in 9 weeks. Nexa ran everything end-to-end while I was still winding down in Munich. Zero friction on my end.",
-          "author": "Marco W.",
-          "role": "Consultant, Germany",
+          "author": "J. van der L.",
+          "role": "Business owner, Netherlands",
+          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
           "rating": 5
         },
         {
-          "quote": "I needed the Investor program because my tax structure was complex. Worth every cent — they coordinated legal and accounting for the first year.",
-          "author": "Laura v.d. M.",
-          "role": "Investor, Netherlands",
+          "author": "M. S.",
+          "role": "Investor, Germany",
+          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
           "rating": 5
         },
         {
-          "quote": "Got my cédula and was operating in Paraguay faster than I got my NIE in Spain. Honest pricing, no surprises.",
-          "author": "Carlos G.",
+          "author": "C. R.",
           "role": "Freelancer, Spain",
+          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
           "rating": 5
         }
       ]
@@ -1093,6 +1093,54 @@
         }
       ],
       "lightbox": true
+    },
+    "whyNexa": {
+      "eyebrow": "Why Nexa Paraguay",
+      "title": "What sets us apart",
+      "pillars": [
+        {
+          "icon": "Users",
+          "title": "Multidisciplinary team",
+          "description": "Lawyers, accountants, notaries and financial advisors working in coordination.",
+          "badge": "Our difference"
+        },
+        {
+          "icon": "Shield",
+          "title": "Relational capital",
+          "description": "Institutional access built over years with banks, notaries and authorities.",
+          "badge": "Our difference"
+        },
+        {
+          "icon": "Clock",
+          "title": "Time as value",
+          "description": "We compress into one day what otherwise requires multiple trips.",
+          "badge": "Our difference"
+        },
+        {
+          "icon": "Package",
+          "title": "One program",
+          "description": "Residency, company and bank account integrated.",
+          "badge": "Why clients choose us"
+        },
+        {
+          "icon": "Plane",
+          "title": "One trip",
+          "description": "In-person processing in a single coordinated day.",
+          "badge": "Why clients choose us"
+        },
+        {
+          "icon": "Users",
+          "title": "One team",
+          "description": "Lawyers, accountants, notaries, financial advisors.",
+          "badge": "Why clients choose us"
+        },
+        {
+          "icon": "Shield",
+          "title": "Transparent pricing",
+          "description": "All inclusive. No hidden fees.",
+          "badge": "Why clients choose us"
+        }
+      ]
     }
   },
   "faqPage": {
@@ -1192,7 +1240,12 @@
       "provider": "calendly",
       "ctaLabel": "Open calendar",
       "fallbackWhatsapp": "595982515138",
-      "fallbackEmail": "hola@nexaparaguay.com"
+      "fallbackEmail": "hola@nexaparaguay.com",
+      "embedType": "inline",
+      "embedStyle": {
+        "minWidth": "320px",
+        "height": "700px"
+      }
     },
     "contact": {
       "title": "Contact details",
@@ -1252,7 +1305,81 @@
       },
       "title": "Blog",
       "subtitle": "Honest guides on residency, companies and investing in Paraguay."
-    }
+    },
+    "posts": [
+      {
+        "slug": "residency-2025",
+        "title": "Complete Guide to Paraguay Residency in 2025",
+        "excerpt": "Everything you need to know about obtaining Paraguayan residency: requirements, timeline, costs and step-by-step process.",
+        "author": "Nexa Paraguay",
+        "date": "2025-01-15",
+        "tags": [
+          "residency",
+          "guide",
+          "process"
+        ]
+      },
+      {
+        "slug": "bank-account-foreigners",
+        "title": "How to Open a Bank Account in Paraguay as a Foreigner",
+        "excerpt": "A practical guide to opening personal and corporate bank accounts in Paraguay, including required documents and bank selection.",
+        "author": "Nexa Paraguay",
+        "date": "2025-02-10",
+        "tags": [
+          "banking",
+          "guide",
+          "foreigners"
+        ]
+      },
+      {
+        "slug": "cost-living-asuncion",
+        "title": "Cost of Living in Asunción: A Realistic Budget for Expats",
+        "excerpt": "Monthly budget breakdown across neighborhoods, housing, international schools, healthcare and lifestyle in Paraguay's capital.",
+        "author": "Nexa Paraguay",
+        "date": "2025-03-05",
+        "tags": [
+          "lifestyle",
+          "cost",
+          "asuncion"
+        ]
+      },
+      {
+        "slug": "property-buying-guide",
+        "title": "Buying Property in Paraguay: A Complete Guide for Foreigners",
+        "excerpt": "Everything foreign investors need to know about purchasing real estate in Paraguay, from due diligence to notarization.",
+        "author": "Nexa Paraguay",
+        "date": "2025-03-20",
+        "tags": [
+          "real-estate",
+          "investment",
+          "guide"
+        ]
+      },
+      {
+        "slug": "tax-system-explained",
+        "title": "Paraguay's Tax System Explained for European Investors",
+        "excerpt": "A clear breakdown of Paraguay's territorial tax system, 10% IRE rate, and how it compares to European tax regimes.",
+        "author": "Nexa Paraguay",
+        "date": "2025-04-01",
+        "tags": [
+          "tax",
+          "investor",
+          "comparison"
+        ]
+      },
+      {
+        "slug": "company-incorporation",
+        "title": "Setting Up a Company in Paraguay: Step by Step",
+        "excerpt": "How to incorporate a company in Paraguay, choose the right legal structure, and get your business operational.",
+        "author": "Nexa Paraguay",
+        "date": "2025-04-15",
+        "tags": [
+          "business",
+          "company",
+          "guide"
+        ]
+      }
+    ]
   },
   "footer": {
     "businessName": "Nexa Paraguay",
@@ -2407,78 +2534,93 @@
   "servicesPage": {
     "seo": {
       "title": "Our Services — Nexa Paraguay",
-      "description": "Residency & legal, banking & tax, and residential real estate services. Choose what you need, we handle the rest."
+      "description": "Detailed information on all 9 Nexa Paraguay services: Residency & Legal Documents, Banking & Tax Setup, and Residential Real Estate. Choose what you need."
     },
     "hero": {
       "headline": "Professional solutions for every step",
       "subheadline": "Choose the services you need. We handle the rest."
     },
     "detail": {
-      "eyebrow": "Our Services",
-      "title": "Professional solutions for every step of your relocation",
-      "groups": [
-        {
-          "id": "residency-legal",
-          "title": "Residency & Legal Documents",
-          "subtitle": "The essential first steps for your life in Paraguay.",
-          "items": [
-            {
-              "title": "Permanent Residency",
-              "description": "Professional management of your residency permit application.",
-              "icon": "FileText"
-            },
-            {
-              "title": "Paraguayan ID (Cédula)",
-              "description": "Full assistance in obtaining your local identification card.",
-              "icon": "CreditCard"
-            },
-            {
-              "title": "Apostille & Translation",
-              "description": "We handle the certified translation and legal verification of all necessary foreign documents.",
-              "icon": "Globe"
-            }
-          ]
-        },
-        {
-          "id": "banking-tax",
-          "title": "Banking & Tax Setup",
-          "subtitle": "Establishing your financial footprint in the country.",
-          "items": [
-            {
-              "title": "Bank Account Opening",
-              "description": "Guidance and support to successfully open local bank accounts.",
-              "icon": "Building"
-            },
-            {
-              "title": "Tax Registration (RUC)",
-              "description": "Setup of your Paraguayan taxpayer ID for personal or business use.",
-              "icon": "Calculator"
-            }
-          ]
-        },
-        {
-          "id": "real-estate",
-          "title": "Residential Real Estate",
-          "subtitle": "Finding the right place to call home, whether you are staying for a month or a lifetime.",
-          "items": [
-            {
-              "title": "Apartment & House Rentals",
-              "description": "Help navigating the local market to find high-quality rentals.",
-              "icon": "Home"
-            },
-            {
-              "title": "Property Purchases",
-              "description": "Expert assistance in finding and buying residential property.",
-              "icon": "Search"
-            },
-            {
-              "title": "Due Diligence",
-              "description": "We verify titles and legal standing for any property you intend to rent or buy to ensure your investment is safe.",
-              "icon": "Shield"
-            }
-          ]
-        }
-      ]
+      "permanent-residency": {
+        "fullDescription": "We manage your entire residency permit application from document gathering to submission and follow-up. Our team ensures all paperwork meets Paraguayan migration requirements, coordinates with legal counsel, and tracks your application through every stage until approval.",
+        "benefits": [
+          "Complete document checklist and pre-validation",
+          "Submission to Dirección General de Migraciones",
+          "Application tracking and follow-up",
+          "Coordination with legal representation",
+          "Support until final approval"
+        ]
+      },
+      "cedula": {
+        "fullDescription": "We guide you through every step of obtaining your Paraguayan national ID card. From scheduling your appointment to accompanying you on the day, we ensure you have all required documentation and that the process is completed smoothly.",
+        "benefits": [
+          "Appointment scheduling",
+          "Document preparation and verification",
+          "In-person accompaniment",
+          "Expedited processing coordination",
+          "Delivery follow-up"
+        ]
+      },
+      "apostille-translation": {
+        "fullDescription": "We coordinate the certified translation of your foreign documents into Spanish and handle the apostille verification process. This includes birth certificates, marriage certificates, criminal record checks, academic degrees, and any other documents required for your residency or business setup.",
+        "benefits": [
+          "Certified document translation",
+          "Apostille verification and legalization",
+          "Coordination with translation services",
+          "Document authenticity verification",
+          "Complete set ready for submission"
+        ]
+      },
+      "bank-account": {
+        "fullDescription": "We prepare your financial profile, select the right bank for your needs, coordinate appointments, and accompany you through the account opening process. Our institutional relationships with major Paraguayan banks help streamline what is often the most complex step for foreigners.",
+        "benefits": [
+          "Financial profile preparation",
+          "Bank selection based on your needs",
+          "Appointment coordination",
+          "In-person accompaniment",
+          "Post-opening support and digital banking setup"
+        ]
+      },
+      "ruc": {
+        "fullDescription": "We handle your registration with the Subsecretaría de Estado de Tributación (SET) to obtain your RUC. This taxpayer ID is essential for any business activity, property purchase, or local banking in Paraguay. We manage the entire process so you don't have to navigate the tax authority alone.",
+        "benefits": [
+          "Registration document preparation",
+          "Submission to SET (tax authority)",
+          "Tax domicile setup",
+          "Digital certificate acquisition",
+          "Ongoing compliance guidance"
+        ]
+      },
+      "rentals": {
+        "fullDescription": "We help you find high-quality rental properties that match your lifestyle and budget. Whether you need a furnished apartment for a short-term stay or a family home for long-term residence, we navigate the local market, arrange viewings, and assist with lease negotiations.",
+        "benefits": [
+          "Personalized property search",
+          "Neighborhood guidance and area tours",
+          "Viewing coordination",
+          "Lease review and negotiation",
+          "Move-in support and utility setup"
+        ]
+      },
+      "property-purchase": {
+        "fullDescription": "We provide expert assistance throughout the property buying process — from identifying investment opportunities to closing the deal. Our team includes legal professionals who verify titles, coordinate with notaries, and ensure your investment is protected under Paraguayan law.",
+        "benefits": [
+          "Investment opportunity identification",
+          "Property tours and due diligence",
+          "Title verification and legal review",
+          "Price negotiation support",
+          "Notary coordination and registration"
+        ]
+      },
+      "due-diligence": {
+        "fullDescription": "We conduct comprehensive due diligence on any property you intend to rent or buy. This includes title verification, lien checks, tax status confirmation, zoning compliance assessment, and historical ownership review. We ensure your investment is safe before you commit.",
+        "benefits": [
+          "Title deed verification",
+          "Lien and encumbrance search",
+          "Tax status confirmation",
+          "Zoning and regulatory compliance check",
+          "Full written due diligence report"
+        ]
+      }
     },
     "cta": {
       "title": "Ready to get started?",

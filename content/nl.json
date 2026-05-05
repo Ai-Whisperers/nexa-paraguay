@@ -220,21 +220,21 @@
       "ctaHref": "/s/nl/nexa-paraguay/contacto",
       "items": [
         {
-          "quote": "Bedrijf + bank + verblijfsvergunning in 9 weken. Nexa regelde alles end-to-end terwijl ik München nog afwikkelde. Nul wrijving aan mijn kant.",
-          "author": "Marco W.",
-          "role": "Consultant, Duitsland",
+          "author": "J. van der L.",
+          "role": "Business owner, Netherlands",
+          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
           "rating": 5
         },
         {
-          "quote": "Ik had het Investor-programma nodig omdat mijn fiscale structuur complex was. Elke euro waard — ze coördineerden juridisch en boekhoudkundig het eerste jaar.",
-          "author": "Laura v.d. M.",
-          "role": "Investeerder, Nederland",
+          "author": "M. S.",
+          "role": "Investor, Germany",
+          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
           "rating": 5
         },
         {
-          "quote": "Mijn ID kreeg ik en was operationeel in Paraguay sneller dan mijn NIE in Spanje. Eerlijke prijzen, geen verrassingen.",
-          "author": "Carlos G.",
-          "role": "Freelancer, Spanje",
+          "author": "C. R.",
+          "role": "Freelancer, Spain",
+          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
           "rating": 5
         }
       ]
@@ -720,21 +720,21 @@
       "subtitle": "Echte verhalen van mensen die hun operatie in Paraguay hebben gevestigd",
       "items": [
         {
-          "quote": "Bedrijf + bank + verblijfsvergunning in 9 weken. Nexa regelde alles end-to-end terwijl ik München nog afwikkelde. Nul wrijving aan mijn kant.",
-          "author": "Marco W.",
-          "role": "Consultant, Duitsland",
+          "author": "J. van der L.",
+          "role": "Business owner, Netherlands",
+          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
           "rating": 5
         },
         {
-          "quote": "Ik had het Investor-programma nodig omdat mijn fiscale structuur complex was. Elke euro waard — ze coördineerden juridisch en boekhoudkundig het eerste jaar.",
-          "author": "Laura v.d. M.",
-          "role": "Investeerder, Nederland",
+          "author": "M. S.",
+          "role": "Investor, Germany",
+          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
           "rating": 5
         },
         {
-          "quote": "Mijn ID kreeg ik en was operationeel in Paraguay sneller dan mijn NIE in Spanje. Eerlijke prijzen, geen verrassingen.",
-          "author": "Carlos G.",
-          "role": "Freelancer, Spanje",
+          "author": "C. R.",
+          "role": "Freelancer, Spain",
+          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
           "rating": 5
         }
       ]
@@ -1109,6 +1109,54 @@
         "Wij geloven dat je verhuizing meer moet zijn dan alleen 'een vergunning krijgen' — het moet het begin zijn van je beste leven hier. Door onze diepgaande kennis van de Paraguayaanse wet te combineren met een persoonlijke aanpak, helpen we je de rompslomp over te slaan en direct te genieten van alles wat dit prachtige land te bieden heeft."
       ],
       "_note": "Vervang 'onze oprichter' door de echte naam na goedkeuring."
+    },
+    "whyNexa": {
+      "eyebrow": "Waarom Nexa Paraguay",
+      "title": "Wat ons onderscheidt",
+      "pillars": [
+        {
+          "icon": "Users",
+          "title": "Multidisciplinair team",
+          "description": "Advocaten, accountants, notarissen en financieel adviseurs in coördinatie.",
+          "badge": "Our difference"
+        },
+        {
+          "icon": "Shield",
+          "title": "Relationeel kapitaal",
+          "description": "Institutionele toegang opgebouwd met banken, notarissen en autoriteiten.",
+          "badge": "Our difference"
+        },
+        {
+          "icon": "Clock",
+          "title": "Tijd als waarde",
+          "description": "Wij verdichten tot één dag wat anders meerdere reizen zou vergen.",
+          "badge": "Our difference"
+        },
+        {
+          "icon": "Package",
+          "title": "Eén programma",
+          "description": "Verblijfsvergunning, vennootschap en bankrekening geïntegreerd.",
+          "badge": "Why clients choose us"
+        },
+        {
+          "icon": "Plane",
+          "title": "Eén reis",
+          "description": "Alle persoonlijke afhandelingen in één gecoördineerde dag.",
+          "badge": "Why clients choose us"
+        },
+        {
+          "icon": "Users",
+          "title": "Eén team",
+          "description": "Advocaten, accountants, notarissen en financieel adviseurs.",
+          "badge": "Why clients choose us"
+        },
+        {
+          "icon": "Shield",
+          "title": "Transparante prijs",
+          "description": "Alles inbegrepen. Geen verborgen kosten.",
+          "badge": "Why clients choose us"
+        }
+      ]
     }
   },
   "faqPage": {
@@ -1208,7 +1256,12 @@
       "provider": "calendly",
       "ctaLabel": "Open agenda",
       "fallbackWhatsapp": "595982515138",
-      "fallbackEmail": "hola@nexaparaguay.com"
+      "fallbackEmail": "hola@nexaparaguay.com",
+      "embedType": "inline",
+      "embedStyle": {
+        "minWidth": "320px",
+        "height": "700px"
+      }
     },
     "contact": {
       "title": "Contactgegevens",
@@ -1268,7 +1321,81 @@
       },
       "title": "Blog",
       "subtitle": "Eerlijke gidsen over verblijf, vennootschap en investeren in Paraguay."
-    }
+    },
+    "posts": [
+      {
+        "slug": "verblijf-2025",
+        "title": "Volledige Gids voor Verblijf in Paraguay in 2025",
+        "excerpt": "Alles wat u moet weten over het verkrijgen van een Paraguayaanse verblijfsvergunning.",
+        "author": "Nexa Paraguay",
+        "date": "2025-01-15",
+        "tags": [
+          "verblijf",
+          "gids",
+          "proces"
+        ]
+      },
+      {
+        "slug": "bankrekening-buitenlanders",
+        "title": "Een Bankrekening Openen in Paraguay als Buitenlander",
+        "excerpt": "Een praktische gids voor het openen van persoonlijke en zakelijke bankrekeningen.",
+        "author": "Nexa Paraguay",
+        "date": "2025-02-10",
+        "tags": [
+          "bankieren",
+          "gids",
+          "buitenlanders"
+        ]
+      },
+      {
+        "slug": "levenskosten-asuncion",
+        "title": "Levenskosten in Asunción: Een Realistisch Budget",
+        "excerpt": "Maandelijkse kostenverdeling over wijken, huisvesting, scholen en gezondheidszorg.",
+        "author": "Nexa Paraguay",
+        "date": "2025-03-05",
+        "tags": [
+          "levensstijl",
+          "kosten",
+          "asuncion"
+        ]
+      },
+      {
+        "slug": "gids-vastgoed-aankoop",
+        "title": "Vastgoed Kopen in Paraguay: Complete Gids voor Buitenlanders",
+        "excerpt": "Alles wat buitenlandse investeerders moeten weten over het kopen van onroerend goed.",
+        "author": "Nexa Paraguay",
+        "date": "2025-03-20",
+        "tags": [
+          "vastgoed",
+          "investering",
+          "gids"
+        ]
+      },
+      {
+        "slug": "belastingstelsel-uitgelegd",
+        "title": "Het Paraguayaanse Belastingstelsel Uitgelegd voor Europese Investeerders",
+        "excerpt": "Een duidelijke uitleg van het territoriale belastingstelsel en het 10% IRE-tarief.",
+        "author": "Nexa Paraguay",
+        "date": "2025-04-01",
+        "tags": [
+          "belasting",
+          "investeerder",
+          "vergelijking"
+        ]
+      },
+      {
+        "slug": "bedrijf-oprichten",
+        "title": "Een Bedrijf Oprichten in Paraguay: Stap voor Stap",
+        "excerpt": "Hoe u een bedrijf kunt oprichten in Paraguay en de juiste rechtsvorm kiest.",
+        "author": "Nexa Paraguay",
+        "date": "2025-04-15",
+        "tags": [
+          "zakelijk",
+          "bedrijf",
+          "gids"
+        ]
+      }
+    ]
   },
   "footer": {
     "businessName": "Nexa Paraguay",
@@ -2429,78 +2556,93 @@
   "servicesPage": {
     "seo": {
       "title": "Onze Diensten — Nexa Paraguay",
-      "description": "Verblijfs- en juridische diensten, bank- en belastingdiensten, en residentieel vastgoed. Kies wat je nodig hebt, wij regelen de rest."
+      "description": "Gedetailleerde informatie over alle 9 Nexa Paraguay-diensten: Verblijf & Juridisch, Bankieren & Belasting, en Woonvastgoed."
     },
     "hero": {
       "headline": "Professionele oplossingen voor elke stap",
       "subheadline": "Kies de diensten die je nodig hebt. Wij regelen de rest."
     },
     "detail": {
-      "eyebrow": "Onze Diensten",
-      "title": "Professionele oplossingen voor elke stap van je verhuizing",
-      "groups": [
-        {
-          "id": "residency-legal",
-          "title": "Verblijf & Juridische Documenten",
-          "subtitle": "De essentiële eerste stappen voor je leven in Paraguay.",
-          "items": [
-            {
-              "title": "Permanente Verblijfsvergunning",
-              "description": "Professionele begeleiding bij je aanvraag voor een verblijfsvergunning.",
-              "icon": "FileText"
-            },
-            {
-              "title": "Paraguayaans Identiteitsbewijs (Cédula)",
-              "description": "Volledige ondersteuning bij het verkrijgen van je lokale identiteitskaart.",
-              "icon": "CreditCard"
-            },
-            {
-              "title": "Apostille & Vertaling",
-              "description": "Wij verzorgen de gecertificeerde vertaling en juridische verificatie van alle benodigde buitenlandse documenten.",
-              "icon": "Globe"
-            }
-          ]
-        },
-        {
-          "id": "banking-tax",
-          "title": "Bankieren & Belasting",
-          "subtitle": "Het opzetten van je financiële voetafdruk in het land.",
-          "items": [
-            {
-              "title": "Bankrekening Openen",
-              "description": "Begeleiding en ondersteuning bij het succesvol openen van lokale bankrekeningen.",
-              "icon": "Building"
-            },
-            {
-              "title": "Belastingregistratie (RUC)",
-              "description": "Registratie van je Paraguayaanse belastingnummer voor persoonlijk of zakelijk gebruik.",
-              "icon": "Calculator"
-            }
-          ]
-        },
-        {
-          "id": "real-estate",
-          "title": "Woonvastgoed",
-          "subtitle": "De juiste plek vinden om thuis te noemen, of je nu een maand of een leven lang blijft.",
-          "items": [
-            {
-              "title": "Huur van Appartementen en Huizen",
-              "description": "Hulp bij het navigeren van de lokale markt om kwalitatief hoogwaardige huurwoningen te vinden.",
-              "icon": "Home"
-            },
-            {
-              "title": "Aankoop van Onroerend Goed",
-              "description": "Deskundige hulp bij het vinden en kopen van residentieel vastgoed.",
-              "icon": "Search"
-            },
-            {
-              "title": "Due Diligence",
-              "description": "Wij verifiëren eigendomstitels en juridische status voor elk pand dat je wilt huren of kopen.",
-              "icon": "Shield"
-            }
-          ]
-        }
-      ]
+      "permanent-residency": {
+        "fullDescription": "Wij beheren uw volledige aanvraag voor een verblijfsvergunning, van documentverzameling tot indiening en opvolging. Ons team zorgt dat alle papieren voldoen aan de Paraguayaanse immigratievereisten.",
+        "benefits": [
+          "Volledige documentenchecklist",
+          "Indiening bij Migraciones",
+          "Opvolging van de aanvraag",
+          "Coördinatie met juridisch vertegenwoordiger",
+          "Ondersteuning tot definitieve goedkeuring"
+        ]
+      },
+      "cedula": {
+        "fullDescription": "Wij begeleiden u bij elke stap om uw Paraguayaanse identiteitskaart te verkrijgen. Van afspraak maken tot begeleiding op de dag zelf.",
+        "benefits": [
+          "Afspraak inplannen",
+          "Documentvoorbereiding",
+          "Persoonlijke begeleiding",
+          "Versnelde verwerkingscoördinatie",
+          "Opvolging van aflevering"
+        ]
+      },
+      "apostille-translation": {
+        "fullDescription": "Wij coördineren de gecertificeerde vertaling van uw buitenlandse documenten naar het Spaans en regelen het apostilleproces. Inclusief geboorteaktes, huwelijksaktes en strafbladen.",
+        "benefits": [
+          "Gecertificeerde vertaling",
+          "Apostille-verificatie",
+          "Coördinatie met vertalers",
+          "Authenticiteitscontrole",
+          "Volledige set klaar voor indiening"
+        ]
+      },
+      "bank-account": {
+        "fullDescription": "Wij bereiden uw financiële profiel voor, selecteren de juiste bank, coördineren afspraken en begeleiden u bij het openen van de rekening.",
+        "benefits": [
+          "Financieel profiel opstellen",
+          "Bankselectie op maat",
+          "Afspraakcoördinatie",
+          "Persoonlijke begeleiding",
+          "Digitale bankierconfiguratie"
+        ]
+      },
+      "ruc": {
+        "fullDescription": "Wij regelen uw registratie bij de SET om uw RUC te verkrijgen. Dit belastingnummer is essentieel voor zakelijke activiteiten en bankieren in Paraguay.",
+        "benefits": [
+          "Documentvoorbereiding",
+          "Indiening bij SET",
+          "Belastingdomicilie instellen",
+          "Digitaal certificaat verkrijgen",
+          "Nalevingsbegeleiding"
+        ]
+      },
+      "rentals": {
+        "fullDescription": "Wij helpen u bij het vinden van kwalitatief hoogwaardige huurwoningen die passen bij uw levensstijl en budget, of u nu een tijdelijk appartement of een gezinswoning zoekt.",
+        "benefits": [
+          "Persoonlijke woningzoektocht",
+          "Wijkbegeleiding",
+          "Bezoeken coördineren",
+          "Huurovereenkomst controle",
+          "Ondersteuning bij verhuizing"
+        ]
+      },
+      "property-purchase": {
+        "fullDescription": "Wij bieden deskundige ondersteuning bij het kopen van onroerend goed, van het identificeren van kansen tot het afronden van de deal. Ons team controleert eigendomstitels en coördineert met notarissen.",
+        "benefits": [
+          "Identificatie van kansen",
+          "Bezoeken en due diligence",
+          "Titelverificatie",
+          "Prijsonderhandeling",
+          "Notariscoördinatie en registratie"
+        ]
+      },
+      "due-diligence": {
+        "fullDescription": "Wij voeren een grondig due diligence-onderzoek uit op elk pand. Inclusief titelcontrole, beslagonderzoek en belastingstatus.",
+        "benefits": [
+          "Titelonderzoek",
+          "Beslag- en hypotheekzoektocht",
+          "Belastingstatuscontrole",
+          "Bestemmingsplancontrole",
+          "Volledig due diligence-rapport"
+        ]
+      }
     },
     "cta": {
       "title": "Klaar om te beginnen?",

@@ -220,21 +220,21 @@
       "ctaHref": "/s/es/nexa-paraguay/contacto",
       "items": [
         {
-          "quote": "Empresa + banco + residencia en 9 semanas. Nexa gestionó todo de punta a punta mientras yo terminaba de cerrar en Munich. Cero fricción de mi lado.",
-          "author": "Marco W.",
-          "role": "Consultor, Alemania",
+          "author": "J. van der L.",
+          "role": "Business owner, Netherlands",
+          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
           "rating": 5
         },
         {
-          "quote": "Necesitaba el Investor program porque mi estructura fiscal era compleja. Valió cada euro — coordinaron lo legal y contable durante el primer año.",
-          "author": "Laura v.d. M.",
-          "role": "Inversora, Países Bajos",
+          "author": "M. S.",
+          "role": "Investor, Germany",
+          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
           "rating": 5
         },
         {
-          "quote": "Saqué mi cédula y empecé a operar en Paraguay más rápido que mi NIE en España. Precio honesto, sin sorpresas.",
-          "author": "Carlos G.",
-          "role": "Freelance, España",
+          "author": "C. R.",
+          "role": "Freelancer, Spain",
+          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
           "rating": 5
         }
       ]
@@ -719,21 +719,21 @@
       "subtitle": "Historias reales de personas que establecieron su operación en Paraguay",
       "items": [
         {
-          "quote": "Empresa + banco + residencia en 9 semanas. Nexa gestionó todo de punta a punta mientras yo terminaba de cerrar en Munich. Cero fricción de mi lado.",
-          "author": "Marco W.",
-          "role": "Consultor, Alemania",
+          "author": "J. van der L.",
+          "role": "Business owner, Netherlands",
+          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
           "rating": 5
         },
         {
-          "quote": "Necesitaba el Investor program porque mi estructura fiscal era compleja. Valió cada euro — coordinaron lo legal y contable durante el primer año.",
-          "author": "Laura v.d. M.",
-          "role": "Inversora, Países Bajos",
+          "author": "M. S.",
+          "role": "Investor, Germany",
+          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
           "rating": 5
         },
         {
-          "quote": "Saqué mi cédula y empecé a operar en Paraguay más rápido que mi NIE en España. Precio honesto, sin sorpresas.",
-          "author": "Carlos G.",
-          "role": "Freelance, España",
+          "author": "C. R.",
+          "role": "Freelancer, Spain",
+          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
           "rating": 5
         }
       ]
@@ -1108,6 +1108,54 @@
         "Creemos que tu mudanza debería ser más que solo \"obtener un permiso\" — debería ser el comienzo de tu mejor vida aquí. Combinando nuestro profundo conocimiento de la ley paraguaya con un toque personal, te ayudamos a saltar los trámites y pasar directamente a disfrutar todo lo que este hermoso país tiene para ofrecer."
       ],
       "_note": "Reemplazar 'nuestra fundadora' con el nombre real una vez aprobado."
+    },
+    "whyNexa": {
+      "eyebrow": "Por qué Nexa Paraguay",
+      "title": "Lo que nos diferencia",
+      "pillars": [
+        {
+          "icon": "Users",
+          "title": "Equipo multidisciplinario",
+          "description": "Abogados, contadores, escribanos, asesores financieros trabajando en coordinación.",
+          "badge": "Our difference"
+        },
+        {
+          "icon": "Shield",
+          "title": "Capital relacional",
+          "description": "Acceso institucional construido durante años con bancos, notarías y autoridades.",
+          "badge": "Our difference"
+        },
+        {
+          "icon": "Clock",
+          "title": "Tiempo como valor",
+          "description": "Comprimimos en una jornada lo que sin estructura requiere múltiples viajes.",
+          "badge": "Our difference"
+        },
+        {
+          "icon": "Package",
+          "title": "Un solo programa",
+          "description": "Residencia, sociedad y cuenta bancaria integrados.",
+          "badge": "Why clients choose us"
+        },
+        {
+          "icon": "Plane",
+          "title": "Un solo viaje",
+          "description": "Tramitación presencial en una jornada coordinada.",
+          "badge": "Why clients choose us"
+        },
+        {
+          "icon": "Users",
+          "title": "Un solo equipo",
+          "description": "Abogados, contadores, escribanos, asesores financieros.",
+          "badge": "Why clients choose us"
+        },
+        {
+          "icon": "Shield",
+          "title": "Precio transparente",
+          "description": "Todo incluido. Sin cargos ocultos.",
+          "badge": "Why clients choose us"
+        }
+      ]
     }
   },
   "faqPage": {
@@ -1207,7 +1255,12 @@
       "provider": "calendly",
       "ctaLabel": "Abrir calendario",
       "fallbackWhatsapp": "595982515138",
-      "fallbackEmail": "hola@nexaparaguay.com"
+      "fallbackEmail": "hola@nexaparaguay.com",
+      "embedType": "inline",
+      "embedStyle": {
+        "minWidth": "320px",
+        "height": "700px"
+      }
     },
     "contact": {
       "title": "Datos de contacto",
@@ -1267,7 +1320,81 @@
       },
       "title": "Blog",
       "subtitle": "Guías honestas sobre residencia, empresa e inversión en Paraguay."
-    }
+    },
+    "posts": [
+      {
+        "slug": "residencia-2025",
+        "title": "Guía Completa para la Residencia en Paraguay en 2025",
+        "excerpt": "Todo lo que necesitas saber para obtener la residencia paraguaya: requisitos, tiempos, costos y proceso paso a paso.",
+        "author": "Nexa Paraguay",
+        "date": "2025-01-15",
+        "tags": [
+          "residencia",
+          "guía",
+          "proceso"
+        ]
+      },
+      {
+        "slug": "cuenta-bancaria-extranjeros",
+        "title": "Cómo Abrir una Cuenta Bancaria en Paraguay siendo Extranjero",
+        "excerpt": "Guía práctica para abrir cuentas bancarias personales y empresariales en Paraguay.",
+        "author": "Nexa Paraguay",
+        "date": "2025-02-10",
+        "tags": [
+          "banca",
+          "guía",
+          "extranjeros"
+        ]
+      },
+      {
+        "slug": "costo-vida-asuncion",
+        "title": "Costo de Vida en Asunción: Presupuesto Realista para Expatriados",
+        "excerpt": "Desglose mensual de gastos por barrios, vivienda, colegios internacionales y salud en la capital paraguaya.",
+        "author": "Nexa Paraguay",
+        "date": "2025-03-05",
+        "tags": [
+          "estilo-de-vida",
+          "costo",
+          "asunción"
+        ]
+      },
+      {
+        "slug": "guia-compra-propiedades",
+        "title": "Compra de Propiedades en Paraguay: Guía Completa para Extranjeros",
+        "excerpt": "Todo lo que los inversores extranjeros necesitan saber para comprar inmuebles en Paraguay.",
+        "author": "Nexa Paraguay",
+        "date": "2025-03-20",
+        "tags": [
+          "bienes-raíces",
+          "inversión",
+          "guía"
+        ]
+      },
+      {
+        "slug": "sistema-fiscal-explicado",
+        "title": "El Sistema Tributario Paraguayo Explicado para Inversores Europeos",
+        "excerpt": "Desglose claro del sistema fiscal territorial de Paraguay y su tasa del 10% IRE.",
+        "author": "Nexa Paraguay",
+        "date": "2025-04-01",
+        "tags": [
+          "impuestos",
+          "inversor",
+          "comparación"
+        ]
+      },
+      {
+        "slug": "constitucion-empresa",
+        "title": "Constituir una Empresa en Paraguay: Paso a Paso",
+        "excerpt": "Cómo constituir una sociedad en Paraguay y elegir la estructura legal adecuada.",
+        "author": "Nexa Paraguay",
+        "date": "2025-04-15",
+        "tags": [
+          "negocios",
+          "empresa",
+          "guía"
+        ]
+      }
+    ]
   },
   "footer": {
     "businessName": "Nexa Paraguay",
@@ -2422,78 +2549,93 @@
   "servicesPage": {
     "seo": {
       "title": "Nuestros Servicios — Nexa Paraguay",
-      "description": "Servicios de residencia y legales, banca e impuestos, y bienes raíces. Elige lo que necesitas, nosotros gestionamos el resto."
+      "description": "Información detallada de los 9 servicios de Nexa Paraguay: Residencia y Documentos Legales, Banca e Impuestos, y Bienes Raíces Residenciales."
     },
     "hero": {
       "headline": "Soluciones profesionales para cada paso",
       "subheadline": "Elige los servicios que necesitas. Nosotros gestionamos el resto."
     },
     "detail": {
-      "eyebrow": "Nuestros Servicios",
-      "title": "Soluciones profesionales para cada paso de tu mudanza",
-      "groups": [
-        {
-          "id": "residency-legal",
-          "title": "Residencia y Documentos Legales",
-          "subtitle": "Los primeros pasos esenciales para tu vida en Paraguay.",
-          "items": [
-            {
-              "title": "Residencia Permanente",
-              "description": "Gestión profesional de tu solicitud de permiso de residencia.",
-              "icon": "FileText"
-            },
-            {
-              "title": "Cédula de Identidad Paraguaya",
-              "description": "Asistencia completa para obtener tu documento de identificación local.",
-              "icon": "CreditCard"
-            },
-            {
-              "title": "Apostilla y Traducción",
-              "description": "Gestionamos la traducción certificada y la verificación legal de todos los documentos extranjeros necesarios.",
-              "icon": "Globe"
-            }
-          ]
-        },
-        {
-          "id": "banking-tax",
-          "title": "Banca y Configuración Fiscal",
-          "subtitle": "Estableciendo tu huella financiera en el país.",
-          "items": [
-            {
-              "title": "Apertura de Cuenta Bancaria",
-              "description": "Orientación y apoyo para abrir cuentas bancarias locales con éxito.",
-              "icon": "Building"
-            },
-            {
-              "title": "Registro Tributario (RUC)",
-              "description": "Configuración de tu RUC para uso personal o empresarial.",
-              "icon": "Calculator"
-            }
-          ]
-        },
-        {
-          "id": "real-estate",
-          "title": "Bienes Raíces Residenciales",
-          "subtitle": "Encontrar el lugar ideal para llamar hogar, ya sea por un mes o toda la vida.",
-          "items": [
-            {
-              "title": "Alquiler de Apartamentos y Casas",
-              "description": "Ayuda para navegar el mercado local y encontrar alquileres de alta calidad.",
-              "icon": "Home"
-            },
-            {
-              "title": "Compra de Propiedades",
-              "description": "Asistencia experta para encontrar y comprar propiedades residenciales.",
-              "icon": "Search"
-            },
-            {
-              "title": "Debida Diligencia",
-              "description": "Verificamos títulos y situación legal de cualquier propiedad para garantizar tu inversión.",
-              "icon": "Shield"
-            }
-          ]
-        }
-      ]
+      "permanent-residency": {
+        "fullDescription": "Gestionamos toda tu solicitud de residencia, desde la recopilación de documentos hasta la presentación y el seguimiento. Nuestro equipo se asegura de que todos los trámites cumplan con los requisitos migratorios paraguayos.",
+        "benefits": [
+          "Lista de verificación completa",
+          "Presentación ante Migraciones",
+          "Seguimiento de la solicitud",
+          "Coordinación con representante legal",
+          "Apoyo hasta la aprobación final"
+        ]
+      },
+      "cedula": {
+        "fullDescription": "Te guiamos en cada paso para obtener tu cédula de identidad paraguaya. Desde agendar tu cita hasta acompañarte el día de la gestión.",
+        "benefits": [
+          "Agendamiento de citas",
+          "Preparación de documentos",
+          "Acompañamiento presencial",
+          "Coordinación de trámite exprés",
+          "Seguimiento de entrega"
+        ]
+      },
+      "apostille-translation": {
+        "fullDescription": "Coordinamos la traducción certificada de tus documentos extranjeros al español y gestionamos el proceso de apostilla. Incluye actas de nacimiento, matrimonio, antecedentes penales, títulos académicos y más.",
+        "benefits": [
+          "Traducción certificada",
+          "Verificación de apostilla",
+          "Coordinación con traductores",
+          "Autenticación de documentos",
+          "Juego completo listo para presentar"
+        ]
+      },
+      "bank-account": {
+        "fullDescription": "Preparamos tu perfil financiero, seleccionamos el banco adecuado, coordinamos citas y te acompañamos en la apertura de cuenta. Nuestras relaciones institucionales agilizan este proceso.",
+        "benefits": [
+          "Preparación de perfil financiero",
+          "Selección del banco ideal",
+          "Coordinación de citas",
+          "Acompañamiento presencial",
+          "Configuración de banca digital"
+        ]
+      },
+      "ruc": {
+        "fullDescription": "Gestionamos tu registro ante la SET para obtener tu RUC. Este número es esencial para actividades comerciales, compra de propiedades y operaciones bancarias en Paraguay.",
+        "benefits": [
+          "Preparación de documentos",
+          "Presentación ante SET",
+          "Configuración de domicilio fiscal",
+          "Obtención de certificado digital",
+          "Asesoría de cumplimiento"
+        ]
+      },
+      "rentals": {
+        "fullDescription": "Te ayudamos a encontrar propiedades de calidad que se ajusten a tu estilo de vida y presupuesto, ya sea un apartamento amoblado por temporada o una casa familiar.",
+        "benefits": [
+          "Búsqueda personalizada",
+          "Asesoría de barrios",
+          "Coordinación de visitas",
+          "Revisión y negociación de contratos",
+          "Apoyo en mudanza y servicios"
+        ]
+      },
+      "property-purchase": {
+        "fullDescription": "Brindamos asistencia experta en todo el proceso de compra, desde la identificación de oportunidades hasta el cierre. Incluye verificación de títulos y coordinación notarial.",
+        "benefits": [
+          "Identificación de oportunidades",
+          "Visitas y debida diligencia",
+          "Verificación de títulos",
+          "Negociación de precios",
+          "Coordinación notarial y registro"
+        ]
+      },
+      "due-diligence": {
+        "fullDescription": "Realizamos una debida diligencia completa en cualquier propiedad. Incluye verificación de títulos, búsqueda de gravámenes, estado fiscal y cumplimiento normativo.",
+        "benefits": [
+          "Verificación de escrituras",
+          "Búsqueda de gravámenes",
+          "Confirmación de situación fiscal",
+          "Verificación de zonificación",
+          "Informe completo de debida diligencia"
+        ]
+      }
     },
     "cta": {
       "title": "¿Listo para empezar?",
