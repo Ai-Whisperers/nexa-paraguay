@@ -17,6 +17,10 @@
         "href": "/s/nl/nexa-paraguay"
       },
       {
+        "label": "Diensten",
+        "href": "/s/nl/nexa-paraguay/servicios"
+      },
+      {
         "label": "Verhuizing",
         "children": [
           {
@@ -75,7 +79,7 @@
   "home": {
     "seo": {
       "title": "Nexa Paraguay — Je Verhuizing naar Paraguay, Volledig Begeleid",
-      "description": "Verblijfsvergunning, vennootschap en bankrekening in Paraguay. Eén programma, één reis, een professioneel team."
+      "description": "Verblijf, bankieren, vastgoed en vestiging — alles gecoördineerd door Nexa Paraguay. Diensten naar keuze, gestroomlijnd proces en een professioneel team."
     },
     "hero": {
       "headline": "Vestig uw onderneming in Paraguay. Professioneel, geïntegreerd, zonder verrassingen.",
@@ -480,7 +484,8 @@
           "icon": "Award"
         }
       ],
-      "title": "Cijfers"
+      "title": "Cijfers",
+      "_note": "Stats values not confirmed by client questionnaire (May 5 2026). Verify before production."
     },
     "beneluxDesk": {
       "title": "Specialistische Benelux Afdeling",
@@ -1297,52 +1302,56 @@
     "copyright": "© {year} Nexa Paraguay. Alle rechten voorbehouden.",
     "columns": [
       {
-        "title": "Services",
+        "title": "Diensten",
         "links": [
           {
-            "label": "Programs",
+            "label": "Programma's",
             "href": "/s/nl/nexa-paraguay/programas"
           },
           {
-            "label": "Process",
+            "label": "Proces",
             "href": "/s/nl/nexa-paraguay/proceso"
           },
           {
-            "label": "Why Paraguay",
-            "href": "/s/nl/nexa-paraguay/por-que-paraguay"
+            "label": "Verblijf & Juridisch",
+            "href": "/s/nl/nexa-paraguay/servicios#residency-legal"
           },
           {
-            "label": "Quality of life",
-            "href": "/s/nl/nexa-paraguay/calidad-de-vida"
+            "label": "Bankieren & Belasting",
+            "href": "/s/nl/nexa-paraguay/servicios#banking-tax"
+          },
+          {
+            "label": "Vastgoed",
+            "href": "/s/nl/nexa-paraguay/servicios#real-estate"
           }
         ]
       },
       {
-        "title": "Resources",
+        "title": "Bronnen",
         "links": [
           {
             "label": "Blog",
             "href": "/s/nl/nexa-paraguay/blog"
           },
           {
-            "label": "Glossary",
+            "label": "Woordenlijst",
             "href": "/s/nl/nexa-paraguay/glosario"
           },
           {
-            "label": "Resources",
+            "label": "Bronnen",
             "href": "/s/nl/nexa-paraguay/recursos"
           },
           {
-            "label": "Press",
+            "label": "Pers",
             "href": "/s/nl/nexa-paraguay/prensa"
           }
         ]
       },
       {
-        "title": "Company",
+        "title": "Bedrijf",
         "links": [
           {
-            "label": "About",
+            "label": "Over ons",
             "href": "/s/nl/nexa-paraguay/sobre"
           },
           {
@@ -1354,13 +1363,18 @@
             "href": "/s/nl/nexa-paraguay/privacidad"
           },
           {
+            "label": "Contact",
+            "href": "/s/nl/nexa-paraguay/contacto"
+          },
+          {
             "label": "Benelux desk",
             "href": "/s/nl/nexa-paraguay/benelux"
           }
         ]
       }
     ],
-    "phone": ""
+    "phone": "",
+    "facebook": "https://facebook.com/nexaparaguay"
   },
   "complianceDisclaimer": {
     "paragraphs": [
@@ -2216,12 +2230,12 @@
   },
   "founderPage": {
     "seo": {
-      "title": "De oprichter — Nexa Paraguay",
-      "description": "Wie achter Nexa staat: ervaring, waarden, en waarom we deze dienst hebben opgericht."
+      "title": "Onze Oprichter — Nexa Paraguay",
+      "description": "Ontmoet de oprichter van Nexa Paraguay: ervaring uit eerste hand met internationale verhuizing, getrouwd met een Nederlander."
     },
     "hero": {
-      "headline": "De oprichter achter Nexa",
-      "subheadline": "Wie dit bouwt, waar hij vandaan komt, en waarom."
+      "headline": "Ervaring omgezet in Expertise",
+      "subheadline": "Het verhaal achter Nexa Paraguay — van persoonlijke ervaring naar professionele missie."
     },
     "team": {
       "eyebrow": "Team",
@@ -2245,24 +2259,11 @@
       ]
     },
     "story": {
-      "eyebrow": "Het verhaal",
-      "title": "Waarom Nexa bestaat",
-      "pillars": [
-        {
-          "icon": "Heart",
-          "title": "Persoonlijke ervaring",
-          "description": "Wij hebben het proces doorlopen. We weten wat pijn doet en wat werkt."
-        },
-        {
-          "icon": "Target",
-          "title": "Europese focus",
-          "description": "Wij vertalen Paraguay in termen die een Duitse of Nederlandse investeerder kan verifiëren."
-        },
-        {
-          "icon": "ShieldCheck",
-          "title": "Integriteit voorop",
-          "description": "SEPRELAD-rapporterende entiteit. Strikte KYC. Wij werken niet met iedereen."
-        }
+      "title": "Ons Verhaal",
+      "paragraphs": [
+        "We weten precies hoe overweldigend het papierwerk kan zijn, omdat we het zelf hebben meegemaakt.",
+        "Onze oprichter is getrouwd met een Nederlander en heeft persoonlijk de complexiteit van internationale verhuizing en documentatie doorlopen. Deze ervaring uit eerste hand maakte duidelijk dat er behoefte is aan een dienst die niet alleen papieren verwerkt, maar mensen echt ondersteunt bij het opbouwen van een fijn leven in Paraguay.",
+        "Wij geloven dat je verhuizing meer moet zijn dan alleen 'een vergunning krijgen' — het moet het begin zijn van je beste leven hier. Door onze diepgaande kennis van de Paraguayaanse wet te combineren met een persoonlijke aanpak, helpen we je de rompslomp over te slaan en direct te genieten van alles wat dit prachtige land te bieden heeft."
       ]
     },
     "cta": {
@@ -2410,6 +2411,101 @@
       "subtitle": "Plan een gesprek van 30 minuten — in het Nederlands, Engels of Spaans.",
       "ctaText": "Plan gratis consult",
       "ctaHref": "/s/nl/nexa-paraguay/contacto"
+    }
+  },
+  "seo": {
+    "siteDescription": "Nexa Paraguay — Jouw verhuizing naar Paraguay, volledig begeleid",
+    "siteKeywords": [
+      "Nexa Paraguay",
+      "residency Paraguay",
+      "relocation Paraguay",
+      "company Paraguay",
+      "bank account Paraguay"
+    ],
+    "ogImage": "/sites/nexa-paraguay/images/brand/og-default.webp",
+    "twitterHandle": "@nexaparaguay"
+  },
+  "servicesPage": {
+    "seo": {
+      "title": "Onze Diensten — Nexa Paraguay",
+      "description": "Verblijfs- en juridische diensten, bank- en belastingdiensten, en residentieel vastgoed. Kies wat je nodig hebt, wij regelen de rest."
+    },
+    "hero": {
+      "headline": "Professionele oplossingen voor elke stap",
+      "subheadline": "Kies de diensten die je nodig hebt. Wij regelen de rest."
+    },
+    "detail": {
+      "eyebrow": "Onze Diensten",
+      "title": "Professionele oplossingen voor elke stap van je verhuizing",
+      "groups": [
+        {
+          "id": "residency-legal",
+          "title": "Verblijf & Juridische Documenten",
+          "subtitle": "De essentiële eerste stappen voor je leven in Paraguay.",
+          "items": [
+            {
+              "title": "Permanente Verblijfsvergunning",
+              "description": "Professionele begeleiding bij je aanvraag voor een verblijfsvergunning.",
+              "icon": "FileText"
+            },
+            {
+              "title": "Paraguayaans Identiteitsbewijs (Cédula)",
+              "description": "Volledige ondersteuning bij het verkrijgen van je lokale identiteitskaart.",
+              "icon": "CreditCard"
+            },
+            {
+              "title": "Apostille & Vertaling",
+              "description": "Wij verzorgen de gecertificeerde vertaling en juridische verificatie van alle benodigde buitenlandse documenten.",
+              "icon": "Globe"
+            }
+          ]
+        },
+        {
+          "id": "banking-tax",
+          "title": "Bankieren & Belasting",
+          "subtitle": "Het opzetten van je financiële voetafdruk in het land.",
+          "items": [
+            {
+              "title": "Bankrekening Openen",
+              "description": "Begeleiding en ondersteuning bij het succesvol openen van lokale bankrekeningen.",
+              "icon": "Building"
+            },
+            {
+              "title": "Belastingregistratie (RUC)",
+              "description": "Registratie van je Paraguayaanse belastingnummer voor persoonlijk of zakelijk gebruik.",
+              "icon": "Calculator"
+            }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "title": "Woonvastgoed",
+          "subtitle": "De juiste plek vinden om thuis te noemen, of je nu een maand of een leven lang blijft.",
+          "items": [
+            {
+              "title": "Huur van Appartementen en Huizen",
+              "description": "Hulp bij het navigeren van de lokale markt om kwalitatief hoogwaardige huurwoningen te vinden.",
+              "icon": "Home"
+            },
+            {
+              "title": "Aankoop van Onroerend Goed",
+              "description": "Deskundige hulp bij het vinden en kopen van residentieel vastgoed.",
+              "icon": "Search"
+            },
+            {
+              "title": "Due Diligence",
+              "description": "Wij verifiëren eigendomstitels en juridische status voor elk pand dat je wilt huren of kopen.",
+              "icon": "Shield"
+            }
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Klaar om te beginnen?",
+      "subtitle": "Boek een gratis consult van 30 minuten om je specifieke behoeften te bespreken.",
+      "buttonText": "Boek gratis consult",
+      "buttonHref": "/s/nl/nexa-paraguay/contacto"
     }
   }
 }

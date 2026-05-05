@@ -17,6 +17,10 @@
         "href": "/s/es/nexa-paraguay"
       },
       {
+        "label": "Servicios",
+        "href": "/s/es/nexa-paraguay/servicios"
+      },
+      {
         "label": "Reubicación",
         "children": [
           {
@@ -75,7 +79,7 @@
   "home": {
     "seo": {
       "title": "Nexa Paraguay — Tu Mudanza a Paraguay, Gestionada de Principio a Fin",
-      "description": "Residencia, sociedad y cuenta bancaria en Paraguay. Un solo programa, un solo viaje, un equipo profesional a su lado."
+      "description": "Residencia, banca, bienes raíces e instalación — todo coordinado por Nexa Paraguay. Servicios a tu elección, proceso optimizado y equipo profesional."
     },
     "hero": {
       "headline": "Establezca su operación en Paraguay. Profesional, integrado, sin sorpresas.",
@@ -356,7 +360,8 @@
           "label": "Tasa de exito",
           "icon": "Award"
         }
-      ]
+      ],
+      "_note": "Stats values not confirmed by client questionnaire (May 5 2026). Verify before production."
     },
     "intakeWizard": {
       "steps": [
@@ -1269,7 +1274,7 @@
     "email": "hola@nexaparaguay.com",
     "whatsapp": "595982515138",
     "instagram": "https://instagram.com/nexaparaguay",
-    "facebook": null,
+    "facebook": "https://facebook.com/nexaparaguay",
     "navLinks": [],
     "siblingSites": [
       {
@@ -1297,52 +1302,56 @@
     "copyright": "© {year} Nexa Paraguay. Todos los derechos reservados.",
     "columns": [
       {
-        "title": "Services",
+        "title": "Servicios",
         "links": [
           {
-            "label": "Programs",
+            "label": "Programas",
             "href": "/s/es/nexa-paraguay/programas"
           },
           {
-            "label": "Process",
+            "label": "Proceso",
             "href": "/s/es/nexa-paraguay/proceso"
           },
           {
-            "label": "Why Paraguay",
-            "href": "/s/es/nexa-paraguay/por-que-paraguay"
+            "label": "Residencia y Legal",
+            "href": "/s/es/nexa-paraguay/servicios#residency-legal"
           },
           {
-            "label": "Quality of life",
-            "href": "/s/es/nexa-paraguay/calidad-de-vida"
+            "label": "Banca e Impuestos",
+            "href": "/s/es/nexa-paraguay/servicios#banking-tax"
+          },
+          {
+            "label": "Bienes Raíces",
+            "href": "/s/es/nexa-paraguay/servicios#real-estate"
           }
         ]
       },
       {
-        "title": "Resources",
+        "title": "Recursos",
         "links": [
           {
             "label": "Blog",
             "href": "/s/es/nexa-paraguay/blog"
           },
           {
-            "label": "Glossary",
+            "label": "Glosario",
             "href": "/s/es/nexa-paraguay/glosario"
           },
           {
-            "label": "Resources",
+            "label": "Recursos",
             "href": "/s/es/nexa-paraguay/recursos"
           },
           {
-            "label": "Press",
+            "label": "Prensa",
             "href": "/s/es/nexa-paraguay/prensa"
           }
         ]
       },
       {
-        "title": "Company",
+        "title": "Empresa",
         "links": [
           {
-            "label": "About",
+            "label": "Sobre",
             "href": "/s/es/nexa-paraguay/sobre"
           },
           {
@@ -1350,11 +1359,15 @@
             "href": "/s/es/nexa-paraguay/faq"
           },
           {
-            "label": "Privacy",
+            "label": "Privacidad",
             "href": "/s/es/nexa-paraguay/privacidad"
           },
           {
-            "label": "Benelux desk",
+            "label": "Contacto",
+            "href": "/s/es/nexa-paraguay/contacto"
+          },
+          {
+            "label": "Escritorio Benelux",
             "href": "/s/es/nexa-paraguay/benelux"
           }
         ]
@@ -2216,12 +2229,12 @@
   },
   "founderPage": {
     "seo": {
-      "title": "El fundador — Nexa Paraguay",
-      "description": "Quién está detrás de Nexa: experiencia, valores y por qué creamos este servicio."
+      "title": "Nuestra Fundadora — Nexa Paraguay",
+      "description": "Conoce a la fundadora de Nexa Paraguay: experiencia de primera mano en mudanza internacional, casada con un neerlandés."
     },
     "hero": {
-      "headline": "El fundador detrás de Nexa",
-      "subheadline": "Quién construye esto, de dónde viene y por qué."
+      "headline": "Experiencia Convertida en Conocimiento",
+      "subheadline": "La historia detrás de Nexa Paraguay — de la experiencia personal a la misión profesional."
     },
     "team": {
       "eyebrow": "Equipo",
@@ -2245,24 +2258,11 @@
       ]
     },
     "story": {
-      "eyebrow": "La historia",
-      "title": "Por qué Nexa existe",
-      "pillars": [
-        {
-          "icon": "Heart",
-          "title": "Experiencia personal",
-          "description": "Vivimos el proceso. Sabemos qué duele y qué funciona."
-        },
-        {
-          "icon": "Target",
-          "title": "Enfoque europeo",
-          "description": "Traducimos Paraguay a términos que un inversor alemán u holandés puede verificar."
-        },
-        {
-          "icon": "ShieldCheck",
-          "title": "Integridad primero",
-          "description": "Entidad reportante SEPRELAD. KYC estricto. No trabajamos con todos."
-        }
+      "title": "Nuestra Historia",
+      "paragraphs": [
+        "Entendemos exactamente lo abrumador que puede ser el papeleo porque lo hemos vivido nosotros mismos.",
+        "Nuestra fundadora está casada con un neerlandés y navegó personalmente las complejidades de la mudanza y documentación internacional. Esta experiencia de primera mano reveló una clara necesidad: un servicio que no solo procese papeles, sino que realmente apoye a las personas a construir una buena vida en Paraguay.",
+        "Creemos que tu mudanza debería ser más que solo \"obtener un permiso\" — debería ser el comienzo de tu mejor vida aquí. Combinando nuestro profundo conocimiento de la ley paraguaya con un toque personal, te ayudamos a saltar los trámites y pasar directamente a disfrutar todo lo que este hermoso país tiene para ofrecer."
       ]
     },
     "cta": {
@@ -2416,6 +2416,89 @@
     "home": {
       "title": "nexa-paraguay - Paraguay",
       "description": "Sitio web de nexa-paraguay"
+    }
+  },
+  "servicesPage": {
+    "seo": {
+      "title": "Nuestros Servicios — Nexa Paraguay",
+      "description": "Servicios de residencia y legales, banca e impuestos, y bienes raíces. Elige lo que necesitas, nosotros gestionamos el resto."
+    },
+    "hero": {
+      "headline": "Soluciones profesionales para cada paso",
+      "subheadline": "Elige los servicios que necesitas. Nosotros gestionamos el resto."
+    },
+    "detail": {
+      "eyebrow": "Nuestros Servicios",
+      "title": "Soluciones profesionales para cada paso de tu mudanza",
+      "groups": [
+        {
+          "id": "residency-legal",
+          "title": "Residencia y Documentos Legales",
+          "subtitle": "Los primeros pasos esenciales para tu vida en Paraguay.",
+          "items": [
+            {
+              "title": "Residencia Permanente",
+              "description": "Gestión profesional de tu solicitud de permiso de residencia.",
+              "icon": "FileText"
+            },
+            {
+              "title": "Cédula de Identidad Paraguaya",
+              "description": "Asistencia completa para obtener tu documento de identificación local.",
+              "icon": "CreditCard"
+            },
+            {
+              "title": "Apostilla y Traducción",
+              "description": "Gestionamos la traducción certificada y la verificación legal de todos los documentos extranjeros necesarios.",
+              "icon": "Globe"
+            }
+          ]
+        },
+        {
+          "id": "banking-tax",
+          "title": "Banca y Configuración Fiscal",
+          "subtitle": "Estableciendo tu huella financiera en el país.",
+          "items": [
+            {
+              "title": "Apertura de Cuenta Bancaria",
+              "description": "Orientación y apoyo para abrir cuentas bancarias locales con éxito.",
+              "icon": "Building"
+            },
+            {
+              "title": "Registro Tributario (RUC)",
+              "description": "Configuración de tu RUC para uso personal o empresarial.",
+              "icon": "Calculator"
+            }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "title": "Bienes Raíces Residenciales",
+          "subtitle": "Encontrar el lugar ideal para llamar hogar, ya sea por un mes o toda la vida.",
+          "items": [
+            {
+              "title": "Alquiler de Apartamentos y Casas",
+              "description": "Ayuda para navegar el mercado local y encontrar alquileres de alta calidad.",
+              "icon": "Home"
+            },
+            {
+              "title": "Compra de Propiedades",
+              "description": "Asistencia experta para encontrar y comprar propiedades residenciales.",
+              "icon": "Search"
+            },
+            {
+              "title": "Debida Diligencia",
+              "description": "Verificamos títulos y situación legal de cualquier propiedad para garantizar tu inversión.",
+              "icon": "Shield"
+            }
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para empezar?",
+      "subtitle": "Reserva una consulta gratuita de 30 minutos para discutir tus necesidades.",
+      "buttonText": "Agendar consulta gratuita",
+      "buttonHref": "/s/es/nexa-paraguay/contacto"
     }
   }
 }

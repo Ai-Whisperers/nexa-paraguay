@@ -20,6 +20,10 @@
         "href": "/s/de/nexa-paraguay"
       },
       {
+        "label": "Leistungen",
+        "href": "/s/de/nexa-paraguay/servicios"
+      },
+      {
         "label": "Umzug",
         "children": [
           {
@@ -78,7 +82,7 @@
   "home": {
     "seo": {
       "title": "Nexa Paraguay — Ihr Umzug nach Paraguay, Komplett Betreut",
-      "description": "Aufenthaltserlaubnis, Gesellschaft und Bankkonto in Paraguay. Ein Programm, eine Reise, ein professionelles Team."
+      "description": "Aufenthalt, Bankwesen, Immobilien und Niederlassung — alles koordiniert von Nexa Paraguay. Dienstleistungen nach Wahl, optimierter Prozess und ein professionelles Team."
     },
     "hero": {
       "headline": "Etablieren Sie Ihre Geschäftstätigkeit in Paraguay. Professionell, integriert, ohne Überraschungen.",
@@ -483,7 +487,8 @@
           "icon": "Award"
         }
       ],
-      "title": "Zahlen"
+      "title": "Zahlen",
+      "_note": "Stats values not confirmed by client questionnaire (May 5 2026). Verify before production."
     },
     "beneluxDesk": {
       "title": "Spezialisierte Betreuung für Benelux",
@@ -1300,52 +1305,56 @@
     "copyright": "© {year} Nexa Paraguay. Alle Rechte vorbehalten.",
     "columns": [
       {
-        "title": "Services",
+        "title": "Leistungen",
         "links": [
           {
-            "label": "Programs",
+            "label": "Programme",
             "href": "/s/de/nexa-paraguay/programas"
           },
           {
-            "label": "Process",
+            "label": "Prozess",
             "href": "/s/de/nexa-paraguay/proceso"
           },
           {
-            "label": "Why Paraguay",
-            "href": "/s/de/nexa-paraguay/por-que-paraguay"
+            "label": "Aufenthalt & Recht",
+            "href": "/s/de/nexa-paraguay/servicios#residency-legal"
           },
           {
-            "label": "Quality of life",
-            "href": "/s/de/nexa-paraguay/calidad-de-vida"
+            "label": "Bank & Steuer",
+            "href": "/s/de/nexa-paraguay/servicios#banking-tax"
+          },
+          {
+            "label": "Immobilien",
+            "href": "/s/de/nexa-paraguay/servicios#real-estate"
           }
         ]
       },
       {
-        "title": "Resources",
+        "title": "Ressourcen",
         "links": [
           {
             "label": "Blog",
             "href": "/s/de/nexa-paraguay/blog"
           },
           {
-            "label": "Glossary",
+            "label": "Glossar",
             "href": "/s/de/nexa-paraguay/glosario"
           },
           {
-            "label": "Resources",
+            "label": "Ressourcen",
             "href": "/s/de/nexa-paraguay/recursos"
           },
           {
-            "label": "Press",
+            "label": "Presse",
             "href": "/s/de/nexa-paraguay/prensa"
           }
         ]
       },
       {
-        "title": "Company",
+        "title": "Unternehmen",
         "links": [
           {
-            "label": "About",
+            "label": "Über uns",
             "href": "/s/de/nexa-paraguay/sobre"
           },
           {
@@ -1353,17 +1362,22 @@
             "href": "/s/de/nexa-paraguay/faq"
           },
           {
-            "label": "Privacy",
+            "label": "Datenschutz",
             "href": "/s/de/nexa-paraguay/privacidad"
           },
           {
-            "label": "Benelux desk",
+            "label": "Kontakt",
+            "href": "/s/de/nexa-paraguay/contacto"
+          },
+          {
+            "label": "Benelux-Schreibtisch",
             "href": "/s/de/nexa-paraguay/benelux"
           }
         ]
       }
     ],
-    "phone": ""
+    "phone": "",
+    "facebook": "https://facebook.com/nexaparaguay"
   },
   "complianceDisclaimer": {
     "paragraphs": [
@@ -2219,12 +2233,12 @@
   },
   "founderPage": {
     "seo": {
-      "title": "Der Gründer — Nexa Paraguay",
-      "description": "Wer hinter Nexa steht: Erfahrung, Werte und warum wir diesen Service aufgebaut haben."
+      "title": "Unsere Gründerin — Nexa Paraguay",
+      "description": "Lernen Sie die Gründerin von Nexa Paraguay kennen: Erfahrung aus erster Hand mit internationalem Umzug, verheiratet mit einem Niederländer."
     },
     "hero": {
-      "headline": "Der Gründer hinter Nexa",
-      "subheadline": "Wer das aufbaut, woher er kommt und warum."
+      "headline": "Erfahrung wurde zur Expertise",
+      "subheadline": "Die Geschichte hinter Nexa Paraguay — von persönlicher Erfahrung zu professioneller Mission."
     },
     "team": {
       "eyebrow": "Team",
@@ -2248,24 +2262,11 @@
       ]
     },
     "story": {
-      "eyebrow": "Die Geschichte",
-      "title": "Warum Nexa existiert",
-      "pillars": [
-        {
-          "icon": "Heart",
-          "title": "Persönliche Erfahrung",
-          "description": "Wir haben den Prozess durchlebt. Wir wissen, was wehtut und was funktioniert."
-        },
-        {
-          "icon": "Target",
-          "title": "Europäischer Fokus",
-          "description": "Wir übersetzen Paraguay in Begriffe, die ein deutscher oder niederländischer Investor überprüfen kann."
-        },
-        {
-          "icon": "ShieldCheck",
-          "title": "Integrität zuerst",
-          "description": "SEPRELAD-meldepflichtige Entität. Strikte KYC. Wir arbeiten nicht mit jedem."
-        }
+      "title": "Unsere Geschichte",
+      "paragraphs": [
+        "Wir verstehen genau, wie überwältigend der Papierkram sein kann, weil wir es selbst erlebt haben.",
+        "Unsere Gründerin ist mit einem Niederländer verheiratet und hat die Komplexität eines internationalen Umzugs und der Dokumentation persönlich gemeistert. Diese Erfahrung aus erster Hand zeigte, dass ein Dienst gebraucht wird, der nicht nur Papier verarbeitet, sondern Menschen wirklich dabei unterstützt, ein schönes Leben in Paraguay aufzubauen.",
+        "Wir glauben, dass Ihr Umzug mehr sein sollte als nur 'eine Genehmigung zu bekommen' — es sollte der Beginn Ihres besten Lebens hier sein. Durch die Kombination unseres tiefen Verständnisses des paraguayischen Rechts mit einer persönlichen Note helfen wir Ihnen, den Aufwand zu überspringen und direkt zu genießen, was dieses wunderschöne Land zu bieten hat."
       ]
     },
     "cta": {
@@ -2413,6 +2414,101 @@
       "subtitle": "Planen Sie ein 30-Minuten-Gespräch — auf Niederländisch, Englisch oder Spanisch.",
       "ctaText": "Kostenloses Beratungsgespräch",
       "ctaHref": "/s/de/nexa-paraguay/contacto"
+    }
+  },
+  "seo": {
+    "siteDescription": "Nexa Paraguay — Ihr Umzug nach Paraguay, komplett betreut",
+    "siteKeywords": [
+      "Nexa Paraguay",
+      "residency Paraguay",
+      "relocation Paraguay",
+      "company Paraguay",
+      "bank account Paraguay"
+    ],
+    "ogImage": "/sites/nexa-paraguay/images/brand/og-default.webp",
+    "twitterHandle": "@nexaparaguay"
+  },
+  "servicesPage": {
+    "seo": {
+      "title": "Unsere Dienstleistungen — Nexa Paraguay",
+      "description": "Aufenthalts- und Rechtsdienstleistungen, Bank- und Steuerdienstleistungen sowie Wohnimmobilien. Wählen Sie, was Sie brauchen, wir kümmern uns um den Rest."
+    },
+    "hero": {
+      "headline": "Professionelle Lösungen für jeden Schritt",
+      "subheadline": "Wählen Sie die Dienstleistungen, die Sie benötigen. Wir kümmern uns um den Rest."
+    },
+    "detail": {
+      "eyebrow": "Unsere Dienstleistungen",
+      "title": "Professionelle Lösungen für jeden Schritt Ihres Umzugs",
+      "groups": [
+        {
+          "id": "residency-legal",
+          "title": "Aufenthalt & Rechtsdokumente",
+          "subtitle": "Die ersten wesentlichen Schritte für Ihr Leben in Paraguay.",
+          "items": [
+            {
+              "title": "Permanente Aufenthaltserlaubnis",
+              "description": "Professionelle Bearbeitung Ihres Aufenthaltsgenehmigungsantrags.",
+              "icon": "FileText"
+            },
+            {
+              "title": "Paraguayischer Personalausweis (Cédula)",
+              "description": "Vollständige Unterstützung bei der Beantragung Ihres lokalen Identifikationsdokuments.",
+              "icon": "CreditCard"
+            },
+            {
+              "title": "Apostille & Übersetzung",
+              "description": "Wir kümmern uns um die beglaubigte Übersetzung und rechtliche Prüfung aller erforderlichen ausländischen Dokumente.",
+              "icon": "Globe"
+            }
+          ]
+        },
+        {
+          "id": "banking-tax",
+          "title": "Bankwesen & Steuer",
+          "subtitle": "Aufbau Ihres finanziellen Fußabdrucks im Land.",
+          "items": [
+            {
+              "title": "Kontoeröffnung",
+              "description": "Beratung und Unterstützung bei der erfolgreichen Eröffnung lokaler Bankkonten.",
+              "icon": "Building"
+            },
+            {
+              "title": "Steuerregistrierung (RUC)",
+              "description": "Einrichtung Ihrer paraguayischen Steuernummer für private oder geschäftliche Nutzung.",
+              "icon": "Calculator"
+            }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "title": "Wohnimmobilien",
+          "subtitle": "Den richtigen Ort zum Zuhause finden, ob für einen Monat oder ein Leben lang.",
+          "items": [
+            {
+              "title": "Miete von Wohnungen und Häusern",
+              "description": "Hilfe bei der Navigation auf dem lokalen Markt, um hochwertige Mietobjekte zu finden.",
+              "icon": "Home"
+            },
+            {
+              "title": "Immobilienkauf",
+              "description": "Fachkundige Unterstützung bei der Suche und dem Kauf von Wohnimmobilien.",
+              "icon": "Search"
+            },
+            {
+              "title": "Due Diligence",
+              "description": "Wir prüfen Eigentumstitel und rechtlichen Status jeder Immobilie, um Ihre Investition zu sichern.",
+              "icon": "Shield"
+            }
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit zu starten?",
+      "subtitle": "Vereinbaren Sie eine kostenlose 30-minütige Beratung, um Ihre spezifischen Bedürfnisse zu besprechen.",
+      "buttonText": "Kostenlose Beratung buchen",
+      "buttonHref": "/s/de/nexa-paraguay/contacto"
     }
   }
 }
