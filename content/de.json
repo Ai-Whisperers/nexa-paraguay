@@ -287,35 +287,35 @@
       "steps": [
         {
           "number": 1,
-          "title": "Erstgespräch",
-          "description": "Wir klären Ihre Situation, Ziele und das passende Programm.",
-          "icon": "MessageCircle",
+          "title": "Wählen Sie Ihre Dienstleistungen",
+          "description": "Wählen Sie die spezifische Unterstützung, die Sie benötigen. Wir erstellen eine personalisierte Checkliste der Dokumente aus Ihrem Heimatland.",
+          "icon": "ClipboardCheck",
           "image": {
             "$img": "process.consultation"
           }
         },
         {
           "number": 2,
-          "title": "Dokumentenprüfung",
-          "description": "Unser Team prüft alles vor Ihrer Reise. Sie reisen erst, wenn alles vorliegt.",
-          "icon": "FileCheck",
+          "title": "Parallele Bearbeitung",
+          "description": "Während Sie zu Hause Ihre Dokumente zusammenstellen, beginnen wir vor Ort mit der Arbeit. Wir bereiten alle lokalen Anträge vor und kümmern uns um Übersetzungen oder Legalisierungen.",
+          "icon": "Layers",
           "image": {
             "$img": "process.documents"
           }
         },
         {
           "number": 3,
-          "title": "Operativer Tag",
-          "description": "An einem Tag erledigen wir alle Präsenz-Schritte.",
-          "icon": "MapPin",
+          "title": "Der Operationelle Tag",
+          "description": "Mit Ihren Dokumenten in der Hand reisen Sie nach Paraguay. Wir begleiten Sie zu allen persönlichen Terminen — Migration, Polizei und Identifikation — an einem einzigen Tag.",
+          "icon": "CalendarCheck",
           "image": {
             "$img": "process.arrival"
           }
         },
         {
           "number": 4,
-          "title": "Gesellschaft und Bank",
-          "description": "Wir gründen Ihre Gesellschaft und koordinieren die Kontoeröffnung.",
+          "title": "Cédula & Finanzielle Aktivierung",
+          "description": "Sobald Ihr paraguayischer Personalausweis (Cédula) ausgestellt ist, aktivieren wir Ihre finanzielle Infrastruktur. Wir kümmern uns um Ihre RUC-Registrierung und Bankkonten.",
           "icon": "Building",
           "image": {
             "$img": "process.banking"
@@ -323,9 +323,9 @@
         },
         {
           "number": 5,
-          "title": "Übergabe und Nachbetreuung",
-          "description": "Sie erhalten die finalen Dokumente und wir schließen das Programm ab.",
-          "icon": "CheckCircle",
+          "title": "Niederlassung & Lebensstil",
+          "description": "Mit Ihrer rechtlichen und finanziellen Grundlage helfen wir Ihnen, sich niederzulassen — inklusive der Suche nach der perfekten Wohnung oder einem zuverlässigen Fahrzeug.",
+          "icon": "Home",
           "image": {
             "$img": "process.completion"
           }
@@ -503,6 +503,73 @@
           "title": "Aktive Gemeinschaft",
           "description": "Über 200 niederländische und belgische Familien sind bereits mit uns umgezogen.",
           "icon": "Users"
+        }
+      ]
+    },
+    "services": {
+      "eyebrow": "Unsere Dienstleistungen",
+      "title": "Professionelle Lösungen für jeden Schritt Ihres Umzugs",
+      "groups": [
+        {
+          "id": "residency-legal",
+          "title": "Aufenthalt & Rechtsdokumente",
+          "subtitle": "Die ersten wesentlichen Schritte für Ihr Leben in Paraguay.",
+          "items": [
+            {
+              "title": "Permanente Aufenthaltserlaubnis",
+              "description": "Professionelle Bearbeitung Ihres Aufenthaltsgenehmigungsantrags.",
+              "icon": "FileText"
+            },
+            {
+              "title": "Paraguayischer Personalausweis (Cédula)",
+              "description": "Vollständige Unterstützung bei der Beantragung Ihres lokalen Identifikationsdokuments.",
+              "icon": "CreditCard"
+            },
+            {
+              "title": "Apostille & Übersetzung",
+              "description": "Wir kümmern uns um die beglaubigte Übersetzung und rechtliche Prüfung aller erforderlichen ausländischen Dokumente.",
+              "icon": "Globe"
+            }
+          ]
+        },
+        {
+          "id": "banking-tax",
+          "title": "Bankwesen & Steuer",
+          "subtitle": "Aufbau Ihres finanziellen Fußabdrucks im Land.",
+          "items": [
+            {
+              "title": "Kontoeröffnung",
+              "description": "Beratung und Unterstützung bei der erfolgreichen Eröffnung lokaler Bankkonten.",
+              "icon": "Building"
+            },
+            {
+              "title": "Steuerregistrierung (RUC)",
+              "description": "Einrichtung Ihrer paraguayischen Steuernummer für private oder geschäftliche Nutzung.",
+              "icon": "Calculator"
+            }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "title": "Wohnimmobilien",
+          "subtitle": "Den richtigen Ort zum Zuhause finden, ob für einen Monat oder ein Leben lang.",
+          "items": [
+            {
+              "title": "Miete von Wohnungen und Häusern",
+              "description": "Hilfe bei der Navigation auf dem lokalen Markt, um hochwertige Mietobjekte zu finden.",
+              "icon": "Home"
+            },
+            {
+              "title": "Immobilienkauf",
+              "description": "Fachkundige Unterstützung bei der Suche und dem Kauf von Wohnimmobilien.",
+              "icon": "Search"
+            },
+            {
+              "title": "Due Diligence",
+              "description": "Wir prüfen Eigentumstitel und rechtlichen Status jeder Immobilie, um Ihre Investition zu sichern.",
+              "icon": "Shield"
+            }
+          ]
         }
       ]
     }
@@ -799,65 +866,65 @@
       "description": "Unser 5-Schritte-Prozess: vom Erstgespräch bis zur Übergabe. Gesamt 8–12 Wochen."
     },
     "hero": {
-      "headline": "Ein klarer Prozess, Schritt für Schritt",
-      "subheadline": "Keine Improvisation. Keine Überraschungen."
+      "headline": "Der Ideale Weg zum Aufenthalt",
+      "subheadline": "Eine optimierte Zusammenarbeit zwischen Ihrem Heimatland und Ihrer neuen Heimat in Paraguay."
     },
     "process": {
       "eyebrow": "So funktioniert's",
-      "title": "Ihre 5 Schritte mit Nexa",
+      "title": "Ihr Weg zu einem neuen Leben in Paraguay",
       "totalDuration": "Gesamtdauer: 8–12 Wochen.",
       "ctaLabel": "Prozess starten",
       "ctaHref": "/s/de/nexa-paraguay/contacto",
       "steps": [
         {
           "number": 1,
-          "title": "Erstgespräch",
-          "description": "Wir klären Ihre Situation, Ziele und das passende Programm.",
-          "icon": "MessageCircle",
+          "title": "Wählen Sie Ihre Dienstleistungen",
+          "description": "Wählen Sie die spezifische Unterstützung, die Sie benötigen. Wir erstellen eine personalisierte Checkliste der Dokumente aus Ihrem Heimatland.",
+          "icon": "ClipboardCheck",
           "image": {
             "$img": "process.consultation"
           },
-          "duration": "Woche 1"
+          "duration": "Week 1"
         },
         {
           "number": 2,
-          "title": "Dokumentenprüfung",
-          "description": "Unser Team prüft alles vor Ihrer Reise. Sie reisen erst, wenn alles vorliegt.",
-          "icon": "FileCheck",
+          "title": "Parallele Bearbeitung",
+          "description": "Während Sie zu Hause Ihre Dokumente zusammenstellen, beginnen wir vor Ort mit der Arbeit. Wir bereiten alle lokalen Anträge vor und kümmern uns um Übersetzungen oder Legalisierungen.",
+          "icon": "Layers",
           "image": {
             "$img": "process.documents"
           },
-          "duration": "Wochen 2–5"
+          "duration": "Weeks 2–5"
         },
         {
           "number": 3,
-          "title": "Operativer Tag",
-          "description": "An einem Tag erledigen wir alle Präsenz-Schritte.",
-          "icon": "MapPin",
+          "title": "Der Operationelle Tag",
+          "description": "Mit Ihren Dokumenten in der Hand reisen Sie nach Paraguay. Wir begleiten Sie zu allen persönlichen Terminen — Migration, Polizei und Identifikation — an einem einzigen Tag.",
+          "icon": "CalendarCheck",
           "image": {
             "$img": "process.arrival"
           },
-          "duration": "Woche 6"
+          "duration": "Week 6"
         },
         {
           "number": 4,
-          "title": "Gesellschaft und Bank",
-          "description": "Wir gründen Ihre Gesellschaft und koordinieren die Kontoeröffnung.",
+          "title": "Cédula & Finanzielle Aktivierung",
+          "description": "Sobald Ihr paraguayischer Personalausweis (Cédula) ausgestellt ist, aktivieren wir Ihre finanzielle Infrastruktur. Wir kümmern uns um Ihre RUC-Registrierung und Bankkonten.",
           "icon": "Building",
           "image": {
             "$img": "process.banking"
           },
-          "duration": "Wochen 7–9"
+          "duration": "Weeks 7–9"
         },
         {
           "number": 5,
-          "title": "Übergabe und Nachbetreuung",
-          "description": "Sie erhalten die finalen Dokumente und wir schließen das Programm ab.",
-          "icon": "CheckCircle",
+          "title": "Niederlassung & Lebensstil",
+          "description": "Mit Ihrer rechtlichen und finanziellen Grundlage helfen wir Ihnen, sich niederzulassen — inklusive der Suche nach der perfekten Wohnung oder einem zuverlässigen Fahrzeug.",
+          "icon": "Home",
           "image": {
             "$img": "process.completion"
           },
-          "duration": "Wochen 10–12"
+          "duration": "Weeks 10–12"
         }
       ]
     },
@@ -912,8 +979,8 @@
       "description": "Ein multidisziplinäres Fachteam: Anwälte, Steuerberater, Notare und Finanzberater."
     },
     "hero": {
-      "headline": "Über Nexa Paraguay",
-      "subheadline": "Keine Verwaltungsagentur. Ein integriertes System."
+      "headline": "Erfahrung wurde zur Expertise",
+      "subheadline": "Nexa Paraguay wurde mit einer einzigen Mission gegründet: den Umzugsprozess von einer bürokratischen Hürde in eine einladende Erfahrung zu verwandeln."
     },
     "differentiators": {
       "eyebrow": "Unser Unterschied",
@@ -1030,6 +1097,15 @@
         }
       ],
       "lightbox": true
+    },
+    "story": {
+      "title": "Unsere Geschichte",
+      "eyebrow": "Erfahrung wurde zur Expertise",
+      "paragraphs": [
+        "Wir verstehen genau, wie überwältigend der Papierkram sein kann, weil wir es selbst erlebt haben.",
+        "Unsere Gründerin ist mit einem Niederländer verheiratet und hat die Komplexität eines internationalen Umzugs und der Dokumentation persönlich gemeistert. Diese Erfahrung aus erster Hand zeigte, dass ein Dienst gebraucht wird, der nicht nur Papier verarbeitet, sondern Menschen wirklich dabei unterstützt, ein schönes Leben in Paraguay aufzubauen.",
+        "Wir glauben, dass Ihr Umzug mehr sein sollte als nur 'eine Genehmigung zu bekommen' — es sollte der Beginn Ihres besten Lebens hier sein. Durch die Kombination unseres tiefen Verständnisses des paraguayischen Rechts mit einer persönlichen Note helfen wir Ihnen, den Aufwand zu überspringen und direkt zu genießen, was dieses wunderschöne Land zu bieten hat."
+      ]
     }
   },
   "faqPage": {

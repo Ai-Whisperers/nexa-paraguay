@@ -20,6 +20,14 @@
       "content": "programasPage.programs"
     },
     {
+      "id": "services",
+      "variant": "grouped-cards",
+      "content": "home.services",
+      "styling": {
+        "padding": "section"
+      }
+    },
+    {
       "id": "testimonials",
       "variant": "grid",
       "content": "programasPage.testimonials"

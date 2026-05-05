@@ -34,6 +34,14 @@
       }
     },
     {
+      "id": "services",
+      "variant": "grouped-cards",
+      "content": "home.services",
+      "styling": {
+        "padding": "section"
+      }
+    },
+    {
       "id": "tax-savings-calculator",
       "variant": "default",
       "content": "home.taxCalculator",

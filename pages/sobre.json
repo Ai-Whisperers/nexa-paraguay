@@ -14,6 +14,11 @@
       "content": "aboutPage.hero"
     },
     {
+      "id": "story",
+      "variant": "narrative",
+      "content": "aboutPage.story"
+    },
+    {
       "id": "why-destination",
       "variant": "three-col",
       "content": "aboutPage.differentiators"

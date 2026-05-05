@@ -284,35 +284,35 @@
       "steps": [
         {
           "number": 1,
-          "title": "Initial consultation",
-          "description": "We review your situation, goals, and the right program.",
-          "icon": "MessageCircle",
+          "title": "Select Your Services",
+          "description": "Choose the specific support you need. We create a personalized checklist of documents you need to gather in your home country, ensuring you don't waste time on unnecessary paperwork.",
+          "icon": "ClipboardCheck",
           "image": {
             "$img": "process.consultation"
           }
         },
         {
           "number": 2,
-          "title": "Document validation",
-          "description": "Our team verifies everything before you travel. You only travel when ready.",
-          "icon": "FileCheck",
+          "title": "Parallel Processing",
+          "description": "While you arrange your documents at home, we begin the work on the ground. We prepare all local filings and arrange for any required Paraguayan translations or legalizations so everything is ready for your arrival.",
+          "icon": "Layers",
           "image": {
             "$img": "process.documents"
           }
         },
         {
           "number": 3,
-          "title": "Operational day",
-          "description": "All in-person steps executed in a single day.",
-          "icon": "MapPin",
+          "title": "The Operational Day",
+          "description": "With your documents in hand, you fly to Paraguay. We escort you through all in-person appointments — migration, police records, and identification — consolidating the entire legal process into one efficient day.",
+          "icon": "CalendarCheck",
           "image": {
             "$img": "process.arrival"
           }
         },
         {
           "number": 4,
-          "title": "Entity setup & banking",
-          "description": "We incorporate your company and coordinate the bank opening.",
+          "title": "Cédula & Financial Activation",
+          "description": "Once your Paraguayan ID (Cédula) is issued, we activate your financial infrastructure. We handle your RUC (Tax ID) registration and facilitate the opening of your local bank accounts.",
           "icon": "Building",
           "image": {
             "$img": "process.banking"
@@ -320,9 +320,9 @@
         },
         {
           "number": 5,
-          "title": "Delivery and follow-up",
-          "description": "You receive final documents and we close the program.",
-          "icon": "CheckCircle",
+          "title": "Settlement & Lifestyle",
+          "description": "With your legal and financial foundation in place, we help you settle in. This includes finding the perfect house or apartment to rent or buy and sourcing a reliable vehicle.",
+          "icon": "Home",
           "image": {
             "$img": "process.completion"
           }
@@ -480,6 +480,73 @@
         "viewProgram": "See program details",
         "restart": "Start over"
       }
+    },
+    "services": {
+      "eyebrow": "Our Services",
+      "title": "Professional solutions for every step of your relocation",
+      "groups": [
+        {
+          "id": "residency-legal",
+          "title": "Residency & Legal Documents",
+          "subtitle": "The essential first steps for your life in Paraguay.",
+          "items": [
+            {
+              "title": "Permanent Residency",
+              "description": "Professional management of your residency permit application.",
+              "icon": "FileText"
+            },
+            {
+              "title": "Paraguayan ID (Cédula)",
+              "description": "Full assistance in obtaining your local identification card.",
+              "icon": "CreditCard"
+            },
+            {
+              "title": "Apostille & Translation",
+              "description": "We handle the certified translation and legal verification of all necessary foreign documents.",
+              "icon": "Globe"
+            }
+          ]
+        },
+        {
+          "id": "banking-tax",
+          "title": "Banking & Tax Setup",
+          "subtitle": "Establishing your financial footprint in the country.",
+          "items": [
+            {
+              "title": "Bank Account Opening",
+              "description": "Guidance and support to successfully open local bank accounts.",
+              "icon": "Building"
+            },
+            {
+              "title": "Tax Registration (RUC)",
+              "description": "Setup of your Paraguayan taxpayer ID for personal or business use.",
+              "icon": "Calculator"
+            }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "title": "Residential Real Estate",
+          "subtitle": "Finding the right place to call home, whether you are staying for a month or a lifetime.",
+          "items": [
+            {
+              "title": "Apartment & House Rentals",
+              "description": "Help navigating the local market to find high-quality rentals.",
+              "icon": "Home"
+            },
+            {
+              "title": "Property Purchases",
+              "description": "Expert assistance in finding and buying residential property.",
+              "icon": "Search"
+            },
+            {
+              "title": "Due Diligence",
+              "description": "We verify titles and legal standing for any property you intend to rent or buy to ensure your investment is safe.",
+              "icon": "Shield"
+            }
+          ]
+        }
+      ]
     },
     "beneluxDesk": {
       "title": "Dedicated Benelux Desk",
@@ -780,21 +847,21 @@
       "description": "Our 5-step process: from first consultation to final delivery. 8–12 weeks total."
     },
     "hero": {
-      "headline": "A clear process, step by step",
-      "subheadline": "No improvisation. No surprises."
+      "headline": "The Ideal Path to Residency",
+      "subheadline": "A streamlined collaboration between your home country and your new home in Paraguay."
     },
     "process": {
       "eyebrow": "How it works",
-      "title": "Your 5 steps with Nexa",
+      "title": "Your path to a new life in Paraguay",
       "totalDuration": "Typical total: 8–12 weeks.",
       "ctaLabel": "Start my process",
       "ctaHref": "/s/en/nexa-paraguay/contacto",
       "steps": [
         {
           "number": 1,
-          "title": "Initial consultation",
-          "description": "We review your situation, goals, and the right program.",
-          "icon": "MessageCircle",
+          "title": "Select Your Services",
+          "description": "Choose the specific support you need. We create a personalized checklist of documents you need to gather in your home country, ensuring you don't waste time on unnecessary paperwork.",
+          "icon": "ClipboardCheck",
           "image": {
             "$img": "process.consultation"
           },
@@ -802,9 +869,9 @@
         },
         {
           "number": 2,
-          "title": "Document validation",
-          "description": "Our team verifies everything before you travel. You only travel when ready.",
-          "icon": "FileCheck",
+          "title": "Parallel Processing",
+          "description": "While you arrange your documents at home, we begin the work on the ground. We prepare all local filings and arrange for any required Paraguayan translations or legalizations so everything is ready for your arrival.",
+          "icon": "Layers",
           "image": {
             "$img": "process.documents"
           },
@@ -812,9 +879,9 @@
         },
         {
           "number": 3,
-          "title": "Operational day",
-          "description": "All in-person steps executed in a single day.",
-          "icon": "MapPin",
+          "title": "The Operational Day",
+          "description": "With your documents in hand, you fly to Paraguay. We escort you through all in-person appointments — migration, police records, and identification — consolidating the entire legal process into one efficient day.",
+          "icon": "CalendarCheck",
           "image": {
             "$img": "process.arrival"
           },
@@ -822,8 +889,8 @@
         },
         {
           "number": 4,
-          "title": "Entity setup & banking",
-          "description": "We incorporate your company and coordinate the bank opening.",
+          "title": "Cédula & Financial Activation",
+          "description": "Once your Paraguayan ID (Cédula) is issued, we activate your financial infrastructure. We handle your RUC (Tax ID) registration and facilitate the opening of your local bank accounts.",
           "icon": "Building",
           "image": {
             "$img": "process.banking"
@@ -832,9 +899,9 @@
         },
         {
           "number": 5,
-          "title": "Delivery and follow-up",
-          "description": "You receive final documents and we close the program.",
-          "icon": "CheckCircle",
+          "title": "Settlement & Lifestyle",
+          "description": "With your legal and financial foundation in place, we help you settle in. This includes finding the perfect house or apartment to rent or buy and sourcing a reliable vehicle.",
+          "icon": "Home",
           "image": {
             "$img": "process.completion"
           },
@@ -893,8 +960,17 @@
       "description": "A multidisciplinary technical team: lawyers, accountants, notaries, financial advisors."
     },
     "hero": {
-      "headline": "About Nexa Paraguay",
-      "subheadline": "Not an administrative agency. An integrated system."
+      "headline": "Experience Turned into Expertise",
+      "subheadline": "Nexa Paraguay was founded with a single mission: to transform the relocation process from a bureaucratic hurdle into a welcoming experience."
+    },
+    "story": {
+      "title": "Our Story",
+      "eyebrow": "Experience Turned into Expertise",
+      "paragraphs": [
+        "We understand exactly how overwhelming the paperwork can feel because we've lived it ourselves.",
+        "Our founder is married to a Dutch national and personally navigated the complexities of international relocation and documentation. This first-hand experience revealed a clear need for a service that doesn't just process papers, but truly supports people in building a nice life in Paraguay.",
+        "We believe your move should be more than just \"getting a permit\" — it should be the beginning of your best life here. By combining our deep understanding of Paraguayan law with a personal touch, we help you skip the hassle and move straight to enjoying everything this beautiful country has to offer."
+      ]
     },
     "differentiators": {
       "eyebrow": "Our difference",

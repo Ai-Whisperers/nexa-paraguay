@@ -284,35 +284,35 @@
       "steps": [
         {
           "number": 1,
-          "title": "Eerste consult",
-          "description": "We bespreken uw situatie, doelen en het passende programma.",
-          "icon": "MessageCircle",
+          "title": "Kies Je Diensten",
+          "description": "Kies de specifieke ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist van documenten die je in je thuisland moet verzamelen.",
+          "icon": "ClipboardCheck",
           "image": {
             "$img": "process.consultation"
           }
         },
         {
           "number": 2,
-          "title": "Documentvalidatie",
-          "description": "Alles wordt vooraf door ons team geverifieerd. U reist pas als alles klopt.",
-          "icon": "FileCheck",
+          "title": "Parallelle Verwerking",
+          "description": "Terwijl jij thuis je documenten regelt, beginnen wij met het werk ter plaatse. We bereiden alle lokale aanvragen voor en regelen de benodigde vertalingen of legalisaties.",
+          "icon": "Layers",
           "image": {
             "$img": "process.documents"
           }
         },
         {
           "number": 3,
-          "title": "Operationele dag",
-          "description": "In één dag voeren we alle persoonlijke afhandelingen uit.",
-          "icon": "MapPin",
+          "title": "De Operationele Dag",
+          "description": "Met je documenten in de hand reis je naar Paraguay. We begeleiden je bij alle persoonlijke afspraken — migratie, politiegegevens en identificatie — in één efficiënte dag.",
+          "icon": "CalendarCheck",
           "image": {
             "$img": "process.arrival"
           }
         },
         {
           "number": 4,
-          "title": "Vennootschap en bank",
-          "description": "Wij richten uw vennootschap op en coördineren de bankopening.",
+          "title": "Cédula & Financiële Activering",
+          "description": "Zodra je Paraguayaanse ID (Cédula) is afgegeven, activeren we je financiële infrastructuur. We regelen je RUC-registratie en openen je lokale bankrekeningen.",
           "icon": "Building",
           "image": {
             "$img": "process.banking"
@@ -320,9 +320,9 @@
         },
         {
           "number": 5,
-          "title": "Oplevering en nazorg",
-          "description": "U ontvangt de definitieve documenten en we sluiten het programma af.",
-          "icon": "CheckCircle",
+          "title": "Vestiging & Levensstijl",
+          "description": "Met je juridische en financiële basis op orde, helpen we je settelen. Dit omvat het vinden van het perfecte huis of appartement om te huren of kopen.",
+          "icon": "Home",
           "image": {
             "$img": "process.completion"
           }
@@ -500,6 +500,73 @@
           "title": "Actieve Gemeenschap",
           "description": "Meer dan 200 Nederlandse en Belgische families zijn u al voorgegaan.",
           "icon": "Users"
+        }
+      ]
+    },
+    "services": {
+      "eyebrow": "Onze Diensten",
+      "title": "Professionele oplossingen voor elke stap van je verhuizing",
+      "groups": [
+        {
+          "id": "residency-legal",
+          "title": "Verblijf & Juridische Documenten",
+          "subtitle": "De essentiële eerste stappen voor je leven in Paraguay.",
+          "items": [
+            {
+              "title": "Permanente Verblijfsvergunning",
+              "description": "Professionele begeleiding bij je aanvraag voor een verblijfsvergunning.",
+              "icon": "FileText"
+            },
+            {
+              "title": "Paraguayaans Identiteitsbewijs (Cédula)",
+              "description": "Volledige ondersteuning bij het verkrijgen van je lokale identiteitskaart.",
+              "icon": "CreditCard"
+            },
+            {
+              "title": "Apostille & Vertaling",
+              "description": "Wij verzorgen de gecertificeerde vertaling en juridische verificatie van alle benodigde buitenlandse documenten.",
+              "icon": "Globe"
+            }
+          ]
+        },
+        {
+          "id": "banking-tax",
+          "title": "Bankieren & Belasting",
+          "subtitle": "Het opzetten van je financiële voetafdruk in het land.",
+          "items": [
+            {
+              "title": "Bankrekening Openen",
+              "description": "Begeleiding en ondersteuning bij het succesvol openen van lokale bankrekeningen.",
+              "icon": "Building"
+            },
+            {
+              "title": "Belastingregistratie (RUC)",
+              "description": "Registratie van je Paraguayaanse belastingnummer voor persoonlijk of zakelijk gebruik.",
+              "icon": "Calculator"
+            }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "title": "Woonvastgoed",
+          "subtitle": "De juiste plek vinden om thuis te noemen, of je nu een maand of een leven lang blijft.",
+          "items": [
+            {
+              "title": "Huur van Appartementen en Huizen",
+              "description": "Hulp bij het navigeren van de lokale markt om kwalitatief hoogwaardige huurwoningen te vinden.",
+              "icon": "Home"
+            },
+            {
+              "title": "Aankoop van Onroerend Goed",
+              "description": "Deskundige hulp bij het vinden en kopen van residentieel vastgoed.",
+              "icon": "Search"
+            },
+            {
+              "title": "Due Diligence",
+              "description": "Wij verifiëren eigendomstitels en juridische status voor elk pand dat je wilt huren of kopen.",
+              "icon": "Shield"
+            }
+          ]
         }
       ]
     }
@@ -796,21 +863,21 @@
       "description": "Ons proces in 5 stappen: van eerste consult tot oplevering. Totaal 8–12 weken."
     },
     "hero": {
-      "headline": "Een helder proces, stap voor stap",
-      "subheadline": "Geen improvisatie. Geen verrassingen."
+      "headline": "Het Ideale Pad naar Verblijf",
+      "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en je nieuwe thuis in Paraguay."
     },
     "process": {
       "eyebrow": "Hoe het werkt",
-      "title": "Uw 5 stappen met Nexa",
+      "title": "Jouw pad naar een nieuw leven in Paraguay",
       "totalDuration": "Verwachte totale doorlooptijd: 8–12 weken.",
       "ctaLabel": "Start mijn traject",
       "ctaHref": "/s/nl/nexa-paraguay/contacto",
       "steps": [
         {
           "number": 1,
-          "title": "Eerste consult",
-          "description": "We bespreken uw situatie, doelen en het passende programma.",
-          "icon": "MessageCircle",
+          "title": "Kies Je Diensten",
+          "description": "Kies de specifieke ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist van documenten die je in je thuisland moet verzamelen.",
+          "icon": "ClipboardCheck",
           "image": {
             "$img": "process.consultation"
           },
@@ -818,19 +885,19 @@
         },
         {
           "number": 2,
-          "title": "Documentvalidatie",
-          "description": "Alles wordt vooraf door ons team geverifieerd. U reist pas als alles klopt.",
-          "icon": "FileCheck",
+          "title": "Parallelle Verwerking",
+          "description": "Terwijl jij thuis je documenten regelt, beginnen wij met het werk ter plaatse. We bereiden alle lokale aanvragen voor en regelen de benodigde vertalingen of legalisaties.",
+          "icon": "Layers",
           "image": {
             "$img": "process.documents"
           },
-          "duration": "Weken 2–5"
+          "duration": "Weeks 2–5"
         },
         {
           "number": 3,
-          "title": "Operationele dag",
-          "description": "In één dag voeren we alle persoonlijke afhandelingen uit.",
-          "icon": "MapPin",
+          "title": "De Operationele Dag",
+          "description": "Met je documenten in de hand reis je naar Paraguay. We begeleiden je bij alle persoonlijke afspraken — migratie, politiegegevens en identificatie — in één efficiënte dag.",
+          "icon": "CalendarCheck",
           "image": {
             "$img": "process.arrival"
           },
@@ -838,23 +905,23 @@
         },
         {
           "number": 4,
-          "title": "Vennootschap en bank",
-          "description": "Wij richten uw vennootschap op en coördineren de bankopening.",
+          "title": "Cédula & Financiële Activering",
+          "description": "Zodra je Paraguayaanse ID (Cédula) is afgegeven, activeren we je financiële infrastructuur. We regelen je RUC-registratie en openen je lokale bankrekeningen.",
           "icon": "Building",
           "image": {
             "$img": "process.banking"
           },
-          "duration": "Weken 7–9"
+          "duration": "Weeks 7–9"
         },
         {
           "number": 5,
-          "title": "Oplevering en nazorg",
-          "description": "U ontvangt de definitieve documenten en we sluiten het programma af.",
-          "icon": "CheckCircle",
+          "title": "Vestiging & Levensstijl",
+          "description": "Met je juridische en financiële basis op orde, helpen we je settelen. Dit omvat het vinden van het perfecte huis of appartement om te huren of kopen.",
+          "icon": "Home",
           "image": {
             "$img": "process.completion"
           },
-          "duration": "Weken 10–12"
+          "duration": "Weeks 10–12"
         }
       ]
     },
@@ -909,8 +976,8 @@
       "description": "Een multidisciplinair technisch team: advocaten, accountants, notarissen en financieel adviseurs."
     },
     "hero": {
-      "headline": "Over Nexa Paraguay",
-      "subheadline": "Geen administratief kantoor. Een integraal systeem."
+      "headline": "Ervaring omgezet in Expertise",
+      "subheadline": "Nexa Paraguay is opgericht met één missie: het verhuisproces transformeren van een bureaucratische hindernis naar een hartelijke ervaring."
     },
     "differentiators": {
       "eyebrow": "Ons verschil",
@@ -1027,6 +1094,15 @@
         }
       ],
       "lightbox": true
+    },
+    "story": {
+      "title": "Ons Verhaal",
+      "eyebrow": "Ervaring omgezet in Expertise",
+      "paragraphs": [
+        "We weten precies hoe overweldigend het papierwerk kan zijn, omdat we het zelf hebben meegemaakt.",
+        "Onze oprichter is getrouwd met een Nederlander en heeft persoonlijk de complexiteit van internationale verhuizing en documentatie doorlopen. Deze ervaring uit eerste hand maakte duidelijk dat er behoefte is aan een dienst die niet alleen papieren verwerkt, maar mensen echt ondersteunt bij het opbouwen van een fijn leven in Paraguay.",
+        "Wij geloven dat je verhuizing meer moet zijn dan alleen 'een vergunning krijgen' — het moet het begin zijn van je beste leven hier. Door onze diepgaande kennis van de Paraguayaanse wet te combineren met een persoonlijke aanpak, helpen we je de rompslomp over te slaan en direct te genieten van alles wat dit prachtige land te bieden heeft."
+      ]
     }
   },
   "faqPage": {
