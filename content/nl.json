@@ -321,7 +321,7 @@
         {
           "number": 5,
           "title": "Vestiging & Levensstijl",
-          "description": "Met je juridische en financiële basis op orde, helpen we je settelen. Dit omvat het vinden van het perfecte huis of appartement om te huren of kopen.",
+          "description": "Met je juridische en financiële basis op orde, helpen we je settelen. Dit omvat het vinden van het perfecte huis of appartement om te huren of kopen, en het vinden van een betrouwbaar voertuig.",
           "icon": "Home",
           "image": {
             "$img": "process.completion"
@@ -916,7 +916,7 @@
         {
           "number": 5,
           "title": "Vestiging & Levensstijl",
-          "description": "Met je juridische en financiële basis op orde, helpen we je settelen. Dit omvat het vinden van het perfecte huis of appartement om te huren of kopen.",
+          "description": "Met je juridische en financiële basis op orde, helpen we je settelen. Dit omvat het vinden van het perfecte huis of appartement om te huren of kopen, en het vinden van een betrouwbaar voertuig.",
           "icon": "Home",
           "image": {
             "$img": "process.completion"
@@ -1198,7 +1198,7 @@
     "booking": {
       "title": "Plan uw consult",
       "subtitle": "Kies een moment dat u schikt.",
-      "bookingUrl": "#",
+      "bookingUrl": "https://calendly.com/nexaparaguay/consulta",
       "provider": "calendly",
       "ctaLabel": "Open agenda",
       "fallbackWhatsapp": "595982515138",

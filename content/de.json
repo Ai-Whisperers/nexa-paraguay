@@ -324,7 +324,7 @@
         {
           "number": 5,
           "title": "Niederlassung & Lebensstil",
-          "description": "Mit Ihrer rechtlichen und finanziellen Grundlage helfen wir Ihnen, sich niederzulassen — inklusive der Suche nach der perfekten Wohnung oder einem zuverlässigen Fahrzeug.",
+          "description": "Mit Ihrer rechtlichen und finanziellen Grundlage helfen wir Ihnen, sich niederzulassen. Dies umfasst die Suche nach der perfekten Wohnung oder dem perfekten Haus zur Miete oder zum Kauf sowie die Beschaffung eines zuverlässigen Fahrzeugs.",
           "icon": "Home",
           "image": {
             "$img": "process.completion"
@@ -919,7 +919,7 @@
         {
           "number": 5,
           "title": "Niederlassung & Lebensstil",
-          "description": "Mit Ihrer rechtlichen und finanziellen Grundlage helfen wir Ihnen, sich niederzulassen — inklusive der Suche nach der perfekten Wohnung oder einem zuverlässigen Fahrzeug.",
+          "description": "Mit Ihrer rechtlichen und finanziellen Grundlage helfen wir Ihnen, sich niederzulassen. Dies umfasst die Suche nach der perfekten Wohnung oder dem perfekten Haus zur Miete oder zum Kauf sowie die Beschaffung eines zuverlässigen Fahrzeugs.",
           "icon": "Home",
           "image": {
             "$img": "process.completion"
@@ -1201,7 +1201,7 @@
     "booking": {
       "title": "Gespräch buchen",
       "subtitle": "Wählen Sie einen passenden Termin.",
-      "bookingUrl": "#",
+      "bookingUrl": "https://calendly.com/nexaparaguay/consulta",
       "provider": "calendly",
       "ctaLabel": "Kalender öffnen",
       "fallbackWhatsapp": "595982515138",

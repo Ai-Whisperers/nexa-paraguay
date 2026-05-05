@@ -1182,7 +1182,7 @@
     "booking": {
       "title": "Book your consultation",
       "subtitle": "Pick a time that works for you.",
-      "bookingUrl": "#",
+      "bookingUrl": "https://calendly.com/nexaparaguay/consulta",
       "provider": "calendly",
       "ctaLabel": "Open calendar",
       "fallbackWhatsapp": "595982515138",

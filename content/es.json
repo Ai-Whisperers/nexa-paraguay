@@ -1197,7 +1197,7 @@
     "booking": {
       "title": "Agende su consulta",
       "subtitle": "Elija el horario que mejor le convenga.",
-      "bookingUrl": "#",
+      "bookingUrl": "https://calendly.com/nexaparaguay/consulta",
       "provider": "calendly",
       "ctaLabel": "Abrir calendario",
       "fallbackWhatsapp": "595982515138",
