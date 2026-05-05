@@ -101,7 +101,7 @@ Mailchimp API Key:      ___________
 
 **Status: ❌ Link returns 404**
 
-Your Calendly account needs to be created and the event type published.
+Current booking link (returns 404): `https://calendly.com/nexaparaguay/consulta`
 
 ### Step-by-step
 
@@ -185,7 +185,7 @@ LinkedIn: https://www.linkedin.com/company/_________
 Facebook: https://facebook.com/_________  (or "No Facebook page")
 Instagram: ✅ Already set
 
---- CALENDLY ---
+--- CALENDLY (current link returns 404 — needs setup) ---
 Booking URL:  https://calendly.com/_________________
 Account email: _________________
 

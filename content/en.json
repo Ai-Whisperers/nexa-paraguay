@@ -1245,7 +1245,9 @@
       "embedStyle": {
         "minWidth": "320px",
         "height": "700px"
-      }
+      },
+      "fallbackText": "Currently, booking via our online calendar is being set up. In the meantime, please contact us directly via WhatsApp or email.",
+      "_note": "Calendly link returns 404 — client needs to set up account. Remove this note once working."
     },
     "contact": {
       "title": "Contact details",

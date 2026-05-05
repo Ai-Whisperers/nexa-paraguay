@@ -1264,7 +1264,9 @@
       "embedStyle": {
         "minWidth": "320px",
         "height": "700px"
-      }
+      },
+      "fallbackText": "Die Online-Terminbuchung wird derzeit eingerichtet. Kontaktieren Sie uns in der Zwischenzeit bitte direkt per WhatsApp oder E-Mail.",
+      "_note": "Calendly-Link gibt 404 — Kunde muss Konto einrichten. Entfernen Sie diesen Hinweis, sobald es funktioniert."
     },
     "contact": {
       "title": "Kontaktdaten",

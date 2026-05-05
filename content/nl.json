@@ -1261,7 +1261,9 @@
       "embedStyle": {
         "minWidth": "320px",
         "height": "700px"
-      }
+      },
+      "fallbackText": "Op dit moment wordt de online kalender ingesteld. Neem in de tussentijd contact met ons op via WhatsApp of e-mail.",
+      "_note": "Calendly-link geeft 404 — klant moet account instellen. Verwijder deze opmerking zodra het werkt."
     },
     "contact": {
       "title": "Contactgegevens",

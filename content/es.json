@@ -1260,7 +1260,9 @@
       "embedStyle": {
         "minWidth": "320px",
         "height": "700px"
-      }
+      },
+      "fallbackText": "Actualmente, la reserva por calendario está en configuración. Mientras tanto, contáctanos directamente por WhatsApp o email.",
+      "_note": "El enlace de Calendly devuelve 404 — el cliente debe configurar la cuenta. Eliminar esta nota cuando funcione."
     },
     "contact": {
       "title": "Datos de contacto",
