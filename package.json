@@ -12,7 +12,15 @@
     "lucide-react": "^1.14.0",
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "@ai-whisperers/ui": "file:/root/ai-whisperers-base/packages/ui",
+    "@ai-whisperers/theme": "file:/root/ai-whisperers-base/packages/theme",
+    "@ai-whisperers/auth": "file:/root/ai-whisperers-base/packages/auth",
+    "@ai-whisperers/commerce": "file:/root/ai-whisperers-base/packages/commerce",
+    "@ai-whisperers/admin": "file:/root/ai-whisperers-base/packages/admin",
+    "@ai-whisperers/whatsapp": "file:/root/ai-whisperers-base/packages/whatsapp",
+    "@ai-whisperers/seo": "file:/root/ai-whisperers-base/packages/seo",
+    "@ai-whisperers/i18n": "file:/root/ai-whisperers-base/packages/i18n"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

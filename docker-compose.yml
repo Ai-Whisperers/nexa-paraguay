@@ -3,12 +3,19 @@ services:
     build: .
     image: nexa-paraguay:prod
     ports:
-      - "3000:3000"
+      - published: 3000
+        target: 3000
     environment:
       - NODE_ENV=production
-    restart: unless-stopped
+    networks:
+      - agent-net
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.nexa-paraguay.rule=Host(`nexa-paraguay.paragu-ai.com`)"
+      - "traefik.swarm.network=agent-net"
+      - "traefik.http.routers.nexa-paraguay.rule=Host(`nexa.paragu-ai.com`) || Host(`nexa-paraguay.paragu-ai.com`)"
       - "traefik.http.routers.nexa-paraguay.entrypoints=websecure"
       - "traefik.http.services.nexa-paraguay.loadbalancer.server.port=3000"
+
+networks:
+  agent-net:
+    external: true
