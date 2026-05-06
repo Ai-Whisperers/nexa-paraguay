@@ -20,7 +20,14 @@
     "@ai-whisperers/admin": "file:/root/ai-whisperers-base/packages/admin",
     "@ai-whisperers/whatsapp": "file:/root/ai-whisperers-base/packages/whatsapp",
     "@ai-whisperers/seo": "file:/root/ai-whisperers-base/packages/seo",
-    "@ai-whisperers/i18n": "file:/root/ai-whisperers-base/packages/i18n"
+    "@ai-whisperers/i18n": "file:/root/ai-whisperers-base/packages/i18n",
+    "@ai-whisperers/api-helpers": "^0.1.0",
+    "@ai-whisperers/catalog": "^0.1.0",
+    "@ai-whisperers/checkout": "^0.1.0",
+    "@ai-whisperers/client-kit": "^0.1.0",
+    "@ai-whisperers/payments": "^0.1.0",
+    "@ai-whisperers/product": "^0.1.0",
+    "@ai-whisperers/ui-extras": "^0.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -30,6 +37,21 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@ai-whisperers/admin": "^0.1.0",
+    "@ai-whisperers/api-helpers": "^0.1.0",
+    "@ai-whisperers/auth": "^0.1.0",
+    "@ai-whisperers/catalog": "^0.1.0",
+    "@ai-whisperers/checkout": "^0.1.0",
+    "@ai-whisperers/client-kit": "^0.1.0",
+    "@ai-whisperers/commerce": "^0.1.0",
+    "@ai-whisperers/i18n": "^0.1.0",
+    "@ai-whisperers/payments": "^0.1.0",
+    "@ai-whisperers/product": "^0.1.0",
+    "@ai-whisperers/seo": "^0.1.0",
+    "@ai-whisperers/theme": "^0.1.0",
+    "@ai-whisperers/ui": "^0.1.0",
+    "@ai-whisperers/ui-extras": "^0.1.0",
+    "@ai-whisperers/whatsapp": "^0.1.0"
   }
 }
