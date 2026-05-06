@@ -21,7 +21,7 @@ function getContent(): ContentData {
 }
 
 function getPages() {
-  const pagesDir = path.join(process.cwd(), 'pages')
+  const pagesDir = path.join(process.cwd(), 'nexa-pages')
   try {
     const pageFiles = require('fs').readdirSync(pagesDir)
     const pages: Record<string, PageConfig> = {}
@@ -45,7 +45,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">
       <h1 className="text-4xl font-bold text-center py-12">
-        {homePage.title || content?.title || 'Welcome'}
+        {content?.siteName || 'Nexa Paraguay'}
       </h1>
       
       {homePage.sections?.map((section: string) => {
