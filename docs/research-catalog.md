@@ -2,9 +2,11 @@
 ## Everything researched, organized, and ready for the owners
 
 **Date:** May 7, 2026  
-**Total research files:** 17 new reports (15 in Hermes cache + 2 structured strategy docs)  
+**Total research files:** 20 reports (17 in repo + 3 raw source files)  
 **Total pages:** ~350+ pages of analysis  
 **Areas covered:** 12 macro research areas, 100+ micro insights
+
+All files now live in the repo at `docs/09-market-intelligence/`. See `docs/README.md` for the full directory tree.
 
 ---
 
