@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { HeroSection, StatsSection, TrustSection, ProgramsSection, ServicesSection, WhyCountrySection, FeaturesSection, ProcessSection, TestimonialsSection, CtaBanner, TaxCalculatorSection } from '../components/sections'
+import { FaqSection, BlogSection, TeamSection, PrivacyAccordion, GlossarySection, NewsletterSection, StorySection, PillarsSection, PageHeroSection, HighlightSection, ComparisonSection, GuidesSection } from '../components/sections-extra'
 import { resolveContent } from '../components/content'
 
 const SECTION_MAP: Record<string, any> = {
@@ -18,6 +19,9 @@ const SECTION_MAP: Record<string, any> = {
   'process-timeline': ProcessSection,
   'testimonials': TestimonialsSection,
   'cta-banner': CtaBanner,
+  'newsletter-signup': NewsletterSection,
+  'story': StorySection,
+  'team': TeamSection,
 }
 
 export default function Home({ content, pageConfig, images }: any) {
