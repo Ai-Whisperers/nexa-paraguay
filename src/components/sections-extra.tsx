@@ -367,8 +367,9 @@ export function ContactDetailsSection({ pageContent, data }: SectionProps) {
               <span>✉️</span> {d.email}
             </a>
           )}
-          {d.address && <p style={{ color:'#666',fontSize:'0.9rem' }}>📍 {d.address}</p>}
-          {d.hours && <p style={{ color:'#666',fontSize:'0.85rem' }}>🕐 {d.hours}</p>}
+          {d.address && <p style={{ color:'#666',fontSize:'0.9rem' }}>📍 {d.address}{d.neighborhood ? ', ' + d.neighborhood : ''}</p>}
+          {d.phone && !d.whatsapp && <p style={{ color:'#666',fontSize:'0.9rem' }}>📞 {d.phone}</p>}
+          {d.hours && <p style={{ color:'#666',fontSize:'0.85rem' }}>🕐 {typeof d.hours === 'object' ? Object.values(d.hours).join(' · ') : d.hours}</p>}
         </div>
       </div>
     </section>
