@@ -17,8 +17,8 @@ export function FaqSection({ pageContent, data }: SectionProps) {
   return (
     <section style={{ padding: '4rem 1rem', background: '#F5F5F0' }}>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        {data.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem',textAlign:'center' }}>{data.eyebrow}</p>}
-        {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem',textAlign:'center' }}>{data.title}</h2>}
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem',textAlign:'center' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem',textAlign:'center' }}>{d.title}</h2>}
         {items.map((item: any, i: number) => {
           const isOpen = open === i
           const question = item.pregunta || item.question || item.title || item.q
@@ -251,6 +251,8 @@ export function HighlightSection({ pageContent, data }: SectionProps) {
             {s.value && <div style={{ fontSize: '2rem', fontWeight: 800, color: '#1B2A4A' }}>{s.value}</div>}
             {s.label && <div style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>{s.label}</div>}
             {s.description && <div style={{ fontSize: '0.85rem', color: '#C9A96E', fontWeight:600, marginTop: '0.15rem' }}>{s.description}</div>}
+            {!s.value && s.title && <h4 style={{ fontSize:'1.1rem',fontWeight:700,color:'#1B2A4A',marginBottom:'0.25rem' }}>{s.title}</h4>}
+            {!s.value && s.description && <p style={{ color:'#555',fontSize:'0.9rem',lineHeight:1.5,maxWidth:'300px' }}>{s.description}</p>}
           </div>
         ))}
       </div>
@@ -306,9 +308,94 @@ export function GuidesSection({ pageContent, data }: SectionProps) {
             <div key={i} style={{ padding:'1.5rem', background:'#F5F5F0', borderRadius:'12px', border:'1px solid #e0e0e0' }}>
               <h4 style={{ fontWeight:700, color:'#1B2A4A', marginBottom:'0.5rem' }}>{item.title}</h4>
               {item.description && <p style={{ color:'#555', fontSize:'0.9rem', lineHeight:1.5, marginBottom:'1rem' }}>{item.description}</p>}
-              {item.fileUrl && <a href={item.fileUrl} style={{ display:'inline-block', padding:'0.5rem 1.25rem', background:'#1B2A4A', color:'#fff', borderRadius:'50px', fontSize:'0.85rem', fontWeight:700, textDecoration:'none' }}>📥 {item.ctaText || "Descargar"}</a>}
+              {item.fileUrl ? (
+                <a href={item.fileUrl} style={{ display:'inline-block', padding:'0.5rem 1.25rem', background:'#1B2A4A', color:'#fff', borderRadius:'50px', fontSize:'0.85rem', fontWeight:700, textDecoration:'none' }}>📥 {item.ctaText || "Descargar"}</a>
+              ) : (
+                <span style={{ fontSize:'0.8rem', color:'#999', fontStyle:'italic' }}>Próximamente</span>
+              )}
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ── Booking embed (WhatsApp CTA with features) ──
+export function BookingEmbedSection({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  if (!d.title) return null
+  return (
+    <section style={{ padding: '4rem 1rem', background: '#F5F5F0' }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+        <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'0.75rem' }}>{d.title}</h2>
+        {d.subtitle && <p style={{ color:'#666',marginBottom:'2rem' }}>{d.subtitle}</p>}
+        {d.features && Array.isArray(d.features) && (
+          <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:'1rem',marginBottom:'2rem' }}>
+            {d.features.map((f: string, i: number) => (
+              <div key={i} style={{ padding:'1rem',background:'#fff',borderRadius:'12px',boxShadow:'0 2px 10px rgba(0,0,0,0.06)' }}>
+                <p style={{ color:'#1B2A4A',fontWeight:600,fontSize:'0.9rem' }}>{f}</p>
+              </div>
+            ))}
+          </div>
+        )}
+        <a href={d.ctaHref || 'https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta'} style={{ display:'inline-block',padding:'1rem 2.5rem',background:'#25D366',color:'#fff',borderRadius:'50px',fontWeight:700,fontSize:'1rem',textDecoration:'none' }}>
+          {d.ctaText || 'Agendar consulta gratuita'}
+        </a>
+        {d.calendarNote && <p style={{ marginTop:'0.75rem',fontSize:'0.8rem',color:'#999',fontStyle:'italic' }}>{d.calendarNote}</p>}
+      </div>
+    </section>
+  )
+}
+
+// ── Contact details (phone, email, address, hours) ──
+export function ContactDetailsSection({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  if (!d.whatsapp && !d.email) return null
+  return (
+    <section style={{ padding: '4rem 1rem' }}>
+      <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+        {d.title && <h2 style={{ fontSize:'clamp(1.3rem,2.5vw,1.8rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'1.5rem' }}>{d.title}</h2>}
+        <div style={{ display:'flex',flexDirection:'column',gap:'1rem' }}>
+          {d.whatsapp && (
+            <a href={`https://wa.me/${d.whatsapp.replace(/[^0-9]/g,'')}`} target="_blank" style={{ display:'flex',alignItems:'center',justifyContent:'center',gap:'0.5rem',padding:'1rem',background:'#25D366',color:'#fff',borderRadius:'12px',textDecoration:'none',fontWeight:600 }}>
+              <span>📱</span> {d.whatsapp}
+            </a>
+          )}
+          {d.email && (
+            <a href={`mailto:${d.email}`} style={{ display:'flex',alignItems:'center',justifyContent:'center',gap:'0.5rem',padding:'1rem',background:'#1B2A4A',color:'#fff',borderRadius:'12px',textDecoration:'none',fontWeight:600 }}>
+              <span>✉️</span> {d.email}
+            </a>
+          )}
+          {d.address && <p style={{ color:'#666',fontSize:'0.9rem' }}>📍 {d.address}</p>}
+          {d.hours && <p style={{ color:'#666',fontSize:'0.85rem' }}>🕐 {d.hours}</p>}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ── Gallery (office/team photos) ──
+export function GallerySection({ pageContent, data, images }: SectionProps) {
+  const d = data || pageContent || {}
+  const photos = d.images || d.items || []
+  if (!d.title && !photos.length) return null
+  return (
+    <section style={{ padding: '4rem 1rem', background: '#F5F5F0' }}>
+      <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'1rem' }}>{d.title}</h2>}
+        {d.subtitle && <p style={{ color:'#666',marginBottom:'2rem' }}>{d.subtitle}</p>}
+        <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:'1rem' }}>
+          {photos.map((photo: any, i: number) => {
+            const src = typeof photo === 'string' ? photo : resolveImage?.(images, photo.src || photo.imageUrl || '') || photo.src || photo.imageUrl || ''
+            return (
+              <div key={i} style={{ borderRadius:'12px',overflow:'hidden',boxShadow:'0 4px 15px rgba(0,0,0,0.1)' }}>
+                {src && <img src={src} alt={photo.alt || photo.caption || ''} style={{ width:'100%',height:'220px',objectFit:'cover',display:'block' }} />}
+                {photo.caption && <p style={{ padding:'0.75rem',background:'#fff',color:'#555',fontSize:'0.85rem',margin:0 }}>{photo.caption}</p>}
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>
