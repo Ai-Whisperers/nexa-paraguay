@@ -1,3 +1,6 @@
+> **Status:** Review | **Last validated:** 2026-05-07
+>
+
 ---
 purpose: Deep code quality and architecture analysis of the Nexa Paraguay website — categorizes 40 issues by severity (P0-P3) with fixes
 last_updated: 2026-05-07

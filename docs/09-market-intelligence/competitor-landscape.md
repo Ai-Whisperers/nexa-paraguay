@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Competitor Landscape — Paraguay Residency & Relocation Market
 
 > **Pipeline:** Solstein M&A Research Pipeline v1.0  

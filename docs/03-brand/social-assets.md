@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 ---
 purpose: Inventory of 6 pre-rendered social media templates with per-locale caption sets (ES/EN/NL/DE) for Instagram, LinkedIn, and Facebook
 last_updated: 2026-05-07

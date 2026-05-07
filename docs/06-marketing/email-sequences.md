@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Email Sequences — Automated Nurture & Post-Consultation
 
 **Purpose:** Defines the 2 primary automated email sequences (A: Tax-Driven

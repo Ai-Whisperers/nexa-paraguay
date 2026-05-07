@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Testimonials gating — Nexa Paraguay
 
 **Superseded by [DEMO_CONTENT.md](./DEMO_CONTENT.md).**

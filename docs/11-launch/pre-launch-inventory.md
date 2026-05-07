@@ -1,3 +1,6 @@
+> **Status:** Draft | **Last validated:** 2026-05-07
+>
+
 # Pre-Launch Inventory — Nexa Paraguay
 
 > Structured checklist of all placeholder/shippable content, grouped by

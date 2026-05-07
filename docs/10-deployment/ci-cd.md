@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # CI/CD — Nexa Paraguay
 
 > CI/CD is **not managed locally** in this repository. There is no

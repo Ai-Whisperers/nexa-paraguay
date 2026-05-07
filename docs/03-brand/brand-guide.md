@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 ---
 purpose: Complete brand identity guide for Nexa Paraguay — colors, typography, logo usage, tone of voice, and brand assets
 last_updated: 2026-05-07

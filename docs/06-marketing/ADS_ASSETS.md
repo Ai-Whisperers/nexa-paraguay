@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Ads asset library
 
 Inventory of the 22 pre-rendered paid-ad creatives in

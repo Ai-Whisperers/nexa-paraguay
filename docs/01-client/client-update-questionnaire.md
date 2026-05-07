@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Content Update Questionnaire
 ## For Kiki Weiss (client review)
 

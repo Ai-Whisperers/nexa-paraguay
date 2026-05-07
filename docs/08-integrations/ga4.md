@@ -1,3 +1,6 @@
+> **Status:** Draft | **Last validated:** 2026-05-07
+>
+
 # Google Analytics (GA4) — Analytics Integration
 
 **Purpose:** Tracks website visitors, page views, conversions, lead magnet

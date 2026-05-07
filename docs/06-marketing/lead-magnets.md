@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Lead Magnets — Capture & Convert
 
 **Purpose:** Specifies the 4 lead magnets, their user flow, implementation

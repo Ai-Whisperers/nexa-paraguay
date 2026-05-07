@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Content Gaps & Opportunities
 
 **Purpose:** Identify content gaps the site can fill for SEO and conversion lift  

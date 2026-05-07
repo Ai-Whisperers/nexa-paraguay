@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # SEO Keyword Research Report — Multi-Language Content Strategy
 
 > **Pipeline:** Solstein M&A Research Pipeline v1.0  

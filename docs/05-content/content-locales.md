@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Content Locales Structure
 
 **Purpose:** Document the 4-locale content system  

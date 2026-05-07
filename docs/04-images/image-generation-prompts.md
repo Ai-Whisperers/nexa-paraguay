@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Image Generation Prompt Library
 
 **Purpose:** Ready-to-paste prompts for generating every image Nexa Paraguay needs  

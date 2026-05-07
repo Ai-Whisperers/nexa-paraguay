@@ -8,22 +8,31 @@
 ## Documentation Structure
 
 ```
-docs/
+```
 ├── README.md                        ← This file — docs index & navigation
 ├── CLAUDE.md                        ← AI agent guide (repo root)
+│
+├── 00-architecture/                 ← NEW: Core framework docs
+│   ├── ARCHITECTURE.md              ← @ai-whisperers/* package bridge
+│   ├── DATA_FLOW.md                 ← Loader, cache, types, content injection
+│   └── STANDARDIZATION.md           ← Code quality standards (moved from root)
 │
 ├── 01-client/
 │   ├── client-intelligence.json     ← Core client facts, vertical, contacts
 │   ├── client-questionnaire.md      ← Intake & validation questionnaire
+│   ├── client-questionnaire-responses.md  ← Client questionnaire answers
+│   ├── client-update-questionnaire.md     ← Update questionnaire
 │   ├── stakeholder-qa.md            ← Stakeholder Q&A packet
 │   └── stakeholder-review.md        ← Week 7 review packet
 │
 ├── 02-site/
 │   ├── architecture.md              ← Tech stack, pages, components
 │   ├── site-config.md              ← site.json fields, features, integrations
+│   ├── site-audit.md               ← Site audit (moved from root)
 │   ├── deep-audit.md               ← Code quality & architecture audit
 │   ├── improvement-plan.md          ← Master improvement plan
-│   └── dns.md                       ← DNS config & domain setup
+│   ├── dns.md                       ← DNS config & domain setup
+│   └── COMPONENT_REGISTRY.md       ← NEW: All 26 components documented
 │
 ├── 03-brand/
 │   ├── brand-guide.md               ← Colors, typography, logo usage
@@ -39,14 +48,17 @@ docs/
 ├── 05-content/
 │   ├── content-locales.md           ← en/es/de/nl content structure
 │   ├── blog-posts.md                ← Blog post catalog & metadata
-│   └── content-calendar.yml         ← Editorial calendar
+│   ├── content-calendar.yml         ← Editorial calendar
+│   └── demo-content.md              ← Demo content reference
 │
 ├── 06-marketing/
+│   ├── ADS_ASSETS.md                ← 22 paid ad creatives
 │   ├── comparisons.md               ← Competitor comparisons
 │   ├── email-sequences.md           ← Nurture email sequences
 │   ├── faq-dealclosing.md           ← FAQ & objection handling
 │   ├── lead-magnets.md              ← Lead magnet offers
 │   ├── testimonials-system.md       ← Testimonial collection & display
+│   ├── testimonials-gating.md       ← Testimonial gating rules
 │   └── whatsapp-integration.md      ← WhatsApp marketing strategy
 │
 ├── 07-seo/
@@ -74,15 +86,16 @@ docs/
 │   └── financial-model.md           ← Unit economics & 3-year projection
 │
 ├── 10-deployment/
-│   ├── docker-compose.yml           ← Docker stack config (repo root)
-│   ├── Dockerfile                   ← Build image (repo root)
 │   ├── deployment-runbook.md        ← Build & deploy steps
 │   └── ci-cd.md                     ← CI/CD workflow reference
 │
-└── 11-launch/
-    ├── pre-launch-inventory.md      ← Launch inventory checklist
-    ├── launch-runbook.md            ← Launch sequence & rollback
-    └── launch-checklist.md          ← Go/no-go checklist
+├── 11-launch/
+│   ├── pre-launch-inventory.md      ← Launch inventory checklist
+│   ├── launch-runbook.md            ← Launch sequence & rollback
+│   └── launch-checklist.md          ← Go/no-go checklist
+│
+└── 12-factory/                      ← NEW: Multi-client playbook
+    └── NEW_CLIENT_BOOTSTRAP.md      ← Step-by-step new client creation
 ```
 
 ## Cross-Reference

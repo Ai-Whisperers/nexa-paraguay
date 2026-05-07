@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # FAQ — Top 15 Deal-Closing Questions
 
 **Purpose:** Defensive and objection-handling content for the FAQ section and

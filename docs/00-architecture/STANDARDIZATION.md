@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Standardization & Cleanup
 
 ## Issues that need standardization (not workarounds)

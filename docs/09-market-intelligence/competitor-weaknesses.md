@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Competitor Weaknesses — Exploit Opportunities for Nexa Paraguay
 
 > **Pipeline:** Solstein M&A Research Pipeline v1.0  

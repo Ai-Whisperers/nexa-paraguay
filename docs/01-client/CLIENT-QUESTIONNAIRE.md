@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Client Intake & Validation Questionnaire
 
 > **Purpose.** One consolidated document that (a) validates every default we baked into the site, (b) fills every placeholder / TBD / AI-generated asset, and (c) asks the additional questions needed to flip `is_demo: true → false` and run real paid traffic.

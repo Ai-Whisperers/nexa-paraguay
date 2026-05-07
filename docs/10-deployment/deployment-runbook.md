@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Deployment Runbook — Nexa Paraguay
 
 > Covers building, containerizing, and deploying the Next.js app via Docker

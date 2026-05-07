@@ -1,3 +1,6 @@
+> **Status:** Draft | **Last validated:** 2026-05-07
+>
+
 # WhatsApp Integration — Business Setup & AI Agent Bridge
 
 **Purpose:** Covers the WhatsApp Business account configuration, quick replies,

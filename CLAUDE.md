@@ -1,56 +1,66 @@
 # Nexa Paraguay — AI Agent Guide
 
 **Live:** https://nexa.paragu-ai.com  
-**Staging:** https://staging.nexaparaguay.com  
-**Primary domain:** nexaparaguay.com (⚠️ currently redirects to Shopify — fix P0)  
 **Repo:** github.com/Ai-Whisperers/nexa-paraguay  
-**Docker service:** nexa_web (2 replicas, agent-net)
+**Docker service:** nexa_web (1 replica)
 
-## Tech Stack
-- Next.js 16, React 19, TypeScript 5, Tailwind v4
-- Pages Router (not App Router)
-- @ai-whisperers/client-kit (shared package)
-- 4 locales: en, es, nl, de
-- Hosted on ParaguAI VPS via Docker Swarm + Traefik
+## Core Architecture
 
-## Pages (from site.json nav + nexa-pages/)
-Home (`/`), Programas, Por-que-paraguay, Proceso, Sobre, FAQ, Blog, Prensa, Contacto, Privacidad, Servicios, Benelux, Asistente, Calidad-de-vida, Casos-de-exito, Comparacion, Empresa, Fundador, Glosario, Inversor, Lifestyle, Recursos, Trust
+- **Framework:** `@ai-whisperers/*` package ecosystem (client imports via npm `file:` links)
+- **Pages Router** (Next.js 16, React 19, TypeScript 5)
+- **Content:** JSON-driven — `content/es.json`, `nexa-pages/*.json`, `images.json`, `site.json`
+- **Loading:** `src/lib/loader.ts` with 60s in-memory TTL cache (replaces raw `readFileSync`)
+- **Section map:** 26 components in `SECTION_MAP` (see `docs/02-site/COMPONENT_REGISTRY.md`)
+- **Types:** 30+ interfaces in `src/types.ts` define the full data contract
+- **Styling:** `src/theme.ts` — 20+ color tokens, all inline styles reference this
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `content/es.json` | All text content (100KB, 15+ page sections) |
+| `content/en.json`, `nl.json`, `de.json` | Multi-locale content (currently only ES served) |
+| `nexa-pages/*.json` | Page configs — section ordering + content key references |
+| `images.json` | Image manifest — 82 entries across 14 categories |
+| `site.json` | Domain, features, booking URL, social links |
+| `src/pages/[slug].tsx` | Main page renderer — SSR, SECTION_MAP dispatch |
+| `src/pages/index.tsx` | Homepage renderer (separate file) |
+| `src/lib/loader.ts` | Shared JSON loader with 60s cache |
+| `src/types.ts` | 30+ TypeScript interfaces |
+| `src/theme.ts` | Brand design tokens |
 
 ## Build & Deploy
+
 ```bash
 npm run build
-docker build -t nexa-paraguay:prod .
-docker stack deploy -c docker-compose.yml nexa
+docker build -t nexa-paraguay:prod --no-cache .
+docker service update --force --image nexa-paraguay:prod nexa_web
 ```
-Requires NODE_AUTH_TOKEN for @ai-whisperers/client-kit (passed via BuildKit --secret).
 
-## Documentation Structure (docs/)
+Requires `NODE_AUTH_TOKEN` for `@ai-whisperers/client-kit` (if building with unpublished packages).
 
-| Directory | Contents | Key Files |
-|---|---|---|
-| `01-client/` | Stakeholder Q&A, review, intake | stakeholder-qa.md, stakeholder-review.md |
-| `02-site/` | Architecture, config, audit, roadmap | deep-audit.md, improvement-plan.md, dns.md |
-| `03-brand/` | Brand guide, design tokens, social assets | brand-guide.md, social-assets.md |
-| `04-images/` | Image manifest (111 images), prompts | images-manifest.md |
-| `05-content/` | Locales structure, blog catalog, calendar | content-locales.md, blog-posts.md |
-| `06-marketing/` | Comparisons, email nurture, FAQs, lead magnets, testimonials | whatsapp-integration.md, email-sequences.md |
-| `07-seo/` | Keyword strategy, content gap analysis | seo-keyword-strategy.md, content-gaps.md |
-| `08-integrations/` | HubSpot, Mailchimp, GA4, WhatsApp AI bridge | integration-setup-guide.md → split per platform |
-| `09-market-intelligence/` | Solstein analysis, market sizing, competition, AI opps | market-sizing.md, competitor-landscape.md, ai-opportunity-map.md |
-| `10-deployment/` | Docker runbook, CI/CD reference | deployment-runbook.md, ci-cd.md |
-| `11-launch/` | Pre-launch inventory, launch runbook | launch-runbook.md, pre-launch-inventory.md |
+## Documentation (docs/)
 
-## Critical Patterns
-- Most international (4 locales). Relocation focus. Document-heavy. WhatsApp contact.
-- content/es.json:en.json:de.json:nl.json — keys must match across all 4
-- images.json: single source of truth for 111 managed images with WebP/PNG/SVG fallback chain
-- is_demo: true (in site.json) — must flip to false when placeholders replaced
-- All team portraits, testimonials, and stock imagery are AI placeholders as of May 2026
-- nexaparaguay.com primary domain does NOT point to the live site — Shopify redirect
+| Category | Contents |
+|----------|----------|
+| `00-architecture/` | Core framework, bridge points, data flow, standards |
+| `01-client/` | Stakeholder info, intake, questionnaire responses |
+| `02-site/` | Architecture, audit, improvement plan, DNS, component registry |
+| `03-brand/` | Brand guide, tokens, image prompts, social assets |
+| `04-images/` | Image manifest (111 images), prompt library |
+| `05-content/` | Locales, blog catalog, editorial calendar |
+| `06-marketing/` | Comparisons, email nurture, FAQ, lead magnets, ads, testimonials |
+| `07-seo/` | Keyword strategy, content gaps |
+| `08-integrations/` | HubSpot, Mailchimp, GA4, WhatsApp AI bridge |
+| `09-market-intelligence/` | Solstein analysis, market sizing, competition, financial model |
+| `10-deployment/` | Deployment runbook, CI/CD |
+| `11-launch/` | Launch runbook, pre-launch checklist |
+| `12-factory/` | NEW_CLIENT_BOOTSTRAP.md — template for creating new client repos |
+
+## Critical Notes
+
+- `is_demo: true` in site.json — flip when placeholders replaced
+- Team portraits, testimonials, and stock imagery are AI placeholders as of May 2026
+- Nexa's primary domain (nexaparaguay.com) still points to Shopify — needs DNS A record to 72.61.44.159
 - GA4 measurement ID: G-XE49GLEP34
-- HubSpot portal configured in site.json (needs actual client credentials)
-
-## AI Integration
-- WhatsApp AI bridge available at whatsapp-ai.sunstein.cloud (DeepSeek + LightRAG + Evolution API)
-- NOT yet connected to Nexa's live number — needs client-side Evolution API setup
-- See docs/08-integrations/whatsapp-ai-bridge.md for current status
+- See `docs/00-architecture/ARCHITECTURE.md` for the Core-to-Client bridge explanation

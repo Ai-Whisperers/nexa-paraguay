@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — SEO Keyword Strategy
 
 **Purpose:** Multi-language keyword strategy for content targeting  

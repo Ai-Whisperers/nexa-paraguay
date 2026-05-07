@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 ---
 purpose: Pre-launch Q&A packet for Nexa Paraguay leadership — every open question blocking production launch with proposed answers grounded in the codebase
 last_updated: 2026-05-07

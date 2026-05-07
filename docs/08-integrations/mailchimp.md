@@ -1,3 +1,6 @@
+> **Status:** Draft | **Last validated:** 2026-05-07
+>
+
 # Mailchimp — Email Marketing Integration
 
 **Purpose:** Manages email newsletter subscribers and sends automated nurture

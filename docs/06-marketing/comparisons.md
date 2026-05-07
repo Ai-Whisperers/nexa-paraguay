@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Comparisons — Competitor & Country Pages
 
 **Purpose:** Comparison tables used on the website to contrast Paraguay's tax and

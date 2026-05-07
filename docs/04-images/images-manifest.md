@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 ---
 purpose: Complete manifest of all 111 website images organized by category with descriptions, file paths, and fallback formats
 last_updated: 2026-05-07

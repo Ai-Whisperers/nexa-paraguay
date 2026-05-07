@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Financial Model — Unit Economics, Revenue Projections & Valuation
 
 > **Pipeline:** Solstein M&A Research Pipeline v1.0  

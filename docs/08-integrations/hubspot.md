@@ -1,3 +1,6 @@
+> **Status:** Draft | **Last validated:** 2026-05-07
+>
+
 # HubSpot — CRM Integration
 
 **Purpose:** Captures contact form submissions, stores leads, and enables

@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Regulatory & Policy Timeline — Impact on Paraguay Residency Business
 
 > **Pipeline:** Solstein M&A Research Pipeline v1.0  

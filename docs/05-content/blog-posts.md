@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 ---
 purpose: Complete catalog of all blog posts across all 4 locales — file paths, titles, and publication status for each language
 last_updated: 2026-05-07

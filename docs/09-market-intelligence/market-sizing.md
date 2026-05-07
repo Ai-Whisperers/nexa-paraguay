@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Market Sizing & Growth Analysis — Paraguay Residency & Relocation
 
 > **Pipeline:** Solstein M&A Research Pipeline v1.0  

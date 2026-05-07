@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Testimonials System — Collection, Display & Referrer Program
 
 **Purpose:** Defines the testimonial collection process, JSON schema, display

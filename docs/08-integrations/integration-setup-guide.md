@@ -1,3 +1,6 @@
+> **Status:** Draft | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Integration Setup Guide
 ## For Kiki Weiss / Nexa team
 

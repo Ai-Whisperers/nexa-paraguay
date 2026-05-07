@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Solstein M&A Scorecard & Analysis
 
 **Date:** 2026-05-07  

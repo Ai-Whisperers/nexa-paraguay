@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 ---
 purpose: Per-role checklist for Week 7 stakeholder review — commercial director, operations director, legal, and marketing sign-offs before production launch
 last_updated: 2026-05-07

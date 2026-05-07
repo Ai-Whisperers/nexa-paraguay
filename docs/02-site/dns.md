@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 ---
 purpose: DNS cutover sequence for nexaparaguay.com — Cloudflare Pages configuration, records to publish, settings to verify, and rollback procedure
 last_updated: 2026-05-07

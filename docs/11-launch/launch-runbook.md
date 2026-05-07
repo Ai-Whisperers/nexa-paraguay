@@ -1,3 +1,6 @@
+> **Status:** Draft | **Last validated:** 2026-05-07
+>
+
 # Launch Runbook — Nexa Paraguay
 
 > Target: `nexaparaguay.com` live with 4 locales, analytics, and lead

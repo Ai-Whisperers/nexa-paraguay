@@ -1,3 +1,6 @@
+> **Status:** Draft | **Last validated:** 2026-05-07
+>
+
 # WhatsApp AI Bridge — AI-Powered Chat Agent
 
 **Purpose:** Documents the AI agent integration for WhatsApp conversations,

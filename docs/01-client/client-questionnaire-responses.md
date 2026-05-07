@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Nexa Paraguay — Client Questionnaire Responses (Kiki Weiss, May 5 2026)
 
 ## Our Services (3 groups, 9 services total)

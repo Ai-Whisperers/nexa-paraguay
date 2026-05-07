@@ -1,3 +1,6 @@
+> **Status:** Current | **Last validated:** 2026-05-07
+>
+
 # Referral Partner Ecosystem — 8 Partner Categories for Nexa Paraguay
 
 > **Pipeline:** Solstein M&A Research Pipeline v1.0  

@@ -1,3 +1,6 @@
+> **Status:** Review | **Last validated:** 2026-05-07
+>
+
 ---
 purpose: Master implementation todo list for taking nexa.paragu-ai.com from current state to production-ready — 183 items across 13 sections
 last_updated: 2026-05-07
