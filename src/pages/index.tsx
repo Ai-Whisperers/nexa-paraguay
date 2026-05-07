@@ -47,7 +47,9 @@ export default function Home({ content, pageConfig, images }: any) {
             const Component = SECTION_MAP[section.id]
             if (Component) {
               const sectionData = resolveContent(content, section.content || section.id)
-              return <ErrorBoundary key={key} name={section.id}><Component pageContent={sectionData || content} data={sectionData} images={images} /></ErrorBoundary>
+              const pc: any = {}
+              if (section.content || section.id) pc[section.id] = sectionData || content
+              return <ErrorBoundary key={key} name={section.id}><Component pageContent={pc} data={sectionData} images={images} /></ErrorBoundary>
             }
             const data = resolveContent(content, section.content || section.id)
             if (!data) return null
