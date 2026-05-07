@@ -120,7 +120,7 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
 }
 
 export function getServerSideProps({ params }: any) {
-  let slug = params?.slug || 'home'
+  let slug = Array.isArray(params?.slug) ? params.slug.join('/') : (params?.slug || 'home')
   let locale = 'es'
   const LOCALES = ['es', 'en', 'nl', 'de']
   if (slug.includes('/')) {
