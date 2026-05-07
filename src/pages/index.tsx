@@ -6,6 +6,7 @@ import { NewsletterSection, StorySection, TeamSection } from '../components/sect
 import { resolveContent } from '../components/content'
 import { loadJSON } from '../lib/loader'
 import { ErrorBoundary } from '../components/ErrorBoundary'
+import type { SiteContent, PageConfig } from '../types'
 
 const SECTION_MAP: Record<string, any> = {
   'hero': HeroSection,

@@ -9,16 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@ai-whisperers/admin": "file:/root/ai-whisperers-base/packages/admin",
-    "@ai-whisperers/auth": "file:/root/ai-whisperers-base/packages/auth",
     "@ai-whisperers/client-kit": "^0.1.0",
-    "@ai-whisperers/commerce": "file:/root/ai-whisperers-base/packages/commerce",
-    "@ai-whisperers/i18n": "file:/root/ai-whisperers-base/packages/i18n",
-    "@ai-whisperers/seo": "file:/root/ai-whisperers-base/packages/seo",
-    "@ai-whisperers/theme": "file:/root/ai-whisperers-base/packages/theme",
-    "@ai-whisperers/ui": "file:/root/ai-whisperers-base/packages/ui",
-    "@ai-whisperers/whatsapp": "file:/root/ai-whisperers-base/packages/whatsapp",
-    "lucide-react": "^1.14.0",
     "next": "^16.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

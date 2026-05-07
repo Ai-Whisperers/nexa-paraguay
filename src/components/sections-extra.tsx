@@ -1,18 +1,11 @@
 import React from 'react'
 import { resolveImage } from './content'
 import { theme } from '../theme'
-
-interface SectionProps {
-  variant?: string
-  pageContent: any
-  data?: any
-  images?: any
-  [key: string]: any
-}
+import { SectionComponentProps } from '../types'
 
 const c = theme.colors, r = theme.radii, s = theme.spacing, sz = theme.sizes
 
-export function FaqSection({ pageContent, data }: SectionProps) {
+export function FaqSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const items = d.items || []
   if (!items.length) return null
@@ -42,7 +35,7 @@ export function FaqSection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function BlogSection({ pageContent, data, images }: SectionProps) {
+export function BlogSection({ pageContent, data, images }: SectionComponentProps) {
   const d = data || pageContent || {}
   const posts = d.posts || []
   if (!posts.length) return null
@@ -71,7 +64,7 @@ export function BlogSection({ pageContent, data, images }: SectionProps) {
   )
 }
 
-export function TeamSection({ pageContent, data, images }: SectionProps) {
+export function TeamSection({ pageContent, data, images }: SectionComponentProps) {
   const d = data || pageContent || {}
   const members = d.members || d.items || []
   if (!members.length) return null
@@ -97,7 +90,7 @@ export function TeamSection({ pageContent, data, images }: SectionProps) {
   )
 }
 
-export function PrivacyAccordion({ pageContent, data }: SectionProps) {
+export function PrivacyAccordion({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const items = d.items || []
   if (!items.length) return null
@@ -126,7 +119,7 @@ export function PrivacyAccordion({ pageContent, data }: SectionProps) {
   )
 }
 
-export function GlossarySection({ pageContent, data }: SectionProps) {
+export function GlossarySection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const items = d.items || []
   if (!items.length) return null
@@ -147,7 +140,7 @@ export function GlossarySection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function NewsletterSection({ pageContent, data }: SectionProps) {
+export function NewsletterSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   if (!d.title) return null
   return (
@@ -164,7 +157,7 @@ export function NewsletterSection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function StorySection({ pageContent, data }: SectionProps) {
+export function StorySection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const paragraphs = d.paragraphs || []
   if (!d.title && !paragraphs.length) return null
@@ -180,7 +173,7 @@ export function StorySection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function PillarsSection({ pageContent, data, images }: SectionProps) {
+export function PillarsSection({ pageContent, data, images }: SectionComponentProps) {
   const d = data || pageContent || {}
   const pillars = d.pillars || d.items || []
   if (!pillars.length) return null
@@ -208,7 +201,7 @@ export function PillarsSection({ pageContent, data, images }: SectionProps) {
   )
 }
 
-export function PageHeroSection({ pageContent, data }: SectionProps) {
+export function PageHeroSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const headline = d.headline || d.title
   if (!headline) return null
@@ -222,7 +215,7 @@ export function PageHeroSection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function HighlightSection({ pageContent, data }: SectionProps) {
+export function HighlightSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const items = d.items || d.pillars || []
   if (!items.length) return null
@@ -242,7 +235,7 @@ export function HighlightSection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function ComparisonSection({ pageContent, data }: SectionProps) {
+export function ComparisonSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const items = d.items || []
   const columns = d.columns
@@ -271,7 +264,7 @@ export function ComparisonSection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function GuidesSection({ pageContent, data }: SectionProps) {
+export function GuidesSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const items = d.items || []
   if (!d.title && !items.length) return null
@@ -294,7 +287,7 @@ export function GuidesSection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function BookingEmbedSection({ pageContent, data }: SectionProps) {
+export function BookingEmbedSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   if (!d.title) return null
   return (
@@ -312,7 +305,7 @@ export function BookingEmbedSection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function ContactDetailsSection({ pageContent, data }: SectionProps) {
+export function ContactDetailsSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   if (!d.whatsapp && !d.email) return null
   return (
@@ -331,7 +324,7 @@ export function ContactDetailsSection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function GallerySection({ pageContent, data, images }: SectionProps) {
+export function GallerySection({ pageContent, data, images }: SectionComponentProps) {
   const d = data || pageContent || {}
   const photos = d.images || d.items || []
   if (!d.title && !photos.length) return null

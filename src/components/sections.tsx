@@ -1,15 +1,9 @@
 import React from 'react'
-import { resolveContent, resolveImage } from './content'
+import { SectionComponentProps } from '../types'
+import { resolveImage } from './content'
 import { theme } from '../theme'
 
-interface SectionProps {
-  variant?: string
-  pageContent: any
-  images?: any
-  [key: string]: any
-}
-
-export function HeroSection({ pageContent, images }: SectionProps) {
+export function HeroSection({ pageContent, images }: SectionComponentProps) {
   const c = pageContent.hero || {}
   const bgImage = resolveImage(images, c.backgroundImage)
   return (
@@ -38,7 +32,7 @@ export function HeroSection({ pageContent, images }: SectionProps) {
   )
 }
 
-export function StatsSection({ pageContent }: SectionProps) {
+export function StatsSection({ pageContent }: SectionComponentProps) {
   const stats = pageContent.stats
   if (!stats?.items?.length) return null
   return (
@@ -55,7 +49,7 @@ export function StatsSection({ pageContent }: SectionProps) {
   )
 }
 
-export function TrustSection({ pageContent, images }: SectionProps) {
+export function TrustSection({ pageContent, images }: SectionComponentProps) {
   const c = pageContent.trust || {}
   if (!c.items?.length) return null
   return (
@@ -84,7 +78,7 @@ export function TrustSection({ pageContent, images }: SectionProps) {
   )
 }
 
-export function ProgramsSection({ pageContent, images }: SectionProps) {
+export function ProgramsSection({ pageContent, images }: SectionComponentProps) {
   const c = pageContent.programs || {}
   if (!c.tiers?.length) return null
   return (
@@ -125,7 +119,7 @@ export function ProgramsSection({ pageContent, images }: SectionProps) {
   )
 }
 
-export function ServicesSection({ pageContent, data }: SectionProps) {
+export function ServicesSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const groups = d.groups || (d as any).groups || []
   if (!groups.length) return null
@@ -153,7 +147,7 @@ export function ServicesSection({ pageContent, data }: SectionProps) {
   )
 }
 
-export function WhyCountrySection({ pageContent, images }: SectionProps) {
+export function WhyCountrySection({ pageContent, images }: SectionComponentProps) {
   const c = pageContent.whyCountry || {}
   if (!c.pillars?.length) return null
   return (
@@ -182,7 +176,7 @@ export function WhyCountrySection({ pageContent, images }: SectionProps) {
   )
 }
 
-export function FeaturesSection({ pageContent }: SectionProps) {
+export function FeaturesSection({ pageContent }: SectionComponentProps) {
   const c = pageContent.beneluxDesk || {}
   if (!c.items?.length) return null
   return (
@@ -203,7 +197,7 @@ export function FeaturesSection({ pageContent }: SectionProps) {
   )
 }
 
-export function ProcessSection({ pageContent, images }: SectionProps) {
+export function ProcessSection({ pageContent, images }: SectionComponentProps) {
   const c = pageContent.process || {}
   if (!c.steps?.length) return null
   return (
@@ -232,7 +226,7 @@ export function ProcessSection({ pageContent, images }: SectionProps) {
   )
 }
 
-export function TestimonialsSection({ pageContent, images }: SectionProps) {
+export function TestimonialsSection({ pageContent, images }: SectionComponentProps) {
   const c = pageContent.testimonials || {}
   if (!c.items?.length) return null
   return (
@@ -261,7 +255,7 @@ export function TestimonialsSection({ pageContent, images }: SectionProps) {
   )
 }
 
-export function CtaBanner({ pageContent }: SectionProps) {
+export function CtaBanner({ pageContent }: SectionComponentProps) {
   const c = pageContent.finalCta || {}
   if (!c.title) return null
   return (
@@ -275,7 +269,7 @@ export function CtaBanner({ pageContent }: SectionProps) {
   )
 }
 
-export function TaxCalculatorSection({ pageContent }: SectionProps) {
+export function TaxCalculatorSection({ pageContent }: SectionComponentProps) {
   const c = pageContent.taxCalculator || {}
   if (!c.title) return null
   return (
