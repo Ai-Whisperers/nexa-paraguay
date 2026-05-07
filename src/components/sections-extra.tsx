@@ -9,9 +9,9 @@ interface SectionProps {
 }
 
 // ── FAQ ──
-export function FaqSection({ pageContent }: SectionProps) {
-  const data = pageContent.faq || pageContent.full || {}
-  const items = data.items || []
+export function FaqSection({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  const items = d.items || []
   if (!items.length) return null
   const [open, setOpen] = React.useState<number | null>(null)
   return (
@@ -40,17 +40,17 @@ export function FaqSection({ pageContent }: SectionProps) {
 }
 
 // ── Blog Index ──
-export function BlogSection({ pageContent, images }: SectionProps) {
-  const data = pageContent.blog || pageContent.index || {}
-  const posts = data.posts || []
+export function BlogSection({ pageContent, data, images }: SectionProps) {
+  const d = data || pageContent || {}
+  const posts = d.posts || []
   if (!posts.length) return null
   return (
     <section style={{ padding: '4rem 1rem' }}>
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-        {data.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem',textAlign:'center' }}>{data.eyebrow}</p>}
-        {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'0.5rem',textAlign:'center' }}>{data.title}</h2>}
-        {data.subtitle && <p style={{ color:'#666',marginBottom:'2rem',textAlign:'center' }}>{data.subtitle}</p>}
-        {data.description && <p style={{ color:'#666',marginBottom:'2rem',textAlign:'center' }}>{data.description}</p>}
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem',textAlign:'center' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'0.5rem',textAlign:'center' }}>{d.title}</h2>}
+        {d.subtitle && <p style={{ color:'#666',marginBottom:'2rem',textAlign:'center' }}>{d.subtitle}</p>}
+        {d.description && <p style={{ color:'#666',marginBottom:'2rem',textAlign:'center' }}>{d.description}</p>}
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))', gap:'1.5rem' }}>
           {posts.map((post: any, i: number) => {
             const postImg = post.image ? resolveImage(images, `@img:blog.${post.image}`) : (post.coverImage || '')
@@ -73,15 +73,15 @@ export function BlogSection({ pageContent, images }: SectionProps) {
 }
 
 // ── Team ──
-export function TeamSection({ pageContent, images }: SectionProps) {
-  const data = pageContent.team || {}
-  const members = data.members || data.items || []
+export function TeamSection({ pageContent, data, images }: SectionProps) {
+  const d = data || pageContent || {}
+  const members = d.members || d.items || []
   if (!members.length) return null
   return (
     <section style={{ padding: '4rem 1rem', background: '#F5F5F0' }}>
       <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-        {data.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{data.eyebrow}</p>}
-        {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem' }}>{data.title}</h2>}
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem' }}>{d.title}</h2>}
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(240px, 1fr))', gap:'2rem' }}>
           {members.map((m: any, i: number) => {
             const img = resolveImage(images, m.memberImage || m.image || m.imageUrl)
@@ -102,16 +102,16 @@ export function TeamSection({ pageContent, images }: SectionProps) {
 }
 
 // ── Privacy Accordion ──
-export function PrivacyAccordion({ pageContent }: SectionProps) {
-  const data = pageContent.privacy || pageContent.body || {}
-  const items = data.items || []
+export function PrivacyAccordion({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  const items = d.items || []
   if (!items.length) return null
   const [open, setOpen] = React.useState<number | null>(null)
   return (
     <section style={{ padding: '4rem 1rem' }}>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        {data.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{data.eyebrow}</p>}
-        {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem' }}>{data.title}</h2>}
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem' }}>{d.title}</h2>}
         {items.map((item: any, i: number) => {
           const isOpen = open === i
           const title = item.title || item.pregunta || item.question
@@ -133,15 +133,15 @@ export function PrivacyAccordion({ pageContent }: SectionProps) {
 }
 
 // ── Glossary ──
-export function GlossarySection({ pageContent }: SectionProps) {
-  const data = pageContent.glossary || pageContent.full || {}
-  const items = data.items || []
+export function GlossarySection({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  const items = d.items || []
   if (!items.length) return null
   return (
     <section style={{ padding: '4rem 1rem', background: '#F5F5F0' }}>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        {data.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem',textAlign:'center' }}>{data.eyebrow}</p>}
-        {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem',textAlign:'center' }}>{data.title}</h2>}
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem',textAlign:'center' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem',textAlign:'center' }}>{d.title}</h2>}
         <div style={{ display:'flex', flexDirection:'column', gap:'0.75rem' }}>
           {items.map((item: any, i: number) => (
             <div key={i} style={{ padding:'1.25rem', background:'#fff', borderRadius:'12px', border:'1px solid #e0e0e0' }}>
@@ -156,17 +156,17 @@ export function GlossarySection({ pageContent }: SectionProps) {
 }
 
 // ── Newsletter signup ──
-export function NewsletterSection({ pageContent }: SectionProps) {
-  const data = pageContent.newsletter || {}
-  if (!data.title) return null
+export function NewsletterSection({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  if (!d.title) return null
   return (
     <section style={{ padding: '3rem 1rem', background: '#1B2A4A', color: '#fff' }}>
       <div style={{ maxWidth: '500px', margin: '0 auto', textAlign: 'center' }}>
-        <h3 style={{ fontSize:'1.2rem', fontWeight:700, marginBottom:'0.5rem' }}>{data.title}</h3>
-        {data.description && <p style={{ fontSize:'0.9rem', opacity:0.8, marginBottom:'1.5rem' }}>{data.description}</p>}
+        <h3 style={{ fontSize:'1.2rem', fontWeight:700, marginBottom:'0.5rem' }}>{d.title}</h3>
+        {d.description && <p style={{ fontSize:'0.9rem', opacity:0.8, marginBottom:'1.5rem' }}>{d.description}</p>}
         <div style={{ display:'flex', gap:'0.5rem', flexWrap:'wrap', justifyContent:'center' }}>
-          <input type="email" placeholder={data.placeholder || "tu@email.com"} style={{ padding:'0.75rem 1rem', borderRadius:'50px', border:'none', flex:1, minWidth:'200px', fontSize:'0.9rem' }} />
-          <button style={{ padding:'0.75rem 1.5rem', background:'#C9A96E', color:'#1B2A4A', borderRadius:'50px', border:'none', fontWeight:700, cursor:'pointer', fontSize:'0.9rem' }}>{data.buttonText || "Suscribirme"}</button>
+          <input type="email" placeholder={d.placeholder || "tu@email.com"} style={{ padding:'0.75rem 1rem', borderRadius:'50px', border:'none', flex:1, minWidth:'200px', fontSize:'0.9rem' }} />
+          <button style={{ padding:'0.75rem 1.5rem', background:'#C9A96E', color:'#1B2A4A', borderRadius:'50px', border:'none', fontWeight:700, cursor:'pointer', fontSize:'0.9rem' }}>{d.buttonText || "Suscribirme"}</button>
         </div>
       </div>
     </section>
@@ -174,15 +174,15 @@ export function NewsletterSection({ pageContent }: SectionProps) {
 }
 
 // ── Story section (narrative paragraphs) ──
-export function StorySection({ pageContent }: SectionProps) {
-  const data = pageContent.story || {}
-  const paragraphs = data.paragraphs || []
-  if (!data.title && !paragraphs.length) return null
+export function StorySection({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  const paragraphs = d.paragraphs || []
+  if (!d.title && !paragraphs.length) return null
   return (
     <section style={{ padding: '4rem 1rem' }}>
       <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-        {data.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem',textAlign:'center' }}>{data.eyebrow}</p>}
-        {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'1.5rem',textAlign:'center' }}>{data.title}</h2>}
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem',textAlign:'center' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'1.5rem',textAlign:'center' }}>{d.title}</h2>}
         {paragraphs.map((p: string, i: number) => (
           <p key={i} style={{ color:'#444', lineHeight:1.8, fontSize:'0.95rem', marginBottom:'1rem' }}>{p}</p>
         ))}
@@ -192,17 +192,17 @@ export function StorySection({ pageContent }: SectionProps) {
 }
 
 // ── Pillars grid (reusable for any pillars array) ──
-export function PillarsSection({ pageContent, images }: SectionProps) {
-  const data = pageContent.pillars || pageContent.differentiators || {}
-  const pillars = data.pillars || data.items || []
+export function PillarsSection({ pageContent, data, images }: SectionProps) {
+  const d = data || pageContent || {}
+  const pillars = d.pillars || d.items || []
   if (!pillars.length) return null
   const isDark = pageContent.background === 'dark'
   return (
     <section style={{ padding: '4rem 1rem', background: isDark ? '#1B2A4A' : '#fff', color: isDark ? '#fff' : '#1B2A4A' }}>
       <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-        {data.eyebrow && <p style={{ fontSize:'0.85rem',color: isDark ? '#C9A96E' : '#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{data.eyebrow}</p>}
-        {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700, marginBottom:'0.5rem' }}>{data.title}</h2>}
-        {data.subtitle && <p style={{ color: isDark ? 'rgba(255,255,255,0.7)' : '#666', marginBottom:'2rem' }}>{data.subtitle}</p>}
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color: isDark ? '#C9A96E' : '#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700, marginBottom:'0.5rem' }}>{d.title}</h2>}
+        {d.subtitle && <p style={{ color: isDark ? 'rgba(255,255,255,0.7)' : '#666', marginBottom:'2rem' }}>{d.subtitle}</p>}
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(250px, 1fr))', gap:'1.5rem' }}>
           {pillars.map((p: any, i: number) => {
             const img = resolveImage(images, p.imageUrl || p.image || p.icon)
@@ -224,9 +224,10 @@ export function PillarsSection({ pageContent, images }: SectionProps) {
 }
 
 // ── Page hero (minimal, reused for inner pages) ──
-export function PageHeroSection({ pageContent }: SectionProps) {
-  const c = pageContent.hero || pageContent.pageHero || {}
-  if (!c.headline && !c.title) return null
+export function PageHeroSection({ pageContent, data }: SectionProps) {
+  const c = data || pageContent || {}
+  const headline = c.headline || c.title
+  if (!headline) return null
   return (
     <section style={{ padding: '5rem 1rem 3rem', background: 'linear-gradient(135deg, #1B2A4A 0%, #2a3f6a 100%)', color: '#fff', textAlign: 'center' }}>
       <div style={{ maxWidth: '700px', margin: '0 auto' }}>
@@ -238,9 +239,9 @@ export function PageHeroSection({ pageContent }: SectionProps) {
 }
 
 // ── Highlight bar (key metrics) ──
-export function HighlightSection({ pageContent }: SectionProps) {
-  const data = pageContent.highlights || pageContent.stats || {}
-  const items = data.items || []
+export function HighlightSection({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  const items = d.items || d.pillars || []
   if (!items.length) return null
   return (
     <section style={{ padding: '3rem 1rem', background: '#F5F5F0' }}>
@@ -258,27 +259,27 @@ export function HighlightSection({ pageContent }: SectionProps) {
 }
 
 // ── Comparison matrix ──
-export function ComparisonSection({ pageContent }: SectionProps) {
-  const data = pageContent.comparison || pageContent.matrix || {}
-  const items = data.items || []
-  if (!items.length && !data.columns) return null
+export function ComparisonSection({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  const items = d.items || []
+  if (!items.length && !d.columns) return null
   return (
     <section style={{ padding: '4rem 1rem' }}>
       <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-        {data.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{data.eyebrow}</p>}
-        {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'1.5rem' }}>{data.title}</h2>}
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'1.5rem' }}>{d.title}</h2>}
         <div style={{ overflowX:'auto' }}>
           <table style={{ width:'100%', borderCollapse:'collapse', fontSize:'0.9rem' }}>
             <thead>
               <tr style={{ background:'#1B2A4A', color:'#fff' }}>
-                {data.columns?.map((col: string, i: number) => <th key={i} style={{ padding:'0.75rem 1rem', textAlign:'left', fontWeight:700 }}>{col}</th>)}
-                {!data.columns && items[0] && Object.keys(items[0]).map((k, i) => <th key={i} style={{ padding:'0.75rem 1rem', textAlign:'left', fontWeight:700 }}>{k}</th>)}
+                {d.columns?.map((col: string, i: number) => <th key={i} style={{ padding:'0.75rem 1rem', textAlign:'left', fontWeight:700 }}>{col}</th>)}
+                {!d.columns && items[0] && Object.keys(items[0]).map((k, i) => <th key={i} style={{ padding:'0.75rem 1rem', textAlign:'left', fontWeight:700 }}>{k}</th>)}
               </tr>
             </thead>
             <tbody>
               {items.map((row: any, i: number) => (
                 <tr key={i} style={{ borderBottom:'1px solid #e0e0e0', background: i % 2 ? '#F5F5F0' : '#fff' }}>
-                  {data.columns ? data.columns.map((col: string, j: number) => <td key={j} style={{ padding:'0.75rem 1rem', color:'#444' }}>{row[col] || row[j] || ''}</td>) : Object.values(row).map((v: any, j: number) => <td key={j} style={{ padding:'0.75rem 1rem', color:'#444' }}>{v}</td>)}
+                  {d.columns ? d.columns.map((col: string, j: number) => <td key={j} style={{ padding:'0.75rem 1rem', color:'#444' }}>{row[col] || row[j] || ''}</td>) : Object.values(row).map((v: any, j: number) => <td key={j} style={{ padding:'0.75rem 1rem', color:'#444' }}>{v}</td>)}
                 </tr>
               ))}
             </tbody>
@@ -290,16 +291,16 @@ export function ComparisonSection({ pageContent }: SectionProps) {
 }
 
 // ── Guides / resources ──
-export function GuidesSection({ pageContent }: SectionProps) {
-  const data = pageContent.guides || {}
-  const items = data.items || []
-  if (!data.title && !items.length) return null
+export function GuidesSection({ pageContent, data }: SectionProps) {
+  const d = data || pageContent || {}
+  const items = d.items || []
+  if (!d.title && !items.length) return null
   return (
     <section style={{ padding: '4rem 1rem' }}>
       <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-        {data.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{data.eyebrow}</p>}
-        {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'0.5rem' }}>{data.title}</h2>}
-        {data.subtitle && <p style={{ color:'#666',marginBottom:'2rem' }}>{data.subtitle}</p>}
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:'#6B6B6B',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'0.5rem' }}>{d.title}</h2>}
+        {d.subtitle && <p style={{ color:'#666',marginBottom:'2rem' }}>{d.subtitle}</p>}
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))', gap:'1.5rem' }}>
           {items.map((item: any, i: number) => (
             <div key={i} style={{ padding:'1.5rem', background:'#F5F5F0', borderRadius:'12px', border:'1px solid #e0e0e0' }}>

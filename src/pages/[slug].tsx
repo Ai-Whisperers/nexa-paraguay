@@ -84,7 +84,10 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
             if (section.enabledWhen && !resolveContent(content, section.enabledWhen)) return null
             const key = section.id || section.content || `s${idx}`
             const Component = SECTION_MAP[section.id]
-            if (Component) return <Component key={key} pageContent={pageContent} images={images} />
+            if (Component) {
+              const sectionData = resolveContent(content, section.content || section.id)
+              return <Component key={key} pageContent={sectionData || pageContent} data={sectionData} images={images} />
+            }
             const data = resolveContent(content, section.content || section.id)
             if (!data) return null
             // Rich fallback: render items, body, description, content arrays
