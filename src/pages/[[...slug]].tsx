@@ -89,7 +89,7 @@ export default function SlugPage({ content, pageConfig, pageId, images, post }: 
               {post.tags.map((t: string, i: number) => <span key={i} style={{ padding:'0.25rem 0.75rem',background:'#F5F5F0',borderRadius:'50px',fontSize:'0.8rem',color:'#666' }}>{t}</span>)}
             </div>}
             <div style={{ marginTop:'2rem',textAlign:'center' }}>
-              <a href={`/${pageId.split('/')[0] || 'es'}/blog`} style={{ color:'#C9A96E',fontWeight:700,textDecoration:'none' }}>\\u2190 Volver al blog</a>
+            <a href={`/${locale}/blog`} style={{ color:'#C9A96E',fontWeight:700,textDecoration:'none' }}>← Volver al blog</a>
             </div>
           </article>
         </main>
@@ -178,15 +178,15 @@ export function getServerSideProps({ params }: any) {
     locale = slug; slug = 'home'
   }
   const pageFile = SLUG_MAP[slug] || slug || 'home'
-  // Handle blog posts routed through [[...slug]] instead of blog/
-  if (slug.startsWith('blog/') || slug === 'blog') {
+  // Handle blog posts routed through [[...slug]]
+  if (slug.startsWith('blog/') && slug !== 'blog') {
     const blogSlug = slug.replace('blog/', '')
     const blogContent = loadJSON(process.cwd() + '/content', `${locale}.json`) || loadJSON(process.cwd() + '/content', 'es.json') || {}
     const posts = blogContent?.blog?.posts || []
     const post = blogSlug ? posts.find((p: any) => p.slug === blogSlug) : null
-    if (!post && blogSlug) return { notFound: true }
+    if (!post) return { notFound: true }
     const images = loadJSON(process.cwd(), 'images.json')?.images || {}
-    return { props: { content: blogContent, post, pageConfig: null, images, pageId: blogSlug || 'blog', locale } }
+    return { props: { content: blogContent, post, pageConfig: null, images, pageId: blogSlug, locale } }
   }
   const fullContent = loadJSON(process.cwd() + '/content', `${locale}.json`) || loadJSON(process.cwd() + '/content', 'es.json') || {}
   const pageConfig = loadJSON(process.cwd() + '/nexa-pages', pageFile + '.json')
