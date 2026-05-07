@@ -2548,6 +2548,14 @@
       "description": "Sitio web de nexa-paraguay"
     }
   },
+  "prensa": {
+    "seo": {
+      "title": "Prensa — Nexa Paraguay",
+      "description": "Notas de prensa, comunicados y material para medios sobre Nexa Paraguay."
+    },
+    "headline": "Prensa y Medios",
+    "subheadline": "Comunicados oficiales, notas de prensa y material para periodistas."
+  },
   "servicesPage": {
     "seo": {
       "title": "Nuestros Servicios — Nexa Paraguay",

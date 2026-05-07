@@ -28,6 +28,7 @@ const SLUG_MAP: Record<string, string> = {
   'asistente':'asistente','calidad-de-vida':'calidad-de-vida',
   'casos-de-exito':'casos-de-exito','comparacion':'comparacion',
   'empresa':'empresa','inversor':'inversor','lifestyle':'lifestyle','trust':'trust',
+  'prensa':'prensa',
 }
 
 export default function SlugPage({ content, pageConfig, pageId, images }: any) {
@@ -73,11 +74,27 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
             if (Component) return <Component key={key} pageContent={pageContent} images={images} />
             const data = resolveContent(content, section.content || section.id)
             if (!data) return null
+            // Rich fallback: render items, body, description, content arrays
+            const items = data.items || data.full?.items || data.groups || data.pillars
+            const body = data.body || data.content
             return (
               <section key={key} style={{ padding: '2rem 1rem', background: idx % 2 ? '#F5F5F0' : '#fff' }}>
                 <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+                  {(data.eyebrow) && <p style={{ fontSize: '0.85rem', color: '#6B6B6B', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>{data.eyebrow}</p>}
                   {(data.headline || data.title) && <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1B2A4A', marginBottom: '0.75rem' }}>{data.headline || data.title}</h2>}
-                  {(data.subheadline || data.subtitle) && <p style={{ color: '#666', lineHeight: 1.6 }}>{data.subheadline || data.subtitle}</p>}
+                  {(data.subheadline || data.subtitle) && <p style={{ color: '#666', lineHeight: 1.6, marginBottom: '1.5rem' }}>{data.subheadline || data.subtitle}</p>}
+                  {body && <div style={{ color: '#444', lineHeight: 1.8, fontSize: '0.95rem', textAlign: 'left', marginBottom: '1.5rem' }}>{typeof body === 'string' ? body.split('\n').map((p: string, i: number) => <p key={i} style={{ marginBottom: '0.75rem' }}>{p}</p>) : <p>{JSON.stringify(body)}</p>}</div>}
+                  {items && Array.isArray(items) && (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', textAlign: 'left', marginTop: '1rem' }}>
+                      {items.map((item: any, j: number) => (
+                        <div key={j} style={{ padding: '1.25rem', background: '#F5F5F0', borderRadius: '12px' }}>
+                          {(item.title || item.pregunta || item.question || item.term) && <h4 style={{ fontWeight: 700, color: '#1B2A4A', marginBottom: '0.5rem' }}>{item.title || item.pregunta || item.question || item.term}</h4>}
+                          {(item.description || item.respuesta || item.answer || item.definition || item.body) && <p style={{ color: '#666', fontSize: '0.9rem', lineHeight: 1.6 }}>{item.description || item.respuesta || item.answer || item.definition || item.body}</p>}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {data.ctaText && <a href={data.ctaHref || '#'} style={{ display: 'inline-block', marginTop: '1.5rem', padding: '0.75rem 2rem', background: '#1B2A4A', color: '#fff', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.9rem' }}>{data.ctaText}</a>}
                 </div>
               </section>
             )
