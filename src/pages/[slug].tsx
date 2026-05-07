@@ -30,7 +30,7 @@ const SLUG_MAP: Record<string, string> = {
   'empresa':'empresa','inversor':'inversor','lifestyle':'lifestyle','trust':'trust',
 }
 
-export default function SlugPage({ content, pageConfig, pageId }: any) {
+export default function SlugPage({ content, pageConfig, pageId, images }: any) {
   const siteName = content?.siteName || 'Nexa Paraguay'
   const sections = pageConfig?.sections || []
   const seo = resolveContent(content, `${pageId}Page.seo`) || resolveContent(content, `${pageId}.seo`) || pageConfig?.seoTitle || {}
@@ -70,7 +70,7 @@ export default function SlugPage({ content, pageConfig, pageId }: any) {
             if (section.enabledWhen && !resolveContent(content, section.enabledWhen)) return null
             const key = section.id || section.content || `s${idx}`
             const Component = SECTION_MAP[section.id]
-            if (Component) return <Component key={key} pageContent={pageContent} />
+            if (Component) return <Component key={key} pageContent={pageContent} images={images} />
             const data = resolveContent(content, section.content || section.id)
             if (!data) return null
             return (
@@ -100,6 +100,7 @@ export function getServerSideProps({ params }: any) {
   const contentDir = path.join(process.cwd(), 'content')
   const content = loadJSON(contentDir, 'es.json')
   const pageConfig = loadJSON(pagesDir, pageFile + '.json')
+  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
   if (!pageConfig) return { notFound: true }
-  return { props: { content, pageConfig, pageId: slug, timestamp: Date.now() } }
+  return { props: { content, pageConfig, images, pageId: slug, timestamp: Date.now() } }
 }

@@ -20,7 +20,7 @@ const SECTION_MAP: Record<string, any> = {
   'cta-banner': CtaBanner,
 }
 
-export default function Home({ content, pageConfig }: any) {
+export default function Home({ content, pageConfig, images }: any) {
   const siteName = content?.siteName || 'Nexa Paraguay'
   const sections = pageConfig?.sections || []
   const seo = resolveContent(content, pageConfig?.slug ? `${pageConfig.slug}.seo` : 'home.seo') || content?.seo?.home || {}
@@ -59,7 +59,7 @@ export default function Home({ content, pageConfig }: any) {
             if (section.enabledWhen && !resolveContent(content, section.enabledWhen)) return null
             const key = section.id || section.content || `s${idx}`
             const Component = SECTION_MAP[section.id]
-            if (Component) return <Component key={key} pageContent={pageContent} />
+            if (Component) return <Component key={key} pageContent={pageContent} images={images} />
             // Fallback for unknown section types
             const data = resolveContent(content, section.content || section.id)
             if (!data) return null
@@ -90,6 +90,7 @@ export function getServerSideProps() {
   const pagesDir = path.join(process.cwd(), 'nexa-pages')
   const content = loadJSON(contentDir, 'es.json')
   const pageConfig = loadJSON(pagesDir, 'home.json')
+  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
   if (!content || !pageConfig) return { notFound: true }
-  return { props: { content, pageConfig, timestamp: Date.now() } }
+  return { props: { content, pageConfig, images, timestamp: Date.now() } }
 }
