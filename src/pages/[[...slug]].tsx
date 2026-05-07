@@ -126,6 +126,8 @@ export function getServerSideProps({ params }: any) {
   if (slug.includes('/')) {
     const parts = slug.split('/')
     if (LOCALES.includes(parts[0])) { locale = parts[0]; slug = parts.slice(1).join('/') || 'home' }
+  } else if (LOCALES.includes(slug)) {
+    locale = slug; slug = 'home'
   }
   const pageFile = SLUG_MAP[slug] || slug || 'home'
   const fullContent = loadJSON(process.cwd() + '/content', `${locale}.json`) || loadJSON(process.cwd() + '/content', 'es.json') || {}
