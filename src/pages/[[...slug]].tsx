@@ -50,6 +50,19 @@ const SLUG_MAP: Record<string, string> = {
   'prensa':'prensa',
 }
 
+function buildFaqSchema(content: any, pageId: string): Record<string, any> {
+  const items = content?.faqPage?.full?.items || []
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.filter((i: any) => i.q || i.a).map((i: any) => ({
+      '@type': 'Question',
+      name: i.q || i.pregunta || i.title || '',
+      acceptedAnswer: { '@type': 'Answer', text: i.a || i.respuesta || i.description || i.body || '' }
+    }))
+  }
+}
+
 export default function SlugPage({ content, pageConfig, pageId, images }: any) {
   const siteName = content?.siteName || 'Nexa Paraguay'
   const sections = pageConfig?.sections || []
@@ -59,12 +72,17 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
 
   const pageTitle = typeof seo === 'string' ? seo : seo?.title || pageConfig?.title || siteName
   const pageDesc = typeof seo === 'string' ? '' : seo?.description || ''
+  const pageSchema = pageConfig?.schemaType || ''
+
+  // Build JSON-LD schemas
+  const jsonLd: any[] = pageSchema === 'FAQPage' ? [buildFaqSchema(content, pageId)] : []
 
   return (
     <>
       <Head>
         <title>{pageTitle}</title>
         {pageDesc && <meta name="description" content={pageDesc} />}
+        {jsonLd.map((s, i) => <script key={i} type=\"application/ld+json\" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
       </Head>
       <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", color: '#1B2A4A' }}>
         {navigation && <Header navigation={navigation} />}

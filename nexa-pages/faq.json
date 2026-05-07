@@ -8,7 +8,6 @@
     {"id":"hero","variant":"minimal","content":"faqPage.hero"},
     {"id":"faq","variant":"accordion","content":"faqPage.full"},
     {"id":"cta-banner","variant":"solid","content":"faqPage.cta"},
-    {"id":"footer","variant":"standard","content":"footer"},
-    {"id":"whatsapp-float","variant":"standard","content":"whatsapp"}
+    {"id":"footer","variant":"standard","content":"footer"}
   ]
 }
