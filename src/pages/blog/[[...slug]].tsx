@@ -46,12 +46,18 @@ export default function BlogPost({ content, post, slug, images }: any) {
 }
 
 export function getServerSideProps({ params }: any) {
-  const slug = params?.slug || ''
-  const content = loadJSON(process.cwd() + '/content', 'es.json') || {}
+  const raw = params?.slug || ''
+  const LOCALES = ['es', 'en', 'nl', 'de']
+  let locale = 'es'
+  let slug = raw
+  if (Array.isArray(raw)) {
+    if (LOCALES.includes(raw[0])) { locale = raw[0]; slug = raw.slice(1).join('/') }
+    else { slug = raw.join('/') }
+  }
+  const content = loadJSON(process.cwd() + '/content', `${locale}.json`) || loadJSON(process.cwd() + '/content', 'es.json') || {}
   const posts = content?.blog?.posts || []
   const post = posts.find((p: any) => p.slug === slug)
-  const manifest = loadJSON(process.cwd(), 'images.json')
-  const images = manifest?.images || {}
+  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
   if (!post) return { notFound: true }
-  return { props: { content, post, slug, images } }
+  return { props: { content, post, slug, images, locale } }
 }
