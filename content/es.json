@@ -18,63 +18,63 @@
       },
       {
         "label": "Servicios",
-        "href": "/s/es/nexa-paraguay/servicios"
+        "href": "/servicios"
       },
       {
         "label": "Reubicación",
         "children": [
           {
             "label": "Programas",
-            "href": "/s/es/nexa-paraguay/programas"
+            "href": "/programas"
           },
           {
             "label": "Por qué Paraguay",
-            "href": "/s/es/nexa-paraguay/por-que-paraguay"
+            "href": "/por-que-paraguay"
           },
           {
             "label": "Proceso",
-            "href": "/s/es/nexa-paraguay/proceso"
+            "href": "/proceso"
           }
         ],
-        "href": "/s/es/nexa-paraguay/sobre"
+        "href": "/sobre"
       },
       {
         "label": "Sobre Nexa",
-        "href": "/s/es/nexa-paraguay/sobre"
+        "href": "/sobre"
       },
       {
         "label": "FAQ",
-        "href": "/s/es/nexa-paraguay/faq"
+        "href": "/faq"
       },
       {
         "label": "Benelux",
-        "href": "/s/es/nexa-paraguay/benelux"
+        "href": "/benelux"
       },
       {
         "label": "Recursos",
         "children": [
           {
             "label": "Blog",
-            "href": "/s/es/nexa-paraguay/blog"
+            "href": "/blog"
           },
           {
             "label": "Recursos",
-            "href": "/s/es/nexa-paraguay/recursos"
+            "href": "/recursos"
           },
           {
             "label": "Prensa",
-            "href": "/s/es/nexa-paraguay/prensa"
+            "href": "/prensa"
           }
         ],
-        "href": "/s/es/nexa-paraguay/recursos"
+        "href": "/recursos"
       },
       {
         "label": "Contacto",
-        "href": "/s/es/nexa-paraguay/contacto"
+        "href": "/contacto"
       }
     ],
     "ctaText": "Agendar consulta gratuita",
-    "ctaHref": "/s/es/nexa-paraguay/contacto"
+    "ctaHref": "/contacto"
   },
   "home": {
     "seo": {
@@ -85,9 +85,9 @@
       "headline": "Tu mudanza a Paraguay, con la guía adecuada desde el primer día.",
       "subheadline": "Nueve servicios, un equipo. Elige lo que necesitas — residencia, banca, bienes raíces o el paquete completo. Lo hacemos personal.",
       "ctaPrimaryText": "Agendar consulta gratuita",
-      "ctaPrimaryHref": "/s/es/nexa-paraguay/contacto",
+      "ctaPrimaryHref": "/contacto",
       "ctaSecondaryText": "Ver programas",
-      "ctaSecondaryHref": "/s/es/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "backgroundImage": "@img:hero.localizedEs",
       "backgroundImageMobile": "@img:hero.homeMobile",
       "trustBadges": [
@@ -145,7 +145,7 @@
             "Acompañamiento logístico"
           ],
           "ctaLabel": "Solicitar consulta",
-          "ctaHref": "/s/es/nexa-paraguay/contacto?programa=base",
+          "ctaHref": "/contacto?programa=base",
           "image": {
             "$img": "programs.tierBase"
           }
@@ -167,7 +167,7 @@
             "Honorarios, IVA y tasas incluidas"
           ],
           "ctaLabel": "Solicitar consulta",
-          "ctaHref": "/s/es/nexa-paraguay/contacto?programa=business",
+          "ctaHref": "/contacto?programa=business",
           "image": {
             "$img": "programs.tierBusiness"
           }
@@ -186,7 +186,7 @@
             "Acceso directo al equipo técnico"
           ],
           "ctaLabel": "Solicitar consulta",
-          "ctaHref": "/s/es/nexa-paraguay/contacto?programa=investor",
+          "ctaHref": "/contacto?programa=investor",
           "image": {
             "$img": "programs.tierInvestor"
           }
@@ -205,7 +205,7 @@
             "Inscripción registral"
           ],
           "ctaLabel": "Consultar",
-          "ctaHref": "/s/es/nexa-paraguay/contacto?programa=tierras",
+          "ctaHref": "/contacto?programa=tierras",
           "image": {
             "$img": "programs.tierTierras"
           }
@@ -217,7 +217,7 @@
       "title": "Lo que dicen nuestros clientes",
       "subtitle": "Historias reales de personas que establecieron su operación en Paraguay",
       "ctaText": "Leer todos los testimonios",
-      "ctaHref": "/s/es/nexa-paraguay/contacto",
+      "ctaHref": "/contacto",
       "items": [
         {
           "author": "J. van der L.",
@@ -246,9 +246,9 @@
         {
           "icon": "TrendingUp",
           "title": "Entorno económico",
-          "description": "Crecimiento sostenido, inflación controlada, impuesto del {{taxRate}} sobre la renta, sistema territorial.",
+          "description": "Crecimiento sostenido, inflación controlada, impuesto del 10% sobre la renta, sistema territorial.",
           "bullets": [
-            "Impuesto corporativo {{taxRate}}",
+            "Impuesto corporativo 10%",
             "Sistema territorial",
             "Economía abierta"
           ],
@@ -284,7 +284,7 @@
       "title": "Un proceso claro, paso a paso",
       "totalDuration": "Tiempo estimado total: 8–12 semanas.",
       "ctaLabel": "Iniciar mi proceso",
-      "ctaHref": "/s/es/nexa-paraguay/contacto",
+      "ctaHref": "/contacto",
       "steps": [
         {
           "number": 1,
@@ -337,7 +337,7 @@
       "title": "Dé el primer paso",
       "subtitle": "Agende una consulta gratuita de 30 minutos.",
       "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/s/es/nexa-paraguay/contacto"
+      "buttonHref": "/contacto"
     },
     "taxCalculator": {
       "title": "Calculadora de ahorro fiscal",
@@ -352,12 +352,12 @@
         },
         {
           "value": "+10",
-          "label": "Anos de experiencia",
+          "label": "Años de experiencia",
           "icon": "Calendar"
         },
         {
           "value": "98%",
-          "label": "Tasa de exito",
+          "label": "Tasa de éxito",
           "icon": "Award"
         }
       ],
@@ -603,7 +603,7 @@
             "Acompañamiento logístico"
           ],
           "ctaLabel": "Solicitar consulta",
-          "ctaHref": "/s/es/nexa-paraguay/contacto?programa=base",
+          "ctaHref": "/contacto?programa=base",
           "image": {
             "$img": "programs.tierBase"
           }
@@ -625,7 +625,7 @@
             "Honorarios, IVA y tasas incluidas"
           ],
           "ctaLabel": "Solicitar consulta",
-          "ctaHref": "/s/es/nexa-paraguay/contacto?programa=business",
+          "ctaHref": "/contacto?programa=business",
           "image": {
             "$img": "programs.tierBusiness"
           }
@@ -644,7 +644,7 @@
             "Acceso directo al equipo técnico"
           ],
           "ctaLabel": "Solicitar consulta",
-          "ctaHref": "/s/es/nexa-paraguay/contacto?programa=investor",
+          "ctaHref": "/contacto?programa=investor",
           "image": {
             "$img": "programs.tierInvestor"
           }
@@ -663,7 +663,7 @@
             "Inscripción registral"
           ],
           "ctaLabel": "Consultar",
-          "ctaHref": "/s/es/nexa-paraguay/contacto?programa=tierras",
+          "ctaHref": "/contacto?programa=tierras",
           "image": {
             "$img": "programs.tierTierras"
           }
@@ -710,7 +710,7 @@
     "cta": {
       "title": "¿Listo para elegir su programa?",
       "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/s/es/nexa-paraguay/contacto",
+      "buttonHref": "/contacto",
       "subtitle": "Agendá una consulta gratuita y revisamos tu caso sin compromiso."
     },
     "testimonials": {
@@ -758,7 +758,7 @@
           "title": "Entorno económico",
           "description": "Crecimiento PBI 4,2% en 2023. IRE 10%. Inflación 2,1%. Sistema territorial — la renta extranjera no tributa localmente.",
           "bullets": [
-            "Impuesto corporativo {{taxRate}}",
+            "Impuesto corporativo 10%",
             "Sistema territorial",
             "Economía abierta"
           ],
@@ -858,7 +858,7 @@
       "title": "Dé el primer paso",
       "subtitle": "Agende una consulta gratuita de 30 minutos.",
       "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/s/es/nexa-paraguay/contacto"
+      "buttonHref": "/contacto"
     }
   },
   "processPage": {
@@ -875,7 +875,7 @@
       "title": "Tu camino hacia una nueva vida en Paraguay",
       "totalDuration": "Tiempo estimado total: 8–12 semanas.",
       "ctaLabel": "Iniciar mi proceso",
-      "ctaHref": "/s/es/nexa-paraguay/contacto",
+      "ctaHref": "/contacto",
       "steps": [
         {
           "number": 1,
@@ -950,7 +950,7 @@
       "title": "Dé el primer paso",
       "subtitle": "Agende una consulta gratuita de 30 minutos.",
       "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/s/es/nexa-paraguay/contacto"
+      "buttonHref": "/contacto"
     },
     "highlights": {
       "eyebrow": "Resumen",
@@ -1074,7 +1074,7 @@
       "title": "Dé el primer paso",
       "subtitle": "Agende una consulta gratuita de 30 minutos.",
       "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/s/es/nexa-paraguay/contacto"
+      "buttonHref": "/contacto"
     },
     "gallery": {
       "title": "Nuestra oficina en Asunción",
@@ -1236,7 +1236,7 @@
       "title": "Dé el primer paso",
       "subtitle": "Agende una consulta gratuita de 30 minutos.",
       "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/s/es/nexa-paraguay/contacto"
+      "buttonHref": "/contacto"
     }
   },
   "contactPage": {
@@ -1436,23 +1436,23 @@
         "links": [
           {
             "label": "Programas",
-            "href": "/s/es/nexa-paraguay/programas"
+            "href": "/programas"
           },
           {
             "label": "Proceso",
-            "href": "/s/es/nexa-paraguay/proceso"
+            "href": "/proceso"
           },
           {
             "label": "Residencia y Legal",
-            "href": "/s/es/nexa-paraguay/servicios#residency-legal"
+            "href": "/servicios#residency-legal"
           },
           {
             "label": "Banca e Impuestos",
-            "href": "/s/es/nexa-paraguay/servicios#banking-tax"
+            "href": "/servicios#banking-tax"
           },
           {
             "label": "Bienes Raíces",
-            "href": "/s/es/nexa-paraguay/servicios#real-estate"
+            "href": "/servicios#real-estate"
           }
         ]
       },
@@ -1461,19 +1461,19 @@
         "links": [
           {
             "label": "Blog",
-            "href": "/s/es/nexa-paraguay/blog"
+            "href": "/blog"
           },
           {
             "label": "Glosario",
-            "href": "/s/es/nexa-paraguay/glosario"
+            "href": "/glosario"
           },
           {
             "label": "Recursos",
-            "href": "/s/es/nexa-paraguay/recursos"
+            "href": "/recursos"
           },
           {
             "label": "Prensa",
-            "href": "/s/es/nexa-paraguay/prensa"
+            "href": "/prensa"
           }
         ]
       },
@@ -1482,23 +1482,23 @@
         "links": [
           {
             "label": "Sobre",
-            "href": "/s/es/nexa-paraguay/sobre"
+            "href": "/sobre"
           },
           {
             "label": "FAQ",
-            "href": "/s/es/nexa-paraguay/faq"
+            "href": "/faq"
           },
           {
             "label": "Privacidad",
-            "href": "/s/es/nexa-paraguay/privacidad"
+            "href": "/privacidad"
           },
           {
             "label": "Contacto",
-            "href": "/s/es/nexa-paraguay/contacto"
+            "href": "/contacto"
           },
           {
             "label": "Escritorio Benelux",
-            "href": "/s/es/nexa-paraguay/benelux"
+            "href": "/benelux"
           }
         ]
       }
@@ -1518,7 +1518,7 @@
       }
     ],
     "linkText": "Ver declaración AML completa",
-    "linkHref": "/s/es/nexa-paraguay/privacidad#aml"
+    "linkHref": "/privacidad#aml"
   },
   "seprealadAttestation": {
     "title": "Formulario de atestiguación SEPRELAD",
@@ -1637,7 +1637,7 @@
       "ctaPrimaryText": "Agendá una consulta gratuita de 30 min",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-hero-primary-es",
       "ctaSecondaryText": "Ver el programa inversor",
-      "ctaSecondaryHref": "/s/es/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "backgroundImage": "@img:whyParaguay.growth"
     },
     "process": {
@@ -1767,7 +1767,7 @@
       "ctaPrimaryText": "Agendá una consulta gratuita",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-hero-primary-es",
       "ctaSecondaryText": "Ver el proceso",
-      "ctaSecondaryHref": "/s/es/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "backgroundImage": "@img:trust.migraciones"
     },
     "process": {
@@ -1896,7 +1896,7 @@
       "ctaPrimaryText": "Agendá una consulta gratuita",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-hero-primary-es",
       "ctaSecondaryText": "Por qué Paraguay",
-      "ctaSecondaryHref": "/s/es/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "backgroundImage": "@img:whyParaguay.lifestyle"
     },
     "process": {
@@ -2023,7 +2023,7 @@
       "ctaPrimaryText": "Agendá una consulta gratuita",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-hero-primary-es",
       "ctaSecondaryText": "Ver los programas",
-      "ctaSecondaryHref": "/s/es/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "backgroundImage": "@img:programs.tierBusiness"
     },
     "process": {
@@ -2539,7 +2539,7 @@
       "title": "¿Hablamos en neerlandés?",
       "subtitle": "Agendá una llamada de 30 minutos — en neerlandés, inglés o español.",
       "ctaText": "Agendar consulta gratuita",
-      "ctaHref": "/s/es/nexa-paraguay/contacto"
+      "ctaHref": "/contacto"
     }
   },
   "seo": {
@@ -2643,7 +2643,7 @@
       "title": "¿Listo para empezar?",
       "subtitle": "Reserva una consulta gratuita de 30 minutos para discutir tus necesidades.",
       "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/s/es/nexa-paraguay/contacto"
+      "buttonHref": "/contacto"
     }
   }
 }
