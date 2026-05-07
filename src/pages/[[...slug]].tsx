@@ -82,7 +82,7 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
       <Head>
         <title>{pageTitle}</title>
         {pageDesc && <meta name="description" content={pageDesc} />}
-        {jsonLd.map((s, i) => <script key={i} type=\"application/ld+json\" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
+        {jsonLd.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
       </Head>
       <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", color: '#1B2A4A' }}>
         {navigation && <Header navigation={navigation} />}
