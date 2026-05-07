@@ -21,8 +21,8 @@ export function FaqSection({ pageContent, data }: SectionProps) {
         {data.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem',textAlign:'center' }}>{data.title}</h2>}
         {items.map((item: any, i: number) => {
           const isOpen = open === i
-          const question = item.pregunta || item.question || item.title
-          const answer = item.respuesta || item.answer || item.description || item.body
+          const question = item.pregunta || item.question || item.title || item.q
+          const answer = item.respuesta || item.answer || item.description || item.body || item.a
           if (!question || !answer) return null
           return (
             <div key={i} style={{ marginBottom: '0.75rem', border: '1px solid #e0e0e0', borderRadius: '12px', overflow: 'hidden', background: '#fff' }}>
@@ -114,8 +114,8 @@ export function PrivacyAccordion({ pageContent, data }: SectionProps) {
         {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:'#1B2A4A',marginBottom:'2rem' }}>{d.title}</h2>}
         {items.map((item: any, i: number) => {
           const isOpen = open === i
-          const title = item.title || item.pregunta || item.question
-          const body = item.body || item.description || item.respuesta || item.answer
+          const title = item.title || item.pregunta || item.question || item.q
+          const body = item.body || item.description || item.respuesta || item.answer || item.a
           if (!title || !body) return null
           return (
             <div key={i} style={{ marginBottom:'0.75rem', border:'1px solid #e0e0e0', borderRadius:'12px', overflow:'hidden' }}>
