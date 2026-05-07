@@ -9,12 +9,13 @@ interface NavItem {
 export function Header({ navigation }: { navigation: any }) {
   const [open, setOpen] = useState(false)
   const navItems: NavItem[] = navigation?.navItems || []
-  const businessName = navigation?.businessName || 'Nexa Paraguay'
 
   return (
     <header style={{ background: '#fff', borderBottom: '1px solid #eee', position: 'sticky', top: 0, zIndex: 100 }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <a href="/" style={{ fontWeight: 700, fontSize: '1.2rem', color: '#1B2A4A', textDecoration: 'none' }}>{businessName}</a>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <img src="/images/brand/logo.svg" alt="Nexa Paraguay" style={{ height: '36px', width: 'auto' }} />
+        </a>
         <nav style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
           {navItems.map((item, i) => (
             <div key={i} style={{ position: 'relative' }}>

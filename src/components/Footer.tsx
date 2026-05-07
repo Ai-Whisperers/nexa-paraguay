@@ -8,8 +8,8 @@ export function Footer({ footer }: { footer: any }) {
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
           <div>
-            <h4 style={{ fontWeight: 700, marginBottom: '1rem', color: '#C9A96E' }}>{footer.businessName}</h4>
-            {footer.whatsapp && <p style={{ fontSize: '0.85rem', opacity: 0.8, marginBottom: '0.25rem' }}>📱 {footer.whatsapp}</p>}
+            <img src="/images/brand/logo-dark.svg" alt="Nexa Paraguay" style={{ height: '32px', marginBottom: '1rem' }} />
+            {footer.whatsapp && <p style={{ fontSize: '0.85rem', opacity: 0.8, marginBottom: '0.25rem' }}>📱 {footer.whatsapp}</p>} 
             {footer.email && <p style={{ fontSize: '0.85rem', opacity: 0.8 }}>✉️ {footer.email}</p>}
           </div>
           {columns.map((col: any, i: number) => (

@@ -8,17 +8,20 @@
       "logo": {
         "src": "/images/brand/logo.webp",
         "alt": "Nexa Paraguay logo",
-        "fallbackSrc": "/images/brand/logo.png"
+        "fallbackSrc": "/images/brand/logo.png",
+        "srcSvg": "/images/brand/logo.svg"
       },
       "logoDark": {
         "src": "/images/brand/logo-dark.webp",
         "alt": "Nexa Paraguay logo (monochrome white)",
-        "fallbackSrc": "/images/brand/logo-dark.png"
+        "fallbackSrc": "/images/brand/logo-dark.png",
+        "srcSvg": "/images/brand/logo-dark.svg"
       },
       "logoIcon": {
         "src": "/images/brand/logo-icon.webp",
         "alt": "Nexa Paraguay icon mark",
-        "fallbackSrc": "/images/brand/logo-icon.png"
+        "fallbackSrc": "/images/brand/logo-icon.png",
+        "srcSvg": "/images/brand/logo-icon.svg"
       },
       "favicon": {
         "src": "/images/brand/favicon.webp",
