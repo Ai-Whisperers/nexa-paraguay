@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { HeroSection, StatsSection, TrustSection, ProgramsSection, ServicesSection, WhyCountrySection, FeaturesSection, ProcessSection, TestimonialsSection, CtaBanner, TaxCalculatorSection } from '../components/sections'
-import { resolveContent } from '../components/content'
+import { resolveContent, resolveImage } from '../components/content'
 
 const SECTION_MAP: Record<string, any> = {
   'hero': HeroSection,
@@ -94,8 +94,8 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
                             <>
                           {(item.title || item.pregunta || item.question || item.term || item.name) && <h4 style={{ fontWeight: 700, color: '#1B2A4A', marginBottom: '0.5rem' }}>{item.title || item.pregunta || item.question || item.term || item.name}</h4>}
                           {(item.description || item.respuesta || item.answer || item.definition || item.body || item.role) && <p style={{ color: '#666', fontSize: '0.9rem', lineHeight: 1.6 }}>{item.description || item.respuesta || item.answer || item.definition || item.body || item.role}</p>}
-                          {item.memberImage && <img src={typeof item.memberImage === 'string' ? item.memberImage : ''} alt={item.name} style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '50%', marginBottom: '0.5rem' }} />}
-                          {item.imageUrl && <img src={typeof item.imageUrl === 'string' ? item.imageUrl : ''} alt={item.title} style={{ width: '100%', height: '100px', objectFit: 'cover', borderRadius: '8px', marginBottom: '0.5rem' }} />}
+                          {item.memberImage && <img src={resolveImage(images, typeof item.memberImage === 'string' ? item.memberImage : '')} alt={item.name} style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '50%', marginBottom: '0.5rem' }} />}
+                          {item.imageUrl && <img src={resolveImage(images, typeof item.imageUrl === 'string' ? item.imageUrl : '')} alt={item.title} style={{ width: '100%', height: '100px', objectFit: 'cover', borderRadius: '8px', marginBottom: '0.5rem' }} />}
                             </>
                           )}
                         </div>
