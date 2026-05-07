@@ -74,7 +74,8 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
             if (Component) {
               const sectionData = resolveContent(content, section.content || section.id)
               const pc: any = {}
-              if (section.content || section.id) pc[section.id] = sectionData || content
+              const keyName = section.content?.split('.').pop() || section.id
+              if (section.content || section.id) pc[keyName] = sectionData || content
               return <ErrorBoundary key={key} name={section.id}><Component pageContent={pc} data={sectionData} images={images} /></ErrorBoundary>
             }
             const data = resolveContent(content, section.content || section.id)
