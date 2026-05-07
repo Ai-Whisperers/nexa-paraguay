@@ -1,11 +1,11 @@
-import { readFileSync } from 'fs'
-import path from 'path'
 import Head from 'next/head'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { HeroSection, StatsSection, TrustSection, ProgramsSection, ServicesSection, WhyCountrySection, FeaturesSection, ProcessSection, TestimonialsSection, CtaBanner, TaxCalculatorSection } from '../components/sections'
-import { FaqSection, BlogSection, TeamSection, PrivacyAccordion, GlossarySection, NewsletterSection, StorySection, PillarsSection, PageHeroSection, HighlightSection, ComparisonSection, GuidesSection } from '../components/sections-extra'
+import { NewsletterSection, StorySection, TeamSection } from '../components/sections-extra'
 import { resolveContent } from '../components/content'
+import { loadJSON } from '../lib/loader'
+import { ErrorBoundary } from '../components/ErrorBoundary'
 
 const SECTION_MAP: Record<string, any> = {
   'hero': HeroSection,
@@ -27,28 +27,9 @@ const SECTION_MAP: Record<string, any> = {
 export default function Home({ content, pageConfig, images }: any) {
   const siteName = content?.siteName || 'Nexa Paraguay'
   const sections = pageConfig?.sections || []
-  const seo = resolveContent(content, pageConfig?.slug ? `${pageConfig.slug}.seo` : 'home.seo') || content?.seo?.home || {}
+  const seo = resolveContent(content, 'home.seo') || content?.seo?.home || {}
   const navigation = content?.navigation
   const footer = content?.footer
-
-  // Prepare page-level content lookup — walk all keys so components can do pageContent.X
-  function buildPageContent(base: any): any {
-    const pc: any = {}
-    for (const sec of sections) {
-      const key = sec.content || sec.id
-      const val = resolveContent(base, key)
-      if (val) {
-        const parts = key.split('.')
-        const shortKey = parts.length > 1 ? parts[parts.length-1] : parts[0]
-        pc[shortKey] = val
-        // Also try the full key
-        pc[key] = val
-      }
-    }
-    return pc
-  }
-
-  const pageContent = buildPageContent(content)
 
   return (
     <>
@@ -63,17 +44,34 @@ export default function Home({ content, pageConfig, images }: any) {
             if (section.enabledWhen && !resolveContent(content, section.enabledWhen)) return null
             const key = section.id || section.content || `s${idx}`
             const Component = SECTION_MAP[section.id]
-            if (Component) return <Component key={key} pageContent={pageContent} images={images} />
-            // Fallback for unknown section types
+            if (Component) {
+              const sectionData = resolveContent(content, section.content || section.id)
+              return <ErrorBoundary key={key} name={section.id}><Component pageContent={sectionData || content} data={sectionData} images={images} /></ErrorBoundary>
+            }
             const data = resolveContent(content, section.content || section.id)
             if (!data) return null
+            const items = data.items || data.full?.items || data.groups || data.pillars || data.members || data.paragraphs
+            const body = data.body || data.content
             return (
               <section key={key} style={{ padding: '2rem 1rem', background: idx % 2 ? '#F5F5F0' : '#fff' }}>
                 <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-                  {data.headline && <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1B2A4A', marginBottom: '0.75rem' }}>{data.headline}</h2>}
-                  {data.title && <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1B2A4A', marginBottom: '0.75rem' }}>{data.title}</h2>}
-                  {data.subheadline && <p style={{ color: '#666', lineHeight: 1.6 }}>{data.subheadline}</p>}
-                  {data.subtitle && <p style={{ color: '#666' }}>{data.subtitle}</p>}
+                  {data.eyebrow && <p style={{ fontSize: '0.85rem', color: '#6B6B6B', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>{data.eyebrow}</p>}
+                  {(data.headline || data.title) && <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1B2A4A', marginBottom: '0.75rem' }}>{data.headline || data.title}</h2>}
+                  {(data.subheadline || data.subtitle) && <p style={{ color: '#666', lineHeight: 1.6, marginBottom: '1.5rem' }}>{data.subheadline || data.subtitle}</p>}
+                  {body && <div style={{ color: '#444', lineHeight: 1.8, fontSize: '0.95rem', textAlign: 'left', marginBottom: '1.5rem' }}>{typeof body === 'string' ? body.split('\n').map((p: string, i: number) => <p key={i} style={{ marginBottom: '0.75rem' }}>{p}</p>) : <p>{JSON.stringify(body)}</p>}</div>}
+                  {items && Array.isArray(items) && (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', textAlign: 'left' }}>
+                      {items.map((item: any, j: number) => (
+                        <div key={j} style={{ padding: '1.25rem', background: '#F5F5F0', borderRadius: '12px' }}>
+                          {typeof item === 'string' ? <p style={{ color: '#444', lineHeight: 1.7, fontSize: '0.95rem' }}>{item}</p> : <>
+                            {(item.title || item.name) && <h4 style={{ fontWeight: 700, color: '#1B2A4A', marginBottom: '0.5rem' }}>{item.title || item.name}</h4>}
+                            {(item.description || item.body || item.role) && <p style={{ color: '#666', fontSize: '0.9rem', lineHeight: 1.6 }}>{item.description || item.body || item.role}</p>}
+                          </>}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {data.ctaText && <a href={data.ctaHref || '#'} style={{ display: 'inline-block', marginTop: '1.5rem', padding: '0.75rem 2rem', background: '#1B2A4A', color: '#fff', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.9rem' }}>{data.ctaText}</a>}
                 </div>
               </section>
             )
@@ -85,16 +83,11 @@ export default function Home({ content, pageConfig, images }: any) {
   )
 }
 
-function loadJSON(dir: string, file: string) {
-  try { return JSON.parse(readFileSync(path.join(dir, file), 'utf-8')) } catch { return null }
-}
-
 export function getServerSideProps() {
-  const contentDir = path.join(process.cwd(), 'content')
-  const pagesDir = path.join(process.cwd(), 'nexa-pages')
-  const content = loadJSON(contentDir, 'es.json')
-  const pageConfig = loadJSON(pagesDir, 'home.json')
-  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
-  if (!content || !pageConfig) return { notFound: true }
-  return { props: { content, pageConfig, images, timestamp: Date.now() } }
+  const fullContent = loadJSON(process.cwd() + '/content', 'es.json') || {}
+  const pageConfig = loadJSON(process.cwd() + '/nexa-pages', 'home.json')
+  const manifest = loadJSON(process.cwd(), 'images.json')
+  const images = manifest?.images || {}
+  if (!fullContent || !pageConfig) return { notFound: true }
+  return { props: { content: fullContent, pageConfig, images } }
 }

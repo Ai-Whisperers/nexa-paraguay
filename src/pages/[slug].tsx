@@ -1,11 +1,11 @@
-import { readFileSync } from 'fs'
-import path from 'path'
 import Head from 'next/head'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { HeroSection, StatsSection, TrustSection, ProgramsSection, ServicesSection, WhyCountrySection, FeaturesSection, ProcessSection, TestimonialsSection, CtaBanner, TaxCalculatorSection } from '../components/sections'
 import { FaqSection, BlogSection, TeamSection, PrivacyAccordion, GlossarySection, NewsletterSection, StorySection, PillarsSection, PageHeroSection, HighlightSection, ComparisonSection, GuidesSection, BookingEmbedSection, ContactDetailsSection, GallerySection } from '../components/sections-extra'
 import { resolveContent, resolveImage } from '../components/content'
+import { loadJSON } from '../lib/loader'
+import { ErrorBoundary } from '../components/ErrorBoundary'
 
 const SECTION_MAP: Record<string, any> = {
   'hero': HeroSection,
@@ -54,23 +54,6 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
   const navigation = content?.navigation
   const footer = content?.footer
 
-  function buildPageContent(base: any): any {
-    const pc: any = {}
-    for (const sec of sections) {
-      const key = sec.content || sec.id
-      const val = resolveContent(base, key)
-      if (val) {
-        const parts = key.split('.')
-        const shortKey = parts.length > 1 ? parts[parts.length-1] : parts[0]
-        pc[shortKey] = val
-        pc[key] = val
-      }
-    }
-    return pc
-  }
-
-  const pageContent = buildPageContent(content)
-
   const pageTitle = typeof seo === 'string' ? seo : seo?.title || pageConfig?.title || siteName
   const pageDesc = typeof seo === 'string' ? '' : seo?.description || ''
 
@@ -89,11 +72,10 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
             const Component = SECTION_MAP[section.id]
             if (Component) {
               const sectionData = resolveContent(content, section.content || section.id)
-              return <Component key={key} pageContent={sectionData || pageContent} data={sectionData} images={images} />
+              return <ErrorBoundary key={key} name={section.id}><Component pageContent={sectionData || content} data={sectionData} images={images} /></ErrorBoundary>
             }
             const data = resolveContent(content, section.content || section.id)
             if (!data) return null
-            // Rich fallback: render items, body, description, content arrays
             const items = data.items || data.full?.items || data.groups || data.pillars || data.members || data.paragraphs || data.trust?.items
             const body = data.body || data.content
             return (
@@ -133,20 +115,18 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
   )
 }
 
-function loadJSON(dir: string, file: string) {
-  try { return JSON.parse(readFileSync(path.join(dir, file), 'utf-8')) } catch { return null }
-}
-
 export function getServerSideProps({ params }: any) {
   const slug = params?.slug || 'home'
   const pageFile = SLUG_MAP[slug] || slug || 'home'
-  const pagesDir = path.join(process.cwd(), 'nexa-pages')
-  const contentDir = path.join(process.cwd(), 'content')
-  const content = loadJSON(contentDir, 'es.json')
+  const pagesDir = process.cwd() + '/nexa-pages'
+  const contentDir = process.cwd() + '/content'
+  const fullContent = loadJSON(contentDir, 'es.json') || {}
   const pageConfig = loadJSON(pagesDir, pageFile + '.json')
   if (!pageConfig) return { notFound: true }
-  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
+  const rootDir = process.cwd()
+  const manifest = loadJSON(rootDir, 'images.json')
+  const images = manifest?.images || {}
   return {
-    props: { content, pageConfig, images, pageId: slug, timestamp: Date.now() },
+    props: { content: fullContent, pageConfig, images, pageId: slug },
   }
 }

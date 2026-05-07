@@ -1,10 +1,9 @@
-import { readFileSync } from 'fs'
-import path from 'path'
 import Head from 'next/head'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import { NewsletterSection } from '../../components/sections-extra'
 import { resolveContent, resolveImage } from '../../components/content'
+import { loadJSON } from '../../lib/loader'
 
 export default function BlogPost({ content, post, slug, images }: any) {
   const navigation = content?.navigation
@@ -46,17 +45,13 @@ export default function BlogPost({ content, post, slug, images }: any) {
   )
 }
 
-function loadJSON(dir: string, file: string) {
-  try { return JSON.parse(readFileSync(path.join(dir, file), 'utf-8')) } catch { return null }
-}
-
 export function getServerSideProps({ params }: any) {
   const slug = params?.slug || ''
-  const contentDir = path.join(process.cwd(), 'content')
-  const content = loadJSON(contentDir, 'es.json')
+  const content = loadJSON(process.cwd() + '/content', 'es.json') || {}
   const posts = content?.blog?.posts || []
   const post = posts.find((p: any) => p.slug === slug)
-  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
+  const manifest = loadJSON(process.cwd(), 'images.json')
+  const images = manifest?.images || {}
   if (!post) return { notFound: true }
   return { props: { content, post, slug, images } }
 }
