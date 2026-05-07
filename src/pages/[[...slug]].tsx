@@ -63,7 +63,7 @@ function buildFaqSchema(content: any, pageId: string): Record<string, any> {
   }
 }
 
-export default function SlugPage({ content, pageConfig, pageId, images, post }: any) {
+export default function SlugPage({ content, pageConfig, pageId, images, post, locale: loc }: any) {
   const siteName = content?.siteName || 'Nexa Paraguay'
   const sections = pageConfig?.sections || []
   const seo = resolveContent(content, `${pageId}Page.seo`) || resolveContent(content, `${pageId}.seo`) || pageConfig?.seoTitle || {}
@@ -89,7 +89,7 @@ export default function SlugPage({ content, pageConfig, pageId, images, post }: 
               {post.tags.map((t: string, i: number) => <span key={i} style={{ padding:'0.25rem 0.75rem',background:'#F5F5F0',borderRadius:'50px',fontSize:'0.8rem',color:'#666' }}>{t}</span>)}
             </div>}
             <div style={{ marginTop:'2rem',textAlign:'center' }}>
-            <a href={'/' + locale + '/blog'} style={{ color:'#C9A96E',fontWeight:700,textDecoration:'none' }}>{'\\u2190 Volver al blog'}</a>
+            <a href={'/' + loc + '/blog'} style={{ color:'#C9A96E',fontWeight:700,textDecoration:'none' }}>{'\\u2190 Volver al blog'}</a>
             </div>
           </article>
         </main>
