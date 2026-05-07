@@ -63,12 +63,40 @@ function buildFaqSchema(content: any, pageId: string): Record<string, any> {
   }
 }
 
-export default function SlugPage({ content, pageConfig, pageId, images }: any) {
+export default function SlugPage({ content, pageConfig, pageId, images, post }: any) {
   const siteName = content?.siteName || 'Nexa Paraguay'
   const sections = pageConfig?.sections || []
   const seo = resolveContent(content, `${pageId}Page.seo`) || resolveContent(content, `${pageId}.seo`) || pageConfig?.seoTitle || {}
   const navigation = content?.navigation
   const footer = content?.footer
+
+  // Render blog post directly when pageConfig is null
+  if (!pageConfig && post) {
+    return (<>
+      <Head><title>{post.title} — {siteName}</title>{post.excerpt && <meta name="description" content={post.excerpt} />}</Head>
+      <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", color: '#1B2A4A' }}>
+        {navigation && <Header navigation={navigation} />}
+        <main>
+          <article style={{ maxWidth: '750px', margin: '0 auto', padding: '3rem 1rem' }}>
+            {post.date && <span style={{ fontSize:'0.85rem',color:'#C9A96E',fontWeight:600 }}>{post.date}</span>}
+            <h1 style={{ fontSize:'clamp(1.5rem,3vw,2.2rem)',fontWeight:700,lineHeight:1.2,margin:'0.75rem 0 0.5rem' }}>{post.title}</h1>
+            {post.author && <p style={{ color:'#999',fontSize:'0.9rem',marginBottom:'1.5rem' }}>Por {post.author}</p>}
+            {post.excerpt && <p style={{ color:'#555',fontSize:'1.05rem',lineHeight:1.7,marginBottom:'2rem',fontStyle:'italic' }}>{post.excerpt}</p>}
+            <div style={{ color:'#444',lineHeight:1.8,fontSize:'0.95rem' }}>
+              {post.body ? post.body.split('\\n').map((p: string, i: number) => <p key={i} style={{marginBottom:'1rem'}}>{p}</p>) : <p>Contenido completo pr\\u00f3ximamente.</p>}
+            </div>
+            {post.tags && <div style={{ marginTop:'2rem',display:'flex',gap:'0.5rem',flexWrap:'wrap' }}>
+              {post.tags.map((t: string, i: number) => <span key={i} style={{ padding:'0.25rem 0.75rem',background:'#F5F5F0',borderRadius:'50px',fontSize:'0.8rem',color:'#666' }}>{t}</span>)}
+            </div>}
+            <div style={{ marginTop:'2rem',textAlign:'center' }}>
+              <a href={`/${pageId.split('/')[0] || 'es'}/blog`} style={{ color:'#C9A96E',fontWeight:700,textDecoration:'none' }}>\\u2190 Volver al blog</a>
+            </div>
+          </article>
+        </main>
+        <Footer footer={footer} />
+      </div>
+    </>)
+  }
 
   const pageTitle = typeof seo === 'string' ? seo : seo?.title || pageConfig?.title || siteName
   const pageDesc = typeof seo === 'string' ? '' : seo?.description || ''
@@ -150,6 +178,16 @@ export function getServerSideProps({ params }: any) {
     locale = slug; slug = 'home'
   }
   const pageFile = SLUG_MAP[slug] || slug || 'home'
+  // Handle blog posts routed through [[...slug]] instead of blog/
+  if (slug.startsWith('blog/') || slug === 'blog') {
+    const blogSlug = slug.replace('blog/', '')
+    const blogContent = loadJSON(process.cwd() + '/content', `${locale}.json`) || loadJSON(process.cwd() + '/content', 'es.json') || {}
+    const posts = blogContent?.blog?.posts || []
+    const post = blogSlug ? posts.find((p: any) => p.slug === blogSlug) : null
+    if (!post && blogSlug) return { notFound: true }
+    const images = loadJSON(process.cwd(), 'images.json')?.images || {}
+    return { props: { content: blogContent, post, pageConfig: null, images, pageId: blogSlug || 'blog', locale } }
+  }
   const fullContent = loadJSON(process.cwd() + '/content', `${locale}.json`) || loadJSON(process.cwd() + '/content', 'es.json') || {}
   const pageConfig = loadJSON(process.cwd() + '/nexa-pages', pageFile + '.json')
   if (!pageConfig) return { notFound: true }
