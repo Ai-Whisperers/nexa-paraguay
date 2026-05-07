@@ -145,8 +145,8 @@ export function GlossarySection({ pageContent, data }: SectionProps) {
         <div style={{ display:'flex', flexDirection:'column', gap:'0.75rem' }}>
           {items.map((item: any, i: number) => (
             <div key={i} style={{ padding:'1.25rem', background:'#fff', borderRadius:'12px', border:'1px solid #e0e0e0' }}>
-              <h4 style={{ fontWeight:700, color:'#1B2A4A', marginBottom:'0.25rem', fontSize:'1rem' }}>{item.term || item.title}</h4>
-              <p style={{ color:'#555', fontSize:'0.9rem', lineHeight:1.6 }}>{item.definition || item.description || item.body}</p>
+              <h4 style={{ fontWeight:700, color:'#1B2A4A', marginBottom:'0.25rem', fontSize:'1rem' }}>{item.term || item.title || item.q}</h4>
+              <p style={{ color:'#555', fontSize:'0.9rem', lineHeight:1.6 }}>{item.definition || item.description || item.body || item.a}</p>
             </div>
           ))}
         </div>
