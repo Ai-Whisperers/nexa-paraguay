@@ -75,7 +75,7 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
             const data = resolveContent(content, section.content || section.id)
             if (!data) return null
             // Rich fallback: render items, body, description, content arrays
-            const items = data.items || data.full?.items || data.groups || data.pillars
+            const items = data.items || data.full?.items || data.groups || data.pillars || data.members || data.paragraphs || data.trust?.items
             const body = data.body || data.content
             return (
               <section key={key} style={{ padding: '2rem 1rem', background: idx % 2 ? '#F5F5F0' : '#fff' }}>
@@ -88,8 +88,16 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', textAlign: 'left', marginTop: '1rem' }}>
                       {items.map((item: any, j: number) => (
                         <div key={j} style={{ padding: '1.25rem', background: '#F5F5F0', borderRadius: '12px' }}>
-                          {(item.title || item.pregunta || item.question || item.term) && <h4 style={{ fontWeight: 700, color: '#1B2A4A', marginBottom: '0.5rem' }}>{item.title || item.pregunta || item.question || item.term}</h4>}
-                          {(item.description || item.respuesta || item.answer || item.definition || item.body) && <p style={{ color: '#666', fontSize: '0.9rem', lineHeight: 1.6 }}>{item.description || item.respuesta || item.answer || item.definition || item.body}</p>}
+                          {typeof item === 'string' ? (
+                            <p style={{ color: '#444', lineHeight: 1.7, fontSize: '0.95rem' }}>{item}</p>
+                          ) : (
+                            <>
+                          {(item.title || item.pregunta || item.question || item.term || item.name) && <h4 style={{ fontWeight: 700, color: '#1B2A4A', marginBottom: '0.5rem' }}>{item.title || item.pregunta || item.question || item.term || item.name}</h4>}
+                          {(item.description || item.respuesta || item.answer || item.definition || item.body || item.role) && <p style={{ color: '#666', fontSize: '0.9rem', lineHeight: 1.6 }}>{item.description || item.respuesta || item.answer || item.definition || item.body || item.role}</p>}
+                          {item.memberImage && <img src={typeof item.memberImage === 'string' ? item.memberImage : ''} alt={item.name} style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '50%', marginBottom: '0.5rem' }} />}
+                          {item.imageUrl && <img src={typeof item.imageUrl === 'string' ? item.imageUrl : ''} alt={item.title} style={{ width: '100%', height: '100px', objectFit: 'cover', borderRadius: '8px', marginBottom: '0.5rem' }} />}
+                            </>
+                          )}
                         </div>
                       ))}
                     </div>
