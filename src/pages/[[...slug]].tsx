@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { HeroSection, StatsSection, TrustSection, ProgramsSection, ServicesSection, WhyCountrySection, FeaturesSection, ProcessSection, TestimonialsSection, CtaBanner, TaxCalculatorSection } from '../components/sections'
-import { FaqSection, BlogSection, TeamSection, PrivacyAccordion, GlossarySection, NewsletterSection, StorySection, PillarsSection, PageHeroSection, HighlightSection, ComparisonSection, GuidesSection, BookingEmbedSection, ContactDetailsSection, GallerySection } from '../components/sections-extra'
+import { FaqSection, BlogSection, TeamSection, PrivacyAccordion, GlossarySection, NewsletterSection, StorySection, PillarsSection, PageHeroSection, HighlightSection, ComparisonSection, GuidesSection, BookingEmbedSection, ContactDetailsSection, GallerySection, FaqSearchSection, ContactFormSection } from '../components/sections-extra'
 import { resolveContent, resolveImage } from '../components/content'
 import { loadJSON } from '../lib/loader'
 import { ErrorBoundary } from '../components/ErrorBoundary'
@@ -20,7 +20,7 @@ const SECTION_MAP: Record<string, any> = {
   'process-timeline': ProcessSection,
   'testimonials': TestimonialsSection,
   'cta-banner': CtaBanner,
-  'faq': FaqSection,
+  'faq': FaqSearchSection,
   'blog-index': BlogSection,
   'team': TeamSection,
   'privacy-accordion': PrivacyAccordion,
@@ -35,6 +35,8 @@ const SECTION_MAP: Record<string, any> = {
   'booking-embed': BookingEmbedSection,
   'contact': ContactDetailsSection,
   'gallery': GallerySection,
+  'faq-search': FaqSearchSection,
+  'contact-form': ContactFormSection,
 }
 
 const SLUG_MAP: Record<string, string> = {

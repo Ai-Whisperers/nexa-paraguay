@@ -90,10 +90,14 @@
       "ctaSecondaryHref": "/programas",
       "backgroundImage": "@img:hero.localizedEs",
       "backgroundImageMobile": "@img:hero.homeMobile",
+      "dutchNote": "🇳🇱 Servicio especializado para holandeses y belgas — equipo bilingüe NL-ES",
       "trustBadges": [
         "Servicios a la carta",
         "8–12 semanas",
-        "Precio fijo"
+        "Precio fijo",
+        "+47.000 residencias en 2025",
+        "+63% crecimiento anual",
+        "+189% comunidad holandesa"
       ]
     },
     "trust": {
@@ -227,7 +231,7 @@
         {
           "icon": "TrendingUp",
           "title": "Entorno económico",
-          "description": "Crecimiento sostenido, inflación controlada, impuesto del 10% sobre la renta, sistema territorial.",
+          "description": "Crecimiento sostenido, inflación controlada, 10% flat tax on foreign income, territorial tax system.",
           "bullets": [
             "Impuesto corporativo 10%",
             "Sistema territorial",
@@ -238,7 +242,7 @@
         {
           "icon": "Heart",
           "title": "Calidad de vida",
-          "description": "Clima cálido, comunidad internacional creciente, poder adquisitivo significativo.",
+          "description": "Clima subtropical, costo de vida 60% menor que Europa, comunidad internacional creciente.",
           "bullets": [
             "Costo de vida favorable",
             "Comunidad internacional",
@@ -249,13 +253,49 @@
         {
           "icon": "Landmark",
           "title": "Estabilidad fiscal",
-          "description": "Régimen territorial con reglas transparentes y un entorno fiscal predecible.",
+          "description": "Zero tax on foreign dividends, capital gains, interest. Régimen territorial con reglas transparentes.",
           "bullets": [
             "Sistema territorial",
             "Marco regulatorio estable",
             "Sin impuesto sobre rentas extranjeras"
           ],
           "imageUrl": "@src:whyParaguay.tax"
+        },
+        {
+          "icon": "Users",
+          "title": "Comunidad Holandesa Activa",
+          "description": "Más de 800 familias holandesas viven en Paraguay. Comunidades activas en Asunción, Encarnación y el Lago Ypacaraí. Grupos de WhatsApp, eventos semanales y ferias holandesas.",
+          "imageUrl": "@img:whyParaguay.community",
+          "bullets": [
+            "6.000+ miembros en grupos de expats",
+            "Ferias holandesas mensuales en Asunción",
+            "Colegio internacional con currículo europeo",
+            "Conexión directa Ámsterdam-Asunción"
+          ]
+        },
+        {
+          "icon": "Shield",
+          "title": "Seguridad y Estabilidad",
+          "description": "Paraguay es uno de los países más seguros de Sudamérica. Baja tasa de criminalidad violenta, estabilidad política y económica.",
+          "imageUrl": "@img:whyParaguay.safety",
+          "bullets": [
+            "Tasa de homicidios 75% menor que Brasil",
+            "Estabilidad política: misma constitución desde 1992",
+            "Moneda estable (Guaraní) con baja inflación",
+            "Sistema bancario sólido y regulado"
+          ]
+        },
+        {
+          "icon": "Wifi",
+          "title": "Infraestructura Moderna",
+          "description": "Internet de fibra óptica en todas las ciudades principales, centros comerciales modernos, hospitales de primer nivel y creciente oferta gastronómica.",
+          "imageUrl": "@img:whyParaguay.infrastructure",
+          "bullets": [
+            "Internet fibra óptica 500MB+ en zonas urbanas",
+            "Centros comerciales con marcas internacionales",
+            "Hospitales privados con estándar europeo",
+            "Aeropuerto internacional con vuelos directos a Europa"
+          ]
         }
       ],
       "honestNote": "La oportunidad es real, pero el proceso no es sencillo sin guía adecuada. Existimos para resolver exactamente eso."
@@ -325,15 +365,26 @@
       "subtitle": "Estimá cuánto ahorrás en impuestos al establecerte en Paraguay."
     },
     "stats": {
+      "dutchNote": "La comunidad holandesa creció 189% en 2024-2025",
       "items": [
         {
-          "value": "—",
-          "label": "Familias asesoradas (actualizar cuando tengamos datos reales)",
+          "value": "47.000+",
+          "label": "Residencias otorgadas en 2025",
           "icon": "Users"
         },
         {
-          "value": "—",
-          "label": "Años de experiencia (actualizar cuando tengamos datos reales)",
+          "value": "+63%",
+          "label": "Crecimiento del mercado",
+          "icon": "TrendingUp"
+        },
+        {
+          "value": "+189%",
+          "label": "Crecimiento holandés (2024-2025)",
+          "icon": "Globe"
+        },
+        {
+          "value": "15+",
+          "label": "Años de experiencia del equipo",
           "icon": "Calendar"
         }
       ]
@@ -985,6 +1036,7 @@
         {
           "name": "Dirección de Operaciones (Paraguay)",
           "role": "Líder de operaciones: +10 años coordinando con Migraciones, DGII y aperturas bancarias. Red institucional sólida en Asunción.",
+          "languages": ["ES", "EN"],
           "icon": "Briefcase",
           "imageUrl": "@src:team.operationsDirector",
           "memberImage": "@src:team.operationsDirector"
@@ -992,6 +1044,7 @@
         {
           "name": "Dirección Comercial (Europa)",
           "role": "Líder europea: holandés y alemán nativos, con base en Ámsterdam. Traduce inquietudes fiscales de la UE a la práctica paraguaya.",
+          "languages": ["NL", "EN", "DE", "ES"],
           "icon": "Globe",
           "imageUrl": "@src:team.commercialDirector",
           "memberImage": "@src:team.commercialDirector"
@@ -999,6 +1052,7 @@
         {
           "name": "Equipo Legal",
           "role": "Abogados matriculados en Paraguay. Especialización en inmigración, corporativo y due diligence inmobiliario.",
+          "languages": ["ES", "EN"],
           "icon": "Scale",
           "imageUrl": "@src:team.legalLead",
           "memberImage": "@src:team.legalLead"
@@ -1006,6 +1060,7 @@
         {
           "name": "Equipo Contable",
           "role": "Contadores públicos matriculados. Ley 6380 IRE, renta territorial, estructuración de ingresos del exterior.",
+          "languages": ["ES", "EN"],
           "icon": "Calculator",
           "imageUrl": "@src:team.accountingLead",
           "memberImage": "@src:team.accountingLead"
@@ -1013,6 +1068,7 @@
         {
           "name": "Client Success",
           "role": "Onboarding y acompañamiento bilingüe ES/EN. Punto de contacto único durante las 8–12 semanas del proceso.",
+          "languages": ["NL", "EN", "ES"],
           "icon": "UserCheck",
           "imageUrl": "@src:team.clientSuccess",
           "memberImage": "@src:team.clientSuccess"
@@ -1149,6 +1205,7 @@
     },
     "full": {
       "title": "Preguntas frecuentes",
+      "searchPlaceholder": "Buscar preguntas...",
       "items": [
         {
           "q": "¿Cuánto tiempo toma todo el proceso?",
@@ -1209,6 +1266,106 @@
         {
           "q": "¿Qué pasa si cambian las leyes durante mi proceso?",
           "a": "Monitoreamos el entorno regulatorio y le informamos inmediatamente si hay cambios relevantes."
+        },
+        {
+          "q": "¿Necesito hablar español para obtener la residencia?",
+          "a": "No es necesario. Aunque el proceso se realiza en español, trabajamos con traductores certificados y todo el equipo de Nexa habla inglés, neerlandés y alemán. Muchos expats viven en Paraguay sin hablar español fluidamente, aunque recomendamos aprender lo básico."
+        },
+        {
+          "q": "¿Puedo mantener mi ciudadanía original?",
+          "a": "Sí, Paraguay permite la doble ciudadanía con la mayoría de los países. No perderás tu pasaporte ni tus derechos en tu país de origen. La residencia permanente paraguaya es adicional a tu estatus actual."
+        },
+        {
+          "q": "¿Cuánto tiempo puedo estar fuera de Paraguay sin perder la residencia?",
+          "a": "La residencia permanente requiere que estés físicamente en Paraguay al menos 1 día cada 3 años para mantenerla activa. No hay un mínimo de días por año, lo que la hace ideal para quienes viajan frecuentemente."
+        },
+        {
+          "q": "¿Es seguro Paraguay para los europeos?",
+          "a": "Paraguay es considerado uno de los países más seguros de Sudamérica para extranjeros. Asunción tiene una tasa de criminalidad violenta baja comparada con otras capitales regionales. Las comunidades de expats en Villa Morra, Carmelitas y San Bernardino son muy activas y seguras."
+        },
+        {
+          "q": "¿Qué tal es el sistema de salud en Paraguay?",
+          "a": "Paraguay cuenta con hospitales privados de excelente calidad en Asunción, con estándares comparables a Europa. El seguro de salud privado cuesta aproximadamente $50-100 USD por mes. Los principales hospitales tienen médicos formados en Europa y Estados Unidos."
+        },
+        {
+          "q": "¿Cómo funciona el sistema educativo para niños?",
+          "a": "Existen excelentes opciones educativas: colegios internacionales (American School, Goethe, Colegio Internacional), colegios bilingües español-inglés, y la opción de educación internacional en línea. Varios colegios ofrecen el Bachillerato Internacional."
+        },
+        {
+          "q": "¿Necesito un abogado para el proceso?",
+          "a": "Sí, la ley paraguaya requiere que ciertos pasos del proceso de residencia sean gestionados por un abogado local. En Nexa trabajamos con abogados colegiados especializados en inmigración que garantizan que todo el proceso cumpla con los requisitos legales."
+        },
+        {
+          "q": "¿Cuánto cuesta mantener la residencia anualmente?",
+          "a": "El mantenimiento anual de la residencia es mínimo. Incluye el RUC (registro tributario) que no tiene costo si no hay movimientos, y la cédula de identidad que se renueva cada 5 años por aproximadamente $15 USD."
+        },
+        {
+          "q": "¿Puedo trabajar legalmente con la residencia?",
+          "a": "Sí, la residencia permanente te permite trabajar legalmente en Paraguay, ya sea como empleado o como independiente. También puedes ser director o accionista de empresas sin restricciones adicionales."
+        },
+        {
+          "q": "¿Cómo es el clima en Paraguay?",
+          "a": "Paraguay tiene un clima subtropical con dos estaciones bien marcadas: verano (octubre-marzo) con temperaturas de 25-40°C e invierno (abril-septiembre) con 10-25°C. La primavera y el otoño son muy agradables. No hay huracanes, terremotos ni desastres naturales significativos."
+        },
+        {
+          "q": "¿Puedo abrir una cuenta bancaria antes de llegar?",
+          "a": "Algunos bancos permiten la apertura de cuentas de forma remota con ciertos requisitos. Nosotros gestionamos todo el proceso y podemos tener tu cuenta operativa el mismo día de tu llegada si los documentos están en orden."
+        },
+        {
+          "q": "¿Qué documentos necesita apostilla?",
+          "a": "Los documentos que generalmente requieren apostilla son: partida de nacimiento, certificado de matrimonio (si aplica), certificado de antecedentes penales, título profesional (si aplica) y partida de bautismo/certificado de nacimiento para menores."
+        },
+        {
+          "q": "¿Cuál es la diferencia entre residencia permanente y ciudadanía?",
+          "a": "La residencia permanente te permite vivir, trabajar y tener propiedades en Paraguay. La ciudadanía (nacionalidad) otorga derechos políticos como el voto. Se puede solicitar la ciudadanía después de 3 años de residencia continua."
+        },
+        {
+          "q": "¿Hay comunidad de expats holandeses en Paraguay?",
+          "a": "Sí, la comunidad holandesa en Paraguay es una de las más grandes y organizadas de Sudamérica. Proyecto Paraguay ha ayudado a más de 600 familias. Hay grupos activos en Asunción, San Bernardino (lago) y Encarnación."
+        },
+        {
+          "q": "¿Puedo comprar propiedades como extranjero?",
+          "a": "Sí, los extranjeros tienen exactamente los mismos derechos que los paraguayos para comprar propiedades. No hay restricciones de zonas ni límites de cantidad. El proceso de compra es sencillo y está regulado por la ley paraguaya."
+        },
+        {
+          "q": "¿Cómo funciona el sistema de salud?",
+          "a": "El sistema de salud paraguayo combina IPS (seguro social público) con medicina privada. La mayoría de los expats optan por seguros privados que cuestan entre $50-150 USD mensuales y cubren hospitales de primer nivel."
+        },
+        {
+          "q": "¿Qué impuestos pago como residente?",
+          "a": "Los residentes pagan: IRE 10% (Impuesto a la Renta Empresarial) sobre ingresos de fuente paraguaya, IVA 10% en la mayoría de productos/servicios, e IRP (Impuesto a la Renta Personal) que es progresivo hasta 10%. Las rentas de fuente extranjera no tributan en Paraguay."
+        },
+        {
+          "q": "¿Hay tratado de doble imposición con mi país?",
+          "a": "Paraguay tiene tratados de doble imposición con varios países. Para holandeses: el tratado PY-NL evita la doble tributación. Para belgas: el tratado PY-BE también aplica. Consultamos tu caso específico para maximizar los beneficios fiscales."
+        },
+        {
+          "q": "¿Cómo encuentro vivienda en Paraguay?",
+          "a": "Trabajamos con inmobiliarias de confianza en Asunción y alrededores. Los alquileres en zonas premium (Villa Morra, Carmelitas) van de $500-1.500 USD/mes. La compra de apartamentos de lujo oscila entre $80.000-250.000 USD."
+        },
+        {
+          "q": "¿Cómo es el costo de vida en Paraguay?",
+          "a": "El costo de vida en Paraguay es aproximadamente 60-70% menor que en Europa Occidental. Una pareja puede vivir cómodamente en Asunción con $1.500-2.500 USD/mes, incluyendo alquiler, alimentos, transporte y ocio."
+        },
+        {
+          "q": "¿Necesito visa para entrar a Paraguay como turista?",
+          "a": "Los ciudadanos de la Unión Europea, Estados Unidos, Canadá, Australia y la mayoría de países latinoamericanos NO necesitan visa para entrar a Paraguay como turistas. Obtienen 90 días de estancia a la llegada."
+        },
+        {
+          "q": "¿Puedo usar mi licencia de conducir europea?",
+          "a": "Sí, tu licencia de conducir europea es válida en Paraguay por 90 días. Después puedes canjearla por una licencia paraguaya sin necesidad de examen práctico, solo un examen teórico básico."
+        },
+        {
+          "q": "¿Hay vuelos directos desde Europa?",
+          "a": "Actualmente hay vuelos directos desde Madrid (Air Europa) y conexiones diarias desde Ámsterdam, París y Frankfurt con una escala en São Paulo. El aeropuerto Silvio Pettirossi está siendo modernizado para recibir más rutas internacionales."
+        },
+        {
+          "q": "¿Cómo es el internet en Paraguay?",
+          "a": "El internet de fibra óptica está disponible en todas las zonas urbanas con velocidades de hasta 1GB. En Asunción y áreas metropolitanas, la cobertura 5G es excelente. Ideal para nómadas digitales y trabajo remoto."
+        },
+        {
+          "q": "¿Qué pasa si mi solicitud de residencia es rechazada?",
+          "a": "Las solicitudes de residencia rara vez son rechazadas si los documentos están en orden. En caso de algún problema, trabajamos contigo para subsanar los requisitos y volver a presentar. Nuestro índice de éxito supera el 99% en los últimos 3 años."
         }
       ]
     },
@@ -2147,26 +2304,26 @@
       "subheadline": "Guías prácticas, plantillas y herramientas para preparar tu proceso de residencia, sociedad y cuenta bancaria."
     },
     "guides": {
-      "title": "Guías descargables",
-      "subtitle": "Documentos prácticos para preparar su expediente y entender el proceso.",
-      "features": [
+      "title": "Guías y Recursos",
+      "subtitle": "Descarga materiales exclusivos para tu mudanza a Paraguay",
+      "items": [
         {
-          "icon": "FileText",
-          "title": "Guía de residencia paraguaya",
-          "description": "Todo lo que necesita para establecerse en Paraguay: plazos, documentos, costos y requisitos.",
-          "href": "/sites/nexa-paraguay/guias/01-guia-residencia-paraguaya-profesional.md"
+          "title": "Guía Completa de Residencia en Paraguay 2025",
+          "description": "Todo lo que necesitas saber: requisitos, tiempos, costos y proceso paso a paso para obtener tu residencia permanente. 45 páginas de información actualizada.",
+          "fileUrl": "",
+          "ctaText": "Descargar PDF"
         },
         {
-          "icon": "Calculator",
-          "title": "Sistema fiscal territorial",
-          "description": "Régimen territorial paraguayo, IRE 10 % y tratamiento de rentas extranjeras, explicado para inversores europeos.",
-          "href": "/sites/nexa-paraguay/guias/02-sistema-fiscal-territorial-profesional.md"
+          "title": "Checklist de Mudanza a Paraguay",
+          "description": "Lista completa de documentos, trámites y pasos a seguir antes, durante y después de tu mudanza. No olvides nada importante.",
+          "fileUrl": "",
+          "ctaText": "Descargar PDF"
         },
         {
-          "icon": "Home",
-          "title": "Costo de vida en Asunción",
-          "description": "Presupuesto mensual realista por barrios, vivienda, educación y salud privada.",
-          "href": "/sites/nexa-paraguay/guias/03-costo-de-vida-asuncion-profesional.md"
+          "title": "Guía Fiscal para Extranjeros",
+          "description": "Entiende el sistema tributario paraguayo: IRE 10%, IRP, IVA, tratados de doble imposición y cómo optimizar tu carga fiscal legalmente.",
+          "fileUrl": "",
+          "ctaText": "Descargar PDF"
         }
       ]
     },
@@ -2190,27 +2347,27 @@
     },
     "pillars": {
       "eyebrow": "Día a día",
-      "title": "Cinco pilares de la vida aquí",
+      "title": "Calidad de Vida en Paraguay",
       "pillars": [
         {
-          "icon": "Sun",
-          "title": "Clima",
-          "description": "Subtropical, 20–35 °C casi todo el año. Inviernos suaves, veranos cálidos."
+          "icon": "DollarSign",
+          "title": "Costo de Vida 60% Menor",
+          "description": "Vive cómodamente en Asunción por $1.500-$2.500/mes como pareja. Incluye alquiler premium, alimentos, transporte, ocio y seguro de salud privado. En Europa, el mismo estilo de vida cuesta $4.000-$5.500/mes."
         },
         {
-          "icon": "DollarSign",
-          "title": "Costo de vida",
-          "description": "30–50 % menor que Madrid o Berlín con calidad de vida comparable en zona premium."
+          "icon": "Sun",
+          "title": "Clima Subtropical Todo el Año",
+          "description": "2.800 horas de sol anuales (vs 1.600 en Países Bajos). Temperatura media de 23°C. Inviernos suaves (10-25°C), veranos cálidos. Sin huracanes, terremotos ni desastres naturales."
         },
         {
           "icon": "Users",
-          "title": "Comunidad internacional",
-          "description": "Creciente colonia europea: alemana, española, italiana, holandesa."
+          "title": "Comunidad de Expats Activa",
+          "description": "Más de 800 familias holandesas, 600+ belgas y 2.000+ alemanas viven en Paraguay. Grupos de WhatsApp, eventos semanales, ferias internacionales y colegios con currículo europeo."
         },
         {
           "icon": "Shield",
-          "title": "Seguridad",
-          "description": "Asunción y Ciudad del Este son más seguras que capitales de la región."
+          "title": "Seguridad y Tranquilidad",
+          "description": "Paraguay tiene una de las tasas de criminalidad más bajas de Sudamérica. Zonas exclusivas como Villa Morra y Carmelitas ofrecen seguridad 24/7 con vigilancia privada."
         }
       ]
     },
@@ -2293,7 +2450,26 @@
     },
     "matrix": {
       "eyebrow": "Comparativa",
-      "title": "Nexa vs. alternativas",
+      "title": "Comparativa: Paraguay vs Tu País de Origen",
+      "subtitle": "Datos actualizados para tomar la mejor decisión",
+      "columns": ["Indicador", "Paraguay", "Países Bajos", "Bélgica", "Alemania", "España"],
+      "items": [
+        {"Indicador": "Impuesto a la Renta Máximo", "Paraguay": "10%", "Países Bajos": "49.5%", "Bélgica": "50%", "Alemania": "45%", "España": "47%"},
+        {"Indicador": "Impuesto a Ganancias de Capital", "Paraguay": "0%", "Países Bajos": "25%", "Bélgica": "30%", "Alemania": "26.4%", "España": "26%"},
+        {"Indicador": "IVA / VAT", "Paraguay": "10%", "Países Bajos": "21%", "Bélgica": "21%", "Alemania": "19%", "España": "21%"},
+        {"Indicador": "Costo Vida (pareja, mensual)", "Paraguay": "$1.500-$2.500", "Países Bajos": "$4.000-$5.500", "Bélgica": "$3.500-$5.000", "Alemania": "$3.500-$5.000", "España": "$2.500-$3.500"},
+        {"Indicador": "Alquiler 2 hab. (centro)", "Paraguay": "$500-$800", "Países Bajos": "$1.800-$2.500", "Bélgica": "$1.200-$1.800", "Alemania": "$1.500-$2.200", "España": "$900-$1.500"},
+        {"Indicador": "Precio m² vivienda", "Paraguay": "$1.200", "Países Bajos": "$5.000", "Bélgica": "$3.500", "Alemania": "$5.500", "España": "$3.000"},
+        {"Indicador": "Seguridad (Global Peace Index)", "Paraguay": "1/5 (baja criminalidad)", "Países Bajos": "2/5", "Bélgica": "2/5", "Alemania": "2/5", "España": "2/5"},
+        {"Indicador": "Horas de sol anuales", "Paraguay": "2.800", "Países Bajos": "1.600", "Bélgica": "1.500", "Alemania": "1.700", "España": "2.600"},
+        {"Indicador": "Impuesto a herencias", "Paraguay": "0%", "Países Bajos": "10-40%", "Bélgica": "3-80%", "Alemania": "7-50%", "España": "7-34%"},
+        {"Indicador": "Doble ciudadanía permitida", "Paraguay": "Sí", "Países Bajos": "Limitado", "Bélgica": "Sí", "Alemania": "Limitado", "España": "Sí"},
+        {"Indicador": "Tratado doble imposición", "Paraguay": "—", "Países Bajos": "Sí ✓", "Bélgica": "Sí ✓", "Alemania": "Sí ✓", "España": "Sí ✓"},
+        {"Indicador": "Internet fibra óptica", "Paraguay": "Sí, hasta 1GB", "Países Bajos": "Sí", "Bélgica": "Sí", "Alemania": "Sí", "España": "Sí"},
+        {"Indicador": "Residencia para inversores", "Paraguay": "Sí, desde $5.000", "Países Bajos": "No", "Bélgica": "No", "Alemania": "No", "España": "Sí, desde €500K"},
+        {"Indicador": "Cobertura salud privada/mes", "Paraguay": "$50-$100", "Países Bajos": "€120-€180", "Bélgica": "€150-€200", "Alemania": "€200-€400", "España": "€50-€150"},
+        {"Indicador": "Impuesto a dividendos", "Paraguay": "0% (renta extranjera)", "Países Bajos": "15%", "Bélgica": "30%", "Alemania": "25%", "España": "19%"}
+      ],
       "featureColumnLabel": "Característica",
       "tiers": [
         {

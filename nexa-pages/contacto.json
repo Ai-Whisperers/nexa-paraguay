@@ -7,6 +7,7 @@
     {"id": "hero", "variant": "minimal", "content": "contactPage.hero"},
     {"id": "booking-embed", "content": "contactPage.booking"},
     {"id": "contact", "content": "contactPage.contact"},
+    {"id": "contact-form", "content": "contactPage.contact"},
     {"id": "footer", "variant": "standard", "content": "footer"}
   ]
 }
