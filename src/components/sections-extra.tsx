@@ -342,7 +342,7 @@ export function GallerySection({ pageContent, data, images }: SectionProps) {
         {d.subtitle && <p style={{ color:c.textMuted,marginBottom:'2rem' }}>{d.subtitle}</p>}
         <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:'1rem' }}>
           {photos.map((photo: any, i: number) => {
-            const src = typeof photo === 'string' ? photo : resolveImage(images, photo.src || photo.imageUrl || '') || photo.src || photo.imageUrl || ''
+            const src = typeof photo === 'string' ? photo : resolveImage?.(images, photo.src || photo.imageUrl || '') || photo.src || photo.imageUrl || ''
             return (
               <div key={i} style={{ borderRadius:r.md,overflow:'hidden',boxShadow:theme.shadows.image }}>
                 {src && <img src={src} alt={photo.alt || photo.caption || ''} style={{ width:'100%',height:'220px',objectFit:'cover',display:'block' }} />}

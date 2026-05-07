@@ -284,7 +284,7 @@ export function TaxCalculatorSection({ pageContent }: SectionProps) {
         <h2 style={{ fontSize: 'clamp(1.4rem,2.5vw,2rem)', fontWeight: 700, marginBottom: '0.5rem' }}>{c.title}</h2>
         <p style={{ color: theme.colors.accent, fontSize: '1rem', marginBottom: '1.5rem' }}>{c.subtitle}</p>
         <div style={{ padding: '2rem', background: theme.colors.overlay, borderRadius: theme.radii.md }}>
-          <p style={{ opacity: 0.6, fontSize: '0.9rem', fontStyle: 'italic' }}>Calculadora próximamente.</p>
+<p style={{ opacity: 0.6, fontSize: '0.9rem', fontStyle: 'italic' }}>Calculadora próximamente.</p>
         </div>
       </div>
     </section>

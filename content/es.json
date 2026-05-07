@@ -1329,7 +1329,8 @@
           "residencia",
           "guía",
           "proceso"
-        ]
+        ],
+        "image": "residencia2024"
       },
       {
         "slug": "cuenta-bancaria-extranjeros",
@@ -1341,7 +1342,8 @@
           "banca",
           "guía",
           "extranjeros"
-        ]
+        ],
+        "image": "banca"
       },
       {
         "slug": "costo-vida-asuncion",
@@ -1353,7 +1355,8 @@
           "estilo-de-vida",
           "costo",
           "asunción"
-        ]
+        ],
+        "image": "costOfLiving"
       },
       {
         "slug": "guia-compra-propiedades",
@@ -1365,7 +1368,8 @@
           "bienes-raíces",
           "inversión",
           "guía"
-        ]
+        ],
+        "image": "propiedades"
       },
       {
         "slug": "sistema-fiscal-explicado",
@@ -1377,7 +1381,8 @@
           "impuestos",
           "inversor",
           "comparación"
-        ]
+        ],
+        "image": "neighborhoods"
       },
       {
         "slug": "constitucion-empresa",
@@ -1389,7 +1394,8 @@
           "negocios",
           "empresa",
           "guía"
-        ]
+        ],
+        "image": "emprender"
       }
     ]
   },
