@@ -9,8 +9,8 @@ export function resolveContent(content: any, key: string): any {
 
 export function resolveImage(images: any, ref: string): string {
   if (!ref || !images) return ''
-  if (ref.startsWith('@img:')) {
-    const key = ref.replace('@img:', '')
+  if (ref.startsWith('@img:') || ref.startsWith('@src:')) {
+    const key = ref.startsWith('@img:') ? ref.replace('@img:', '') : ref.replace('@src:', '')
     const parts = key.split('.')
     let obj = images
     for (const p of parts) {
