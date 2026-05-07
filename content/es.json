@@ -1006,31 +1006,36 @@
           "name": "Dirección de Operaciones (Paraguay)",
           "role": "Líder de operaciones: +10 años coordinando con Migraciones, DGII y aperturas bancarias. Red institucional sólida en Asunción.",
           "icon": "Briefcase",
-          "imageUrl": "@src:team.operationsDirector"
+          "imageUrl": "@src:team.operationsDirector",
+          "memberImage": "@src:team.operationsDirector"
         },
         {
           "name": "Dirección Comercial (Europa)",
           "role": "Líder europea: holandés y alemán nativos, con base en Ámsterdam. Traduce inquietudes fiscales de la UE a la práctica paraguaya.",
           "icon": "Globe",
-          "imageUrl": "@src:team.commercialDirector"
+          "imageUrl": "@src:team.commercialDirector",
+          "memberImage": "@src:team.commercialDirector"
         },
         {
           "name": "Equipo Legal",
           "role": "Abogados matriculados en Paraguay. Especialización en inmigración, corporativo y due diligence inmobiliario.",
           "icon": "Scale",
-          "imageUrl": "@src:team.legalLead"
+          "imageUrl": "@src:team.legalLead",
+          "memberImage": "@src:team.legalLead"
         },
         {
           "name": "Equipo Contable",
           "role": "Contadores públicos matriculados. Ley 6380 IRE, renta territorial, estructuración de ingresos del exterior.",
           "icon": "Calculator",
-          "imageUrl": "@src:team.accountingLead"
+          "imageUrl": "@src:team.accountingLead",
+          "memberImage": "@src:team.accountingLead"
         },
         {
           "name": "Client Success",
           "role": "Onboarding y acompañamiento bilingüe ES/EN. Punto de contacto único durante las 8–12 semanas del proceso.",
           "icon": "UserCheck",
-          "imageUrl": "@src:team.clientSuccess"
+          "imageUrl": "@src:team.clientSuccess",
+          "memberImage": "@src:team.clientSuccess"
         }
       ],
       "_note": "AI-generated portrait placeholders. Founder consented 2026-04 to use AI content pre-launch. Replace with real consented team photos when ready."
@@ -2428,31 +2433,45 @@
       "items": [
         {
           "q": "Residencia permanente",
-          "a": "Estatus migratorio permanente en Paraguay. Se obtiene con un proceso de 8–12 semanas desde la presentación completa del expediente."
+          "a": "Estatus migratorio permanente en Paraguay. Se obtiene con un proceso de 8–12 semanas desde la presentación completa del expediente.",
+          "term": "Residencia permanente",
+          "definition": "Estatus migratorio permanente en Paraguay. Se obtiene con un proceso de 8–12 semanas desde la presentación completa del expediente."
         },
         {
           "q": "Cédula de Identidad",
-          "a": "DNI paraguayo emitido tras otorgada la residencia. Es el documento oficial para operar en el país."
+          "a": "DNI paraguayo emitido tras otorgada la residencia. Es el documento oficial para operar en el país.",
+          "term": "Cédula de Identidad",
+          "definition": "DNI paraguayo emitido tras otorgada la residencia. Es el documento oficial para operar en el país."
         },
         {
           "q": "RUC",
-          "a": "Registro Único del Contribuyente. Identificador tributario, equivalente al NIF o BTW-nummer."
+          "a": "Registro Único del Contribuyente. Identificador tributario, equivalente al NIF o BTW-nummer.",
+          "term": "RUC",
+          "definition": "Registro Único del Contribuyente. Identificador tributario, equivalente al NIF o BTW-nummer."
         },
         {
           "q": "IRE 10 %",
-          "a": "Impuesto a la Renta Empresarial. Tasa general sobre rentas generadas en Paraguay."
+          "a": "Impuesto a la Renta Empresarial. Tasa general sobre rentas generadas en Paraguay.",
+          "term": "IRE 10 %",
+          "definition": "Impuesto a la Renta Empresarial. Tasa general sobre rentas generadas en Paraguay."
         },
         {
           "q": "Territorialidad",
-          "a": "Sistema fiscal donde solo se grava la renta generada dentro del país. Ingresos extranjeros no pagan IRE."
+          "a": "Sistema fiscal donde solo se grava la renta generada dentro del país. Ingresos extranjeros no pagan IRE.",
+          "term": "Territorialidad",
+          "definition": "Sistema fiscal donde solo se grava la renta generada dentro del país. Ingresos extranjeros no pagan IRE."
         },
         {
           "q": "SEPRELAD",
-          "a": "Autoridad antilavado de Paraguay. Nexa es entidad reportante, lo que implica KYC estricto."
+          "a": "Autoridad antilavado de Paraguay. Nexa es entidad reportante, lo que implica KYC estricto.",
+          "term": "SEPRELAD",
+          "definition": "Autoridad antilavado de Paraguay. Nexa es entidad reportante, lo que implica KYC estricto."
         },
         {
           "q": "KYC",
-          "a": "Know Your Customer. Procedimiento de verificación de identidad y fondos exigido para operar legalmente."
+          "a": "Know Your Customer. Procedimiento de verificación de identidad y fondos exigido para operar legalmente.",
+          "term": "KYC",
+          "definition": "Know Your Customer. Procedimiento de verificación de identidad y fondos exigido para operar legalmente."
         }
       ]
     },

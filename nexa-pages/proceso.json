@@ -19,7 +19,7 @@
       "content": "processPage.process"
     },
     {
-      "id": "gallery",
+      "id": "highlights",
       "variant": "grid",
       "content": "processPage.highlights"
     },
