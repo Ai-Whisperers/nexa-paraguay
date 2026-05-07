@@ -16,6 +16,9 @@ export function Header({ navigation }: { navigation: any }) {
         <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
           <img src="/images/brand/logo.svg" alt="Nexa Paraguay" style={{ height: '36px', width: 'auto' }} />
         </a>
+        <button onClick={() => setOpen(!open)} style={{ display: 'none', background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', padding: '0.25rem', color: '#1B2A4A' }}>
+          {open ? '✕' : '☰'}
+        </button>
         <nav style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
           {navItems.map((item, i) => (
             <div key={i} style={{ position: 'relative' }}>
@@ -26,10 +29,13 @@ export function Header({ navigation }: { navigation: any }) {
           ))}
           {navigation?.ctaText && <a href={navigation.ctaHref} style={{ padding: '0.5rem 1.25rem', background: '#C9A96E', color: '#1B2A4A', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.85rem' }}>{navigation.ctaText}</a>}
         </nav>
-        <button onClick={() => setOpen(!open)} style={{ display: 'none', background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer' }}>
-          {open ? '✕' : '☰'}
-        </button>
       </div>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          button { display: block !important; }
+          nav { display: ${open ? 'flex' : 'none'} !important; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; padding: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        }
+      `}</style>
     </header>
   )
 }

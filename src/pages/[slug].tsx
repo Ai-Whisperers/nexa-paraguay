@@ -144,7 +144,9 @@ export function getServerSideProps({ params }: any) {
   const contentDir = path.join(process.cwd(), 'content')
   const content = loadJSON(contentDir, 'es.json')
   const pageConfig = loadJSON(pagesDir, pageFile + '.json')
-  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
   if (!pageConfig) return { notFound: true }
-  return { props: { content, pageConfig, images, pageId: slug, timestamp: Date.now() } }
+  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
+  return {
+    props: { content, pageConfig, images, pageId: slug, timestamp: Date.now() },
+  }
 }

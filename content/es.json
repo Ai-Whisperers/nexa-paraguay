@@ -1498,7 +1498,17 @@
         ]
       }
     ],
-    "phone": ""
+    "phone": "",
+    "socialLinks": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/nexa-paraguay"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/nexaparaguay"
+      }
+    ]
   },
   "complianceDisclaimer": {
     "paragraphs": [
