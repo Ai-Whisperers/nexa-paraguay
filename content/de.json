@@ -1279,7 +1279,10 @@
       "hours": {
         "Mo–Fr": "09:00 – 18:00 (UTC-3)",
         "Sa": "10:00 – 14:00 (UTC-3)",
-        "So": "Geschlossen"
+        "So": "Geschlossen",
+        "Lun–Vie": "09:00 – 18:00 (UTC-3)",
+        "Sáb": "10:00 – 14:00 (UTC-3)",
+        "Dom": "Cerrado"
       }
     }
   },
@@ -1507,7 +1510,17 @@
       }
     ],
     "phone": "",
-    "facebook": "https://facebook.com/nexaparaguay"
+    "facebook": "https://facebook.com/nexaparaguay",
+    "socialLinks": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/nexa-paraguay"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/nexaparaguay"
+      }
+    ]
   },
   "complianceDisclaimer": {
     "paragraphs": [
@@ -2556,7 +2569,11 @@
       "bank account Paraguay"
     ],
     "ogImage": "/images/brand/og-default.webp",
-    "twitterHandle": "@nexaparaguay"
+    "twitterHandle": "@nexaparaguay",
+    "home": {
+      "title": "Nexa Paraguay — Ihr Umzug nach Paraguay, begleitet von Erfahrung",
+      "description": ""
+    }
   },
   "servicesPage": {
     "seo": {
@@ -2655,5 +2672,16 @@
       "buttonText": "Kostenlose Beratung buchen",
       "buttonHref": "/s/de/nexa-paraguay/contacto"
     }
+  },
+  "prensa": {
+    "seo": {
+      "title": "",
+      "description": ""
+    },
+    "hero": {
+      "headline": "",
+      "subheadline": ""
+    },
+    "body": ""
   }
 }

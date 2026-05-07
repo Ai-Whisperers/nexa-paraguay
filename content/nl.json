@@ -1276,7 +1276,10 @@
       "hours": {
         "Ma–Vr": "09:00 – 18:00 (UTC-3)",
         "Za": "10:00 – 14:00 (UTC-3)",
-        "Zo": "Gesloten"
+        "Zo": "Gesloten",
+        "Lun–Vie": "09:00 – 18:00 (UTC-3)",
+        "Sáb": "10:00 – 14:00 (UTC-3)",
+        "Dom": "Cerrado"
       }
     }
   },
@@ -1504,7 +1507,17 @@
       }
     ],
     "phone": "",
-    "facebook": "https://facebook.com/nexaparaguay"
+    "facebook": "https://facebook.com/nexaparaguay",
+    "socialLinks": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/nexa-paraguay"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/nexaparaguay"
+      }
+    ]
   },
   "complianceDisclaimer": {
     "paragraphs": [
@@ -2553,7 +2566,11 @@
       "bank account Paraguay"
     ],
     "ogImage": "/images/brand/og-default.webp",
-    "twitterHandle": "@nexaparaguay"
+    "twitterHandle": "@nexaparaguay",
+    "home": {
+      "title": "Nexa Paraguay — Je verhuizing naar Paraguay, begeleid door ervaring",
+      "description": ""
+    }
   },
   "servicesPage": {
     "seo": {
@@ -2652,5 +2669,16 @@
       "buttonText": "Boek gratis consult",
       "buttonHref": "/s/nl/nexa-paraguay/contacto"
     }
+  },
+  "prensa": {
+    "seo": {
+      "title": "",
+      "description": ""
+    },
+    "hero": {
+      "headline": "",
+      "subheadline": ""
+    },
+    "body": ""
   }
 }

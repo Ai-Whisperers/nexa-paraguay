@@ -87,11 +87,17 @@ export default function Home({ content, pageConfig, images }: any) {
   )
 }
 
-export function getServerSideProps() {
-  const fullContent = loadJSON(process.cwd() + '/content', 'es.json') || {}
+export function getServerSideProps({ params }: any) {
+  let locale = 'es'
+  let slug = params?.slug || 'home'
+  const LOCALES = ['es', 'en', 'nl', 'de']
+  if (slug.includes('/')) {
+    const parts = slug.split('/')
+    if (LOCALES.includes(parts[0])) { locale = parts[0]; slug = parts.slice(1).join('/') || 'home' }
+  }
+  const fullContent = loadJSON(process.cwd() + '/content', `${locale}.json`) || loadJSON(process.cwd() + '/content', 'es.json') || {}
   const pageConfig = loadJSON(process.cwd() + '/nexa-pages', 'home.json')
-  const manifest = loadJSON(process.cwd(), 'images.json')
-  const images = manifest?.images || {}
+  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
   if (!fullContent || !pageConfig) return { notFound: true }
-  return { props: { content: fullContent, pageConfig, images } }
+  return { props: { content: fullContent, pageConfig, images, locale } }
 }

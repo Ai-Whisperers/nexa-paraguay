@@ -120,17 +120,17 @@ export default function SlugPage({ content, pageConfig, pageId, images }: any) {
 }
 
 export function getServerSideProps({ params }: any) {
-  const slug = params?.slug || 'home'
-  const pageFile = SLUG_MAP[slug] || slug || 'home'
-  const pagesDir = process.cwd() + '/nexa-pages'
-  const contentDir = process.cwd() + '/content'
-  const fullContent = loadJSON(contentDir, 'es.json') || {}
-  const pageConfig = loadJSON(pagesDir, pageFile + '.json')
-  if (!pageConfig) return { notFound: true }
-  const rootDir = process.cwd()
-  const manifest = loadJSON(rootDir, 'images.json')
-  const images = manifest?.images || {}
-  return {
-    props: { content: fullContent, pageConfig, images, pageId: slug },
+  let slug = params?.slug || 'home'
+  let locale = 'es'
+  const LOCALES = ['es', 'en', 'nl', 'de']
+  if (slug.includes('/')) {
+    const parts = slug.split('/')
+    if (LOCALES.includes(parts[0])) { locale = parts[0]; slug = parts.slice(1).join('/') || 'home' }
   }
+  const pageFile = SLUG_MAP[slug] || slug || 'home'
+  const fullContent = loadJSON(process.cwd() + '/content', `${locale}.json`) || loadJSON(process.cwd() + '/content', 'es.json') || {}
+  const pageConfig = loadJSON(process.cwd() + '/nexa-pages', pageFile + '.json')
+  if (!pageConfig) return { notFound: true }
+  const images = loadJSON(process.cwd(), 'images.json')?.images || {}
+  return { props: { content: fullContent, pageConfig, images, pageId: slug, locale } }
 }
