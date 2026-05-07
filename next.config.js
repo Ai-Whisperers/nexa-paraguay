@@ -1,5 +1,3 @@
-import type { NextConfig } from "next"
-
 const securityHeaders = [
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
   { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
@@ -9,7 +7,8 @@ const securityHeaders = [
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
 ]
 
-const config: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
   async headers() {
@@ -19,4 +18,5 @@ const config: NextConfig = {
     ]
   },
 }
-export default config
+
+module.exports = nextConfig
