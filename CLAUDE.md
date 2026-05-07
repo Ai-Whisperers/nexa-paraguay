@@ -25,14 +25,24 @@
 | `site.json` | Domain, features, booking URL, social links |
 | `src/pages/[slug].tsx` | Main page renderer — SSR, SECTION_MAP dispatch |
 | `src/pages/index.tsx` | Homepage renderer (separate file) |
+| `src/pages/blog/[slug].tsx` | Individual blog post renderer — MDX-driven SSR |
 | `src/lib/loader.ts` | Shared JSON loader with 60s cache |
 | `src/types.ts` | 30+ TypeScript interfaces |
 | `src/theme.ts` | Brand design tokens |
+| `scripts/screenshot-all.mjs` | Full-page screenshot automation — builds, starts server, captures 22 pages |
+| `docs/06-marketing/testimonials-google-form.md` | Google Form template for collecting client testimonials |
+| `content/blog/posts-en.json` | English full-article blog posts (translated from ES) |
+| `content/blog/posts-nl.json` | Dutch full-article blog posts (translated from ES) |
+| `content/blog/posts-de.json` | German full-article blog posts (translated from ES) |
+| `blog/en/*.mdx` | 16 English MDX blog articles (6 originals + 10 translated from ES) |
+| `blog/nl/*.mdx` | 11 Dutch MDX blog articles (1 original + 10 translated from ES) |
+| `blog/de/*.mdx` | 10 German MDX blog articles (translated from ES) |
 
 ## Build & Deploy
 
 ```bash
 npm run build
+npm run screenshots      # Full-page screenshot automation (22 pages → screenshots/<iter>/)
 docker build -t nexa-paraguay:prod --no-cache .
 docker service update --force --image nexa-paraguay:prod nexa_web
 ```

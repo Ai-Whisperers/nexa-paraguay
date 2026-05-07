@@ -19,37 +19,33 @@
 │
 ├── 01-client/
 │   ├── client-intelligence.json     ← Core client facts, vertical, contacts
-│   ├── client-questionnaire.md      ← Intake & validation questionnaire
-│   ├── client-questionnaire-responses.md
-│   ├── client-update-questionnaire.md
+│   ├── CLIENT-QUESTIONNAIRE.md      ← Intake & validation questionnaire
+│   ├── client-questionnaire-responses.md  ← Client questionnaire answers
+│   ├── client-update-questionnaire.md     ← Update questionnaire
 │   ├── stakeholder-qa.md            ← Stakeholder Q&A packet
 │   └── stakeholder-review.md        ← Week 7 review packet
 │
 ├── 02-site/
-│   ├── architecture.md              ← Tech stack, pages, components
-│   ├── site-config.md               ← site.json fields, features, integrations
-│   ├── site-audit.md                ← Site audit
-│   ├── deep-audit.md                ← Code quality & architecture audit
+│   ├── site-audit.md               ← Site audit
+│   ├── deep-audit.md               ← Code quality & architecture audit
 │   ├── improvement-plan.md          ← Master improvement plan (183 items)
 │   ├── dns.md                       ← DNS config & domain setup
-│   └── COMPONENT_REGISTRY.md        ← All 26 components documented
+│   └── COMPONENT_REGISTRY.md       ← All 26 components documented
 │
 ├── 03-brand/
 │   ├── brand-guide.md               ← Colors, typography, logo usage
-│   ├── tokens.json                  ← Design tokens reference
-│   ├── image-generation-prompts.md  ← Prompt library for all images
-│   └── social-assets.md             ← Social template inventory
+│   └── social-assets.md            ← Social template inventory
 │
 ├── 04-images/
 │   ├── images-manifest.md           ← images.json catalog, fallback chain
-│   ├── image-generation-prompts.md  ← Prompt library reference
-│   └── placeholder-hashes.json      ← Checksums for image verification
+│   ├── image-generation-prompts.md  ← Prompt library
+│   └── PLACEHOLDER_HASHES.json      ← Checksums for image verification
 │
 ├── 05-content/
 │   ├── content-locales.md           ← en/es/de/nl content structure
 │   ├── blog-posts.md                ← 21 blog posts catalog
-│   ├── content-calendar.yml         ← Editorial calendar
-│   └── demo-content.md              ← Demo content reference
+│   ├── CONTENT_CALENDAR.yml         ← Editorial calendar
+│   └── DEMO_CONTENT.md              ← Demo content reference
 │
 ├── 06-marketing/
 │   ├── ADS_ASSETS.md                ← 22 paid ad creatives
@@ -59,6 +55,7 @@
 │   ├── lead-magnets.md              ← Lead magnet offers
 │   ├── testimonials-system.md       ← Testimonial collection & display
 │   ├── testimonials-gating.md       ← Testimonial gating rules
+│   ├── testimonials-google-form.md  ← Google Form template for client collection
 │   └── whatsapp-integration.md      ← WhatsApp marketing strategy
 │
 ├── 07-seo/
@@ -72,7 +69,7 @@
 │   ├── ga4.md                       ← Google Analytics 4 config
 │   └── whatsapp-ai-bridge.md        ← WhatsApp AI agent integration
 │
-├── 09-market-intelligence/          ← 📊 26 files, ~350 pages total
+├── 09-market-intelligence/          ← 26 files, ~350 pages total
 │   ├── SOLSTEIN FRAMEWORK/
 │   │   ├── solstein-scorecard.json      ← B/76 8-dimension M&A scorecard
 │   │   ├── solstein-analysis.md         ← Full Solstein pipeline analysis
@@ -105,22 +102,39 @@
 │   │   ├── seo-keyword-report.md        ← Condensed SEO keyword strategy
 │   │   └── seo-keyword-full-report.md   ← Full multi-language keyword data
 │   │
-│   └── CONTENT STRATEGY/               ← NEW
+│   └── CONTENT STRATEGY/
 │       ├── content_topic_clusters.md     ← 70 article ideas by persona/funnel/lang
 │       └── competitive_positioning.md    ← Position: "AI-augmented EU concierge"
 │
 ├── 10-deployment/
-│   ├── deployment-runbook.md          ← Build & deploy steps
-│   └── ci-cd.md                      ← CI/CD workflow reference
+│   ├── deployment-runbook.md        ← Build & deploy steps
+│   └── ci-cd.md                     ← CI/CD workflow reference
 │
 ├── 11-launch/
-│   ├── pre-launch-inventory.md       ← Launch inventory checklist
-│   ├── launch-runbook.md             ← Launch sequence & rollback
-│   └── launch-checklist.md           ← Go/no-go checklist
+│   ├── pre-launch-inventory.md      ← Launch inventory checklist
+│   └── launch-runbook.md            ← Launch sequence & rollback
 │
 └── 12-factory/
-    └── NEW_CLIENT_BOOTSTRAP.md       ← Step-by-step new client creation
+    └── NEW_CLIENT_BOOTSTRAP.md      ← Step-by-step new client creation
 ```
+
+## Cross-Reference
+
+| File | Document | Links To |
+|---|---|---|
+| `01-client/client-intelligence.json` | Core client data | → `09-market-intelligence/*` |
+| `06-marketing/*` | Marketing assets | → `04-images/images-manifest.md` |
+| `08-integrations/*` | Platform configs | → `02-site/deep-audit.md` |
+| `06-marketing/testimonials-google-form.md` | Google Form template | → `testimonials-system.md` |
+
+## Recent Work (Session May 7, 2026)
+
+- **Screenshot automation:** `scripts/screenshot-all.mjs` — builds Next.js, starts server, captures all 22 pages as full-page PNGs + computed-style-inlined HTML + diagnostics JSON. Iteration folders in `screenshots/`, gitignored. Run with `npm run screenshots`.
+- **Testimonials Google Form:** `docs/06-marketing/testimonials-google-form.md` — 14-field template ready to copy into forms.google.com (contact + consent + experience + publication permission).
+- **Blog translations (ES → EN/NL/DE):**
+  - 10 ES MDX articles → 10 EN + 11 NL + 10 DE (newly written with real content)
+  - 4 legacy full-article blog posts → `content/blog/posts-{en,nl,de}.json`
+- **Site snapshot (`screenshots/1/`):** 22 pages captured — all render clean, 0 errors, 0 failed requests, avg load 54ms.
 
 ## Stats
 - **80+ files** across 13 category directories
@@ -130,31 +144,6 @@
 
 ## Research Catalog
 See [research-catalog.md](./research-catalog.md) for the complete index of all research conducted.
-
-## 12 Research Areas Completed
-
-| # | Area | Files | Pages |
-|---|---|---|---|
-| 1 | Market sizing (47K apps, 63% growth) | 2 | ~15 |
-| 2 | Competitor landscape (15 firms) | 4 | ~30 |
-| 3 | Competitor weaknesses (7/7 broken pages) | 2 | ~15 |
-| 4 | AI opportunity map (8 opportunities) | 1 | ~10 |
-| 5 | Dutch/Belgian channel map | 2 | ~20 |
-| 6 | SEO keyword strategy (4 languages) | 2 | ~25 |
-| 7 | Referral partners (8 categories) | 1 | ~15 |
-| 8 | Regulatory timeline | 1 | ~10 |
-| 9 | Financial model ($270K→$3M) | 1 | ~15 |
-| 10 | Solstein M&A scorecard (B/76) | 3 | ~15 |
-| 11 | **Customer personas (5 dossiers)** | 1 | ~25 |
-| 12 | **Macro alternatives (7 countries)** | 1 | ~20 |
-| 13 | **Exit push factors (6 countries)** | 1 | ~15 |
-| 14 | **Niche segments (crypto/nomads/retirees)** | 1 | ~20 |
-| 15 | **Content topic clusters (70 ideas)** | 1 | ~20 |
-| 16 | **Competitive positioning strategy** | 1 | ~15 |
-| 17 | **Dutch channels full report** | 1 | ~20 |
-| 18 | **SEO keyword full report** | 1 | ~20 |
-| 19 | **Competitor weaknesses full audit** | 1 | ~20 |
-| 20 | **Competitor raw research** | 1 | ~15 |
 
 ## Untracked Flat Files (keep at docs/ root for now)
 See [research-catalog.md](./research-catalog.md) § Untracked Files.
