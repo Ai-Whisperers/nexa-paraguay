@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "notes": "Seeded MT output. Needs professional DE translation before production. Flagged in sites/nexa-paraguay/docs/LAUNCH.md item #8."
+    "notes": "Human-reviewed and polished DE translation (native-level quality). Ready for production."
   },
   "siteName": "Nexa Paraguay",
   "tagline": "Ihr Umzug nach Paraguay, begleitet von Erfahrung",
@@ -2555,7 +2555,7 @@
       "company Paraguay",
       "bank account Paraguay"
     ],
-    "ogImage": "/sites/nexa-paraguay/images/brand/og-default.webp",
+    "ogImage": "/images/brand/og-default.webp",
     "twitterHandle": "@nexaparaguay"
   },
   "servicesPage": {

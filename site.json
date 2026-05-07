@@ -58,8 +58,8 @@
     },
     "analytics": {
       "ga4": {
-        "measurementId": "G-XXXXXXXXXXX",
-        "streamName": "paragu-ai-builder"
+        "measurementId": "G-XE49GLEP34",
+        "streamName": "nexa-paraguay"
       }
     }
   },
@@ -71,8 +71,8 @@
     "processImages": true
   },
   "images": {
-    "manifest": "/sites/nexa-paraguay/images.json",
-    "hero": "/sites/nexa-paraguay/images/hero/hero-bg.png"
+    "manifest": "/images.json",
+    "hero": "/images/hero/hero-bg.webp"
   },
   "contact": {
     "whatsapp": "595982515138",
@@ -107,6 +107,6 @@
 }
     ]
   },
-  "path": "/s/es/nexa-paraguay",
-  "publicUrl": "https://paragu-ai.com/s/es/nexa-paraguay"
+  "path": "",
+  "publicUrl": "https://nexa.paragu-ai.com"
 }
