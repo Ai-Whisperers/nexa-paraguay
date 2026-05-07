@@ -213,31 +213,12 @@
       ]
     },
     "testimonials": {
-      "eyebrow": "Getuigenissen",
-      "title": "Wat onze klanten zeggen",
-      "subtitle": "Echte verhalen van mensen die hun operatie in Paraguay hebben gevestigd",
+      "eyebrow": "Getuigenissen (binnenkort)",
+      "title": "Binnenkort: ervaringen van onze klanten",
+      "subtitle": "Zodra onze eerste klanten het proces hebben voltooid, delen we hun verhalen hier.",
       "ctaText": "Alle getuigenissen lezen",
       "ctaHref": "/s/nl/nexa-paraguay/contacto",
-      "items": [
-        {
-          "author": "J. van der L.",
-          "role": "Business owner, Netherlands",
-          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
-          "rating": 5
-        },
-        {
-          "author": "M. S.",
-          "role": "Investor, Germany",
-          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
-          "rating": 5
-        },
-        {
-          "author": "C. R.",
-          "role": "Freelancer, Spain",
-          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
-          "rating": 5
-        }
-      ]
+      "items": []
     },
     "whyCountry": {
       "eyebrow": "Waarom Paraguay",
@@ -469,23 +450,22 @@
     "stats": {
       "items": [
         {
-          "value": "+500",
-          "label": "Families verhuisd",
+          "value": "—",
+          "label": "Families verhuisd (bijwerken zodra we echte data hebben)",
           "icon": "Users"
         },
         {
-          "value": "+10",
-          "label": "Jaar ervaring",
+          "value": "—",
+          "label": "Jaar ervaring (bijwerken zodra we echte data hebben)",
           "icon": "Calendar"
         },
         {
-          "value": "98%",
-          "label": "Succespercentage",
+          "value": "—",
+          "label": "Succespercentage (bijwerken zodra we echte data hebben)",
           "icon": "Award"
         }
       ],
-      "title": "Cijfers",
-      "_note": "Stats values not confirmed by client questionnaire (May 5 2026). Verify before production."
+      "title": "Cijfers"
     },
     "beneluxDesk": {
       "title": "Specialistische Benelux Afdeling",
@@ -715,29 +695,10 @@
       "buttonHref": "/s/nl/nexa-paraguay/contacto"
     },
     "testimonials": {
-      "eyebrow": "Getuigenissen",
-      "title": "Wat onze klanten zeggen",
-      "subtitle": "Echte verhalen van mensen die hun operatie in Paraguay hebben gevestigd",
-      "items": [
-        {
-          "author": "J. van der L.",
-          "role": "Business owner, Netherlands",
-          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
-          "rating": 5
-        },
-        {
-          "author": "M. S.",
-          "role": "Investor, Germany",
-          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
-          "rating": 5
-        },
-        {
-          "author": "C. R.",
-          "role": "Freelancer, Spain",
-          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
-          "rating": 5
-        }
-      ]
+      "eyebrow": "Getuigenissen (binnenkort)",
+      "title": "Binnenkort: ervaringen van onze klanten",
+      "subtitle": "Zodra onze eerste klanten het proces hebben voltooid, delen we hun verhalen hier.",
+      "items": []
     }
   },
   "whyCountryPage": {
@@ -1333,7 +1294,7 @@
         "title": "Volledige Gids voor Verblijf in Paraguay in 2025",
         "excerpt": "Alles wat u moet weten over het verkrijgen van een Paraguayaanse verblijfsvergunning.",
         "author": "Nexa Paraguay",
-        "date": "2025-01-15",
+        "date": "2026-05-07",
         "tags": [
           "verblijf",
           "gids",
@@ -1345,7 +1306,7 @@
         "title": "Een Bankrekening Openen in Paraguay als Buitenlander",
         "excerpt": "Een praktische gids voor het openen van persoonlijke en zakelijke bankrekeningen.",
         "author": "Nexa Paraguay",
-        "date": "2025-02-10",
+        "date": "2026-05-07",
         "tags": [
           "bankieren",
           "gids",
@@ -1357,7 +1318,7 @@
         "title": "Levenskosten in Asunción: Een Realistisch Budget",
         "excerpt": "Maandelijkse kostenverdeling over wijken, huisvesting, scholen en gezondheidszorg.",
         "author": "Nexa Paraguay",
-        "date": "2025-03-05",
+        "date": "2026-05-07",
         "tags": [
           "levensstijl",
           "kosten",
@@ -1369,7 +1330,7 @@
         "title": "Vastgoed Kopen in Paraguay: Complete Gids voor Buitenlanders",
         "excerpt": "Alles wat buitenlandse investeerders moeten weten over het kopen van onroerend goed.",
         "author": "Nexa Paraguay",
-        "date": "2025-03-20",
+        "date": "2026-05-07",
         "tags": [
           "vastgoed",
           "investering",
@@ -1381,7 +1342,7 @@
         "title": "Het Paraguayaanse Belastingstelsel Uitgelegd voor Europese Investeerders",
         "excerpt": "Een duidelijke uitleg van het territoriale belastingstelsel en het 10% IRE-tarief.",
         "author": "Nexa Paraguay",
-        "date": "2025-04-01",
+        "date": "2026-05-07",
         "tags": [
           "belasting",
           "investeerder",
@@ -1393,7 +1354,7 @@
         "title": "Een Bedrijf Oprichten in Paraguay: Stap voor Stap",
         "excerpt": "Hoe u een bedrijf kunt oprichten in Paraguay en de juiste rechtsvorm kiest.",
         "author": "Nexa Paraguay",
-        "date": "2025-04-15",
+        "date": "2026-05-07",
         "tags": [
           "zakelijk",
           "bedrijf",

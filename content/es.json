@@ -213,31 +213,12 @@
       ]
     },
     "testimonials": {
-      "eyebrow": "Testimonios",
-      "title": "Lo que dicen nuestros clientes",
-      "subtitle": "Historias reales de personas que establecieron su operación en Paraguay",
+      "eyebrow": "Testimonios (próximamente)",
+      "title": "Próximamente: experiencias de nuestros clientes",
+      "subtitle": "Apenas nuestros primeros clientes completen el proceso, compartiremos sus historias aquí.",
       "ctaText": "Leer todos los testimonios",
       "ctaHref": "/contacto",
-      "items": [
-        {
-          "author": "J. van der L.",
-          "role": "Business owner, Netherlands",
-          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
-          "rating": 5
-        },
-        {
-          "author": "M. S.",
-          "role": "Investor, Germany",
-          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
-          "rating": 5
-        },
-        {
-          "author": "C. R.",
-          "role": "Freelancer, Spain",
-          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
-          "rating": 5
-        }
-      ]
+      "items": []
     },
     "whyCountry": {
       "eyebrow": "Por qué Paraguay",
@@ -346,17 +327,16 @@
     "stats": {
       "items": [
         {
-          "value": "+100",
-          "label": "Familias asesoradas",
+          "value": "—",
+          "label": "Familias asesoradas (actualizar cuando tengamos datos reales)",
           "icon": "Users"
         },
         {
-          "value": "+5",
-          "label": "Años de experiencia",
+          "value": "—",
+          "label": "Años de experiencia (actualizar cuando tengamos datos reales)",
           "icon": "Calendar"
         }
-      ],
-      "_note": "Stats values not confirmed by client questionnaire (May 5 2026). Verify before production."
+      ]
     },
     "intakeWizard": {
       "steps": [
@@ -1329,7 +1309,7 @@
         "title": "Guía Completa para la Residencia en Paraguay en 2025",
         "excerpt": "Todo lo que necesitas saber para obtener la residencia paraguaya: requisitos, tiempos, costos y proceso paso a paso.",
         "author": "Nexa Paraguay",
-        "date": "2025-01-15",
+        "date": "2026-05-07",
         "tags": [
           "residencia",
           "guía",
@@ -1342,7 +1322,7 @@
         "title": "Cómo Abrir una Cuenta Bancaria en Paraguay siendo Extranjero",
         "excerpt": "Guía práctica para abrir cuentas bancarias personales y empresariales en Paraguay.",
         "author": "Nexa Paraguay",
-        "date": "2025-02-10",
+        "date": "2026-05-07",
         "tags": [
           "banca",
           "guía",
@@ -1355,7 +1335,7 @@
         "title": "Costo de Vida en Asunción: Presupuesto Realista para Expatriados",
         "excerpt": "Desglose mensual de gastos por barrios, vivienda, colegios internacionales y salud en la capital paraguaya.",
         "author": "Nexa Paraguay",
-        "date": "2025-03-05",
+        "date": "2026-05-07",
         "tags": [
           "estilo-de-vida",
           "costo",
@@ -1368,7 +1348,7 @@
         "title": "Compra de Propiedades en Paraguay: Guía Completa para Extranjeros",
         "excerpt": "Todo lo que los inversores extranjeros necesitan saber para comprar inmuebles en Paraguay.",
         "author": "Nexa Paraguay",
-        "date": "2025-03-20",
+        "date": "2026-05-07",
         "tags": [
           "bienes-raíces",
           "inversión",
@@ -1381,7 +1361,7 @@
         "title": "El Sistema Tributario Paraguayo Explicado para Inversores Europeos",
         "excerpt": "Desglose claro del sistema fiscal territorial de Paraguay y su tasa del 10% IRE.",
         "author": "Nexa Paraguay",
-        "date": "2025-04-01",
+        "date": "2026-05-07",
         "tags": [
           "impuestos",
           "inversor",
@@ -1394,7 +1374,7 @@
         "title": "Constituir una Empresa en Paraguay: Paso a Paso",
         "excerpt": "Cómo constituir una sociedad en Paraguay y elegir la estructura legal adecuada.",
         "author": "Nexa Paraguay",
-        "date": "2025-04-15",
+        "date": "2026-05-07",
         "tags": [
           "negocios",
           "empresa",

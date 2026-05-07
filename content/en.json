@@ -346,22 +346,21 @@
     "stats": {
       "items": [
         {
-          "value": "+500",
-          "label": "Families relocated",
+          "value": "—",
+          "label": "Families relocated (update when we have real data)",
           "icon": "Users"
         },
         {
-          "value": "+10",
-          "label": "Years experience",
+          "value": "—",
+          "label": "Years experience (update when we have real data)",
           "icon": "Calendar"
         },
         {
-          "value": "98%",
-          "label": "Success rate",
+          "value": "—",
+          "label": "Success rate (update when we have real data)",
           "icon": "Award"
         }
-      ],
-      "_note": "Stats values not confirmed by client questionnaire (May 5 2026). Verify before production."
+      ]
     },
     "intakeWizard": {
       "steps": [
@@ -714,29 +713,10 @@
       "buttonHref": "/s/en/nexa-paraguay/contacto"
     },
     "testimonials": {
-      "eyebrow": "Testimonials",
-      "title": "What our clients say",
-      "subtitle": "Real stories from people who established their operations in Paraguay",
-      "items": [
-        {
-          "author": "J. van der L.",
-          "role": "Business owner, Netherlands",
-          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
-          "rating": 5
-        },
-        {
-          "author": "M. S.",
-          "role": "Investor, Germany",
-          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
-          "rating": 5
-        },
-        {
-          "author": "C. R.",
-          "role": "Freelancer, Spain",
-          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
-          "rating": 5
-        }
-      ]
+      "eyebrow": "Testimonials (coming soon)",
+      "title": "Coming soon: client experiences",
+      "subtitle": "Once our first clients complete the process, we'll share their stories here.",
+      "items": []
     }
   },
   "whyCountryPage": {
@@ -1317,7 +1297,7 @@
         "title": "Complete Guide to Paraguay Residency in 2025",
         "excerpt": "Everything you need to know about obtaining Paraguayan residency: requirements, timeline, costs and step-by-step process.",
         "author": "Nexa Paraguay",
-        "date": "2025-01-15",
+        "date": "2026-05-07",
         "tags": [
           "residency",
           "guide",
@@ -1329,7 +1309,7 @@
         "title": "How to Open a Bank Account in Paraguay as a Foreigner",
         "excerpt": "A practical guide to opening personal and corporate bank accounts in Paraguay, including required documents and bank selection.",
         "author": "Nexa Paraguay",
-        "date": "2025-02-10",
+        "date": "2026-05-07",
         "tags": [
           "banking",
           "guide",
@@ -1341,7 +1321,7 @@
         "title": "Cost of Living in Asunción: A Realistic Budget for Expats",
         "excerpt": "Monthly budget breakdown across neighborhoods, housing, international schools, healthcare and lifestyle in Paraguay's capital.",
         "author": "Nexa Paraguay",
-        "date": "2025-03-05",
+        "date": "2026-05-07",
         "tags": [
           "lifestyle",
           "cost",
@@ -1353,7 +1333,7 @@
         "title": "Buying Property in Paraguay: A Complete Guide for Foreigners",
         "excerpt": "Everything foreign investors need to know about purchasing real estate in Paraguay, from due diligence to notarization.",
         "author": "Nexa Paraguay",
-        "date": "2025-03-20",
+        "date": "2026-05-07",
         "tags": [
           "real-estate",
           "investment",
@@ -1365,7 +1345,7 @@
         "title": "Paraguay's Tax System Explained for European Investors",
         "excerpt": "A clear breakdown of Paraguay's territorial tax system, 10% IRE rate, and how it compares to European tax regimes.",
         "author": "Nexa Paraguay",
-        "date": "2025-04-01",
+        "date": "2026-05-07",
         "tags": [
           "tax",
           "investor",
@@ -1377,7 +1357,7 @@
         "title": "Setting Up a Company in Paraguay: Step by Step",
         "excerpt": "How to incorporate a company in Paraguay, choose the right legal structure, and get your business operational.",
         "author": "Nexa Paraguay",
-        "date": "2025-04-15",
+        "date": "2026-05-07",
         "tags": [
           "business",
           "company",

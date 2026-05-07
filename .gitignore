@@ -7,3 +7,6 @@ node_modules
 
 # Screenshot archives
 screenshots/
+
+# Customer data (local only — never committed)
+customers/

@@ -216,31 +216,12 @@
       ]
     },
     "testimonials": {
-      "eyebrow": "Kundenstimmen",
-      "title": "Was unsere Kunden sagen",
-      "subtitle": "Echte Geschichten von Menschen, die ihre Operation in Paraguay etabliert haben",
+      "eyebrow": "Kundenstimmen (demnächst)",
+      "title": "Demnächst: Erfahrungen unserer Kunden",
+      "subtitle": "Sobald unsere ersten Kunden den Prozess abgeschlossen haben, teilen wir ihre Geschichten hier.",
       "ctaText": "Alle Testimonials lesen",
       "ctaHref": "/s/de/nexa-paraguay/contacto",
-      "items": [
-        {
-          "author": "J. van der L.",
-          "role": "Business owner, Netherlands",
-          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
-          "rating": 5
-        },
-        {
-          "author": "M. S.",
-          "role": "Investor, Germany",
-          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
-          "rating": 5
-        },
-        {
-          "author": "C. R.",
-          "role": "Freelancer, Spain",
-          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
-          "rating": 5
-        }
-      ]
+      "items": []
     },
     "whyCountry": {
       "eyebrow": "Warum Paraguay",
@@ -472,23 +453,22 @@
     "stats": {
       "items": [
         {
-          "value": "+500",
-          "label": "Familien umgesiedelt",
+          "value": "—",
+          "label": "Familien umgesiedelt (aktualisieren sobald echte Daten vorliegen)",
           "icon": "Users"
         },
         {
-          "value": "+10",
-          "label": "Jahre Erfahrung",
+          "value": "—",
+          "label": "Jahre Erfahrung (aktualisieren sobald echte Daten vorliegen)",
           "icon": "Calendar"
         },
         {
-          "value": "98%",
-          "label": "Erfolgsquote",
+          "value": "—",
+          "label": "Erfolgsquote (aktualisieren sobald echte Daten vorliegen)",
           "icon": "Award"
         }
       ],
-      "title": "Zahlen",
-      "_note": "Stats values not confirmed by client questionnaire (May 5 2026). Verify before production."
+      "title": "Zahlen"
     },
     "beneluxDesk": {
       "title": "Spezialisierte Betreuung für Benelux",
@@ -718,29 +698,10 @@
       "buttonHref": "/s/de/nexa-paraguay/contacto"
     },
     "testimonials": {
-      "eyebrow": "Kundenstimmen",
-      "title": "Was unsere Kunden sagen",
-      "subtitle": "Echte Geschichten von Menschen, die ihre Operation in Paraguay etabliert haben",
-      "items": [
-        {
-          "author": "J. van der L.",
-          "role": "Business owner, Netherlands",
-          "quote": "Nexa handled my residency, company and bank account in one trip. The parallel processing meant I was already set up before I even arrived.",
-          "rating": 5
-        },
-        {
-          "author": "M. S.",
-          "role": "Investor, Germany",
-          "quote": "I was skeptical about the one-day process. It actually worked. Migration, police records, identification — all coordinated. The team knows exactly what they're doing.",
-          "rating": 5
-        },
-        {
-          "author": "C. R.",
-          "role": "Freelancer, Spain",
-          "quote": "What sold me was the personalized checklist. I only did what I actually needed, not a pre-packaged list. That saved me weeks.",
-          "rating": 5
-        }
-      ]
+      "eyebrow": "Kundenstimmen (demnächst)",
+      "title": "Demnächst: Erfahrungen unserer Kunden",
+      "subtitle": "Sobald unsere ersten Kunden den Prozess abgeschlossen haben, teilen wir ihre Geschichten hier.",
+      "items": []
     }
   },
   "whyCountryPage": {
@@ -1336,7 +1297,7 @@
         "title": "Vollständiger Leitfaden für den Aufenthalt in Paraguay 2025",
         "excerpt": "Alles, was Sie über die paraguayische Aufenthaltserlaubnis wissen müssen.",
         "author": "Nexa Paraguay",
-        "date": "2025-01-15",
+        "date": "2026-05-07",
         "tags": [
           "aufenthalt",
           "leitfaden",
@@ -1348,7 +1309,7 @@
         "title": "Kontoeröffnung in Paraguay als Ausländer",
         "excerpt": "Ein praktischer Leitfaden zur Eröffnung privater und geschäftlicher Bankkonten.",
         "author": "Nexa Paraguay",
-        "date": "2025-02-10",
+        "date": "2026-05-07",
         "tags": [
           "bankwesen",
           "leitfaden",
@@ -1360,7 +1321,7 @@
         "title": "Lebenshaltungskosten in Asunción: Ein Realistisches Budget",
         "excerpt": "Monatliche Kostenaufteilung nach Stadtteilen, Wohnen, Schulen und Gesundheitsversorgung.",
         "author": "Nexa Paraguay",
-        "date": "2025-03-05",
+        "date": "2026-05-07",
         "tags": [
           "lebensstil",
           "kosten",
@@ -1372,7 +1333,7 @@
         "title": "Immobilienkauf in Paraguay: Kompletter Leitfaden für Ausländer",
         "excerpt": "Alles, was ausländische Investoren über den Immobilienkauf wissen müssen.",
         "author": "Nexa Paraguay",
-        "date": "2025-03-20",
+        "date": "2026-05-07",
         "tags": [
           "immobilien",
           "investition",
@@ -1384,7 +1345,7 @@
         "title": "Das Paraguayische Steuersystem für Europäische Investoren Erklärt",
         "excerpt": "Eine klare Erklärung des territorialen Steuersystems und des 10%-IRE-Satzes.",
         "author": "Nexa Paraguay",
-        "date": "2025-04-01",
+        "date": "2026-05-07",
         "tags": [
           "steuern",
           "investor",
@@ -1396,7 +1357,7 @@
         "title": "Unternehmensgründung in Paraguay: Schritt für Schritt",
         "excerpt": "Wie man in Paraguay ein Unternehmen gründet und die richtige Rechtsform wählt.",
         "author": "Nexa Paraguay",
-        "date": "2025-04-15",
+        "date": "2026-05-07",
         "tags": [
           "geschäft",
           "unternehmen",
