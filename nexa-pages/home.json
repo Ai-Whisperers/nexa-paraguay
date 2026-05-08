@@ -11,25 +11,9 @@
             "content": "home.hero"
         },
         {
-            "id": "stats-counter",
-            "variant": "inline",
-            "content": "home.stats",
-            "styling": {
-                "padding": "none"
-            }
-        },
-        {
             "id": "trust-signals",
             "variant": "credentials",
             "content": "home.trust",
-            "styling": {
-                "padding": "none"
-            }
-        },
-        {
-            "id": "tax-savings-calculator",
-            "variant": "default",
-            "content": "home.taxCalculator",
             "styling": {
                 "padding": "none"
             }
@@ -43,23 +27,22 @@
             }
         },
         {
-            "id": "features",
-            "variant": "three-col",
-            "content": "home.beneluxDesk",
+            "id": "services",
+            "content": "home.services",
             "styling": {
                 "padding": "none"
             }
         },
         {
-            "id": "process-teaser",
-            "variant": "inline",
-            "content": "home.processTeaser"
+            "id": "process-timeline",
+            "content": "home.process",
+            "styling": {
+                "padding": "none"
+            }
         },
         {
-            "id": "testimonials",
-            "variant": "grid",
-            "content": "home.testimonials",
-            "enabledWhen": "testimonials",
+            "id": "feedback",
+            "content": "home.feedback",
             "styling": {
                 "padding": "none"
             }
