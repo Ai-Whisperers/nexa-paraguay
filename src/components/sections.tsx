@@ -126,7 +126,7 @@ export function ProgramsSection({ pageContent, images }: SectionComponentProps) 
 
 export function ServicesSection({ pageContent, data, images }: SectionComponentProps) {
   const d = data || pageContent || {}
-  const groups = d.groups || []
+  const groups = d.services?.groups || d.groups || []
   if (!groups.length) return null
   return (
     <section className="py-24">

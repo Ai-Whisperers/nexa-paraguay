@@ -5,52 +5,12 @@
     "descriptionKey": "home.seo.description",
     "schemaType": "LocalBusiness",
     "sections": [
-        {
-            "id": "hero",
-            "variant": "split",
-            "content": "home.hero"
-        },
-        {
-            "id": "trust-signals",
-            "variant": "credentials",
-            "content": "home.trust",
-            "styling": {
-                "padding": "none"
-            }
-        },
-        {
-            "id": "why-destination",
-            "variant": "three-col",
-            "content": "home.whyCountry",
-            "styling": {
-                "padding": "none"
-            }
-        },
-        {
-            "id": "services",
-            "content": "home.services",
-            "styling": {
-                "padding": "none"
-            }
-        },
-        {
-            "id": "process-timeline",
-            "content": "home.process",
-            "styling": {
-                "padding": "none"
-            }
-        },
-        {
-            "id": "feedback",
-            "content": "home.feedback",
-            "styling": {
-                "padding": "none"
-            }
-        },
-        {
-            "id": "cta-banner",
-            "variant": "gradient",
-            "content": "home.finalCta"
-        }
+        { "id": "hero", "content": "home" },
+        { "id": "trust-signals", "content": "home" },
+        { "id": "why-destination", "content": "home" },
+        { "id": "services", "content": "home" },
+        { "id": "process-timeline", "content": "home" },
+        { "id": "feedback", "content": "home.feedback" },
+        { "id": "cta-banner", "content": "home" }
     ]
 }

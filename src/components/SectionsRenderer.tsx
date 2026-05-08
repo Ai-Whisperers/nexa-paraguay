@@ -84,8 +84,8 @@ export default function SectionsRenderer({ content, pageConfig, images, locale }
           if (section.enabledWhen && !resolveContent(content, section.enabledWhen)) return null
           const Comp = SECTIONS[section.id]
           if (Comp) {
-          const sectionData = resolveContent(content, section.content || section.id)
-          return <ErrorBoundary key={section.id || idx} name={section.id}><Comp pageContent={content} data={sectionData} images={images} locale={locale} /></ErrorBoundary>
+            const sectionData = resolveContent(content, section.content || section.id)
+            return <ErrorBoundary key={section.id || idx} name={section.id}><Comp pageContent={sectionData || content} data={sectionData} images={images} locale={locale} /></ErrorBoundary>
           }
           const data = resolveContent(content, section.content || section.id)
           return data ? <GenericSection key={idx} data={data} /> : null
