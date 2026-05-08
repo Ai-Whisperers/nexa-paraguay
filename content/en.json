@@ -8004,7 +8004,123 @@
       "siteName": "",
       "tagline": "",
       "whatsapp": "",
-      "whyCountryPage": ""
+      "whyCountryPage": "",
+      "groups": [
+        {
+          "title": "Residency & Legal Documents",
+          "description": "The essential first steps for your life in Paraguay. We handle every document from start to finish.",
+          "items": [
+            {
+              "title": "Permanent Residency",
+              "shortDescription": "Professional management of your residency permit application.",
+              "fullDescription": "We coordinate the entire process with Migraciones Paraguay: application, document submission, follow-up, and resolution delivery. Includes your identity card once approved.",
+              "benefits": [
+                "Support at every visit",
+                "Document translation",
+                "Apostille management",
+                "Case tracking"
+              ],
+              "icon": "🪪"
+            },
+            {
+              "title": "Paraguayan ID (Cédula)",
+              "shortDescription": "Full assistance obtaining your local identification document.",
+              "fullDescription": "We accompany you through the process of obtaining your Paraguayan ID at the Department of Identification. We handle appointments, documentation, and pickup.",
+              "benefits": [
+                "Appointment scheduling",
+                "In-person support",
+                "Complete documentation",
+                "Migration coordination"
+              ],
+              "icon": "🆔"
+            },
+            {
+              "title": "Apostille & Translation",
+              "shortDescription": "We handle certified translation and legal verification of all foreign documents.",
+              "fullDescription": "Certified public translation and apostille of all foreign documents needed for your migration and banking process.",
+              "benefits": [
+                "Certified translators",
+                "Apostille management",
+                "Migration-ready documents",
+                "Full legal validation"
+              ],
+              "icon": "📄"
+            }
+          ]
+        },
+        {
+          "title": "Banking & Tax Setup",
+          "description": "Establish your financial footprint in Paraguay with expert guidance.",
+          "items": [
+            {
+              "title": "Bank Account Opening",
+              "shortDescription": "Guidance and support to successfully open local bank accounts.",
+              "fullDescription": "We guide you through selecting and opening bank accounts. We coordinate appointments, prepare documentation, and facilitate communication with banks.",
+              "benefits": [
+                "Right bank selection",
+                "Prepared documentation",
+                "In-person accompaniment",
+                "Online and physical banking"
+              ],
+              "icon": "🏦"
+            },
+            {
+              "title": "Tax Registration (RUC)",
+              "shortDescription": "Setup of your Paraguayan taxpayer ID for personal or business use.",
+              "fullDescription": "We handle your registration in the Single Taxpayer Registry (RUC) with SET. We advise on the tax regime that best suits your situation.",
+              "benefits": [
+                "SET registration",
+                "Tax regime advisory",
+                "Personal or business RUC",
+                "Monthly obligations"
+              ],
+              "icon": "📊"
+            }
+          ]
+        },
+        {
+          "title": "Residential Real Estate",
+          "description": "Find the right place to call home, whether staying a month or a lifetime.",
+          "items": [
+            {
+              "title": "Apartment & House Rentals",
+              "shortDescription": "Help navigating the local market to find high-quality rentals.",
+              "fullDescription": "We assist in finding rental properties: contract review, visit coordination, property condition verification, and neighborhood advice.",
+              "benefits": [
+                "Personalized search",
+                "Contract review",
+                "Visit coordination",
+                "Neighborhood advice"
+              ],
+              "icon": "🏠"
+            },
+            {
+              "title": "Property Purchases",
+              "shortDescription": "Expert assistance finding and buying residential properties.",
+              "fullDescription": "We accompany you through the entire purchase process: property search, negotiation, title review, notarial coordination, and registration.",
+              "benefits": [
+                "Property search",
+                "Negotiation",
+                "Title review",
+                "Notarial coordination"
+              ],
+              "icon": "🔑"
+            },
+            {
+              "title": "Due Diligence",
+              "shortDescription": "We verify titles and legal standing to protect your investment.",
+              "fullDescription": "We conduct a thorough review of the property's legal status, including title verification, outstanding debts, liens, and cadastral situation.",
+              "benefits": [
+                "Title verification",
+                "Debt search",
+                "Cadastral analysis",
+                "Legal status report"
+              ],
+              "icon": "🔍"
+            }
+          ]
+        }
+      ]
     },
     "faqPage": "",
     "footer": "",

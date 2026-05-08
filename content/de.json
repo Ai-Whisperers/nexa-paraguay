@@ -7552,7 +7552,123 @@
       "siteName": "",
       "tagline": "",
       "whatsapp": "",
-      "whyCountryPage": ""
+      "whyCountryPage": "",
+      "groups": [
+        {
+          "title": "Aufenthalt & Rechtsdokumente",
+          "description": "Die wesentlichen ersten Schritte für Ihr Leben in Paraguay. Wir erledigen jedes Dokument von Anfang bis Ende.",
+          "items": [
+            {
+              "title": "Daueraufenthaltsgenehmigung",
+              "shortDescription": "Professionelle Betreuung Ihres Antrags auf Aufenthaltsgenehmigung.",
+              "fullDescription": "Wir koordinieren den gesamten Prozess mit Migraciones Paraguay: Antrag, Einreichung der Unterlagen, Nachverfolgung und Aushändigung der Entscheidung. Inklusive Personalausweis nach Genehmigung.",
+              "benefits": [
+                "Begleitung bei jedem Besuch",
+                "Dokumentenübersetzung",
+                "Apostille-Management",
+                "Aktenverfolgung"
+              ],
+              "icon": "🪪"
+            },
+            {
+              "title": "Paraguayischer Personalausweis (Cédula)",
+              "shortDescription": "Vollständige Unterstützung bei der Beschaffung Ihres lokalen Ausweisdokuments.",
+              "fullDescription": "Wir begleiten Sie durch den Prozess der Beantragung Ihres paraguayischen Personalausweises bei der Abteilung für Identifikation. Wir kümmern uns um Termine, Unterlagen und Abholung.",
+              "benefits": [
+                "Terminplanung",
+                "Persönliche Unterstützung",
+                "Vollständige Dokumentation",
+                "Migrationskoordination"
+              ],
+              "icon": "🆔"
+            },
+            {
+              "title": "Apostille & Übersetzung",
+              "shortDescription": "Beglaubigte Übersetzung und rechtliche Prüfung aller erforderlichen ausländischen Dokumente.",
+              "fullDescription": "Beglaubigte öffentliche Übersetzung und Apostille aller ausländischen Dokumente, die für Ihren Migrations- und Bankprozess benötigt werden.",
+              "benefits": [
+                "Zertifizierte Übersetzer",
+                "Apostille-Management",
+                "Migrationsfertige Dokumente",
+                "Vollständige rechtliche Validierung"
+              ],
+              "icon": "📄"
+            }
+          ]
+        },
+        {
+          "title": "Bankwesen & Steuerkonfiguration",
+          "description": "Etablieren Sie Ihren finanziellen Fußabdruck in Paraguay mit fachkundiger Beratung.",
+          "items": [
+            {
+              "title": "Bankkontoeröffnung",
+              "shortDescription": "Beratung und Unterstützung bei der erfolgreichen Eröffnung lokaler Bankkonten.",
+              "fullDescription": "Wir begleiten Sie bei der Auswahl und Eröffnung von Bankkonten. Wir koordinieren Termine, bereiten Unterlagen vor und erleichtern die Kommunikation mit Banken.",
+              "benefits": [
+                "Auswahl der richtigen Bank",
+                "Vorbereitete Unterlagen",
+                "Persönliche Begleitung",
+                "Online- und Filial-Banking"
+              ],
+              "icon": "🏦"
+            },
+            {
+              "title": "Steuerregistrierung (RUC)",
+              "shortDescription": "Einrichtung Ihrer paraguayischen Steueridentifikationsnummer für private oder geschäftliche Zwecke.",
+              "fullDescription": "Wir übernehmen Ihre Registrierung im Einheitlichen Steuerzahlerregister (RUC) bei der SET. Wir beraten Sie zum passenden Steuersystem.",
+              "benefits": [
+                "SET-Registrierung",
+                "Steuersystem-Beratung",
+                "Privates oder geschäftliches RUC",
+                "Monatliche Verpflichtungen"
+              ],
+              "icon": "📊"
+            }
+          ]
+        },
+        {
+          "title": "Wohnimmobilien",
+          "description": "Finden Sie den richtigen Ort, den Sie Ihr Zuhause nennen können – für einen Monat oder ein Leben lang.",
+          "items": [
+            {
+              "title": "Wohnungs- & Hausmiete",
+              "shortDescription": "Hilfe bei der Orientierung auf dem lokalen Markt für hochwertige Mietobjekte.",
+              "fullDescription": "Wir unterstützen Sie bei der Suche nach Mietobjekten: Vertragsprüfung, Besichtigungskoordination, Zustandsprüfung der Immobilie und Nachbarschaftsberatung.",
+              "benefits": [
+                "Personalisierte Suche",
+                "Vertragsprüfung",
+                "Besichtigungskoordination",
+                "Nachbarschaftsberatung"
+              ],
+              "icon": "🏠"
+            },
+            {
+              "title": "Immobilienkauf",
+              "shortDescription": "Fachkundige Unterstützung bei der Suche und dem Kauf von Wohnimmobilien.",
+              "fullDescription": "Wir begleiten Sie durch den gesamten Kaufprozess: Immobiliensuche, Verhandlung, Titelprüfung, notarielle Koordination und Registrierung.",
+              "benefits": [
+                "Immobiliensuche",
+                "Verhandlung",
+                "Titelprüfung",
+                "Notarielle Koordination"
+              ],
+              "icon": "🔑"
+            },
+            {
+              "title": "Due Diligence",
+              "shortDescription": "Wir prüfen Eigentumstitel und rechtlichen Status, um Ihre Investition zu schützen.",
+              "fullDescription": "Wir führen eine gründliche Prüfung des rechtlichen Status der Immobilie durch, einschließlich Titelprüfung, Suche nach ausstehenden Schulden und Grundbuchsituation.",
+              "benefits": [
+                "Titelprüfung",
+                "Schuldensuche",
+                "Grundbuchanalyse",
+                "Rechtlicher Statusbericht"
+              ],
+              "icon": "🔍"
+            }
+          ]
+        }
+      ]
     },
     "faqPage": "",
     "footer": "",

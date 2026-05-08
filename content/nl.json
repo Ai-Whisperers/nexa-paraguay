@@ -7609,7 +7609,123 @@
       "siteName": "",
       "tagline": "",
       "whatsapp": "",
-      "whyCountryPage": ""
+      "whyCountryPage": "",
+      "groups": [
+        {
+          "title": "Verblijfsvergunning & Juridische Documenten",
+          "description": "De essentiële eerste stappen voor je leven in Paraguay. Wij regelen elk document van begin tot eind.",
+          "items": [
+            {
+              "title": "Permanente Verblijfsvergunning",
+              "shortDescription": "Professionele begeleiding bij je aanvraag voor een verblijfsvergunning.",
+              "fullDescription": "We coördineren het volledige proces met Migraciones Paraguay: aanvraag, documentindiening, opvolging en aflevering. Inclusief identiteitskaart na goedkeuring.",
+              "benefits": [
+                "Begeleiding bij elk bezoek",
+                "Documentvertaling",
+                "Apostillebeheer",
+                "Dossiertracking"
+              ],
+              "icon": "🪪"
+            },
+            {
+              "title": "Paraguayaanse ID (Cédula)",
+              "shortDescription": "Volledige ondersteuning bij het verkrijgen van je lokale identiteitsdocument.",
+              "fullDescription": "We begeleiden je bij het verkrijgen van je Paraguayaanse ID bij de afdeling Identificatie. We regelen afspraken, documentatie en ophaling.",
+              "benefits": [
+                "Afspraakplanning",
+                "Persoonlijke ondersteuning",
+                "Volledige documentatie",
+                "Migratiecoördinatie"
+              ],
+              "icon": "🆔"
+            },
+            {
+              "title": "Apostille & Vertaling",
+              "shortDescription": "Gecertificeerde vertaling en wettelijke verificatie van alle buitenlandse documenten.",
+              "fullDescription": "Gecertificeerde openbare vertaling en apostille van alle buitenlandse documenten nodig voor je migratie- en bankproces.",
+              "benefits": [
+                "Gecertificeerde vertalers",
+                "Apostillebeheer",
+                "Migratieklare documenten",
+                "Volledige juridische validatie"
+              ],
+              "icon": "📄"
+            }
+          ]
+        },
+        {
+          "title": "Bankzaken & Fiscale Configuratie",
+          "description": "Leg je financiële basis in Paraguay met deskundig advies.",
+          "items": [
+            {
+              "title": "Bankrekening Openen",
+              "shortDescription": "Begeleiding en ondersteuning bij het openen van lokale bankrekeningen.",
+              "fullDescription": "We begeleiden je bij het selecteren en openen van bankrekeningen. We coördineren afspraken, bereiden documentatie voor en vergemakkelijken communicatie met banken.",
+              "benefits": [
+                "Juiste bankkeuze",
+                "Voorbereide documentatie",
+                "Persoonlijke begeleiding",
+                "Online en fysiek bankieren"
+              ],
+              "icon": "🏦"
+            },
+            {
+              "title": "Belastingregistratie (RUC)",
+              "shortDescription": "Configuratie van je Paraguayaanse belastingnummer voor persoonlijk of zakelijk gebruik.",
+              "fullDescription": "We regelen je registratie in het Enkelvoudig Belastingbetalersregister (RUC) bij SET. We adviseren over het belastingregime dat het beste bij je situatie past.",
+              "benefits": [
+                "SET-registratie",
+                "Belastingregime advies",
+                "Persoonlijk of zakelijk RUC",
+                "Maandelijkse verplichtingen"
+              ],
+              "icon": "📊"
+            }
+          ]
+        },
+        {
+          "title": "Residentieel Vastgoed",
+          "description": "Vind de juiste plek om thuis te noemen, voor een maand of een leven lang.",
+          "items": [
+            {
+              "title": "Appartement & Huurhuizen",
+              "shortDescription": "Hulp bij het navigeren op de lokale markt voor hoogwaardige huurwoningen.",
+              "fullDescription": "We helpen bij het vinden van huurwoningen: contractbeoordeling, bezoekcoördinatie, staat van de woning en wijkadvies.",
+              "benefits": [
+                "Persoonlijke zoektocht",
+                "Contractbeoordeling",
+                "Bezoekcoördinatie",
+                "Wijkadvies"
+              ],
+              "icon": "🏠"
+            },
+            {
+              "title": "Eigendomsaankoop",
+              "shortDescription": "Deskundige hulp bij het vinden en kopen van residentieel vastgoed.",
+              "fullDescription": "We begeleiden je bij het volledige aankoopproces: zoeken, onderhandelen, titelonderzoek, notariële coördinatie en registratie.",
+              "benefits": [
+                "Eigendomszoektocht",
+                "Onderhandeling",
+                "Titelonderzoek",
+                "Notariële coördinatie"
+              ],
+              "icon": "🔑"
+            },
+            {
+              "title": "Due Diligence",
+              "shortDescription": "Wij verifiëren eigendomstitels en juridische status om je investering te beschermen.",
+              "fullDescription": "We voeren een grondig onderzoek uit van de juridische status van het pand, inclusief titelverificatie, openstaande schulden, beslagen en kadastrale situatie.",
+              "benefits": [
+                "Titelverificatie",
+                "Schuldenonderzoek",
+                "Kadastraal onderzoek",
+                "Juridisch statusrapport"
+              ],
+              "icon": "🔍"
+            }
+          ]
+        }
+      ]
     },
     "faqPage": "",
     "footer": "",
