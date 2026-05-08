@@ -1,8 +1,8 @@
-import { loadJSON } from './loader'
-import { readFileSync } from 'fs'
+import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
+import { loadJSON } from './loader'
 
-const REPO = '/root/nexa-paraguay'
+const REPO = process.cwd()
 const LOCALES = ['es', 'en', 'nl', 'de']
 
 export function loadPageData(locale: string, slug: string) {
@@ -21,12 +21,16 @@ export function loadPageData(locale: string, slug: string) {
 export function loadBlogPost(locale: string, slug: string) {
   try {
     const content = JSON.parse(readFileSync(join(REPO, 'content', `${locale}.json`), 'utf-8'))
-    const posts = JSON.parse(readFileSync(join(REPO, 'blog', locale, '_posts.json'), 'utf-8'))
-    const post = posts.find((p: any) => p.slug === slug)
-    if (!post) { 
-      // Try loading MDX
+    const localePath = join(REPO, 'content', 'blog', `posts-${locale}.json`)
+    const fallbackPath = join(REPO, 'content', 'blog', 'posts.json')
+    const postsPath = existsSync(localePath) ? localePath : (existsSync(fallbackPath) ? fallbackPath : null)
+    if (!postsPath) return null
+    const posts = JSON.parse(readFileSync(postsPath, 'utf-8'))
+    const list = posts.posts || posts
+    const post = list.find((p: any) => p.slug === slug)
+    if (!post) {
       try {
-        const mdx = readFileSync(join(REPO, 'blog', locale, `${slug}.mdx`), 'utf-8')
+        const mdx = readFileSync(join(REPO, 'content', 'blog', locale, `${slug}.mdx`), 'utf-8')
         return { content, locale, post: { slug, body: mdx, title: slug.replace(/-/g,' '), excerpt: '' } }
       } catch { return null }
     }

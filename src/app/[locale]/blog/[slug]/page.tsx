@@ -1,3 +1,6 @@
+import { Suspense } from 'react'
+import { readFileSync, existsSync } from 'fs'
+import { join } from 'path'
 import { loadBlogPost } from '../../../../lib/page-data'
 import { Header } from '../../../../components/Header'
 import { Footer } from '../../../../components/Footer'
@@ -5,15 +8,47 @@ import type { Metadata } from 'next'
 
 interface Props { params: Promise<{ locale: string; slug: string }> }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale, slug } = await params
-  const data = loadBlogPost(locale, slug)
-  if (!data?.post) return {}
-  return { title: `${data.post.title} — Nexa Paraguay`, description: data.post.excerpt || '' }
+const LOCALES = ['es', 'en', 'nl', 'de']
+
+export function generateStaticParams() {
+  const params: { locale: string; slug: string }[] = []
+  for (const locale of LOCALES) {
+    const localePath = join(process.cwd(), 'content', 'blog', `posts-${locale}.json`)
+    const fallbackPath = join(process.cwd(), 'content', 'blog', 'posts.json')
+    const path = existsSync(localePath) ? localePath : (existsSync(fallbackPath) ? fallbackPath : null)
+    if (path) {
+      try {
+        const posts = JSON.parse(readFileSync(path, 'utf-8'))
+        const list = posts.posts || posts
+        const slugs = list.filter((p: any) => p.slug).map((p: any) => p.slug)
+        for (const slug of slugs) params.push({ locale, slug })
+      } catch {}
+    }
+  }
+  return params
 }
 
-export default async function Page({ params }: Props) {
-  const { locale, slug } = await params
+export function generateMetadata({ params }: Props): Metadata {
+  return { title: 'Nexa Paraguay' }
+}
+
+function BlogSkeleton() {
+  return (
+    <div className="font-inter animate-pulse">
+      <div className="h-16 bg-primary/5" />
+      <div className="max-w-3xl mx-auto px-4 py-16">
+        <div className="h-4 w-24 bg-accent/20 rounded mb-4" />
+        <div className="h-10 bg-primary/10 rounded-lg w-3/4 mb-4" />
+        <div className="h-4 bg-primary/5 rounded w-1/3 mb-8" />
+        <div className="space-y-3">
+          {[1,2,3,4,5,6,7,8].map(i => <div key={i} className="h-4 bg-primary/5 rounded w-full" />)}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+async function BlogContent({ locale, slug }: { locale: string; slug: string }) {
   const data = loadBlogPost(locale, slug)
   if (!data?.post) return <div className="text-center p-16 text-text-muted">Post not found</div>
   const { content, post } = data
@@ -36,4 +71,11 @@ export default async function Page({ params }: Props) {
   )
 }
 
-export const revalidate = 3600
+export default async function Page({ params }: Props) {
+  const { locale, slug } = await params
+  return (
+    <Suspense fallback={<BlogSkeleton />}>
+      <BlogContent locale={locale} slug={slug} />
+    </Suspense>
+  )
+}

@@ -29,7 +29,7 @@ export function Footer({ footer }: { footer: any }) {
           ))}
         </div>
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem', textAlign: 'center', fontSize: '0.85rem', opacity: 0.6 }}>
-          {footer.copyright?.replace('{year}', String(new Date().getFullYear()))}
+          {footer.copyright?.replace('{year}', '2026')}
           <span style={{ margin: '0 0.5rem' }}>·</span>
           <a href="?gateway=true" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'underline', fontSize: '0.8rem' }}>Reiniciar</a>
         </div>

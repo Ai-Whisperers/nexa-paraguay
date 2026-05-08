@@ -36,12 +36,10 @@ export function FaqSection({ pageContent, data }: SectionComponentProps) {
   )
 }
 
-export function BlogSection({ pageContent, data, images }: SectionComponentProps) {
+export function BlogSection({ pageContent, data, images, locale: _locale }: SectionComponentProps) {
   const d = data || pageContent || {}
   const posts = d.posts || []
-  const router = useRouter()
-  const pathParts = router.asPath.split('/').filter(Boolean)
-  const locale = (['es', 'en', 'nl', 'de'].includes(pathParts[0]) ? pathParts[0] : 'es')
+  const locale = _locale || 'es'
   if (!posts.length) return null
   return (
     <section style={{ padding: s.section }}>
