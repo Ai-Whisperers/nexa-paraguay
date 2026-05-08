@@ -33,7 +33,7 @@
 | 5 | **Image optimization pipeline** | ✅ Done | `scripts/optimize-images.mjs` — sharp-based webp/avif at 3 breakpoints. |
 | 6 | **Core Web Vitals monitoring** | ✅ Done | `src/lib/web-vitals.tsx` sends CLS/LCP/INP to GA4. |
 | 7 | **Code splitting per section** | ✅ Done | 31 sections all use `dynamic(() => import(...))` in SectionsRenderer. |
-| 8 | **Response compression (Traefik)** | ⬜ Todo | Add gzip/brotli middleware to Traefik for nexa_web service. Content JSON is 635KB. Saves 70-80%. |
+| 8 | **Response compression (Traefik)** | ✅ Done | gzip/brotli middleware added via `traefik.http.middlewares.nexa-compress.compress=true` on nexa_web router. |
 | 9 | **CDN edge caching** | ✅ Done | Cache-Control: static → 1y, HTML → PPR-cached, API → 5min. |
 | 10 | **Screenshot diff on deploy** | ✅ Done | `scripts/deploy-hook.sh` + `.github/workflows/visual-regression.yml`. |
 
@@ -92,14 +92,14 @@
 
 | # | Idea | Status | Detail |
 |---|------|--------|--------|
-| 39 | **Nexa content update cron** | ⬜ Todo | Daily: new content? → rebuild + deploy. |
-| 40 | **Nexa healthcheck cron** | ⬜ Todo | Every 5min: curl → 200? If not, alert. |
-| 41 | **Nexa SEO monitoring cron** | ⬜ Todo | Weekly: rankings, hreflang, JSON-LD validation. |
-| 42 | **Goal workspace for content** | ⬜ Todo | Hermes Goal: "Article in 4 locales → commit." |
-| 43 | **Puppeteer visual QA** | ⬜ Todo | Weekly screenshots, diff against baseline. |
-| 44 | **Canary deploy** | ⬜ Todo | Deploy to staging first. Promote if screenshot diff passes. |
-| 45 | **Rollback script** | ⬜ Todo | `docker service update --image nexa:{tag}`. Tagged releases. |
-| 46 | **Deploy status webhook** | ⬜ Todo | GitHub Actions → Telegram notification. |
+| 39 | **Content update cron** | ✅ Done | Shell script + Hermes cron @6am daily (no_agent). Hashes content dirs, triggers deploy if changed. Silent if unchanged. |
+| 40 | **Healthcheck cron** | ✅ Done | `scripts/nexa-healthcheck.sh` + Hermes cron every 10min (no_agent). Curl → verify "Nexa" in body. Alerts on failure. |
+| 41 | **SEO monitoring cron** | ✅ Done | `scripts/nexa-seo-monitor.py` + Hermes cron weekly Mon @9am. Checks hreflang, JSON-LD, status of all 4 locales. Agent-analyzed report. |
+| 42 | **Content generation skill** | ✅ Done | `nexa-content-generation` Hermes skill. Full pipeline: research → 4-locale batch → JSON registration → commit. |
+| 43 | **Visual QA cron** | ✅ Done | `scripts/visual-qa.sh` + Hermes cron weekly Mon @10am (no_agent). ImageMagick pixel diff vs baseline. Reports changes. |
+| 44 | **Canary deploy** | ✅ Done | `deploy.yml` GHA workflow: build → staging → screenshot check → promote to prod. |
+| 45 | **Rollback script** | ✅ Done | `scripts/rollback.sh` — `docker service update --rollback` or specific tag. Includes health check after. |
+| 46 | **Deploy status webhook** | ✅ Done | `deploy-status.yml` GHA workflow triggered by deploy completion. Ready for Telegram webhook via secrets. |
 
 ---
 
@@ -173,22 +173,20 @@
 NEXT (high impact, low effort)
   ├─ #30 WhatsApp QR scan (blocked)
   ├─ #20 Auto keyword per page
-  ├─ #21 SEO ranking tracker (cron)
   ├─ #38 Auto social posting
-  └─ #39 Content healthcheck cron
+  └─ #16 Newsletter integration
 
 PLAN (high impact, higher effort)
   ├─ #15 Blog content audit
-  ├─ #53 Multi-step booking form
+  ├─ #53 Multi-step booking form (DONE)
   ├─ #27 Tax savings calculator
-  ├─ #57 Case studies
+  ├─ #57 Case studies (DONE)
   └─ #28 Cost of living comparison
 
 QUICK (low effort, measurable)
   ├─ #55 A/B test hero CTA
-  ├─ #54 Exit-intent popup
-  ├─ #46 Deploy webhook
-  └─ #64 Rate limiting (DONE)
+  ├─ #54 Exit-intent popup (DONE)
+  └─ #31 CRM pipeline
 
 FUTURE (high effort, long-term)
   ├─ #72 Client dashboard
