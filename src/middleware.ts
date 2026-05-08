@@ -19,7 +19,7 @@ export function middleware(request: NextRequest) {
 
   if (!hasLocale && !pathname.startsWith('/_next') && !pathname.startsWith('/images') && pathname !== '/favicon.svg') {
     // Detect preferred locale from cookie, then Accept-Language
-    let preferred = request.cookies.get('locale')?.value || DEFAULT_LOCALE
+    let preferred = request.cookies.get('NEXT_LOCALE')?.value || request.cookies.get('locale')?.value || DEFAULT_LOCALE
     if (!LOCALES.includes(preferred)) {
       const acceptLang = request.headers.get('accept-language') || ''
       for (const loc of LOCALES) {

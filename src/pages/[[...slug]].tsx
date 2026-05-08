@@ -188,30 +188,27 @@ function detectLocaleFromHeader(acceptLanguage: string | undefined): string | nu
 export function getServerSideProps({ params, req, res }: any) {
   let slug = Array.isArray(params?.slug) ? params.slug.join('/') : (params?.slug || 'home')
   let locale = 'es'
+  let hasUrlLocale = false
 
   // 1) URL prefix locale takes highest priority
   if (slug.includes('/')) {
     const parts = slug.split('/')
-    if (LOCALES.includes(parts[0])) { locale = parts[0]; slug = parts.slice(1).join('/') || 'home' }
+    if (LOCALES.includes(parts[0])) { locale = parts[0]; hasUrlLocale = true; slug = parts.slice(1).join('/') || 'home' }
   } else if (LOCALES.includes(slug)) {
-    locale = slug; slug = 'home'
+    locale = slug; hasUrlLocale = true; slug = 'home'
   }
 
-  // 2) If no URL locale, check cookie
-  const cookieLocale = req?.cookies?.NEXT_LOCALE
-  if (!slug.includes('/') && slug !== 'home' && LOCALES.includes(slug)) {
-    // already handled above
-  } else if (slug === 'home' || !slug.includes('/')) {
-    if (!slug.match(new RegExp(`^(${LOCALES.join('|')})$`))) {
-      // Not already a locale-only slug, check cookie
-      if (cookieLocale && LOCALES.includes(cookieLocale)) {
-        locale = cookieLocale
-      }
+  // 2) If no URL locale, check cookie (only if URL didn't specify locale)
+  if (!hasUrlLocale) {
+    const cookieLocale = req?.cookies?.NEXT_LOCALE
+    if (cookieLocale && LOCALES.includes(cookieLocale)) {
+      locale = cookieLocale
     }
   }
 
-  // 3) If still default and first visit, detect from Accept-Language
-  if (locale === 'es' && !cookieLocale) {
+  // 3) If still default and no cookie, detect from Accept-Language
+  const noCookie = !req?.cookies?.NEXT_LOCALE
+  if (!hasUrlLocale && locale === 'es' && noCookie) {
     const detected = detectLocaleFromHeader(req?.headers?.['accept-language'])
     if (detected) locale = detected
   }
