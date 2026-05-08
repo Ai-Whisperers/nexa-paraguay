@@ -12,6 +12,8 @@ services:
       - "traefik.http.routers.nexa-paraguay.tls=true"
       - "traefik.http.routers.nexa-paraguay.tls.certresolver=letsencryptresolver"
       - "traefik.http.services.nexa-paraguay.loadbalancer.server.port=3000"
+      - "traefik.http.middlewares.nexa-compress.compress=true"
+      - "traefik.http.routers.nexa-paraguay.middlewares=nexa-compress"
     networks:
       - agent-net
 
