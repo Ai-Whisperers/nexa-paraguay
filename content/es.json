@@ -368,24 +368,28 @@
       "dutchNote": "La comunidad holandesa creció 189% en 2024-2025",
       "items": [
         {
-          "value": "47.000+",
-          "label": "Residencias otorgadas en 2025",
-          "icon": "Users"
+          "value": "—",
+          "label": "Residencias gestionadas",
+          "icon": "Users",
+          "_note": "Placeholder — reemplazar con cifras reales tras primeros clientes"
         },
         {
-          "value": "+63%",
+          "value": "—",
           "label": "Crecimiento del mercado",
-          "icon": "TrendingUp"
+          "icon": "TrendingUp",
+          "_note": "Placeholder — reemplazar con datos reales"
         },
         {
-          "value": "+189%",
-          "label": "Crecimiento holandés (2024-2025)",
-          "icon": "Globe"
+          "value": "—",
+          "label": "Crecimiento comunidad extranjera",
+          "icon": "Globe",
+          "_note": "Placeholder — reemplazar con datos reales"
         },
         {
-          "value": "15+",
-          "label": "Años de experiencia del equipo",
-          "icon": "Calendar"
+          "value": "—",
+          "label": "Años combinados de experiencia",
+          "icon": "Calendar",
+          "_note": "Placeholder — reemplazar con cifras reales del equipo"
         }
       ]
     },
