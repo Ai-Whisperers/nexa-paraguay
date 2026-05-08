@@ -1,10 +1,8 @@
+'use client'
+
 import React from 'react'
 import { resolveImage } from './content'
-import { theme } from '../theme'
 import { SectionComponentProps } from '../types'
-import { useRouter } from 'next/router'
-
-const c = theme.colors, r = theme.radii, s = theme.spacing, sz = theme.sizes
 
 export function FaqSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
@@ -12,22 +10,23 @@ export function FaqSection({ pageContent, data }: SectionComponentProps) {
   if (!items.length) return null
   const [open, setOpen] = React.useState<number | null>(null)
   return (
-    <section style={{ padding: s.section, background: c.bg }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:c.textMuted,textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem',textAlign:'center' }}>{d.eyebrow}</p>}
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'2rem',textAlign:'center' }}>{d.title}</h2>}
+    <section className="py-24 bg-surface-alt">
+      <div className="max-w-[800px] mx-auto px-4">
+        {d.eyebrow && <p className="text-xs text-text-muted uppercase tracking-[2px] mb-2 text-center">{d.eyebrow}</p>}
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-8 text-center">{d.title}</h2>}
         {items.map((item: any, i: number) => {
           const isOpen = open === i
           const question = item.q || item.pregunta || item.question || item.title
           const answer = item.a || item.respuesta || item.answer || item.description || item.body
           if (!question || !answer) return null
           return (
-            <div key={i} style={{ marginBottom: '0.75rem', border: `1px solid ${isOpen ? c.accent : c.border}`, borderRadius: r.md, overflow: 'hidden', background: c.white, transition: 'border-color 0.2s' }}>
-              <button onClick={() => setOpen(isOpen ? null : i)} style={{ width:'100%', padding:'1rem 1.25rem', border:'none', background: isOpen ? '#faf8f5' : 'none', cursor:'pointer', display:'flex', justifyContent:'space-between', alignItems:'center', fontWeight:700, color:c.primary, fontSize:'0.95rem', textAlign:'left', transition: 'background 0.2s' }}>
+            <div key={i} className={`mb-3 rounded-lg overflow-hidden bg-white transition-colors ${isOpen ? 'border border-accent' : 'border border-border'}`}>
+              <button onClick={() => setOpen(isOpen ? null : i)}
+                className={`w-full px-5 py-4 border-none cursor-pointer flex justify-between items-center font-bold text-primary text-sm text-left transition-colors ${isOpen ? 'bg-[#faf8f5]' : 'bg-none'}`}>
                 <span>{question}</span>
-                <span style={{ color: c.accent, fontSize:'1.2rem', transition:'transform 0.3s', transform: isOpen ? 'rotate(180deg)' : 'none' }}>▾</span>
+                <span className={`text-accent text-lg transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>▾</span>
               </button>
-              {isOpen && <div style={{ padding:'0 1.25rem 1.25rem', color: c.text, fontSize:'0.9rem', lineHeight:1.7, borderTop:`1px solid ${c.border}` }}>{answer}</div>}
+              {isOpen && <div className="px-5 pb-5 text-text text-sm leading-relaxed border-t border-border">{answer}</div>}
             </div>
           )
         })}
@@ -42,20 +41,20 @@ export function BlogSection({ pageContent, data, images, locale: _locale }: Sect
   const locale = _locale || 'es'
   if (!posts.length) return null
   return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'2rem',textAlign:'center' }}>{d.title}</h2>}
-        <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:'1.5rem' }}>
+    <section className="py-24">
+      <div className="max-w-[900px] mx-auto px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-8 text-center">{d.title}</h2>}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
           {posts.map((post: any, i: number) => {
             const postImg = post.image ? resolveImage(images, `@img:blog.${post.image}`) : (post.coverImage || '')
             return (
-              <article key={i} style={{ border:`1px solid ${c.border}`,borderRadius:r.lg,overflow:'hidden',background:c.white }}>
-                {postImg && <img src={postImg} alt={post.title} style={{ width:'100%',height:'180px',objectFit:'cover' }} />}
-                <div style={{ padding:'1.25rem' }}>
-                  {post.date && <span style={{ fontSize:'0.8rem',color:c.accent,fontWeight:600 }}>{post.date}</span>}
-                  <h3 style={{ fontSize:'1.05rem',fontWeight:700,color:c.primary,margin:'0.5rem 0' }}>{post.title}</h3>
-                  {post.excerpt && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5,marginBottom:'0.75rem' }}>{post.excerpt}</p>}
-                  {post.slug && <a href={`/${locale}/blog/${post.slug}`} style={{ color:c.accent,fontWeight:700,fontSize:'0.85rem',textDecoration:'none',borderBottom:`2px solid ${c.accent}` }}>Leer más →</a>}
+              <article key={i} className="border border-border rounded-2xl overflow-hidden bg-white">
+                {postImg && <img src={postImg} alt={post.title} className="w-full h-[180px] object-cover" />}
+                <div className="p-5">
+                  {post.date && <span className="text-xs text-accent font-semibold">{post.date}</span>}
+                  <h3 className="text-base font-bold text-primary my-2">{post.title}</h3>
+                  {post.excerpt && <p className="text-text-muted text-sm leading-relaxed mb-3">{post.excerpt}</p>}
+                  {post.slug && <a href={`/${locale}/blog/${post.slug}`} className="text-accent font-bold text-xs no-underline border-b-2 border-accent">Leer más →</a>}
                 </div>
               </article>
             )
@@ -71,18 +70,18 @@ export function TeamSection({ pageContent, data, images }: SectionComponentProps
   const members = d.members || d.items || []
   if (!members.length) return null
   return (
-    <section style={{ padding: s.section, background: c.bg }}>
-      <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'2rem' }}>{d.title}</h2>}
-        <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))',gap:'2rem' }}>
+    <section className="py-24 bg-surface-alt">
+      <div className="max-w-[900px] mx-auto text-center px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-8">{d.title}</h2>}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-8">
           {members.map((m: any, i: number) => {
             const img = resolveImage(images, m.memberImage || m.image || m.imageUrl)
             return (
-              <div key={i} style={{ padding:s.card,background:c.white,borderRadius:r.lg,boxShadow:theme.shadows.card }}>
-                {img && <img src={img} alt={m.name} style={{ width:'80px',height:'80px',objectFit:'cover',borderRadius:'50%',margin:'0 auto 1rem',display:'block' }} />}
-                <h4 style={{ fontWeight:700,color:c.primary,marginBottom:'0.25rem' }}>{m.name || m.role}</h4>
-                {m.role && m.name && <p style={{ color:c.accent,fontSize:'0.85rem',fontWeight:600,marginBottom:'0.5rem' }}>{m.role}</p>}
-                {m.description && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5 }}>{m.description}</p>}
+              <div key={i} className="p-6 bg-white rounded-2xl shadow-card">
+                {img && <img src={img} alt={m.name} className="w-20 h-20 object-cover rounded-full mx-auto mb-4 block" />}
+                <h4 className="font-bold text-primary mb-1">{m.name || m.role}</h4>
+                {m.role && m.name && <p className="text-accent text-xs font-semibold mb-2">{m.role}</p>}
+                {m.description && <p className="text-text-muted text-sm leading-relaxed">{m.description}</p>}
               </div>
             )
           })}
@@ -98,21 +97,22 @@ export function PrivacyAccordion({ pageContent, data }: SectionComponentProps) {
   if (!items.length) return null
   const [open, setOpen] = React.useState<number | null>(null)
   return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'2rem' }}>{d.title}</h2>}
+    <section className="py-24">
+      <div className="max-w-[800px] mx-auto px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-8">{d.title}</h2>}
         {items.map((item: any, i: number) => {
           const isOpen = open === i
           const title = item.q || item.title || item.pregunta
           const body = item.a || item.body || item.description
           if (!title || !body) return null
           return (
-            <div key={i} style={{ marginBottom:'0.75rem', border:`1px solid ${c.border}`, borderRadius:r.md, overflow:'hidden' }}>
-              <button onClick={() => setOpen(isOpen ? null : i)} style={{ width:'100%', padding:'1rem 1.25rem', border:'none', background: isOpen ? c.primary : c.bg, cursor:'pointer', display:'flex', justifyContent:'space-between', alignItems:'center', fontWeight:700, color: isOpen ? c.white : c.primary, fontSize:'0.95rem', textAlign:'left' }}>
+            <div key={i} className="mb-3 border border-border rounded-lg overflow-hidden">
+              <button onClick={() => setOpen(isOpen ? null : i)}
+                className={`w-full px-5 py-4 border-none cursor-pointer flex justify-between items-center font-bold text-sm text-left transition-colors ${isOpen ? 'bg-primary text-white' : 'bg-surface-alt text-primary'}`}>
                 <span>{title}</span>
-                <span style={{ transition:'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'none' }}>▾</span>
+                <span className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▾</span>
               </button>
-              {isOpen && <div style={{ padding:'1.25rem', color: c.text, fontSize:'0.9rem', lineHeight:1.7 }}>{body}</div>}
+              {isOpen && <div className="p-5 text-text text-sm leading-relaxed">{body}</div>}
             </div>
           )
         })}
@@ -126,14 +126,14 @@ export function GlossarySection({ pageContent, data }: SectionComponentProps) {
   const items = d.items || []
   if (!items.length) return null
   return (
-    <section style={{ padding: s.section, background: c.bg }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'2rem',textAlign:'center' }}>{d.title}</h2>}
-        <div style={{ display:'flex',flexDirection:'column',gap:'0.75rem' }}>
+    <section className="py-24 bg-surface-alt">
+      <div className="max-w-[800px] mx-auto px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-8 text-center">{d.title}</h2>}
+        <div className="flex flex-col gap-3">
           {items.map((item: any, i: number) => (
-            <div key={i} style={{ padding:s.cardSm,background:c.white,borderRadius:r.md,border:`1px solid ${c.border}` }}>
-              <h4 style={{ fontWeight:700,color:c.primary,marginBottom:'0.25rem',fontSize:'1rem' }}>{item.term || item.q || item.title}</h4>
-              <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.6 }}>{item.definition || item.a || item.description || item.body}</p>
+            <div key={i} className="p-4 bg-white rounded-lg border border-border">
+              <h4 className="font-bold text-primary mb-1 text-base">{item.term || item.q || item.title}</h4>
+              <p className="text-text-muted text-sm leading-relaxed">{item.definition || item.a || item.description || item.body}</p>
             </div>
           ))}
         </div>
@@ -146,13 +146,16 @@ export function NewsletterSection({ pageContent, data }: SectionComponentProps) 
   const d = data || pageContent || {}
   if (!d.title) return null
   return (
-    <section style={{ padding: '3rem 1rem', background: c.primary, color: c.white }}>
-      <div style={{ maxWidth: sz.contentForm, margin: '0 auto', textAlign: 'center' }}>
-        <h3 style={{ fontSize:'1.2rem',fontWeight:700,marginBottom:'0.5rem' }}>{d.title}</h3>
-        {d.description && <p style={{ fontSize:'0.9rem',opacity:0.8,marginBottom:'1.5rem' }}>{d.description}</p>}
-        <div style={{ display:'flex',gap:'0.5rem',flexWrap:'wrap',justifyContent:'center' }}>
-          <input type="email" placeholder={d.placeholder || "tu@email.com"} style={{ padding:s.input,borderRadius:r.full,border:'none',flex:1,minWidth:'200px',fontSize:'0.9rem' }} />
-          <button style={{ padding:'0.75rem 1.5rem',background:c.accent,color:c.primary,borderRadius:r.full,border:'none',fontWeight:700,cursor:'pointer',fontSize:'0.9rem' }}>{d.buttonText || "Suscribirme"}</button>
+    <section className="py-12 px-4 bg-primary text-white">
+      <div className="max-w-[600px] mx-auto text-center">
+        <h3 className="text-lg font-bold mb-2">{d.title}</h3>
+        {d.description && <p className="text-sm text-white/80 mb-6">{d.description}</p>}
+        <div className="flex gap-2 flex-wrap justify-center">
+          <input type="email" placeholder={d.placeholder || "tu@email.com"}
+            className="px-4 py-3 rounded-full border-none flex-1 min-w-[200px] text-sm" />
+          <button className="px-6 py-3 bg-accent text-primary rounded-full border-none font-bold cursor-pointer text-sm hover:opacity-90">
+            {d.buttonText || "Suscribirme"}
+          </button>
         </div>
       </div>
     </section>
@@ -164,11 +167,11 @@ export function StorySection({ pageContent, data }: SectionComponentProps) {
   const paragraphs = d.paragraphs || []
   if (!d.title && !paragraphs.length) return null
   return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: sz.contentNarrow, margin: '0 auto' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'1.5rem',textAlign:'center' }}>{d.title}</h2>}
+    <section className="py-24">
+      <div className="max-w-[700px] mx-auto px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-6 text-center">{d.title}</h2>}
         {paragraphs.map((p: string, i: number) => (
-          <p key={i} style={{ color: c.text, lineHeight:1.8, fontSize:'0.95rem', marginBottom:'1rem' }}>{p}</p>
+          <p key={i} className="text-text leading-relaxed text-sm mb-4">{p}</p>
         ))}
       </div>
     </section>
@@ -180,22 +183,23 @@ export function PillarsSection({ pageContent, data, images }: SectionComponentPr
   const pillars = d.pillars || d.items || []
   if (!pillars.length) return null
   return (
-    <section style={{ padding: s.sectionDark, background: c.primary, color: c.white }}>
-      <div style={{ maxWidth: sz.contentWide, margin: '0 auto', textAlign: 'center' }}>
-        {d.eyebrow && <p style={{ fontSize: '0.85rem', color: c.accent, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>{d.eyebrow}</p>}
-        {d.title && <h2 style={{ fontSize: 'clamp(1.4rem,2.5vw,2rem)', fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, marginBottom: '0.75rem' }}>{d.title}</h2>}
-        <div style={{ width: '60px', height: '3px', background: c.accent, margin: '0 auto 2rem' }} />
-        {d.honestNote && <p style={{ fontSize: '0.9rem', opacity: 0.8, fontStyle: 'italic', maxWidth: '600px', margin: '0 auto 2rem' }}>{d.honestNote}</p>}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+    <section className="py-24 bg-primary text-white">
+      <div className="max-w-6xl mx-auto text-center px-4">
+        {d.eyebrow && <p className="text-xs text-accent uppercase tracking-[2px] mb-2">{d.eyebrow}</p>}
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-playfair font-bold mb-3">{d.title}</h2>}
+        <div className="w-[60px] h-[3px] bg-accent mx-auto mb-8" />
+        {d.honestNote && <p className="text-sm text-white/80 italic max-w-[600px] mx-auto mb-8">{d.honestNote}</p>}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
           {pillars.map((p: any, i: number) => {
             const img = resolveImage(images, p.imageUrl || p.image)
             return (
-              <div key={i} style={{ padding: s.card, background: 'rgba(255,255,255,0.06)', borderRadius: r.md, textAlign: 'left', border: '1px solid rgba(201,169,110,0.12)', boxShadow: '0 8px 32px rgba(0,0,0,0.15)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
-                {img && <img src={img} alt={p.title} loading="lazy" style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: r.sm, marginBottom: '0.75rem' }} />}
-                <h3 style={{ fontWeight: 700, color: c.accent, marginBottom: '0.5rem', fontSize: '1.1rem' }}>{p.title}</h3>
-                <p style={{ fontSize:'0.9rem',color:'rgba(255,255,255,0.8)',lineHeight:1.5 }}>{p.description}</p>
-                {p.bullets && <ul style={{ marginTop:'0.75rem',paddingLeft:'1rem',fontSize:'0.85rem',color:'rgba(255,255,255,0.65)' }}>
-                  {p.bullets.map((b: string, j: number) => <li key={j} style={{ marginBottom:'0.25rem' }}>{b}</li>)}
+              <div key={i} className="p-6 rounded-lg text-left backdrop-blur-[10px]"
+                style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(201,169,110,0.12)', boxShadow: '0 8px 32px rgba(0,0,0,0.15)' }}>
+                {img && <img src={img} alt={p.title} loading="lazy" className="w-full h-[180px] object-cover rounded-sm mb-3" />}
+                <h3 className="font-bold text-accent mb-2 text-lg">{p.title}</h3>
+                <p className="text-sm text-white/80 leading-relaxed">{p.description}</p>
+                {p.bullets && <ul className="mt-3 pl-4 text-xs text-white/65">
+                  {p.bullets.map((b: string, j: number) => <li key={j} className="mb-1">{b}</li>)}
                 </ul>}
               </div>
             )
@@ -212,10 +216,12 @@ export function PageHeroSection({ pageContent, data, images }: SectionComponentP
   if (!headline) return null
   const bgImage = d.backgroundImage ? resolveImage(images, d.backgroundImage) : ''
   return (
-    <section style={{ padding: s.sectionLg, background: bgImage ? `${c.gradientOverlay}, url(${bgImage})` : c.gradient, backgroundSize: 'cover', backgroundPosition: 'center', color: c.white, textAlign: 'center' }}>
-      <div style={{ maxWidth: sz.contentNarrow, margin: '0 auto' }}>
-        <h1 style={{ fontSize: 'clamp(1.8rem,3.5vw,2.5rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '0.75rem' }}>{headline}</h1>
-        {(d.subheadline || d.subtitle) && <p style={{ fontSize: '1rem', opacity: 0.85, lineHeight: 1.6 }}>{d.subheadline || d.subtitle}</p>}
+    <section className={`py-24 text-center text-white bg-cover bg-center`}
+      style={{ background: bgImage ? `linear-gradient(135deg, rgba(27,42,74,0.85), rgba(27,42,74,0.65)), url(${bgImage})` : 'linear-gradient(135deg, #1B2A4A 0%, #2C3E6B 100%)' }}
+    >
+      <div className="max-w-[700px] mx-auto px-4">
+        <h1 className="text-[clamp(1.8rem,3.5vw,2.5rem)] font-bold leading-tight mb-3">{headline}</h1>
+        {(d.subheadline || d.subtitle) && <p className="text-base text-white/85 leading-relaxed">{d.subheadline || d.subtitle}</p>}
       </div>
     </section>
   )
@@ -226,19 +232,19 @@ export function HighlightSection({ pageContent, data }: SectionComponentProps) {
   const items = d.items || d.pillars || []
   if (!items.length) return null
   return (
-    <section style={{ padding: '3rem 1rem', background: c.white }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-        {d.eyebrow && <p style={{ fontSize: '0.85rem', color: c.textMuted, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>{d.eyebrow}</p>}
-        {d.title && <h2 style={{ fontSize: 'clamp(1.4rem,2.5vw,2rem)', fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, color: c.primary, marginBottom: '2rem' }}>{d.title}</h2>}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 'clamp(1.5rem, 3vw, 3rem)', flexWrap: 'wrap' }}>
-        {items.map((s: any, i: number) => (
-          <div key={i} style={{ textAlign: 'center' }}>
-            {s.value && <div style={{ fontSize: '2rem', fontWeight: 800, color: c.primary }}>{s.value}</div>}
-            {s.label && <div style={{ fontSize: '0.9rem', color: c.textMuted, marginTop: '0.25rem' }}>{s.label}</div>}
-            {!s.value && s.title && <h4 style={{ fontSize:'1.1rem',fontWeight:700,color:c.primary,marginBottom:'0.25rem' }}>{s.title}</h4>}
-            {!s.value && s.description && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5,maxWidth:'300px' }}>{s.description}</p>}
-          </div>
-        ))}
+    <section className="py-12 px-4 bg-white">
+      <div className="max-w-[800px] mx-auto text-center">
+        {d.eyebrow && <p className="text-xs text-text-muted uppercase tracking-[2px] mb-2">{d.eyebrow}</p>}
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-playfair font-bold text-primary mb-8">{d.title}</h2>}
+        <div className="flex justify-center gap-[clamp(1.5rem,3vw,3rem)] flex-wrap">
+          {items.map((s: any, i: number) => (
+            <div key={i} className="text-center">
+              {s.value && <div className="text-3xl font-extrabold text-primary">{s.value}</div>}
+              {s.label && <div className="text-sm text-text-muted mt-1">{s.label}</div>}
+              {!s.value && s.title && <h4 className="text-lg font-bold text-primary mb-1">{s.title}</h4>}
+              {!s.value && s.description && <p className="text-text-muted text-sm leading-relaxed max-w-[300px]">{s.description}</p>}
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -251,19 +257,22 @@ export function ComparisonSection({ pageContent, data }: SectionComponentProps) 
   const columns = d.columns
   if (!items.length && !columns) return null
   return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: sz.contentWide, margin: '0 auto', textAlign: 'center' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'1.5rem' }}>{d.title}</h2>}
-        <div style={{ overflowX:'auto' }}>
-          <table style={{ width:'100%',borderCollapse:'collapse',fontSize:'0.9rem' }}>
-            <thead><tr style={{ background:c.primary,color:c.white }}>
-              {columns?.map((col: string, i: number) => <th key={i} style={{ padding:'0.75rem 1rem',textAlign:'left',fontWeight:700 }}>{col}</th>)}
-              {!columns && items[0] && Object.keys(items[0]).map((k, i) => <th key={i} style={{ padding:'0.75rem 1rem',textAlign:'left',fontWeight:700 }}>{k}</th>)}
-            </tr></thead>
+    <section className="py-24">
+      <div className="max-w-6xl mx-auto text-center px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-6">{d.title}</h2>}
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="bg-primary text-white">
+                {columns?.map((col: string, i: number) => <th key={i} className="p-3 text-left font-bold">{col}</th>)}
+                {!columns && items[0] && Object.keys(items[0]).map((k, i) => <th key={i} className="p-3 text-left font-bold">{k}</th>)}
+              </tr>
+            </thead>
             <tbody>
               {items.map((row: any, i: number) => (
-                <tr key={i} style={{ borderBottom:`1px solid ${c.border}`,background:i%2?c.bg:c.white }}>
-                  {columns ? columns.map((col: string, j: number) => <td key={j} style={{ padding:'0.75rem 1rem',color:c.text }}>{row[col]||row[j]||''}</td>) : Object.values(row).map((v: any, j: number) => <td key={j} style={{ padding:'0.75rem 1rem',color:c.text }}>{v}</td>)}
+                <tr key={i} className={`border-b border-border ${i % 2 ? 'bg-surface-alt' : 'bg-white'}`}>
+                  {columns ? columns.map((col: string, j: number) => <td key={j} className="p-3 text-text">{row[col] || row[j] || ''}</td>)
+                    : Object.values(row).map((v: any, j: number) => <td key={j} className="p-3 text-text">{v}</td>)}
                 </tr>
               ))}
             </tbody>
@@ -279,16 +288,17 @@ export function GuidesSection({ pageContent, data }: SectionComponentProps) {
   const items = d.items || []
   if (!d.title && !items.length) return null
   return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: sz.contentWidth, margin: '0 auto', textAlign: 'center' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{d.title}</h2>}
-        {d.subtitle && <p style={{ color:c.textMuted,marginBottom:'2rem' }}>{d.subtitle}</p>}
-        <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:'1.5rem' }}>
+    <section className="py-24">
+      <div className="max-w-[800px] mx-auto text-center px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-2">{d.title}</h2>}
+        {d.subtitle && <p className="text-text-muted mb-8">{d.subtitle}</p>}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
           {items.map((item: any, i: number) => (
-            <div key={i} style={{ padding:s.card,background:c.bg,borderRadius:r.md,border:`1px solid ${c.border}` }}>
-              <h4 style={{ fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{item.title}</h4>
-              {item.description && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5,marginBottom:'1rem' }}>{item.description}</p>}
-              {item.fileUrl ? <a href={item.fileUrl} style={{ display:'inline-block',padding:s.btnSm,background:c.primary,color:c.white,borderRadius:r.full,fontSize:'0.85rem',fontWeight:700,textDecoration:'none' }}>↓ {item.ctaText || "Descargar"}</a> : <span style={{ fontSize:'0.8rem',color:c.textLight,fontStyle:'italic' }}>Próximamente</span>}
+            <div key={i} className="p-6 bg-surface-alt rounded-lg border border-border">
+              <h4 className="font-bold text-primary mb-2">{item.title}</h4>
+              {item.description && <p className="text-text-muted text-sm leading-relaxed mb-4">{item.description}</p>}
+              {item.fileUrl ? <a href={item.fileUrl} className="inline-block px-5 py-2 bg-primary text-white rounded-full text-xs font-bold no-underline">↓ {item.ctaText || "Descargar"}</a>
+                : <span className="text-xs text-text-muted italic">Próximamente</span>}
             </div>
           ))}
         </div>
@@ -301,15 +311,17 @@ export function BookingEmbedSection({ pageContent, data }: SectionComponentProps
   const d = data || pageContent || {}
   if (!d.title) return null
   return (
-    <section style={{ padding: s.section, background: c.bg }}>
-      <div style={{ maxWidth: sz.contentWidth, margin: '0 auto', textAlign: 'center' }}>
-        <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'0.75rem' }}>{d.title}</h2>
-        {d.subtitle && <p style={{ color:c.textMuted,marginBottom:'2rem' }}>{d.subtitle}</p>}
-        {d.features?.length && <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:'1rem',marginBottom:'2rem' }}>
-          {d.features.map((f: string, i: number) => <div key={i} style={{ padding:'1rem',background:c.white,borderRadius:r.md,boxShadow:theme.shadows.sm }}><p style={{ color:c.primary,fontWeight:600,fontSize:'0.9rem' }}>{f}</p></div>)}
+    <section className="py-24 bg-surface-alt">
+      <div className="max-w-[800px] mx-auto text-center px-4">
+        <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-3">{d.title}</h2>
+        {d.subtitle && <p className="text-text-muted mb-8">{d.subtitle}</p>}
+        {d.features?.length && <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 mb-8">
+          {d.features.map((f: string, i: number) => <div key={i} className="p-4 bg-white rounded-lg shadow-sm"><p className="text-primary font-semibold text-sm">{f}</p></div>)}
         </div>}
-        <a href={d.ctaHref || 'https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta'} style={{ display:'inline-block',padding:'1rem 2.5rem',background:c.whatsapp,color:c.white,borderRadius:r.full,fontWeight:700,fontSize:'1rem',textDecoration:'none' }}>{d.ctaText || 'Agendar consulta gratuita'}</a>
-        {d.calendarNote && <p style={{ marginTop:'0.75rem',fontSize:'0.8rem',color:c.textLight,fontStyle:'italic' }}>{d.calendarNote}</p>}
+        <a href={d.ctaHref || 'https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta'}
+          className="inline-block px-10 py-4 rounded-full font-bold text-base no-underline hover:opacity-90"
+          style={{ background: '#25D366', color: 'white' }}>{d.ctaText || 'Agendar consulta gratuita'}</a>
+        {d.calendarNote && <p className="mt-3 text-xs text-text-muted italic">{d.calendarNote}</p>}
       </div>
     </section>
   )
@@ -319,15 +331,19 @@ export function ContactDetailsSection({ pageContent, data }: SectionComponentPro
   const d = data || pageContent || {}
   if (!d.whatsapp && !d.email) return null
   return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: sz.contentForm, margin: '0 auto', textAlign: 'center' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.3rem,2.5vw,1.8rem)',fontWeight:700,color:c.primary,marginBottom:'1.5rem' }}>{d.title}</h2>}
-        <div style={{ display:'flex',flexDirection:'column',gap:'1rem' }}>
-          {d.whatsapp && <a href={`https://wa.me/${d.whatsapp.replace(/[^0-9]/g,'')}`} target="_blank" style={{ display:'flex',alignItems:'center',justifyContent:'center',gap:'0.75rem',padding:'1rem',background:c.whatsapp,color:c.white,borderRadius:r.md,textDecoration:'none',fontWeight:600 }}><span style={{ width:'28px',height:'28px',display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(255,255,255,0.2)',borderRadius:'50%',fontSize:'0.85rem' }}>WA</span> {d.whatsapp}</a>}
-          {d.email && <a href={`mailto:${d.email}`} style={{ display:'flex',alignItems:'center',justifyContent:'center',gap:'0.75rem',padding:'1rem',background:c.primary,color:c.white,borderRadius:r.md,textDecoration:'none',fontWeight:600 }}><span style={{ width:'28px',height:'28px',display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(255,255,255,0.15)',borderRadius:'50%',fontSize:'0.85rem' }}>@</span> {d.email}</a>}
-          {d.address && <p style={{ color:c.textMuted,fontSize:'0.9rem',display:'flex',alignItems:'center',justifyContent:'center',gap:'0.5rem' }}><span style={{ color:c.accent,fontWeight:700 }}>⌂</span> {d.address}{d.neighborhood ? ', ' + d.neighborhood : ''}</p>}
-          {d.phone && !d.whatsapp && <p style={{ color:c.textMuted,fontSize:'0.9rem' }}><span style={{ color:c.accent }}>✆</span> {d.phone}</p>}
-          {d.hours && <p style={{ color:c.textMuted,fontSize:'0.85rem' }}><span style={{ color:c.accent }}>◷</span> {typeof d.hours === 'object' ? Object.values(d.hours).join(' · ') : d.hours}</p>}
+    <section className="py-24">
+      <div className="max-w-[600px] mx-auto text-center px-4">
+        {d.title && <h2 className="text-[clamp(1.3rem,2.5vw,1.8rem)] font-bold text-primary mb-6">{d.title}</h2>}
+        <div className="flex flex-col gap-4">
+          {d.whatsapp && <a href={`https://wa.me/${d.whatsapp.replace(/[^0-9]/g,'')}`} target="_blank" className="flex items-center justify-center gap-3 p-4 rounded-lg no-underline font-semibold text-white" style={{ background: '#25D366' }}>
+            <span className="w-7 h-7 flex items-center justify-center bg-white/20 rounded-full text-xs">WA</span> {d.whatsapp}
+          </a>}
+          {d.email && <a href={`mailto:${d.email}`} className="flex items-center justify-center gap-3 p-4 rounded-lg bg-primary text-white no-underline font-semibold">
+            <span className="w-7 h-7 flex items-center justify-center bg-white/15 rounded-full text-xs">@</span> {d.email}
+          </a>}
+          {d.address && <p className="text-text-muted text-sm flex items-center justify-center gap-2"><span className="text-accent font-bold">⌂</span> {d.address}{d.neighborhood ? ', ' + d.neighborhood : ''}</p>}
+          {d.phone && !d.whatsapp && <p className="text-text-muted text-sm"><span className="text-accent">✆</span> {d.phone}</p>}
+          {d.hours && <p className="text-text-muted text-xs"><span className="text-accent">◷</span> {typeof d.hours === 'object' ? Object.values(d.hours).join(' · ') : d.hours}</p>}
         </div>
       </div>
     </section>
@@ -339,17 +355,17 @@ export function GallerySection({ pageContent, data, images }: SectionComponentPr
   const photos = d.images || d.items || []
   if (!d.title && !photos.length) return null
   return (
-    <section style={{ padding: s.section, background: c.bg }}>
-      <div style={{ maxWidth: sz.contentWide, margin: '0 auto', textAlign: 'center' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'1rem' }}>{d.title}</h2>}
-        {d.subtitle && <p style={{ color:c.textMuted,marginBottom:'2rem' }}>{d.subtitle}</p>}
-        <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:'1rem' }}>
+    <section className="py-24 bg-surface-alt">
+      <div className="max-w-6xl mx-auto text-center px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-4">{d.title}</h2>}
+        {d.subtitle && <p className="text-text-muted mb-8">{d.subtitle}</p>}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4">
           {photos.map((photo: any, i: number) => {
             const src = typeof photo === 'string' ? photo : resolveImage?.(images, photo.src || photo.imageUrl || '') || photo.src || photo.imageUrl || ''
             return (
-              <div key={i} style={{ borderRadius:r.md,overflow:'hidden',boxShadow:theme.shadows.image }}>
-                {src && <img src={src} alt={photo.alt || photo.caption || ''} style={{ width:'100%',height:'220px',objectFit:'cover',display:'block' }} />}
-                {photo.caption && <p style={{ padding:'0.75rem',background:c.white,color:c.textMuted,fontSize:'0.85rem',margin:0 }}>{photo.caption}</p>}
+              <div key={i} className="rounded-lg overflow-hidden shadow-md">
+                {src && <img src={src} alt={photo.alt || photo.caption || ''} className="w-full h-[220px] object-cover block" />}
+                {photo.caption && <p className="p-3 bg-white text-text-muted text-xs m-0">{photo.caption}</p>}
               </div>
             )
           })}
@@ -359,8 +375,6 @@ export function GallerySection({ pageContent, data, images }: SectionComponentPr
   )
 }
 
-
-// ── FAQ with Search ──
 export function FaqSearchSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const allItems = d.items || []
@@ -372,67 +386,67 @@ export function FaqSearchSection({ pageContent, data }: SectionComponentProps) {
     return q.includes(search.toLowerCase()) || a.includes(search.toLowerCase())
   }) : allItems
   return (
-    <section style={{ padding: s.section, background: c.bg }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'1rem',textAlign:'center' }}>{d.title}</h2>}
-        <div style={{ marginBottom:'1.5rem', position:'relative' }}>
-          <input type="text" placeholder={d.searchPlaceholder || 'Buscar preguntas...'} value={search} onChange={e => setSearch(e.target.value)} style={{ width:'100%',padding:'0.85rem 1rem 0.85rem 2.5rem',border:`1px solid ${c.border}`,borderRadius:r.full,fontSize:'0.95rem',outline:'none',background:c.white }} />
-          <span style={{ position:'absolute',left:'1rem',top:'50%',transform:'translateY(-50%)',color:c.textMuted }}>🔍</span>
+    <section className="py-24 bg-surface-alt">
+      <div className="max-w-[800px] mx-auto px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-4 text-center">{d.title}</h2>}
+        <div className="mb-6 relative">
+          <input type="text" placeholder={d.searchPlaceholder || 'Buscar preguntas...'} value={search} onChange={e => setSearch(e.target.value)}
+            className="w-full py-3 pl-10 pr-4 border border-border rounded-full text-sm outline-none bg-white" />
+          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted">🔍</span>
         </div>
-        <p style={{ fontSize:'0.85rem',color:c.textMuted,marginBottom:'1rem',textAlign:'center' }}>{items.length} de {allItems.length} preguntas</p>
+        <p className="text-xs text-text-muted mb-4 text-center">{items.length} de {allItems.length} preguntas</p>
         {items.map((item: any, i: number) => {
           const isOpen = open === i
           const question = item.q || item.pregunta || item.question || item.title
           const answer = item.a || item.respuesta || item.answer || item.description || item.body
           if (!question || !answer) return null
           return (
-            <div key={i} style={{ marginBottom: '0.5rem', border: `1px solid ${c.border}`, borderRadius: r.md, overflow: 'hidden', background: c.white }}>
-              <button onClick={() => setOpen(isOpen ? null : i)} style={{ width:'100%', padding:'1rem 1.25rem', border:'none', background:'none', cursor:'pointer', display:'flex', justifyContent:'space-between', alignItems:'center', fontWeight:700, color:c.primary, fontSize:'0.95rem', textAlign:'left' }}>
+            <div key={i} className="mb-2 border border-border rounded-lg overflow-hidden bg-white">
+              <button onClick={() => setOpen(isOpen ? null : i)}
+                className="w-full px-5 py-4 border-none bg-none cursor-pointer flex justify-between items-center font-bold text-primary text-sm text-left">
                 <span>{question}</span>
-                <span style={{ color: c.accent, fontSize:'1.2rem', transition:'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'none' }}>▼</span>
+                <span className={`text-accent text-lg transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
               </button>
-              {isOpen && <div style={{ padding:'0 1.25rem 1.25rem', color: c.text, fontSize:'0.9rem', lineHeight:1.7, borderTop:`1px solid ${c.border}` }}>{answer}</div>}
+              {isOpen && <div className="px-5 pb-5 text-text text-sm leading-relaxed border-t border-border">{answer}</div>}
             </div>
           )
         })}
-        {items.length === 0 && <p style={{ textAlign:'center',color:c.textMuted,fontSize:'0.95rem' }}>No se encontraron preguntas. <button onClick={() => setSearch('')} style={{ background:'none',border:'none',color:c.accent,cursor:'pointer',fontWeight:700,textDecoration:'underline' }}>Limpiar búsqueda</button></p>}
+        {items.length === 0 && <p className="text-center text-text-muted text-sm">No se encontraron preguntas. <button onClick={() => setSearch('')} className="bg-none border-none text-accent cursor-pointer font-bold underline">Limpiar búsqueda</button></p>}
       </div>
     </section>
   )
 }
 
-
-// ── Service Detail Section ──
 export function ServiceDetailSection({ pageContent, data, images }: SectionComponentProps) {
   const d = data || pageContent || {}
   const groups = d.groups || []
   if (!groups.length) return null
   return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:c.textMuted,textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{d.eyebrow}</p>}
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'2rem' }}>{d.title}</h2>}
+    <section className="py-24">
+      <div className="max-w-[1000px] mx-auto text-center px-4">
+        {d.eyebrow && <p className="text-xs text-text-muted uppercase tracking-[2px] mb-2">{d.eyebrow}</p>}
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-8">{d.title}</h2>}
         {groups.map((group: any, i: number) => (
-          <div key={i} style={{ marginBottom: '3rem' }}>
-            {i > 0 && <div style={{ width: '60px', height: '2px', background: c.accent, margin: '0 auto 2.5rem' }} />}
-            <h3 style={{ fontSize:'1.2rem',fontWeight:700,color:c.primary,marginBottom:'0.25rem' }}>{group.title}</h3>
-            {group.subtitle && <p style={{ color:c.textMuted,fontSize:'0.9rem',marginBottom:'1rem' }}>{group.subtitle}</p>}
-            <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:'1rem',textAlign:'left' }}>
+          <div key={i} className="mb-12">
+            {i > 0 && <div className="w-[60px] h-[2px] bg-accent mx-auto mb-10" />}
+            <h3 className="text-lg font-bold text-primary mb-1">{group.title}</h3>
+            {group.subtitle && <p className="text-text-muted text-sm mb-4">{group.subtitle}</p>}
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4 text-left">
               {group.items.map((item: any, j: number) => {
                 const img = resolveImage(images, item.image)
                 return (
-                  <div key={j} style={{ padding:s.card,background:c.bg,borderRadius:r.md,borderLeft:`3px solid ${c.accent}`,boxShadow:'0 2px 8px rgba(0,0,0,0.06)' }}>
-                    {img && <img src={img} alt={item.title} loading="lazy" style={{ width:'100%',height:'140px',objectFit:'cover',borderRadius:r.sm,marginBottom:'0.75rem' }} />}
-                    <h4 style={{ fontWeight:700,color:c.primary,marginBottom:'0.3rem' }}>{item.title}</h4>
-                    <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5,marginBottom:'0.5rem' }}>{item.description}</p>
-                    {item.benefits && <ul style={{ listStyle:'none',padding:0,margin:'0.5rem 0 0' }}>
+                  <div key={j} className="p-6 bg-surface-alt rounded-lg border-l-[3px] border-accent" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                    {img && <img src={img} alt={item.title} loading="lazy" className="w-full h-[140px] object-cover rounded-sm mb-3" />}
+                    <h4 className="font-bold text-primary mb-1">{item.title}</h4>
+                    <p className="text-text-muted text-sm leading-relaxed mb-2">{item.description}</p>
+                    {item.benefits && <ul className="list-none p-0 mt-2">
                       {item.benefits.map((b: string, k: number) => (
-                        <li key={k} style={{ fontSize:'0.85rem',color:c.text,padding:'0.2rem 0',display:'flex',gap:'0.5rem',alignItems:'baseline' }}>
-                          <span style={{ color:c.accent,fontWeight:700 }}>✓</span> {b}
+                        <li key={k} className="text-xs text-text py-0.5 flex gap-2 items-baseline">
+                          <span className="text-accent font-bold">✓</span> {b}
                         </li>
                       ))}
                     </ul>}
-                    {item.ctaText && <a href={item.ctaHref} style={{ display:'inline-block',marginTop:'0.75rem',color:c.accent,fontWeight:700,textDecoration:'none',fontSize:'0.85rem',borderBottom:`2px solid ${c.accent}` }}>{item.ctaText}</a>}
+                    {item.ctaText && <a href={item.ctaHref} className="inline-block mt-3 text-accent font-bold text-xs no-underline border-b-2 border-accent">{item.ctaText}</a>}
                   </div>
                 )
               })}
@@ -444,23 +458,21 @@ export function ServiceDetailSection({ pageContent, data, images }: SectionCompo
   )
 }
 
-
-// ── Press Releases Section ──
 export function PressReleasesListSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const items = d.items || d.pressReleases || []
   if (!items.length) return null
   return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'0.5rem',textAlign:'center' }}>{d.title}</h2>}
-        {d.subtitle && <p style={{ color:c.textMuted,textAlign:'center',marginBottom:'2rem' }}>{d.subtitle}</p>}
+    <section className="py-24">
+      <div className="max-w-[800px] mx-auto px-4">
+        {d.title && <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-2 text-center">{d.title}</h2>}
+        {d.subtitle && <p className="text-text-muted text-center mb-8">{d.subtitle}</p>}
         {items.map((item: any, i: number) => (
-          <article key={i} style={{ padding:'1.5rem',marginBottom:'1rem',background:c.white,borderRadius:r.md,border:`1px solid ${c.border}`,boxShadow:'0 2px 8px rgba(0,0,0,0.04)' }}>
-            {item.date && <span style={{ fontSize:'0.8rem',color:c.accent,fontWeight:600,display:'block',marginBottom:'0.25rem' }}>{item.date}</span>}
-            <h3 style={{ fontSize:'1.1rem',fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{item.title}</h3>
-            {item.summary && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.6,marginBottom:'0.75rem' }}>{item.summary}</p>}
-            {item.link && <a href={item.link} style={{ color:c.accent,fontWeight:700,fontSize:'0.85rem',textDecoration:'none',borderBottom:`2px solid ${c.accent}` }}>{item.ctaText || 'Leer más →'}</a>}
+          <article key={i} className="p-6 mb-4 bg-white rounded-lg border border-border" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
+            {item.date && <span className="text-xs text-accent font-semibold block mb-1">{item.date}</span>}
+            <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
+            {item.summary && <p className="text-text-muted text-sm leading-relaxed mb-3">{item.summary}</p>}
+            {item.link && <a href={item.link} className="text-accent font-bold text-xs no-underline border-b-2 border-accent">{item.ctaText || 'Leer más →'}</a>}
           </article>
         ))}
       </div>
@@ -468,130 +480,53 @@ export function PressReleasesListSection({ pageContent, data }: SectionComponent
   )
 }
 
-
-// ── Intake Wizard Section ──
 export function IntakeWizardSection({ pageContent, data }: SectionComponentProps) {
   const d = data || pageContent || {}
   const steps = d.steps || []
-  const tierLabels = d.tierLabels || {}
   const [currentStep, setCurrentStep] = React.useState(0)
   const [answers, setAnswers] = React.useState<Record<string, string>>({})
   const [showResult, setShowResult] = React.useState(false)
-
   if (!steps.length) return null
-
   const handleSelect = (value: string) => {
     const newAnswers = { ...answers, [steps[currentStep].key]: value }
     setAnswers(newAnswers)
-    if (currentStep < steps.length - 1) {
-      setCurrentStep(currentStep + 1)
-    } else {
-      setShowResult(true)
-    }
+    if (currentStep < steps.length - 1) setCurrentStep(currentStep + 1)
+    else setShowResult(true)
   }
-
-  const handleRestart = () => {
-    setCurrentStep(0)
-    setAnswers({})
-    setShowResult(false)
-  }
-
+  const handleRestart = () => { setCurrentStep(0); setAnswers({}); setShowResult(false) }
   if (showResult) {
     const recommended = d.recommendedTier || 'business'
-    const tier = tierLabels[recommended] || tierLabels[Object.keys(tierLabels)[0]] || {}
     return (
-      <section style={{ padding: s.section, background: c.bg }}>
-        <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ fontSize:'2.5rem',marginBottom:'1rem' }}>✓</div>
-          <h2 style={{ fontSize:'clamp(1.3rem,2.5vw,1.8rem)',fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{d.resultTitle || 'Programa recomendado'}</h2>
-          <div style={{ padding:s.card,background:c.white,borderRadius:r.lg,boxShadow:'0 4px 16px rgba(0,0,0,0.08)',marginBottom:'1.5rem' }}>
-            {tier.name && <h3 style={{ fontWeight:700,color:c.accent,fontSize:'1.2rem',marginBottom:'0.5rem' }}>{tier.name}</h3>}
-            {tier.pitch && <p style={{ color:c.textMuted,fontSize:'0.95rem',lineHeight:1.6 }}>{tier.pitch}</p>}
-          </div>
-          <button onClick={handleRestart} style={{ padding:'0.75rem 1.5rem',background:c.primary,color:c.white,borderRadius:r.full,border:'none',fontWeight:700,cursor:'pointer',fontSize:'0.9rem',marginRight:'0.75rem' }}>{d.restartText || 'Volver a empezar'}</button>
-          <a href={d.ctaHref || '/contacto'} style={{ display:'inline-block',padding:'0.75rem 1.5rem',background:c.accent,color:c.primary,borderRadius:r.full,fontWeight:700,textDecoration:'none',fontSize:'0.9rem' }}>{d.ctaText || 'Agendar consulta gratuita'}</a>
+      <section className="py-24 bg-surface-alt">
+        <div className="max-w-[600px] mx-auto text-center px-4">
+          <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-4">{d.resultTitle || 'Tu recomendación'}</h2>
+          <p className="text-lg font-bold text-primary">{recommended}</p>
+          <p className="text-text-muted text-sm mt-4 mb-6">{d.resultDescription || 'Basado en tus respuestas'}</p>
+          {(d.ctaText || d.recommendedCta) && <a href={d.ctaHref || `/${d.locale || 'es'}/contacto`} className="inline-block px-8 py-3 bg-accent text-primary rounded-full font-bold text-base no-underline">{d.ctaText || d.recommendedCta}</a>}
+          <p><button onClick={handleRestart} className="mt-6 bg-none border-none text-accent cursor-pointer font-bold underline text-sm">{d.restartLabel || 'Reiniciar'}</button></p>
         </div>
       </section>
     )
   }
-
-  const step = steps[currentStep]
-  const progress = ((currentStep + 1) / steps.length) * 100
-
   return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.3rem,2.5vw,1.8rem)',fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{d.title}</h2>}
-        {d.subtitle && <p style={{ color:c.textMuted,marginBottom:'2rem' }}>{d.subtitle}</p>}
-        <div style={{ height:'6px',background:c.border,borderRadius:'3px',marginBottom:'2rem',overflow:'hidden' }}>
-          <div style={{ height:'100%',background:c.accent,borderRadius:'3px',transition:'width 0.3s',width:`${progress}%` }} />
+    <section className="py-24 bg-surface-alt">
+      <div className="max-w-[600px] mx-auto text-center px-4">
+        <div className="flex justify-center gap-2 mb-8">
+          {steps.map((_: any, i: number) => (
+            <div key={i} className={`w-3 h-3 rounded-full transition-colors ${i <= currentStep ? 'bg-accent' : 'bg-border'}`} />
+          ))}
         </div>
-        <p style={{ fontSize:'0.8rem',color:c.textLight,marginBottom:'1rem' }}>{d.stepLabel || 'Paso'} {currentStep + 1} {d.ofLabel || 'de'} {steps.length}</p>
-        {step.question && <h3 style={{ fontSize:'1.2rem',fontWeight:700,color:c.primary,marginBottom:'1.5rem' }}>{step.question}</h3>}
-        <div style={{ display:'flex',flexDirection:'column',gap:'0.75rem' }}>
-          {step.options?.map((opt: any, i: number) => (
-            <button key={i} onClick={() => handleSelect(opt.value)} style={{ padding:'1rem 1.5rem',background:c.white,border:`2px solid ${c.border}`,borderRadius:r.md,cursor:'pointer',fontSize:'1rem',fontWeight:600,color:c.primary,textAlign:'left',transition:'all 0.2s',display:'flex',alignItems:'center',gap:'0.75rem' }}>
-              <span style={{ width:'32px',height:'32px',display:'flex',alignItems:'center',justifyContent:'center',background:c.bg,borderRadius:'50%',fontSize:'0.85rem',color:c.accent,fontWeight:700 }}>{i + 1}</span>
-              {opt.label}
+        <p className="text-sm text-text-muted mb-6">{d.subtitle}</p>
+        <h3 className="text-xl font-bold text-primary mb-6">{steps[currentStep].question}</h3>
+        <div className="flex flex-col gap-3">
+          {(steps[currentStep].options || []).map((opt: string, i: number) => (
+            <button key={i} onClick={() => handleSelect(opt)}
+              className="w-full p-4 bg-white rounded-lg border border-border cursor-pointer font-semibold text-primary text-sm hover:border-accent transition-colors">
+              {opt}
             </button>
           ))}
         </div>
-        <button onClick={handleRestart} style={{ marginTop:'1.5rem',background:'none',border:'none',color:c.textMuted,fontSize:'0.85rem',cursor:'pointer',textDecoration:'underline' }}>{d.restartText || 'Comenzar de nuevo'}</button>
-      </div>
-    </section>
-  )
-}
-
-
-// ── Contact Form ──
-interface FormData {
-  nombre: string; email: string; telefono: string; pais: string; servicio: string; mensaje: string
-}
-export function ContactFormSection({ pageContent, data }: SectionComponentProps) {
-  const d = data || pageContent || {}
-  const [form, setForm] = React.useState<FormData>({ nombre:'', email:'', telefono:'', pais:'', servicio:'', mensaje:'' })
-  const [sent, setSent] = React.useState(false)
-  const handleChange = (field: keyof FormData) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm({...form, [field]: e.target.value})
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    try {
-      const res = await fetch('/api/contact', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(form) })
-      if (res.ok) setSent(true)
-    } catch {}
-  }
-  if (sent) return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: sz.contentForm, margin:'0 auto', textAlign:'center' }}>
-        <div style={{ fontSize:'3rem', marginBottom:'1rem' }}>\u2705</div>
-        <h2 style={{ fontSize:'1.5rem',fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{d.successTitle || '\u00a1Mensaje enviado!'}</h2>
-        <p style={{ color:c.textMuted }}>{d.successMessage || 'Te contactaremos en las pr\u00f3ximas 24 horas.'}</p>
-      </div>
-    </section>
-  )
-  return (
-    <section style={{ padding: s.section }}>
-      <div style={{ maxWidth: sz.contentForm, margin:'0 auto' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.3rem,2.5vw,1.8rem)',fontWeight:700,color:c.primary,textAlign:'center',marginBottom:'1.5rem' }}>{d.title}</h2>}
-        <form onSubmit={handleSubmit} style={{ display:'flex',flexDirection:'column',gap:'1rem' }}>
-          <div style={{ display:'grid',gridTemplateColumns:'1fr 1fr',gap:'1rem' }}>
-            <input type="text" placeholder={d.namePlaceholder || 'Nombre completo'} value={form.nombre} onChange={handleChange('nombre')} required style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem' }} />
-            <input type="email" placeholder={d.emailPlaceholder || 'Correo electr\u00f3nico'} value={form.email} onChange={handleChange('email')} required style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem' }} />
-          </div>
-          <div style={{ display:'grid',gridTemplateColumns:'1fr 1fr',gap:'1rem' }}>
-            <input type="tel" placeholder={d.phonePlaceholder || 'Tel\u00e9fono (WhatsApp)'} value={form.telefono} onChange={handleChange('telefono')} style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem' }} />
-            <select value={form.pais} onChange={handleChange('pais')} style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem', background:c.white }}>
-              <option value="">{d.countryPlaceholder || 'Pa\u00eds de origen'}</option>
-              <option>Pa\u00edses Bajos</option><option>B\u00e9lgica</option><option>Alemania</option><option>Espa\u00f1a</option><option>Francia</option><option>Reino Unido</option><option>Otro</option>
-            </select>
-          </div>
-          <select value={form.servicio} onChange={handleChange('servicio')} style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem', background:c.white }}>
-            <option value="">{d.servicePlaceholder || 'Servicio de inter\u00e9s'}</option>
-            <option>Residencia Permanente</option><option>Programa Business</option><option>Programa Inversor</option><option>Compra de Tierras</option><option>Apertura de Cuenta Bancaria</option><option>Asesor\u00eda General</option>
-          </select>
-          <textarea placeholder={d.messagePlaceholder || 'Tu mensaje...'} value={form.mensaje} onChange={handleChange('mensaje')} rows={4} style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem', resize:'vertical', fontFamily:'inherit' }} />
-          <button type="submit" style={{ padding:'1rem', background:c.primary, color:c.white, borderRadius:r.full, fontWeight:700, fontSize:'1rem', border:'none', cursor:'pointer' }}>{d.submitText || 'Enviar mensaje'}</button>
-          <p style={{ fontSize:'0.75rem', color:c.textLight, textAlign:'center' }}>{d.privacyNote || 'Tus datos est\u00e1n seguros. No compartimos informaci\u00f3n con terceros.'}</p>
-        </form>
+        <p className="mt-4 text-xs text-text-muted italic">{d.disclaimer || ''}</p>
       </div>
     </section>
   )

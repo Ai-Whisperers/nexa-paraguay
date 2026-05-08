@@ -34,7 +34,6 @@ const SECTIONS: Record<string, any> = {
   contact: dynamic(() => import('./sections-extra').then(m => ({ default: m.ContactDetailsSection })), { ssr: true }),
   gallery: dynamic(() => import('./sections-extra').then(m => ({ default: m.GallerySection })), { ssr: true }),
   faq: dynamic(() => import('./sections-extra').then(m => ({ default: m.FaqSearchSection })), { ssr: true }),
-  'contact-form': dynamic(() => import('./sections-extra').then(m => ({ default: m.ContactFormSection })), { ssr: true }),
   'services-detail': dynamic(() => import('./sections-extra').then(m => ({ default: m.ServiceDetailSection })), { ssr: true }),
   'press-releases': dynamic(() => import('./sections-extra').then(m => ({ default: m.PressReleasesListSection })), { ssr: true }),
   'intake-wizard': dynamic(() => import('./sections-extra').then(m => ({ default: m.IntakeWizardSection })), { ssr: true }),

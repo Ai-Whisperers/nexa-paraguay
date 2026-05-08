@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "screenshots": "node scripts/screenshot-all.mjs"
+    "screenshots": "node scripts/screenshot-all.mjs",
+    "test": "playwright test",
+    "test:ci": "playwright test --reporter=line",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@ai-whisperers/client-kit": "^0.1.0",

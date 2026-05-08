@@ -1,37 +1,31 @@
+'use client'
+
 import React from 'react'
 
-export function Footer({ footer }: { footer: any }) {
+export function Footer({ footer }: { footer?: any }) {
   if (!footer) return null
   const columns = footer.columns || []
   return (
-    <footer style={{ background: '#1B2A4A', color: '#fff', padding: '4rem 1rem 2rem' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
-          <div>
-            <img src="/images/brand/logo-dark.svg" alt="Nexa Paraguay" style={{ height: '32px', marginBottom: '1rem' }} />
-            {footer.whatsapp && <p style={{ fontSize: '0.85rem', opacity: 0.8, marginBottom: '0.25rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}><span style={{ opacity: 0.5 }}>WA</span> {footer.whatsapp}</p>}
-            {footer.email && <p style={{ fontSize: '0.85rem', opacity: 0.8, display: 'flex', alignItems: 'center', gap: '0.4rem' }}><span style={{ opacity: 0.5 }}>@</span> {footer.email}</p>}
-            {footer.socialLinks?.map((s: any, i: number) => (
-              <a key={i} href={s.url} target="_blank" style={{ display:'inline-block',marginRight:'0.75rem',marginTop:'0.5rem',color:'rgba(255,255,255,0.7)',textDecoration:'none',fontSize:'0.85rem' }}>{s.label}</a>
-            ))}
-          </div>
+    <footer className="bg-primary text-white pt-16 pb-6 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 mb-8">
           {columns.map((col: any, i: number) => (
             <div key={i}>
-              <h5 style={{ fontWeight: 600, marginBottom: '0.75rem', color: '#C9A96E', fontSize: '0.9rem' }}>{col.title}</h5>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+              <h4 className="text-accent font-bold text-sm mb-3 uppercase tracking-wider">{col.title}</h4>
+              <ul className="list-none p-0 m-0">
                 {col.links?.map((link: any, j: number) => (
-                  <li key={j} style={{ marginBottom: '0.5rem' }}>
-                    <a href={link.href} style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'none', fontSize: '0.85rem' }}>{link.label}</a>
+                  <li key={j} className="mb-2">
+                    <a href={link.href} className="text-white/70 no-underline text-xs hover:text-white transition-colors">{link.label}</a>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
         </div>
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem', textAlign: 'center', fontSize: '0.85rem', opacity: 0.6 }}>
+        <div className="border-t border-white/10 pt-6 text-center text-xs text-white/60">
           {footer.copyright?.replace('{year}', '2026')}
-          <span style={{ margin: '0 0.5rem' }}>·</span>
-          <a href="?gateway=true" style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'underline', fontSize: '0.8rem' }}>Reiniciar</a>
+          <span className="mx-2">·</span>
+          <a href="?gateway=true" className="text-white/70 underline text-xs">Reiniciar</a>
         </div>
       </div>
     </footer>
