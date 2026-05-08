@@ -21,10 +21,10 @@ export function FaqSection({ pageContent, data }: SectionComponentProps) {
           const answer = item.a || item.respuesta || item.answer || item.description || item.body
           if (!question || !answer) return null
           return (
-            <div key={i} style={{ marginBottom: '0.75rem', border: `1px solid ${c.border}`, borderRadius: r.md, overflow: 'hidden', background: c.white }}>
-              <button onClick={() => setOpen(isOpen ? null : i)} style={{ width:'100%', padding:'1rem 1.25rem', border:'none', background:'none', cursor:'pointer', display:'flex', justifyContent:'space-between', alignItems:'center', fontWeight:700, color:c.primary, fontSize:'0.95rem', textAlign:'left' }}>
+            <div key={i} style={{ marginBottom: '0.75rem', border: `1px solid ${isOpen ? c.accent : c.border}`, borderRadius: r.md, overflow: 'hidden', background: c.white, transition: 'border-color 0.2s' }}>
+              <button onClick={() => setOpen(isOpen ? null : i)} style={{ width:'100%', padding:'1rem 1.25rem', border:'none', background: isOpen ? '#faf8f5' : 'none', cursor:'pointer', display:'flex', justifyContent:'space-between', alignItems:'center', fontWeight:700, color:c.primary, fontSize:'0.95rem', textAlign:'left', transition: 'background 0.2s' }}>
                 <span>{question}</span>
-                <span style={{ color: c.accent, fontSize:'1.2rem', transition:'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'none' }}>▾</span>
+                <span style={{ color: c.accent, fontSize:'1.2rem', transition:'transform 0.3s', transform: isOpen ? 'rotate(180deg)' : 'none' }}>▾</span>
               </button>
               {isOpen && <div style={{ padding:'0 1.25rem 1.25rem', color: c.text, fontSize:'0.9rem', lineHeight:1.7, borderTop:`1px solid ${c.border}` }}>{answer}</div>}
             </div>
@@ -178,16 +178,19 @@ export function PillarsSection({ pageContent, data, images }: SectionComponentPr
   const pillars = d.pillars || d.items || []
   if (!pillars.length) return null
   return (
-    <section style={{ padding: s.section, background: c.primary, color: c.white }}>
+    <section style={{ padding: s.sectionDark, background: c.primary, color: c.white }}>
       <div style={{ maxWidth: sz.contentWide, margin: '0 auto', textAlign: 'center' }}>
-        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700, marginBottom:'2rem' }}>{d.title}</h2>}
-        <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(250px,1fr))',gap:'1.5rem' }}>
+        {d.eyebrow && <p style={{ fontSize: '0.85rem', color: c.accent, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize: 'clamp(1.4rem,2.5vw,2rem)', fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, marginBottom: '0.75rem' }}>{d.title}</h2>}
+        <div style={{ width: '60px', height: '3px', background: c.accent, margin: '0 auto 2rem' }} />
+        {d.honestNote && <p style={{ fontSize: '0.9rem', opacity: 0.8, fontStyle: 'italic', maxWidth: '600px', margin: '0 auto 2rem' }}>{d.honestNote}</p>}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
           {pillars.map((p: any, i: number) => {
             const img = resolveImage(images, p.imageUrl || p.image)
             return (
-              <div key={i} style={{ padding:s.card,background:c.overlay,borderRadius:r.md,textAlign:'left' }}>
-                {img && <img src={img} alt={p.title} style={{ width:'100%',height:'100px',objectFit:'cover',borderRadius:r.sm,marginBottom:'0.75rem' }} />}
-                <h4 style={{ fontWeight:700,color:c.accent,marginBottom:'0.5rem' }}>{p.title}</h4>
+              <div key={i} style={{ padding: s.card, background: 'rgba(255,255,255,0.06)', borderRadius: r.md, textAlign: 'left', border: '1px solid rgba(201,169,110,0.12)', boxShadow: '0 8px 32px rgba(0,0,0,0.15)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+                {img && <img src={img} alt={p.title} loading="lazy" style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: r.sm, marginBottom: '0.75rem' }} />}
+                <h3 style={{ fontWeight: 700, color: c.accent, marginBottom: '0.5rem', fontSize: '1.1rem' }}>{p.title}</h3>
                 <p style={{ fontSize:'0.9rem',color:'rgba(255,255,255,0.8)',lineHeight:1.5 }}>{p.description}</p>
                 {p.bullets && <ul style={{ marginTop:'0.75rem',paddingLeft:'1rem',fontSize:'0.85rem',color:'rgba(255,255,255,0.65)' }}>
                   {p.bullets.map((b: string, j: number) => <li key={j} style={{ marginBottom:'0.25rem' }}>{b}</li>)}
@@ -201,12 +204,13 @@ export function PillarsSection({ pageContent, data, images }: SectionComponentPr
   )
 }
 
-export function PageHeroSection({ pageContent, data }: SectionComponentProps) {
+export function PageHeroSection({ pageContent, data, images }: SectionComponentProps) {
   const d = data || pageContent || {}
   const headline = d.headline || d.title
   if (!headline) return null
+  const bgImage = d.backgroundImage ? resolveImage(images, d.backgroundImage) : ''
   return (
-    <section style={{ padding: s.sectionLg, background: c.gradient, color: c.white, textAlign: 'center' }}>
+    <section style={{ padding: s.sectionLg, background: bgImage ? `${c.gradientOverlay}, url(${bgImage})` : c.gradient, backgroundSize: 'cover', backgroundPosition: 'center', color: c.white, textAlign: 'center' }}>
       <div style={{ maxWidth: sz.contentNarrow, margin: '0 auto' }}>
         <h1 style={{ fontSize: 'clamp(1.8rem,3.5vw,2.5rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '0.75rem' }}>{headline}</h1>
         {(d.subheadline || d.subtitle) && <p style={{ fontSize: '1rem', opacity: 0.85, lineHeight: 1.6 }}>{d.subheadline || d.subtitle}</p>}
@@ -220,8 +224,11 @@ export function HighlightSection({ pageContent, data }: SectionComponentProps) {
   const items = d.items || d.pillars || []
   if (!items.length) return null
   return (
-    <section style={{ padding: '3rem 1rem', background: c.bg }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap' }}>
+    <section style={{ padding: '3rem 1rem', background: c.white }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+        {d.eyebrow && <p style={{ fontSize: '0.85rem', color: c.textMuted, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize: 'clamp(1.4rem,2.5vw,2rem)', fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, color: c.primary, marginBottom: '2rem' }}>{d.title}</h2>}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 'clamp(1.5rem, 3vw, 3rem)', flexWrap: 'wrap' }}>
         {items.map((s: any, i: number) => (
           <div key={i} style={{ textAlign: 'center' }}>
             {s.value && <div style={{ fontSize: '2rem', fontWeight: 800, color: c.primary }}>{s.value}</div>}
@@ -230,6 +237,7 @@ export function HighlightSection({ pageContent, data }: SectionComponentProps) {
             {!s.value && s.description && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5,maxWidth:'300px' }}>{s.description}</p>}
           </div>
         ))}
+        </div>
       </div>
     </section>
   )
@@ -278,7 +286,7 @@ export function GuidesSection({ pageContent, data }: SectionComponentProps) {
             <div key={i} style={{ padding:s.card,background:c.bg,borderRadius:r.md,border:`1px solid ${c.border}` }}>
               <h4 style={{ fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{item.title}</h4>
               {item.description && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5,marginBottom:'1rem' }}>{item.description}</p>}
-              {item.fileUrl ? <a href={item.fileUrl} style={{ display:'inline-block',padding:s.btnSm,background:c.primary,color:c.white,borderRadius:r.full,fontSize:'0.85rem',fontWeight:700,textDecoration:'none' }}>📥 {item.ctaText || "Descargar"}</a> : <span style={{ fontSize:'0.8rem',color:c.textLight,fontStyle:'italic' }}>Próximamente</span>}
+              {item.fileUrl ? <a href={item.fileUrl} style={{ display:'inline-block',padding:s.btnSm,background:c.primary,color:c.white,borderRadius:r.full,fontSize:'0.85rem',fontWeight:700,textDecoration:'none' }}>↓ {item.ctaText || "Descargar"}</a> : <span style={{ fontSize:'0.8rem',color:c.textLight,fontStyle:'italic' }}>Próximamente</span>}
             </div>
           ))}
         </div>
@@ -313,11 +321,11 @@ export function ContactDetailsSection({ pageContent, data }: SectionComponentPro
       <div style={{ maxWidth: sz.contentForm, margin: '0 auto', textAlign: 'center' }}>
         {d.title && <h2 style={{ fontSize:'clamp(1.3rem,2.5vw,1.8rem)',fontWeight:700,color:c.primary,marginBottom:'1.5rem' }}>{d.title}</h2>}
         <div style={{ display:'flex',flexDirection:'column',gap:'1rem' }}>
-          {d.whatsapp && <a href={`https://wa.me/${d.whatsapp.replace(/[^0-9]/g,'')}`} target="_blank" style={{ display:'flex',alignItems:'center',justifyContent:'center',gap:'0.5rem',padding:'1rem',background:c.whatsapp,color:c.white,borderRadius:r.md,textDecoration:'none',fontWeight:600 }}><span>📱</span> {d.whatsapp}</a>}
-          {d.email && <a href={`mailto:${d.email}`} style={{ display:'flex',alignItems:'center',justifyContent:'center',gap:'0.5rem',padding:'1rem',background:c.primary,color:c.white,borderRadius:r.md,textDecoration:'none',fontWeight:600 }}><span>✉️</span> {d.email}</a>}
-          {d.address && <p style={{ color:c.textMuted,fontSize:'0.9rem' }}>📍 {d.address}{d.neighborhood ? ', ' + d.neighborhood : ''}</p>}
-          {d.phone && !d.whatsapp && <p style={{ color:c.textMuted,fontSize:'0.9rem' }}>📞 {d.phone}</p>}
-          {d.hours && <p style={{ color:c.textMuted,fontSize:'0.85rem' }}>🕐 {typeof d.hours === 'object' ? Object.values(d.hours).join(' · ') : d.hours}</p>}
+          {d.whatsapp && <a href={`https://wa.me/${d.whatsapp.replace(/[^0-9]/g,'')}`} target="_blank" style={{ display:'flex',alignItems:'center',justifyContent:'center',gap:'0.75rem',padding:'1rem',background:c.whatsapp,color:c.white,borderRadius:r.md,textDecoration:'none',fontWeight:600 }}><span style={{ width:'28px',height:'28px',display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(255,255,255,0.2)',borderRadius:'50%',fontSize:'0.85rem' }}>WA</span> {d.whatsapp}</a>}
+          {d.email && <a href={`mailto:${d.email}`} style={{ display:'flex',alignItems:'center',justifyContent:'center',gap:'0.75rem',padding:'1rem',background:c.primary,color:c.white,borderRadius:r.md,textDecoration:'none',fontWeight:600 }}><span style={{ width:'28px',height:'28px',display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(255,255,255,0.15)',borderRadius:'50%',fontSize:'0.85rem' }}>@</span> {d.email}</a>}
+          {d.address && <p style={{ color:c.textMuted,fontSize:'0.9rem',display:'flex',alignItems:'center',justifyContent:'center',gap:'0.5rem' }}><span style={{ color:c.accent,fontWeight:700 }}>⌂</span> {d.address}{d.neighborhood ? ', ' + d.neighborhood : ''}</p>}
+          {d.phone && !d.whatsapp && <p style={{ color:c.textMuted,fontSize:'0.9rem' }}><span style={{ color:c.accent }}>✆</span> {d.phone}</p>}
+          {d.hours && <p style={{ color:c.textMuted,fontSize:'0.85rem' }}><span style={{ color:c.accent }}>◷</span> {typeof d.hours === 'object' ? Object.values(d.hours).join(' · ') : d.hours}</p>}
         </div>
       </div>
     </section>

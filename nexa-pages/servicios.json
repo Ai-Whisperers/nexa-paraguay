@@ -4,10 +4,10 @@
   "descriptionKey": "servicesPage.seo.description",
   "sections": [
     {"id":"header","variant":"standard","content":"navigation"},
-    {"id":"hero","variant":"minimal","content":"servicesPage.hero"},
-    {"id":"pills","variant":"grouped-cards","content":"servicesPage.detail"},
-    {"id":"cta-banner","variant":"gradient","content":"servicesPage.cta"},
-    {"id":"footer","variant":"standard","content":"footer"},
-    {"id":"whatsapp-float","variant":"standard","content":"whatsapp"}
+    {"id":"page-hero","variant":"minimal","content":"servicesPage.hero"},
+    {"id":"trust-signals","variant":"credentials","content":"servicesPage.trust"},
+    {"id":"services","variant":"grouped-cards","content":"servicesPage.services"},
+    {"id":"cta-banner","variant":"gradient","content":"servicesPage.finalCta"},
+    {"id":"footer","variant":"standard","content":"footer"}
   ]
 }

@@ -721,7 +721,10 @@
     },
     "hero": {
       "headline": "Por qué Paraguay",
-      "subheadline": "Una oportunidad real — explicada con honestidad."
+      "subheadline": "Una oportunidad real — explicada con honestidad.",
+      "backgroundImage": "@src:hero.home",
+      "ctaPrimaryText": "Agendar consulta gratuita",
+      "ctaPrimaryHref": "/contacto"
     },
     "pillars": {
       "eyebrow": "Por qué Paraguay",
@@ -765,36 +768,42 @@
           "icon": "Landmark",
           "title": "Estabilidad fiscal",
           "description": "IRE 10% desde 2020 (Ley 6380). Sistema territorial estable entre ciclos políticos. Tratados de doble imposición con España, Chile, Taiwán.",
+          "bullets": ["IRE 10% desde 2020", "Sistema territorial", "Tratados de doble imposición"],
           "imageUrl": "@src:whyParaguay.tax"
         },
         {
           "icon": "LineChart",
           "title": "Trayectoria de crecimiento",
           "description": "PBI creciendo 4–5% anual 2021–2024. Sector construcción +12% anual. Inversión en infraestructura activa.",
+          "bullets": ["Construcción +12% anual", "PBI 4–5% anual", "Inversión en infraestructura"],
           "imageUrl": "@src:whyParaguay.growth"
         },
         {
           "icon": "Wheat",
           "title": "Potencia agroindustrial",
           "description": "4.º exportador mundial de soja. Gran exportador de carne. ~100.000 hectáreas transadas por año.",
+          "bullets": ["4.º exportador de soja", "~100.000 ha transadas/año", "Cadena de valor integrada"],
           "imageUrl": "@src:whyParaguay.agribusiness"
         },
         {
           "icon": "Users",
           "title": "Comunidad internacional",
           "description": "Comunidades alemana, española, italiana y holandesa establecidas. +5.000 europeos radicados en la última década.",
+          "bullets": ["Comunidades europea +5.000", "Colegios internacionales", "Red de negocios activa"],
           "imageUrl": "@src:whyParaguay.community"
         },
         {
           "icon": "TreePine",
           "title": "Naturaleza y espacio verde",
           "description": "25M hectáreas de Chaco. 5 parques nacionales a menos de 200 km de Asunción. Baja densidad fuera de la capital.",
+          "bullets": ["5 parques nacionales", "25M hectáreas de Chaco", "Baja densidad poblacional"],
           "imageUrl": "@src:whyParaguay.nature"
         },
         {
           "icon": "Coffee",
           "title": "Cultura y vida diaria",
           "description": "Cultura bilingüe español + guaraní. Tasa de homicidio muy inferior a Buenos Aires o São Paulo.",
+          "bullets": ["Bilingüe español + guaraní", "Baja tasa de criminalidad", "Vida cotidiana tranquila"],
           "imageUrl": "@src:whyParaguay.culture"
         }
       ]
@@ -829,14 +838,31 @@
         }
       ]
     },
+    "highlights": {
+      "items": [
+        {"value": "10%", "label": "Impuesto corporativo"},
+        {"value": "4.2%", "label": "Crecimiento PBI 2023"},
+        {"value": "30–50%", "label": "Menor costo de vida"},
+        {"value": "5.000+", "label": "Europeos radicados"}
+      ]
+    },
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Lo que debes saber sobre Paraguay",
+      "items": [
+        {"q": "¿Es seguro vivir en Paraguay?", "a": "Asunción tiene tasas de criminalidad significativamente menores que otras capitales sudamericanas. Las zonas residenciales como Villa Morra y Carmelitas son muy seguras."},
+        {"q": "¿Puedo mantener mis ingresos europeos?", "a": "Sí. Paraguay aplica un sistema territorial — la renta generada fuera del país no tributa localmente. Tu IRE es 10% solo sobre ingresos paraguayos."},
+        {"q": "¿Necesito hablar guaraní?", "a": "No. El español es suficiente para la vida diaria y los trámites. El guaraní es co-oficial pero no necesario para extranjeros."},
+        {"q": "¿Cómo es la atención médica?", "a": "Asunción tiene hospitales privados de nivel internacional (Sanatorio Británico, Hospital Italiano). Consultas desde USD 30."},
+        {"q": "¿Cuánto cuesta el programa de Nexa?", "a": "Nuestros programas van desde USD 5.000 hasta USD 50.000+ según el nivel de servicio. Agenda una consulta para recibir una propuesta personalizada."}
+      ]
+    },
     "cta": {
       "title": "Dé el primer paso",
       "subtitle": "Agende una consulta gratuita de 30 minutos.",
       "buttonText": "Agendar consulta gratuita",
       "buttonHref": "/contacto"
     }
-  },
-  "processPage": {
     "seo": {
       "title": "Cómo funciona — Nexa Paraguay",
       "description": "Nuestro proceso de 5 pasos: selecciona servicios, procesamiento paralelo, día operativo, cédula y activación financiera, instalación."
@@ -2573,7 +2599,61 @@
     },
     "hero": {
       "headline": "Soluciones profesionales para cada paso",
-      "subheadline": "Elige los servicios que necesitas. Nosotros gestionamos el resto."
+      "subheadline": "Elige los servicios que necesitas. Nosotros gestionamos el resto.",
+      "backgroundImage": "@src:process.consultation",
+      "ctaPrimaryText": "Agendar consulta gratuita",
+      "ctaPrimaryHref": "/contacto"
+    },
+    "trust": {
+      "eyebrow": "Respaldo institucional",
+      "title": "Profesionales en cada área",
+      "items": [
+        {"title": "Migraciones Paraguay", "description": "Trámites directos con la Dirección General de Migraciones.", "image": "@src:trust.migraciones"},
+        {"title": "Cédula en mano", "description": "Acompañamiento hasta la entrega de tu documento de identidad.", "image": "@src:trust.cedula"},
+        {"title": "Constitución certificada", "description": "Empresa registrada ante el Registro Público de Comercio.", "image": "@src:trust.certificate"},
+        {"title": "Due diligence completa", "description": "Verificación de propiedades con informe detallado.", "image": "@src:trust.registry"}
+      ]
+    },
+    "services": {
+      "eyebrow": "NUESTRAS ÁREAS DE EXPERTISE",
+      "title": "Soluciones profesionales para cada paso de tu mudanza",
+      "groups": [
+        {
+          "id": "residency-legal",
+          "title": "Residencia y Documentos Legales",
+          "subtitle": "Los primeros pasos esenciales para tu vida en Paraguay.",
+          "items": [
+            {"title": "Residencia Permanente", "description": "Gestionamos toda tu solicitud de residencia, desde la recopilación de documentos hasta la presentación y el seguimiento.", "image": "@src:trust.cedula", "benefits": ["Lista de verificación completa","Presentación ante Migraciones","Seguimiento de la solicitud","Coordinación con representante legal","Apoyo hasta la aprobación final"], "ctaText": "Solicitar residencia →", "ctaHref": "/contacto?servicio=residencia"},
+            {"title": "Cédula de Identidad Paraguaya", "description": "Te guiamos en cada paso para obtener tu cédula de identidad paraguaya.", "image": "@src:trust.cedula", "benefits": ["Agendamiento de citas","Preparación de documentos","Acompañamiento presencial","Coordinación de trámite exprés","Seguimiento de entrega"], "ctaText": "Obtener cédula →", "ctaHref": "/contacto?servicio=cedula"},
+            {"title": "Apostilla y Traducción", "description": "Coordinamos la traducción certificada y la apostilla de tus documentos extranjeros.", "image": "@src:process.documents", "benefits": ["Traducción certificada","Verificación de apostilla","Coordinación con traductores","Autenticación de documentos","Juego completo listo para presentar"], "ctaText": "Consultar documentos →", "ctaHref": "/contacto?servicio=apostilla"}
+          ]
+        },
+        {
+          "id": "banking-tax",
+          "title": "Banca y Configuración Fiscal",
+          "subtitle": "Estableciendo tu huella financiera en el país.",
+          "items": [
+            {"title": "Apertura de Cuenta Bancaria", "description": "Preparamos tu perfil financiero y te acompañamos en la apertura de cuenta.", "image": "@src:process.banking", "benefits": ["Preparación de perfil financiero","Selección del banco ideal","Coordinación de citas","Acompañamiento presencial","Configuración de banca digital"], "ctaText": "Abrir cuenta →", "ctaHref": "/contacto?servicio=banco"},
+            {"title": "Registro Tributario (RUC)", "description": "Gestionamos tu registro ante la SET para obtener tu RUC.", "image": "@src:process.documents", "benefits": ["Preparación de documentos","Presentación ante SET","Configuración de domicilio fiscal","Obtención de certificado digital","Asesoría de cumplimiento"], "ctaText": "Obtener RUC →", "ctaHref": "/contacto?servicio=ruc"}
+          ]
+        },
+        {
+          "id": "real-estate",
+          "title": "Bienes Raíces Residenciales",
+          "subtitle": "Encontrar el lugar ideal para llamar hogar.",
+          "items": [
+            {"title": "Alquiler de Apartamentos y Casas", "description": "Te ayudamos a encontrar propiedades de calidad que se ajusten a tu estilo de vida.", "image": "@src:whyParaguay.lifestyle", "benefits": ["Búsqueda personalizada","Asesoría de barrios","Coordinación de visitas","Revisión y negociación de contratos","Apoyo en mudanza y servicios"], "ctaText": "Buscar propiedad →", "ctaHref": "/contacto?servicio=alquiler"},
+            {"title": "Compra de Propiedades", "description": "Asistencia experta en todo el proceso de compra.", "image": "@src:whyParaguay.investment", "benefits": ["Identificación de oportunidades","Visitas y debida diligencia","Verificación de títulos","Negociación de precios","Coordinación notarial y registro"], "ctaText": "Ver propiedades →", "ctaHref": "/contacto?servicio=compra"},
+            {"title": "Debida Diligencia", "description": "Verificación completa de cualquier propiedad.", "image": "@src:trust.registry", "benefits": ["Verificación de escrituras","Búsqueda de gravámenes","Confirmación de situación fiscal","Verificación de zonificación","Informe completo"], "ctaText": "Solicitar informe →", "ctaHref": "/contacto?servicio=duediligence"}
+          ]
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "¿Listo para empezar?",
+      "subtitle": "Reserva una consulta gratuita de 30 minutos para discutir tus necesidades.",
+      "buttonText": "Agendar consulta gratuita",
+      "buttonHref": "/contacto"
     },
     "detail": {
       "permanent-residency": {

@@ -9,8 +9,8 @@ export function Footer({ footer }: { footer: any }) {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
           <div>
             <img src="/images/brand/logo-dark.svg" alt="Nexa Paraguay" style={{ height: '32px', marginBottom: '1rem' }} />
-            {footer.whatsapp && <p style={{ fontSize: '0.85rem', opacity: 0.8, marginBottom: '0.25rem' }}>📱 {footer.whatsapp}</p>}
-            {footer.email && <p style={{ fontSize: '0.85rem', opacity: 0.8 }}>✉️ {footer.email}</p>}
+            {footer.whatsapp && <p style={{ fontSize: '0.85rem', opacity: 0.8, marginBottom: '0.25rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}><span style={{ opacity: 0.5 }}>WA</span> {footer.whatsapp}</p>}
+            {footer.email && <p style={{ fontSize: '0.85rem', opacity: 0.8, display: 'flex', alignItems: 'center', gap: '0.4rem' }}><span style={{ opacity: 0.5 }}>@</span> {footer.email}</p>}
             {footer.socialLinks?.map((s: any, i: number) => (
               <a key={i} href={s.url} target="_blank" style={{ display:'inline-block',marginRight:'0.75rem',marginTop:'0.5rem',color:'rgba(255,255,255,0.7)',textDecoration:'none',fontSize:'0.85rem' }}>{s.label}</a>
             ))}
