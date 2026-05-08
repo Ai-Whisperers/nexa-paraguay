@@ -1,0 +1,21 @@
+name: Deploy Status
+on:
+  workflow_run:
+    workflows: ["Deploy Nexa"]
+    types: [completed]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notification
+        run: |
+          STATUS="${{ github.event.workflow_run.conclusion }}"
+          SHA="${{ github.event.workflow_run.head_sha }}"
+          URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}"
+          if [ "$STATUS" = "success" ]; then
+            MSG="✅ Nexa deployed ($(echo $SHA | cut -c1-7))"
+          else
+            MSG="❌ Nexa deploy FAILED ($(echo $SHA | cut -c1-7))"
+          fi
+          echo "$MSG — $URL"
