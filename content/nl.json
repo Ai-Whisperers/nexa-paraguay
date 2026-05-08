@@ -2627,59 +2627,6 @@
   },
   "home": {
     "aboutPage": "",
-    "beneluxDesk": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "items": [
-        {
-          "title": "Nederlandstalige Ondersteuning",
-          "description": "Volledige begeleiding in uw eigen taal — geen communicatiebarrières.",
-          "icon": "MessageCircle"
-        },
-        {
-          "title": "Wij Kennen Uw Context",
-          "description": "Inzicht in Europese belastingstelsels en hoe deze samenwerken met het territoriale regime van Paraguay.",
-          "icon": "Globe"
-        },
-        {
-          "title": "Actieve Gemeenschap",
-          "description": "Meer dan 200 Nederlandse en Belgische families zijn u al voorgegaan.",
-          "icon": "Users"
-        }
-      ],
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "subtitle": "Nederlands, Belgisch of Luxemburgs? Wij hebben een speciaal team voor u.",
-      "tagline": "",
-      "title": "Specialistische Benelux Afdeling",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "beneluxPage": "",
     "blog": "",
     "caseStudiesPage": "",
@@ -2773,8 +2720,7 @@
         "Persoonlijke begeleiding"
       ],
       "whatsapp": "",
-      "whyCountryPage": "",
-      "dutchNote": ""
+      "whyCountryPage": ""
     },
     "home": "",
     "intakeWizardPage": "",

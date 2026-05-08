@@ -3014,59 +3014,6 @@
   },
   "home": {
     "aboutPage": "",
-    "beneluxDesk": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "items": [
-        {
-          "title": "Dutch-speaking Support",
-          "description": "Full coordination in your native language — no communication barriers.",
-          "icon": "MessageCircle"
-        },
-        {
-          "title": "We Know Your Context",
-          "description": "Understanding European tax systems and how they interact with Paraguay's territorial regime.",
-          "icon": "Globe"
-        },
-        {
-          "title": "Active Community",
-          "description": "200+ Dutch and Belgian families have already relocated with our help.",
-          "icon": "Users"
-        }
-      ],
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "subtitle": "Dutch, Belgian, or Luxembourgish? We have a specialized team for you.",
-      "tagline": "",
-      "title": "Dedicated Benelux Desk",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "beneluxPage": "",
     "blog": "",
     "caseStudiesPage": "",
@@ -3160,8 +3107,7 @@
         "Personal support"
       ],
       "whatsapp": "",
-      "whyCountryPage": "",
-      "dutchNote": ""
+      "whyCountryPage": ""
     },
     "home": "",
     "intakeWizardPage": "",

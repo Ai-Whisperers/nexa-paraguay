@@ -3,10 +3,10 @@
 import React, { useState } from 'react'
 
 const PROGRAMS = [
-  { id: 'base', title: 'Residencia Permanente', subtitle: 'Base', price: '€2,500', duration: '10-12 semanas', popular: false },
-  { id: 'business', title: 'Residencia + Empresa + Banco', subtitle: 'Business', price: '€4,500', duration: '12-16 semanas', popular: true },
-  { id: 'investor', title: 'Residencia para Inversores', subtitle: 'Inversor', price: '€5,500', duration: '12-16 semanas', popular: false },
-  { id: 'land', title: 'Compra de Tierras', subtitle: 'Terrenos', price: 'Desde €10,000', duration: '4-6 semanas', popular: false },
+  { id: 'base', title: 'Residencia Permanente', subtitle: 'Base', duration: '10-12 semanas', popular: false },
+  { id: 'business', title: 'Residencia + Empresa + Banco', subtitle: 'Business', duration: '12-16 semanas', popular: true },
+  { id: 'investor', title: 'Residencia para Inversores', subtitle: 'Inversor', duration: '12-16 semanas', popular: false },
+  { id: 'land', title: 'Compra de Tierras', subtitle: 'Terrenos', duration: '4-6 semanas', popular: false },
 ]
 
 const STEPS = [
@@ -74,13 +74,10 @@ export function BookingFormSection({ data }: any) {
                 {PROGRAMS.map(p => (
                   <button key={p.id} onClick={() => { setSelected(p.id); setTimeout(() => setStep(1), 250) }}
                     className={`w-full text-left p-5 rounded-xl border-2 cursor-pointer transition-all ${selected === p.id ? 'border-accent bg-accent/5' : 'border-border hover:border-accent/50 bg-surface-alt'}`}>
-                    <div className="flex justify-between items-center">
-                      <div>
-                        <h4 className="font-bold text-primary">{p.title}</h4>
-                        <p className="text-xs text-text-muted">{p.subtitle}</p>
-                      </div>
-                      <div className="text-right">
-                        <span className="font-extrabold text-primary text-sm">{p.price}</span><span className="text-text-muted text-xs block">{p.duration}</span>
+                    <div className="flex items-center gap-3 md:gap-4">
+                      <div className="flex-1 min-w-0">
+                        <p className="font-bold text-gray-900 truncate">{p.title}</p>
+                        <p className="text-sm text-gray-500">{p.duration}</p>
                       </div>
                     </div>
                   </button>

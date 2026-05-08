@@ -2570,59 +2570,6 @@
   },
   "home": {
     "aboutPage": "",
-    "beneluxDesk": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "items": [
-        {
-          "title": "Betreuung auf Niederländisch",
-          "description": "Komplette Koordination in Ihrer Muttersprache — ohne Sprachbarrieren.",
-          "icon": "MessageCircle"
-        },
-        {
-          "title": "Wir Kennen Ihren Kontext",
-          "description": "Verständnis europäischer Steuersysteme und deren Zusammenspiel mit Paraguays territorialem System.",
-          "icon": "Globe"
-        },
-        {
-          "title": "Aktive Gemeinschaft",
-          "description": "Über 200 niederländische und belgische Familien sind bereits mit uns umgezogen.",
-          "icon": "Users"
-        }
-      ],
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "subtitle": "Niederländer, Belgier oder Luxemburger? Wir haben ein spezialisiertes Team für Sie.",
-      "tagline": "",
-      "title": "Spezialisierte Betreuung für Benelux",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "beneluxPage": "",
     "blog": "",
     "caseStudiesPage": "",
@@ -2716,8 +2663,7 @@
         "Persönliche Betreuung"
       ],
       "whatsapp": "",
-      "whyCountryPage": "",
-      "dutchNote": ""
+      "whyCountryPage": ""
     },
     "home": "",
     "intakeWizardPage": "",
