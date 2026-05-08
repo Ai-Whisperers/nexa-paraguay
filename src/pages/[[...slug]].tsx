@@ -3,6 +3,7 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { HeroSection, StatsSection, TrustSection, ProgramsSection, ServicesSection, WhyCountrySection, FeaturesSection, ProcessSection, TestimonialsSection, CtaBanner, TaxCalculatorSection } from '../components/sections'
 import { FaqSection, BlogSection, TeamSection, PrivacyAccordion, GlossarySection, NewsletterSection, StorySection, PillarsSection, PageHeroSection, HighlightSection, ComparisonSection, GuidesSection, BookingEmbedSection, ContactDetailsSection, GallerySection, FaqSearchSection, ContactFormSection, ServiceDetailSection, PressReleasesListSection, IntakeWizardSection } from '../components/sections-extra'
+import { GatewayPopup } from '../components/GatewayPopup'
 import { resolveContent, resolveImage } from '../components/content'
 import { loadJSON } from '../lib/loader'
 import { ErrorBoundary } from '../components/ErrorBoundary'
@@ -127,6 +128,7 @@ export default function SlugPage({ content, pageConfig, pageId, images, post, lo
         {jsonLd.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
       </Head>
       <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", color: '#1B2A4A' }}>
+        <GatewayPopup locale={loc} />
         {navigation && <Header navigation={navigation} locale={loc} />}
         <main>
           {sections.map((section: any, idx: number) => {
