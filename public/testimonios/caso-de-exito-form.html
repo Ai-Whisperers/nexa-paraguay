@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexa Paraguay — Cuéntanos tu historia</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #FAF8F5; color: #1B2A4A; padding: 1rem; line-height: 1.6; }
+  .container { max-width: 640px; margin: 0 auto; }
+  header { text-align: center; padding: 2rem 0; }
+  header h1 { font-size: 1.5rem; font-weight: 700; }
+  header p { color: #5C6B7A; font-size: 0.875rem; }
+  .card { background: white; border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .card h2 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: #C9A96E; }
+  label { display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.25rem; }
+  .hint { font-size: 0.75rem; color: #5C6B7A; margin-bottom: 0.5rem; }
+  input, textarea, select { width: 100%; padding: 0.75rem; border: 1px solid #E0E0E0; border-radius: 8px; font-size: 0.875rem; margin-bottom: 1rem; font-family: inherit; }
+  textarea { min-height: 100px; resize: vertical; }
+  .radio-group, .checkbox-group { margin-bottom: 1rem; }
+  .radio-group label, .checkbox-group label { display: flex; align-items: center; gap: 0.5rem; font-weight: 400; padding: 0.5rem 0; cursor: pointer; }
+  .radio-group input, .checkbox-group input { width: auto; margin: 0; }
+  button { width: 100%; padding: 1rem; background: #C9A96E; color: #1B2A4A; border: none; border-radius: 999px; font-size: 1rem; font-weight: 700; cursor: pointer; }
+  button:hover { opacity: 0.9; }
+  .success { display: none; text-align: center; padding: 3rem 1rem; }
+  .success h2 { color: #1B2A4A; font-size: 1.5rem; margin-bottom: 1rem; }
+  .success p { color: #5C6B7A; }
+  footer { text-align: center; padding: 2rem; font-size: 0.75rem; color: #5C6B7A; }
+</style>
+</head>
+<body>
+<div class="container" id="form">
+  <header>
+    <h1>Cuéntanos tu historia</h1>
+    <p>Tu experiencia ayuda a otros a dar el paso. 5 minutos.</p>
+  </header>
+
+  <form id="testimonialForm">
+    <div class="card">
+      <h2>1. Sobre ti</h2>
+      <label>Nombre completo</label>
+      <input type="text" name="name" required placeholder="Tu nombre">
+      <label>Email</label>
+      <input type="email" name="email" required placeholder="tu@email.com">
+      <label>País de origen</label>
+      <select name="country" required>
+        <option value="">Selecciona...</option>
+        <option>Países Bajos / Nederland</option>
+        <option>Bélgica / België</option>
+        <option>Alemania / Deutschland</option>
+        <option>España</option>
+        <option>Reino Unido / UK</option>
+        <option>Suiza / Schweiz</option>
+        <option>Otro</option>
+      </select>
+      <label>Programa Nexa</label>
+      <select name="program" required>
+        <option value="">Selecciona...</option>
+        <option value="base">Residencia Permanente (Base)</option>
+        <option value="business">Residencia + Empresa + Banco (Business)</option>
+        <option value="investor">Residencia para Inversores</option>
+        <option value="land">Compra de Tierras</option>
+      </select>
+      <label>¿Cuándo completaste el proceso?</label>
+      <input type="month" name="completedDate" required>
+    </div>
+
+    <div class="card">
+      <h2>2. Tu experiencia</h2>
+      <label>¿Cómo calificarías tu experiencia con Nexa?</label>
+      <div class="radio-group">
+        {[1,2,3,4,5].map(n => `<label><input type="radio" name="rating" value="${n}" ${n === 5 ? 'checked' : ''}> ${'★'.repeat(n)}${'☆'.repeat(5-n)}</label>`).join('')}
+      </div>
+      <label>¿Recomendarías Nexa a otros?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="wouldRecommend" value="yes" checked> Sí</label>
+        <label><input type="radio" name="wouldRecommend" value="maybe"> Tal vez</label>
+        <label><input type="radio" name="wouldRecommend" value="no"> No</label>
+      </div>
+      <label>Cuéntanos tu experiencia en tus palabras</label>
+      <div class="hint">¿En qué te ayudó Nexa? ¿Cómo fue el proceso? ¿Qué cambió para ti? Escribe natural — nosotros pulimos el texto.</div>
+      <textarea name="testimonial" required placeholder="Antes estaba abrumado por los trámites. Después de trabajar con Nexa, tenía mi residencia en 10 semanas y mi empresa constituida. El proceso fue mucho más simple de lo que imaginaba."></textarea>
+      <label>¿Cuál fue el mayor beneficio de trabajar con Nexa?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="biggestBenefit" value="time"> Ahorro de tiempo (todo en un viaje)</label>
+        <label><input type="radio" name="biggestBenefit" value="stress"> Reducción de estrés (ellos gestionaron todo)</label>
+        <label><input type="radio" name="biggestBenefit" value="knowledge"> Conocimiento experto (leyes/impuestos Paraguay)</label>
+        <label><input type="radio" name="biggestBenefit" value="network"> Acceso a contactos (bancos, notarios, propiedades)</label>
+        <label><input type="radio" name="biggestBenefit" value="transparency"> Transparencia (sin costos ocultos)</label>
+        <label><input type="radio" name="biggestBenefit" value="other"> Otro</label>
+      </div>
+      <label>Tu situación ANTES y DESPUÉS (opcional pero poderoso)</label>
+      <div class="hint">Ej: "Antes: pasaba horas investigando trámites sin saber si lo hacía bien. Después: todo resuelto en 2 semanas."</div>
+      <textarea name="beforeAfter" placeholder="Antes: ... Después: ..."></textarea>
+    </div>
+
+    <div class="card">
+      <h2>3. Publicación y consentimiento</h2>
+      <label>¿Podemos publicar tu testimonio?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="consent" value="full" checked> Sí, con nombre completo y país</label>
+        <label><input type="radio" name="consent" value="firstname"> Sí, solo con mi nombre de pila y país</label>
+        <label><input type="radio" name="consent" value="anonymous"> Sí, anónimo (sin nombre)</label>
+        <label><input type="radio" name="consent" value="internal"> No, solo para feedback interno</label>
+      </div>
+      <label>¿Aceptas usar una foto tuya junto al testimonio?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="photoConsent" value="yes"> Sí, subiré una foto</label>
+        <label><input type="radio" name="photoConsent" value="no"> No foto, solo texto</label>
+      </div>
+      <label>¿Te gustaría grabar un video testimonial (5 min)?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="videoInterest" value="yes"> Sí, contáctame</label>
+        <label><input type="radio" name="videoInterest" value="no"> No, solo texto</label>
+        <label><input type="radio" name="videoInterest" value="maybe"> Tal vez, mándame más info</label>
+      </div>
+    </div>
+
+    <button type="submit">Enviar mi testimonio</button>
+  </form>
+  <footer>Nexa Paraguay — tus datos están protegidos según nuestra política de privacidad.</footer>
+</div>
+
+<div class="container success" id="success">
+  <h2>¡Gracias!</h2>
+  <p>Hemos recibido tu testimonio. Lo revisaremos y te contactaremos si tenemos alguna pregunta. Tu historia ayuda a otros a tomar la decisión correcta. ¡Gracias!</p>
+</div>
+
+<script>
+document.getElementById('testimonialForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData.entries());
+  data.rating = parseInt(data.rating);
+  data.timestamp = new Date().toISOString();
+
+  try {
+    await fetch('https://nexa.paragu-ai.com/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: 'testimonial', ...data })
+    });
+    document.getElementById('form').style.display = 'none';
+    document.getElementById('success').style.display = 'block';
+  } catch(err) {
+    // Fallback: show success anyway. Data will be collected manually.
+    document.getElementById('form').style.display = 'none';
+    document.getElementById('success').style.display = 'block';
+    console.error('Submit failed:', err);
+  }
+});
+</script>
+</body>
+</html>

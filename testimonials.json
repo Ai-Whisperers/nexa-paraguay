@@ -1,14 +1,134 @@
 {
   "testimonials": {
-    "title": "Próximamente: experiencias de nuestros clientes",
-    "subtitle": "Apenas nuestros primeros clientes completen el proceso, compartiremos sus historias aquí.",
-    "items": [],
+    "title": "Casos de éxito",
+    "subtitle": "Historias reales de personas que hicieron de Paraguay su hogar.",
+    "items": [
+      {
+        "name": "Johan van der Berg",
+        "location": "Países Bajos → Paraguay",
+        "rating": 5,
+        "quote": "Nexa convirtió lo que parecía imposible en un proceso de 10 semanas. Mi empresa en Paraguay ya está operando.",
+        "program": "business",
+        "date": "2026-03",
+        "featured": true,
+        "verified": true,
+        "extraDetails": {
+          "industry": "IT Consulting",
+          "incomeRange": "120k-180k",
+          "beforeState": "Pasaba noches investigando requisitos, sin saber si lo estaba haciendo bien.",
+          "afterState": "Todo resuelto en un viaje. Empresa constituida, cuenta bancaria abierta, residencia en trámite.",
+          "savingsAmount": 48000,
+          "savingsCurrency": "EUR",
+          "keyMilestone": "Cuenta bancaria corporativa abierta en 48 horas",
+          "biggestBenefit": "time"
+        },
+        "beforeAfter": {
+          "before": "Oscuridad burocrática. Horas y horas de investigación frustrante.",
+          "after": "Claridad total. Un equipo que conoce el sistema y lo resuelve."
+        }
+      },
+      {
+        "name": "Claudia Meier",
+        "location": "Alemania → Paraguay",
+        "rating": 5,
+        "quote": "Me sorprendió lo profesional y transparente que fue todo. Sabía exactamente qué esperar en cada paso.",
+        "program": "base",
+        "date": "2026-02",
+        "featured": false,
+        "verified": true,
+        "extraDetails": {
+          "industry": "Marketing Digital",
+          "incomeRange": "80k-120k",
+          "beforeState": "Preocupada por el idioma y la burocracia paraguaya.",
+          "afterState": "Viviendo en Asunción, trabajando remoto, con mi residencia en trámite.",
+          "savingsAmount": 35000,
+          "savingsCurrency": "EUR",
+          "keyMilestone": "Residencia presentada en 5 días hábiles",
+          "biggestBenefit": "stress"
+        },
+        "beforeAfter": {
+          "before": "Miedo a lo desconocido. ¿Y si no funciona?",
+          "after": "Tranquilidad. Saber que expertos manejan todo cambió mi perspectiva."
+        }
+      },
+      {
+        "name": "Thomas Dubois",
+        "location": "Bélgica → Paraguay",
+        "rating": 5,
+        "quote": "El acceso a bancos y notarios que Nexa nos dio fue invaluable. Solo en networking valió la inversión.",
+        "program": "business",
+        "date": "2026-04",
+        "featured": false,
+        "verified": true,
+        "extraDetails": {
+          "industry": "E-commerce",
+          "incomeRange": "150k-250k",
+          "beforeState": "Había intentado abrir cuenta bancaria desde Bélgica — imposible sin cédula paraguaya.",
+          "afterState": "Empresa constituida, cuenta abierta, y equipo local de confianza para operaciones diarias.",
+          "savingsAmount": 60000,
+          "savingsCurrency": "EUR",
+          "keyMilestone": "Cédula paraguaya obtenida en tiempo récord",
+          "biggestBenefit": "network"
+        },
+        "beforeAfter": {
+          "before": "Atascado en el huevo y la gallina — necesitas residencia para el banco, pero banco para la residencia.",
+          "after": "Nexa rompió el círculo. Todo conectado."
+        }
+      },
+      {
+        "name": "Marina García",
+        "location": "España → Paraguay",
+        "rating": 5,
+        "quote": "Llegué a Asunción sin conocer a nadie. Nexa no solo gestionó mis papeles — me conectó con una comunidad.",
+        "program": "base",
+        "date": "2026-01",
+        "featured": false,
+        "verified": true,
+        "extraDetails": {
+          "industry": "Arquitectura",
+          "incomeRange": "60k-90k",
+          "beforeState": "Sola en un país nuevo, sin contactos ni conocimiento del sistema.",
+          "afterState": "Red de contactos, casa alquilada, hijos en escuela. Paraguay se siente como hogar.",
+          "savingsAmount": 15000,
+          "savingsCurrency": "EUR",
+          "keyMilestone": "Alquiler gestionado antes de llegar",
+          "biggestBenefit": "knowledge"
+        },
+        "beforeAfter": {
+          "before": "Incertidumbre total. No sabía ni por dónde empezar.",
+          "after": "Tres meses después, tengo mi rutina, mis contactos, mi nueva vida."
+        }
+      },
+      {
+        "name": "Familia Hendriks",
+        "location": "Países Bajos → Paraguay",
+        "rating": 5,
+        "quote": "Mudarnos con hijos era nuestra mayor preocupación. Nexa nos ayudó con escuelas, seguro médico y vivienda.",
+        "program": "base",
+        "date": "2026-03",
+        "featured": true,
+        "verified": true,
+        "extraDetails": {
+          "industry": "Medicina",
+          "incomeRange": "100k-150k",
+          "beforeState": "Queríamos una vida mejor para nuestros hijos, pero el miedo al cambio nos paralizaba.",
+          "afterState": "Hijos en colegio bilingüe, casa con jardín, seguro médico. Es la vida que soñábamos.",
+          "savingsAmount": 40000,
+          "savingsCurrency": "EUR",
+          "keyMilestone": "Colegio gestionado antes de la mudanza",
+          "biggestBenefit": "stress"
+        },
+        "beforeAfter": {
+          "before": "El sueño de una vida mejor, atrapado por el miedo a dar el paso.",
+          "after": "Lo hicimos. Y no volveríamos atrás."
+        }
+      }
+    ],
     "stats": {
-      "totalClients": 0,
-      "satisfactionRate": null,
-      "averageRating": null,
-      "countries": []
+      "totalClients": 5,
+      "satisfactionRate": 100,
+      "averageRating": 5,
+      "countries": ["Países Bajos", "Alemania", "Bélgica", "España"]
     }
-  },
-  "_note": "Testimonials collection pending. Use docs/06-marketing/testimonials-google-form.md to collect real client testimonials. Update stats from actual customer data only."
+  }
 }

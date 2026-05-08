@@ -31,6 +31,7 @@ const SECTIONS: Record<string, any> = {
   'comparison-table': dynamic(() => import('./sections-extra').then(m => ({ default: m.ComparisonSection })), { ssr: true }),
   guides: dynamic(() => import('./sections-extra').then(m => ({ default: m.GuidesSection })), { ssr: true }),
   'booking-embed': dynamic(() => import('./sections-extra').then(m => ({ default: m.BookingEmbedSection })), { ssr: true }),
+  'case-studies': dynamic(() => import('./sections-extra').then(m => ({ default: m.CaseStudySection })), { ssr: true }),
   contact: dynamic(() => import('./sections-extra').then(m => ({ default: m.ContactDetailsSection })), { ssr: true }),
   gallery: dynamic(() => import('./sections-extra').then(m => ({ default: m.GallerySection })), { ssr: true }),
   faq: dynamic(() => import('./sections-extra').then(m => ({ default: m.FaqSearchSection })), { ssr: true }),

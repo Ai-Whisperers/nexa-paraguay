@@ -14,6 +14,11 @@ export function loadPageData(locale: string, slug: string) {
       try { pageConfig = JSON.parse(readFileSync(join(REPO, 'nexa-pages', `${slug}.json`), 'utf-8')) } catch { return null }
     }
     const images = JSON.parse(readFileSync(join(REPO, 'images.json'), 'utf-8'))
+    // Load testimonials data and inject into content
+    try {
+      const testimonials = JSON.parse(readFileSync(join(REPO, 'testimonials.json'), 'utf-8'))
+      content.testimonials = testimonials.testimonials
+    } catch {}
     return { content, pageConfig, images, pageId, locale }
   } catch { return null }
 }
