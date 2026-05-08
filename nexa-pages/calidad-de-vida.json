@@ -1,14 +1,43 @@
 {
+  "id": "calidad-de-vida",
   "slug": "calidad-de-vida",
   "titleKey": "qualityOfLifePage.seo.title",
   "descriptionKey": "qualityOfLifePage.seo.description",
   "sections": [
-    {"id":"header","variant":"standard","content":"navigation"},
-    {"id":"hero","variant":"minimal","content":"qualityOfLifePage.hero"},
-    {"id":"pillars","variant":"pillars","content":"qualityOfLifePage.pillars"},
-    {"id":"comparison-table","variant":"table","content":"qualityOfLifePage.comparison"},
-    {"id":"cta-banner","variant":"solid","content":"qualityOfLifePage.cta"},
-    {"id":"footer","variant":"standard","content":"footer"},
-    {"id":"whatsapp-float","variant":"standard","content":"whatsapp"}
+    {
+      "id": "header",
+      "variant": "standard",
+      "content": "navigation"
+    },
+    {
+      "id": "hero",
+      "variant": "minimal",
+      "content": "qualityOfLifePage.hero"
+    },
+    {
+      "id": "pillars",
+      "variant": "pillars",
+      "content": "qualityOfLifePage.pillars"
+    },
+    {
+      "id": "comparison-table",
+      "variant": "table",
+      "content": "qualityOfLifePage.comparison"
+    },
+    {
+      "id": "cta-banner",
+      "variant": "solid",
+      "content": "qualityOfLifePage.cta"
+    },
+    {
+      "id": "footer",
+      "variant": "standard",
+      "content": "footer"
+    },
+    {
+      "id": "whatsapp-float",
+      "variant": "standard",
+      "content": "whatsapp"
+    }
   ]
 }

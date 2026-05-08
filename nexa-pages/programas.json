@@ -1,14 +1,38 @@
 {
+  "id": "programas",
   "slug": "programas",
   "titleKey": "programasPage.seo.title",
   "descriptionKey": "programasPage.seo.description",
   "sections": [
-    {"id": "header", "variant": "standard", "content": "navigation"},
-    {"id": "hero", "content": "programasPage.hero"},
-    {"id": "programs-comparison", "content": "programasPage.programs"},
-    {"id": "faq", "content": "programasPage.faq"},
-    {"id": "testimonials", "content": "programasPage.testimonials"},
-    {"id": "cta-banner", "content": "programasPage.cta"},
-    {"id": "footer", "variant": "standard", "content": "footer"}
+    {
+      "id": "header",
+      "variant": "standard",
+      "content": "navigation"
+    },
+    {
+      "id": "hero",
+      "content": "programasPage.hero"
+    },
+    {
+      "id": "programs-comparison",
+      "content": "programasPage.programs"
+    },
+    {
+      "id": "faq",
+      "content": "programasPage.faq"
+    },
+    {
+      "id": "testimonials",
+      "content": "programasPage.testimonials"
+    },
+    {
+      "id": "cta-banner",
+      "content": "programasPage.cta"
+    },
+    {
+      "id": "footer",
+      "variant": "standard",
+      "content": "footer"
+    }
   ]
 }

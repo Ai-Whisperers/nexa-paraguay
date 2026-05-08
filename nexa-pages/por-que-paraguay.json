@@ -1,14 +1,43 @@
 {
+  "id": "por-que-paraguay",
   "slug": "por-que-paraguay",
   "titleKey": "whyCountryPage.seo.title",
   "descriptionKey": "whyCountryPage.seo.description",
   "sections": [
-    {"id":"header","variant":"standard","content":"navigation"},
-    {"id":"hero","variant":"minimal","content":"whyCountryPage.hero"},
-    {"id":"pillars","variant":"pillars","content":"whyCountryPage.pillars"},
-    {"id":"trust-signals","variant":"credentials","content":"whyCountryPage.trust"},
-    {"id":"cta-banner","variant":"solid","content":"whyCountryPage.cta"},
-    {"id":"footer","variant":"standard","content":"footer"},
-    {"id":"whatsapp-float","variant":"standard","content":"whatsapp"}
+    {
+      "id": "header",
+      "variant": "standard",
+      "content": "navigation"
+    },
+    {
+      "id": "hero",
+      "variant": "minimal",
+      "content": "whyCountryPage.hero"
+    },
+    {
+      "id": "pillars",
+      "variant": "pillars",
+      "content": "whyCountryPage.pillars"
+    },
+    {
+      "id": "trust-signals",
+      "variant": "credentials",
+      "content": "whyCountryPage.trust"
+    },
+    {
+      "id": "cta-banner",
+      "variant": "solid",
+      "content": "whyCountryPage.cta"
+    },
+    {
+      "id": "footer",
+      "variant": "standard",
+      "content": "footer"
+    },
+    {
+      "id": "whatsapp-float",
+      "variant": "standard",
+      "content": "whatsapp"
+    }
   ]
 }
