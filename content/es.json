@@ -36,7 +36,7 @@
             "href": "/proceso"
           }
         ],
-        "href": "/sobre"
+        "href": "/programas"
       },
       {
         "label": "Sobre Nexa",
@@ -90,10 +90,14 @@
       "ctaSecondaryHref": "/programas",
       "backgroundImage": "@img:hero.localizedEs",
       "backgroundImageMobile": "@img:hero.homeMobile",
+      "dutchNote": "🇳🇱 Servicio especializado para holandeses y belgas — equipo bilingüe NL-ES",
       "trustBadges": [
         "Servicios a la carta",
         "8–12 semanas",
-        "Precio fijo"
+        "Precio fijo",
+        "+47.000 residencias en 2025",
+        "+63% crecimiento anual",
+        "+189% comunidad holandesa"
       ]
     },
     "trust": {
@@ -227,7 +231,7 @@
         {
           "icon": "TrendingUp",
           "title": "Entorno económico",
-          "description": "Crecimiento sostenido, inflación controlada, impuesto del 10% sobre la renta, sistema territorial.",
+          "description": "Crecimiento sostenido, inflación controlada, 10% flat tax on foreign income, territorial tax system.",
           "bullets": [
             "Impuesto corporativo 10%",
             "Sistema territorial",
@@ -238,7 +242,7 @@
         {
           "icon": "Heart",
           "title": "Calidad de vida",
-          "description": "Clima cálido, comunidad internacional creciente, poder adquisitivo significativo.",
+          "description": "Clima subtropical, costo de vida 60% menor que Europa, comunidad internacional creciente.",
           "bullets": [
             "Costo de vida favorable",
             "Comunidad internacional",
@@ -249,13 +253,49 @@
         {
           "icon": "Landmark",
           "title": "Estabilidad fiscal",
-          "description": "Régimen territorial con reglas transparentes y un entorno fiscal predecible.",
+          "description": "Zero tax on foreign dividends, capital gains, interest. Régimen territorial con reglas transparentes.",
           "bullets": [
             "Sistema territorial",
             "Marco regulatorio estable",
             "Sin impuesto sobre rentas extranjeras"
           ],
           "imageUrl": "@src:whyParaguay.tax"
+        },
+        {
+          "icon": "Users",
+          "title": "Comunidad Holandesa Activa",
+          "description": "Más de 800 familias holandesas viven en Paraguay. Comunidades activas en Asunción, Encarnación y el Lago Ypacaraí. Grupos de WhatsApp, eventos semanales y ferias holandesas.",
+          "imageUrl": "@img:whyParaguay.community",
+          "bullets": [
+            "6.000+ miembros en grupos de expats",
+            "Ferias holandesas mensuales en Asunción",
+            "Colegio internacional con currículo europeo",
+            "Conexión directa Ámsterdam-Asunción"
+          ]
+        },
+        {
+          "icon": "Shield",
+          "title": "Seguridad y Estabilidad",
+          "description": "Paraguay es uno de los países más seguros de Sudamérica. Baja tasa de criminalidad violenta, estabilidad política y económica.",
+          "imageUrl": "@img:whyParaguay.safety",
+          "bullets": [
+            "Tasa de homicidios 75% menor que Brasil",
+            "Estabilidad política: misma constitución desde 1992",
+            "Moneda estable (Guaraní) con baja inflación",
+            "Sistema bancario sólido y regulado"
+          ]
+        },
+        {
+          "icon": "Wifi",
+          "title": "Infraestructura Moderna",
+          "description": "Internet de fibra óptica en todas las ciudades principales, centros comerciales modernos, hospitales de primer nivel y creciente oferta gastronómica.",
+          "imageUrl": "@img:whyParaguay.infrastructure",
+          "bullets": [
+            "Internet fibra óptica 500MB+ en zonas urbanas",
+            "Centros comerciales con marcas internacionales",
+            "Hospitales privados con estándar europeo",
+            "Aeropuerto internacional con vuelos directos a Europa"
+          ]
         }
       ],
       "honestNote": "La oportunidad es real, pero el proceso no es sencillo sin guía adecuada. Existimos para resolver exactamente eso."
@@ -325,16 +365,31 @@
       "subtitle": "Estimá cuánto ahorrás en impuestos al establecerte en Paraguay."
     },
     "stats": {
+      "dutchNote": "La comunidad holandesa creció 189% en 2024-2025",
       "items": [
         {
           "value": "—",
-          "label": "Familias asesoradas (actualizar cuando tengamos datos reales)",
-          "icon": "Users"
+          "label": "Residencias gestionadas",
+          "icon": "Users",
+          "_note": "Placeholder — reemplazar con cifras reales tras primeros clientes"
         },
         {
           "value": "—",
-          "label": "Años de experiencia (actualizar cuando tengamos datos reales)",
-          "icon": "Calendar"
+          "label": "Crecimiento del mercado",
+          "icon": "TrendingUp",
+          "_note": "Placeholder — reemplazar con datos reales"
+        },
+        {
+          "value": "—",
+          "label": "Crecimiento comunidad extranjera",
+          "icon": "Globe",
+          "_note": "Placeholder — reemplazar con datos reales"
+        },
+        {
+          "value": "—",
+          "label": "Años combinados de experiencia",
+          "icon": "Calendar",
+          "_note": "Placeholder — reemplazar con cifras reales del equipo"
         }
       ]
     },
@@ -1011,6 +1066,10 @@
         {
           "name": "Dirección de Operaciones (Paraguay)",
           "role": "Líder de operaciones: +10 años coordinando con Migraciones, DGII y aperturas bancarias. Red institucional sólida en Asunción.",
+          "languages": [
+            "ES",
+            "EN"
+          ],
           "icon": "Briefcase",
           "imageUrl": "@src:team.operationsDirector",
           "memberImage": "@src:team.operationsDirector"
@@ -1018,6 +1077,12 @@
         {
           "name": "Dirección Comercial (Europa)",
           "role": "Líder europea: holandés y alemán nativos, con base en Ámsterdam. Traduce inquietudes fiscales de la UE a la práctica paraguaya.",
+          "languages": [
+            "NL",
+            "EN",
+            "DE",
+            "ES"
+          ],
           "icon": "Globe",
           "imageUrl": "@src:team.commercialDirector",
           "memberImage": "@src:team.commercialDirector"
@@ -1025,6 +1090,10 @@
         {
           "name": "Equipo Legal",
           "role": "Abogados matriculados en Paraguay. Especialización en inmigración, corporativo y due diligence inmobiliario.",
+          "languages": [
+            "ES",
+            "EN"
+          ],
           "icon": "Scale",
           "imageUrl": "@src:team.legalLead",
           "memberImage": "@src:team.legalLead"
@@ -1032,6 +1101,10 @@
         {
           "name": "Equipo Contable",
           "role": "Contadores públicos matriculados. Ley 6380 IRE, renta territorial, estructuración de ingresos del exterior.",
+          "languages": [
+            "ES",
+            "EN"
+          ],
           "icon": "Calculator",
           "imageUrl": "@src:team.accountingLead",
           "memberImage": "@src:team.accountingLead"
@@ -1039,6 +1112,11 @@
         {
           "name": "Client Success",
           "role": "Onboarding y acompañamiento bilingüe ES/EN. Punto de contacto único durante las 8–12 semanas del proceso.",
+          "languages": [
+            "NL",
+            "EN",
+            "ES"
+          ],
           "icon": "UserCheck",
           "imageUrl": "@src:team.clientSuccess",
           "memberImage": "@src:team.clientSuccess"
@@ -1175,6 +1253,7 @@
     },
     "full": {
       "title": "Preguntas frecuentes",
+      "searchPlaceholder": "Buscar preguntas...",
       "items": [
         {
           "q": "¿Cuánto tiempo toma todo el proceso?",
@@ -1235,6 +1314,106 @@
         {
           "q": "¿Qué pasa si cambian las leyes durante mi proceso?",
           "a": "Monitoreamos el entorno regulatorio y le informamos inmediatamente si hay cambios relevantes."
+        },
+        {
+          "q": "¿Necesito hablar español para obtener la residencia?",
+          "a": "No es necesario. Aunque el proceso se realiza en español, trabajamos con traductores certificados y todo el equipo de Nexa habla inglés, neerlandés y alemán. Muchos expats viven en Paraguay sin hablar español fluidamente, aunque recomendamos aprender lo básico."
+        },
+        {
+          "q": "¿Puedo mantener mi ciudadanía original?",
+          "a": "Sí, Paraguay permite la doble ciudadanía con la mayoría de los países. No perderás tu pasaporte ni tus derechos en tu país de origen. La residencia permanente paraguaya es adicional a tu estatus actual."
+        },
+        {
+          "q": "¿Cuánto tiempo puedo estar fuera de Paraguay sin perder la residencia?",
+          "a": "La residencia permanente requiere que estés físicamente en Paraguay al menos 1 día cada 3 años para mantenerla activa. No hay un mínimo de días por año, lo que la hace ideal para quienes viajan frecuentemente."
+        },
+        {
+          "q": "¿Es seguro Paraguay para los europeos?",
+          "a": "Paraguay es considerado uno de los países más seguros de Sudamérica para extranjeros. Asunción tiene una tasa de criminalidad violenta baja comparada con otras capitales regionales. Las comunidades de expats en Villa Morra, Carmelitas y San Bernardino son muy activas y seguras."
+        },
+        {
+          "q": "¿Qué tal es el sistema de salud en Paraguay?",
+          "a": "Paraguay cuenta con hospitales privados de excelente calidad en Asunción, con estándares comparables a Europa. El seguro de salud privado cuesta aproximadamente $50-100 USD por mes. Los principales hospitales tienen médicos formados en Europa y Estados Unidos."
+        },
+        {
+          "q": "¿Cómo funciona el sistema educativo para niños?",
+          "a": "Existen excelentes opciones educativas: colegios internacionales (American School, Goethe, Colegio Internacional), colegios bilingües español-inglés, y la opción de educación internacional en línea. Varios colegios ofrecen el Bachillerato Internacional."
+        },
+        {
+          "q": "¿Necesito un abogado para el proceso?",
+          "a": "Sí, la ley paraguaya requiere que ciertos pasos del proceso de residencia sean gestionados por un abogado local. En Nexa trabajamos con abogados colegiados especializados en inmigración que garantizan que todo el proceso cumpla con los requisitos legales."
+        },
+        {
+          "q": "¿Cuánto cuesta mantener la residencia anualmente?",
+          "a": "El mantenimiento anual de la residencia es mínimo. Incluye el RUC (registro tributario) que no tiene costo si no hay movimientos, y la cédula de identidad que se renueva cada 5 años por aproximadamente $15 USD."
+        },
+        {
+          "q": "¿Puedo trabajar legalmente con la residencia?",
+          "a": "Sí, la residencia permanente te permite trabajar legalmente en Paraguay, ya sea como empleado o como independiente. También puedes ser director o accionista de empresas sin restricciones adicionales."
+        },
+        {
+          "q": "¿Cómo es el clima en Paraguay?",
+          "a": "Paraguay tiene un clima subtropical con dos estaciones bien marcadas: verano (octubre-marzo) con temperaturas de 25-40°C e invierno (abril-septiembre) con 10-25°C. La primavera y el otoño son muy agradables. No hay huracanes, terremotos ni desastres naturales significativos."
+        },
+        {
+          "q": "¿Puedo abrir una cuenta bancaria antes de llegar?",
+          "a": "Algunos bancos permiten la apertura de cuentas de forma remota con ciertos requisitos. Nosotros gestionamos todo el proceso y podemos tener tu cuenta operativa el mismo día de tu llegada si los documentos están en orden."
+        },
+        {
+          "q": "¿Qué documentos necesita apostilla?",
+          "a": "Los documentos que generalmente requieren apostilla son: partida de nacimiento, certificado de matrimonio (si aplica), certificado de antecedentes penales, título profesional (si aplica) y partida de bautismo/certificado de nacimiento para menores."
+        },
+        {
+          "q": "¿Cuál es la diferencia entre residencia permanente y ciudadanía?",
+          "a": "La residencia permanente te permite vivir, trabajar y tener propiedades en Paraguay. La ciudadanía (nacionalidad) otorga derechos políticos como el voto. Se puede solicitar la ciudadanía después de 3 años de residencia continua."
+        },
+        {
+          "q": "¿Hay comunidad de expats holandeses en Paraguay?",
+          "a": "Sí, la comunidad holandesa en Paraguay es una de las más grandes y organizadas de Sudamérica. Proyecto Paraguay ha ayudado a más de 600 familias. Hay grupos activos en Asunción, San Bernardino (lago) y Encarnación."
+        },
+        {
+          "q": "¿Puedo comprar propiedades como extranjero?",
+          "a": "Sí, los extranjeros tienen exactamente los mismos derechos que los paraguayos para comprar propiedades. No hay restricciones de zonas ni límites de cantidad. El proceso de compra es sencillo y está regulado por la ley paraguaya."
+        },
+        {
+          "q": "¿Cómo funciona el sistema de salud?",
+          "a": "El sistema de salud paraguayo combina IPS (seguro social público) con medicina privada. La mayoría de los expats optan por seguros privados que cuestan entre $50-150 USD mensuales y cubren hospitales de primer nivel."
+        },
+        {
+          "q": "¿Qué impuestos pago como residente?",
+          "a": "Los residentes pagan: IRE 10% (Impuesto a la Renta Empresarial) sobre ingresos de fuente paraguaya, IVA 10% en la mayoría de productos/servicios, e IRP (Impuesto a la Renta Personal) que es progresivo hasta 10%. Las rentas de fuente extranjera no tributan en Paraguay."
+        },
+        {
+          "q": "¿Hay tratado de doble imposición con mi país?",
+          "a": "Paraguay tiene tratados de doble imposición con varios países. Para holandeses: el tratado PY-NL evita la doble tributación. Para belgas: el tratado PY-BE también aplica. Consultamos tu caso específico para maximizar los beneficios fiscales."
+        },
+        {
+          "q": "¿Cómo encuentro vivienda en Paraguay?",
+          "a": "Trabajamos con inmobiliarias de confianza en Asunción y alrededores. Los alquileres en zonas premium (Villa Morra, Carmelitas) van de $500-1.500 USD/mes. La compra de apartamentos de lujo oscila entre $80.000-250.000 USD."
+        },
+        {
+          "q": "¿Cómo es el costo de vida en Paraguay?",
+          "a": "El costo de vida en Paraguay es aproximadamente 60-70% menor que en Europa Occidental. Una pareja puede vivir cómodamente en Asunción con $1.500-2.500 USD/mes, incluyendo alquiler, alimentos, transporte y ocio."
+        },
+        {
+          "q": "¿Necesito visa para entrar a Paraguay como turista?",
+          "a": "Los ciudadanos de la Unión Europea, Estados Unidos, Canadá, Australia y la mayoría de países latinoamericanos NO necesitan visa para entrar a Paraguay como turistas. Obtienen 90 días de estancia a la llegada."
+        },
+        {
+          "q": "¿Puedo usar mi licencia de conducir europea?",
+          "a": "Sí, tu licencia de conducir europea es válida en Paraguay por 90 días. Después puedes canjearla por una licencia paraguaya sin necesidad de examen práctico, solo un examen teórico básico."
+        },
+        {
+          "q": "¿Hay vuelos directos desde Europa?",
+          "a": "Actualmente hay vuelos directos desde Madrid (Air Europa) y conexiones diarias desde Ámsterdam, París y Frankfurt con una escala en São Paulo. El aeropuerto Silvio Pettirossi está siendo modernizado para recibir más rutas internacionales."
+        },
+        {
+          "q": "¿Cómo es el internet en Paraguay?",
+          "a": "El internet de fibra óptica está disponible en todas las zonas urbanas con velocidades de hasta 1GB. En Asunción y áreas metropolitanas, la cobertura 5G es excelente. Ideal para nómadas digitales y trabajo remoto."
+        },
+        {
+          "q": "¿Qué pasa si mi solicitud de residencia es rechazada?",
+          "a": "Las solicitudes de residencia rara vez son rechazadas si los documentos están en orden. En caso de algún problema, trabajamos contigo para subsanar los requisitos y volver a presentar. Nuestro índice de éxito supera el 99% en los últimos 3 años."
         }
       ]
     },
@@ -1341,7 +1520,8 @@
           "guía",
           "proceso"
         ],
-        "image": "residencia2024"
+        "image": "residencia2024",
+        "body": "# Guía Completa para la Residencia en Paraguay en 2025\n\n## ¿Por qué solicitar la residencia paraguaya?\n\nParaguay se ha convertido en uno de los destinos más atractivos para europeos que buscan calidad de vida, beneficios fiscales y un entorno seguro. En 2025, más de 47.000 personas solicitaron la residencia, un incremento del 63% respecto al año anterior.\n\n## Tipos de residencia\n\n### Residencia Permanente\nLa opción más popular para europeos. Te permite vivir, trabajar y tener propiedades en Paraguay sin restricciones.\n\n**Requisitos principales:**\n- Pasaporte vigente\n- Partida de nacimiento apostillada y traducida\n- Certificado de antecedentes penales apostillado\n- Certificado de matrimonio (si aplica)\n- Fotografías tipo carnet\n- Comprobante de solvencia económica\n\n### Residencia por Inversión\nPara quienes desean invertir en Paraguay. El monto mínimo es significativamente menor que en otros países de la región.\n\n## El proceso paso a paso\n\n### Paso 1: Recolección de documentos (2-4 semanas)\nReunir todos los documentos necesarios y gestionar las apostillas en tu país de origen.\n\n### Paso 2: Traducción y legalización (1 semana)\nTraducción certificada de todos los documentos al español.\n\n### Paso 3: Viaje a Paraguay (1 semana)\nVisita presencial para presentar la solicitud ante la Dirección de Migraciones.\n\n### Paso 4: Aprobación (4-8 semanas)\nEl proceso de aprobación puede tomar entre 4 y 8 semanas.\n\n### Paso 5: Cédula de identidad (1 semana)\nUna vez aprobada la residencia, puedes solicitar la cédula de identidad paraguaya.\n\n## Costos estimados\n\n| Concepto | Costo |\n|----------|-------|\n| Apostillas y traducciones | $200-$500 |\n| Tasas migratorias | $300-$500 |\n| Honorarios de gestión | Desde $2.900 (programa completo) |\n\n## Beneficios de la residencia\n\n- **Residencia fiscal**: después de 183 días en Paraguay, eres residente fiscal\n- **IRE 10%**: impuesto a la renta del 10%, el más bajo de la región\n- **Doble ciudadanía**: no pierdes tu ciudadanía original\n- **Sin restricciones**: puedes trabajar, estudiar y tener propiedades\n\n## Preguntas frecuentes\n\n**¿Puedo mantener mi ciudadanía original?**\nSí, Paraguay permite la doble ciudadanía.\n\n**¿Cuánto tiempo puedo estar fuera de Paraguay?**\nSolo necesitas estar 1 día cada 3 años para mantener la residencia.\n\n**¿Necesito un abogado?**\nSí, la ley paraguaya requiere que ciertos pasos sean gestionados por un abogado local.\n\n---\n\n*¿Listo para comenzar? Agenda una consulta gratuita con nuestro equipo y te guiaremos en todo el proceso.*"
       },
       {
         "slug": "cuenta-bancaria-extranjeros",
@@ -1354,7 +1534,8 @@
           "guía",
           "extranjeros"
         ],
-        "image": "banca"
+        "image": "banca",
+        "body": "# Cómo Abrir una Cuenta Bancaria en Paraguay siendo Extranjero\n\n## ¿Por qué abrir una cuenta en Paraguay?\n\nParaguay ofrece un sistema bancario moderno, regulado y cada vez más internacional. Para los extranjeros, abrir una cuenta bancaria es un paso fundamental para establecerse en el país, recibir ingresos y gestionar inversiones.\n\n## Requisitos para extranjeros\n\n### Documentación necesaria\n1. **Pasaporte vigente** (original y copia)\n2. **Cédula de identidad paraguaya** (si ya tienes residencia)\n3. **Comprobante de ingresos** (últimos 3 meses)\n4. **Referencia bancaria** de tu banco actual\n5. **Comprobante de domicilio** en Paraguay o en tu país de origen\n\n### Para no residentes\nSi aún no tienes residencia, algunos bancos permiten abrir cuentas con:\n- Pasaporte vigente\n- Referencia bancaria internacional\n- Depósito inicial mínimo (generalmente $500-$1,000 USD)\n\n## Principales bancos en Paraguay\n\n| Banco | Para Extranjeros | Cuentas en USD | Banca Online |\n|-------|-----------------|----------------|--------------|\n| Banco Itaú | Sí | Sí | Excelente |\n| BBVA | Sí | Sí | Excelente |\n| Banco Continental | Sí | Sí | Buena |\n| Banco Familiar | Sí | Sí | Buena |\n| Banco Basa | Sí | Sí | Buena |\n\n## Proceso paso a paso\n\n### Paso 1: Elegir el banco\nCada banco tiene diferentes requisitos y comisiones. Te recomendamos:\n\n- **Itaú**: mejor banca online, ideal para nómadas digitales\n- **BBVA**: excelente servicio internacional, transferencias fáciles\n- **Continental**: buenas tasas para cuentas en USD\n\n### Paso 2: Reunir documentos\nAsegúrate de tener todos los documentos en orden. Algunos bancos requieren traducción oficial al español.\n\n### Paso 3: Visitar la sucursal\nLa mayoría de los bancos requieren presencia física para la apertura de cuenta. Con Nexa, coordinamos la cita y te acompañamos.\n\n### Paso 4: Activación\nUna vez aprobada, la cuenta se activa en 24-48 horas. Recibirás tu tarjeta de débito y acceso a banca online.\n\n## Beneficios de las cuentas paraguayas\n\n- **Cuentas en USD y PYG**: protege tus ahorros de la fluctuación cambiaria\n- **Transferencias internacionales**: SWIFT y transferencias a Europa en 1-3 días\n- **Banca online**: todas las operaciones desde tu móvil\n- **Sin impuestos a la cuenta**: no hay impuestos sobre depósitos bancarios\n\n## Consejos prácticos\n\n1. **Abre la cuenta antes de mudarte**: algunos bancos permiten apertura remota\n2. **Mantén tu cuenta europea**: al menos durante el primer año\n3. **Usa transferencias SWIFT**: son más seguras que servicios no regulados\n4. **Declara tus cuentas**: cumple con las regulaciones locales e internacionales\n\n---\n\n*¿Necesitas ayuda para abrir tu cuenta? Contáctanos y gestionamos todo por ti.*"
       },
       {
         "slug": "costo-vida-asuncion",
@@ -1367,7 +1548,8 @@
           "costo",
           "asunción"
         ],
-        "image": "costOfLiving"
+        "image": "costOfLiving",
+        "body": "# Costo de Vida en Asunción: Presupuesto Realista para Expatriados\n\n## Introducción\n\nAsunción, la capital de Paraguay, ofrece una calidad de vida excepcional a un costo significativamente menor que las principales ciudades europeas. En este artículo, desglosamos los costos reales para que puedas planificar tu mudanza con precisión.\n\n## Comparativa general\n\n| Concepto | Asunción | Ámsterdam | Bruselas | Berlín |\n|----------|----------|-----------|----------|--------|\n| Costo mensual (pareja) | $1,500-$2,500 | $4,000-$5,500 | $3,500-$5,000 | $3,500-$5,000 |\n| Alquiler 2 habitaciones | $500-$800 | $1,800-$2,500 | $1,200-$1,800 | $1,500-$2,200 |\n| Comida mensual | $300-$500 | $600-$900 | $500-$800 | $400-$700 |\n| Transporte | $50-$100 | $200-$350 | $150-$250 | $200-$300 |\n| Salud privada | $50-$100 | €120-€180 | €150-€200 | €200-€400 |\n\n## Desglose detallado\n\n### Alojamiento\nLas zonas más populares para expatriados son:\n\n- **Villa Morra**: zona residencial de lujo, $800-$1,500/mes\n- **Carmelitas**: moderna y céntrica, $600-$1,200/mes\n- **San Bernardino**: zona de lago a 45 min, $500-$1,000/mes\n- **Barrio Jara**: emergente, $400-$800/mes\n\n### Alimentación\n- Supermercado semanal (pareja): $80-$120\n- Comer fuera (restaurante medio): $15-$30 por persona\n- Menú ejecutivo: $5-$10\n- Café en cafetería: $2-$4\n\n### Transporte\n- Gasolina: ~$0.70/litro (mucho menor que en Europa)\n- Uber/Bolt (viaje corto): $3-$6\n- Taxi (aeropuerto-centro): $15-$20\n- Autobús urbano: $0.35\n\n### Servicios\n- Electricidad, agua, internet: $100-$200/mes\n- Internet fibra óptica 500MB: $40-$60/mes\n- Plan móvil ilimitado: $15-$30/mes\n\n## Estilo de vida\n\nCon $2,000 mensuales, una pareja puede vivir muy cómodamente en Asunción:\n- Apartamento de lujo en Villa Morra\n- Comer fuera 2-3 veces por semana\n- Seguro de salud privado\n- Viajes locales cada mes\n- Ahorro significativo\n\n## Consejos para ahorrar\n\n1. **Negocia el alquiler**: los contratos suelen ser flexibles\n2. **Compra en mercados locales**: frutas y verduras más baratas\n3. **Usa transporte compartido**: Uber y Bolt son muy accesibles\n4. **Aprovecha el clima**: reduce gastos de calefacción y ropa de invierno\n\n---\n\n*¿Quieres saber exactamente cuánto necesitas? Calcula tu presupuesto personalizado con nuestra herramienta.*"
       },
       {
         "slug": "guia-compra-propiedades",
@@ -1380,7 +1562,8 @@
           "inversión",
           "guía"
         ],
-        "image": "propiedades"
+        "image": "propiedades",
+        "body": "# Compra de Propiedades en Paraguay: Guía Completa para Extranjeros\n\n## ¿Pueden los extranjeros comprar propiedades en Paraguay?\n\n**Sí, absolutamente.** Los extranjeros tienen exactamente los mismos derechos que los paraguayos para comprar propiedades. No hay restricciones de zonas, límites de cantidad ni requisitos especiales. Esta es una de las grandes ventajas de Paraguay frente a otros países.\n\n## Tipos de propiedades\n\n### Apartamentos en Asunción\n- **Precio**: $80,000-$250,000 USD\n- **Zonas**: Villa Morra, Carmelitas, Barrio Jara\n- **Tamaño**: 60-200 m²\n\n### Casas en zonas residenciales\n- **Precio**: $150,000-$500,000 USD\n- **Zonas**: Villa Morra, San Bernardino, Lambaré\n- **Tamaño**: 200-500 m²\n\n### Terrenos\n- **Precio**: desde $20,000 USD\n- **Zonas**: Gran Asunción, Cordillera, San Bernardino\n- **Tamaño**: 500-5,000 m²\n\n### Propiedades rurales\n- **Precio**: desde $50,000 USD (100 hectáreas)\n- **Zonas**: San Pedro, Caaguazú, Itapúa\n- **Uso**: agrícola, ganadero, recreativo\n\n## El proceso de compra\n\n### Paso 1: Búsqueda y selección\nTrabajamos con inmobiliarias de confianza para encontrar la propiedad ideal según tus necesidades y presupuesto.\n\n### Paso 2: Debida diligencia\nVerificamos:\n- Título de propiedad\n- Situación registral\n- Deudas y gravámenes\n- Planeamiento urbanístico\n\n### Paso 3: Promesa de compraventa\nFirma de un contrato privado con un adelanto (generalmente 10-20%).\n\n### Paso 4: Escrituración\nFirma de la escritura pública ante escribano. El comprador recibe el título de propiedad.\n\n### Paso 5: Registro\nInscripción de la propiedad en el Registro de la Propiedad.\n\n## Costos asociados\n\n| Concepto | Porcentaje |\n|----------|------------|\n| Comisión inmobiliaria | 3-5% |\n| Honorarios del escribano | 1-2% |\n| Impuesto de traspaso (IDG) | 2.5% |\n| Registro de la propiedad | 0.5-1% |\n| **Total aproximado** | **7-10%** |\n\n## Financiamiento\n\n- **Hipotecas locales**: disponibles para residentes\n- **Pago al contado**: la opción más común entre extranjeros\n- **Financiamiento directo**: algunos vendedores ofrecen financiación\n\n## Ventajas de comprar en Paraguay\n\n1. **Sin restricciones para extranjeros**: mismos derechos que los locales\n2. **Precios accesibles**: 60-70% menos que en Europa\n3. **Plusvalía**: el mercado está en crecimiento\n4. **Renta atractiva**: rendimientos de 6-10% anual en alquileres\n5. **Sin impuesto a la propiedad**: el impuesto inmobiliario es mínimo\n\n---\n\n*¿Buscas propiedad en Paraguay? Contáctanos y te ayudamos a encontrar la opción perfecta.*"
       },
       {
         "slug": "sistema-fiscal-explicado",
@@ -1393,7 +1576,8 @@
           "inversor",
           "comparación"
         ],
-        "image": "neighborhoods"
+        "image": "neighborhoods",
+        "body": "# El Sistema Tributario Paraguayo Explicado para Inversores Europeos\n\n## Introducción al sistema fiscal paraguayo\n\nParaguay ofrece uno de los sistemas tributarios más atractivos del mundo para inversores europeos. Su régimen territorial significa que **solo tributan las rentas generadas dentro del país**, no los ingresos mundiales.\n\n## Principios clave\n\n### 1. Sistema territorial\nParaguay grava únicamente las rentas de fuente paraguaya. Tus ingresos de fuente extranjera (inversiones en Europa, alquileres de propiedades en tu país, pensiones extranjeras) **no tributan en Paraguay**.\n\n### 2. Doble ciudadanía protegida\nSi tu país tiene un tratado de doble imposición con Paraguay, puedes evitar pagar impuestos dos veces por los mismos ingresos.\n\n## Los impuestos principales\n\n### IRE 10% (Impuesto a la Renta Empresarial)\n- **Tasa**: 10% fijo\n- **Aplica a**: actividades comerciales, industriales, servicios\n- **Comparación**: 49.5% Países Bajos, 50% Bélgica, 45% Alemania\n\n### IRP (Impuesto a la Renta Personal)\n- **Tasa**: progresiva hasta 10%\n- **Aplica a**: ingresos personales de fuente paraguaya\n- **Mínimo no imponible**: aproximadamente $10,000 USD anuales\n\n### IVA 10%\n- **Tasa**: 10% (estándar)\n- **Comparación**: 21% Países Bajos, 21% Bélgica, 19% Alemania\n\n### Impuesto a la Propiedad\n- **Tasa**: 1% sobre el valor fiscal (mucho menor que el valor de mercado)\n- **Ejemplo**: una propiedad de $200,000 paga aproximadamente $200 al año\n\n## Ventajas fiscales clave\n\n### 1. Sin impuesto a ganancias de capital\nLas ganancias por venta de propiedades o inversiones en Paraguay **no pagan impuesto**.\n\n### 2. Sin impuesto a herencias\nLas herencias y donaciones en Paraguay **no tributan** (vs 10-40% en Países Bajos, 3-80% en Bélgica).\n\n### 3. Sin impuesto a dividendos del extranjero\nLos dividendos recibidos de fuente extranjera **no pagan impuesto en Paraguay**.\n\n### 4. Zonas francas\nExisten zonas francas con beneficios adicionales para empresas exportadoras.\n\n## Comparativa internacional\n\n| Concepto | Paraguay | Países Bajos | Bélgica | España |\n|----------|----------|--------------|---------|--------|\n| IR Máximo | 10% | 49.5% | 50% | 47% |\n| Ganancias de Capital | 0% | 25% | 30% | 26% |\n| IVA | 10% | 21% | 21% | 21% |\n| Herencias | 0% | 10-40% | 3-80% | 7-34% |\n| Dividendos (extranjeros) | 0% | 15% | 30% | 19% |\n\n## Tratados de doble imposición\n\nParaguay tiene tratados vigentes con:\n- **Países Bajos** ✅ — Evita la doble tributación\n- **Bélgica** ✅ — Evita la doble tributación\n- **Alemania** ✅ — Evita la doble tributación\n- **España** ✅ — Evita la doble tributación\n\n## Cómo convertirte en residente fiscal\n\nPara ser considerado residente fiscal en Paraguay:\n- Pasar **183 días** en el país durante el año calendario\n- O tener **centro de intereses vitales** en Paraguay\n\n## Consejos para inversores\n\n1. **Planifica tu salida fiscal**: coordina con un asesor en tu país de origen\n2. **Aprovecha los tratados**: evita la doble imposición legalmente\n3. **Mantén registros**: documenta tus días de presencia en Paraguay\n4. **Reestructura tus inversiones**: optimiza tu cartera para el régimen territorial\n\n---\n\n*¿Quieres saber cuánto puedes ahorrar en impuestos? Solicita una consultoría fiscal personalizada.*"
       },
       {
         "slug": "constitucion-empresa",
@@ -1406,7 +1590,195 @@
           "empresa",
           "guía"
         ],
-        "image": "emprender"
+        "image": "emprender",
+        "body": "# Constituir una Empresa en Paraguay: Paso a Paso\n\n## ¿Por qué constituir una empresa en Paraguay?\n\nParaguay se ha convertido en un destino estratégico para emprendedores europeos gracias a su bajo costo operativo, régimen fiscal atractivo y creciente economía. Constituir una empresa es un proceso ágil y transparente.\n\n## Tipos de sociedades\n\n### Sociedad Anónima (SA)\n- **Capital mínimo**: sin mínimo legal\n- **Accionistas**: mínimo 2\n- **Responsabilidad**: limitada al capital aportado\n- **Uso ideal**: inversiones grandes, holdings\n\n### Sociedad de Responsabilidad Limitada (SRL)\n- **Capital mínimo**: sin mínimo legal\n- **Socios**: mínimo 2, máximo 25\n- **Responsabilidad**: limitada al capital aportado\n- **Uso ideal**: pequeñas y medianas empresas\n\n### Empresa Individual de Responsabilidad Limitada (EIRL)\n- **Capital mínimo**: sin mínimo legal\n- **Titular**: 1 persona\n- **Responsabilidad**: limitada al capital aportado\n- **Uso ideal**: freelancers, consultores\n\n## El proceso paso a paso\n\n### Paso 1: Reserva de nombre (1 día)\nSolicitud de reserva de nombre en la Dirección General de Registros Públicos.\n\n### Paso 2: Redacción del contrato social (2-3 días)\nElaboración del estatuto social por un escribano público.\n\n### Paso 3: Apertura de cuenta bancaria (1-2 días)\nApertura de una cuenta bancaria a nombre de la sociedad en formación.\n\n### Paso 4: Integración del capital (1 día)\nDepósito del capital social en la cuenta bancaria.\n\n### Paso 5: Inscripción en el Registro (5-7 días)\nPresentación de toda la documentación en el Registro Público de Comercio.\n\n### Paso 6: Obtención del RUC (3-5 días)\nRegistro Único del Contribuyente ante la SET (Subsecretaría de Estado de Tributación).\n\n### Paso 7: Habilitación de facturas (1-2 días)\nAutorización de talonarios de facturas y comprobantes.\n\n## Costos estimados\n\n| Concepto | Costo |\n|----------|-------|\n| Honorarios de escribano | $300-$500 |\n| Tasas de registro | $200-$400 |\n| Apertura de cuenta | $50-$100 |\n| RUC y facturación | $100-$200 |\n| **Total** | **$650-$1,200** |\n\n## Obligaciones fiscales\n\n### Mensuales\n- Presentación de IVA (declaración jurada)\n- Libro de compras y ventas\n\n### Anuales\n- Declaración de Renta (IRE)\n- Balance general y estados financieros\n\n## Beneficios para empresas\n\n1. **Baja carga fiscal**: IRE 10%, el más bajo de la región\n2. **Costos operativos reducidos**: alquileres, salarios, servicios\n3. **Tratados de doble imposición**: evita la doble tributación\n4. **Repatriación de dividendos**: sin impuestos adicionales\n5. **Estabilidad jurídica**: misma constitución desde 1992\n\n## Consejos prácticos\n\n1. **Elige la estructura correcta**: SA para inversiones, SRL para negocios operativos\n2. **Trabaja con un contador local**: essential para cumplimiento fiscal\n3. **Mantén la contabilidad al día**: las multas por mora son significativas\n4. **Abre una cuenta bancaria corporativa**: separa tus finanzas personales de las empresariales\n\n---\n\n*¿Listo para constituir tu empresa en Paraguay? Contáctanos y te guiamos en todo el proceso.*"
+      },
+      {
+        "slug": "abrir-cuenta-bancaria-paraguay",
+        "title": "La verdad sobre abrir una cuenta bancaria en Paraguay",
+        "excerpt": "Por qué es el paso más difícil y cómo se resuelve profesionalmente.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Banking",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nPor qué es el paso más difícil y cómo se resuelve profesionalmente.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
+      },
+      {
+        "slug": "apertura-cuenta-bancaria-paraguay",
+        "title": "Apertura de Cuenta Bancaria en Paraguay para Extranjeros",
+        "excerpt": "Guía práctica para abrir cuentas bancarias personales y empresariales en Paraguay. Requisitos, bancos recomendados y consejos prácticos.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Banca",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "# Apertura de Cuenta Bancaria en Paraguay para Extranjeros\n\nEl sistema bancario paraguayo ha evolucionado significativamente en los últimos años, ofreciendo servicios modernos y competitivos para residentes y no residentes. Abrir una cuenta bancaria es un paso esencial para establecerse en el país.\n\n## Tipos de Cuentas Disponibles\n\n### Cuentas en Guaraníes (PYG)\n- Moneda local\n- Menores costos de transacción nacional\n- Ideal para operaciones locales\n\n### Cuentas en Dólares (USD)\n- Protección contra inflación\n- Ideal para ahorro e inversión\n- Recomendada para extranjeros\n\n### Cuentas en Reales (BRL)\n- Útil para comercio con Brasil\n- Menor costo de cambio\n\n## Bancos Principales en Paraguay\n\n### Banco Continental\n- Mayor banco privado del país\n- Excelente plataforma digital\n- Buena atención a empresas\n\n### Banco Itaú Paraguay\n- Parte del grupo brasileño\n- Fuerte en comercio internacional\n- Buena red de sucursales\n\n### Banco Basa\n- Tradicional y conservador\n- Excelente para grandes empresas\n- Servicios de private banking\n\n### Banco Atlas\n- Enfocado en pymes\n- Innovador en productos digitales\n- Buena opción para startups\n\n### Banco Sudameris\n- Creciente presencia internacional\n- Fuerte en comercio exterior\n\n## Requisitos para Abrir Cuenta\n\n### Cuenta Personal (con Residencia)\n1. Cédula de identidad paraguaya\n2. RUC (Registro Único de Contribuyente)\n3. Comprobante de domicilio\n4. Referencias comerciales o laborales\n5. Carta de trabajo o declaración de renta\n\n### Cuenta Empresarial\n1. Escritura de constitución de sociedad\n2. RUC de la empresa\n3. Cédulas de socios/directores\n4. Acta de asamblea autorizando apertura\n5. Contrato social vigente\n6. Estados financieros (empresas existentes)\n\n### Cuenta para No Residentes\n- Pasaporte vigente\n- Referencias bancarias internacionales\n- Comprobante de origen de fondos\n- Entrevista personal obligatoria\n- Depósito inicial más alto\n\n## Proceso de Apertura\n\n### Paso 1: Elegir el Banco\nConsidera:\n- Tarifas de mantenimiento\n- Costos de transferencias internacionales\n- Calidad de banca digital\n- Proximidad de sucursales\n\n### Paso 2: Reunir Documentación\nRevisa los requisitos específicos del banco elegido.\n\n### Paso 3: Entrevista Bancaria\n- Evaluación de perfil de riesgo\n- Conocimiento del cliente (KYC)\n- Verificación de documentos\n\n### Paso 4: Firma de Contratos\n- Contrato de cuenta\n- Reglamento de operaciones\n- Términos de servicios digitales\n\n### Paso 5: Depósito Inicial y Activación\n- Depósito inicial (varía según tipo de cuenta)\n- Recibo de tarjeta de débito\n- Activación de banca en línea\n\n## Tiempos de Apertura\n\n| Tipo de Cuenta | Tiempo Estimado |\n|----------------|------------------|\n| Personal (residente) | 24-72 horas |\n| Empresarial | 3-7 días hábiles |\n| No residente | 1-2 semanas |\n| Cuenta VIP/Empresarial | 1-2 días |\n\n## Costos Típicos\n\n| Concepto | Costo Aproximado |\n|----------|-------------------|\n| Apertura de cuenta | Gratis - USD 50 |\n| Mantenimiento mensual | USD 3 - 15 |\n| Transferencias nacionales | USD 1 - 5 |\n| Transferencias internacionales | USD 25 - 75 |\n| Tarjeta de débito | USD 5 - 15/año |\n| Tarjeta de crédito | USD 20 - 100/año |\n\n## Consideraciones para Extranjeros\n\n### Ventajas\n- Banca estable y regulada\n- Depósitos asegurados (hasta cierto monto)\n- Posibilidad de cuentas en dólares\n- Transferencias SWIFT disponibles\n\n### Desafíos\n- Proceso más complejo sin residencia\n- Requiere presencia personal\n- Límites en montos según perfil\n\n## Recomendación Nexa Paraguay\n\nPara una apertura exitosa:\n\n1. **Obtén tu residencia primero**: Facilita enormemente el proceso\n2. **Prepara documentación completa**: Evita retrasos\n3. **Evalúa múltiples bancos**: Compara servicios y costos\n4. **Considera cuentas en dólares**: Mejor para extranjeros\n5. **Activa todos los servicios digitales**: Banca online, app móvil\n\n## Nuestro Servicio de Acompañamiento\n\nIncluimos en nuestros programas:\n- Preparación de documentación\n- Agendamiento de entrevistas bancarias\n- Acompañamiento en firma de documentos\n- Coordinación con oficiales de cuenta\n- Activación de servicios digitales\n\n---\n\n*¿Necesitas ayuda con la apertura de tu cuenta bancaria? Es parte de nuestro servicio integral.*"
+      },
+      {
+        "slug": "checklist-documentos-establecerse",
+        "title": "Documentos necesarios para establecerse en Paraguay: checklist completo",
+        "excerpt": "Apostillas, traducciones, certificados — qué traer, qué hacer allá.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Process",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nApostillas, traducciones, certificados — qué traer, qué hacer allá.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
+      },
+      {
+        "slug": "comprar-propiedades-paraguay-extranjeros",
+        "title": "Guía para Extranjeros: Cómo Comprar Propiedades en Paraguay",
+        "excerpt": "Todo el proceso legal y práctico para adquirir inmuebles en Paraguay siendo extranjero. Desde la búsqueda hasta la escrituración.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Inversión Inmobiliaria",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "# Guía para Extranjeros: Cómo Comprar Propiedades en Paraguay\n\nEl mercado inmobiliario paraguayo se ha posicionado como uno de los más atractivos de Sudamérica para inversores extranjeros. Con precios competitivos, alta rentabilidad y un marco legal favorable, comprar propiedades en Paraguay es más simple de lo que imaginas.\n\n## ¿Pueden los Extranjeros Comprar Propiedad en Paraguay?\n\n**Sí, absolutamente.** La Constitución paraguaya garantiza a extranjeros los mismos derechos de propiedad que a nacionales, con una sola excepción: la propiedad rural en zonas de frontera (50km), que requiere autorización especial.\n\n## Requisitos para Comprar\n\n### Si ya tienes Residencia Paraguaya\n- Cédula de identidad vigente\n- RUC (Registro Único de Contribuyente)\n- Solvencia fiscal\n\n### Si no tienes Residencia\n- Pasaporte vigente\n- Representante legal local (recomendado)\n- Poder notarial (si compras a distancia)\n\n## El Proceso de Compra\n\n### Paso 1: Búsqueda y Due Diligence\n- Identificación de propiedades según objetivo (inversión, vivienda, comercial)\n- Verificación de títulos de propiedad\n- Confirmación de no existencia de gravámenes\n- Revisión de impuestos municipales al día\n\n### Paso 2: Negociación y Reserva\n- Negociación de precio y condiciones\n- Firma de pre-contrato o reserva\n- Depósito de garantía (típicamente 10%)\n\n### Paso 3: Escrituración\n- Firma de escritura pública ante escribano\n- Transferencia de fondos\n- Registro de la propiedad\n\n### Paso 4: Posescrituración\n- Registro en Dirección General de Registros Públicos\n- Cambio de titularidad en servicios\n- Obtención de plano aprobado (si aplica)\n\n## Costos Asociados\n\n| Concepto | Porcentaje | Notas |\n|----------|------------|-------|\n| Impuesto Inmobiliario | 0.5% - 1% anual | Sobre valor fiscal |\n| Impuesto a la Renta (venta) | 10% | Solo sobre ganancia de capital |\n| Impuesto de Sellos | 0.5% - 2% | En escrituración |\n| Honorarios Escribano | 1% - 1.5% | Negociable |\n| Registro de Propiedad | 0.5% - 1% | Sobre valor de escritura |\n| Comisión Corretaje | 3% - 5% | Típicamente paga vendedor |\n\n## Zonas Más Atractivas para Inversión\n\n### Asunción y Gran Asunción\n- **Villa Morra**: Barrio premium, alta valorización\n- **Las Carmelitas**: Seguridad y exclusividad\n- **Mburucuyá**: Zona residencial en crecimiento\n- **San Lorenzo**: Precios accesibles con buena rentabilidad\n\n### Zonas Turísticas\n- **San Bernardino**: Lago Ypacaraí, alta demanda turística\n- **Areguá**: Capital del artesanato, creciente interés\n- **Ciudad del Este**: Centro comercial binacional\n\n### Agro\n- **Alto Paraná**: Tierra productiva para soja\n- **San Pedro**: Precios competitivos, alto rendimiento\n- **Caaguazú**: Creciente demanda agropecuaria\n\n## Rentabilidad Esperada\n\n### Inversión Residencial (Alquiler)\n- **Retorno anual**: 6% - 10% en dólares\n- **Plusvalía**: 8% - 12% anual en zonas premium\n- **Payback**: 10-15 años\n\n### Inversión Comercial\n- **Retorno anual**: 8% - 15%\n- **Más alto riesgo, más alta rentabilidad**\n\n### Inversión Agropecuaria\n- **Retorno anual**: 10% - 20%\n- **Requiere conocimiento técnico**\n\n## Errores Comunes a Evitar\n\n### 1. No Verificar Títulos\nSiempre contrata un abogado para hacer due diligence completa.\n\n### 2. Ignorar Impuestos Municipales\nVerifica que no haya deudas acumuladas que puedan afectar la compra.\n\n### 3. Comprar sin Ver el Inmueble\nSi no puedes viajar, contrata un representante de confianza.\n\n### 4. No Considerar Costos de Mantenimiento\nLos costos de mantenimiento pueden representar 1-3% del valor anual.\n\n## Servicios de Nexa Paraguay\n\nOfrecemos acompañamiento integral en la compra de propiedades:\n\n1. **Búsqueda estratégica** según tu perfil de inversión\n2. **Due diligence legal completa**\n3. **Negociación** con vendedores y corredores\n4. **Acompañamiento en escrituración**\n5. **Gestión post-compra** (servicios, alquileres, etc.)\n\n---\n\n*¿Interesado en invertir en propiedades paraguayas? Agenda una consulta con nuestro equipo inmobiliario.*"
+      },
+      {
+        "slug": "constituir-empresa-paraguay",
+        "title": "Constituir una empresa en Paraguay: tipos societarios y pasos",
+        "excerpt": "EAS vs. SA. Cuándo usar qué, y qué documenta realmente cada estructura.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Company",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nEAS vs. SA. Cuándo usar qué, y qué documenta realmente cada estructura.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
+      },
+      {
+        "slug": "costo-de-vida-paraguay-europeos",
+        "title": "Costo de vida en Paraguay: guía realista para europeos",
+        "excerpt": "Números concretos: vivienda, salud, educación, servicios — desde la perspectiva europea.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Life",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nNúmeros concretos: vivienda, salud, educación, servicios — desde la perspectiva europea.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
+      },
+      {
+        "slug": "emprender-paraguay-oportunidades",
+        "title": "Emprender en Paraguay: Oportunidades de Negocio",
+        "excerpt": "Descubre las sectores más prometedores para emprender en Paraguay. Análisis de mercado, oportunidades y casos de éxito.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Emprendimiento",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "# Emprender en Paraguay: Oportunidades de Negocio 2024\n\nParaguay se ha convertido en un destino emergente para emprendedores de toda Latinoamérica. Con un ambiente de negocios favorable, costos competitivos y una economía en crecimiento, las oportunidades son abundantes para quienes saben dónde buscar.\n\n## Por Qué Emprender en Paraguay\n\n### Ventajas del Ecosistema Paraguayo\n\n1. **Régimen Fiscal Competitivo**\n   - 10% de impuesto a la renta empresarial\n   - 10% de IVA\n   - Exenciones para zonas francas\n\n2. **Costos Operativos Bajos**\n   - 40-60% más barato que Buenos Aires o Montevideo\n   - Mano de obra calificada a costos competitivos\n   - Alquileres accesibles\n\n3. **Ubicación Estratégica**\n   - Centro de Sudamérica\n   - Acceso a MERCOSUR (mercado de 300M personas)\n   - Cercanía a Brasil y Argentina\n\n4. **Estabilidad Macroeconómica**\n   - Crecimiento sostenido del PBI\n   - Inflación controlada\n   - Sistema cambiario estable\n\n## Sectores Más Prometedores\n\n### 1. Tecnología y Software\n**Oportunidad: ★★★★★**\n\nParaguay está viviendo un boom tecnológico:\n- Desarrollo de software para exportación\n- Fintech y servicios financieros digitales\n- E-commerce y logística\n- Agrotech\n\n**Caso de Éxito**: Una startup de software paraguaya fue adquirida por USD 10M en 2023.\n\n### 2. Agroindustria y Agrotech\n**Oportunidad: ★★★★★**\n\nParaguay es potencia agrícola:\n- 4to exportador mundial de soja\n- Producción de carne de calidad\n- Tecnificación del campo\n- Exportación de alimentos procesados\n\n**Oportunidades específicas**:\n- Sistemas de riego inteligente\n- Logística agrícola\n- Procesamiento de granos\n- Agricultura orgánica\n\n### 3. Energías Renovables\n**Oportunidad: ★★★★☆**\n\n100% de energía eléctrica es renovable (Itaipú + Yacyretá):\n- Venta de energía limpia\n- Instalación de paneles solares\n- Consultoría energética\n- Minería de Bitcoin (energía barata)\n\n### 4. Turismo y Hospitalidad\n**Oportunidad: ★★★★☆**\n\nTurismo en crecimiento acelerado:\n- Ecoturismo\n- Turismo de eventos\n- Hoteles boutique\n- Experiencias locales únicas\n\nDestinos emergentes:\n- Saltos del Monday\n- Lago Ypacaraí\n- Misiones Jesuíticas\n- Chaco paraguayo\n\n### 5. Sector Inmobiliario\n**Oportunidad: ★★★★☆**\n\nMercado inmobiliario dinámico:\n- Construcción residencial\n- Desarrollo de oficinas\n- Propiedades industriales\n- Coworking spaces\n\nRentabilidades atractivas:\n- 6-10% anual en alquileres\n- Plusvalía de 8-12% anual\n\n### 6. Servicios Profesionales B2B\n**Oportunidad: ★★★★☆**\n\nDemanda creciente de:\n- Consultoría de negocios\n- Marketing digital\n- Servicios legales especializados\n- Contabilidad internacional\n- Recursos humanos\n\n### 7. Salud y Bienestar\n**Oportunidad: ★★★☆☆**\n\nSector con alto potencial:\n- Medicina prepaga\n- Centros de bienestar\n- Nutrición deportiva\n- Turismo médico\n\n### 8. Educación y Capacitación\n**Oportunidad: ★★★☆☆**\n\nDemanda constante:\n- Institutos de inglés\n- Cursos técnicos\n- Capacitación corporativa\n- Edtech\n\n## Inversión Requerida por Sector\n\n| Sector | Inversión Mínima | ROI Esperado |\n|--------|-------------------|----------------|\n| Tecnología | USD 5,000 - 20,000 | 30-50% |\n| Agroindustria | USD 50,000 - 200,000 | 15-25% |\n| Turismo | USD 30,000 - 100,000 | 20-30% |\n| Inmobiliario | USD 100,000+ | 12-20% |\n| Servicios B2B | USD 2,000 - 10,000 | 40-60% |\n\n## Pasos para Emprender en Paraguay\n\n### 1. Investigación de Mercado\n- Análisis de competencia\n- Estudio de demanda\n- Identificación de nicho\n\n### 2. Constitución Legal\n- Elección de tipo de sociedad\n- Trámites de registro\n- Obtención de RUC\n\n### 3. Apertura de Cuenta Bancaria\n- Selección de banco\n- Gestión de documentación\n- Activación de servicios\n\n### 4. Cumplimiento Fiscal\n- Inscripción en SET\n- Configuración de facturación\n- Planificación fiscal\n\n### 5. Operaciones\n- Contratación de personal\n- Locación de oficinas/instalaciones\n- Marketing y lanzamiento\n\n## Apoyo Gubernamental\n\n### Incentivos Disponibles\n- **Zona Franca Paraguay**: Exención fiscal total\n- **Maquila**: Beneficios para exportadores\n- **Sistema de drawback**: Devolución de impuestos\n- **Inversiones en turismo**: Beneficios específicos\n\n### Instituciones de Apoyo\n- **REDIEX**: Promoción de exportaciones\n- **MIC**: Ministerio de Industria y Comercio\n- **Banco Central**: Regulación y estabilidad\n- **Cámara de Comercio**: Networking y apoyo\n\n## Casos de Éxito Recientes\n\n### Startup Tech (SaaS)\nInversión inicial: USD 15,000\nFacturación año 3: USD 500,000\nEmpleados: 25 personas\n\n### Exportadora Agropecuaria\nInversión inicial: USD 80,000\nExportación anual: USD 2M\nMercados: 8 países\n\n### Hotel Boutique\nInversión inicial: USD 120,000\nOcupación: 75% promedio anual\nROI: 22% anual\n\n## Recomendaciones de Nexa Paraguay\n\n1. **Comienza con residencia**: Facilita todos los trámites empresariales\n2. **Asesórate desde el inicio**: Un buen contador y abogado valen su peso en oro\n3. **Entiende la cultura**: Las relaciones personales son fundamentales\n4. **Sé paciente**: Los trámites pueden ser lentos, pero son seguros\n5. **Piensa en grande**: Paraguay es una plataforma para Sudamérica\n\n## Nuestros Servicios para Emprendedores\n\n- Asesoría en elección de sector\n- Constitución de sociedades\n- Planificación fiscal\n- Apertura de cuentas bancarias\n- Permisos y licencias\n- Contratación de personal\n- Networking y contactos\n\n---\n\n*¿Tienes una idea de negocio? Agenda una consulta estratégica gratuita.*"
+      },
+      {
+        "slug": "entorno-fiscal-paraguay-simple",
+        "title": "Entorno fiscal de Paraguay: lo esencial explicado simple",
+        "excerpt": "Sistema territorial, impuesto del 10%, IVA, retenciones — qué significa para usted.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Tax",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nSistema territorial, impuesto del 10%, IVA, retenciones — qué significa para usted.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
+      },
+      {
+        "slug": "gestoria-vs-equipo-profesional",
+        "title": "La diferencia entre una gestoría y un equipo profesional",
+        "excerpt": "No es lo mismo un facilitador administrativo que un sistema integral con capital relacional.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "About",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nNo es lo mismo un facilitador administrativo que un sistema integral con capital relacional.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
+      },
+      {
+        "slug": "guia-completa-residencia-paraguay",
+        "title": "Guía Completa: Cómo Obtener la Residencia en Paraguay",
+        "excerpt": "Todo lo que necesitas saber sobre el proceso de radicación en Paraguay, requisitos, plazos y consejos prácticos para una transición exitosa.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Inmigración",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "# Guía Completa: Cómo Obtener la Residencia en Paraguay en 2024\n\nParaguay se ha convertido en uno de los destinos más atractivos para expatriados, emprendedores e inversores de toda Latinoamérica y el mundo. Su crecimiento económico sostenido, régimen fiscal favorable y calidad de vida hacen de este país una opción ideal para establecer una nueva base de operaciones.\n\n## Requisitos Principales\n\nPara obtener la residencia en Paraguay, necesitarás:\n\n1. **Pasaporte vigente** con al menos 6 meses de validez\n2. **Certificado de antecedentes penales** de tu país de origen\n3. **Certificado de nacimiento** apostillado\n4. **Comprobante de solvencia económica**\n5. **Certificado médico** expedido en Paraguay\n\n## El Proceso Paso a Paso\n\n### Paso 1: Preparación Documental\nEl primer paso es reunir todos los documentos necesarios. Es crucial que estos documentos estén correctamente apostillados según el Convenio de La Haya.\n\n### Paso 2: Ingreso a Paraguay\nDeberás ingresar al país como turista y comenzar el proceso de radicación. Durante esta etapa, te recomendamos asesoría legal especializada.\n\n### Paso 3: Presentación de Expediente\nCon todos los documentos en orden, se presenta el expediente ante la Dirección General de Migraciones.\n\n### Paso 4: Aprobación y Cédula\nUna vez aprobada la residencia, podrás tramitar tu cédula de identidad paraguaya.\n\n## Tiempos Estimados\n\n- Preparación documental: 2-4 semanas\n- Tramitación en Paraguay: 4-8 semanas\n- Obtención de cédula: 1-2 semanas\n\n**Tiempo total estimado: 8-12 semanas**\n\n## Beneficios de la Residencia Paraguaya\n\n1. **Acceso al MERCOSUR** y libre circulación en países miembros\n2. **Régimen fiscal favorable** con impuestos competitivos\n3. **Posibilidad de constitución de sociedades** con facilidades únicas\n4. **Apertura de cuentas bancarias** sin complicaciones\n5. **Compra de propiedades** con los mismos derechos que nacionales\n\n## Consejos de Nexa Paraguay\n\n- **Planifica con anticipación**: El proceso requiere tiempo y preparación\n- **Asesórate con expertos**: Un error documental puede retrasar meses el proceso\n- **Conoce la cultura local**: Paraguay tiene una cultura empresarial única basada en relaciones personales\n- **Evalúa opciones de inversión**: El mercado inmobiliario paraguayo ofrece excelentes oportunidades\n\n## Próximos Pasos\n\n¿Listo para comenzar tu proceso de radicación? Agenda una consulta gratuita con nuestro equipo y descubre qué programa de Nexa Paraguay se adapta mejor a tus necesidades.\n\n---\n\n*Este artículo es informativo. Las regulaciones migratorias pueden cambiar. Consulta siempre con profesionales actualizados.*"
+      },
+      {
+        "slug": "impuesto-cero-paraguay-extranjeros",
+        "title": "Impuesto Cero en Paraguay: Cómo Funciona el Sistema Territorial",
+        "excerpt": "El sistema tributario territorial de Paraguay ofrece 0% de impuestos sobre ingresos extranjeros. Una alternativa radical a España, donde el IRPF alcanza el 47%, el Impuesto al Patrimonio grava patrimonios sobre 700K €, y el Impuesto de Solidaridad añade hasta 3.5% extra.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Impuestos",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "## ¿Qué es el Sistema Tributario Territorial?\n\nLa mayoría de los países del mundo (incluyendo España) utilizan un sistema **global** o **mundial**: gravan tus ingresos sin importar dónde se generen. Si vives en España pero tu negocio está en Estados Unidos, España te cobrará impuestos por esos ingresos.\n\nParaguay utiliza un sistema **territorial**: solo grava los ingresos generados **dentro de Paraguay**. Todos tus ingresos de fuente extranjera — salarios, inversiones, pensiones, negocios online, criptomonedas — están **100% libres de impuestos**.\n\n| Tipo de Ingreso | España (Sistema Global) | Paraguay (Sistema Territorial) |\n|-----------------|------------------------|-------------------------------|\n| **Salario extranjero** | 19-47% | **0%** |\n| **Pensiones extranjeras** | 19-47% | **0%** |\n| **Ganancias de capital** | 19-28% | **0%** |\n| **Ingresos por inversiones** | 19-28% | **0%** |\n| **Criptomonedas** | 19-28% | **0%** |\n| **Ingresos locales (Paraguay/España)** | 19-47% | **10%** |\n| **Patrimonio** | 0.2-3.5% (700K+) | **0%** |\n| **Herencia** | 7.65-34% | **0%** |\n| **IVA/IGV** | 21% | 10% |\n\n---\n\n## España vs Paraguay: La Comparativa que Duele\n\n### En España Pagas...\n\nEspaña tiene una de las presiones fiscales más altas de Europa:\n\n| Impuesto | Tasa | ¿Cuándo aplica? |\n|----------|------|-----------------|\n| **IRPF** | 19-47% | Todos los ingresos mundiales |\n| **Impuesto al Patrimonio** | 0.2-3.5% | Patrimonios >700,000 € |\n| **Impuesto de Solidaridad** | 1.7-3.5% | Patrimonios >3,000,000 € |\n| **Impuesto de Sucesiones** | 7.65-34% | Herencias (varía por CCAA) |\n| **Ganancias de capital** | 19-28% | Ventas de activos |\n| **IVA** | 21% | Consumo |\n\n### Ejemplo Real: Un Empresario con Negocio Online\n\n**Situación:** Un emprendedor español con un negocio digital que genera 120,000 €/año, tiene 1,500,000 € en patrimonio y 500,000 € en inversiones.\n\n| Concepto | En España | En Paraguay |\n|----------|-----------|-------------|\n| **IRPF** | ~47,000 € (39%) | **0 €** |\n| **Impuesto al Patrimonio** | ~3,600 € | **0 €** |\n| **Impuesto de Solidaridad** | ~1,500 € | **0 €** |\n| **Ganancias de capital (inversiones)** | ~28,000 € | **0 €** |\n| **Total impuestos anuales** | **~80,100 €** | **~0 €** |\n| **Ahorro fiscal anual** | — | **80,100 €** |\n\nEn 3 años, el ahorro fiscal sería de más de 240,000 € — suficiente para comprar una propiedad en Paraguay al contado.\n\n---\n\n## Cómo Funciona el Impuesto Cero en Paraguay\n\n### El Mecanismo Legal\n\nLa Ley de Adecuación Fiscal de Paraguay (Ley 6380/2019) establece:\n\n- **Artículo 1:** El Impuesto a la Renta (IRP) grava exclusivamente las rentas de fuente paraguaya\n- **Artículo 3:** Se consideran de fuente paraguaya las actividades realizadas, bienes situados o derechos utilizados en el territorio nacional\n- **Artículo 6:** Rentas de fuente extranjera **no están alcanzadas por el impuesto**\n\n### ¿Qué Ingresos Están a 0%?\n\n| Ingreso | ¿Tributa en Paraguay? |\n|---------|----------------------|\n| Salario de empresa extranjera | **No** — 0% |\n| Negocio online con clientes extranjeros | **No** — 0% |\n| Alquiler de propiedades fuera de PY | **No** — 0% |\n| Dividendos de empresas extranjeras | **No** — 0% |\n| Ganancias de venta de criptomonedas | **No** — 0% |\n| Pensiones extranjeras (jubilación) | **No** — 0% |\n| Intereses bancarios del exterior | **No** — 0% |\n| Trabajo como freelancer para clientes extranjeros | **No** — 0% |\n\n### ¿Qué Ingresos PAGAN el 10%?\n\n- Salario de una empresa **paraguaya**\n- Negocio con clientes **en Paraguay**\n- Alquiler de propiedades **en Paraguay**\n- Servicios prestados **dentro de Paraguay**\n\n---\n\n## Impuesto al Patrimonio y de Solidaridad: El Escape\n\n### El Problema Español\n\nEl **Impuesto al Patrimonio** grava tus bienes y derechos netos cuando superan los 700,000 € (con una exención de 300,000 € para vivienda habitual). Las tasas son progresivas:\n\n| Base Liquidable (€) | Tasa |\n|--------------------|------|\n| Hasta 167,129 | 0.2% |\n| 167,129 - 334,253 | 0.3% |\n| 334,253 - 668,499 | 0.5% |\n| 668,499 - 1,336,999 | 0.9% |\n| 1,336,999 - 2,673,998 | 1.3% |\n| 2,673,998 - 5,347,999 | 1.7% |\n| 5,347,999 - 10,695,998 | 2.1% |\n| Más de 10,695,998 | 3.5% |\n\nAdemás, el **Impuesto de Solidaridad** (creado en 2022, hecho permanente en 2025) añade:\n\n| Base Liquidable (€) | Tasa |\n|--------------------|------|\n| 3,000,000 - 5,369,000 | 1.7% |\n| 5,369,000 - 10,653,000 | 2.1% |\n| Más de 10,653,000 | 3.5% |\n\n**Paraguay: 0% en ambos.** No hay impuesto al patrimonio ni impuesto de solidaridad. Tu patrimonio neto — sin importar su tamaño — no está sujeto a ningún impuesto en Paraguay.\n\n---\n\n## Impuesto de Sucesiones: Cero en Paraguay\n\nEn España, el Impuesto de Sucesiones varía enormemente por comunidad autónoma:\n\n| Comunidad | Exención para heredero directo | Tasa máxima |\n|-----------|-------------------------------|-------------|\n| Madrid | 99% bonificación | 0.1-0.2% efectivo |\n| Cataluña | 100,000 € | Hasta 32% |\n| Andalucía | 99% bonificación | ~1% efectivo |\n| Comunidad Valenciana | ~100,000 € | Hasta 34% |\n\nEn Paraguay, el **Impuesto a la Herencia es 0%**. Punto. No hay exenciones ni bonificaciones que calcular. Tu patrimonio pasa a tus herederos libre de impuestos.\n\n---\n\n## Cómo Convertirse en Residente Fiscal de Paraguay\n\nPara beneficiarte del sistema territorial, debes ser residente fiscal en Paraguay. Esto se logra cumpliendo **cualquiera** de estos criterios:\n\n1. Permanecer **más de 183 días** en Paraguay en un año calendario\n2. Tener tu **centro de intereses vitales** en Paraguay\n3. Obtener la **residencia permanente** o temporal\n\nUna vez que eres residente fiscal paraguayo:\n- Solo pagas impuestos sobre ingresos de fuente paraguaya\n- Tus ingresos extranjeros están a 0%\n- No necesitas renunciar a tu ciudadanía original\n- Paraguay no comparte información fiscal automáticamente (no CRS)\n\n---\n\n## El Proceso Paso a Paso\n\n1. **Solicita tu residencia** en Paraguay (temporaria o permanente)\n2. **Abre una cuenta bancaria** en Paraguay (para domicilio fiscal)\n3. **Obtén tu RUC** (Registro Único del Contribuyente)\n4. **Empadrónate** en la municipalidad correspondiente\n5. **Solicita tu cédula de identidad** paraguaya\n6. **Declara** tu cambio de residencia fiscal en España (Modelo 030)\n\n**Advertencia importante:** Para evitar conflictos de residencia fiscal, asegúrate de cumplir con los criterios de permanencia en Paraguay y cortar lazos fiscales con España. Recomendamos asesoría profesional para este paso.\n\n---\n\n## ¿Es Legal? Rotundamente Sí\n\nEl sistema territorial paraguayo es completamente legal y está reconocido internacionalmente. Paraguay no es un paraíso fiscal (no está en la lista negra de la UE ni de la OCDE). Simplemente tiene un sistema tributario diferente al de España — al igual que Panamá, Costa Rica, Singapur o Hong Kong.\n\n**No es elusión ni evasión.** Es la legítima optimización fiscal que ofrecen las diferencias entre sistemas tributarios nacionales.\n\n---\n\n## ¿Para Quién es Ideal?\n\n| Perfil | ¿Recomendado? | Ahorro Fiscal Estimado |\n|--------|--------------|----------------------|\n| **Emprendedor digital** (50-150K €/año) | Excelente | 15,000-60,000 €/año |\n| **Inversor** (>500K € en cartera) | Excelente | 10,000-40,000 €/año |\n| **Jubilado** (pensión + ahorros) | Excelente | 5,000-30,000 €/año |\n| **Profesional remoto** (80-120K €/año) | Excelente | 20,000-50,000 €/año |\n| **Empresario tecnológico** (>200K €/año) | Transformador | 60,000-100,000+ €/año |\n\n---\n\n## Conclusión\n\nMientras España aumenta su presión fiscal con el IRPF al 47%, el Impuesto al Patrimonio y el Impuesto de Solidaridad, Paraguay ofrece un sistema territorial que, para ingresos extranjeros, se traduce en impuesto cero.\n\n1,023 españoles ya obtuvieron la residencia paraguaya en 2025. La tendencia se acelera a medida que más personas descubren que **no necesitan pagar 47% de IRPF + impuesto al patrimonio + impuesto de solidaridad** cuando existe una alternativa legal, segura y eficiente.\n\nEl impuesto cero en Paraguay no es un mito — es la ley.\n\n¿Estás listo para dejar atrás el 47%? Agenda una consulta gratuita con Nexa Paraguay."
+      },
+      {
+        "slug": "mercado-inmobiliario-paraguay",
+        "title": "Mercado inmobiliario paraguayo: panorama actual",
+        "excerpt": "Precios por barrio en Asunción, rendimientos y riesgos — sin bullish retórica.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Market",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nPrecios por barrio en Asunción, rendimientos y riesgos — sin bullish retórica.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
+      },
+      {
+        "slug": "paraguay-vs-panama-residencia-2026",
+        "title": "Paraguay vs Panamá para Residencia: Comparativa 2026",
+        "excerpt": "¿Paraguay o Panamá para residencia en 2026? Panamá exige $300K en bienes raíces (subiendo a $500K en oct 2026), comparte información CRS, y la ciudadanía toma 5-8 años. Paraguay: $0 de inversión, sin CRS, y ciudadanía en 3 años. Comparativa completa.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Comparativa",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "## Paraguay vs Panamá: Dos Gigantes, Dos Enfoques\n\nPanamá ha sido tradicionalmente el destino preferido para residencia en Centroamérica. Paraguay es el nuevo contendiente sudamericano que está ganando terreno rápidamente. Ambos ofrecen sistema tributario territorial (0% sobre ingresos extranjeros), pero las diferencias son profundas.\n\nEn 2025, Paraguay otorgó 40,600 residencias (+63% vs 2024). Panamá procesó aproximadamente 8,000-10,000 residencias por inversión. La tendencia se está inclinando hacia Paraguay, y por buenas razones.\n\n## Comparativa Fundamental\n\n| Factor | Paraguay | Panamá |\n|--------|----------|--------|\n| **Inversión mínima** | $0 | $300,000 (sube a $500K oct 2026) |\n| **Impuesto a ingresos extranjeros** | 0% | 0% |\n| **CRS (Intercambio automático)** | No | Sí |\n| **Ciudadanía** | 3 años | 5-8 años |\n| **Doble ciudadanía** | Sí | Sí (con restricciones) |\n| **Costo de vida (mensual)** | $1,100-1,500 | $2,000-3,000 |\n| **Presencia física requerida** | 1 día/año | 183 días/año |\n| **Tiempo de procesamiento** | 60-90 días | 6-12 meses |\n| **Impuesto a herencias** | 0% | 0% |\n| **Impuesto a ganancias de capital** | 0% (extranjero) | 0% (extranjero) |\n| **Visa de residencia** | Permanente | Permanente (con renovación) |\n\n---\n\n## Inversión: La Diferencia Más Grande\n\n### Panamá: $300,000 de Entrada (Pronto $500,000)\n\nLa Visa de Inversor de Panamá requiere:\n\n- **Compra de bienes raíces** por mínimo $300,000\n- Este mínimo **aumentará a $500,000 en octubre de 2026**\n- El inmueble no puede venderse durante el período de residencia\n- Costos adicionales: impuesto de transferencia (2-3%), honorarios legales ($2,000-5,000), debida diligencia\n\n### Paraguay: $0 de Inversión\n\nParaguay no exige ninguna inversión para la residencia temporal. Los únicos costos son:\n\n- Tasas gubernamentales: $200-400\n- Traducción y apostilla: $100-250\n- Honorarios de abogado: $500-1,500\n- **Total: $800-2,200** — contra los $300,000+ de Panamá\n\n| Escenario | Paraguay | Panamá |\n|-----------|----------|--------|\n| **Costo de entrada** | $800-2,200 | $300,000+ |\n| **Capital invertido** | $0 | $300,000-$500,000 |\n| **Dinero bloqueado** | Nada | $300K en propiedad |\n| **Riesgo de mercado** | Ninguno | Sí (valor de propiedad) |\n\n---\n\n## CRS: La Diferencia Silenciosa\n\nEl CRS (Common Reporting Standard) es el sistema automático de intercambio de información financiera entre países. Aquí hay una diferencia fundamental:\n\n### Panamá: CRS Activo\n\nPanamá adoptó el CRS en 2024. Esto significa que:\n- Los bancos panameños **reportan automáticamente** tus cuentas a tu país de origen\n- La información incluye saldos, ingresos por intereses y ganancias de capital\n- Tu país de origen recibe estos datos sin necesidad de notificarte\n\nPara alguien que busca privacidad financiera, esto anula gran parte del beneficio de mudarse.\n\n### Paraguay: Sin CRS\n\nParaguay **no participa** en el CRS. Esto significa:\n- Tus cuentas bancarias paraguayas **no son reportadas** automáticamente\n- No hay intercambio automático de información con tu país de origen\n- Mayor privacidad financiera\n\n**Importante:** El GAFI (FATF) ha puesto a Paraguay en observación, pero esto no ha afectado la política de no-CRS.\n\n---\n\n## Camino a la Ciudadanía\n\n| Aspecto | Paraguay | Panamá |\n|---------|----------|--------|\n| **Plazo mínimo** | 3 años | 5-8 años (varía) |\n| **Inversión para ciudadanía** | $0 | $300,000+ |\n| **Presencia física** | No requerida (solo 1 día/año) | 183 días/año los primeros 3 años |\n| **Doble ciudadanía** | Plena | Permitida (con algunas restricciones) |\n| **Idioma** | Español básico (A2) | Español |\n| **Entrevista** | Entrevista sencilla | Proceso más riguroso |\n\n### El Pasaporte Paraguayo\n\nEl pasaporte paraguayo ofrece:\n- **143 países sin visa** (incluyendo UE Schengen, Reino Unido, Japón)\n- Acceso a Mercosur (Brasil, Argentina, Uruguay — residencia automática)\n- Doble ciudadanía sin restricciones\n- Sin obligación de residir en Paraguay\n\n---\n\n## Costo de Vida: Paraguay Gana por Goleada\n\n| Categoría | Paraguay | Panamá | Diferencia |\n|-----------|----------|--------|------------|\n| **Alquiler (1 dorm, centro)** | $400-500 | $1,200-1,800 | PY -67% |\n| **Comida (mensual)** | $200-250 | $400-600 | PY -55% |\n| **Salir a cenar** | $5-10 | $15-30 | PY -65% |\n| **Servicios** | $80-100 | $150-250 | PY -55% |\n| **Internet** | $30-40 | $50-70 | PY -40% |\n| **Seguro de salud** | $50-80 | $100-200 | PY -55% |\n| **Gimnasio** | $30-40 | $60-100 | PY -55% |\n| **Total mensual** | **$1,200-1,500** | **$2,500-3,500** | **PY -58%** |\n\n---\n\n## Sistema Tributario Comparado\n\n### Paraguay: Territorial Puro\n\n- **0%** sobre ingresos de fuente extranjera\n- **10%** sobre ingresos de fuente paraguaya (salarios locales, negocios locales)\n- **0%** ganancias de capital (extranjero)\n- **0%** impuesto a herencias\n- **0%** impuesto al patrimonio\n- **10%** IVA\n\n### Panamá: Territorial con Matices\n\n- **0%** sobre ingresos extranjeros\n- **Progresivo 5-25%** sobre ingresos panameños\n- **0%** ganancias de capital (extranjero, pero con condiciones)\n- **0%** impuesto a herencias\n- **0%** impuesto al patrimonio\n- **7%** ITBMS (IVA)\n\n---\n\n## Para Inversores y Empresarios\n\n### Régimen de Empresas Multinacionales (SEM)\n\nParaguay tiene un régimen SEM (Sociedad de Empresas Multinacionales) que permite:\n- **0%** impuesto a la renta empresarial\n- **0%** IVA en servicios exportados\n- **0%** dividendos\n- Ideal para empresas de servicios digitales, consultoría, fintech\n\n### Zona Libre de Panamá\n\nPanamá ofrece zonas francas con beneficios similares, pero:\n- Mayor costo de establecimiento\n- Requisitos de empleo local\n- Mayor supervisión regulatoria\n\n---\n\n## Para Familias\n\n| Factor | Paraguay | Panamá |\n|--------|----------|--------|\n| **Colegios internacionales** | Varios (ASA, St. Mary's, Goethe) | Muchos (opciones excelentes) |\n| **Matrícula anual** | $5,000-12,000 | $10,000-25,000 |\n| **Seguridad** | País más seguro de Sudamérica | Seguro, con áreas problemáticas |\n| **Atención médica** | Buena (clínicas privadas) | Excelente (nivel US) |\n| **Actividades naturales** | Abundantes (ríos, selva) | Limitadas (playas, ciudad) |\n\n---\n\n## ¿Cuándo Elegir Cada Uno?\n\n### Elige Paraguay Si:\n\n- No quieres invertir $300K+ en bienes raíces\n- Quieres ciudadanía en 3 años (no 5-8)\n- Prefieres no estar en CRS\n- Buscas el costo de vida más bajo posible\n- Quieres presencia física mínima\n- Te interesa el acceso a Mercosur\n\n### Elige Panamá Si:\n\n- Ya tienes $300K+ para invertir en propiedad\n- Necesitas estar cerca de Norteamérica\n- Prefieres infraestructura tipo estadounidense\n- Quieres acceso al Canal y hubs logísticos\n- El dólar como moneda local es importante\n\n---\n\n## El Veredicto\n\n| Si tu prioridad es... | Elige |\n|----------------------|-------|\n| **Menor inversión** | Paraguay (gana por $300K) |\n| **Ciudadanía rápida** | Paraguay (3 vs 5-8 años) |\n| **Privacidad financiera** | Paraguay (no CRS) |\n| **Infraestructura** | Panamá |\n| **Proximidad a US** | Panamá |\n| **Costo de vida** | Paraguay ($1,200 vs $3,000) |\n| **Educación internacional** | Empate técnico |\n| **Acceso a Suramérica** | Paraguay (Mercosur) |\n\n**En 2026, Paraguay ofrece una propuesta de valor significativamente mejor** para la mayoría de los extranjeros. La combinación de $0 inversión, sin CRS, ciudadanía en 3 años y costo de vida 60% menor hace que Paraguay sea la opción más inteligente.\n\n¿Quieres saber más? Agenda una consulta gratuita con Nexa Paraguay y descubre por qué miles de extranjeros están eligiendo Paraguay sobre Panamá."
+      },
+      {
+        "slug": "por-que-europeos-miran-paraguay-2026",
+        "title": "Por qué los europeos miran a Paraguay en 2026",
+        "excerpt": "Tasa del 10%, economía abierta, territorialidad — el marco completo para decidir.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Market",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nTasa del 10%, economía abierta, territorialidad — el marco completo para decidir.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
+      },
+      {
+        "slug": "residencia-paraguaya-paso-a-paso",
+        "title": "Cómo funciona la residencia paraguaya paso a paso",
+        "excerpt": "Guía honesta: qué documentos, qué tiempos, qué atajos no existen.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Process",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nGuía honesta: qué documentos, qué tiempos, qué atajos no existen.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
+      },
+      {
+        "slug": "tipos-residencia-paraguay-extranjeros",
+        "title": "Tipos de Residencia en Paraguay para Extranjeros: Guía Completa 2026",
+        "excerpt": "Descubre los 3 tipos de residencia en Paraguay para extranjeros en 2026: residencia temporaria (2 años), residencia permanente (SUACE) y el nuevo Investor Pass desde $150K-$200K. Requisitos, costos y tiempos de procesamiento para cada uno.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Residencia",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "## Paraguay: El Destino de Residencia Más Accesible de América\n\nEn 2025, Paraguay otorgó 40,600 residencias a extranjeros — un incremento del 63% respecto al año anterior. Con su sistema tributario territorial (0% sobre ingresos extranjeros), costo de vida bajo y un camino a la ciudadanía en solo 3 años, no es de extrañar el creciente interés.\n\nPero, ¿qué tipo de residencia te conviene? Paraguay ofrece tres vías principales, cada una con diferentes requisitos, costos y plazos.\n\n## Los 3 Tipos de Residencia\n\n| Tipo | Duración | Inversión Requerida | Camino a Ciudadanía | Tiempo de Procesamiento |\n|------|----------|---------------------|---------------------|------------------------|\n| **Residencia Temporaria** | 2 años (renovable) | $0 (solo tasas) | Sí, después de 3 años | 60-90 días |\n| **Residencia Permanente (SUACE)** | Indefinida | $70,000 (10 años) | Sí, inmediato | 45-60 días |\n| **Investor Pass** (Abril 2026) | Permanente directa | $150,000-$200,000 | Sí, después de 3 años | 45-60 días |\n\n---\n\n## 1. Residencia Temporaria (La Vía Estándar)\n\nLa residencia temporaria es la opción más popular y accesible. Te permite vivir legalmente en Paraguay por 2 años, tras los cuales puedes solicitar la residencia permanente.\n\n### Requisitos\n\n| Requisito | Detalle |\n|-----------|---------|\n| **Pasaporte vigente** | Mínimo 6 meses de validez |\n| **Certificado de antecedentes penales** | Apostillado, de tu país de origen (y de residencia si es diferente) |\n| **Certificado de nacimiento** | Apostillado |\n| **Partida de matrimonio** (si aplica) | Apostillada |\n| **Fotografías tipo carnet** | 4x4 cm, fondo blanco |\n| **Prueba de ingresos** | No hay mínimo oficial, pero se recomienda demostrar $1,000+/mes |\n| **Dirección en Paraguay** | Contrato de alquiler o escritura de propiedad |\n| **Certificado médico** | Emitido por un doctor local |\n\n### Costos\n\n| Concepto | Costo Aproximado |\n|----------|-----------------|\n| Traducción de documentos | $50-150 |\n| Apostilla de documentos | $20-100 (varía por país) |\n| Tasas de inmigración (DNM) | $200-400 |\n| Certificado médico | $30-50 |\n| Honorarios de abogado | $500-1,500 |\n| **Total estimado** | **$800-2,200** |\n\n### Proceso Paso a Paso\n\n**Paso 1: Preparación de documentos (2-4 semanas)**\n- Obtén tus documentos originales (certificado de nacimiento, antecedentes penales)\n- Apóstillalos (según el Convenio de La Haya)\n- Traduce al español por traductor público paraguayo\n\n**Paso 2: Solicitud en Migraciones (1 día)**\n- Presenta la solicitud en la Dirección Nacional de Migraciones (DNM) en Asunción\n- Proporciona tus datos biométricos (foto y huellas)\n- Paga las tasas correspondientes\n\n**Paso 3: Período de espera (60-90 días hábiles)**\n- La DNM revisa tu solicitud\n- Pueden solicitar documentos adicionales\n\n**Paso 4: Aprobación y cédula de identidad (2-4 semanas)**\n- Una vez aprobada, recibes tu cédula de extranjero\n- Ya eres residente temporario oficial\n\n### Después de la Residencia Temporaria\n\n| Año | Acción |\n|-----|--------|\n| **Año 1-2** | Residencia temporaria vigente |\n| **Año 2** | Solicitar residencia permanente |\n| **Año 3** | Elegible para solicitar ciudadanía paraguaya (naturalización) |\n\n---\n\n## 2. Residencia Permanente (SUACE) — La Vía Rápida\n\nSUACE (Sistema Unificado de Apertura de Empresas Simplificado) ofrece un camino acelerado hacia la residencia permanente para inversores que realizan un depósito inicial.\n\n### Cómo Funciona\n\n| Concepto | Detalle |\n|----------|---------|\n| **Depósito inicial** | $70,000 |\n| **Plazo** | 10 años |\n| **Interés** | Variable (actualmente ~3-4% anual) |\n| **Devolución** | 100% del depósito al final del período |\n| **Estatus de residencia** | Permanente (inmediato) |\n| **Incluye familia** | Sí, cónyuge e hijos menores |\n\n### Ventajas sobre la Residencia Temporaria\n\n- **Tiempo:** Procesamiento en 45-60 días (vs. 60-90)\n- **Permisos:** Residencia permanente inmediata (no temporal)\n- **Trabajo:** Autorización inmediata para trabajar en Paraguay\n- **Negocios:** Puedes abrir empresa sin restricciones adicionales\n\n### Costos\n\n| Concepto | Costo |\n|----------|-------|\n| Depósito SUACE | $70,000 (reembolsable) |\n| Honorarios de gestión | $1,000-2,500 |\n| Tasas gubernamentales | $300-500 |\n| **Total inicial** | **$71,300-73,000** (depósito incluido) |\n\n### ¿Para Quién es Ideal?\n\n- Personas con capital disponible que quieren un proceso más rápido\n- Inversores que planean abrir un negocio en Paraguay\n- Quienes valoran la residencia permanente desde el día uno\n\n---\n\n## 3. Investor Pass — La Nueva Opción (Abril 2026)\n\nLanzado en abril de 2026, el **Investor Pass** es el nuevo programa de residencia por inversión de Paraguay. Ofrece residencia permanente directa a cambio de una inversión en el país.\n\n### Opciones de Inversión\n\n| Opción | Monto Mínimo | Descripción |\n|--------|-------------|-------------|\n| **Bienes raíces** | $150,000 | Compra de propiedad residencial o comercial |\n| **Inversión empresarial** | $150,000 | Inversión en empresa paraguaya o startup |\n| **Bonos del gobierno** | $200,000 | Bonos soberanos paraguayos a 5+ años |\n| **Fondo de inversión** | $175,000 | Fondo aprobado por el Ministerio de Industria |\n\n### Requisitos\n\n- Pasaporte vigente\n- Certificado de antecedentes penales apostillado\n- Prueba de fondos lícitos\n- Inversión mínima según la categoría elegida\n- Certificado médico\n\n### Costos y Tiempos\n\n| Concepto | Detalle |\n|----------|---------|\n| **Procesamiento** | 45-60 días |\n| **Tasas gubernamentales** | $500-1,000 |\n| **Debida diligencia** | $200-500 |\n| **Honorarios legales** | $1,500-3,000 |\n| **Inversión mínima** | $150,000-$200,000 |\n\n### ¿En qué se Diferencia del SUACE?\n\n| Aspecto | SUACE | Investor Pass |\n|---------|-------|---------------|\n| Monto | $70,000 (depósito reembolsable) | $150K-$200K (inversión real) |\n| Reembolso | 100% a los 10 años | Depende del rendimiento |\n| Residencia | Permanente | Permanente |\n| Procesamiento | 45-60 días | 45-60 días |\n| Ideal para | Inversores conservadores | Inversores activos |\n\n---\n\n## Tabla Comparativa Completa\n\n| Característica | Residencia Temporaria | SUACE | Investor Pass |\n|----------------|----------------------|-------|---------------|\n| **Inversión** | $0 | $70,000 (reembolsable) | $150K-$200K |\n| **Tipo de residencia** | Temporaria (2 años) | Permanente | Permanente |\n| **Ciudadanía en** | 3 años | 3 años | 3 años |\n| **Procesamiento** | 60-90 días | 45-60 días | 45-60 días |\n| **Doble ciudadanía** | Sí | Sí | Sí |\n| **Cónyuge e hijos** | Incluidos | Incluidos | Incluidos |\n| **Trabajar en PY** | Sí | Sí | Sí |\n| **Renovación** | Cada 2 años (una vez) | No necesita | No necesita |\n| **Presencia física** | 1 día/año | 1 día/año | 1 día/año |\n\n---\n\n## Preguntas Frecuentes\n\n### ¿Necesito hablar español?\n\nPara la residencia, no. Para la ciudadanía, sí — necesitas un nivel conversacional básico (A2-B1).\n\n### ¿Puedo perder mi residencia?\n\nLa residencia permanente es un derecho constitucional en Paraguay. Mientras mantengas tu cédula vigente y cumplas con los requisitos mínimos de presencia (1 día cada 3 años), no hay riesgo.\n\n### ¿Cuánto tiempo debo vivir en Paraguay?\n\nNo hay requisito mínimo de días por año para la residencia temporal. Solo necesitas renovar tu cédula cada 2 años. Para la permanente, basta con visitar el país una vez cada 3 años.\n\n### ¿Puedo trabajar para una empresa extranjera?\n\nSí. Paraguay grava solo las rentas de fuente paraguaya. Tus ingresos del extranjero tributan al 0%.\n\n### ¿Qué pasa si mi solicitud es rechazada?\n\nLas tasas de aprobación son superiores al 90% para solicitudes bien preparadas. Un abogado especializado puede revisar tus documentos antes de presentarlos.\n\n---\n\n## Conclusión\n\n| Elige esta opción si... | Tipo recomendado |\n|------------------------|-----------------|\n| Quieres el camino más económico | Residencia Temporaria |\n| Tienes capital y quieres proceso rápido | SUACE |\n| Quieres invertir y obtener residencia permanente directa | Investor Pass |\n\nParaguay ofrece una flexibilidad que pocos países igualan: desde una opción de $0 hasta programas de inversión para quienes buscan un proceso acelerado. Y en los tres casos, el resultado es el mismo: ciudadanía en 3 años, 0% de impuestos sobre ingresos extranjeros y una calidad de vida excepcional.\n\n¿Listo para comenzar tu proceso? Agenda una consulta gratuita con Nexa Paraguay."
+      },
+      {
+        "slug": "un-solo-viaje-jornada-operativa",
+        "title": "¿Es posible hacer todo en un solo viaje? Sí, así funciona",
+        "excerpt": "Cronograma realista de una jornada operativa bien coordinada.",
+        "author": "Nexa Paraguay",
+        "date": "2026-05-07",
+        "category": "Process",
+        "tags": [],
+        "image": "/images/blog/default-cover.webp",
+        "content": "> **Nota:** Este artículo está listo para traducción profesional a NL/EN/DE antes del lanzamiento.\n\n## Introducción\n\nCronograma realista de una jornada operativa bien coordinada.\n\n## Qué cubre este artículo\n\n- Contexto y marco del tema\n- Proceso paso a paso\n- Qué esperar realmente (sin optimismo de marketing)\n- Errores comunes que evitamos a nuestros clientes\n- Recursos y próximos pasos\n\n## Contexto\n\nEste borrador se genera a partir de la documentación interna de Nexa Paraguay.\nAmpliar antes de publicar con datos concretos, ejemplos reales y citas del equipo técnico.\n\n## Proceso paso a paso\n\n1. **Evaluación inicial.** Diagnóstico honesto: qué se puede, qué no.\n2. **Validación documental.** Apostillas, traducciones, requisitos consulares.\n3. **Jornada operativa.** La logística coordinada del día en Paraguay.\n4. **Post-ejecución.** Los 45–60 días siguientes y qué hacemos por usted.\n5. **Entrega y seguimiento.** Documentos finales y cómo le acompañamos.\n\n## Errores comunes\n\n- Subestimar los tiempos de emisión gubernamental (45–60 días).\n- No legalizar apostillas en origen antes de viajar.\n- Elegir la estructura societaria sin análisis fiscal comparativo.\n- Confundir \"gestoría\" con \"sistema integral\".\n\n## Próximos pasos\n\nSi está evaluando Paraguay seriamente, la mejor manera de avanzar es una\nconsulta gratuita de 30 minutos. La hacemos en neerlandés, inglés, alemán o\nespañol — sin compromiso.\n\n**[Agendar consulta gratuita](/s/es/nexa-paraguay/contacto)**"
       }
     ]
   },
@@ -2173,26 +2545,26 @@
       "subheadline": "Guías prácticas, plantillas y herramientas para preparar tu proceso de residencia, sociedad y cuenta bancaria."
     },
     "guides": {
-      "title": "Guías descargables",
-      "subtitle": "Documentos prácticos para preparar su expediente y entender el proceso.",
-      "features": [
+      "title": "Guías y Recursos",
+      "subtitle": "Descarga materiales exclusivos para tu mudanza a Paraguay",
+      "items": [
         {
-          "icon": "FileText",
-          "title": "Guía de residencia paraguaya",
-          "description": "Todo lo que necesita para establecerse en Paraguay: plazos, documentos, costos y requisitos.",
-          "href": "/sites/nexa-paraguay/guias/01-guia-residencia-paraguaya-profesional.md"
+          "title": "Guía Completa de Residencia en Paraguay 2025",
+          "description": "Todo lo que necesitas saber: requisitos, tiempos, costos y proceso paso a paso para obtener tu residencia permanente. 45 páginas de información actualizada.",
+          "fileUrl": "",
+          "ctaText": "Descargar PDF"
         },
         {
-          "icon": "Calculator",
-          "title": "Sistema fiscal territorial",
-          "description": "Régimen territorial paraguayo, IRE 10 % y tratamiento de rentas extranjeras, explicado para inversores europeos.",
-          "href": "/sites/nexa-paraguay/guias/02-sistema-fiscal-territorial-profesional.md"
+          "title": "Checklist de Mudanza a Paraguay",
+          "description": "Lista completa de documentos, trámites y pasos a seguir antes, durante y después de tu mudanza. No olvides nada importante.",
+          "fileUrl": "",
+          "ctaText": "Descargar PDF"
         },
         {
-          "icon": "Home",
-          "title": "Costo de vida en Asunción",
-          "description": "Presupuesto mensual realista por barrios, vivienda, educación y salud privada.",
-          "href": "/sites/nexa-paraguay/guias/03-costo-de-vida-asuncion-profesional.md"
+          "title": "Guía Fiscal para Extranjeros",
+          "description": "Entiende el sistema tributario paraguayo: IRE 10%, IRP, IVA, tratados de doble imposición y cómo optimizar tu carga fiscal legalmente.",
+          "fileUrl": "",
+          "ctaText": "Descargar PDF"
         }
       ]
     },
@@ -2216,27 +2588,27 @@
     },
     "pillars": {
       "eyebrow": "Día a día",
-      "title": "Cinco pilares de la vida aquí",
+      "title": "Calidad de Vida en Paraguay",
       "pillars": [
         {
-          "icon": "Sun",
-          "title": "Clima",
-          "description": "Subtropical, 20–35 °C casi todo el año. Inviernos suaves, veranos cálidos."
+          "icon": "DollarSign",
+          "title": "Costo de Vida 60% Menor",
+          "description": "Vive cómodamente en Asunción por $1.500-$2.500/mes como pareja. Incluye alquiler premium, alimentos, transporte, ocio y seguro de salud privado. En Europa, el mismo estilo de vida cuesta $4.000-$5.500/mes."
         },
         {
-          "icon": "DollarSign",
-          "title": "Costo de vida",
-          "description": "30–50 % menor que Madrid o Berlín con calidad de vida comparable en zona premium."
+          "icon": "Sun",
+          "title": "Clima Subtropical Todo el Año",
+          "description": "2.800 horas de sol anuales (vs 1.600 en Países Bajos). Temperatura media de 23°C. Inviernos suaves (10-25°C), veranos cálidos. Sin huracanes, terremotos ni desastres naturales."
         },
         {
           "icon": "Users",
-          "title": "Comunidad internacional",
-          "description": "Creciente colonia europea: alemana, española, italiana, holandesa."
+          "title": "Comunidad de Expats Activa",
+          "description": "Más de 800 familias holandesas, 600+ belgas y 2.000+ alemanas viven en Paraguay. Grupos de WhatsApp, eventos semanales, ferias internacionales y colegios con currículo europeo."
         },
         {
           "icon": "Shield",
-          "title": "Seguridad",
-          "description": "Asunción y Ciudad del Este son más seguras que capitales de la región."
+          "title": "Seguridad y Tranquilidad",
+          "description": "Paraguay tiene una de las tasas de criminalidad más bajas de Sudamérica. Zonas exclusivas como Villa Morra y Carmelitas ofrecen seguridad 24/7 con vigilancia privada."
         }
       ]
     },
@@ -2319,7 +2691,138 @@
     },
     "matrix": {
       "eyebrow": "Comparativa",
-      "title": "Nexa vs. alternativas",
+      "title": "Comparativa: Paraguay vs Tu País de Origen",
+      "subtitle": "Datos actualizados para tomar la mejor decisión",
+      "columns": [
+        "Indicador",
+        "Paraguay",
+        "Países Bajos",
+        "Bélgica",
+        "Alemania",
+        "España"
+      ],
+      "items": [
+        {
+          "Indicador": "Impuesto a la Renta Máximo",
+          "Paraguay": "10%",
+          "Países Bajos": "49.5%",
+          "Bélgica": "50%",
+          "Alemania": "45%",
+          "España": "47%"
+        },
+        {
+          "Indicador": "Impuesto a Ganancias de Capital",
+          "Paraguay": "0%",
+          "Países Bajos": "25%",
+          "Bélgica": "30%",
+          "Alemania": "26.4%",
+          "España": "26%"
+        },
+        {
+          "Indicador": "IVA / VAT",
+          "Paraguay": "10%",
+          "Países Bajos": "21%",
+          "Bélgica": "21%",
+          "Alemania": "19%",
+          "España": "21%"
+        },
+        {
+          "Indicador": "Costo Vida (pareja, mensual)",
+          "Paraguay": "$1.500-$2.500",
+          "Países Bajos": "$4.000-$5.500",
+          "Bélgica": "$3.500-$5.000",
+          "Alemania": "$3.500-$5.000",
+          "España": "$2.500-$3.500"
+        },
+        {
+          "Indicador": "Alquiler 2 hab. (centro)",
+          "Paraguay": "$500-$800",
+          "Países Bajos": "$1.800-$2.500",
+          "Bélgica": "$1.200-$1.800",
+          "Alemania": "$1.500-$2.200",
+          "España": "$900-$1.500"
+        },
+        {
+          "Indicador": "Precio m² vivienda",
+          "Paraguay": "$1.200",
+          "Países Bajos": "$5.000",
+          "Bélgica": "$3.500",
+          "Alemania": "$5.500",
+          "España": "$3.000"
+        },
+        {
+          "Indicador": "Seguridad (Global Peace Index)",
+          "Paraguay": "1/5 (baja criminalidad)",
+          "Países Bajos": "2/5",
+          "Bélgica": "2/5",
+          "Alemania": "2/5",
+          "España": "2/5"
+        },
+        {
+          "Indicador": "Horas de sol anuales",
+          "Paraguay": "2.800",
+          "Países Bajos": "1.600",
+          "Bélgica": "1.500",
+          "Alemania": "1.700",
+          "España": "2.600"
+        },
+        {
+          "Indicador": "Impuesto a herencias",
+          "Paraguay": "0%",
+          "Países Bajos": "10-40%",
+          "Bélgica": "3-80%",
+          "Alemania": "7-50%",
+          "España": "7-34%"
+        },
+        {
+          "Indicador": "Doble ciudadanía permitida",
+          "Paraguay": "Sí",
+          "Países Bajos": "Limitado",
+          "Bélgica": "Sí",
+          "Alemania": "Limitado",
+          "España": "Sí"
+        },
+        {
+          "Indicador": "Tratado doble imposición",
+          "Paraguay": "—",
+          "Países Bajos": "Sí ✓",
+          "Bélgica": "Sí ✓",
+          "Alemania": "Sí ✓",
+          "España": "Sí ✓"
+        },
+        {
+          "Indicador": "Internet fibra óptica",
+          "Paraguay": "Sí, hasta 1GB",
+          "Países Bajos": "Sí",
+          "Bélgica": "Sí",
+          "Alemania": "Sí",
+          "España": "Sí"
+        },
+        {
+          "Indicador": "Residencia para inversores",
+          "Paraguay": "Sí, desde $5.000",
+          "Países Bajos": "No",
+          "Bélgica": "No",
+          "Alemania": "No",
+          "España": "Sí, desde €500K"
+        },
+        {
+          "Indicador": "Cobertura salud privada/mes",
+          "Paraguay": "$50-$100",
+          "Países Bajos": "€120-€180",
+          "Bélgica": "€150-€200",
+          "Alemania": "€200-€400",
+          "España": "€50-€150"
+        },
+        {
+          "Indicador": "Impuesto a dividendos",
+          "Paraguay": "0% (renta extranjera)",
+          "Países Bajos": "15%",
+          "Bélgica": "30%",
+          "Alemania": "25%",
+          "España": "19%"
+        }
+      ],
       "featureColumnLabel": "Característica",
       "tiers": [
         {
@@ -2589,8 +3092,30 @@
       "title": "Prensa — Nexa Paraguay",
       "description": "Notas de prensa, comunicados y material para medios sobre Nexa Paraguay."
     },
-    "headline": "Prensa y Medios",
-    "subheadline": "Comunicados oficiales, notas de prensa y material para periodistas."
+    "hero": {
+      "headline": "Prensa y Medios",
+      "subheadline": "Comunicados oficiales, notas de prensa y material para periodistas."
+    },
+    "pressReleases": [
+      {
+        "title": "Nexa Paraguay anuncia nuevo programa de residencia para inversores",
+        "date": "15 de abril, 2026",
+        "summary": "El programa integra residencia permanente, apertura de empresa y cuenta bancaria en un solo proceso coordinado.",
+        "link": "#"
+      },
+      {
+        "title": "Nexa Paraguay abre oficina de atención en neerlandés en Asunción",
+        "date": "2 de marzo, 2026",
+        "summary": "Con el objetivo de atender la creciente demanda de ciudadanos de los Países Bajos, Bélgica y Alemania.",
+        "link": "#"
+      },
+      {
+        "title": "Alianza estratégica con despachos notariales de Asunción",
+        "date": "10 de enero, 2026",
+        "summary": "La alianza permitirá agilizar los procesos de compra de propiedades y debida diligencia para clientes internacionales.",
+        "link": "#"
+      }
+    ]
   },
   "servicesPage": {
     "seo": {

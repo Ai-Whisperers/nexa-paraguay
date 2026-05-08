@@ -2,6 +2,7 @@ import React from 'react'
 import { resolveImage } from './content'
 import { theme } from '../theme'
 import { SectionComponentProps } from '../types'
+import { useRouter } from 'next/router'
 
 const c = theme.colors, r = theme.radii, s = theme.spacing, sz = theme.sizes
 
@@ -38,6 +39,9 @@ export function FaqSection({ pageContent, data }: SectionComponentProps) {
 export function BlogSection({ pageContent, data, images }: SectionComponentProps) {
   const d = data || pageContent || {}
   const posts = d.posts || []
+  const router = useRouter()
+  const pathParts = router.asPath.split('/').filter(Boolean)
+  const locale = (['es', 'en', 'nl', 'de'].includes(pathParts[0]) ? pathParts[0] : 'es')
   if (!posts.length) return null
   return (
     <section style={{ padding: s.section }}>
@@ -53,7 +57,7 @@ export function BlogSection({ pageContent, data, images }: SectionComponentProps
                   {post.date && <span style={{ fontSize:'0.8rem',color:c.accent,fontWeight:600 }}>{post.date}</span>}
                   <h3 style={{ fontSize:'1.05rem',fontWeight:700,color:c.primary,margin:'0.5rem 0' }}>{post.title}</h3>
                   {post.excerpt && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5,marginBottom:'0.75rem' }}>{post.excerpt}</p>}
-                  {post.slug && <a href={`/blog/${post.slug}`} style={{ color:c.accent,fontWeight:700,fontSize:'0.85rem',textDecoration:'none',borderBottom:`2px solid ${c.accent}` }}>Leer más →</a>}
+                  {post.slug && <a href={`/${locale}/blog/${post.slug}`} style={{ color:c.accent,fontWeight:700,fontSize:'0.85rem',textDecoration:'none',borderBottom:`2px solid ${c.accent}` }}>Leer más →</a>}
                 </div>
               </article>
             )
@@ -352,6 +356,103 @@ export function GallerySection({ pageContent, data, images }: SectionComponentPr
             )
           })}
         </div>
+      </div>
+    </section>
+  )
+}
+
+
+// ── FAQ with Search ──
+export function FaqSearchSection({ pageContent, data }: SectionComponentProps) {
+  const d = data || pageContent || {}
+  const allItems = d.items || []
+  const [open, setOpen] = React.useState<number | null>(null)
+  const [search, setSearch] = React.useState('')
+  const items = search ? allItems.filter((item: any) => {
+    const q = (item.q || item.pregunta || item.question || item.title || '').toLowerCase()
+    const a = (item.a || item.respuesta || item.answer || item.description || item.body || '').toLowerCase()
+    return q.includes(search.toLowerCase()) || a.includes(search.toLowerCase())
+  }) : allItems
+  return (
+    <section style={{ padding: s.section, background: c.bg }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'1rem',textAlign:'center' }}>{d.title}</h2>}
+        <div style={{ marginBottom:'1.5rem', position:'relative' }}>
+          <input type="text" placeholder={d.searchPlaceholder || 'Buscar preguntas...'} value={search} onChange={e => setSearch(e.target.value)} style={{ width:'100%',padding:'0.85rem 1rem 0.85rem 2.5rem',border:`1px solid ${c.border}`,borderRadius:r.full,fontSize:'0.95rem',outline:'none',background:c.white }} />
+          <span style={{ position:'absolute',left:'1rem',top:'50%',transform:'translateY(-50%)',color:c.textMuted }}>\ud83d\udd0d</span>
+        </div>
+        <p style={{ fontSize:'0.85rem',color:c.textMuted,marginBottom:'1rem',textAlign:'center' }}>{items.length} de {allItems.length} preguntas</p>
+        {items.map((item: any, i: number) => {
+          const isOpen = open === i
+          const question = item.q || item.pregunta || item.question || item.title
+          const answer = item.a || item.respuesta || item.answer || item.description || item.body
+          if (!question || !answer) return null
+          return (
+            <div key={i} style={{ marginBottom: '0.5rem', border: `1px solid ${c.border}`, borderRadius: r.md, overflow: 'hidden', background: c.white }}>
+              <button onClick={() => setOpen(isOpen ? null : i)} style={{ width:'100%', padding:'1rem 1.25rem', border:'none', background:'none', cursor:'pointer', display:'flex', justifyContent:'space-between', alignItems:'center', fontWeight:700, color:c.primary, fontSize:'0.95rem', textAlign:'left' }}>
+                <span>{question}</span>
+                <span style={{ color: c.accent, fontSize:'1.2rem', transition:'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'none' }}>\u25be</span>
+              </button>
+              {isOpen && <div style={{ padding:'0 1.25rem 1.25rem', color: c.text, fontSize:'0.9rem', lineHeight:1.7, borderTop:`1px solid ${c.border}` }}>{answer}</div>}
+            </div>
+          )
+        })}
+        {items.length === 0 && <p style={{ textAlign:'center',color:c.textMuted,fontSize:'0.95rem' }}>No se encontraron preguntas. <button onClick={() => setSearch('')} style={{ background:'none',border:'none',color:c.accent,cursor:'pointer',fontWeight:700,textDecoration:'underline' }}>Limpiar b\u00fasqueda</button></p>}
+      </div>
+    </section>
+  )
+}
+
+
+// ── Contact Form ──
+interface FormData {
+  nombre: string; email: string; telefono: string; pais: string; servicio: string; mensaje: string
+}
+export function ContactFormSection({ pageContent, data }: SectionComponentProps) {
+  const d = data || pageContent || {}
+  const [form, setForm] = React.useState<FormData>({ nombre:'', email:'', telefono:'', pais:'', servicio:'', mensaje:'' })
+  const [sent, setSent] = React.useState(false)
+  const handleChange = (field: keyof FormData) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm({...form, [field]: e.target.value})
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    try {
+      const res = await fetch('/api/contact', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(form) })
+      if (res.ok) setSent(true)
+    } catch {}
+  }
+  if (sent) return (
+    <section style={{ padding: s.section }}>
+      <div style={{ maxWidth: sz.contentForm, margin:'0 auto', textAlign:'center' }}>
+        <div style={{ fontSize:'3rem', marginBottom:'1rem' }}>\u2705</div>
+        <h2 style={{ fontSize:'1.5rem',fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{d.successTitle || '\u00a1Mensaje enviado!'}</h2>
+        <p style={{ color:c.textMuted }}>{d.successMessage || 'Te contactaremos en las pr\u00f3ximas 24 horas.'}</p>
+      </div>
+    </section>
+  )
+  return (
+    <section style={{ padding: s.section }}>
+      <div style={{ maxWidth: sz.contentForm, margin:'0 auto' }}>
+        {d.title && <h2 style={{ fontSize:'clamp(1.3rem,2.5vw,1.8rem)',fontWeight:700,color:c.primary,textAlign:'center',marginBottom:'1.5rem' }}>{d.title}</h2>}
+        <form onSubmit={handleSubmit} style={{ display:'flex',flexDirection:'column',gap:'1rem' }}>
+          <div style={{ display:'grid',gridTemplateColumns:'1fr 1fr',gap:'1rem' }}>
+            <input type="text" placeholder={d.namePlaceholder || 'Nombre completo'} value={form.nombre} onChange={handleChange('nombre')} required style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem' }} />
+            <input type="email" placeholder={d.emailPlaceholder || 'Correo electr\u00f3nico'} value={form.email} onChange={handleChange('email')} required style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem' }} />
+          </div>
+          <div style={{ display:'grid',gridTemplateColumns:'1fr 1fr',gap:'1rem' }}>
+            <input type="tel" placeholder={d.phonePlaceholder || 'Tel\u00e9fono (WhatsApp)'} value={form.telefono} onChange={handleChange('telefono')} style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem' }} />
+            <select value={form.pais} onChange={handleChange('pais')} style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem', background:c.white }}>
+              <option value="">{d.countryPlaceholder || 'Pa\u00eds de origen'}</option>
+              <option>Pa\u00edses Bajos</option><option>B\u00e9lgica</option><option>Alemania</option><option>Espa\u00f1a</option><option>Francia</option><option>Reino Unido</option><option>Otro</option>
+            </select>
+          </div>
+          <select value={form.servicio} onChange={handleChange('servicio')} style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem', background:c.white }}>
+            <option value="">{d.servicePlaceholder || 'Servicio de inter\u00e9s'}</option>
+            <option>Residencia Permanente</option><option>Programa Business</option><option>Programa Inversor</option><option>Compra de Tierras</option><option>Apertura de Cuenta Bancaria</option><option>Asesor\u00eda General</option>
+          </select>
+          <textarea placeholder={d.messagePlaceholder || 'Tu mensaje...'} value={form.mensaje} onChange={handleChange('mensaje')} rows={4} style={{ padding:s.input, border:`1px solid ${c.border}`, borderRadius:r.md, fontSize:'0.9rem', resize:'vertical', fontFamily:'inherit' }} />
+          <button type="submit" style={{ padding:'1rem', background:c.primary, color:c.white, borderRadius:r.full, fontWeight:700, fontSize:'1rem', border:'none', cursor:'pointer' }}>{d.submitText || 'Enviar mensaje'}</button>
+          <p style={{ fontSize:'0.75rem', color:c.textLight, textAlign:'center' }}>{d.privacyNote || 'Tus datos est\u00e1n seguros. No compartimos informaci\u00f3n con terceros.'}</p>
+        </form>
       </div>
     </section>
   )

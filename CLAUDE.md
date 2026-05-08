@@ -74,3 +74,17 @@ Requires `NODE_AUTH_TOKEN` for `@ai-whisperers/client-kit` (if building with unp
 - Nexa's primary domain (nexaparaguay.com) still points to Shopify — needs DNS A record to 72.61.44.159
 - GA4 measurement ID: G-XE49GLEP34
 - See `docs/00-architecture/ARCHITECTURE.md` for the Core-to-Client bridge explanation
+
+## WhatsApp AI Bot Setup
+
+| Item | Value |
+|------|-------|
+| Bridge URL | https://whatsapp-ai.sunstein.cloud |
+| Nexa client instance | `client-nexa-paraguay-5138` (phone: 595982515138) |
+| Mode | `ventas` (sales) — auto-qualifies leads |
+| Personality | Loaded with full FAQ, programs, tax data, qualification flow |
+| Evolution instance | `nexa-paraguay` |
+| QR scan image | `public/qr-nexa-whatsapp.png` |
+| **NEXT STEP** | Team must scan QR from WhatsApp (Settings → Linked Devices) |
+
+After QR scan: AI responds in EN/NL/DE/ES, qualifies leads (hot/warm/cold), books consultations. See `docs/08-integrations/whatsapp-ai-bridge.md`.

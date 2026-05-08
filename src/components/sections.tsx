@@ -289,14 +289,60 @@ export function CtaBanner({ pageContent }: SectionComponentProps) {
 
 export function TaxCalculatorSection({ pageContent }: SectionComponentProps) {
   const c = pageContent.taxCalculator || {}
+  const [income, setIncome] = React.useState('');
+  const [sourceCountry, setSourceCountry] = React.useState('netherlands');
+  const [showResult, setShowResult] = React.useState(false);
   if (!c.title) return null
+  const taxRates: Record<string, {name: string, rate: number}> = {
+    netherlands: {name: 'Países Bajos / Nederland', rate: 49.5},
+    belgium: {name: 'Bélgica / België', rate: 53.5},
+    germany: {name: 'Alemania / Deutschland', rate: 47.5},
+    uk: {name: 'Reino Unido / UK', rate: 45},
+    spain: {name: 'España', rate: 47},
+    us: {name: 'Estados Unidos / USA', rate: 37},
+  }
+  const pi = parseFloat(income) || 0
+  const eu = sourceCountry ? Math.round(pi * (taxRates[sourceCountry].rate / 100)) : 0
+  const py = Math.round(pi * 0.10)
+  const sv = eu - py
+  const sr = pi > 0 ? Math.round((sv / eu) * 100) : 0
   return (
     <section style={{ padding: theme.spacing.section, background: theme.colors.primary, color: theme.colors.white }}>
       <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
         <h2 style={{ fontSize: 'clamp(1.4rem,2.5vw,2rem)', fontWeight: 700, marginBottom: '0.5rem' }}>{c.title}</h2>
         <p style={{ color: theme.colors.accent, fontSize: '1rem', marginBottom: '1.5rem' }}>{c.subtitle}</p>
         <div style={{ padding: '2rem', background: theme.colors.overlay, borderRadius: theme.radii.md }}>
-<p style={{ opacity: 0.6, fontSize: '0.9rem', fontStyle: 'italic' }}>Calculadora próximamente.</p>
+          <div style={{ marginBottom: '1rem' }}>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, textAlign: 'left' }}>{c.incomeLabel || 'Ingreso anual (USD)'}</label>
+            <input type="number" value={income} onChange={e => { setIncome(e.target.value); setShowResult(false); }}
+              placeholder="100,000"
+              style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)', color: '#fff', fontSize: '1rem' }} />
+          </div>
+          <div style={{ marginBottom: '1.5rem' }}>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, textAlign: 'left' }}>{c.countryLabel || 'País de origen'}</label>
+            <select value={sourceCountry} onChange={e => { setSourceCountry(e.target.value); setShowResult(false); }}
+              style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)', color: '#fff', fontSize: '1rem' }}>
+              {Object.entries(taxRates).map(([k, v]) => (
+                <option key={k} value={k} style={{background: '#1B2A4A', color: '#fff'}}>{v.name}</option>
+              ))}
+            </select>
+          </div>
+          <button onClick={() => setShowResult(true)}
+            style={{ width: '100%', padding: '0.85rem 2rem', background: theme.colors.accent, color: theme.colors.primary, fontWeight: 700, fontSize: '1rem', border: 'none', borderRadius: theme.radii.full, cursor: 'pointer', marginBottom: '1rem' }}>
+            {c.ctaText || 'Calcular ahorro'}
+          </button>
+          {showResult && pi > 0 && (
+            <div>
+              <div style={{ padding: '1rem', background: 'rgba(201,169,110,0.15)', borderRadius: theme.radii.md, marginBottom: '0.75rem' }}>
+                <p style={{ color: theme.colors.accent, fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.25rem' }}>{c.yourSavings || 'Tu ahorro estimado:'} <span style={{fontSize: '1.4rem'}}>${sv.toLocaleString()}/año</span></p>
+                <p style={{ opacity: 0.8, fontSize: '0.85rem' }}>{sr}% {c.lessTax || 'menos en impuestos'} — {c.comparisonText || `Pagarías $${eu.toLocaleString()} en ${taxRates[sourceCountry]?.name.split('/')[0]} vs $${py.toLocaleString()} en Paraguay`}</p>
+              </div>
+              <p style={{ opacity: 0.5, fontSize: '0.75rem', marginTop: '0.5rem' }}>{c.disclaimer || '* Estimación basada en tasas impositivas marginales máximas. Consulta con un asesor fiscal.'}</p>
+            </div>
+          )}
+          {showResult && pi <= 0 && (
+            <p style={{ color: '#ff6b6b', fontSize: '0.9rem' }}>{c.enterIncome || 'Ingresa un monto válido para calcular.'}</p>
+          )}
         </div>
       </div>
     </section>

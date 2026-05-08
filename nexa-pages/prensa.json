@@ -1,4 +1,5 @@
 {
+  "id": "prensa",
   "slug": "prensa",
   "titleKey": "Prensa — Nexa Paraguay",
   "descriptionKey": "Notas de prensa, comunicados y material para medios sobre Nexa Paraguay.",
@@ -11,7 +12,12 @@
     {
       "id": "hero",
       "variant": "minimal",
-      "content": "prensa"
+      "content": "prensa.hero"
+    },
+    {
+      "id": "press-releases",
+      "variant": "list",
+      "content": "prensa.pressReleases"
     },
     {
       "id": "footer",
