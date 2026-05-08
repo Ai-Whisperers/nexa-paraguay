@@ -120,7 +120,7 @@
 
 | # | Idea | Status | Detail |
 |---|------|--------|--------|
-| 53 | **Multi-step booking form** | ⬜ Todo | Program selection → contact info → preferred date → submit. |
+| 53 | **Multi-step booking form** | ✅ Done | `BookingFormSection.tsx` — 3 steps (program→contact→confirm). Routes at `/{locale}/agenda`. Registered in SectionsRenderer. Posts to `/api/contact`. |
 | 54 | **Exit-intent popup** | ⬜ Todo | "Download Paraguay guide" email capture. |
 | 55 | **A/B test hero CTA** | ⬜ Todo | "Get Started" vs "Book a Free Call" vs "Download Guide". |
 | 56 | **Social proof counter** | ⬜ Todo | "X families relocated through Nexa". |
