@@ -16,59 +16,6 @@
       "tagline": "",
       "whatsapp": ""
     },
-    "differentiators": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "eyebrow": "Ons verschil",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "pillars": [
-        {
-          "icon": "Users",
-          "title": "Multidisciplinair team",
-          "description": "Advocaten, accountants, notarissen en financieel adviseurs in coördinatie."
-        },
-        {
-          "icon": "Shield",
-          "title": "Relationeel kapitaal",
-          "description": "Institutionele toegang opgebouwd met banken, notarissen en autoriteiten."
-        },
-        {
-          "icon": "Clock",
-          "title": "Tijd als waarde",
-          "description": "Wij verdichten tot één dag wat anders meerdere reizen zou vergen."
-        }
-      ],
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "tagline": "",
-      "title": "Wat ons onderscheidt",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "faqPage": "",
     "footer": "",
     "founderPage": "",
@@ -376,43 +323,43 @@
           "icon": "Users",
           "title": "Multidisciplinair team",
           "description": "Advocaten, accountants, notarissen en financieel adviseurs in coördinatie.",
-          "badge": "Our difference"
+          "badge": "Ons verschil"
         },
         {
           "icon": "Shield",
           "title": "Relationeel kapitaal",
           "description": "Institutionele toegang opgebouwd met banken, notarissen en autoriteiten.",
-          "badge": "Our difference"
+          "badge": "Ons verschil"
         },
         {
           "icon": "Clock",
           "title": "Tijd als waarde",
           "description": "Wij verdichten tot één dag wat anders meerdere reizen zou vergen.",
-          "badge": "Our difference"
+          "badge": "Ons verschil"
         },
         {
           "icon": "Package",
           "title": "Eén programma",
           "description": "Verblijfsvergunning, vennootschap en bankrekening geïntegreerd.",
-          "badge": "Why clients choose us"
+          "badge": "Ons verschil"
         },
         {
           "icon": "Plane",
           "title": "Eén reis",
           "description": "Alle persoonlijke afhandelingen in één gecoördineerde dag.",
-          "badge": "Why clients choose us"
+          "badge": "Ons verschil"
         },
         {
           "icon": "Users",
           "title": "Eén team",
           "description": "Advocaten, accountants, notarissen en financieel adviseurs.",
-          "badge": "Why clients choose us"
+          "badge": "Ons verschil"
         },
         {
           "icon": "Shield",
           "title": "Transparante prijs",
           "description": "Alles inbegrepen. Geen verborgen kosten.",
-          "badge": "Why clients choose us"
+          "badge": "Ons verschil"
         }
       ],
       "placeholders": "",
@@ -2793,13 +2740,13 @@
       "contactPage": "",
       "ctaPrimaryHref": "/s/nl/nexa-paraguay/contacto",
       "ctaPrimaryText": "Plan uw gratis consult",
-      "ctaSecondaryHref": "/s/nl/nexa-paraguay/programas",
-      "ctaSecondaryText": "Bekijk programma's",
+      "ctaSecondaryHref": "/servicios",
+      "ctaSecondaryText": "Bekijk diensten",
       "faqPage": "",
       "footer": "",
       "founderPage": "",
       "glossaryPage": "",
-      "headline": "Je verhuizing naar Paraguay, met de juiste begeleiding vanaf dag één.",
+      "headline": "Jouw verhuizing naar Paraguay, vereenvoudigd.",
       "home": "",
       "intakeWizardPage": "",
       "landingEmpresa": "",
@@ -2818,365 +2765,18 @@
       "seprealadAttestation": "",
       "servicesPage": "",
       "siteName": "",
-      "subheadline": "Negen diensten, één team. Kies wat je nodig hebt — verblijf, bankzaken, vastgoed of het volledige pakket. Wij maken het persoonlijk.",
+      "subheadline": "Verblijf, bank, onroerend goed en vestiging. Kies wat je nodig hebt, wij regelen de rest.",
       "tagline": "",
       "trustBadges": [
-        "A-la-carte diensten",
         "8–12 weken",
-        "Vaste prijs"
+        "Vaste prijs",
+        "Persoonlijke begeleiding"
       ],
       "whatsapp": "",
       "whyCountryPage": "",
       "dutchNote": ""
     },
     "home": "",
-    "intakeWizard": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "steps": [
-        {
-          "key": "goal",
-          "question": "Wat is uw hoofddoel bij verhuizing naar Paraguay?",
-          "options": [
-            {
-              "value": "residency",
-              "label": "Verblijfsvergunning krijgen"
-            },
-            {
-              "value": "business",
-              "label": "Bedrijf oprichten"
-            },
-            {
-              "value": "investor",
-              "label": "Investeren in Paraguay"
-            },
-            {
-              "value": "land",
-              "label": "Grond kopen"
-            }
-          ]
-        },
-        {
-          "key": "income",
-          "question": "Hoe genereert u momenteel uw inkomen?",
-          "options": [
-            {
-              "value": "employed",
-              "label": "Werknemer"
-            },
-            {
-              "value": "self-employed",
-              "label": "Zelfstandig / freelance"
-            },
-            {
-              "value": "founder",
-              "label": "Oprichter / ondernemer"
-            },
-            {
-              "value": "investor",
-              "label": "Investeerder"
-            },
-            {
-              "value": "retired",
-              "label": "Gepensioneerd"
-            }
-          ]
-        },
-        {
-          "key": "needs",
-          "question": "Wat heeft u naast verblijf nodig?",
-          "options": [
-            {
-              "value": "residency-only",
-              "label": "Alleen verblijf"
-            },
-            {
-              "value": "company-and-bank",
-              "label": "Vennootschap + bankrekening"
-            },
-            {
-              "value": "company-plus-advisory",
-              "label": "Vennootschap + bank + 12 maanden advies"
-            },
-            {
-              "value": "land-only",
-              "label": "Alleen grondaankoop"
-            }
-          ]
-        },
-        {
-          "key": "timeline",
-          "question": "Wanneer wilt u beginnen?",
-          "options": [
-            {
-              "value": "asap",
-              "label": "Zo snel mogelijk"
-            },
-            {
-              "value": "quarter",
-              "label": "Volgend kwartaal"
-            },
-            {
-              "value": "year",
-              "label": "Binnen het jaar"
-            },
-            {
-              "value": "researching",
-              "label": "Alleen onderzoek"
-            }
-          ]
-        }
-      ],
-      "tagline": "",
-      "tierLabels": {
-        "aboutPage": "",
-        "base": {
-          "aboutPage": "",
-          "beneluxPage": "",
-          "blog": "",
-          "caseStudiesPage": "",
-          "comparisonPage": "",
-          "complianceDisclaimer": "",
-          "contactPage": "",
-          "faqPage": "",
-          "footer": "",
-          "founderPage": "",
-          "glossaryPage": "",
-          "home": "",
-          "intakeWizardPage": "",
-          "landingEmpresa": "",
-          "landingInversor": "",
-          "landingLifestyle": "",
-          "landingTrust": "",
-          "name": "Paraguay Base",
-          "navigation": "",
-          "pitch": "Permanente verblijfsvergunning + ID. Eenvoudigste pakket.",
-          "placeholders": "",
-          "prensa": "",
-          "privacyPage": "",
-          "processPage": "",
-          "programasPage": "",
-          "qualityOfLifePage": "",
-          "resourcesPage": "",
-          "seo": "",
-          "seprealadAttestation": "",
-          "servicesPage": "",
-          "siteName": "",
-          "tagline": "",
-          "whatsapp": "",
-          "whyCountryPage": ""
-        },
-        "beneluxPage": "",
-        "blog": "",
-        "business": {
-          "aboutPage": "",
-          "beneluxPage": "",
-          "blog": "",
-          "caseStudiesPage": "",
-          "comparisonPage": "",
-          "complianceDisclaimer": "",
-          "contactPage": "",
-          "faqPage": "",
-          "footer": "",
-          "founderPage": "",
-          "glossaryPage": "",
-          "home": "",
-          "intakeWizardPage": "",
-          "landingEmpresa": "",
-          "landingInversor": "",
-          "landingLifestyle": "",
-          "landingTrust": "",
-          "name": "Paraguay Business",
-          "navigation": "",
-          "pitch": "Verblijf + vennootschap + bankrekening. Meest gekozen programma.",
-          "placeholders": "",
-          "prensa": "",
-          "privacyPage": "",
-          "processPage": "",
-          "programasPage": "",
-          "qualityOfLifePage": "",
-          "resourcesPage": "",
-          "seo": "",
-          "seprealadAttestation": "",
-          "servicesPage": "",
-          "siteName": "",
-          "tagline": "",
-          "whatsapp": "",
-          "whyCountryPage": ""
-        },
-        "caseStudiesPage": "",
-        "comparisonPage": "",
-        "complianceDisclaimer": "",
-        "contactPage": "",
-        "faqPage": "",
-        "footer": "",
-        "founderPage": "",
-        "glossaryPage": "",
-        "home": "",
-        "intakeWizardPage": "",
-        "investor": {
-          "aboutPage": "",
-          "beneluxPage": "",
-          "blog": "",
-          "caseStudiesPage": "",
-          "comparisonPage": "",
-          "complianceDisclaimer": "",
-          "contactPage": "",
-          "faqPage": "",
-          "footer": "",
-          "founderPage": "",
-          "glossaryPage": "",
-          "home": "",
-          "intakeWizardPage": "",
-          "landingEmpresa": "",
-          "landingInversor": "",
-          "landingLifestyle": "",
-          "landingTrust": "",
-          "name": "Paraguay Investor Program",
-          "navigation": "",
-          "pitch": "Alles van Business + 12 maanden boekhouding en fiscaal advies.",
-          "placeholders": "",
-          "prensa": "",
-          "privacyPage": "",
-          "processPage": "",
-          "programasPage": "",
-          "qualityOfLifePage": "",
-          "resourcesPage": "",
-          "seo": "",
-          "seprealadAttestation": "",
-          "servicesPage": "",
-          "siteName": "",
-          "tagline": "",
-          "whatsapp": "",
-          "whyCountryPage": ""
-        },
-        "landingEmpresa": "",
-        "landingInversor": "",
-        "landingLifestyle": "",
-        "landingTrust": "",
-        "navigation": "",
-        "placeholders": "",
-        "prensa": "",
-        "privacyPage": "",
-        "processPage": "",
-        "programasPage": "",
-        "qualityOfLifePage": "",
-        "resourcesPage": "",
-        "seo": "",
-        "seprealadAttestation": "",
-        "servicesPage": "",
-        "siteName": "",
-        "tagline": "",
-        "tierras": {
-          "aboutPage": "",
-          "beneluxPage": "",
-          "blog": "",
-          "caseStudiesPage": "",
-          "comparisonPage": "",
-          "complianceDisclaimer": "",
-          "contactPage": "",
-          "faqPage": "",
-          "footer": "",
-          "founderPage": "",
-          "glossaryPage": "",
-          "home": "",
-          "intakeWizardPage": "",
-          "landingEmpresa": "",
-          "landingInversor": "",
-          "landingLifestyle": "",
-          "landingTrust": "",
-          "name": "Grondaankoop",
-          "navigation": "",
-          "pitch": "Volledig advies bij grondaankoop.",
-          "placeholders": "",
-          "prensa": "",
-          "privacyPage": "",
-          "processPage": "",
-          "programasPage": "",
-          "qualityOfLifePage": "",
-          "resourcesPage": "",
-          "seo": "",
-          "seprealadAttestation": "",
-          "servicesPage": "",
-          "siteName": "",
-          "tagline": "",
-          "whatsapp": "",
-          "whyCountryPage": ""
-        },
-        "whatsapp": "",
-        "whyCountryPage": ""
-      },
-      "ui": {
-        "aboutPage": "",
-        "back": "Terug",
-        "beneluxPage": "",
-        "blog": "",
-        "caseStudiesPage": "",
-        "comparisonPage": "",
-        "complianceDisclaimer": "",
-        "contactPage": "",
-        "faqPage": "",
-        "footer": "",
-        "founderPage": "",
-        "glossaryPage": "",
-        "home": "",
-        "intakeWizardPage": "",
-        "landingEmpresa": "",
-        "landingInversor": "",
-        "landingLifestyle": "",
-        "landingTrust": "",
-        "navigation": "",
-        "next": "Volgende",
-        "of": "van",
-        "placeholders": "",
-        "prensa": "",
-        "privacyPage": "",
-        "processPage": "",
-        "programasPage": "",
-        "qualityOfLifePage": "",
-        "resourcesPage": "",
-        "restart": "Opnieuw beginnen",
-        "result": "Uw aanbevolen programma",
-        "seo": "",
-        "seprealadAttestation": "",
-        "servicesPage": "",
-        "siteName": "",
-        "step": "Stap",
-        "tagline": "",
-        "viewProgram": "Zie programmadetails",
-        "whatsapp": "",
-        "whyCountryPage": ""
-      },
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "intakeWizardPage": "",
     "landingEmpresa": "",
     "landingInversor": "",
@@ -3274,105 +2874,6 @@
     },
     "processPage": "",
     "programasPage": "",
-    "programs": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "eyebrow": "Programma's",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "subtitle": "Kies het programma dat bij uw doel past. Altijd transparante prijs en professionele begeleiding.",
-      "tagline": "",
-      "tiers": [
-        {
-          "id": "base",
-          "name": "Paraguay Base",
-          "description": "Paraguayaanse verblijfsvergunning en identiteitskaart.",
-          "price": "USD 2.900",
-          "priceNote": "Compleet pakket inclusief alle vergoedingen en belastingen.",
-          "included": [
-            "Paraguayaanse verblijfsvergunning",
-            "Identiteitskaart",
-            "Documentanalyse vooraf",
-            "Operationele dag (één dag)",
-            "Logistieke begeleiding"
-          ],
-          "ctaLabel": "Consult aanvragen",
-          "ctaHref": "/s/nl/nexa-paraguay/contacto?programa=base",
-          "image": {
-            "$img": "programs.tierBase"
-          }
-        },
-        {
-          "id": "business",
-          "name": "Paraguay Business",
-          "description": "Verblijfsvergunning + vennootschap + bankrekening.",
-          "price": "USD 4.400+",
-          "priceNote": "Vanaf-prijs. Definitieve offerte afhankelijk van de vereisten.",
-          "badge": "Meest gekozen",
-          "highlighted": true,
-          "included": [
-            "Alles van Base",
-            "Oprichting vennootschap",
-            "RUC-registratie",
-            "Opening zakelijke bankrekening",
-            "Strategische vastgoedrondleiding",
-            "Honoraria, btw en leges inbegrepen"
-          ],
-          "ctaLabel": "Consult aanvragen",
-          "ctaHref": "/s/nl/nexa-paraguay/contacto?programa=business",
-          "image": {
-            "$img": "programs.tierBusiness"
-          }
-        },
-        {
-          "id": "investor",
-          "name": "Paraguay Investor Program",
-          "description": "Alles van Business + 12 maanden begeleiding.",
-          "price": "USD 6.900+",
-          "priceNote": "Vanaf-prijs. Definitieve offerte afhankelijk van de vereisten.",
-          "included": [
-            "Alles van Business",
-            "Boekhouding (12 maanden)",
-            "Juridisch en fiscaal advies (12 maanden)",
-            "Investeringsanalyse",
-            "Directe toegang tot het technische team"
-          ],
-          "ctaLabel": "Consult aanvragen",
-          "ctaHref": "/s/nl/nexa-paraguay/contacto?programa=investor",
-          "image": {
-            "$img": "programs.tierInvestor"
-          }
-        }
-      ],
-      "title": "Vier routes naar vestiging in Paraguay",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "qualityOfLifePage": "",
     "resourcesPage": "",
     "seo": {
@@ -3513,136 +3014,7 @@
     },
     "servicesPage": "",
     "siteName": "",
-    "stats": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "items": [
-        {
-          "value": "—",
-          "label": "Families verhuisd (bijwerken zodra we echte data hebben)",
-          "icon": "Users"
-        },
-        {
-          "value": "—",
-          "label": "Jaar ervaring (bijwerken zodra we echte data hebben)",
-          "icon": "Calendar"
-        },
-        {
-          "value": "—",
-          "label": "Succespercentage (bijwerken zodra we echte data hebben)",
-          "icon": "Award"
-        }
-      ],
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "tagline": "",
-      "title": "Cijfers",
-      "whatsapp": "",
-      "whyCountryPage": "",
-      "dutchNote": ""
-    },
     "tagline": "",
-    "taxCalculator": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "subtitle": "Schat hoeveel u bespaart aan belastingen door zich in Paraguay te vestigen.",
-      "tagline": "",
-      "title": "Belastingbesparing-calculator",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
-    "testimonials": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "ctaHref": "/s/nl/nexa-paraguay/contacto",
-      "ctaText": "Alle getuigenissen lezen",
-      "eyebrow": "Getuigenissen (binnenkort)",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "items": [],
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "subtitle": "Zodra onze eerste klanten het proces hebben voltooid, delen we hun verhalen hier.",
-      "tagline": "",
-      "title": "Binnenkort: ervaringen van onze klanten",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "trust": {
       "aboutPage": "",
       "beneluxPage": "",
@@ -3651,7 +3023,7 @@
       "comparisonPage": "",
       "complianceDisclaimer": "",
       "contactPage": "",
-      "eyebrow": "Waarom Nexa Paraguay",
+      "eyebrow": "POR QUÉ NEXA",
       "faqPage": "",
       "footer": "",
       "founderPage": "",
@@ -3666,6 +3038,12 @@
           "image": "@src:trust.certificate"
         },
         {
+          "icon": "Shield",
+          "title": "Transparante prijs",
+          "description": "Alles inbegrepen. Geen verborgen kosten.",
+          "image": "@src:trust.registry"
+        },
+        {
           "icon": "Plane",
           "title": "Eén reis",
           "description": "Alle persoonlijke afhandelingen in één gecoördineerde dag.",
@@ -3676,12 +3054,6 @@
           "title": "Eén team",
           "description": "Advocaten, accountants, notarissen en financieel adviseurs.",
           "image": "@src:trust.cedula"
-        },
-        {
-          "icon": "Shield",
-          "title": "Transparante prijs",
-          "description": "Alles inbegrepen. Geen verborgen kosten.",
-          "image": "@src:trust.registry"
         }
       ],
       "landingEmpresa": "",
@@ -3701,7 +3073,7 @@
       "servicesPage": "",
       "siteName": "",
       "tagline": "",
-      "title": "Een integraal systeem, geen administratief kantoor",
+      "title": "Alles wat je nodig hebt voor je verhuizing",
       "whatsapp": "",
       "whyCountryPage": ""
     },
@@ -3784,6 +3156,15 @@
       "subtitle": "Select your services, prepare documents remotely, then fly to Paraguay for one coordinated operational day. We handle the rest.",
       "ctaText": "See the full process",
       "ctaHref": "proceso"
+    },
+    "feedback": {
+      "eyebrow": "JOUW FEEDBACK",
+      "title": "Deel je ervaring",
+      "subtitle": "Overweeg je om naar Paraguay te verhuizen? Laat ons weten wat je wilt weten.",
+      "placeholder": "Schrijf je opmerking of vraag...",
+      "buttonText": "Versturen",
+      "ctaText": "Bekijk reacties →",
+      "ctaHref": "/feedback"
     }
   },
   "intakeWizardPage": {
@@ -5286,63 +4667,49 @@
     "navItems": [
       {
         "label": "Home",
-        "href": "/s/nl/nexa-paraguay"
+        "href": "/"
       },
       {
         "label": "Diensten",
-        "href": "/s/nl/nexa-paraguay/servicios"
-      },
-      {
-        "label": "Verhuizing",
         "children": [
           {
-            "label": "Programma's",
-            "href": "/s/nl/nexa-paraguay/programas"
+            "label": "Verblijf & Documenten",
+            "href": "/servicios#residency-legal"
           },
           {
-            "label": "Waarom Paraguay",
-            "href": "/s/nl/nexa-paraguay/por-que-paraguay"
+            "label": "Bank & Belastingen",
+            "href": "/servicios#banking-tax"
+          },
+          {
+            "label": "Onroerend Goed",
+            "href": "/servicios#real-estate"
           },
           {
             "label": "Proces",
-            "href": "/s/nl/nexa-paraguay/proceso"
+            "href": "/proceso"
           }
         ],
-        "href": "/s/nl/nexa-paraguay/sobre"
+        "href": "/servicios"
+      },
+      {
+        "label": "Waarom Paraguay",
+        "href": "/por-que-paraguay"
       },
       {
         "label": "Over Nexa",
-        "href": "/s/nl/nexa-paraguay/sobre"
+        "href": "/sobre"
       },
       {
         "label": "FAQ",
-        "href": "/s/nl/nexa-paraguay/faq"
+        "href": "/faq"
       },
       {
-        "label": "Benelux",
-        "href": "/s/nl/nexa-paraguay/benelux"
-      },
-      {
-        "label": "Inzichten",
-        "children": [
-          {
-            "label": "Blog",
-            "href": "/s/nl/nexa-paraguay/blog"
-          },
-          {
-            "label": "Bronnen",
-            "href": "/s/nl/nexa-paraguay/recursos"
-          },
-          {
-            "label": "Pers",
-            "href": "/s/nl/nexa-paraguay/prensa"
-          }
-        ],
-        "href": "/s/nl/nexa-paraguay/blog"
+        "label": "Blog",
+        "href": "/blog"
       },
       {
         "label": "Contact",
-        "href": "/s/nl/nexa-paraguay/contacto"
+        "href": "/contacto"
       }
     ],
     "navigation": "",

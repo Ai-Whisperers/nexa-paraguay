@@ -19,59 +19,6 @@
       "tagline": "",
       "whatsapp": ""
     },
-    "differentiators": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "eyebrow": "Unser Unterschied",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "pillars": [
-        {
-          "icon": "Users",
-          "title": "Multidisziplinäres Team",
-          "description": "Anwälte, Steuerberater, Notare und Finanzberater arbeiten koordiniert."
-        },
-        {
-          "icon": "Shield",
-          "title": "Beziehungsnetz",
-          "description": "Über Jahre aufgebauter institutioneller Zugang zu Banken, Notaren und Behörden."
-        },
-        {
-          "icon": "Clock",
-          "title": "Zeit als Wert",
-          "description": "Wir verdichten in einen Tag, was sonst mehrere Reisen erfordert."
-        }
-      ],
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "tagline": "",
-      "title": "Was uns auszeichnet",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "faqPage": "",
     "footer": "",
     "founderPage": "",
@@ -379,43 +326,43 @@
           "icon": "Users",
           "title": "Multidisziplinäres Team",
           "description": "Anwälte, Steuerberater, Notare und Finanzberater arbeiten koordiniert.",
-          "badge": "Our difference"
+          "badge": "Unser Unterschied"
         },
         {
           "icon": "Shield",
           "title": "Beziehungsnetz",
           "description": "Über Jahre aufgebauter institutioneller Zugang zu Banken, Notaren und Behörden.",
-          "badge": "Our difference"
+          "badge": "Unser Unterschied"
         },
         {
           "icon": "Clock",
           "title": "Zeit als Wert",
           "description": "Wir verdichten in einen Tag, was sonst mehrere Reisen erfordert.",
-          "badge": "Our difference"
+          "badge": "Unser Unterschied"
         },
         {
           "icon": "Package",
           "title": "Ein Programm",
           "description": "Aufenthalt, Gesellschaft und Bankkonto integriert.",
-          "badge": "Why clients choose us"
+          "badge": "Unser Unterschied"
         },
         {
           "icon": "Plane",
           "title": "Eine Reise",
           "description": "Alle Präsenz-Schritte an einem koordinierten Tag.",
-          "badge": "Why clients choose us"
+          "badge": "Unser Unterschied"
         },
         {
           "icon": "Users",
           "title": "Ein Team",
           "description": "Anwälte, Steuerberater, Notare und Finanzberater.",
-          "badge": "Why clients choose us"
+          "badge": "Unser Unterschied"
         },
         {
           "icon": "Shield",
           "title": "Transparenter Preis",
           "description": "Alles inklusive. Keine versteckten Kosten.",
-          "badge": "Why clients choose us"
+          "badge": "Unser Unterschied"
         }
       ],
       "placeholders": "",
@@ -2736,13 +2683,13 @@
       "contactPage": "",
       "ctaPrimaryHref": "/s/de/nexa-paraguay/contacto",
       "ctaPrimaryText": "Kostenloses Beratungsgespräch",
-      "ctaSecondaryHref": "/s/de/nexa-paraguay/programas",
-      "ctaSecondaryText": "Programme ansehen",
+      "ctaSecondaryHref": "/servicios",
+      "ctaSecondaryText": "Leistungen ansehen",
       "faqPage": "",
       "footer": "",
       "founderPage": "",
       "glossaryPage": "",
-      "headline": "Ihr Umzug nach Paraguay, mit der richtigen Begleitung von Tag eins an.",
+      "headline": "Dein Umzug nach Paraguay, vereinfacht.",
       "home": "",
       "intakeWizardPage": "",
       "landingEmpresa": "",
@@ -2761,365 +2708,18 @@
       "seprealadAttestation": "",
       "servicesPage": "",
       "siteName": "",
-      "subheadline": "Neun Dienstleistungen, ein Team. Wählen Sie, was Sie brauchen — Aufenthalt, Bankwesen, Immobilien oder das Komplettpaket. Wir machen es persönlich.",
+      "subheadline": "Aufenthalt, Bank, Immobilien und Ansiedlung. Wähle, was du brauchst, wir kümmern uns um den Rest.",
       "tagline": "",
       "trustBadges": [
-        "Einzeldienstleistungen",
         "8–12 Wochen",
-        "Feste Preise"
+        "Festpreis",
+        "Persönliche Betreuung"
       ],
       "whatsapp": "",
       "whyCountryPage": "",
       "dutchNote": ""
     },
     "home": "",
-    "intakeWizard": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "steps": [
-        {
-          "key": "goal",
-          "question": "Was ist Ihr Hauptziel beim Umzug nach Paraguay?",
-          "options": [
-            {
-              "value": "residency",
-              "label": "Aufenthalt erhalten"
-            },
-            {
-              "value": "business",
-              "label": "Unternehmen gründen"
-            },
-            {
-              "value": "investor",
-              "label": "In Paraguay investieren"
-            },
-            {
-              "value": "land",
-              "label": "Land kaufen"
-            }
-          ]
-        },
-        {
-          "key": "income",
-          "question": "Wie erzielen Sie derzeit Ihr Einkommen?",
-          "options": [
-            {
-              "value": "employed",
-              "label": "Angestellt"
-            },
-            {
-              "value": "self-employed",
-              "label": "Selbstständig"
-            },
-            {
-              "value": "founder",
-              "label": "Gründer / Unternehmer"
-            },
-            {
-              "value": "investor",
-              "label": "Investor"
-            },
-            {
-              "value": "retired",
-              "label": "Rentner"
-            }
-          ]
-        },
-        {
-          "key": "needs",
-          "question": "Was benötigen Sie zusätzlich zum Aufenthalt?",
-          "options": [
-            {
-              "value": "residency-only",
-              "label": "Nur Aufenthalt"
-            },
-            {
-              "value": "company-and-bank",
-              "label": "Gesellschaft + Bankkonto"
-            },
-            {
-              "value": "company-plus-advisory",
-              "label": "Gesellschaft + Banking + 12 Monate Beratung"
-            },
-            {
-              "value": "land-only",
-              "label": "Nur Landkauf"
-            }
-          ]
-        },
-        {
-          "key": "timeline",
-          "question": "Wann möchten Sie beginnen?",
-          "options": [
-            {
-              "value": "asap",
-              "label": "So schnell wie möglich"
-            },
-            {
-              "value": "quarter",
-              "label": "Nächstes Quartal"
-            },
-            {
-              "value": "year",
-              "label": "Im nächsten Jahr"
-            },
-            {
-              "value": "researching",
-              "label": "Nur am Recherchieren"
-            }
-          ]
-        }
-      ],
-      "tagline": "",
-      "tierLabels": {
-        "aboutPage": "",
-        "base": {
-          "aboutPage": "",
-          "beneluxPage": "",
-          "blog": "",
-          "caseStudiesPage": "",
-          "comparisonPage": "",
-          "complianceDisclaimer": "",
-          "contactPage": "",
-          "faqPage": "",
-          "footer": "",
-          "founderPage": "",
-          "glossaryPage": "",
-          "home": "",
-          "intakeWizardPage": "",
-          "landingEmpresa": "",
-          "landingInversor": "",
-          "landingLifestyle": "",
-          "landingTrust": "",
-          "name": "Paraguay Base",
-          "navigation": "",
-          "pitch": "Dauerhafter Aufenthalt + ID. Einfachstes Paket.",
-          "placeholders": "",
-          "prensa": "",
-          "privacyPage": "",
-          "processPage": "",
-          "programasPage": "",
-          "qualityOfLifePage": "",
-          "resourcesPage": "",
-          "seo": "",
-          "seprealadAttestation": "",
-          "servicesPage": "",
-          "siteName": "",
-          "tagline": "",
-          "whatsapp": "",
-          "whyCountryPage": ""
-        },
-        "beneluxPage": "",
-        "blog": "",
-        "business": {
-          "aboutPage": "",
-          "beneluxPage": "",
-          "blog": "",
-          "caseStudiesPage": "",
-          "comparisonPage": "",
-          "complianceDisclaimer": "",
-          "contactPage": "",
-          "faqPage": "",
-          "footer": "",
-          "founderPage": "",
-          "glossaryPage": "",
-          "home": "",
-          "intakeWizardPage": "",
-          "landingEmpresa": "",
-          "landingInversor": "",
-          "landingLifestyle": "",
-          "landingTrust": "",
-          "name": "Paraguay Business",
-          "navigation": "",
-          "pitch": "Aufenthalt + Gesellschaft + Bankkonto. Beliebtestes Programm.",
-          "placeholders": "",
-          "prensa": "",
-          "privacyPage": "",
-          "processPage": "",
-          "programasPage": "",
-          "qualityOfLifePage": "",
-          "resourcesPage": "",
-          "seo": "",
-          "seprealadAttestation": "",
-          "servicesPage": "",
-          "siteName": "",
-          "tagline": "",
-          "whatsapp": "",
-          "whyCountryPage": ""
-        },
-        "caseStudiesPage": "",
-        "comparisonPage": "",
-        "complianceDisclaimer": "",
-        "contactPage": "",
-        "faqPage": "",
-        "footer": "",
-        "founderPage": "",
-        "glossaryPage": "",
-        "home": "",
-        "intakeWizardPage": "",
-        "investor": {
-          "aboutPage": "",
-          "beneluxPage": "",
-          "blog": "",
-          "caseStudiesPage": "",
-          "comparisonPage": "",
-          "complianceDisclaimer": "",
-          "contactPage": "",
-          "faqPage": "",
-          "footer": "",
-          "founderPage": "",
-          "glossaryPage": "",
-          "home": "",
-          "intakeWizardPage": "",
-          "landingEmpresa": "",
-          "landingInversor": "",
-          "landingLifestyle": "",
-          "landingTrust": "",
-          "name": "Paraguay Investor Program",
-          "navigation": "",
-          "pitch": "Alles aus Business + 12 Monate Buchhaltung und Steuerberatung.",
-          "placeholders": "",
-          "prensa": "",
-          "privacyPage": "",
-          "processPage": "",
-          "programasPage": "",
-          "qualityOfLifePage": "",
-          "resourcesPage": "",
-          "seo": "",
-          "seprealadAttestation": "",
-          "servicesPage": "",
-          "siteName": "",
-          "tagline": "",
-          "whatsapp": "",
-          "whyCountryPage": ""
-        },
-        "landingEmpresa": "",
-        "landingInversor": "",
-        "landingLifestyle": "",
-        "landingTrust": "",
-        "navigation": "",
-        "placeholders": "",
-        "prensa": "",
-        "privacyPage": "",
-        "processPage": "",
-        "programasPage": "",
-        "qualityOfLifePage": "",
-        "resourcesPage": "",
-        "seo": "",
-        "seprealadAttestation": "",
-        "servicesPage": "",
-        "siteName": "",
-        "tagline": "",
-        "tierras": {
-          "aboutPage": "",
-          "beneluxPage": "",
-          "blog": "",
-          "caseStudiesPage": "",
-          "comparisonPage": "",
-          "complianceDisclaimer": "",
-          "contactPage": "",
-          "faqPage": "",
-          "footer": "",
-          "founderPage": "",
-          "glossaryPage": "",
-          "home": "",
-          "intakeWizardPage": "",
-          "landingEmpresa": "",
-          "landingInversor": "",
-          "landingLifestyle": "",
-          "landingTrust": "",
-          "name": "Landkauf",
-          "navigation": "",
-          "pitch": "Umfassende Beratung beim Landkauf.",
-          "placeholders": "",
-          "prensa": "",
-          "privacyPage": "",
-          "processPage": "",
-          "programasPage": "",
-          "qualityOfLifePage": "",
-          "resourcesPage": "",
-          "seo": "",
-          "seprealadAttestation": "",
-          "servicesPage": "",
-          "siteName": "",
-          "tagline": "",
-          "whatsapp": "",
-          "whyCountryPage": ""
-        },
-        "whatsapp": "",
-        "whyCountryPage": ""
-      },
-      "ui": {
-        "aboutPage": "",
-        "back": "Zurück",
-        "beneluxPage": "",
-        "blog": "",
-        "caseStudiesPage": "",
-        "comparisonPage": "",
-        "complianceDisclaimer": "",
-        "contactPage": "",
-        "faqPage": "",
-        "footer": "",
-        "founderPage": "",
-        "glossaryPage": "",
-        "home": "",
-        "intakeWizardPage": "",
-        "landingEmpresa": "",
-        "landingInversor": "",
-        "landingLifestyle": "",
-        "landingTrust": "",
-        "navigation": "",
-        "next": "Weiter",
-        "of": "von",
-        "placeholders": "",
-        "prensa": "",
-        "privacyPage": "",
-        "processPage": "",
-        "programasPage": "",
-        "qualityOfLifePage": "",
-        "resourcesPage": "",
-        "restart": "Neu starten",
-        "result": "Ihr empfohlenes Programm",
-        "seo": "",
-        "seprealadAttestation": "",
-        "servicesPage": "",
-        "siteName": "",
-        "step": "Schritt",
-        "tagline": "",
-        "viewProgram": "Programmdetails ansehen",
-        "whatsapp": "",
-        "whyCountryPage": ""
-      },
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "intakeWizardPage": "",
     "landingEmpresa": "",
     "landingInversor": "",
@@ -3217,105 +2817,6 @@
     },
     "processPage": "",
     "programasPage": "",
-    "programs": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "eyebrow": "Programme",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "subtitle": "Wählen Sie das Programm, das zu Ihrem Ziel passt.",
-      "tagline": "",
-      "tiers": [
-        {
-          "id": "base",
-          "name": "Paraguay Base",
-          "description": "Aufenthalt + Identitätskarte.",
-          "price": "USD 2.900",
-          "priceNote": "Komplettpaket inkl. aller Gebühren und Steuern.",
-          "included": [
-            "Aufenthaltserlaubnis",
-            "Identitätskarte",
-            "Dokumentenprüfung vorab",
-            "Operativer Tag",
-            "Logistische Begleitung"
-          ],
-          "ctaLabel": "Beratung anfragen",
-          "ctaHref": "/s/de/nexa-paraguay/contacto?programa=base",
-          "image": {
-            "$img": "programs.tierBase"
-          }
-        },
-        {
-          "id": "business",
-          "name": "Paraguay Business",
-          "description": "Aufenthalt + Gesellschaft + Bankkonto.",
-          "price": "USD 4.400+",
-          "priceNote": "Ab-Preis. Endgültiges Angebot je nach Anforderungen.",
-          "badge": "Am beliebtesten",
-          "highlighted": true,
-          "included": [
-            "Alles aus Base",
-            "Gesellschaftsgründung",
-            "Steuerregistrierung (RUC)",
-            "Firmenbankkonto",
-            "Strategische Immobilientour",
-            "Honorare, MwSt. und Gebühren inklusive"
-          ],
-          "ctaLabel": "Beratung anfragen",
-          "ctaHref": "/s/de/nexa-paraguay/contacto?programa=business",
-          "image": {
-            "$img": "programs.tierBusiness"
-          }
-        },
-        {
-          "id": "investor",
-          "name": "Paraguay Investor Program",
-          "description": "Alles aus Business + 12 Monate Begleitung.",
-          "price": "USD 6.900+",
-          "priceNote": "Ab-Preis. Endgültiges Angebot je nach Anforderungen.",
-          "included": [
-            "Alles aus Business",
-            "Buchhaltung (12 Monate)",
-            "Rechts- und Steuerberatung (12 Monate)",
-            "Investitionsanalyse",
-            "Direktzugang zum Fachteam"
-          ],
-          "ctaLabel": "Beratung anfragen",
-          "ctaHref": "/s/de/nexa-paraguay/contacto?programa=investor",
-          "image": {
-            "$img": "programs.tierInvestor"
-          }
-        }
-      ],
-      "title": "Vier Wege, sich in Paraguay zu etablieren",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "qualityOfLifePage": "",
     "resourcesPage": "",
     "seo": {
@@ -3456,136 +2957,7 @@
     },
     "servicesPage": "",
     "siteName": "",
-    "stats": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "items": [
-        {
-          "value": "—",
-          "label": "Familien umgesiedelt (aktualisieren sobald echte Daten vorliegen)",
-          "icon": "Users"
-        },
-        {
-          "value": "—",
-          "label": "Jahre Erfahrung (aktualisieren sobald echte Daten vorliegen)",
-          "icon": "Calendar"
-        },
-        {
-          "value": "—",
-          "label": "Erfolgsquote (aktualisieren sobald echte Daten vorliegen)",
-          "icon": "Award"
-        }
-      ],
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "tagline": "",
-      "title": "Zahlen",
-      "whatsapp": "",
-      "whyCountryPage": "",
-      "dutchNote": ""
-    },
     "tagline": "",
-    "taxCalculator": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "subtitle": "Schätzen Sie, wie viel Sie durch die Niederlassung in Paraguay an Steuern sparen.",
-      "tagline": "",
-      "title": "Steuerersparnis-Rechner",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
-    "testimonials": {
-      "aboutPage": "",
-      "beneluxPage": "",
-      "blog": "",
-      "caseStudiesPage": "",
-      "comparisonPage": "",
-      "complianceDisclaimer": "",
-      "contactPage": "",
-      "ctaHref": "/s/de/nexa-paraguay/contacto",
-      "ctaText": "Alle Testimonials lesen",
-      "eyebrow": "Kundenstimmen (demnächst)",
-      "faqPage": "",
-      "footer": "",
-      "founderPage": "",
-      "glossaryPage": "",
-      "home": "",
-      "intakeWizardPage": "",
-      "items": [],
-      "landingEmpresa": "",
-      "landingInversor": "",
-      "landingLifestyle": "",
-      "landingTrust": "",
-      "navigation": "",
-      "placeholders": "",
-      "prensa": "",
-      "privacyPage": "",
-      "processPage": "",
-      "programasPage": "",
-      "qualityOfLifePage": "",
-      "resourcesPage": "",
-      "seo": "",
-      "seprealadAttestation": "",
-      "servicesPage": "",
-      "siteName": "",
-      "subtitle": "Sobald unsere ersten Kunden den Prozess abgeschlossen haben, teilen wir ihre Geschichten hier.",
-      "tagline": "",
-      "title": "Demnächst: Erfahrungen unserer Kunden",
-      "whatsapp": "",
-      "whyCountryPage": ""
-    },
     "trust": {
       "aboutPage": "",
       "beneluxPage": "",
@@ -3594,7 +2966,7 @@
       "comparisonPage": "",
       "complianceDisclaimer": "",
       "contactPage": "",
-      "eyebrow": "Warum Nexa Paraguay",
+      "eyebrow": "POR QUÉ NEXA",
       "faqPage": "",
       "footer": "",
       "founderPage": "",
@@ -3609,6 +2981,12 @@
           "image": "@src:trust.certificate"
         },
         {
+          "icon": "Shield",
+          "title": "Transparenter Preis",
+          "description": "Alles inklusive. Keine versteckten Kosten.",
+          "image": "@src:trust.registry"
+        },
+        {
           "icon": "Plane",
           "title": "Eine Reise",
           "description": "Alle Präsenz-Schritte an einem koordinierten Tag.",
@@ -3619,12 +2997,6 @@
           "title": "Ein Team",
           "description": "Anwälte, Steuerberater, Notare und Finanzberater.",
           "image": "@src:trust.cedula"
-        },
-        {
-          "icon": "Shield",
-          "title": "Transparenter Preis",
-          "description": "Alles inklusive. Keine versteckten Kosten.",
-          "image": "@src:trust.registry"
         }
       ],
       "landingEmpresa": "",
@@ -3644,7 +3016,7 @@
       "servicesPage": "",
       "siteName": "",
       "tagline": "",
-      "title": "Ein integriertes System, keine Agentur für Papierkram",
+      "title": "Alles, was du für deinen Umzug brauchst",
       "whatsapp": "",
       "whyCountryPage": ""
     },
@@ -3727,6 +3099,15 @@
       "subtitle": "Select your services, prepare documents remotely, then fly to Paraguay for one coordinated operational day. We handle the rest.",
       "ctaText": "See the full process",
       "ctaHref": "proceso"
+    },
+    "feedback": {
+      "eyebrow": "DEIN FEEDBACK",
+      "title": "Teile deine Erfahrung",
+      "subtitle": "Denkst du über einen Umzug nach Paraguay nach? Sag uns, was du wissen möchtest.",
+      "placeholder": "Schreibe deinen Kommentar oder deine Frage...",
+      "buttonText": "Senden",
+      "ctaText": "Kommentare ansehen →",
+      "ctaHref": "/feedback"
     }
   },
   "intakeWizardPage": {
@@ -5229,63 +4610,49 @@
     "navItems": [
       {
         "label": "Start",
-        "href": "/s/de/nexa-paraguay"
+        "href": "/"
       },
       {
         "label": "Leistungen",
-        "href": "/s/de/nexa-paraguay/servicios"
-      },
-      {
-        "label": "Umzug",
         "children": [
           {
-            "label": "Programme",
-            "href": "/s/de/nexa-paraguay/programas"
+            "label": "Aufenthalt & Dokumente",
+            "href": "/servicios#residency-legal"
           },
           {
-            "label": "Warum Paraguay",
-            "href": "/s/de/nexa-paraguay/por-que-paraguay"
+            "label": "Bank & Steuern",
+            "href": "/servicios#banking-tax"
           },
           {
-            "label": "Ablauf",
-            "href": "/s/de/nexa-paraguay/proceso"
+            "label": "Immobilien",
+            "href": "/servicios#real-estate"
+          },
+          {
+            "label": "Prozess",
+            "href": "/proceso"
           }
         ],
-        "href": "/s/de/nexa-paraguay/sobre"
+        "href": "/servicios"
       },
       {
-        "label": "Über uns",
-        "href": "/s/de/nexa-paraguay/sobre"
+        "label": "Warum Paraguay",
+        "href": "/por-que-paraguay"
+      },
+      {
+        "label": "Über Nexa",
+        "href": "/sobre"
       },
       {
         "label": "FAQ",
-        "href": "/s/de/nexa-paraguay/faq"
+        "href": "/faq"
       },
       {
-        "label": "Benelux",
-        "href": "/s/de/nexa-paraguay/benelux"
-      },
-      {
-        "label": "Einblicke",
-        "children": [
-          {
-            "label": "Blog",
-            "href": "/s/de/nexa-paraguay/blog"
-          },
-          {
-            "label": "Ressourcen",
-            "href": "/s/de/nexa-paraguay/recursos"
-          },
-          {
-            "label": "Presse",
-            "href": "/s/de/nexa-paraguay/prensa"
-          }
-        ],
-        "href": "/s/de/nexa-paraguay/blog"
+        "label": "Blog",
+        "href": "/blog"
       },
       {
         "label": "Kontakt",
-        "href": "/s/de/nexa-paraguay/contacto"
+        "href": "/contacto"
       }
     ],
     "navigation": "",

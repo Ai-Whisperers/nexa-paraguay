@@ -18,25 +18,29 @@
       },
       {
         "label": "Servicios",
-        "href": "/servicios"
-      },
-      {
-        "label": "Reubicación",
         "children": [
           {
-            "label": "Programas",
-            "href": "/programas"
+            "label": "Residencia y Documentos",
+            "href": "/servicios#residency-legal"
           },
           {
-            "label": "Por qué Paraguay",
-            "href": "/por-que-paraguay"
+            "label": "Banca e Impuestos",
+            "href": "/servicios#banking-tax"
+          },
+          {
+            "label": "Bienes Raíces",
+            "href": "/servicios#real-estate"
           },
           {
             "label": "Proceso",
             "href": "/proceso"
           }
         ],
-        "href": "/programas"
+        "href": "/servicios"
+      },
+      {
+        "label": "Por qué Paraguay",
+        "href": "/por-que-paraguay"
       },
       {
         "label": "Sobre Nexa",
@@ -47,26 +51,8 @@
         "href": "/faq"
       },
       {
-        "label": "Benelux",
-        "href": "/benelux"
-      },
-      {
-        "label": "Recursos",
-        "children": [
-          {
-            "label": "Blog",
-            "href": "/blog"
-          },
-          {
-            "label": "Recursos",
-            "href": "/recursos"
-          },
-          {
-            "label": "Prensa",
-            "href": "/prensa"
-          }
-        ],
-        "href": "/recursos"
+        "label": "Blog",
+        "href": "/blog"
       },
       {
         "label": "Contacto",
@@ -82,33 +68,36 @@
       "description": "Residencia, banca, bienes raíces e instalación — todo coordinado por Nexa Paraguay. Servicios a tu elección, proceso optimizado y equipo profesional."
     },
     "hero": {
-      "headline": "Tu mudanza a Paraguay, con la guía adecuada desde el primer día.",
-      "subheadline": "Nueve servicios, un equipo. Elige lo que necesitas — residencia, banca, bienes raíces o el paquete completo. Lo hacemos personal.",
+      "headline": "Tu mudanza a Paraguay, simplificada.",
+      "subheadline": "Residencia, banca, bienes raíces e instalación. Elegí lo que necesitás, nosotros gestionamos el resto.",
       "ctaPrimaryText": "Agendar consulta gratuita",
       "ctaPrimaryHref": "/contacto",
-      "ctaSecondaryText": "Ver programas",
-      "ctaSecondaryHref": "/programas",
+      "ctaSecondaryText": "Ver servicios",
+      "ctaSecondaryHref": "/servicios",
       "backgroundImage": "@img:hero.localizedEs",
       "backgroundImageMobile": "@img:hero.homeMobile",
       "dutchNote": "🇳🇱 Servicio especializado para holandeses y belgas — equipo bilingüe NL-ES",
       "trustBadges": [
-        "Servicios a la carta",
         "8–12 semanas",
         "Precio fijo",
-        "+47.000 residencias en 2025",
-        "+63% crecimiento anual",
-        "+189% comunidad holandesa"
+        "Acompañamiento personal"
       ]
     },
     "trust": {
-      "eyebrow": "Por qué Nexa Paraguay",
-      "title": "Un sistema integral, no una gestoría de trámites",
+      "eyebrow": "POR QUÉ NEXA",
+      "title": "Todo lo que necesitás para tu mudanza",
       "items": [
         {
           "icon": "Package",
           "title": "Un solo programa",
           "description": "Residencia, sociedad y cuenta bancaria integrados.",
           "image": "@src:trust.certificate"
+        },
+        {
+          "icon": "Shield",
+          "title": "Precio transparente",
+          "description": "Todo incluido. Sin cargos ocultos.",
+          "image": "@src:trust.registry"
         },
         {
           "icon": "Plane",
@@ -121,28 +110,8 @@
           "title": "Un solo equipo",
           "description": "Abogados, contadores, escribanos, asesores financieros.",
           "image": "@src:trust.cedula"
-        },
-        {
-          "icon": "Shield",
-          "title": "Precio transparente",
-          "description": "Todo incluido. Sin cargos ocultos.",
-          "image": "@src:trust.registry"
         }
       ]
-    },
-    "programs": {
-      "eyebrow": "PROGRAMAS",
-      "title": "Cuatro caminos para establecerse en Paraguay",
-      "subtitle": "Explorá nuestros programas diseñados para cada perfil.",
-      "ctaText": "Ver todos los programas →",
-      "ctaHref": "/programas"
-    },
-    "testimonials": {
-      "eyebrow": "TESTIMONIOS",
-      "title": "Lo que dicen nuestros clientes",
-      "subtitle": "",
-      "ctaText": "Ver casos de éxito →",
-      "ctaHref": "/casos-de-exito"
     },
     "whyCountry": {
       "eyebrow": "POR QUÉ PARAGUAY",
@@ -163,162 +132,6 @@
       "subtitle": "Agende una consulta gratuita de 30 minutos.",
       "buttonText": "Agendar consulta gratuita",
       "buttonHref": "/contacto"
-    },
-    "taxCalculator": {
-      "title": "Calculadora de ahorro fiscal",
-      "subtitle": "Estimá cuánto ahorrás en impuestos al establecerte en Paraguay."
-    },
-    "stats": {
-      "dutchNote": "La comunidad holandesa creció 189% en 2024-2025",
-      "items": [
-        {
-          "value": "—",
-          "label": "Residencias gestionadas",
-          "icon": "Users",
-          "_note": "Placeholder — reemplazar con cifras reales tras primeros clientes"
-        },
-        {
-          "value": "—",
-          "label": "Crecimiento del mercado",
-          "icon": "TrendingUp",
-          "_note": "Placeholder — reemplazar con datos reales"
-        },
-        {
-          "value": "—",
-          "label": "Crecimiento comunidad extranjera",
-          "icon": "Globe",
-          "_note": "Placeholder — reemplazar con datos reales"
-        },
-        {
-          "value": "—",
-          "label": "Años combinados de experiencia",
-          "icon": "Calendar",
-          "_note": "Placeholder — reemplazar con cifras reales del equipo"
-        }
-      ]
-    },
-    "intakeWizard": {
-      "steps": [
-        {
-          "key": "goal",
-          "question": "¿Cuál es su objetivo principal al mudarse a Paraguay?",
-          "options": [
-            {
-              "value": "residency",
-              "label": "Obtener residencia"
-            },
-            {
-              "value": "business",
-              "label": "Establecer empresa"
-            },
-            {
-              "value": "investor",
-              "label": "Invertir en Paraguay"
-            },
-            {
-              "value": "land",
-              "label": "Comprar tierras"
-            }
-          ]
-        },
-        {
-          "key": "income",
-          "question": "¿Cómo genera su ingreso actualmente?",
-          "options": [
-            {
-              "value": "employed",
-              "label": "Empleado"
-            },
-            {
-              "value": "self-employed",
-              "label": "Autónomo / freelance"
-            },
-            {
-              "value": "founder",
-              "label": "Fundador / dueño de empresa"
-            },
-            {
-              "value": "investor",
-              "label": "Inversor"
-            },
-            {
-              "value": "retired",
-              "label": "Jubilado / rentista"
-            }
-          ]
-        },
-        {
-          "key": "needs",
-          "question": "¿Qué necesita resolver además de la residencia?",
-          "options": [
-            {
-              "value": "residency-only",
-              "label": "Solo residencia"
-            },
-            {
-              "value": "company-and-bank",
-              "label": "Sociedad + cuenta bancaria"
-            },
-            {
-              "value": "company-plus-advisory",
-              "label": "Sociedad + banca + asesoría 12 meses"
-            },
-            {
-              "value": "land-only",
-              "label": "Compra de tierras"
-            }
-          ]
-        },
-        {
-          "key": "timeline",
-          "question": "¿Cuándo quiere empezar?",
-          "options": [
-            {
-              "value": "asap",
-              "label": "Lo antes posible (1-2 meses)"
-            },
-            {
-              "value": "quarter",
-              "label": "Próximo trimestre (3-6 meses)"
-            },
-            {
-              "value": "year",
-              "label": "En el próximo año"
-            },
-            {
-              "value": "researching",
-              "label": "Solo investigando"
-            }
-          ]
-        }
-      ],
-      "tierLabels": {
-        "base": {
-          "name": "Paraguay Base",
-          "pitch": "Residencia permanente + cédula. El paquete más simple."
-        },
-        "business": {
-          "name": "Paraguay Business",
-          "pitch": "Residencia + sociedad + cuenta bancaria. El programa más elegido."
-        },
-        "investor": {
-          "name": "Paraguay Investor Program",
-          "pitch": "Todo lo de Business + 12 meses de acompañamiento contable y fiscal."
-        },
-        "tierras": {
-          "name": "Compra de Tierras",
-          "pitch": "Asesoría integral en adquisición de tierras."
-        }
-      },
-      "ui": {
-        "back": "Atrás",
-        "next": "Siguiente",
-        "step": "Paso",
-        "of": "de",
-        "result": "Su programa recomendado",
-        "viewProgram": "Ver detalles del programa",
-        "restart": "Empezar de nuevo"
-      }
     },
     "beneluxDesk": {
       "title": "Atención especial para Benelux",
@@ -353,6 +166,15 @@
       "subtitle": "Select your services, prepare documents remotely, then fly to Paraguay for one coordinated operational day. We handle the rest.",
       "ctaText": "See the full process",
       "ctaHref": "proceso"
+    },
+    "feedback": {
+      "eyebrow": "TU OPINIÓN",
+      "title": "Compartí tu experiencia",
+      "subtitle": "¿Estás considerando mudarte a Paraguay? Contanos qué te gustaría saber.",
+      "placeholder": "Escribí tu comentario o pregunta...",
+      "buttonText": "Enviar",
+      "ctaText": "Ver comentarios →",
+      "ctaHref": "/feedback"
     }
   },
   "whyCountryPage": {
@@ -616,27 +438,6 @@
       "headline": "Experiencia Convertida en Conocimiento",
       "subheadline": "Nexa Paraguay fue fundada con una sola misión: transformar el proceso de mudanza de un obstáculo burocrático en una experiencia acogedora."
     },
-    "differentiators": {
-      "eyebrow": "Nuestra diferencia",
-      "title": "Qué nos hace diferentes",
-      "pillars": [
-        {
-          "icon": "Users",
-          "title": "Equipo multidisciplinario",
-          "description": "Abogados, contadores, escribanos, asesores financieros trabajando en coordinación."
-        },
-        {
-          "icon": "Shield",
-          "title": "Capital relacional",
-          "description": "Acceso institucional construido durante años con bancos, notarías y autoridades."
-        },
-        {
-          "icon": "Clock",
-          "title": "Tiempo como valor",
-          "description": "Comprimimos en una jornada lo que sin estructura requiere múltiples viajes."
-        }
-      ]
-    },
     "team": {
       "title": "Nuestro equipo",
       "members": [
@@ -772,43 +573,43 @@
           "icon": "Users",
           "title": "Equipo multidisciplinario",
           "description": "Abogados, contadores, escribanos, asesores financieros trabajando en coordinación.",
-          "badge": "Our difference"
+          "badge": "Nuestra diferencia"
         },
         {
           "icon": "Shield",
           "title": "Capital relacional",
           "description": "Acceso institucional construido durante años con bancos, notarías y autoridades.",
-          "badge": "Our difference"
+          "badge": "Nuestra diferencia"
         },
         {
           "icon": "Clock",
           "title": "Tiempo como valor",
           "description": "Comprimimos en una jornada lo que sin estructura requiere múltiples viajes.",
-          "badge": "Our difference"
+          "badge": "Nuestra diferencia"
         },
         {
           "icon": "Package",
           "title": "Un solo programa",
           "description": "Residencia, sociedad y cuenta bancaria integrados.",
-          "badge": "Why clients choose us"
+          "badge": "Por qué nos eligen"
         },
         {
           "icon": "Plane",
           "title": "Un solo viaje",
           "description": "Tramitación presencial en una jornada coordinada.",
-          "badge": "Why clients choose us"
+          "badge": "Por qué nos eligen"
         },
         {
           "icon": "Users",
           "title": "Un solo equipo",
           "description": "Abogados, contadores, escribanos, asesores financieros.",
-          "badge": "Why clients choose us"
+          "badge": "Por qué nos eligen"
         },
         {
           "icon": "Shield",
           "title": "Precio transparente",
           "description": "Todo incluido. Sin cargos ocultos.",
-          "badge": "Why clients choose us"
+          "badge": "Por qué nos eligen"
         }
       ]
     }
