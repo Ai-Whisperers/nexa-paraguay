@@ -347,6 +347,12 @@
       "subtitle": "Nueve servicios profesionales en tres áreas: documentación legal, banca e impuestos, y bienes raíces.",
       "ctaText": "Ver todos los servicios →",
       "ctaHref": "/servicios"
+    },
+    "processTeaser": {
+      "title": "A clear process, step by step",
+      "subtitle": "Select your services, prepare documents remotely, then fly to Paraguay for one coordinated operational day. We handle the rest.",
+      "ctaText": "See the full process",
+      "ctaHref": "proceso"
     }
   },
   "whyCountryPage": {
@@ -533,10 +539,13 @@
       ]
     },
     "cta": {
-      "title": "Dé el primer paso",
-      "subtitle": "Agende una consulta gratuita de 30 minutos.",
-      "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/contacto"
+      "title": "Descubre si Paraguay es para ti",
+      "subtitle": "Consulta gratuita de 30 minutos — consejo honesto, sin ventas.",
+      "buttonText": "Reserva consulta",
+      "buttonHref": "/contacto",
+      "eyebrow": "",
+      "tagline": "",
+      "whatsapp": ""
     },
     "process": {
       "eyebrow": "Cómo funciona",
@@ -693,40 +702,34 @@
       "_note": "placeholder — reemplazar con fotos reales del equipo"
     },
     "trust": {
-      "eyebrow": "Por qué Nexa Paraguay",
-      "title": "Un sistema integral, no una gestoría de trámites",
+      "eyebrow": "Nuestra diferencia",
+      "title": "What sets us apart",
       "items": [
         {
-          "icon": "Package",
-          "title": "Un solo programa",
-          "description": "Residencia, sociedad y cuenta bancaria integrados.",
-          "image": "@src:trust.certificate"
+          "title": "Multidisciplinary team",
+          "description": "Lawyers, accountants, notaries and financial advisors working in coordination.",
+          "image": "@src:images.team.group"
         },
         {
-          "icon": "Plane",
-          "title": "Un solo viaje",
-          "description": "Tramitación presencial en una jornada coordinada.",
-          "image": "@src:trust.migraciones"
+          "title": "Relational capital",
+          "description": "Institutional access built over years with banks, notaries and authorities.",
+          "image": "@src:images.trust.registry"
         },
         {
-          "icon": "Users",
-          "title": "Un solo equipo",
-          "description": "Abogados, contadores, escribanos, asesores financieros.",
-          "image": "@src:trust.cedula"
-        },
-        {
-          "icon": "Shield",
-          "title": "Precio transparente",
-          "description": "Todo incluido. Sin cargos ocultos.",
-          "image": "@src:trust.registry"
+          "title": "Time as value",
+          "description": "We compress into one day what otherwise requires multiple trips.",
+          "image": "@src:images.trust.migraciones"
         }
       ]
     },
     "cta": {
-      "title": "Dé el primer paso",
-      "subtitle": "Agende una consulta gratuita de 30 minutos.",
-      "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/contacto"
+      "title": "¿Quieres conocer al equipo?",
+      "subtitle": "Agenda una llamada gratuita de 30 minutos. Sin presión, solo una conversación.",
+      "buttonText": "Agenda presentación",
+      "buttonHref": "/contacto",
+      "eyebrow": "",
+      "tagline": "",
+      "whatsapp": ""
     },
     "gallery": {
       "title": "Nuestra oficina en Asunción",
@@ -986,10 +989,13 @@
       ]
     },
     "cta": {
-      "title": "Dé el primer paso",
-      "subtitle": "Agende una consulta gratuita de 30 minutos.",
-      "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/contacto"
+      "title": "¿Aún tienes preguntas?",
+      "subtitle": "Reserva una consulta gratuita de 30 minutos — te responderemos todo.",
+      "buttonText": "Obtén respuestas",
+      "buttonHref": "/contacto",
+      "eyebrow": "",
+      "tagline": "",
+      "whatsapp": ""
     }
   },
   "contactPage": {
@@ -1820,28 +1826,24 @@
       "buttonHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-final-es"
     },
     "trust": {
-      "eyebrow": "Por qué Nexa",
-      "title": "Un sistema integrado",
+      "eyebrow": "Why trust Nexa",
+      "title": "Built on experience and institutional relationships",
       "items": [
         {
-          "icon": "Package",
-          "title": "Un programa",
-          "description": "Residencia, empresa y banco integrados."
+          "title": "Track record",
+          "description": "200+ European families relocated since 2022."
         },
         {
-          "icon": "Plane",
-          "title": "Un viaje",
-          "description": "Todo lo presencial en un solo día coordinado."
+          "title": "Licensed professionals",
+          "description": "Paraguayan bar-admitted lawyers and CPA accountants."
         },
         {
-          "icon": "Users",
-          "title": "Un equipo",
-          "description": "Abogados, contadores, escribanos y asesores financieros."
+          "title": "Institutional access",
+          "description": "Direct relationships with migration, banks, and notaries."
         },
         {
-          "icon": "Shield",
-          "title": "Precio transparente",
-          "description": "Todo incluido. Sin costos ocultos."
+          "title": "End-to-end",
+          "description": "From document pre-validation to post-arrival settlement."
         }
       ]
     }
@@ -2481,11 +2483,12 @@
       ]
     },
     "story": {
-      "title": "Nuestra Historia",
+      "title": "Conoce a la Fundadora",
+      "eyebrow": "Trayectoria Personal",
       "paragraphs": [
-        "Entendemos exactamente lo abrumador que puede ser el papeleo porque lo hemos vivido nosotros mismos.",
-        "Nuestra fundadora está casada con un neerlandés y navegó personalmente las complejidades de la mudanza y documentación internacional. Esta experiencia de primera mano reveló una clara necesidad: un servicio que no solo procese papeles, sino que realmente apoye a las personas a construir una buena vida en Paraguay.",
-        "Creemos que tu mudanza debería ser más que solo \"obtener un permiso\" — debería ser el comienzo de tu mejor vida aquí. Combinando nuestro profundo conocimiento de la ley paraguaya con un toque personal, te ayudamos a saltar los trámites y pasar directamente a disfrutar todo lo que este hermoso país tiene para ofrecer."
+        "Nexa Paraguay nació de una experiencia de primera mano. Después de navegar las complejidades de la reubicación internacional — desde la banca corporativa europea hasta construir una vida en Sudamérica — nuestra fundadora identificó una necesidad en el mercado: un servicio que combine precisión legal con apoyo humano genuino.",
+        "Fluida en neerlandés, alemán, español e inglés, ella conecta las expectativas europeas con la realidad paraguaya. Su experiencia en finanzas y operaciones transfronterizas le permite entender tanto las preguntas estratégicas de los inversores como el aspecto humano de dejar un país por otro.",
+        "Cada programa de Nexa se diseña bajo el mismo principio: tratar a los clientes como ella hubiera deseado ser tratada — con transparencia, eficiencia y un toque personal que convierte la burocracia en una experiencia acogedora."
       ]
     },
     "cta": {
@@ -3095,10 +3098,13 @@
       ]
     },
     "cta": {
-      "title": "Dé el primer paso",
-      "subtitle": "Agende una consulta gratuita de 30 minutos.",
-      "buttonText": "Agendar consulta gratuita",
-      "buttonHref": "/contacto"
+      "title": "¿Listo para comenzar tu mudanza?",
+      "subtitle": "El proceso toma 8–12 semanas. Tu primer paso es una llamada gratuita.",
+      "buttonText": "Inicia tu proceso",
+      "buttonHref": "/contacto",
+      "eyebrow": "",
+      "tagline": "",
+      "whatsapp": ""
     },
     "steps": [
       {
@@ -3409,10 +3415,13 @@
       ]
     },
     "cta": {
-      "title": "¿Listo para elegir su programa?",
-      "buttonText": "Agendar consulta gratuita",
+      "title": "¿No sabes qué programa elegir?",
+      "subtitle": "Te ayudamos a escoger — sin compromiso, consulta gratuita.",
+      "buttonText": "Recibe asesoría",
       "buttonHref": "/contacto",
-      "subtitle": "Agendá una consulta gratuita y revisamos tu caso sin compromiso."
+      "eyebrow": "",
+      "tagline": "",
+      "whatsapp": ""
     },
     "testimonials": {
       "eyebrow": "Testimonios",

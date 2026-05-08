@@ -1,5 +1,7 @@
+'use client'
+
 import React, { useState } from 'react'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 interface NavItem {
   label: string
@@ -18,15 +20,14 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
   const [open, setOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
   const navItems: NavItem[] = navigation?.navItems || []
-  const router = useRouter()
+  const pathname = usePathname()
   const currentLocale = locale || 'es'
 
   function switchLocale(newLocale: string) {
     // Get current path without locale prefix
-    const path = router.asPath
-    const parts = path.split('/').filter(Boolean)
+    const parts = pathname.split('/').filter(Boolean)
     const LOCALES = ['es', 'en', 'nl', 'de']
-    let cleanPath = path
+    let cleanPath = '/'
     if (parts.length > 0 && LOCALES.includes(parts[0])) {
       cleanPath = '/' + parts.slice(1).join('/') || '/'
     }

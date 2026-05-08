@@ -1,0 +1,44 @@
+name: Visual Regression
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  screenshot-diff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - run: npm ci --legacy-peer-deps
+      - name: Install Playwright
+        run: npx playwright install chromium --with-deps
+      - name: Build & Screenshot
+        run: node scripts/screenshot-all.mjs
+        timeout-minutes: 10
+      - name: Store screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: screenshots/
+          retention-days: 30
+      - name: Compare with baseline
+        run: |
+          BASELINE_DIR=".screenshot-baselines"
+          NEWEST=$(ls -t screenshots/ 2>/dev/null | head -1)
+          if [ -z "$NEWEST" ]; then
+            echo "No screenshots generated"
+            exit 1
+          fi
+          mkdir -p "$BASELINE_DIR"
+          cp -r "screenshots/$NEWEST" "$BASELINE_DIR/$NEWEST"
+          git config user.name "nexa-bot"
+          git config user.email "bot@aiwhisperers.com"
+          git add "$BASELINE_DIR/"
+          git diff --cached --quiet || git commit -m "chore: update screenshot baseline $NEWEST"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

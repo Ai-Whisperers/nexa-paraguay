@@ -11,6 +11,10 @@ const securityHeaders = [
 const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
+  // Use webpack for stable builds — disable Turbopack
+  experimental: {
+    webpackBuildWorker: false,
+  },
   async headers() {
     return [
       { source: '/(.*)', headers: securityHeaders },

@@ -1,15 +1,47 @@
 {
-  "slug": "por-que-paraguay",
-  "titleKey": "whyCountryPage.seo.title",
-  "descriptionKey": "whyCountryPage.seo.description",
-  "sections": [
-    {"id":"header","variant":"standard","content":"navigation"},
-    {"id":"page-hero","variant":"minimal","content":"whyCountryPage.hero"},
-    {"id":"pillars","variant":"pillars","content":"whyCountryPage.pillars"},
-    {"id":"highlights","variant":"stats","content":"whyCountryPage.highlights"},
-    {"id":"trust-signals","variant":"credentials","content":"whyCountryPage.trust"},
-    {"id":"faq","variant":"accordion","content":"whyCountryPage.faq"},
-    {"id":"cta-banner","variant":"solid","content":"whyCountryPage.cta"},
-    {"id":"footer","variant":"standard","content":"footer"}
-  ]
+    "slug": "por-que-paraguay",
+    "titleKey": "whyCountryPage.seo.title",
+    "descriptionKey": "whyCountryPage.seo.description",
+    "sections": [
+        {
+            "id": "header",
+            "variant": "standard",
+            "content": "navigation"
+        },
+        {
+            "id": "page-hero",
+            "variant": "minimal",
+            "content": "whyCountryPage.hero"
+        },
+        {
+            "id": "pillars",
+            "variant": "pillars",
+            "content": "whyCountryPage.pillars"
+        },
+        {
+            "id": "highlights",
+            "variant": "stats",
+            "content": "whyCountryPage.highlights"
+        },
+        {
+            "id": "trust-signals",
+            "variant": "credentials",
+            "content": "whyCountryPage.trust"
+        },
+        {
+            "id": "faq",
+            "variant": "accordion",
+            "content": "whyCountryPage.faq"
+        },
+        {
+            "id": "cta-banner",
+            "variant": "solid",
+            "content": "whyCountryPage.cta"
+        },
+        {
+            "id": "footer",
+            "variant": "standard",
+            "content": "footer"
+        }
+    ]
 }

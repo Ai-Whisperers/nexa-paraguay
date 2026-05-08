@@ -1,0 +1,640 @@
+{
+  "generated_at": "2026-05-08T13:53:56.238845",
+  "repo_path": "/root/nexa-paraguay",
+  "total_components": 7,
+  "summary": {
+    "total_inline_styles": 388,
+    "total_theme_token_references": 285,
+    "estimated_migration_hours": 28.5,
+    "components_with_theme_import": 2,
+    "components_with_use_router": 1,
+    "components_needing_migration": 5,
+    "tailwind_theme_config": {
+      "primary": "#1B2A4A -> text-primary, bg-primary",
+      "accent": "#C9A96E -> text-accent, bg-accent, border-accent",
+      "surface-alt": "#F5F5F0 -> bg-surface-alt",
+      "text-muted": "#5C6B7A -> text-text-muted",
+      "border": "#E0E0E0 -> border-border",
+      "rounded-sm": "8px",
+      "rounded-lg": "12px",
+      "rounded-2xl": "24px",
+      "rounded-full": "50%/9999px"
+    },
+    "key_mappings": {
+      "c.primary": "#1B2A4A -> primary / text-primary / bg-primary",
+      "c.accent": "#C9A96E -> accent / text-accent / bg-accent / border-accent",
+      "c.bg": "#FAF8F5 -> bg-background",
+      "c.bgLight": "#F5F5EE -> bg-surface-alt",
+      "c.text": "#444 -> text-text-muted",
+      "c.textDark": "#1B2A4A -> text-primary",
+      "c.textMuted": "#666 -> text-text-muted",
+      "c.border": "#e0e0e0 -> border-border",
+      "c.whatsapp": "#25D366 -> text-[#25D366] or bg-[#25D366]",
+      "r.sm": "8px -> rounded-sm",
+      "r.md": "12px -> rounded-lg",
+      "r.lg": "16px -> rounded-xl",
+      "r.xl": "24px -> rounded-2xl",
+      "r.full": "50px -> rounded-full",
+      "s.section": "4rem 1rem -> py-16 px-4",
+      "s.sectionSm": "3rem 1rem -> py-12 px-4",
+      "s.sectionLg": "5rem 1rem 3rem -> py-20 px-4",
+      "s.card": "1.5rem -> p-6",
+      "s.btn": "0.85rem 2.5rem -> px-10 py-3",
+      "s.input": "0.75rem 1rem -> px-4 py-3",
+      "sz.maxWidth": "1200px -> max-w-6xl",
+      "sz.contentWidth": "800px -> max-w-4xl",
+      "sz.contentWide": "1000px -> max-w-5xl",
+      "sz.contentNarrow": "700px -> max-w-3xl",
+      "sz.contentForm": "600px -> max-w-2xl"
+    }
+  },
+  "components": [
+    {
+      "file": "src/components/ErrorBoundary.tsx",
+      "component_name": "ErrorBoundary",
+      "exports": [],
+      "total_inline_styles": 0,
+      "has_theme_import": false,
+      "has_use_router": false,
+      "has_use_pathname": false,
+      "shortcuts": [],
+      "theme_token_usage": {},
+      "total_theme_token_references": 0,
+      "specific_patterns_found": [],
+      "migration_effort": {
+        "estimated_hours": 1,
+        "estimated_difficulty": "low",
+        "inline_style_count": 0,
+        "unique_token_count": 0
+      }
+    },
+    {
+      "file": "src/components/Footer.tsx",
+      "component_name": "Footer",
+      "exports": [
+        "Footer"
+      ],
+      "total_inline_styles": 16,
+      "has_theme_import": false,
+      "has_use_router": false,
+      "has_use_pathname": false,
+      "shortcuts": [],
+      "theme_token_usage": {},
+      "total_theme_token_references": 0,
+      "specific_patterns_found": [
+        [
+          "fontSize",
+          "0.85rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.9rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.8rem",
+          "text-xs"
+        ],
+        [
+          "fontWeight",
+          "600",
+          "font-semibold"
+        ],
+        [
+          "textAlign",
+          "center",
+          "text-center"
+        ],
+        [
+          "display",
+          "flex",
+          "flex"
+        ],
+        [
+          "display",
+          "grid",
+          "grid"
+        ]
+      ],
+      "migration_effort": {
+        "estimated_hours": 1.1,
+        "estimated_difficulty": "low",
+        "inline_style_count": 16,
+        "unique_token_count": 0
+      }
+    },
+    {
+      "file": "src/components/GatewayPopup.tsx",
+      "component_name": "GatewayPopup",
+      "exports": [
+        "GatewayPopup"
+      ],
+      "total_inline_styles": 16,
+      "has_theme_import": false,
+      "has_use_router": false,
+      "has_use_pathname": false,
+      "shortcuts": [],
+      "theme_token_usage": {},
+      "total_theme_token_references": 0,
+      "specific_patterns_found": [
+        [
+          "fontSize",
+          "1rem",
+          "text-base"
+        ],
+        [
+          "fontSize",
+          "1.5rem",
+          "text-2xl"
+        ],
+        [
+          "fontSize",
+          "1.8rem",
+          "text-3xl"
+        ],
+        [
+          "fontSize",
+          "0.85rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.95rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.8rem",
+          "text-xs"
+        ],
+        [
+          "fontWeight",
+          "600",
+          "font-semibold"
+        ],
+        [
+          "fontWeight",
+          "700",
+          "font-bold"
+        ],
+        [
+          "lineHeight",
+          "1.5",
+          "leading-normal"
+        ],
+        [
+          "textAlign",
+          "center",
+          "text-center"
+        ],
+        [
+          "textAlign",
+          "left",
+          "text-left"
+        ],
+        [
+          "display",
+          "flex",
+          "flex"
+        ]
+      ],
+      "migration_effort": {
+        "estimated_hours": 1.1,
+        "estimated_difficulty": "low",
+        "inline_style_count": 16,
+        "unique_token_count": 0
+      }
+    },
+    {
+      "file": "src/components/Header.tsx",
+      "component_name": "Header",
+      "exports": [
+        "Header"
+      ],
+      "total_inline_styles": 15,
+      "has_theme_import": false,
+      "has_use_router": false,
+      "has_use_pathname": true,
+      "shortcuts": [],
+      "theme_token_usage": {},
+      "total_theme_token_references": 0,
+      "specific_patterns_found": [
+        [
+          "fontSize",
+          "1.5rem",
+          "text-2xl"
+        ],
+        [
+          "fontSize",
+          "0.85rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.9rem",
+          "text-sm"
+        ],
+        [
+          "fontWeight",
+          "500",
+          "font-medium"
+        ],
+        [
+          "fontWeight",
+          "700",
+          "font-bold"
+        ],
+        [
+          "textAlign",
+          "left",
+          "text-left"
+        ],
+        [
+          "display",
+          "flex",
+          "flex"
+        ]
+      ],
+      "migration_effort": {
+        "estimated_hours": 1,
+        "estimated_difficulty": "low",
+        "inline_style_count": 15,
+        "unique_token_count": 0
+      }
+    },
+    {
+      "file": "src/components/SectionsRenderer.tsx",
+      "component_name": "SectionsRenderer",
+      "exports": [],
+      "total_inline_styles": 0,
+      "has_theme_import": false,
+      "has_use_router": false,
+      "has_use_pathname": false,
+      "shortcuts": [],
+      "theme_token_usage": {},
+      "total_theme_token_references": 0,
+      "specific_patterns_found": [],
+      "migration_effort": {
+        "estimated_hours": 1,
+        "estimated_difficulty": "low",
+        "inline_style_count": 0,
+        "unique_token_count": 0
+      }
+    },
+    {
+      "file": "src/components/sections-extra.tsx",
+      "component_name": "sections-extra",
+      "exports": [
+        "FaqSection",
+        "BlogSection",
+        "TeamSection",
+        "PrivacyAccordion",
+        "GlossarySection",
+        "NewsletterSection",
+        "StorySection",
+        "PillarsSection",
+        "PageHeroSection",
+        "HighlightSection",
+        "ComparisonSection",
+        "GuidesSection",
+        "BookingEmbedSection",
+        "ContactDetailsSection",
+        "GallerySection",
+        "FaqSearchSection",
+        "ServiceDetailSection",
+        "PressReleasesListSection",
+        "IntakeWizardSection",
+        "ContactFormSection"
+      ],
+      "total_inline_styles": 211,
+      "has_theme_import": true,
+      "has_use_router": true,
+      "has_use_pathname": false,
+      "shortcuts": [
+        "c"
+      ],
+      "theme_token_usage": {
+        "c.primary": 44,
+        "c.accent": 27,
+        "c.bg": 12,
+        "c.text": 38,
+        "c.textMuted": 27,
+        "c.textLight": 4,
+        "c.border": 19,
+        "c.whatsapp": 2,
+        "c.white": 26,
+        "r.sm": 2,
+        "r.md": 19,
+        "r.lg": 3,
+        "r.full": 8,
+        "s.section": 20,
+        "s.sectionLg": 1,
+        "s.sectionDark": 1,
+        "s.card": 7,
+        "s.cardSm": 1,
+        "s.btn": 1,
+        "s.btnSm": 1,
+        "s.input": 7,
+        "sz.contentWidth": 2,
+        "sz.contentWide": 3,
+        "sz.contentNarrow": 2,
+        "sz.contentForm": 4
+      },
+      "total_theme_token_references": 281,
+      "specific_patterns_found": [
+        [
+          "fontSize",
+          "1rem",
+          "text-base"
+        ],
+        [
+          "fontSize",
+          "1.05rem",
+          "text-base"
+        ],
+        [
+          "fontSize",
+          "1.1rem",
+          "text-lg"
+        ],
+        [
+          "fontSize",
+          "1.2rem",
+          "text-xl"
+        ],
+        [
+          "fontSize",
+          "1.5rem",
+          "text-2xl"
+        ],
+        [
+          "fontSize",
+          "2rem",
+          "text-4xl"
+        ],
+        [
+          "fontSize",
+          "2.5rem",
+          "text-5xl"
+        ],
+        [
+          "fontSize",
+          "0.85rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.9rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.95rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.8rem",
+          "text-xs"
+        ],
+        [
+          "fontSize",
+          "0.75rem",
+          "text-xs"
+        ],
+        [
+          "fontWeight",
+          "600",
+          "font-semibold"
+        ],
+        [
+          "fontWeight",
+          "700",
+          "font-bold"
+        ],
+        [
+          "fontWeight",
+          "800",
+          "font-extrabold"
+        ],
+        [
+          "lineHeight",
+          "1.2",
+          "leading-tight"
+        ],
+        [
+          "lineHeight",
+          "1.5",
+          "leading-normal"
+        ],
+        [
+          "lineHeight",
+          "1.6",
+          "leading-relaxed"
+        ],
+        [
+          "lineHeight",
+          "1.7",
+          "leading-relaxed"
+        ],
+        [
+          "lineHeight",
+          "1.8",
+          "leading-relaxed"
+        ],
+        [
+          "textAlign",
+          "center",
+          "text-center"
+        ],
+        [
+          "textAlign",
+          "left",
+          "text-left"
+        ],
+        [
+          "textTransform",
+          "uppercase",
+          "uppercase"
+        ],
+        [
+          "display",
+          "flex",
+          "flex"
+        ],
+        [
+          "display",
+          "grid",
+          "grid"
+        ]
+      ],
+      "migration_effort": {
+        "estimated_hours": 14.6,
+        "estimated_difficulty": "high",
+        "inline_style_count": 211,
+        "unique_token_count": 281
+      }
+    },
+    {
+      "file": "src/components/sections.tsx",
+      "component_name": "sections",
+      "exports": [
+        "HeroSection",
+        "StatsSection",
+        "TrustSection",
+        "ProgramsSection",
+        "ServicesSection",
+        "WhyCountrySection",
+        "FeaturesSection",
+        "ProcessSection",
+        "TestimonialsSection",
+        "CtaBanner",
+        "TaxCalculatorSection"
+      ],
+      "total_inline_styles": 130,
+      "has_theme_import": true,
+      "has_use_router": false,
+      "has_use_pathname": false,
+      "shortcuts": [],
+      "theme_token_usage": {
+        "s.card": 4
+      },
+      "total_theme_token_references": 4,
+      "specific_patterns_found": [
+        [
+          "fontSize",
+          "1rem",
+          "text-base"
+        ],
+        [
+          "fontSize",
+          "1.05rem",
+          "text-base"
+        ],
+        [
+          "fontSize",
+          "1.1rem",
+          "text-lg"
+        ],
+        [
+          "fontSize",
+          "1.15rem",
+          "text-lg"
+        ],
+        [
+          "fontSize",
+          "1.2rem",
+          "text-xl"
+        ],
+        [
+          "fontSize",
+          "1.3rem",
+          "text-xl"
+        ],
+        [
+          "fontSize",
+          "1.4rem",
+          "text-2xl"
+        ],
+        [
+          "fontSize",
+          "1.8rem",
+          "text-3xl"
+        ],
+        [
+          "fontSize",
+          "2.5rem",
+          "text-5xl"
+        ],
+        [
+          "fontSize",
+          "0.85rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.9rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.95rem",
+          "text-sm"
+        ],
+        [
+          "fontSize",
+          "0.8rem",
+          "text-xs"
+        ],
+        [
+          "fontSize",
+          "0.75rem",
+          "text-xs"
+        ],
+        [
+          "fontWeight",
+          "600",
+          "font-semibold"
+        ],
+        [
+          "fontWeight",
+          "700",
+          "font-bold"
+        ],
+        [
+          "fontWeight",
+          "800",
+          "font-extrabold"
+        ],
+        [
+          "lineHeight",
+          "1.2",
+          "leading-tight"
+        ],
+        [
+          "lineHeight",
+          "1.5",
+          "leading-normal"
+        ],
+        [
+          "lineHeight",
+          "1.6",
+          "leading-relaxed"
+        ],
+        [
+          "textAlign",
+          "center",
+          "text-center"
+        ],
+        [
+          "textAlign",
+          "left",
+          "text-left"
+        ],
+        [
+          "textTransform",
+          "uppercase",
+          "uppercase"
+        ],
+        [
+          "display",
+          "flex",
+          "flex"
+        ],
+        [
+          "display",
+          "grid",
+          "grid"
+        ]
+      ],
+      "migration_effort": {
+        "estimated_hours": 8.7,
+        "estimated_difficulty": "low",
+        "inline_style_count": 130,
+        "unique_token_count": 4
+      }
+    }
+  ]
+}
