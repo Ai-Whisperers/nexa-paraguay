@@ -1,6 +1,6 @@
 {
   "siteName": "Nexa Paraguay",
-  "tagline": "Tu mudanza a Paraguay, guiada por la experiencia",
+  "tagline": "Acompañamiento de cerca para tu mudanza a Paraguay",
   "placeholders": {
     "country": "Paraguay",
     "capital": "Asunción",
@@ -68,7 +68,7 @@
       "description": "Residencia, banca, bienes raíces e instalación — todo coordinado por Nexa Paraguay. Servicios a tu elección, proceso optimizado y equipo profesional."
     },
     "hero": {
-      "headline": "Tu mudanza a Paraguay, simplificada.",
+      "headline": "Viví el proceso de mudanza a Paraguay con alguien que ya lo vivió.",
       "subheadline": "Residencia, banca, bienes raíces e instalación. Elegí lo que necesitás, nosotros gestionamos el resto.",
       "ctaPrimaryText": "Agendar consulta gratuita",
       "ctaPrimaryHref": "/contacto",
@@ -106,8 +106,8 @@
         },
         {
           "icon": "Users",
-          "title": "Un solo equipo",
-          "description": "Abogados, contadores, escribanos, asesores financieros.",
+          "title": "Acompañamiento de cerca",
+          "description": "Te guiamos durante todo el proceso, hasta un año después de tu llegada.",
           "image": "@src:trust.cedula"
         }
       ]
@@ -528,14 +528,13 @@
       "lightbox": true
     },
     "story": {
-      "title": "Nuestra Historia",
-      "eyebrow": "Experiencia Convertida en Conocimiento",
+      "title": "Conoce a Sonia",
+      "eyebrow": "Trayectoria Personal",
       "paragraphs": [
-        "Entendemos exactamente lo abrumador que puede ser el papeleo porque lo hemos vivido nosotros mismos.",
-        "Nuestra fundadora está casada con un neerlandés y navegó personalmente las complejidades de la mudanza y documentación internacional. Esta experiencia de primera mano reveló una clara necesidad: un servicio que no solo procese papeles, sino que realmente apoye a las personas a construir una buena vida en Paraguay.",
-        "Creemos que tu mudanza debería ser más que solo \"obtener un permiso\" — debería ser el comienzo de tu mejor vida aquí. Combinando nuestro profundo conocimiento de la ley paraguaya con un toque personal, te ayudamos a saltar los trámites y pasar directamente a disfrutar todo lo que este hermoso país tiene para ofrecer."
-      ],
-      "_note": "Reemplazar 'nuestra fundadora' con el nombre real una vez aprobado."
+        "Viví en los Países Bajos, pasé por el proceso de emigrar yo misma, y sé lo que se siente llegar a un país nuevo sin conocer el idioma ni tener a quién recurrir.",
+        "Esa experiencia me mostró que faltaba un servicio que no solo tramite documentos, sino que acompañe de verdad — desde la primera consulta hasta que ya estás instalado con tu casa, tu banco y tus papeles en orden.",
+        "Hoy ayudo a europeos a mudarse a Paraguay con el mismo acompañamiento de cerca que me hubiera gustado tener. Hablo neerlandés, inglés y español, conozco ambas culturas y sé exactamente lo que estás viviendo."
+      ]
     },
     "whyNexa": {
       "eyebrow": "Por qué Nexa Paraguay",
@@ -769,6 +768,15 @@
       "eyebrow": "",
       "tagline": "",
       "whatsapp": ""
+    },
+    "story": {
+      "title": "Nuestra Historia",
+      "eyebrow": "De la experiencia personal a la misión profesional",
+      "paragraphs": [
+        "Nexa Paraguay nace de una experiencia real. Viví en los Países Bajos, pasé por el proceso de emigrar a otro país, y sé lo que se siente llegar a un lugar donde no entendés el idioma y no tenés a nadie que te guíe.",
+        "Esa experiencia me mostró que faltaba algo: un servicio que no solo procese papeles, sino que te acompañe de verdad durante todo el proceso — desde los primeros documentos hasta que ya estás instalado, con tu casa, tu cuenta bancaria y tus registros en orden.",
+        "Hoy ayudo a ciudadanos europeos a mudarse a Paraguay con el mismo acompañamiento de cerca que me hubiera gustado tener a mí. Hablo tu idioma, conozco tu cultura y entiendo exactamente lo que estás viviendo porque yo también lo viví."
+      ]
     }
   },
   "contactPage": {

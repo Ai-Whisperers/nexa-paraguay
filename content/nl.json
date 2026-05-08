@@ -2693,7 +2693,7 @@
       "footer": "",
       "founderPage": "",
       "glossaryPage": "",
-      "headline": "Jouw verhuizing naar Paraguay, vereenvoudigd.",
+      "headline": "Doorloop je verhuizing naar Paraguay met iemand die het al heeft meegemaakt.",
       "home": "",
       "intakeWizardPage": "",
       "landingEmpresa": "",
@@ -2997,8 +2997,8 @@
         },
         {
           "icon": "Users",
-          "title": "Eén team",
-          "description": "Advocaten, accountants, notarissen en financieel adviseurs.",
+          "title": "Persoonlijke begeleiding",
+          "description": "We begeleiden je gedurende het hele proces, tot een jaar na aankomst.",
           "image": "@src:trust.cedula"
         }
       ],
@@ -6536,7 +6536,7 @@
     }
   },
   "siteName": "Nexa Paraguay",
-  "tagline": "Je verhuizing naar Paraguay, begeleid door ervaring",
+  "tagline": "Persoonlijke begeleiding bij je verhuizing naar Paraguay",
   "whatsapp": "595982515138",
   "whyCountryPage": {
     "aboutPage": "",

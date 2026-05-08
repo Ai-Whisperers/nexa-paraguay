@@ -3080,7 +3080,7 @@
       "footer": "",
       "founderPage": "",
       "glossaryPage": "",
-      "headline": "Your move to Paraguay, simplified.",
+      "headline": "Go through your move to Paraguay with someone who's already done it.",
       "home": "",
       "intakeWizardPage": "",
       "landingEmpresa": "",
@@ -3384,8 +3384,8 @@
         },
         {
           "icon": "Users",
-          "title": "Dedicated team",
-          "description": "Lawyers, accountants, notaries and financial advisors.",
+          "title": "Close guidance throughout",
+          "description": "We guide you through the entire process, up to a year after your arrival.",
           "image": "@src:trust.cedula"
         }
       ],
@@ -6913,7 +6913,7 @@
     }
   },
   "siteName": "Nexa Paraguay",
-  "tagline": "Your Paraguay move, guided by experience",
+  "tagline": "Close guidance for your move to Paraguay",
   "whatsapp": "595982515138",
   "whyCountryPage": {
     "aboutPage": "",

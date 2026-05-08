@@ -2636,7 +2636,7 @@
       "footer": "",
       "founderPage": "",
       "glossaryPage": "",
-      "headline": "Dein Umzug nach Paraguay, vereinfacht.",
+      "headline": "Mach deinen Umzug nach Paraguay mit jemandem, der es schon erlebt hat.",
       "home": "",
       "intakeWizardPage": "",
       "landingEmpresa": "",
@@ -2940,8 +2940,8 @@
         },
         {
           "icon": "Users",
-          "title": "Ein Team",
-          "description": "Anwälte, Steuerberater, Notare und Finanzberater.",
+          "title": "Begleitung aus Erfahrung",
+          "description": "Wir begleiten dich durch den gesamten Prozess, bis zu einem Jahr nach deiner Ankunft.",
           "image": "@src:trust.cedula"
         }
       ],
@@ -6479,7 +6479,7 @@
     }
   },
   "siteName": "Nexa Paraguay",
-  "tagline": "Ihr Umzug nach Paraguay, begleitet von Erfahrung",
+  "tagline": "Begleitung für deinen Umzug nach Paraguay",
   "whatsapp": "595982515138",
   "whyCountryPage": {
     "aboutPage": "",
