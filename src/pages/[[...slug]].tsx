@@ -75,7 +75,7 @@ export default function SlugPage({ content, pageConfig, pageId, images, post, lo
     return (<>
       <Head><title>{post.title} — {siteName}</title>{post.excerpt && <meta name="description" content={post.excerpt} />}</Head>
       <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", color: '#1B2A4A' }}>
-        {navigation && <Header navigation={navigation} />}
+        {navigation && <Header navigation={navigation} locale={loc} />}
         <main>
           <article style={{ maxWidth: '750px', margin: '0 auto', padding: '3rem 1rem' }}>
             {post.date && <span style={{ fontSize:'0.85rem',color:'#C9A96E',fontWeight:600 }}>{post.date}</span>}
@@ -113,7 +113,7 @@ export default function SlugPage({ content, pageConfig, pageId, images, post, lo
         {jsonLd.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
       </Head>
       <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", color: '#1B2A4A' }}>
-        {navigation && <Header navigation={navigation} />}
+        {navigation && <Header navigation={navigation} locale={loc} />}
         <main>
           {sections.map((section: any, idx: number) => {
             if (section.enabledWhen && !resolveContent(content, section.enabledWhen)) return null
@@ -167,17 +167,61 @@ export default function SlugPage({ content, pageConfig, pageId, images, post, lo
   )
 }
 
-export function getServerSideProps({ params }: any) {
+const LOCALES = ['es', 'en', 'nl', 'de']
+
+/**
+ * Detects preferred locale from Accept-Language header.
+ * Maps browser language to our supported locales.
+ */
+function detectLocaleFromHeader(acceptLanguage: string | undefined): string | null {
+  if (!acceptLanguage) return null
+  const prefs = acceptLanguage.split(',').map(s => s.split(';')[0].trim().toLowerCase())
+  for (const lang of prefs) {
+    if (lang.startsWith('nl')) return 'nl'
+    if (lang.startsWith('de')) return 'de'
+    if (lang.startsWith('en')) return 'en'
+    if (lang.startsWith('es')) return 'es'
+  }
+  return null
+}
+
+export function getServerSideProps({ params, req, res }: any) {
   let slug = Array.isArray(params?.slug) ? params.slug.join('/') : (params?.slug || 'home')
   let locale = 'es'
-  const LOCALES = ['es', 'en', 'nl', 'de']
+
+  // 1) URL prefix locale takes highest priority
   if (slug.includes('/')) {
     const parts = slug.split('/')
     if (LOCALES.includes(parts[0])) { locale = parts[0]; slug = parts.slice(1).join('/') || 'home' }
   } else if (LOCALES.includes(slug)) {
     locale = slug; slug = 'home'
   }
+
+  // 2) If no URL locale, check cookie
+  const cookieLocale = req?.cookies?.NEXT_LOCALE
+  if (!slug.includes('/') && slug !== 'home' && LOCALES.includes(slug)) {
+    // already handled above
+  } else if (slug === 'home' || !slug.includes('/')) {
+    if (!slug.match(new RegExp(`^(${LOCALES.join('|')})$`))) {
+      // Not already a locale-only slug, check cookie
+      if (cookieLocale && LOCALES.includes(cookieLocale)) {
+        locale = cookieLocale
+      }
+    }
+  }
+
+  // 3) If still default and first visit, detect from Accept-Language
+  if (locale === 'es' && !cookieLocale) {
+    const detected = detectLocaleFromHeader(req?.headers?.['accept-language'])
+    if (detected) locale = detected
+  }
+
   const pageFile = SLUG_MAP[slug] || slug || 'home'
+
+  // Set locale cookie for persistence
+  const cookieMaxAge = 60 * 60 * 24 * 365 // 1 year
+  res.setHeader('Set-Cookie', `NEXT_LOCALE=${locale}; Path=/; Max-Age=${cookieMaxAge}; SameSite=Lax`)
+
   // Handle blog posts routed through [[...slug]]
   if (slug.startsWith('blog/') && slug !== 'blog') {
     const blogSlug = slug.replace('blog/', '')
