@@ -2,6 +2,7 @@ import React from 'react'
 import { resolveImage } from './content'
 import { theme } from '../theme'
 import { SectionComponentProps } from '../types'
+import { useRouter } from 'next/router'
 
 const c = theme.colors, r = theme.radii, s = theme.spacing, sz = theme.sizes
 
@@ -38,6 +39,9 @@ export function FaqSection({ pageContent, data }: SectionComponentProps) {
 export function BlogSection({ pageContent, data, images }: SectionComponentProps) {
   const d = data || pageContent || {}
   const posts = d.posts || []
+  const router = useRouter()
+  const pathParts = router.asPath.split('/').filter(Boolean)
+  const locale = (['es', 'en', 'nl', 'de'].includes(pathParts[0]) ? pathParts[0] : 'es')
   if (!posts.length) return null
   return (
     <section style={{ padding: s.section }}>
@@ -53,7 +57,7 @@ export function BlogSection({ pageContent, data, images }: SectionComponentProps
                   {post.date && <span style={{ fontSize:'0.8rem',color:c.accent,fontWeight:600 }}>{post.date}</span>}
                   <h3 style={{ fontSize:'1.05rem',fontWeight:700,color:c.primary,margin:'0.5rem 0' }}>{post.title}</h3>
                   {post.excerpt && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5,marginBottom:'0.75rem' }}>{post.excerpt}</p>}
-                  {post.slug && <a href={`/blog/${post.slug}`} style={{ color:c.accent,fontWeight:700,fontSize:'0.85rem',textDecoration:'none',borderBottom:`2px solid ${c.accent}` }}>Leer más →</a>}
+                  {post.slug && <a href={`/${locale}/blog/${post.slug}`} style={{ color:c.accent,fontWeight:700,fontSize:'0.85rem',textDecoration:'none',borderBottom:`2px solid ${c.accent}` }}>Leer más →</a>}
                 </div>
               </article>
             )

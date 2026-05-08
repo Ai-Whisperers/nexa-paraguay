@@ -47,9 +47,18 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
         <nav style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
           {navItems.map((item, i) => (
             <div key={i} style={{ position: 'relative' }}>
-              <a href={item.href || '#'} style={{ color: '#333', textDecoration: 'none', fontWeight: 500, fontSize: '0.9rem', padding: '0.25rem 0', borderBottom: item.children ? '1px dashed #ccc' : 'none' }}>
-                {item.label}
-              </a>
+              {(() => {
+                let href = item.href || '#'
+                // Strip existing multiclient prefix (/s/en/nexa-paraguay/)
+                href = href.replace(/^\/s\/[^/]+\/[^/]+/, '')
+                // Prepend locale prefix for internal links
+                if (!href.startsWith('http') && !href.startsWith('/' + currentLocale)) {
+                  href = '/' + currentLocale + href
+                }
+                return <a href={href} style={{ color: '#333', textDecoration: 'none', fontWeight: 500, fontSize: '0.9rem', padding: '0.25rem 0', borderBottom: item.children ? '1px dashed #ccc' : 'none' }}>
+                  {item.label}
+                </a>
+              })()}
             </div>
           ))}
           {/* Language Switcher Dropdown */}
@@ -76,7 +85,7 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
               </div>
             )}
           </div>
-          {navigation?.ctaText && <a href={navigation.ctaHref} style={{ padding: '0.5rem 1.25rem', background: '#C9A96E', color: '#1B2A4A', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.85rem' }}>{navigation.ctaText}</a>}
+          {navigation?.ctaText && <a href={(() => { let h = navigation.ctaHref || '#'; h = h.replace(/^\/s\/[^/]+\/[^/]+/, ''); if (!h.startsWith('http') && !h.startsWith('/' + currentLocale)) h = '/' + currentLocale + h; return h; })()} style={{ padding: '0.5rem 1.25rem', background: '#C9A96E', color: '#1B2A4A', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.85rem' }}>{navigation.ctaText}</a>}
         </nav>
       </div>
       <style jsx>{`

@@ -11,7 +11,7 @@
       "aboutPage": "",
       "beneluxPage": "",
       "blog": "",
-      "buttonHref": "/s/en/nexa-paraguay/contacto",
+      "buttonHref": "/contacto",
       "buttonText": "Book free consultation",
       "caseStudiesPage": "",
       "comparisonPage": "",
@@ -518,7 +518,7 @@
       "comparisonPage": "",
       "complianceDisclaimer": "",
       "contactPage": "",
-      "ctaHref": "/s/en/nexa-paraguay/contacto",
+      "ctaHref": "/contacto",
       "ctaText": "Book free consultation",
       "eyebrow": "",
       "faqPage": "",
@@ -1511,7 +1511,7 @@
         "number": "Pending registration"
       }
     ],
-    "linkHref": "/s/en/nexa-paraguay/privacidad#aml",
+    "linkHref": "/privacidad#aml",
     "linkText": "Read full AML disclosure",
     "navigation": "",
     "paragraphs": [
@@ -1811,7 +1811,7 @@
       "aboutPage": "",
       "beneluxPage": "",
       "blog": "",
-      "buttonHref": "/s/en/nexa-paraguay/contacto",
+      "buttonHref": "/contacto",
       "buttonText": "Book free consultation",
       "caseStudiesPage": "",
       "comparisonPage": "",
@@ -2053,23 +2053,23 @@
         "links": [
           {
             "label": "Programs",
-            "href": "/s/en/nexa-paraguay/programas"
+            "href": "/programas"
           },
           {
             "label": "Process",
-            "href": "/s/en/nexa-paraguay/proceso"
+            "href": "/proceso"
           },
           {
             "label": "Residency & Legal",
-            "href": "/s/en/nexa-paraguay/servicios#residency-legal"
+            "href": "/servicios#residency-legal"
           },
           {
             "label": "Banking & Tax",
-            "href": "/s/en/nexa-paraguay/servicios#banking-tax"
+            "href": "/servicios#banking-tax"
           },
           {
             "label": "Real Estate",
-            "href": "/s/en/nexa-paraguay/servicios#real-estate"
+            "href": "/servicios#real-estate"
           }
         ]
       },
@@ -2078,19 +2078,19 @@
         "links": [
           {
             "label": "Blog",
-            "href": "/s/en/nexa-paraguay/blog"
+            "href": "/blog"
           },
           {
             "label": "Glossary",
-            "href": "/s/en/nexa-paraguay/glosario"
+            "href": "/glosario"
           },
           {
             "label": "Resources",
-            "href": "/s/en/nexa-paraguay/recursos"
+            "href": "/recursos"
           },
           {
             "label": "Press",
-            "href": "/s/en/nexa-paraguay/prensa"
+            "href": "/prensa"
           }
         ]
       },
@@ -2099,23 +2099,23 @@
         "links": [
           {
             "label": "About",
-            "href": "/s/en/nexa-paraguay/sobre"
+            "href": "/sobre"
           },
           {
             "label": "FAQ",
-            "href": "/s/en/nexa-paraguay/faq"
+            "href": "/faq"
           },
           {
             "label": "Privacy",
-            "href": "/s/en/nexa-paraguay/privacidad"
+            "href": "/privacidad"
           },
           {
             "label": "Contact",
-            "href": "/s/en/nexa-paraguay/contacto"
+            "href": "/contacto"
           },
           {
             "label": "Benelux desk",
-            "href": "/s/en/nexa-paraguay/benelux"
+            "href": "/benelux"
           }
         ]
       }
@@ -2700,7 +2700,7 @@
       "aboutPage": "",
       "beneluxPage": "",
       "blog": "",
-      "buttonHref": "/s/en/nexa-paraguay/contacto",
+      "buttonHref": "/contacto",
       "buttonText": "Book free consultation",
       "caseStudiesPage": "",
       "comparisonPage": "",
@@ -2747,9 +2747,9 @@
       "comparisonPage": "",
       "complianceDisclaimer": "",
       "contactPage": "",
-      "ctaPrimaryHref": "/s/en/nexa-paraguay/contacto",
+      "ctaPrimaryHref": "/contacto",
       "ctaPrimaryText": "Book a free consultation",
-      "ctaSecondaryHref": "/s/en/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "ctaSecondaryText": "See programs",
       "faqPage": "",
       "footer": "",
@@ -3150,7 +3150,7 @@
       "comparisonPage": "",
       "complianceDisclaimer": "",
       "contactPage": "",
-      "ctaHref": "/s/en/nexa-paraguay/contacto",
+      "ctaHref": "/contacto",
       "ctaLabel": "Start my process",
       "eyebrow": "How it works",
       "faqPage": "",
@@ -3278,7 +3278,7 @@
             "Logistics support"
           ],
           "ctaLabel": "Request consultation",
-          "ctaHref": "/s/en/nexa-paraguay/contacto?programa=base",
+          "ctaHref": "/contacto?programa=base",
           "image": {
             "$img": "programs.tierBase"
           }
@@ -3300,7 +3300,7 @@
             "Fees, VAT and official taxes included"
           ],
           "ctaLabel": "Request consultation",
-          "ctaHref": "/s/en/nexa-paraguay/contacto?programa=business",
+          "ctaHref": "/contacto?programa=business",
           "image": {
             "$img": "programs.tierBusiness"
           }
@@ -3319,7 +3319,7 @@
             "Direct access to technical team"
           ],
           "ctaLabel": "Request consultation",
-          "ctaHref": "/s/en/nexa-paraguay/contacto?programa=investor",
+          "ctaHref": "/contacto?programa=investor",
           "image": {
             "$img": "programs.tierInvestor"
           }
@@ -3338,7 +3338,7 @@
             "Land registry inscription"
           ],
           "ctaLabel": "Inquire",
-          "ctaHref": "/s/en/nexa-paraguay/contacto?programa=tierras",
+          "ctaHref": "/contacto?programa=tierras",
           "image": {
             "$img": "programs.tierTierras"
           }
@@ -3585,7 +3585,7 @@
       "comparisonPage": "",
       "complianceDisclaimer": "",
       "contactPage": "",
-      "ctaHref": "/s/en/nexa-paraguay/contacto",
+      "ctaHref": "/contacto",
       "ctaText": "Read all testimonials",
       "eyebrow": "Testimonials",
       "faqPage": "",
@@ -3939,7 +3939,7 @@
       "contactPage": "",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-hero-primary-en",
       "ctaPrimaryText": "Book a free 30-min consultation",
-      "ctaSecondaryHref": "/s/en/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "ctaSecondaryText": "See the programs",
       "eyebrow": "Company setup",
       "faqPage": "",
@@ -4291,7 +4291,7 @@
       "contactPage": "",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-hero-primary-en",
       "ctaPrimaryText": "Book a free 30-min consultation",
-      "ctaSecondaryHref": "/s/en/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "ctaSecondaryText": "See the investor program",
       "eyebrow": "Investor program",
       "faqPage": "",
@@ -4644,7 +4644,7 @@
       "contactPage": "",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-hero-primary-en",
       "ctaPrimaryText": "Book a free 30-min consultation",
-      "ctaSecondaryHref": "/s/en/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "ctaSecondaryText": "Why Paraguay",
       "eyebrow": "Quality of life",
       "faqPage": "",
@@ -4994,7 +4994,7 @@
       "contactPage": "",
       "ctaPrimaryHref": "https://calendly.com/nexaparaguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-hero-primary-en",
       "ctaPrimaryText": "Book a free 30-min consultation",
-      "ctaSecondaryHref": "/s/en/nexa-paraguay/programas",
+      "ctaSecondaryHref": "/programas",
       "ctaSecondaryText": "See our process",
       "eyebrow": "Institutional trust",
       "faqPage": "",
@@ -5294,7 +5294,7 @@
     "comparisonPage": "",
     "complianceDisclaimer": "",
     "contactPage": "",
-    "ctaHref": "/s/en/nexa-paraguay/contacto",
+    "ctaHref": "/contacto",
     "ctaText": "Book free consultation",
     "faqPage": "",
     "footer": "",
@@ -5309,63 +5309,63 @@
     "navItems": [
       {
         "label": "Home",
-        "href": "/s/en/nexa-paraguay"
+        "href": "/"
       },
       {
         "label": "Services",
-        "href": "/s/en/nexa-paraguay/servicios"
+        "href": "/servicios"
       },
       {
         "label": "Relocation",
         "children": [
           {
             "label": "Programs",
-            "href": "/s/en/nexa-paraguay/programas"
+            "href": "/programas"
           },
           {
             "label": "Why Paraguay",
-            "href": "/s/en/nexa-paraguay/por-que-paraguay"
+            "href": "/por-que-paraguay"
           },
           {
             "label": "Process",
-            "href": "/s/en/nexa-paraguay/proceso"
+            "href": "/proceso"
           }
         ],
-        "href": "/s/en/nexa-paraguay/programas"
+        "href": "/programas"
       },
       {
         "label": "About",
-        "href": "/s/en/nexa-paraguay/sobre"
+        "href": "/sobre"
       },
       {
         "label": "FAQ",
-        "href": "/s/en/nexa-paraguay/faq"
+        "href": "/faq"
       },
       {
         "label": "Benelux",
-        "href": "/s/en/nexa-paraguay/benelux"
+        "href": "/benelux"
       },
       {
         "label": "Insights",
         "children": [
           {
             "label": "Blog",
-            "href": "/s/en/nexa-paraguay/blog"
+            "href": "/blog"
           },
           {
             "label": "Resources",
-            "href": "/s/en/nexa-paraguay/recursos"
+            "href": "/recursos"
           },
           {
             "label": "Press",
-            "href": "/s/en/nexa-paraguay/prensa"
+            "href": "/prensa"
           }
         ],
-        "href": "/s/en/nexa-paraguay/blog"
+        "href": "/blog"
       },
       {
         "label": "Contact",
-        "href": "/s/en/nexa-paraguay/contacto"
+        "href": "/contacto"
       }
     ],
     "navigation": "",
@@ -5674,7 +5674,7 @@
       "aboutPage": "",
       "beneluxPage": "",
       "blog": "",
-      "buttonHref": "/s/en/nexa-paraguay/contacto",
+      "buttonHref": "/contacto",
       "buttonText": "Book free consultation",
       "caseStudiesPage": "",
       "comparisonPage": "",
@@ -5868,7 +5868,7 @@
       "comparisonPage": "",
       "complianceDisclaimer": "",
       "contactPage": "",
-      "ctaHref": "/s/en/nexa-paraguay/contacto",
+      "ctaHref": "/contacto",
       "ctaLabel": "Start my process",
       "eyebrow": "How it works",
       "faqPage": "",
@@ -6010,7 +6010,7 @@
       "aboutPage": "",
       "beneluxPage": "",
       "blog": "",
-      "buttonHref": "/s/en/nexa-paraguay/contacto",
+      "buttonHref": "/contacto",
       "buttonText": "Book free consultation",
       "caseStudiesPage": "",
       "comparisonPage": "",
@@ -6213,7 +6213,7 @@
             "Logistical support"
           ],
           "ctaLabel": "Request consultation",
-          "ctaHref": "/s/en/nexa-paraguay/contacto?programa=base",
+          "ctaHref": "/contacto?programa=base",
           "image": {
             "$img": "programs.tierBase"
           }
@@ -6235,7 +6235,7 @@
             "Fees, VAT and taxes included"
           ],
           "ctaLabel": "Request consultation",
-          "ctaHref": "/s/en/nexa-paraguay/contacto?programa=business",
+          "ctaHref": "/contacto?programa=business",
           "image": {
             "$img": "programs.tierBusiness"
           }
@@ -6254,7 +6254,7 @@
             "Direct access to technical team"
           ],
           "ctaLabel": "Request consultation",
-          "ctaHref": "/s/en/nexa-paraguay/contacto?programa=investor",
+          "ctaHref": "/contacto?programa=investor",
           "image": {
             "$img": "programs.tierInvestor"
           }
@@ -6273,7 +6273,7 @@
             "Agricultural advisory (optional)"
           ],
           "ctaLabel": "Request consultation",
-          "ctaHref": "/s/en/nexa-paraguay/contacto?programa=land",
+          "ctaHref": "/contacto?programa=land",
           "image": {
             "$img": "programs.tierTierras"
           }
@@ -7041,7 +7041,7 @@
       "aboutPage": "",
       "beneluxPage": "",
       "blog": "",
-      "buttonHref": "/s/en/nexa-paraguay/contacto",
+      "buttonHref": "/contacto",
       "buttonText": "Book free consultation",
       "caseStudiesPage": "",
       "comparisonPage": "",
@@ -7557,7 +7557,7 @@
       "aboutPage": "",
       "beneluxPage": "",
       "blog": "",
-      "buttonHref": "/s/en/nexa-paraguay/contacto",
+      "buttonHref": "/contacto",
       "buttonText": "Book free consultation",
       "caseStudiesPage": "",
       "comparisonPage": "",

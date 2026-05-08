@@ -12,7 +12,12 @@
     {
       "id": "hero",
       "variant": "minimal",
-      "content": "prensa"
+      "content": "prensa.hero"
+    },
+    {
+      "id": "press-releases",
+      "variant": "list",
+      "content": "prensa.pressReleases"
     },
     {
       "id": "footer",

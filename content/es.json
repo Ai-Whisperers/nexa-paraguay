@@ -36,7 +36,7 @@
             "href": "/proceso"
           }
         ],
-        "href": "/sobre"
+        "href": "/programas"
       },
       {
         "label": "Sobre Nexa",
@@ -2879,8 +2879,30 @@
       "title": "Prensa — Nexa Paraguay",
       "description": "Notas de prensa, comunicados y material para medios sobre Nexa Paraguay."
     },
-    "headline": "Prensa y Medios",
-    "subheadline": "Comunicados oficiales, notas de prensa y material para periodistas."
+    "hero": {
+      "headline": "Prensa y Medios",
+      "subheadline": "Comunicados oficiales, notas de prensa y material para periodistas."
+    },
+    "pressReleases": [
+      {
+        "title": "Nexa Paraguay anuncia nuevo programa de residencia para inversores",
+        "date": "15 de abril, 2026",
+        "summary": "El programa integra residencia permanente, apertura de empresa y cuenta bancaria en un solo proceso coordinado.",
+        "link": "#"
+      },
+      {
+        "title": "Nexa Paraguay abre oficina de atención en neerlandés en Asunción",
+        "date": "2 de marzo, 2026",
+        "summary": "Con el objetivo de atender la creciente demanda de ciudadanos de los Países Bajos, Bélgica y Alemania.",
+        "link": "#"
+      },
+      {
+        "title": "Alianza estratégica con despachos notariales de Asunción",
+        "date": "10 de enero, 2026",
+        "summary": "La alianza permitirá agilizar los procesos de compra de propiedades y debida diligencia para clientes internacionales.",
+        "link": "#"
+      }
+    ]
   },
   "servicesPage": {
     "seo": {
