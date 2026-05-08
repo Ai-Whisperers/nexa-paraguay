@@ -1,38 +1,6 @@
 {
-  "id": "privacidad",
-  "slug": "privacidad",
-  "titleKey": "privacyPage.seo.title",
-  "descriptionKey": "privacyPage.seo.description",
   "sections": [
-    {
-      "id": "header",
-      "variant": "standard",
-      "content": "navigation"
-    },
-    {
-      "id": "hero",
-      "variant": "minimal",
-      "content": "privacyPage.hero"
-    },
-    {
-      "id": "privacy-accordion",
-      "variant": "accordion",
-      "content": "privacyPage.body"
-    },
-    {
-      "id": "cta-banner",
-      "variant": "solid",
-      "content": "privacyPage.cta"
-    },
-    {
-      "id": "footer",
-      "variant": "standard",
-      "content": "footer"
-    },
-    {
-      "id": "whatsapp-float",
-      "variant": "standard",
-      "content": "whatsapp"
-    }
+    { "id": "page-hero", "content": "privacidad" },
+    { "id": "faq-search", "content": "privacidad.full" }
   ]
 }

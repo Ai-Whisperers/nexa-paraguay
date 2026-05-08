@@ -1,0 +1,39 @@
+'use client'
+
+import React, { useState, useEffect } from 'react'
+
+export function CookieBanner() {
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const consent = localStorage.getItem('nexa-cookie-consent')
+    if (!consent) setVisible(true)
+  }, [])
+
+  const accept = () => {
+    localStorage.setItem('nexa-cookie-consent', 'accepted')
+    setVisible(false)
+  }
+
+  const reject = () => {
+    localStorage.setItem('nexa-cookie-consent', 'rejected')
+    setVisible(false)
+  }
+
+  if (!visible) return null
+
+  return (
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-primary text-white p-4 shadow-2xl">
+      <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-4">
+        <p className="text-sm leading-relaxed flex-1">
+          Usamos cookies para mejorar tu experiencia. Si continuás navegando, aceptás nuestra{' '}
+          <a href="/es/privacidad" className="text-accent underline">política de privacidad</a>.
+        </p>
+        <div className="flex gap-2 shrink-0">
+          <button onClick={reject} className="px-4 py-2 text-xs border border-white/30 rounded-full bg-transparent text-white/70 hover:text-white cursor-pointer">Rechazar</button>
+          <button onClick={accept} className="px-6 py-2 text-xs bg-accent text-primary rounded-full font-bold cursor-pointer hover:opacity-90">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  )
+}
