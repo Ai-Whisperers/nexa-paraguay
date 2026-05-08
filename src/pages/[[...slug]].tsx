@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { HeroSection, StatsSection, TrustSection, ProgramsSection, ServicesSection, WhyCountrySection, FeaturesSection, ProcessSection, TestimonialsSection, CtaBanner, TaxCalculatorSection } from '../components/sections'
-import { FaqSection, BlogSection, TeamSection, PrivacyAccordion, GlossarySection, NewsletterSection, StorySection, PillarsSection, PageHeroSection, HighlightSection, ComparisonSection, GuidesSection, BookingEmbedSection, ContactDetailsSection, GallerySection, FaqSearchSection, ContactFormSection } from '../components/sections-extra'
+import { FaqSection, BlogSection, TeamSection, PrivacyAccordion, GlossarySection, NewsletterSection, StorySection, PillarsSection, PageHeroSection, HighlightSection, ComparisonSection, GuidesSection, BookingEmbedSection, ContactDetailsSection, GallerySection, FaqSearchSection, ContactFormSection, ServiceDetailSection, PressReleasesListSection, IntakeWizardSection } from '../components/sections-extra'
 import { resolveContent, resolveImage } from '../components/content'
 import { loadJSON } from '../lib/loader'
 import { ErrorBoundary } from '../components/ErrorBoundary'
@@ -37,6 +37,9 @@ const SECTION_MAP: Record<string, any> = {
   'gallery': GallerySection,
   'faq-search': FaqSearchSection,
   'contact-form': ContactFormSection,
+  'services-detail': ServiceDetailSection,
+  'press-releases': PressReleasesListSection,
+  'intake-wizard': IntakeWizardSection,
 }
 
 const SLUG_MAP: Record<string, string> = {
@@ -110,6 +113,17 @@ export default function SlugPage({ content, pageConfig, pageId, images, post, lo
       <Head>
         <title>{pageTitle}</title>
         {pageDesc && <meta name="description" content={pageDesc} />}
+        <meta property="og:title" content={pageTitle} />
+        {pageDesc && <meta property="og:description" content={pageDesc} />}
+        <meta property="og:image" content="/images/brand/og-default.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        {pageDesc && <meta name="twitter:description" content={pageDesc} />}
+        <link rel="icon" type="image/webp" href="/images/brand/favicon.webp" />
+        <link rel="shortcut icon" href="/images/brand/favicon.webp" />
         {jsonLd.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
       </Head>
       <div style={{ fontFamily: "'Inter', -apple-system, sans-serif", color: '#1B2A4A' }}>

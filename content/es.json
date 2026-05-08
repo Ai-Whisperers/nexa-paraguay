@@ -1122,7 +1122,7 @@
           "memberImage": "@src:team.clientSuccess"
         }
       ],
-      "_note": "AI-generated portrait placeholders. Founder consented 2026-04 to use AI content pre-launch. Replace with real consented team photos when ready."
+      "_note": "placeholder — reemplazar con fotos reales del equipo"
     },
     "trust": {
       "eyebrow": "Por qué Nexa Paraguay",
@@ -2035,9 +2035,9 @@
       "backgroundImage": "@img:whyParaguay.growth"
     },
     "process": {
-      "eyebrow": "How it works",
+      "eyebrow": "Como funciona",
       "title": "5 pasos, aproximadamente 8–12 semanas",
-      "totalDuration": "Typical total: 8–12 weeks.",
+      "totalDuration": "Tiempo estimado total: 8-12 semanas",
       "ctaLabel": "Iniciar mi proceso",
       "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-process-es",
       "steps": [
@@ -2165,9 +2165,9 @@
       "backgroundImage": "@img:trust.migraciones"
     },
     "process": {
-      "eyebrow": "How it works",
+      "eyebrow": "Como funciona",
       "title": "Un proceso claro, sin improvisación",
-      "totalDuration": "Typical total: 8–12 weeks.",
+      "totalDuration": "Tiempo estimado total: 8-12 semanas",
       "ctaLabel": "Iniciar mi proceso",
       "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-process-es",
       "steps": [
@@ -2294,9 +2294,9 @@
       "backgroundImage": "@img:whyParaguay.lifestyle"
     },
     "process": {
-      "eyebrow": "How it works",
+      "eyebrow": "Como funciona",
       "title": "5 pasos, un viaje",
-      "totalDuration": "Typical total: 8–12 weeks.",
+      "totalDuration": "Tiempo estimado total: 8-12 semanas",
       "ctaLabel": "Iniciar mi proceso",
       "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-process-es",
       "steps": [
@@ -2421,9 +2421,9 @@
       "backgroundImage": "@img:programs.tierBusiness"
     },
     "process": {
-      "eyebrow": "How it works",
+      "eyebrow": "Como funciona",
       "title": "Constitución en 5 pasos",
-      "totalDuration": "Typical total: 8–12 weeks.",
+      "totalDuration": "Tiempo estimado total: 8-12 semanas",
       "ctaLabel": "Iniciar mi proceso",
       "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-process-es",
       "steps": [

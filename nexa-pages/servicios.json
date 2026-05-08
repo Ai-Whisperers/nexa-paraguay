@@ -6,7 +6,7 @@
     {"id":"header","variant":"standard","content":"navigation"},
     {"id":"page-hero","variant":"minimal","content":"servicesPage.hero"},
     {"id":"trust-signals","variant":"credentials","content":"servicesPage.trust"},
-    {"id":"services","variant":"grouped-cards","content":"servicesPage.services"},
+    {"id":"services-detail","variant":"grouped-cards","content":"servicesPage.services"},
     {"id":"cta-banner","variant":"gradient","content":"servicesPage.finalCta"},
     {"id":"footer","variant":"standard","content":"footer"}
   ]

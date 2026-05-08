@@ -379,7 +379,7 @@ export function FaqSearchSection({ pageContent, data }: SectionComponentProps) {
         {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'1rem',textAlign:'center' }}>{d.title}</h2>}
         <div style={{ marginBottom:'1.5rem', position:'relative' }}>
           <input type="text" placeholder={d.searchPlaceholder || 'Buscar preguntas...'} value={search} onChange={e => setSearch(e.target.value)} style={{ width:'100%',padding:'0.85rem 1rem 0.85rem 2.5rem',border:`1px solid ${c.border}`,borderRadius:r.full,fontSize:'0.95rem',outline:'none',background:c.white }} />
-          <span style={{ position:'absolute',left:'1rem',top:'50%',transform:'translateY(-50%)',color:c.textMuted }}>\ud83d\udd0d</span>
+          <span style={{ position:'absolute',left:'1rem',top:'50%',transform:'translateY(-50%)',color:c.textMuted }}>🔍</span>
         </div>
         <p style={{ fontSize:'0.85rem',color:c.textMuted,marginBottom:'1rem',textAlign:'center' }}>{items.length} de {allItems.length} preguntas</p>
         {items.map((item: any, i: number) => {
@@ -391,13 +391,154 @@ export function FaqSearchSection({ pageContent, data }: SectionComponentProps) {
             <div key={i} style={{ marginBottom: '0.5rem', border: `1px solid ${c.border}`, borderRadius: r.md, overflow: 'hidden', background: c.white }}>
               <button onClick={() => setOpen(isOpen ? null : i)} style={{ width:'100%', padding:'1rem 1.25rem', border:'none', background:'none', cursor:'pointer', display:'flex', justifyContent:'space-between', alignItems:'center', fontWeight:700, color:c.primary, fontSize:'0.95rem', textAlign:'left' }}>
                 <span>{question}</span>
-                <span style={{ color: c.accent, fontSize:'1.2rem', transition:'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'none' }}>\u25be</span>
+                <span style={{ color: c.accent, fontSize:'1.2rem', transition:'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'none' }}>▼</span>
               </button>
               {isOpen && <div style={{ padding:'0 1.25rem 1.25rem', color: c.text, fontSize:'0.9rem', lineHeight:1.7, borderTop:`1px solid ${c.border}` }}>{answer}</div>}
             </div>
           )
         })}
-        {items.length === 0 && <p style={{ textAlign:'center',color:c.textMuted,fontSize:'0.95rem' }}>No se encontraron preguntas. <button onClick={() => setSearch('')} style={{ background:'none',border:'none',color:c.accent,cursor:'pointer',fontWeight:700,textDecoration:'underline' }}>Limpiar b\u00fasqueda</button></p>}
+        {items.length === 0 && <p style={{ textAlign:'center',color:c.textMuted,fontSize:'0.95rem' }}>No se encontraron preguntas. <button onClick={() => setSearch('')} style={{ background:'none',border:'none',color:c.accent,cursor:'pointer',fontWeight:700,textDecoration:'underline' }}>Limpiar búsqueda</button></p>}
+      </div>
+    </section>
+  )
+}
+
+
+// ── Service Detail Section ──
+export function ServiceDetailSection({ pageContent, data, images }: SectionComponentProps) {
+  const d = data || pageContent || {}
+  const groups = d.groups || []
+  if (!groups.length) return null
+  return (
+    <section style={{ padding: s.section }}>
+      <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+        {d.eyebrow && <p style={{ fontSize:'0.85rem',color:c.textMuted,textTransform:'uppercase',letterSpacing:'2px',marginBottom:'0.5rem' }}>{d.eyebrow}</p>}
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'2rem' }}>{d.title}</h2>}
+        {groups.map((group: any, i: number) => (
+          <div key={i} style={{ marginBottom: '3rem' }}>
+            {i > 0 && <div style={{ width: '60px', height: '2px', background: c.accent, margin: '0 auto 2.5rem' }} />}
+            <h3 style={{ fontSize:'1.2rem',fontWeight:700,color:c.primary,marginBottom:'0.25rem' }}>{group.title}</h3>
+            {group.subtitle && <p style={{ color:c.textMuted,fontSize:'0.9rem',marginBottom:'1rem' }}>{group.subtitle}</p>}
+            <div style={{ display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:'1rem',textAlign:'left' }}>
+              {group.items.map((item: any, j: number) => {
+                const img = resolveImage(images, item.image)
+                return (
+                  <div key={j} style={{ padding:s.card,background:c.bg,borderRadius:r.md,borderLeft:`3px solid ${c.accent}`,boxShadow:'0 2px 8px rgba(0,0,0,0.06)' }}>
+                    {img && <img src={img} alt={item.title} loading="lazy" style={{ width:'100%',height:'140px',objectFit:'cover',borderRadius:r.sm,marginBottom:'0.75rem' }} />}
+                    <h4 style={{ fontWeight:700,color:c.primary,marginBottom:'0.3rem' }}>{item.title}</h4>
+                    <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.5,marginBottom:'0.5rem' }}>{item.description}</p>
+                    {item.benefits && <ul style={{ listStyle:'none',padding:0,margin:'0.5rem 0 0' }}>
+                      {item.benefits.map((b: string, k: number) => (
+                        <li key={k} style={{ fontSize:'0.85rem',color:c.text,padding:'0.2rem 0',display:'flex',gap:'0.5rem',alignItems:'baseline' }}>
+                          <span style={{ color:c.accent,fontWeight:700 }}>✓</span> {b}
+                        </li>
+                      ))}
+                    </ul>}
+                    {item.ctaText && <a href={item.ctaHref} style={{ display:'inline-block',marginTop:'0.75rem',color:c.accent,fontWeight:700,textDecoration:'none',fontSize:'0.85rem',borderBottom:`2px solid ${c.accent}` }}>{item.ctaText}</a>}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+
+// ── Press Releases Section ──
+export function PressReleasesListSection({ pageContent, data }: SectionComponentProps) {
+  const d = data || pageContent || {}
+  const items = d.items || d.pressReleases || []
+  if (!items.length) return null
+  return (
+    <section style={{ padding: s.section }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        {d.title && <h2 style={{ fontSize:'clamp(1.4rem,2.5vw,2rem)',fontWeight:700,color:c.primary,marginBottom:'0.5rem',textAlign:'center' }}>{d.title}</h2>}
+        {d.subtitle && <p style={{ color:c.textMuted,textAlign:'center',marginBottom:'2rem' }}>{d.subtitle}</p>}
+        {items.map((item: any, i: number) => (
+          <article key={i} style={{ padding:'1.5rem',marginBottom:'1rem',background:c.white,borderRadius:r.md,border:`1px solid ${c.border}`,boxShadow:'0 2px 8px rgba(0,0,0,0.04)' }}>
+            {item.date && <span style={{ fontSize:'0.8rem',color:c.accent,fontWeight:600,display:'block',marginBottom:'0.25rem' }}>{item.date}</span>}
+            <h3 style={{ fontSize:'1.1rem',fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{item.title}</h3>
+            {item.summary && <p style={{ color:c.textMuted,fontSize:'0.9rem',lineHeight:1.6,marginBottom:'0.75rem' }}>{item.summary}</p>}
+            {item.link && <a href={item.link} style={{ color:c.accent,fontWeight:700,fontSize:'0.85rem',textDecoration:'none',borderBottom:`2px solid ${c.accent}` }}>{item.ctaText || 'Leer más →'}</a>}
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+
+// ── Intake Wizard Section ──
+export function IntakeWizardSection({ pageContent, data }: SectionComponentProps) {
+  const d = data || pageContent || {}
+  const steps = d.steps || []
+  const tierLabels = d.tierLabels || {}
+  const [currentStep, setCurrentStep] = React.useState(0)
+  const [answers, setAnswers] = React.useState<Record<string, string>>({})
+  const [showResult, setShowResult] = React.useState(false)
+
+  if (!steps.length) return null
+
+  const handleSelect = (value: string) => {
+    const newAnswers = { ...answers, [steps[currentStep].key]: value }
+    setAnswers(newAnswers)
+    if (currentStep < steps.length - 1) {
+      setCurrentStep(currentStep + 1)
+    } else {
+      setShowResult(true)
+    }
+  }
+
+  const handleRestart = () => {
+    setCurrentStep(0)
+    setAnswers({})
+    setShowResult(false)
+  }
+
+  if (showResult) {
+    const recommended = d.recommendedTier || 'business'
+    const tier = tierLabels[recommended] || tierLabels[Object.keys(tierLabels)[0]] || {}
+    return (
+      <section style={{ padding: s.section, background: c.bg }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ fontSize:'2.5rem',marginBottom:'1rem' }}>✓</div>
+          <h2 style={{ fontSize:'clamp(1.3rem,2.5vw,1.8rem)',fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{d.resultTitle || 'Programa recomendado'}</h2>
+          <div style={{ padding:s.card,background:c.white,borderRadius:r.lg,boxShadow:'0 4px 16px rgba(0,0,0,0.08)',marginBottom:'1.5rem' }}>
+            {tier.name && <h3 style={{ fontWeight:700,color:c.accent,fontSize:'1.2rem',marginBottom:'0.5rem' }}>{tier.name}</h3>}
+            {tier.pitch && <p style={{ color:c.textMuted,fontSize:'0.95rem',lineHeight:1.6 }}>{tier.pitch}</p>}
+          </div>
+          <button onClick={handleRestart} style={{ padding:'0.75rem 1.5rem',background:c.primary,color:c.white,borderRadius:r.full,border:'none',fontWeight:700,cursor:'pointer',fontSize:'0.9rem',marginRight:'0.75rem' }}>{d.restartText || 'Volver a empezar'}</button>
+          <a href={d.ctaHref || '/contacto'} style={{ display:'inline-block',padding:'0.75rem 1.5rem',background:c.accent,color:c.primary,borderRadius:r.full,fontWeight:700,textDecoration:'none',fontSize:'0.9rem' }}>{d.ctaText || 'Agendar consulta gratuita'}</a>
+        </div>
+      </section>
+    )
+  }
+
+  const step = steps[currentStep]
+  const progress = ((currentStep + 1) / steps.length) * 100
+
+  return (
+    <section style={{ padding: s.section }}>
+      <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+        {d.title && <h2 style={{ fontSize:'clamp(1.3rem,2.5vw,1.8rem)',fontWeight:700,color:c.primary,marginBottom:'0.5rem' }}>{d.title}</h2>}
+        {d.subtitle && <p style={{ color:c.textMuted,marginBottom:'2rem' }}>{d.subtitle}</p>}
+        <div style={{ height:'6px',background:c.border,borderRadius:'3px',marginBottom:'2rem',overflow:'hidden' }}>
+          <div style={{ height:'100%',background:c.accent,borderRadius:'3px',transition:'width 0.3s',width:`${progress}%` }} />
+        </div>
+        <p style={{ fontSize:'0.8rem',color:c.textLight,marginBottom:'1rem' }}>{d.stepLabel || 'Paso'} {currentStep + 1} {d.ofLabel || 'de'} {steps.length}</p>
+        {step.question && <h3 style={{ fontSize:'1.2rem',fontWeight:700,color:c.primary,marginBottom:'1.5rem' }}>{step.question}</h3>}
+        <div style={{ display:'flex',flexDirection:'column',gap:'0.75rem' }}>
+          {step.options?.map((opt: any, i: number) => (
+            <button key={i} onClick={() => handleSelect(opt.value)} style={{ padding:'1rem 1.5rem',background:c.white,border:`2px solid ${c.border}`,borderRadius:r.md,cursor:'pointer',fontSize:'1rem',fontWeight:600,color:c.primary,textAlign:'left',transition:'all 0.2s',display:'flex',alignItems:'center',gap:'0.75rem' }}>
+              <span style={{ width:'32px',height:'32px',display:'flex',alignItems:'center',justifyContent:'center',background:c.bg,borderRadius:'50%',fontSize:'0.85rem',color:c.accent,fontWeight:700 }}>{i + 1}</span>
+              {opt.label}
+            </button>
+          ))}
+        </div>
+        <button onClick={handleRestart} style={{ marginTop:'1.5rem',background:'none',border:'none',color:c.textMuted,fontSize:'0.85rem',cursor:'pointer',textDecoration:'underline' }}>{d.restartText || 'Comenzar de nuevo'}</button>
       </div>
     </section>
   )
