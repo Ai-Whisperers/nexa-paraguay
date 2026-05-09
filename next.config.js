@@ -13,7 +13,6 @@ const securityHeaders = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  cacheComponents: true,
   output: "standalone",
   poweredByHeader: false,
   experimental: {
