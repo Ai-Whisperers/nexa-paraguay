@@ -44,7 +44,7 @@
 | # | Idea | Status | Detail |
 |---|------|--------|--------|
 | 11 | **Harmonize content across 4 locales** | ⬜ Todo | es/en/nl/de. Audit: which pages have content gaps per locale? |
-| 12 | **Translation pipeline** | ⬜ Todo | Automated: commit JSON → translate missing keys → PR. Use LLM + Hermes cron. |
+| 12 | **Translation pipeline** | ✅ Done | `scripts/nexa-translation-pipeline.py` + Hermes cron weekly Wed @4am (no_agent). Fills content gaps from es.json source truth into en/nl/de. Git commit on changes. |
 | 13 | **hreflang tags** | ✅ Done | sitemap.ts + metadata generates per-locale alternates. |
 | 14 | **Content versioning** | ⬜ Todo | Git-based. Each content push creates tagged version. Rollback via git revert. |
 | 15 | **Blog content audit** | ⬜ Todo | Which posts have content gaps? Which need translation fixes? |
