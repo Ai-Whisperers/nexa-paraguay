@@ -65,7 +65,8 @@
   "home": {
     "seo": {
       "title": "Nexa Paraguay — Tu Mudanza a Paraguay, Gestionada de Principio a Fin",
-      "description": "Residencia, banca, bienes raíces e instalación — todo coordinado por Nexa Paraguay. Servicios a tu elección, proceso optimizado y equipo profesional."
+      "description": "Residencia, banca, bienes raíces e instalación — todo coordinado por Nexa Paraguay. Servicios a tu elección, proceso optimizado y equipo profesional.",
+      "targetKeyword": "residencia en Paraguay"
     },
     "hero": {
       "headline": "Viví el proceso de mudanza a Paraguay con alguien que ya lo vivió.",
@@ -152,7 +153,8 @@
   "whyCountryPage": {
     "seo": {
       "title": "Cómo funciona — Nexa Paraguay",
-      "description": "Nuestro proceso de 5 pasos: selecciona servicios, procesamiento paralelo, día operativo, cédula y activación financiera, instalación."
+      "description": "Nuestro proceso de 5 pasos: selecciona servicios, procesamiento paralelo, día operativo, cédula y activación financiera, instalación.",
+      "targetKeyword": "por qué mudarse a Paraguay"
     },
     "hero": {
       "headline": "El Camino Ideal hacia la Residencia",
@@ -404,7 +406,8 @@
   "aboutPage": {
     "seo": {
       "title": "Sobre Nexa Paraguay",
-      "description": "Nexa Paraguay: fundada por alguien que vivió el proceso de mudanza en persona. Residencia, banca, bienes raíces e instalación."
+      "description": "Nexa Paraguay: fundada por alguien que vivió el proceso de mudanza en persona. Residencia, banca, bienes raíces e instalación.",
+      "targetKeyword": "sobre Nexa Paraguay"
     },
     "hero": {
       "headline": "Experiencia Convertida en Conocimiento",
@@ -588,7 +591,8 @@
   "faqPage": {
     "seo": {
       "title": "Preguntas frecuentes — Nexa Paraguay",
-      "description": "Respuestas a las 15 preguntas más frecuentes sobre nuestro proceso, precios y programas."
+      "description": "Respuestas a las 15 preguntas más frecuentes sobre nuestro proceso, precios y programas.",
+      "targetKeyword": "preguntas frecuentes residencia Paraguay"
     },
     "hero": {
       "headline": "Preguntas frecuentes",
@@ -782,7 +786,8 @@
   "contactPage": {
     "seo": {
       "title": "Contacto — Nexa Paraguay",
-      "description": "Agende una consulta gratuita de 30 minutos."
+      "description": "Agende una consulta gratuita de 30 minutos.",
+      "targetKeyword": "contacto Nexa Paraguay"
     },
     "hero": {
       "headline": "Dé el primer paso",
@@ -822,7 +827,8 @@
   "privacyPage": {
     "seo": {
       "title": "Política de privacidad — Nexa Paraguay",
-      "description": "Política de privacidad y cookies de Nexa Paraguay (cumplimiento GDPR)."
+      "description": "Política de privacidad y cookies de Nexa Paraguay (cumplimiento GDPR).",
+      "targetKeyword": "política privacidad Nexa Paraguay"
     },
     "hero": {
       "headline": "Política de privacidad",
@@ -858,7 +864,8 @@
     "index": {
       "seo": {
         "title": "Blog — Nexa Paraguay",
-        "description": "Guías, análisis y recursos sobre residencia, empresa y vida en Paraguay."
+        "description": "Guías, análisis y recursos sobre residencia, empresa y vida en Paraguay.",
+        "targetKeyword": "blog Paraguay residencia"
       },
       "title": "Blog",
       "subtitle": "Guías honestas sobre residencia, empresa e inversión en Paraguay."
@@ -1377,7 +1384,8 @@
   "landingInversor": {
     "seo": {
       "title": "Paraguay para inversionistas — un camino estructurado",
-      "description": "Residencia, empresa, cuenta bancaria y compra de tierras — un programa inversor integrado. Sin sorpresas."
+      "description": "Residencia, empresa, cuenta bancaria y compra de tierras — un programa inversor integrado. Sin sorpresas.",
+      "targetKeyword": "inversor Paraguay"
     },
     "hero": {
       "eyebrow": "Programa inversionista",
@@ -1507,7 +1515,8 @@
   "landingTrust": {
     "seo": {
       "title": "Confianza institucional, construida por profesionales locales",
-      "description": "Un sistema integrado, no una gestoría. Abogados, contadores, escribanos y asesores financieros."
+      "description": "Un sistema integrado, no una gestoría. Abogados, contadores, escribanos y asesores financieros.",
+      "targetKeyword": "confianza Nexa Paraguay"
     },
     "hero": {
       "eyebrow": "Confianza institucional",
@@ -1632,7 +1641,8 @@
   "landingLifestyle": {
     "seo": {
       "title": "Una base más tranquila en Paraguay",
-      "description": "Buen clima, bajo costo de vida, comunidad internacional en crecimiento, sistema fiscal territorial."
+      "description": "Buen clima, bajo costo de vida, comunidad internacional en crecimiento, sistema fiscal territorial.",
+      "targetKeyword": "lifestyle Paraguay"
     },
     "hero": {
       "eyebrow": "Calidad de vida",
@@ -1759,7 +1769,8 @@
   "landingEmpresa": {
     "seo": {
       "title": "Una empresa paraguaya, abierta correctamente",
-      "description": "Residencia + empresa + RUC + cuenta bancaria. Integrado en un programa con Nexa Paraguay."
+      "description": "Residencia + empresa + RUC + cuenta bancaria. Integrado en un programa con Nexa Paraguay.",
+      "targetKeyword": "empresa Paraguay mudanza"
     },
     "hero": {
       "eyebrow": "Apertura de empresa",
@@ -1889,7 +1900,8 @@
   "resourcesPage": {
     "seo": {
       "title": "Recursos — Nexa Paraguay",
-      "description": "Guías prácticas, plantillas y herramientas para inversores europeos que se establecen en Paraguay."
+      "description": "Guías prácticas, plantillas y herramientas para inversores europeos que se establecen en Paraguay.",
+      "targetKeyword": "recursos mudanza Paraguay"
     },
     "hero": {
       "headline": "Recursos para inversores europeos",
@@ -1931,7 +1943,8 @@
   "qualityOfLifePage": {
     "seo": {
       "title": "Calidad de vida en Paraguay — Nexa",
-      "description": "Clima, costo de vida, comunidad internacional, seguridad y educación en Asunción."
+      "description": "Clima, costo de vida, comunidad internacional, seguridad y educación en Asunción.",
+      "targetKeyword": "calidad de vida Paraguay"
     },
     "hero": {
       "headline": "Calidad de vida en Paraguay",
@@ -1995,7 +2008,8 @@
   "caseStudiesPage": {
     "seo": {
       "title": "Casos de éxito — Nexa Paraguay",
-      "description": "Historias reales de inversores europeos que establecieron su operación con Nexa."
+      "description": "Historias reales de inversores europeos que establecieron su operación con Nexa.",
+      "targetKeyword": "casos de éxito Nexa Paraguay"
     },
     "hero": {
       "headline": "Casos de éxito",
@@ -2034,7 +2048,8 @@
   "comparisonPage": {
     "seo": {
       "title": "Nexa vs. DIY vs. gestoría — comparativa",
-      "description": "Comparativa honesta entre hacerlo solo, contratar gestor local o trabajar con Nexa."
+      "description": "Comparativa honesta entre hacerlo solo, contratar gestor local o trabajar con Nexa.",
+      "targetKeyword": "comparación mudanza Paraguay"
     },
     "hero": {
       "headline": "¿Por qué Nexa y no otra vía?",
@@ -2236,7 +2251,8 @@
   "founderPage": {
     "seo": {
       "title": "Nuestra Fundadora — Nexa Paraguay",
-      "description": "Conoce a la fundadora de Nexa Paraguay: experiencia de primera mano en mudanza internacional, casada con un neerlandés."
+      "description": "Conoce a la fundadora de Nexa Paraguay: experiencia de primera mano en mudanza internacional, casada con un neerlandés.",
+      "targetKeyword": "fundador Nexa Paraguay"
     },
     "hero": {
       "headline": "Experiencia Convertida en Conocimiento",
@@ -2283,7 +2299,8 @@
   "glossaryPage": {
     "seo": {
       "title": "Glosario — Nexa Paraguay",
-      "description": "Términos clave: residencia permanente, cédula, RUC, IRE, territorialidad, SEPRELAD, KYC."
+      "description": "Términos clave: residencia permanente, cédula, RUC, IRE, territorialidad, SEPRELAD, KYC.",
+      "targetKeyword": "glosario términos Paraguay"
     },
     "hero": {
       "headline": "Glosario de términos clave",
@@ -2347,7 +2364,8 @@
   "intakeWizardPage": {
     "seo": {
       "title": "Asistente IA — Nexa Paraguay",
-      "description": "Responde unas preguntas y obtén tu programa recomendado al instante."
+      "description": "Responde unas preguntas y obtén tu programa recomendado al instante.",
+      "targetKeyword": "asistente residencia Paraguay"
     },
     "hero": {
       "headline": "Encuentra tu camino ideal a Paraguay",
@@ -2357,7 +2375,8 @@
   "beneluxPage": {
     "seo": {
       "title": "Benelux desk — Nexa Paraguay",
-      "description": "Mesa dedicada a inversores holandeses y belgas. Fundador neerlandófono nativo, conocimiento de box 3 y emigratieheffing."
+      "description": "Mesa dedicada a inversores holandeses y belgas. Fundador neerlandófono nativo, conocimiento de box 3 y emigratieheffing.",
+      "targetKeyword": "Benelux mudanza Paraguay"
     },
     "hero": {
       "headline": "Benelux desk",
@@ -2442,7 +2461,8 @@
   "prensa": {
     "seo": {
       "title": "Prensa — Nexa Paraguay",
-      "description": "Notas de prensa, comunicados y material para medios sobre Nexa Paraguay."
+      "description": "Notas de prensa, comunicados y material para medios sobre Nexa Paraguay.",
+      "targetKeyword": "prensa Nexa Paraguay"
     },
     "hero": {
       "headline": "Prensa y Medios",
@@ -2472,7 +2492,8 @@
   "servicesPage": {
     "seo": {
       "title": "Nuestros Servicios — Nexa Paraguay",
-      "description": "Información detallada de los 9 servicios de Nexa Paraguay: Residencia y Documentos Legales, Banca e Impuestos, y Bienes Raíces Residenciales."
+      "description": "Información detallada de los 9 servicios de Nexa Paraguay: Residencia y Documentos Legales, Banca e Impuestos, y Bienes Raíces Residenciales.",
+      "targetKeyword": "servicios de mudanza Paraguay"
     },
     "hero": {
       "headline": "Soluciones profesionales para cada paso",
@@ -2765,7 +2786,8 @@
   "processPage": {
     "seo": {
       "title": "Cómo funciona — Nexa Paraguay",
-      "description": "Nuestro proceso de 5 pasos: selecciona servicios, procesamiento paralelo, día operativo, cédula y activación financiera, instalación."
+      "description": "Nuestro proceso de 5 pasos: selecciona servicios, procesamiento paralelo, día operativo, cédula y activación financiera, instalación.",
+      "targetKeyword": "proceso residencia Paraguay"
     },
     "hero": {
       "headline": "El Camino Ideal hacia la Residencia",
@@ -2928,7 +2950,8 @@
   "programasPage": {
     "seo": {
       "title": "Programas — Nexa Paraguay",
-      "description": "Cuatro programas para establecerse en Paraguay: Base, Business (USD 4.400+), Investor (USD 6.900+) y Compra de Tierras."
+      "description": "Cuatro programas para establecerse en Paraguay: Base, Business (USD 4.400+), Investor (USD 6.900+) y Compra de Tierras.",
+      "targetKeyword": "programas residencia Paraguay"
     },
     "hero": {
       "headline": "Nuestros programas",
@@ -3228,6 +3251,27 @@
           "rating": 5
         }
       ]
+    }
+  },
+  "feedbackPage": {
+    "seo": {
+      "title": "Comentarios — Nexa Paraguay",
+      "description": "Opiniones y comentarios de clientes sobre Nexa Paraguay y el proceso de mudanza.",
+      "targetKeyword": "comentarios Nexa Paraguay"
+    }
+  },
+  "bookingPage": {
+    "seo": {
+      "title": "Agendar consulta — Nexa Paraguay",
+      "description": "Agende una consulta gratuita de 30 minutos con Nexa Paraguay para su mudanza.",
+      "targetKeyword": "agendar consulta Paraguay"
+    }
+  },
+  "datosPersonalesPage": {
+    "seo": {
+      "title": "Protección de datos — Nexa Paraguay",
+      "description": "Política de protección de datos personales y cumplimiento GDPR de Nexa Paraguay.",
+      "targetKeyword": "protección datos Paraguay"
     }
   }
 }

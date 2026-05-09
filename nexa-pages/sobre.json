@@ -1,5 +1,6 @@
 {
     "id": "sobre",
+    "targetKeyword": "sobre Nexa Paraguay",
     "slug": "sobre",
     "titleKey": "aboutPage.seo.title",
     "descriptionKey": "aboutPage.seo.description",

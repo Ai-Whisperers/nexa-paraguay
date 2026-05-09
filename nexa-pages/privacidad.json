@@ -1,6 +1,13 @@
 {
+  "targetKeyword": "política privacidad Nexa Paraguay",
   "sections": [
-    { "id": "page-hero", "content": "privacidad" },
-    { "id": "faq-search", "content": "privacidad.full" }
+    {
+      "id": "page-hero",
+      "content": "privacidad"
+    },
+    {
+      "id": "faq-search",
+      "content": "privacidad.full"
+    }
   ]
 }

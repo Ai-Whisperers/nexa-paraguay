@@ -1,5 +1,6 @@
 {
   "id": "asistente",
+  "targetKeyword": "asistente residencia Paraguay",
   "slug": "asistente",
   "titleKey": "intakeWizardPage.seo.title",
   "descriptionKey": "intakeWizardPage.seo.description",
