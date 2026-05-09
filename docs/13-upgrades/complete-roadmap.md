@@ -1,6 +1,6 @@
 # Nexa Paraguay — Complete Upgrade Roadmap (75 Ideas)
 
-**Last updated:** 2026-05-08
+**Last updated:** 2026-05-09
 **Repo:** github.com/Ai-Whisperers/nexa-paraguay
 **Live:** nexa.paragu-ai.com
 **Stack:** Next.js 16 App Router + Tailwind v4 + Docker Swarm (Traefik) + Evolution API + PPR enabled
@@ -29,10 +29,10 @@
 | 1 | **Domain migration: nexaparaguay.com → VPS** | 🟡 Stuck | DNS at Cloudflare. Needs dashboard access to point A record to 72.61.44.159. |
 | 2 | **Pages Router → App Router** | ✅ Done | Full migration complete. `app/` with `[locale]/[slug]` routes. |
 | 3 | **ISR (1h revalidate)** | ✅ Done | `export const revalidate = 3600` on all pages (removed for PPR compatibility). |
-| 4 | **Partial Pre-Rendering (PPR)** | ✅ Done | `cacheComponents: true` in next.config. Suspense boundaries on all pages. Static shell + streaming dynamic content. |
+| 4 | **Partial Pre-Rendering (PPR)** | ✅ ✅ REMOVED | `cacheComponents: true` was causing empty static shells. Removed — all routes now `● SSG` with full HTML. |
 | 5 | **Image optimization pipeline** | ✅ Done | `scripts/optimize-images.mjs` — sharp-based webp/avif at 3 breakpoints. |
 | 6 | **Core Web Vitals monitoring** | ✅ Done | `src/lib/web-vitals.tsx` sends CLS/LCP/INP to GA4. |
-| 7 | **Code splitting per section** | ✅ Done | 31 sections all use `dynamic(() => import(...))` in SectionsRenderer. |
+| 7 | **Code splitting per section** | ✅ Done → REMOVED | SectionsRenderer is now a Server Component. Direct imports instead of dynamic(). All home sections render SSG static HTML. |
 | 8 | **Response compression (Traefik)** | ✅ Done | gzip/brotli middleware added via `traefik.http.middlewares.nexa-compress.compress=true` on nexa_web router. |
 | 9 | **CDN edge caching** | ✅ Done | Cache-Control: static → 1y, HTML → PPR-cached, API → 5min. |
 | 10 | **Screenshot diff on deploy** | ✅ Done | `scripts/deploy-hook.sh` + `.github/workflows/visual-regression.yml`. |
@@ -43,7 +43,7 @@
 
 | # | Idea | Status | Detail |
 |---|------|--------|--------|
-| 11 | **Harmonize content across 4 locales** | ⬜ Todo | es/en/nl/de. Audit: which pages have content gaps per locale? |
+| 11 | **Harmonize content across 4 locales** | ✅ Done | Translated hero/story/trust content from es.json into en/nl/de. Translation pipeline handles structural sync weekly. |
 | 12 | **Translation pipeline** | ✅ Done | `scripts/nexa-translation-pipeline.py` + Hermes cron weekly Wed @4am (no_agent). Fills content gaps from es.json source truth into en/nl/de. Git commit on changes. |
 | 13 | **hreflang tags** | ✅ Done | sitemap.ts + metadata generates per-locale alternates. |
 | 14 | **Content versioning** | ⬜ Todo | Git-based. Each content push creates tagged version. Rollback via git revert. |
@@ -59,14 +59,14 @@
 | # | Idea | Status | Detail |
 |---|------|--------|--------|
 | 19 | **JSON-LD structured data** | ✅ Done | Organization, WebSite, FAQPage schemas. |
-| 20 | **Auto keyword strategy per page** | ⬜ Todo | Each JSON page gets `targetKeyword` field. SEO cron generates. |
+| 20 | **Auto keyword strategy per page** | ✅ Done | Added `targetKeyword` field to all 26 nexa-pages/*.json files + matching SEO sections in content/es.json. New SEO sections created for pages missing them (feedback, agenda, datos-personales). |
 | 21 | **SERP ranking tracker** | ⬜ Todo | Hermes cron: weekly "site:nexa [keyword]" Google search → rank report. |
 | 22 | **Internal linking audit** | ⬜ Todo | Detect orphan pages (no internal links pointing to them). |
 | 23 | **Meta descriptions** | ✅ Done | `generateMetadata()` per page with locale alternates. |
 | 24 | **OG + Twitter Card** | ✅ Done | Complete set in root metadata + per-page. |
 | 25 | **Content gap analysis** | ⬜ Todo | Compare sections used by each locale. What's missing? |
 | 26 | **Press release workflow** | ⬜ Todo | Template + SEO backlinks. |
-| 27 | **Tax savings calculator widget** | ⬜ Todo | Interactive. "How much would you save?" → lead capture. |
+| 27 | **Tax savings calculator widget** | ✅ REMOVED | Removed at Sonia's request. Section component deleted from codebase entirely. |
 | 28 | **Cost of living comparison** | ⬜ Todo | Interactive: Paraguay vs user's country. SEO magnet. |
 | 29 | **Program comparison table** | ⬜ Todo | Side-by-side residency programs. |
 
@@ -84,7 +84,7 @@
 | 35 | **Calendly/ booking widget** | ⬜ Todo | Pre-fill with program interest. |
 | 36 | **Stripe payment link** | ⬜ Todo | Consultancy payments. |
 | 37 | **ChatGPT plugin** | ⬜ Todo | Nexa expert in ChatGPT. |
-| 38 | **Automated social posting** | ⬜ Todo | New blog → LinkedIn, Twitter. Hermes cron. |
+| 38 | **Automated social posting** | ✅ Done | `scripts/nexa-social-poster.py` — dry-run mode. Checks new blog posts, generates LinkedIn content. Ready for `--live` with API key. |
 
 ---
 
@@ -172,21 +172,20 @@
 ```
 NEXT (high impact, low effort)
   ├─ #30 WhatsApp QR scan (blocked)
-  ├─ #20 Auto keyword per page
-  ├─ #38 Auto social posting
+  ├─ #15 Blog content audit
+  ├─ #55 A/B test hero CTA
   └─ #16 Newsletter integration
 
 PLAN (high impact, higher effort)
-  ├─ #15 Blog content audit
-  ├─ #53 Multi-step booking form (DONE)
-  ├─ #27 Tax savings calculator
-  ├─ #57 Case studies (DONE)
-  └─ #28 Cost of living comparison
+  ├─ #28 Cost of living comparison
+  ├─ #29 Program comparison table
+  ├─ #25 Content gap analysis
+  └─ #31 CRM pipeline
 
 QUICK (low effort, measurable)
-  ├─ #55 A/B test hero CTA
   ├─ #54 Exit-intent popup (DONE)
-  └─ #31 CRM pipeline
+  ├─ #21 SERP ranking tracker
+  └─ #22 Internal linking audit
 
 FUTURE (high effort, long-term)
   ├─ #72 Client dashboard
