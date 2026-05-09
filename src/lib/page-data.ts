@@ -10,9 +10,9 @@ export function loadPageData(locale: string, slug: string) {
     const content = JSON.parse(readFileSync(join(REPO, 'content', `${locale}.json`), 'utf-8'))
     let pageConfig: any = null
     const pageId = slug === 'home' ? 'home' : slug
-    if (slug !== 'home') {
-      try { pageConfig = JSON.parse(readFileSync(join(REPO, 'nexa-pages', `${slug}.json`), 'utf-8')) } catch { return null }
-    }
+    let pageConfigPath = slug
+    if (slug === 'home') pageConfigPath = 'home'
+    try { pageConfig = JSON.parse(readFileSync(join(REPO, 'nexa-pages', `${pageConfigPath}.json`), 'utf-8')) } catch {}
     const images = JSON.parse(readFileSync(join(REPO, 'images.json'), 'utf-8'))
     // Load testimonials data and inject into content
     try {
