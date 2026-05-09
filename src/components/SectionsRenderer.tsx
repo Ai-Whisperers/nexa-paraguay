@@ -38,7 +38,6 @@ const SECTIONS: Record<string, any> = {
   'press-releases': dynamic(() => import('./sections-extra').then(m => ({ default: m.PressReleasesListSection })), { ssr: true }),
   'intake-wizard': dynamic(() => import('./sections-extra').then(m => ({ default: m.IntakeWizardSection })), { ssr: true }),
   'booking-form': dynamic(() => import('./BookingFormSection').then(m => ({ default: m.BookingFormSection })), { ssr: true }),
-  'exit-popup': dynamic(() => import('./ExitPopup').then(m => ({ default: m.ExitPopup })), { ssr: false }),
   feedback: dynamic(() => import('./FeedbackSection').then(m => ({ default: m.FeedbackSection })), { ssr: true }),
 }
 
