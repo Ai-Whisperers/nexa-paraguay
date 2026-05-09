@@ -17,7 +17,6 @@ const SECTIONS: Record<string, any> = {
   'process-timeline': dynamic(() => import('./sections').then(m => ({ default: m.ProcessSection })), { ssr: true }),
   testimonials: dynamic(() => import('./sections').then(m => ({ default: m.TestimonialsSection })), { ssr: true }),
   'cta-banner': dynamic(() => import('./sections').then(m => ({ default: m.CtaBanner })), { ssr: true }),
-  'tax-savings-calculator': dynamic(() => import('./sections').then(m => ({ default: m.TaxCalculatorSection })), { ssr: true }),
   'faq-search': dynamic(() => import('./sections-extra').then(m => ({ default: m.FaqSearchSection })), { ssr: true }),
   'blog-index': dynamic(() => import('./sections-extra').then(m => ({ default: m.BlogSection })), { ssr: true }),
   team: dynamic(() => import('./sections-extra').then(m => ({ default: m.TeamSection })), { ssr: true }),
