@@ -15,7 +15,7 @@ const securityHeaders = [
 const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
-  transpilePackages: ['@ai-whisperers/sections'],
+  transpilePackages: ['@ai-whisperers/sections', '@ai-whisperers/i18n'],
   experimental: {
     webpackBuildWorker: false,
   },
