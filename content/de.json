@@ -2003,7 +2003,16 @@
     "siteName": "",
     "tagline": "",
     "whatsapp": "",
-    "whyCountryPage": ""
+    "whyCountryPage": "",
+    "story": {
+      "title": "Nuestra Historia",
+      "eyebrow": "De la experiencia personal a la misión profesional",
+      "paragraphs": [
+        "Nexa Paraguay nace de una experiencia real. Viví en los Países Bajos, pasé por el proceso de emigrar a otro país, y sé lo que se siente llegar a un lugar donde no entendés el idioma y no tenés a nadie que te guíe.",
+        "Esa experiencia me mostró que faltaba algo: un servicio que no solo procese papeles, sino que te acompañe de verdad durante todo el proceso — desde los primeros documentos hasta que ya estás instalado, con tu casa, tu cuenta bancaria y tus registros en orden.",
+        "Hoy ayudo a ciudadanos europeos a mudarse a Paraguay con el mismo acompañamiento de cerca que me hubiera gustado tener a mí. Hablo tu idioma, conozco tu cultura y entiendo exactamente lo que estás viviendo porque yo también lo viví."
+      ]
+    }
   },
   "footer": {
     "aboutPage": "",
@@ -4731,7 +4740,27 @@
     "whatsapp": "",
     "whyCountryPage": "",
     "headline": "",
-    "subheadline": ""
+    "subheadline": "",
+    "pressReleases": [
+      {
+        "title": "Nexa Paraguay anuncia nuevo programa de residencia para inversores",
+        "date": "15 de abril, 2026",
+        "summary": "El programa integra residencia permanente, apertura de empresa y cuenta bancaria en un solo proceso coordinado.",
+        "link": "#"
+      },
+      {
+        "title": "Nexa Paraguay abre oficina de atención en neerlandés en Asunción",
+        "date": "2 de marzo, 2026",
+        "summary": "Con el objetivo de atender la creciente demanda de ciudadanos de los Países Bajos, Bélgica y Alemania.",
+        "link": "#"
+      },
+      {
+        "title": "Alianza estratégica con despachos notariales de Asunción",
+        "date": "10 de enero, 2026",
+        "summary": "La alianza permitirá agilizar los procesos de compra de propiedades y debida diligencia para clientes internacionales.",
+        "link": "#"
+      }
+    ]
   },
   "privacyPage": {
     "aboutPage": "",
@@ -5200,7 +5229,44 @@
     "siteName": "",
     "tagline": "",
     "whatsapp": "",
-    "whyCountryPage": ""
+    "whyCountryPage": "",
+    "steps": [
+      {
+        "title": "Seleccioná tus Servicios",
+        "description": "Elegí los servicios que necesitás — desde residencia hasta banca y propiedades.",
+        "detailParagraph": "Agendá una consulta gratuita con nuestro equipo para evaluar tu caso. Definimos juntos el programa ideal según tu perfil, objetivos y presupuesto. Te explicamos cada paso del proceso y los tiempos estimados.",
+        "duration": "Día 1",
+        "icon": "consultation"
+      },
+      {
+        "title": "Procesamiento Paralelo",
+        "description": "Mientras preparamos tu documentación, avanzamos con trámites simultáneos.",
+        "detailParagraph": "Coordinamos la recopilación y preparación de toda la documentación necesaria: apostillas, traducciones certificadas, certificados. Mientras tanto, iniciamos los trámites preliminares que no requieren tu presencia física.",
+        "duration": "Semanas 1-6",
+        "icon": "documents"
+      },
+      {
+        "title": "El Día Operativo",
+        "description": "Una jornada presencial coordinada donde realizamos todos los trámites clave.",
+        "detailParagraph": "Te acompañamos personalmente durante todo el día operativo: visita a Migraciones para inicio del trámite de residencia, apertura de cuenta bancaria, registro ante la SET y otros trámites según tu programa. Todo en una sola jornada.",
+        "duration": "Semana 7",
+        "icon": "arrival"
+      },
+      {
+        "title": "Cédula y Activación Financiera",
+        "description": "Obtené tu cédula paraguaya y activá todos tus servicios financieros.",
+        "detailParagraph": "Una vez aprobada tu residencia, te acompañamos a obtener tu cédula de identidad paraguaya. Activamos tu cuenta bancaria, tarjetas y servicios digitales. Si elegiste el programa Business, registramos tu sociedad.",
+        "duration": "Semanas 8-10",
+        "icon": "banking"
+      },
+      {
+        "title": "Instalación y Estilo de Vida",
+        "description": "Todo listo para que empieces tu nueva vida en Paraguay con tranquilidad.",
+        "detailParagraph": "Te brindamos orientación continua sobre tu nueva vida en Paraguay: opciones de vivienda, escuelas internacionales, sistema de salud, transporte y comunidad de expatriados. Seguimos disponibles para consultas posteriores.",
+        "duration": "Semana 12+",
+        "icon": "completion"
+      }
+    ]
   },
   "programasPage": {
     "aboutPage": "",
@@ -5539,7 +5605,145 @@
       "whyCountryPage": ""
     },
     "whatsapp": "",
-    "whyCountryPage": ""
+    "whyCountryPage": "",
+    "tiers": [
+      {
+        "id": "base",
+        "name": "Paraguay Base",
+        "description": "Residencia y cédula paraguaya.",
+        "price": "USD 2.900",
+        "priceNote": "Paquete completo incluye todos los honorarios y tasas.",
+        "included": [
+          "Residencia Paraguaya",
+          "Cédula de Identidad",
+          "Análisis documental previo",
+          "Jornada operativa (un día)",
+          "Acompañamiento logístico"
+        ],
+        "ctaLabel": "Solicitar consulta",
+        "ctaHref": "/contacto?programa=base",
+        "image": {
+          "$img": "programs.tierBase"
+        }
+      },
+      {
+        "id": "business",
+        "name": "Paraguay Business",
+        "description": "Residencia + sociedad + cuenta bancaria.",
+        "price": "USD 4.400+",
+        "priceNote": "Precio desde. Cotización final según requisitos del caso.",
+        "badge": "Más elegido",
+        "highlighted": true,
+        "included": [
+          "Todo lo de Base",
+          "Constitución de sociedad",
+          "Obtención de RUC",
+          "Apertura de cuenta bancaria",
+          "Tour estratégico inmobiliario",
+          "Honorarios, IVA y tasas incluidas"
+        ],
+        "ctaLabel": "Solicitar consulta",
+        "ctaHref": "/contacto?programa=business",
+        "image": {
+          "$img": "programs.tierBusiness"
+        }
+      },
+      {
+        "id": "investor",
+        "name": "Paraguay Investor Program",
+        "description": "Todo lo de Business + 12 meses de acompañamiento.",
+        "price": "USD 6.900+",
+        "priceNote": "Precio desde. Cotización final según requisitos del caso.",
+        "included": [
+          "Todo lo de Business",
+          "Contabilidad empresarial (12 meses)",
+          "Asesoramiento jurídico y fiscal (12 meses)",
+          "Análisis de inversiones",
+          "Acceso directo al equipo técnico"
+        ],
+        "ctaLabel": "Solicitar consulta",
+        "ctaHref": "/contacto?programa=investor",
+        "image": {
+          "$img": "programs.tierInvestor"
+        }
+      },
+      {
+        "id": "tierras",
+        "name": "Compra de Tierras",
+        "description": "Servicio propio de Nexa. Asesoría integral.",
+        "price": "Consultar",
+        "priceNote": "Depende del alcance de búsqueda, valor de tierras y due diligence.",
+        "included": [
+          "Definición de perfil y criterios",
+          "Búsqueda y short-list",
+          "Auditoría legal y técnica",
+          "Negociación y escrituración",
+          "Inscripción registral"
+        ],
+        "ctaLabel": "Consultar",
+        "ctaHref": "/contacto?programa=tierras",
+        "image": {
+          "$img": "programs.tierTierras"
+        }
+      }
+    ],
+    "comparisonTable": {
+      "title": "Comparativa de Programas",
+      "headers": [
+        "Programa",
+        "Precio",
+        "Residencia",
+        "Empresa",
+        "Cuenta Bancaria",
+        "Acompañamiento"
+      ],
+      "rows": [
+        {
+          "id": "base",
+          "values": [
+            "Paraguay Base",
+            "USD 2.900",
+            "Sí",
+            "No",
+            "No",
+            "No"
+          ]
+        },
+        {
+          "id": "business",
+          "values": [
+            "Paraguay Business",
+            "USD 4.400+",
+            "Sí",
+            "Sí",
+            "Sí",
+            "No"
+          ]
+        },
+        {
+          "id": "investor",
+          "values": [
+            "Paraguay Investor",
+            "USD 6.900+",
+            "Sí",
+            "Sí",
+            "Sí",
+            "12 meses"
+          ]
+        },
+        {
+          "id": "tierras",
+          "values": [
+            "Compra de Tierras",
+            "Consultar",
+            "No",
+            "No",
+            "No",
+            "Asesoría integral"
+          ]
+        }
+      ]
+    }
   },
   "qualityOfLifePage": {
     "aboutPage": "",
@@ -6476,7 +6680,166 @@
           ]
         }
       ]
-    }
+    },
+    "trust": {
+      "eyebrow": "Respaldo institucional",
+      "title": "Profesionales en cada área",
+      "items": [
+        {
+          "title": "Migraciones Paraguay",
+          "description": "Trámites directos con la Dirección General de Migraciones.",
+          "image": "@src:trust.migraciones"
+        },
+        {
+          "title": "Cédula en mano",
+          "description": "Acompañamiento hasta la entrega de tu documento de identidad.",
+          "image": "@src:trust.cedula"
+        },
+        {
+          "title": "Constitución certificada",
+          "description": "Empresa registrada ante el Registro Público de Comercio.",
+          "image": "@src:trust.certificate"
+        },
+        {
+          "title": "Due diligence completa",
+          "description": "Verificación de propiedades con informe detallado.",
+          "image": "@src:trust.registry"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "¿Listo para empezar?",
+      "subtitle": "Reserva una consulta gratuita de 30 minutos para discutir tus necesidades.",
+      "buttonText": "Agendar consulta gratuita",
+      "buttonHref": "/contacto"
+    },
+    "groups": [
+      {
+        "id": "residency-legal",
+        "title": "Residencia y Documentos Legales",
+        "subtitle": "Los primeros pasos esenciales para tu vida en Paraguay.",
+        "items": [
+          {
+            "title": "Residencia Permanente",
+            "description": "Gestión profesional de tu solicitud de permiso de residencia.",
+            "fullDescription": "Gestionamos toda tu solicitud de residencia, desde la recopilación de documentos hasta la presentación y el seguimiento. Nuestro equipo se asegura de que todos los trámites cumplan con los requisitos migratorios paraguayos.",
+            "benefits": [
+              "Lista de verificación completa",
+              "Presentación ante Migraciones",
+              "Seguimiento de la solicitud",
+              "Coordinación con representante legal",
+              "Apoyo hasta la aprobación final"
+            ],
+            "icon": "FileText"
+          },
+          {
+            "title": "Cédula de Identidad Paraguaya",
+            "description": "Asistencia completa para obtener tu documento de identificación local.",
+            "fullDescription": "Te guiamos en cada paso para obtener tu cédula de identidad paraguaya. Desde agendar tu cita hasta acompañarte el día de la gestión.",
+            "benefits": [
+              "Agendamiento de citas",
+              "Preparación de documentos",
+              "Acompañamiento presencial",
+              "Coordinación de trámite exprés",
+              "Seguimiento de entrega"
+            ],
+            "icon": "CreditCard"
+          },
+          {
+            "title": "Apostilla y Traducción",
+            "description": "Gestionamos la traducción certificada y la verificación legal de todos los documentos extranjeros necesarios.",
+            "fullDescription": "Coordinamos la traducción certificada de tus documentos extranjeros al español y gestionamos el proceso de apostilla. Incluye actas de nacimiento, matrimonio, antecedentes penales, títulos académicos y más.",
+            "benefits": [
+              "Traducción certificada",
+              "Verificación de apostilla",
+              "Coordinación con traductores",
+              "Autenticación de documentos",
+              "Juego completo listo para presentar"
+            ],
+            "icon": "Globe"
+          }
+        ]
+      },
+      {
+        "id": "banking-tax",
+        "title": "Banca y Configuración Fiscal",
+        "subtitle": "Estableciendo tu huella financiera en el país.",
+        "items": [
+          {
+            "title": "Apertura de Cuenta Bancaria",
+            "description": "Orientación y apoyo para abrir cuentas bancarias locales con éxito.",
+            "fullDescription": "Preparamos tu perfil financiero, seleccionamos el banco adecuado, coordinamos citas y te acompañamos en la apertura de cuenta. Nuestras relaciones institucionales agilizan este proceso.",
+            "benefits": [
+              "Preparación de perfil financiero",
+              "Selección del banco ideal",
+              "Coordinación de citas",
+              "Acompañamiento presencial",
+              "Configuración de banca digital"
+            ],
+            "icon": "Building"
+          },
+          {
+            "title": "Registro Tributario (RUC)",
+            "description": "Configuración de tu RUC para uso personal o empresarial.",
+            "fullDescription": "Gestionamos tu registro ante la SET para obtener tu RUC. Este número es esencial para actividades comerciales, compra de propiedades y operaciones bancarias en Paraguay.",
+            "benefits": [
+              "Preparación de documentos",
+              "Presentación ante SET",
+              "Configuración de domicilio fiscal",
+              "Obtención de certificado digital",
+              "Asesoría de cumplimiento"
+            ],
+            "icon": "Calculator"
+          }
+        ]
+      },
+      {
+        "id": "real-estate",
+        "title": "Bienes Raíces Residenciales",
+        "subtitle": "Encontrar el lugar ideal para llamar hogar, ya sea por un mes o toda la vida.",
+        "items": [
+          {
+            "title": "Alquiler de Apartamentos y Casas",
+            "description": "Ayuda para navegar el mercado local y encontrar alquileres de alta calidad.",
+            "fullDescription": "Te ayudamos a encontrar propiedades de calidad que se ajusten a tu estilo de vida y presupuesto, ya sea un apartamento amoblado por temporada o una casa familiar.",
+            "benefits": [
+              "Búsqueda personalizada",
+              "Asesoría de barrios",
+              "Coordinación de visitas",
+              "Revisión y negociación de contratos",
+              "Apoyo en mudanza y servicios"
+            ],
+            "icon": "Home"
+          },
+          {
+            "title": "Compra de Propiedades",
+            "description": "Asistencia experta para encontrar y comprar propiedades residenciales.",
+            "fullDescription": "Brindamos asistencia experta en todo el proceso de compra, desde la identificación de oportunidades hasta el cierre. Incluye verificación de títulos y coordinación notarial.",
+            "benefits": [
+              "Identificación de oportunidades",
+              "Visitas y debida diligencia",
+              "Verificación de títulos",
+              "Negociación de precios",
+              "Coordinación notarial y registro"
+            ],
+            "icon": "Search"
+          },
+          {
+            "title": "Debida Diligencia",
+            "description": "Verificamos títulos y situación legal de cualquier propiedad para garantizar tu inversión.",
+            "fullDescription": "Realizamos una debida diligencia completa en cualquier propiedad. Incluye verificación de títulos, búsqueda de gravámenes, estado fiscal y cumplimiento normativo.",
+            "benefits": [
+              "Verificación de escrituras",
+              "Búsqueda de gravámenes",
+              "Confirmación de situación fiscal",
+              "Verificación de zonificación",
+              "Informe completo de debida diligencia"
+            ],
+            "icon": "Shield"
+          }
+        ]
+      }
+    ]
   },
   "siteName": "Nexa Paraguay",
   "tagline": "Begleitung für deinen Umzug nach Paraguay",
@@ -6763,6 +7126,103 @@
       "whyCountryPage": ""
     },
     "whatsapp": "",
-    "whyCountryPage": ""
+    "whyCountryPage": "",
+    "highlights": {
+      "eyebrow": "Resumen",
+      "title": "En resumen",
+      "items": [
+        {
+          "icon": "Clock",
+          "title": "8–12 semanas",
+          "description": "Proceso completo desde presentación."
+        },
+        {
+          "icon": "Users",
+          "title": "Un solo interlocutor",
+          "description": "Nexa coordina todos los profesionales."
+        },
+        {
+          "icon": "DollarSign",
+          "title": "Precio fijo",
+          "description": "Todos los honorarios y tasas incluidos."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas sobre el proceso",
+      "items": [
+        {
+          "q": "¿Cuántos viajes necesito hacer a Paraguay?",
+          "a": "Nuestro programa está diseñado para que un solo viaje sea suficiente."
+        },
+        {
+          "q": "¿Cuánto tiempo toma todo el proceso?",
+          "a": "Tramitación presencial en un día. Emisión de residencia y cédula: 45–60 días. Constitución de sociedad y cuenta bancaria: 2–4 semanas. Total: 8–12 semanas."
+        },
+        {
+          "q": "¿Qué pasa si falta algún documento?",
+          "a": "Lo detectamos antes de su viaje. Nuestra validación previa garantiza que llegue con todo en orden."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Cómo funciona",
+      "title": "Tu camino hacia una nueva vida en Paraguay",
+      "totalDuration": "Tiempo estimado total: 8–12 semanas.",
+      "ctaLabel": "Iniciar mi proceso",
+      "ctaHref": "/contacto",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Selecciona tus Servicios",
+          "description": "Elige el apoyo específico que necesitas. Creamos una lista de verificación personalizada de los documentos que debes reunir en tu país de origen, asegurándonos de que no pierdas tiempo con trámites innecesarios.",
+          "icon": "ClipboardCheck",
+          "image": {
+            "$img": "process.consultation"
+          },
+          "duration": "Week 1"
+        },
+        {
+          "number": 2,
+          "title": "Procesamiento Paralelo",
+          "description": "Mientras organizas tus documentos en casa, nosotros comenzamos el trabajo sobre el terreno. Preparamos todas las gestiones locales y coordinamos las traducciones o legalizaciones paraguayas necesarias para que todo esté listo para tu llegada.",
+          "icon": "Layers",
+          "image": {
+            "$img": "process.documents"
+          },
+          "duration": "Weeks 2–5"
+        },
+        {
+          "number": 3,
+          "title": "El Día Operativo",
+          "description": "Con tus documentos en mano, viajas a Paraguay. Te acompañamos en todas las citas presenciales — migración, antecedentes policiales e identificación — consolidando todo el proceso legal en un solo día eficiente.",
+          "icon": "CalendarCheck",
+          "image": {
+            "$img": "process.arrival"
+          },
+          "duration": "Week 6"
+        },
+        {
+          "number": 4,
+          "title": "Cédula y Activación Financiera",
+          "description": "Una vez emitida tu Cédula de Identidad Paraguaya, activamos tu infraestructura financiera. Gestionamos tu registro de RUC y facilitamos la apertura de tus cuentas bancarias locales.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          },
+          "duration": "Weeks 7–9"
+        },
+        {
+          "number": 5,
+          "title": "Instalación y Estilo de Vida",
+          "description": "Con tu base legal y financiera establecida, te ayudamos a instalarte. Esto incluye encontrar la casa o apartamento perfecto para alquilar o comprar, y conseguir un vehículo confiable.",
+          "icon": "Home",
+          "image": {
+            "$img": "process.completion"
+          },
+          "duration": "Weeks 10–12"
+        }
+      ]
+    }
   }
 }
