@@ -2,60 +2,56 @@
 
 ## Already Abstracted ✅
 - `@ai-whisperers/sections` — 30+ section components (SectionsRenderer uses factory pattern)
-- `src/sections/` — removed, imported from base package
+- `@ai-whisperers/i18n` — locale system (LOCALES, DEFAULT_LOCALE, LOCALE_CONFIG, resolveLocale)
+- `@ai-whisperers/i18n` — locale UI strings (CookieBanner, GatewayPopup, ExitPopup, FeedbackSection)
+- `@ai-whisperers/content` — content resolvers (resolveContent, resolveImage, resolveConfig, localizedField)
+- `@ai-whisperers/content` — JSON loader with TTL cache (loadJSON, loadContent)
+- `@ai-whisperers/content` — page data loader (loadPageData, PageDataOptions, PageDataResult)
+- `@ai-whisperers/content` — content types (SiteConfig, PageConfig, PageSection, ImageManifest)
 
-## 1. i18n / Locale Data (could extract to @ai-whisperers/i18n)
-- **`src/lib/locales.ts`** — LOCALES, DEFAULT_LOCALE, LOCALE_FLAGS, LOCALE_NAMES
-- **`src/components/CookieBanner.tsx`** — 4-locale hardcoded strings (lines 28-52)
-- **`src/components/GatewayPopup.tsx`** — 4-locale hardcoded strings (lines 11-16)
-- **`src/components/FeedbackSection.tsx`** — 4-locale hardcoded `tr()` function (lines 11-18)
-- **`src/middleware.ts`** — LOCALES/DEFAULT hardcoded (lines 3-5) — duplicates locales.ts
+## Duplication Removed ✅
+- `src/components/content.ts` — deleted (superseded by content-resolver.ts → @ai-whisperers/content)
+- `src/theme.ts` — merged into src/lib/theme.ts (single source of truth)
+- `src/components/CookieBanner.tsx` — 4-locale strings replaced with @ai-whisperers/i18n
+- `src/components/GatewayPopup.tsx` — 4-locale strings replaced with @ai-whisperers/i18n
+- `src/components/FeedbackSection.tsx` — 4-locale tr() function replaced with @ai-whisperers/i18n
+- `src/components/ExitPopupWrapper.tsx` — 4-locale TRANSLATIONS replaced with @ai-whisperers/i18n
+- `src/components/ExitPopup.tsx` — hardcoded ES fallbacks removed (purely data-driven now)
+- `src/lib/content-resolver.ts` — re-exports from @ai-whisperers/content
+- `src/middleware.ts` — LOCALES/DEFAULT already consuming @ai-whisperers/i18n
+- `src/lib/locales.ts` — already re-exporting from @ai-whisperers/i18n
 
-## 2. Design Tokens (duplicated — extract to @ai-whisperers/design)
-- **`src/lib/theme.ts`** — BRAND tokens (navy, gold, shadows, gradients) — 43 lines
-- **`src/theme.ts`** — FULL theme object (colors, radii, shadows, fonts, spacing, sizes, breakpoints, transitions) — 82 lines
-- **DUPLICATED** — both files define nearly the same colors (primary=#1B2A4A, accent=#C9A96E, etc.)
+## Remaining (intentionally Nexa-specific, low reuse value)
+- **src/lib/theme.ts** — Brand tokens (navy, gold, shadows) — client-specific, stays in Nexa
+- **src/components/ui.tsx** — Button, SectionHeading, Section, AccentLine — *could* extract to @ai-whisperers/ui when a second client needs them
+- **src/app/layout.tsx** — metadataBase hardcoded 'nexaparaguay.com', Google Fonts — fine where it is
+- **src/app/sitemap.ts** — BASE URL hardcoded 'https://nexa.paragu-ai.com' — fine where it is
+- **src/app/api/contact/route.ts** — rate limit (10/hr) — config-specific, fine as-is
+- **src/lib/page-data.ts** — custom loadPageData with testimonials injection — Nexa-specific
+- **src/types.ts** — 30+ content interfaces — could align with @ai-whisperers/content types in future
+- **BookingFormSection** DEFAULT_PROGRAMS — fine as fallback
 
-## 3. Reusable UI Components (extract to @ai-whisperers/ui)
-- **`src/components/ui.tsx`** — Button, SectionHeading, Section, AccentLine — generic, nothing Nexa-specific
+## Package Summary
 
-## 4. App-wide Config
-- **`src/app/layout.tsx`** — metadataBase hardcoded to 'nexaparaguay.com', title hardcoded 'Nexa Paraguay', Google Fonts hardcoded
-- **`src/app/sitemap.ts`** — BASE URL hardcoded 'https://nexa.paragu-ai.com'
-- **`src/app/api/contact/route.ts`** — rate limit hardcoded (10/hour, 1hr window)
+### @ai-whisperers/content — v0.1.0
+Exports from main entry:
+- `SiteConfig`, `PageConfig`, `PageSection`, `ImageManifest`, `LoadedContent` types
+- `loadJSON(filePath, cache?)` — sync JSON loader with TTL
+- `loadContent(filePath)` — convenience wrapper
+- `loadPageData(locale, slug, options)` — orchestration loader
+- `resolveContent(content, key)` — dot-notation content resolver
+- `resolveImage(images, ref)` — image manifest path resolver (@img:, @src:)
+- `resolveConfig(obj, key, locale?, default?)` — locale-aware config resolver
+- `localizedField(obj, field, locale?)` — localized text field resolver
 
-## 5. Content Resolvers (duplicated — 2 versions)
-- **`src/lib/content-resolver.ts`** — resolveContent, resolveImage, resolveConfig, localizedField
-- **`src/components/content.ts`** — resolveContent, resolveImage (same functions, less features)
-- **DUPLICATED** — content.ts is an older simpler version, content-resolver.ts has more features
-
-## 6. Type Definitions
-- **`src/types.ts`** — SiteContent, PageSectionContent, all data shapes (256 lines) — could live in @ai-whisperers/sections or a types package
-- `src/lib/content-types.ts` in the base package has similar types
-
-## 7. Booking Form Data
-- **`src/components/BookingFormSection.tsx`** — DEFAULT_PROGRAMS (lines 5-9), DEFAULT_STEP_LABELS (line 12), all form labels
-
-## 8. Blog Pattern
-- **`src/app/[locale]/blog/[slug]/page.tsx`** — blog post rendering with inline prose styles
-
-## Priority Order for Extraction
-
-### P0 — Remove duplication (low effort, high impact)
-1. Delete `src/components/content.ts` — superseded by `src/lib/content-resolver.ts`
-2. Merge `src/lib/theme.ts` and `src/theme.ts` — one file, source of truth
-
-### P1 — Extract to @ai-whisperers packages (medium effort, reusable)
-3. `@ai-whisperers/i18n` — LOCALES array, flags, names, middleware locale helpers
-4. `@ai-whisperers/design` — brand tokens (colors, shadows, fonts, spacing, transitions)
-5. `@ai-whisperers/ui` — Button, SectionHeading, Section, AccentLine (generic components)
-
-### P2 — Refactor into existing packages
-6. Add `createSectionsRenderer` locale helpers to base package
-7. Standardize type definitions between `src/types.ts` and base package's content-types.ts
-
-### P3 — Defer (Nexa-specific, already clean enough)
-8. Sitemap BASE URL — fine where it is
-9. Blog pattern — works fine, low reuse value
-10. API route rate limits — config-specific
-11. Booking form DEFAULT_PROGRAMS — fine as fallback
+### @ai-whisperers/i18n — v0.2.0
+Exports from main entry:
+- `LOCALES`, `DEFAULT_LOCALE`, `LOCALE_COOKIE` constants
+- `Locale` type, `LocaleConfig` interface, `LOCALE_CONFIG` map
+- `resolveLocale(pathname, cookie?)` — middleware-friendly locale detection
+- `isValidLocale(locale)` — type guard
+- `useTranslations(locale)` — JSON-based dot-notation translator (El Viajero pattern)
+- Language switcher component
+- **New** `COOKIE_BANNER`, `GATEWAY_POPUP`, `EXIT_POPUP`, `FEEDBACK_SECTION` string sets
+- **New** `getLocaleStrings(set, locale)` — get all strings for a locale
+- **New** `t(set, locale, key, fallback?)` — get single string key
