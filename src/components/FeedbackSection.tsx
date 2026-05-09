@@ -2,19 +2,14 @@
 
 import React, { useState } from 'react'
 import { SectionComponentProps } from '../types'
+import { FEEDBACK_SECTION, t as localeT } from '@ai-whisperers/i18n'
 
 export function FeedbackSection({ data, locale }: SectionComponentProps) {
   const d = data || {}
   const lang = locale || 'es'
 
   const tr = (key: string): string => {
-    const texts: any = {
-      es: { eyebrow: 'TU OPINIÓN', title: 'Compartí tu experiencia', namePlaceholder: 'Tu nombre (opcional)', messagePlaceholder: 'Escribí tu comentario o pregunta...', button: 'Enviar', thanks: '¡Gracias por tu mensaje!', recent: 'Comentarios recientes' },
-      en: { eyebrow: 'YOUR FEEDBACK', title: 'Share your experience', namePlaceholder: 'Your name (optional)', messagePlaceholder: 'Write your comment or question...', button: 'Submit', thanks: 'Thanks for your message!', recent: 'Recent comments' },
-      nl: { eyebrow: 'UW FEEDBACK', title: 'Deel uw ervaring', namePlaceholder: 'Uw naam (optioneel)', messagePlaceholder: 'Schrijf uw opmerking of vraag...', button: 'Verzenden', thanks: 'Bedankt voor uw bericht!', recent: 'Recente reacties' },
-      de: { eyebrow: 'IHR FEEDBACK', title: 'Teilen Sie Ihre Erfahrung', namePlaceholder: 'Ihr Name (optional)', messagePlaceholder: 'Schreiben Sie Ihren Kommentar oder Ihre Frage...', button: 'Senden', thanks: 'Danke für Ihre Nachricht!', recent: 'Aktuelle Kommentare' },
-    }
-    return (d[key] || (texts as any)[lang]?.[key] || (texts as any).es[key] || '') as string
+    return d[key] || localeT(FEEDBACK_SECTION, lang, key)
   }
 
   const [name, setName] = useState('')

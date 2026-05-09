@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@ai-whisperers/client-kit": "^0.1.0",
+    "@ai-whisperers/content": "file:../ai-whisperers-base/packages/content",
     "@ai-whisperers/i18n": "file:../ai-whisperers-base/packages/i18n",
     "@ai-whisperers/sections": "file:../ai-whisperers-base/packages/sections",
     "next": "^16.2.4",

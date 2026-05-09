@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'next/navigation'
+import { COOKIE_BANNER, getLocaleStrings } from '@ai-whisperers/i18n'
 
 export function CookieBanner() {
   const [visible, setVisible] = useState(false)
@@ -25,32 +26,7 @@ export function CookieBanner() {
 
   if (!visible) return null
 
-  const t = {
-    es: {
-      text: 'Usamos cookies para mejorar tu experiencia. Si continuás navegando, aceptás nuestra ',
-      privacy: 'política de privacidad',
-      reject: 'Rechazar',
-      accept: 'Aceptar',
-    },
-    en: {
-      text: 'We use cookies to improve your experience. By continuing to browse, you accept our ',
-      privacy: 'privacy policy',
-      reject: 'Reject',
-      accept: 'Accept',
-    },
-    nl: {
-      text: 'We gebruiken cookies om uw ervaring te verbeteren. Door verder te gaan, accepteert u ons ',
-      privacy: 'privacybeleid',
-      reject: 'Weigeren',
-      accept: 'Accepteren',
-    },
-    de: {
-      text: 'Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Durch weiteres Surfen akzeptieren Sie unsere ',
-      privacy: 'Datenschutzerklärung',
-      reject: 'Ablehnen',
-      accept: 'Akzeptieren',
-    },
-  }[locale] || { text: '', privacy: '', reject: '', accept: '' }
+  const t = getLocaleStrings(COOKIE_BANNER, locale)
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-primary text-white p-4 shadow-2xl">
