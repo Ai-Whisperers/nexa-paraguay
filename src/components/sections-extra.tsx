@@ -38,7 +38,7 @@ export function FaqSection({ pageContent, data }: SectionComponentProps) {
 export function BlogSection({ pageContent, data, images, locale: _locale }: SectionComponentProps) {
   const d = data || pageContent || {}
   const posts = d.posts || []
-  const locale = _locale || 'es'
+  const locale = _locale || 'nl'
   if (!posts.length) return null
   return (
     <section className="py-24">
@@ -576,7 +576,7 @@ export function IntakeWizardSection({ pageContent, data }: SectionComponentProps
           <h2 className="text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-primary mb-4">{d.resultTitle || 'Tu recomendación'}</h2>
           <p className="text-lg font-bold text-primary">{recommended}</p>
           <p className="text-text-muted text-sm mt-4 mb-6">{d.resultDescription || 'Basado en tus respuestas'}</p>
-          {(d.ctaText || d.recommendedCta) && <a href={d.ctaHref || `/${d.locale || 'es'}/contacto`} className="inline-block px-8 py-3 bg-accent text-primary rounded-full font-bold text-base no-underline">{d.ctaText || d.recommendedCta}</a>}
+          {(d.ctaText || d.recommendedCta) && <a href={d.ctaHref || `/${d.locale || 'nl'}/contacto`} className="inline-block px-8 py-3 bg-accent text-primary rounded-full font-bold text-base no-underline">{d.ctaText || d.recommendedCta}</a>}
           <p><button onClick={handleRestart} className="mt-6 bg-none border-none text-accent cursor-pointer font-bold underline text-sm">{d.restartLabel || 'Reiniciar'}</button></p>
         </div>
       </section>

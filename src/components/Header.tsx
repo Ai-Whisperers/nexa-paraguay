@@ -9,11 +9,11 @@ interface NavItem {
   children?: NavItem[]
 }
 
-const LOCALE_FLAGS: Record<string, string> = {
-  es: '🇪🇸 ES',
-  en: '🇬🇧 EN',
-  nl: '🇳🇱 NL',
-  de: '🇩🇪 DE',
+const LOCALE_FLAGS: Record<string, { label: string; flag: string }> = {
+  nl: { label: 'NL', flag: '/images/flags/nl.svg' },
+  es: { label: 'ES', flag: '/images/flags/es.svg' },
+  en: { label: 'EN', flag: '/images/flags/en.svg' },
+  de: { label: 'DE', flag: '/images/flags/de.svg' },
 }
 
 export function Header({ navigation, locale }: { navigation: any; locale?: string }) {
@@ -21,7 +21,7 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
   const [langOpen, setLangOpen] = useState(false)
   const navItems: NavItem[] = navigation?.navItems || []
   const pathname = usePathname()
-  const currentLocale = locale || 'es'
+  const currentLocale = locale || 'nl'
 
   function switchLocale(newLocale: string) {
     // Get current path without locale prefix
@@ -69,17 +69,23 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
               style={{ background: '#F5F5F0', border: '1px solid #ddd', borderRadius: '6px', padding: '0.3rem 0.6rem', cursor: 'pointer', fontSize: '0.85rem', color: '#333', display: 'flex', alignItems: 'center', gap: '0.3rem' }}
               aria-label="Switch language"
             >
-              {LOCALE_FLAGS[currentLocale] || '🌐 ES'}
+              {LOCALE_FLAGS[currentLocale] ? (
+                <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                  <img src={LOCALE_FLAGS[currentLocale].flag} alt={currentLocale} style={{ width: '18px', height: '12px', borderRadius: '2px', objectFit: 'cover' }} />
+                  {LOCALE_FLAGS[currentLocale].label}
+                </span>
+              ) : '🌐 NL'}
               <span style={{ fontSize: '0.7rem' }}>{langOpen ? '▲' : '▼'}</span>
             </button>
             {langOpen && (
               <div style={{ position: 'absolute', top: '100%', right: 0, marginTop: '0.3rem', background: '#fff', border: '1px solid #ddd', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)', zIndex: 200, minWidth: '100px' }}>
-                {Object.entries(LOCALE_FLAGS).map(([code, label]) => (
+                {Object.entries(LOCALE_FLAGS).map(([code, { label, flag }]) => (
                   <button
                     key={code}
                     onClick={() => { setLangOpen(false); switchLocale(code); }}
-                    style={{ display: 'block', width: '100%', padding: '0.5rem 0.75rem', textAlign: 'left', background: code === currentLocale ? '#F5F5F0' : 'transparent', border: 'none', cursor: 'pointer', fontSize: '0.85rem', color: '#333', fontWeight: code === currentLocale ? 700 : 400 }}
+                    style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', width: '100%', padding: '0.5rem 0.75rem', textAlign: 'left', background: code === currentLocale ? '#F5F5F0' : 'transparent', border: 'none', cursor: 'pointer', fontSize: '0.85rem', color: '#333', fontWeight: code === currentLocale ? 700 : 400 }}
                   >
+                    <img src={flag} alt={code} style={{ width: '18px', height: '12px', borderRadius: '2px', objectFit: 'cover' }} />
                     {label}
                   </button>
                 ))}

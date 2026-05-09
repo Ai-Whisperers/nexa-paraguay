@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 const LOCALES = ['es', 'en', 'nl', 'de']
-const DEFAULT = 'es'
+const DEFAULT = 'nl'
 const LOCALE_COOKIE = 'NEXT_LOCALE'
 
 function getLocale(request: NextRequest): string {
