@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/copy-sections.cjs && next build",
+    "postinstall": "node scripts/copy-sections.cjs",
     "start": "next start",
     "lint": "eslint",
     "screenshots": "node scripts/screenshot-all.mjs",
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "@ai-whisperers/client-kit": "^0.1.0",
+    "@ai-whisperers/sections": "file:../ai-whisperers-base/packages/sections",
     "next": "^16.2.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

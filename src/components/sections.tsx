@@ -1,4 +1,4 @@
-// ── Re-export from sections directory ──
-// These original files are kept as aliases for backward compatibility.
-// New code should import from '@/sections' directly.
-export * from '@/sections'
+// ── Re-export from @ai-whisperers/sections package ──
+// This file exists for backward compatibility only.
+// New code should import from '@ai-whisperers/sections' directly.
+export * from '@ai-whisperers/sections'
