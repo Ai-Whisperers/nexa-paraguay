@@ -1,6 +1,6 @@
 import { Header } from './Header'
 import { Footer } from './Footer'
-import { HeroSection, TrustSection, WhyCountrySection, ServicesSection, ProcessSection, CtaBanner } from './sections'
+import { HeroSection, TrustSection, WhyCountrySection, ServicesSection, ProcessSection, CtaBanner, RequirementsSection } from './sections'
 import { resolveContent } from './content'
 
 const SECTIONS: Record<string, any> = {
@@ -10,6 +10,7 @@ const SECTIONS: Record<string, any> = {
   services: ServicesSection,
   'process-timeline': ProcessSection,
   'cta-banner': CtaBanner,
+  requirements: RequirementsSection,
 }
 
 function GenericSection({ data }: { data?: any }) {

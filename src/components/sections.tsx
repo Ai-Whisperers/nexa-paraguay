@@ -278,6 +278,97 @@ export function TestimonialsSection({ pageContent, images }: SectionComponentPro
   )
 }
 
+export function RequirementsSection({ pageContent }: SectionComponentProps) {
+  const c = pageContent.requirements || {}
+  if (!c.title && !c.basicDocuments) return null
+  return (
+    <section className="py-16 px-4 bg-surface-alt/50">
+      <div className="max-w-4xl mx-auto">
+        {c.eyebrow && <p className="text-xs uppercase tracking-widest text-text-muted mb-2 text-center">{c.eyebrow}</p>}
+        {c.title && <h2 className="text-2xl font-bold mb-2 text-center">{c.title}</h2>}
+        {c.subtitle && <p className="text-text-muted leading-relaxed mb-10 text-center max-w-2xl mx-auto">{c.subtitle}</p>}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          {c.basicDocuments && (
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <h3 className="font-bold text-lg mb-4">{c.basicDocuments.title}</h3>
+              <ul className="space-y-2">
+                {c.basicDocuments.items?.map((item: string, i: number) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-text-muted">
+                    <span className="text-accent mt-0.5 shrink-0">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div className="space-y-4">
+            {c.importantNotes && (
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
+                <h3 className="font-bold text-sm mb-3 flex items-center gap-2">
+                  <span className="text-amber-600">⚠</span>
+                  {c.importantNotes.title}
+                </h3>
+                <ul className="space-y-2">
+                  {c.importantNotes.items?.map((item: string, i: number) => (
+                    <li key={i} className="text-sm text-text-muted">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {c.processedLocally && (
+              <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                <h3 className="font-bold text-sm mb-3 flex items-center gap-2">
+                  <span className="text-green-600">✓</span>
+                  {c.processedLocally.title}
+                </h3>
+                <ul className="space-y-1">
+                  {c.processedLocally.items?.map((item: string, i: number) => (
+                    <li key={i} className="text-sm text-text-muted">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {c.residenceTypes && (
+          <div className="mb-8">
+            <h3 className="font-bold text-lg mb-4">{c.residenceTypes.title}</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {c.residenceTypes.types?.map((t: any, i: number) => (
+                <div key={i} className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+                  <h4 className="font-bold mb-1">{t.name}</h4>
+                  <p className="text-sm text-text-muted">{t.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {(c.mercosur || c.costs) && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {c.mercosur && (
+              <div className="bg-primary/5 rounded-xl p-5 border border-primary/10">
+                <h3 className="font-bold text-sm mb-2">{c.mercosur.title}</h3>
+                <p className="text-sm text-text-muted">{c.mercosur.description}</p>
+              </div>
+            )}
+            {c.costs && (
+              <div className="bg-primary/5 rounded-xl p-5 border border-primary/10">
+                <h3 className="font-bold text-sm mb-2">{c.costs.title}</h3>
+                <p className="text-sm text-text-muted">{c.costs.description}</p>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    </section>
+  )
+}
+
 export function CtaBanner({ pageContent }: SectionComponentProps) {
   const c = pageContent.finalCta || pageContent.cta || {}
   if (!c.title) return null
