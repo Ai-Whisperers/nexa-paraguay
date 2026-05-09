@@ -19,5 +19,5 @@ export default async function Page({ params }: Props) {
   const { locale } = await params
   const data = loadPageData(locale, 'home')
   if (!data) return <div className="text-center p-16 text-text-muted">Page not found</div>
-  return <SectionsRenderer content={data.content} pageConfig={data.pageConfig} images={data.images} locale={data.locale} />
+  return <SectionsRenderer content={data.content} pageConfig={data.pageConfig} images={data.images.images} locale={data.locale} />
 }
