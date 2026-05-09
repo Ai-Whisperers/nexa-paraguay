@@ -161,6 +161,14 @@
       "whatsapp": "",
       "whyCountryPage": ""
     },
+    "requirements": {
+      "basicDocuments": {"title": "Basisdocumenten", "items": ["Geldig paspoort", "Identiteitskaart van het land van herkomst (indien van toepassing)", "Geboorteakte", "Verklaring omtrent het gedrag uit het land van herkomst", "Certificaat van politiële/strafrechtelijke antecedenten — Interpol Paraguay", "Verklaring van leven en verblijf in Paraguay", "Buitenlands strafblad afgegeven in Paraguay", "Medisch certificaat afgegeven in Paraguay", "Bewijs van legale binnenkomst in het land", "Pasfoto's", "Immigratieformulier", "Betaling van immigratiekosten"]},
+      "importantNotes": {"title": "Belangrijke vereisten", "items": ["Alle buitenlandse documenten moeten geapostilleerd of gelegaliseerd zijn", "Ze moeten vertaald worden naar het Spaans door een beëdigd vertaler als ze in een andere taal zijn"]},
+      "processedLocally": {"title": "Wat wij al in Paraguay regelen", "items": ["Interpol-certificaat", "Antecedentenonderzoek in Paraguay", "Medisch certificaat", "Verklaring van leven en verblijf", "Foto's", "Officiële vertalingen"]},
+      "residenceTypes": {"title": "Meest voorkomende verblijfstypes", "types": [{"name": "Tijdelijk verblijf", "description": "Over het algemeen geldig voor 2 jaar. Daarna kun je een aanvraag doen voor permanent verblijf."}, {"name": "Permanent verblijf", "description": "Afhankelijk van de situatie: familieband, investering, Mercosur, na tijdelijk verblijf, of voor gepensioneerden en renteniers."}]},
+      "mercosur": {"title": "Voor Mercosur-burgers", "description": "De vereisten zijn meestal eenvoudiger en sneller."},
+      "costs": {"title": "Geschatte kosten", "description": "Variëren afhankelijk van nationaliteit, vertalingen, beheerkosten, apostilles en verblijfstype. Wij geven u een persoonlijke offerte zonder verplichtingen."}
+    },
     "seprealadAttestation": "",
     "servicesPage": "",
     "siteName": "",

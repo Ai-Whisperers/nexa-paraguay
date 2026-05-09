@@ -534,9 +534,9 @@
       "title": "Conoce a Sonia",
       "eyebrow": "Trayectoria Personal",
       "paragraphs": [
-        "Viví en los Países Bajos, pasé por el proceso de emigrar yo misma, y sé lo que se siente llegar a un país nuevo sin conocer el idioma ni tener a quién recurrir.",
-        "Esa experiencia me mostró que faltaba un servicio que no solo tramite documentos, sino que acompañe de verdad — desde la primera consulta hasta que ya estás instalado con tu casa, tu banco y tus papeles en orden.",
-        "Hoy ayudo a europeos a mudarse a Paraguay con el mismo acompañamiento de cerca que me hubiera gustado tener. Hablo neerlandés, inglés y español, conozco ambas culturas y sé exactamente lo que estás viviendo."
+        "Sonia vivió 7 años en Holanda. Llegó sin hablar neerlandés, sin contactos, sin red de apoyo. Al principio trabajó en el mundo musical, pero pronto se retiró para dedicarse a lo que describe como \"la labor más bella\": ser mamá.",
+        "Siempre tuvo claro que regresaría a Paraguay. Su plan era quedarse el tiempo suficiente para aprender la cultura y el idioma a fondo, y transmitírselo a sus hijos. Luego volver para estar con su mamá, que ya era mayor.",
+        "Lo más difícil al regresar fue reinventarse culturalmente. Los trámites fueron algo complicados, pero siendo paraguaya y teniendo familia aquí, todo fue más simple. Esa experiencia — la burocracia, el desarraigo, el reencuentro — es exactamente lo que hoy la lleva a acompañar a otros en el mismo camino."
       ]
     },
     "whyNexa": {
@@ -586,6 +586,67 @@
           "badge": "Por qué nos eligen"
         }
       ]
+    },
+    "requirements": {
+      "eyebrow": "Requisitos",
+      "title": "Documentación necesaria para tu residencia en Paraguay",
+      "subtitle": "El proceso es más simple de lo que parece. Te guiamos paso a paso.",
+      "basicDocuments": {
+        "title": "Documentos básicos",
+        "items": [
+          "Pasaporte vigente",
+          "Cédula de identidad del país de origen (si aplica)",
+          "Certificado de nacimiento",
+          "Certificado de antecedentes penales del país de origen",
+          "Certificado de antecedentes policiales o penales — Interpol Paraguay",
+          "Certificado de vida y residencia en Paraguay",
+          "Certificado de antecedentes para extranjeros emitido en Paraguay",
+          "Certificado médico expedido en Paraguay",
+          "Comprobante de ingreso legal al país",
+          "Fotos tipo carnet",
+          "Formulario migratorio",
+          "Pago de tasas migratorias"
+        ]
+      },
+      "importantNotes": {
+        "title": "Requisitos importantes",
+        "items": [
+          "Todos los documentos extranjeros deben estar apostillados o legalizados",
+          "Deben estar traducidos al español por traductor público matriculado si vienen en otro idioma"
+        ]
+      },
+      "processedLocally": {
+        "title": "Lo que tramitamos ya en Paraguay",
+        "items": [
+          "Certificado de Interpol",
+          "Antecedentes en Paraguay",
+          "Certificado médico",
+          "Vida y residencia",
+          "Fotos",
+          "Traducciones oficiales"
+        ]
+      },
+      "residenceTypes": {
+        "title": "Tipos más comunes de residencia",
+        "types": [
+          {
+            "name": "Residencia temporal",
+            "description": "Generalmente válida por 2 años. Luego permite pedir residencia permanente."
+          },
+          {
+            "name": "Residencia permanente",
+            "description": "Dependiendo del caso: por vínculo familiar, inversión, Mercosur, después de temporal, o para jubilados y rentistas."
+          }
+        ]
+      },
+      "mercosur": {
+        "title": "Para ciudadanos Mercosur",
+        "description": "Los requisitos suelen ser más simples y rápidos."
+      },
+      "costs": {
+        "title": "Costos aproximados",
+        "description": "Varían según nacionalidad, traducciones, gestoría, apostillas y tipo de residencia. Te damos un presupuesto personalizado sin compromiso."
+      }
     }
   },
   "faqPage": {
@@ -777,9 +838,9 @@
       "title": "Nuestra Historia",
       "eyebrow": "De la experiencia personal a la misión profesional",
       "paragraphs": [
-        "Nexa Paraguay nace de una experiencia real. Viví en los Países Bajos, pasé por el proceso de emigrar a otro país, y sé lo que se siente llegar a un lugar donde no entendés el idioma y no tenés a nadie que te guíe.",
-        "Esa experiencia me mostró que faltaba algo: un servicio que no solo procese papeles, sino que te acompañe de verdad durante todo el proceso — desde los primeros documentos hasta que ya estás instalado, con tu casa, tu cuenta bancaria y tus registros en orden.",
-        "Hoy ayudo a ciudadanos europeos a mudarse a Paraguay con el mismo acompañamiento de cerca que me hubiera gustado tener a mí. Hablo tu idioma, conozco tu cultura y entiendo exactamente lo que estás viviendo porque yo también lo viví."
+        "Nexa Paraguay nace de una historia real. Sonia, su fundadora, vivió 7 años en Holanda, donde experimentó en carne propia lo que es llegar a un país sin hablar el idioma ni tener una red de apoyo. Trabajó en la industria musical y luego se dedicó a su familia, siempre con la certeza de que volvería a Paraguay.",
+        "Al regresar, enfrentó la burocracia, el desafío de reinventarse culturalmente y la necesidad de reconstruir su vida desde cero. Esa experiencia le mostró que faltaba un servicio que no solo procesara papeles, sino que acompañara de verdad — desde los primeros documentos hasta la mudanza completa.",
+        "Hoy ayuda a ciudadanos europeos a mudarse a Paraguay con el mismo acompañamiento cercano que a ella le hubiera gustado tener. Habla neerlandés, inglés y español, conoce ambas culturas, y entiende exactamente lo que sus clientes están viviendo."
       ]
     }
   },
@@ -2280,12 +2341,12 @@
       ]
     },
     "story": {
-      "title": "Conoce a la Fundadora",
-      "eyebrow": "Trayectoria Personal",
+      "title": "De Holanda a Paraguay: la historia de Sonia",
+      "eyebrow": "Fundadora",
       "paragraphs": [
-        "Nexa Paraguay nació de una experiencia de primera mano. Después de navegar las complejidades de la reubicación internacional — desde la banca corporativa europea hasta construir una vida en Sudamérica — nuestra fundadora identificó una necesidad en el mercado: un servicio que combine precisión legal con apoyo humano genuino.",
-        "Fluida en neerlandés, alemán, español e inglés, ella conecta las expectativas europeas con la realidad paraguaya. Su experiencia en finanzas y operaciones transfronterizas le permite entender tanto las preguntas estratégicas de los inversores como el aspecto humano de dejar un país por otro.",
-        "Cada programa de Nexa se diseña bajo el mismo principio: tratar a los clientes como ella hubiera deseado ser tratada — con transparencia, eficiencia y un toque personal que convierte la burocracia en una experiencia acogedora."
+        "Sonia es paraguaya. Vivió 7 años en Holanda, donde trabajó inicialmente en la industria musical antes de retirarse para dedicarse por completo a su familia. Siempre supo que volvería a Paraguay — su meta era aprender la cultura y el idioma neerlandés para pasárselo a sus hijos, y luego regresar para estar con su mamá.",
+        "Al volver, lo más duro fue reinventarse culturalmente. Los papeles fueron complicados, pero su condición de paraguaya y su red familiar aquí allanaron el camino. Esa vivencia directa del proceso migratorio — desde la burocracia hasta el reencuentro — le mostró que faltaba un servicio que no solo tramitara documentos, sino que acompañara de verdad.",
+        "Hoy Nexa Paraguay es eso: acompañamiento casi familiar a ciudadanos europeos que quieren mudarse. Sonia habla neerlandés, inglés y español, conoce ambas culturas desde adentro, y entiende exactamente lo que sus clientes están viviendo porque ella misma lo vivió. Hasta ahora ha ayudado a 10 personas, todos holandeses, y su mayor orgullo es haberles conseguido propiedades a buen precio, evitando que los estafen."
       ]
     },
     "cta": {

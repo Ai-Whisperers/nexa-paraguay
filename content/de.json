@@ -164,6 +164,14 @@
       "whatsapp": "",
       "whyCountryPage": ""
     },
+    "requirements": {
+      "basicDocuments": {"title": "Grundlegende Dokumente", "items": ["Gültiger Reisepass", "Personalausweis des Herkunftslandes (falls zutreffend)", "Geburtsurkunde", "Führungszeugnis aus dem Herkunftsland", "Polizeiliches/strafrechtliches Führungszeugnis — Interpol Paraguay", "Lebens- und Aufenthaltsbescheinigung in Paraguay", "Ausländisches Führungszeugnis ausgestellt in Paraguay", "Ärztliches Attest ausgestellt in Paraguay", "Nachweis der legalen Einreise ins Land", "Passfotos", "Einwanderungsformular", "Zahlung der Einwanderungsgebühren"]},
+      "importantNotes": {"title": "Wichtige Anforderungen", "items": ["Alle ausländischen Dokumente müssen apostilliert oder legalisiert sein", "Sie müssen von einem vereidigten Übersetzer ins Spanische übersetzt werden, wenn sie in einer anderen Sprache verfasst sind"]},
+      "processedLocally": {"title": "Was wir bereits in Paraguay erledigen", "items": ["Interpol-Bescheinigung", "Hintergrundprüfung in Paraguay", "Ärztliches Attest", "Lebens- und Aufenthaltsbescheinigung", "Fotos", "Offizielle Übersetzungen"]},
+      "residenceTypes": {"title": "Häufigste Aufenthaltsarten", "types": [{"name": "Vorübergehender Aufenthalt", "description": "In der Regel gültig für 2 Jahre. Danach kann man eine unbefristete Aufenthaltserlaubnis beantragen."}, {"name": "Unbefristeter Aufenthalt", "description": "Je nach Fall: familiäre Bindung, Investition, Mercosur, nach vorübergehendem Aufenthalt oder für Rentner und Pensionäre."}]},
+      "mercosur": {"title": "Für Mercosur-Bürger", "description": "Die Anforderungen sind in der Regel einfacher und schneller."},
+      "costs": {"title": "Ungefähre Kosten", "description": "Variieren je nach Nationalität, Übersetzungen, Verwaltungsgebühren, Apostillen und Aufenthaltsart. Wir erstellen Ihnen ein persönliches Angebot ohne Verpflichtung."}
+    },
     "seprealadAttestation": "",
     "servicesPage": "",
     "siteName": "",

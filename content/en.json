@@ -206,6 +206,14 @@
       "whatsapp": "",
       "whyCountryPage": ""
     },
+    "requirements": {
+      "basicDocuments": {"title": "Basic documents", "items": ["Valid passport", "National ID card from country of origin (if applicable)", "Birth certificate", "Criminal record certificate from country of origin", "Police/criminal record certificate — Interpol Paraguay", "Certificate of life and residence in Paraguay", "Foreign criminal background certificate issued in Paraguay", "Medical certificate issued in Paraguay", "Proof of legal entry into the country", "Passport-size photos", "Immigration form", "Payment of immigration fees"]},
+      "importantNotes": {"title": "Important requirements", "items": ["All foreign documents must be apostilled or legalized", "They must be translated into Spanish by a certified public translator if in another language"]},
+      "processedLocally": {"title": "What we process already in Paraguay", "items": ["Interpol certificate", "Background check in Paraguay", "Medical certificate", "Life and residence certificate", "Photos", "Official translations"]},
+      "residenceTypes": {"title": "Most common residence types", "types": [{"name": "Temporary residence", "description": "Generally valid for 2 years. After that you can apply for permanent residence."}, {"name": "Permanent residence", "description": "Depending on the case: family ties, investment, Mercosur, after temporary, or for retirees and pensioners."}]},
+      "mercosur": {"title": "For Mercosur citizens", "description": "Requirements are usually simpler and faster."},
+      "costs": {"title": "Approximate costs", "description": "Vary depending on nationality, translations, management fees, apostilles and residence type. We give you a personalized quote with no obligation."}
+    },
     "tagline": "",
     "team": {
       "_note": "AI-generated portrait placeholders. Founder consented 2026-04 to use AI content pre-launch. Replace with real consented team photos when ready.",

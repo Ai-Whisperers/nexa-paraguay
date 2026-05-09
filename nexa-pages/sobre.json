@@ -21,6 +21,11 @@
             "content": "aboutPage.story"
         },
         {
+            "id": "requirements",
+            "variant": "checklist",
+            "content": "aboutPage.requirements"
+        },
+        {
             "id": "highlights",
             "variant": "pillars",
             "content": "aboutPage.differentiators"
