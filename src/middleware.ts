@@ -10,10 +10,6 @@ function getLocale(request: NextRequest): string {
   if (segments.length > 0 && LOCALES.includes(segments[0])) return segments[0]
   const cookie = request.cookies.get(LOCALE_COOKIE)?.value
   if (cookie && LOCALES.includes(cookie)) return cookie
-  const accept = request.headers.get('accept-language') || ''
-  for (const locale of LOCALES) {
-    if (accept.startsWith(locale)) return locale
-  }
   return DEFAULT
 }
 
