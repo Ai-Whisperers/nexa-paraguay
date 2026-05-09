@@ -24,8 +24,8 @@
       "content": "contactPage.contact"
     },
     {
-      "id": "contact-form",
-      "content": "contactPage.contact"
+      "id": "booking-form",
+      "content": "contactPage.booking"
     },
     {
       "id": "footer",

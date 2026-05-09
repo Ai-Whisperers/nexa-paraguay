@@ -1,9 +1,9 @@
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
 import { loadJSON } from './loader'
+import { LOCALES } from './locales'
 
 const REPO = process.cwd()
-const LOCALES = ['es', 'en', 'nl', 'de']
 
 export function loadPageData(locale: string, slug: string) {
   try {

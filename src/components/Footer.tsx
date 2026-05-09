@@ -23,7 +23,7 @@ export function Footer({ footer }: { footer?: any }) {
           ))}
         </div>
         <div className="border-t border-white/10 pt-6 text-center text-xs text-white/60">
-          {footer.copyright?.replace('{year}', '2026')}
+           {footer.copyright?.replace('{year}', String(new Date().getFullYear()))}
           <span className="mx-2">·</span>
           <a href="?gateway=true" className="text-white/70 underline text-xs">Reiniciar</a>
         </div>

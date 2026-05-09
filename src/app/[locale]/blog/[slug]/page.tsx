@@ -5,10 +5,9 @@ import { loadBlogPost } from '../../../../lib/page-data'
 import { Header } from '../../../../components/Header'
 import { Footer } from '../../../../components/Footer'
 import type { Metadata } from 'next'
+import { LOCALES } from '@/lib/locales'
 
 interface Props { params: Promise<{ locale: string; slug: string }> }
-
-const LOCALES = ['es', 'en', 'nl', 'de']
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = []

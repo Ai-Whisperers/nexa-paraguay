@@ -1,12 +1,11 @@
 import { readdirSync } from 'fs'
 import { join } from 'path'
-import { loadPageData } from '../../../lib/page-data'
-import SectionsRenderer from '../../../components/SectionsRenderer'
+import { loadPageData } from '@/lib/page-data'
+import SectionsRenderer from '@/components/SectionsRenderer'
 import type { Metadata } from 'next'
+import { LOCALES } from '@/lib/locales'
 
 interface Props { params: Promise<{ locale: string; slug: string }> }
-
-const LOCALES = ['es', 'en', 'nl', 'de']
 
 export function generateStaticParams() {
   const pages = readdirSync(join(process.cwd(), 'nexa-pages'))

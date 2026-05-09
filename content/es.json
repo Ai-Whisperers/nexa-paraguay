@@ -868,7 +868,122 @@
         "height": "700px"
       },
       "fallbackText": "Actualmente, la reserva por calendario está en configuración. Mientras tanto, contáctanos directamente por WhatsApp o email.",
-      "_note": "El enlace de Calendly devuelve 404 — el cliente debe configurar la cuenta. Eliminar esta nota cuando funcione."
+      "_note": "El enlace de Calendly devuelve 404 — el cliente debe configurar la cuenta. Eliminar esta nota cuando funcione.",
+      "programs": [
+        {
+          "id": "base",
+          "title": {
+            "es": "Residencia Permanente",
+            "en": "Permanent Residency",
+            "nl": "Permanent Verblijf",
+            "de": "Permanenter Aufenthalt"
+          },
+          "subtitle": {
+            "es": "Base",
+            "en": "Base",
+            "nl": "Basis",
+            "de": "Basis"
+          },
+          "duration": {
+            "es": "10-12 semanas",
+            "en": "10-12 weeks",
+            "nl": "10-12 weken",
+            "de": "10-12 Wochen"
+          },
+          "popular": false
+        },
+        {
+          "id": "business",
+          "title": {
+            "es": "Residencia + Empresa + Banco",
+            "en": "Residency + Company + Bank",
+            "nl": "Verblijf + Bedrijf + Bank",
+            "de": "Aufenthalt + Unternehmen + Bank"
+          },
+          "subtitle": {
+            "es": "Business",
+            "en": "Business",
+            "nl": "Zakelijk",
+            "de": "Business"
+          },
+          "duration": {
+            "es": "12-16 semanas",
+            "en": "12-16 weeks",
+            "nl": "12-16 weken",
+            "de": "12-16 Wochen"
+          },
+          "popular": true
+        },
+        {
+          "id": "investor",
+          "title": {
+            "es": "Residencia para Inversores",
+            "en": "Residency for Investors",
+            "nl": "Verblijf voor Investeerders",
+            "de": "Aufenthalt für Investoren"
+          },
+          "subtitle": {
+            "es": "Inversor",
+            "en": "Investor",
+            "nl": "Investeerder",
+            "de": "Investor"
+          },
+          "duration": {
+            "es": "12-16 semanas",
+            "en": "12-16 weeks",
+            "nl": "12-16 weken",
+            "de": "12-16 Wochen"
+          },
+          "popular": false
+        },
+        {
+          "id": "land",
+          "title": {
+            "es": "Compra de Tierras",
+            "en": "Land Purchase",
+            "nl": "Grondaankoop",
+            "de": "Grundstückskauf"
+          },
+          "subtitle": {
+            "es": "Terrenos",
+            "en": "Land",
+            "nl": "Grond",
+            "de": "Grundstück"
+          },
+          "duration": {
+            "es": "4-6 semanas",
+            "en": "4-6 weeks",
+            "nl": "4-6 weken",
+            "de": "4-6 Wochen"
+          },
+          "popular": false
+        }
+      ],
+      "stepLabels": [
+        "Programa",
+        "Datos",
+        "Confirmar"
+      ],
+      "step1Title": "Elige tu programa",
+      "step1Subtitle": "Seleccioná el programa que te interesa. Después podés ajustar.",
+      "step2Title": "Tus datos",
+      "step2Subtitle": "Te contactaremos por WhatsApp o email.",
+      "step3Title": "Confirma tu solicitud",
+      "step3Subtitle": "Revisá los datos antes de enviar.",
+      "nameLabel": "Nombre completo",
+      "emailLabel": "Email",
+      "phoneLabel": "WhatsApp",
+      "messageLabel": "Mensaje (opcional)",
+      "messagePlaceholder": "¿Tienes alguna pregunta específica sobre el programa?",
+      "nameField": "Nombre",
+      "messageField": "Mensaje",
+      "programLabel": "Programa",
+      "backLabel": "Atrás",
+      "nextLabel": "Revisar",
+      "submitLabel": "Enviar solicitud",
+      "confirmTitle": "¡Recibido!",
+      "confirmText": "Te contactaremos en las próximas 24 horas para coordinar los siguientes pasos.",
+      "backCta": "Ver programas"
     },
     "contact": {
       "title": "Datos de contacto",

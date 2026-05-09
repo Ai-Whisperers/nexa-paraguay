@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next'
 import { readFileSync } from 'fs'
 import { join } from 'path'
+import { LOCALES } from '../lib/locales'
 
 const BASE = 'https://nexa.paragu-ai.com'
-const LOCALES = ['es', 'en', 'nl', 'de']
 
 function getPages(): string[] {
   try {

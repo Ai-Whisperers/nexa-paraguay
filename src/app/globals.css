@@ -14,6 +14,14 @@
   --color-warning: #f59e0b;
   --color-error: #ef4444;
   --color-info: #3b82f6;
+  --color-brand-gradient: linear-gradient(135deg, #1B2A4A 0%, #2C3E6B 100%);
+  --color-gold-glass: rgba(201,169,110,0.12);
+  --color-gold-glow: rgba(201,169,110,0.15);
+  --color-gold-bg: rgba(201,169,110,0.06);
+  --color-whatsapp: #25D366;
+  --color-overlay-light: rgba(0,0,0,0.3);
+  --color-nav-glass: rgba(255,255,255,0.92);
+  --color-cream-bg: #F5F5F0;
 }
 
 body {
@@ -22,4 +30,8 @@ body {
   background: var(--color-background);
   margin: 0;
   line-height: 1.6;
+}
+
+.bg-brand-gradient {
+  background: var(--color-brand-gradient);
 }

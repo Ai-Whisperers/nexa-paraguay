@@ -1,26 +1,36 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import { SectionComponentProps } from '../types'
 
-export function FeedbackSection({ data }: any) {
+export function FeedbackSection({ data, locale }: SectionComponentProps) {
   const d = data || {}
-  const [comments, setComments] = useState<any[]>([])
+  const lang = locale || 'es'
+
+  const tr = (key: string): string => {
+    const texts: any = {
+      es: { eyebrow: 'TU OPINIÓN', title: 'Compartí tu experiencia', namePlaceholder: 'Tu nombre (opcional)', messagePlaceholder: 'Escribí tu comentario o pregunta...', button: 'Enviar', thanks: '¡Gracias por tu mensaje!', recent: 'Comentarios recientes' },
+      en: { eyebrow: 'YOUR FEEDBACK', title: 'Share your experience', namePlaceholder: 'Your name (optional)', messagePlaceholder: 'Write your comment or question...', button: 'Submit', thanks: 'Thanks for your message!', recent: 'Recent comments' },
+      nl: { eyebrow: 'UW FEEDBACK', title: 'Deel uw ervaring', namePlaceholder: 'Uw naam (optioneel)', messagePlaceholder: 'Schrijf uw opmerking of vraag...', button: 'Verzenden', thanks: 'Bedankt voor uw bericht!', recent: 'Recente reacties' },
+      de: { eyebrow: 'IHR FEEDBACK', title: 'Teilen Sie Ihre Erfahrung', namePlaceholder: 'Ihr Name (optional)', messagePlaceholder: 'Schreiben Sie Ihren Kommentar oder Ihre Frage...', button: 'Senden', thanks: 'Danke für Ihre Nachricht!', recent: 'Aktuelle Kommentare' },
+    }
+    return (d[key] || (texts as any)[lang]?.[key] || (texts as any).es[key] || '') as string
+  }
+
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
   const [sent, setSent] = useState(false)
 
-  useEffect(() => {
-    const stored = localStorage.getItem('nexa-feedback')
-    if (stored) try { setComments(JSON.parse(stored)) } catch {}
-  }, [])
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!message.trim()) return
-    const entry = { name: name.trim() || 'Anónimo', message: message.trim(), date: new Date().toISOString() }
-    const updated = [entry, ...comments]
-    setComments(updated)
-    localStorage.setItem('nexa-feedback', JSON.stringify(updated))
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'feedback', locale: lang, name: name.trim() || 'Anónimo', message: message.trim(), timestamp: new Date().toISOString() }),
+      })
+    } catch {}
     setName('')
     setMessage('')
     setSent(true)
@@ -28,52 +38,35 @@ export function FeedbackSection({ data }: any) {
   }
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
-      <div className="container mx-auto px-4 max-w-3xl">
+    <section className="py-16 md:py-24 bg-surface-alt">
+      <div className="max-w-3xl mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="text-sm font-semibold tracking-widest text-amber-600 uppercase">{d.eyebrow || 'TU OPINIÓN'}</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">{d.title || 'Compartí tu experiencia'}</h2>
-          <p className="text-gray-600 mt-3 max-w-xl mx-auto">{d.subtitle || ''}</p>
+          <p className="text-sm font-semibold tracking-widest text-accent uppercase">{tr('eyebrow')}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mt-2">{d.title || tr('title')}</h2>
+          {d.subtitle && <p className="text-text-muted mt-3 max-w-xl mx-auto">{d.subtitle}</p>}
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-10">
+        <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-border p-6 mb-10">
           <input
             type="text"
-            placeholder="Tu nombre (opcional)"
+            placeholder={tr('namePlaceholder')}
             value={name}
             onChange={e => setName(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-200 rounded-xl mb-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500"
+            className="w-full px-4 py-3 border border-border rounded-xl mb-3 text-primary outline-none focus:ring-2 focus:ring-accent/50"
           />
           <textarea
-            placeholder={d.placeholder || 'Escribí tu comentario o pregunta...'}
+            placeholder={tr('messagePlaceholder')}
             value={message}
             onChange={e => setMessage(e.target.value)}
             rows={4}
-            className="w-full px-4 py-3 border border-gray-200 rounded-xl mb-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500 resize-none"
+            className="w-full px-4 py-3 border border-border rounded-xl mb-3 text-primary outline-none focus:ring-2 focus:ring-accent/50 resize-none"
           />
-          <button
-            type="submit"
-            className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-xl transition-colors"
-          >
-            {d.buttonText || 'Enviar'}
+          <button type="submit"
+            className="bg-accent hover:opacity-90 text-primary font-semibold px-8 py-3 rounded-xl transition-all cursor-pointer border-none">
+            {d.buttonText || tr('button')}
           </button>
-          {sent && <p className="text-green-600 text-sm mt-2">¡Gracias por tu mensaje!</p>}
+          {sent && <p className="text-success text-sm mt-2">{tr('thanks')}</p>}
         </form>
-
-        {comments.length > 0 && (
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-900">Comentarios recientes</h3>
-            {comments.map((c: any, i: number) => (
-              <div key={i} className="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="font-medium text-gray-900">{c.name}</span>
-                  <span className="text-xs text-gray-400">{new Date(c.date).toLocaleDateString()}</span>
-                </div>
-                <p className="text-gray-700">{c.message}</p>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
     </section>
   )

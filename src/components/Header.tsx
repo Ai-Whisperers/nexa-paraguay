@@ -16,6 +16,8 @@ const LOCALE_FLAGS: Record<string, { label: string; flag: string }> = {
   de: { label: 'DE', flag: '/images/flags/de.svg' },
 }
 
+const LOCALES = ['es', 'en', 'nl', 'de']
+
 export function Header({ navigation, locale }: { navigation: any; locale?: string }) {
   const [open, setOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
@@ -26,13 +28,11 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
   function switchLocale(newLocale: string) {
     // Get current path without locale prefix
     const parts = pathname.split('/').filter(Boolean)
-    const LOCALES = ['es', 'en', 'nl', 'de']
     let cleanPath = '/'
     if (parts.length > 0 && LOCALES.includes(parts[0])) {
       cleanPath = '/' + parts.slice(1).join('/') || '/'
     }
     const newPath = '/' + newLocale + cleanPath
-    // Redirect through Next.js router (also sets cookie via getServerSideProps)
     window.location.href = newPath
   }
 
