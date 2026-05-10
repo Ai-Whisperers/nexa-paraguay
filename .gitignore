@@ -1,10 +1,6 @@
 node_modules
 .next
-*.local
-.env
-.env.local
-.env.*.local
-
-# Customer data (local only — never committed)
-customers/
+.git
+.DS_Store
 packages/
+ai-packages/
