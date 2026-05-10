@@ -22,14 +22,17 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params
-  const data = loadPageData(locale, slug)
+  const data = await loadPageData(locale, slug)
   if (!data) return {}
-  return { title: data.pageConfig?.title || 'Nexa Paraguay', alternates: { languages: { es: `/es/${slug}`, en: `/en/${slug}`, nl: `/nl/${slug}`, de: `/de/${slug}` } } }
+  return { 
+    title: data.pageConfig?.title || data.content?.siteName || 'Nexa Paraguay', 
+    alternates: { languages: { es: `/es/${slug}`, en: `/en/${slug}`, nl: `/nl/${slug}`, de: `/de/${slug}` } } 
+  }
 }
 
 export default async function Page({ params }: Props) {
   const { locale, slug } = await params
-  const data = loadPageData(locale, slug)
+  const data = await loadPageData(locale, slug)
   if (!data) return <div className="text-center p-16 text-text-muted">Not found</div>
-  return <SectionsRenderer content={data.content} pageConfig={data.pageConfig} images={data.images.images} locale={data.locale} />
+  return <SectionsRenderer content={data.content} pageConfig={data.pageConfig} images={data.images?.images || {}} locale={data.locale} />
 }

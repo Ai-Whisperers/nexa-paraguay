@@ -20,6 +20,7 @@
     "@ai-whisperers/i18n": "file:../ai-whisperers-base/packages/i18n",
     "@ai-whisperers/sections": "file:../ai-whisperers-base/packages/sections",
     "next": "^16.2.4",
+    "pg": "^8.20.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "web-vitals": "^5.2.0"
