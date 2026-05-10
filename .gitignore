@@ -7,3 +7,4 @@ node_modules
 
 # Customer data (local only — never committed)
 customers/
+packages/
