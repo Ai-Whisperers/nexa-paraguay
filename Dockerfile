@@ -16,6 +16,13 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NEXT_PUBLIC_SUPABASE_URL=https://qyvokpribmbrosafntqa.supabase.co
 ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_KQ-sFNr7r6AauoG0B4nyTg_vuPHmeCm
+ENV PGHOST=postgres
+ENV PGPORT=5432
+ENV PGUSER=postgres
+ENV PGPASSWORD=
+ENV PGDATABASE=nexa
+ENV USE_DB=true
+ENV REVALIDATION_SECRET=nexa-isr-secret-dev
 RUN npm run build
 
 FROM node:20-alpine AS runner
@@ -26,6 +33,13 @@ ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 ENV NEXT_PUBLIC_SUPABASE_URL=https://qyvokpribmbrosafntqa.supabase.co
 ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_KQ-sFNr7r6AauoG0B4nyTg_vuPHmeCm
+ENV PGHOST=postgres
+ENV PGPORT=5432
+ENV PGUSER=postgres
+ENV PGPASSWORD=
+ENV PGDATABASE=nexa
+ENV USE_DB=true
+ENV REVALIDATION_SECRET=nexa-isr-secret-dev
 RUN addgroup --system --gid 1001 nodejs && \
     adduser --system --uid 1001 nextjs
 USER nextjs

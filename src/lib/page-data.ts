@@ -79,6 +79,47 @@ export async function loadPageData(locale: string, slug: string): Promise<any> {
   const cached = getCached(cacheKey)
   if (cached) return cached
 
+  // Try Postgres via pg Pool (local Docker network) first
+  if (process.env.USE_DB === 'true' || process.env.PGHOST) {
+    try {
+      const { loadTenantData } = require('./tenant-loader')
+      const dbData = await loadTenantData(TENANT_SLUG, locale)
+      if (dbData && dbData.content) {
+        const pageId = slug === 'home' ? 'home' : slug
+        const pageConfig = dbData.pageConfig?.[pageId] || null
+        const images = dbData.images || {}
+        const result = { content: dbData.content, pageConfig, images, pageId, locale }
+        setCache(cacheKey, result)
+        return result
+      }
+    } catch (err) {
+      console.warn('[page-data] DB loader failed, fallback to Supabase/client:', (err as Error).message)
+    }
+  }
+
+  // Try Supabase via JS client (cloud Supabase) as secondary
+  if (process.env.NEXT_PUBLIC_SUPABASE_URL) {
+    try {
+      const config = await loadTenantConfig()
+      if (config) {
+        const content = config.content?.[locale] || config.content?.['es']
+        if (content) {
+          const pageId = slug === 'home' ? 'home' : slug
+          const pageConfig = config.pages?.[pageId] || null
+          const images = config.images || {}
+          const testimonials = config.testimonials?.testimonials || []
+          if (testimonials.length) content.testimonials = testimonials
+          const result = { content, pageConfig, images, pageId, locale }
+          setCache(cacheKey, result)
+          return result
+        }
+      }
+    } catch {
+      console.warn('[page-data] Supabase fallback failed')
+    }
+  }
+
+  // File fallback (dev, CI, no DB available)
   const config = await loadTenantConfig()
   if (!config) return null
 

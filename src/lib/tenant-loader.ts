@@ -13,13 +13,14 @@ let pool: any;
 function getPool() {
   if (!pool) {
     const config = {
-      host: process.env.PGHOST || 'localhost',
+      host: process.env.PGHOST || 'postgres',
       port: parseInt(process.env.PGPORT || '5432'),
       user: process.env.PGUSER || 'postgres',
       password: process.env.PGPASSWORD || '',
       database: process.env.PGDATABASE || 'nexa',
-      max: parseInt(process.env.PGPOOL_MAX || '5'),
+      max: 5,
       idleTimeoutMillis: 30000,
+      connectionTimeoutMillis: 3000,
     };
     pool = new Pool(config);
   }

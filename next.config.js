@@ -17,7 +17,7 @@ const nextConfig = {
   poweredByHeader: false,
   experimental: {
     webpackBuildWorker: false,
-    serverExternalPackages: ['@supabase/supabase-js'],
+    serverExternalPackages: ['@supabase/supabase-js', 'pg'],
   },
   async headers() {
     return [
