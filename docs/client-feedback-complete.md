@@ -1,6 +1,6 @@
 # Nexa Paraguay — Documentación Completa de Cliente
 
-> Última actualización: 9 de mayo de 2026
+| Última actualización: 9 de mayo de 2026 (22:30 — sesión Erebus: todos los bugs de UI verificados y desplegados)
 > Fuente: conversaciones con Sonia (fundadora) vía Iván, más feedback transmitido por Luana
 
 ---
