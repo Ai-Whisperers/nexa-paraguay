@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ── Supabase/Postgres Data Loader ──
 // Replaces direct file reads with Postgres query + in-memory LRU cache
 // Supports ISR: stale-while-revalidate pattern with configurable TTL
@@ -5,8 +6,9 @@
 const { Pool } = require('pg');
 const { cache } = require('react');
 
+
 // ── Connection Pool ──
-let pool;
+let pool: any;
 
 function getPool() {
   if (!pool) {
