@@ -46,3 +46,16 @@ h2 {
 h3 {
   font-size: clamp(1.1rem, 2vw, 1.5rem) !important;
 }
+
+/* ── Grid fixes (Tailwind v4 arbitrary grid values don't work) ── */
+@media (min-width: 640px) {
+  .grid-cols-features {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .grid-cols-services {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .grid-cols-pills {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
