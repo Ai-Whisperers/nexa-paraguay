@@ -404,6 +404,15 @@
     }
   },
   "aboutPage": {
+    "cta": {
+      "title": "¿Querés conocer al equipo?",
+      "subtitle": "Agendá una llamada gratuita de 30 minutos. Sin presión, solo una charla.",
+      "buttonText": "Agendar conocernos",
+      "buttonHref": "/contacto",
+      "eyebrow": "",
+      "tagline": "",
+      "whatsapp": ""
+    },
     "seo": {
       "title": "Sobre Nexa Paraguay",
       "description": "Nexa Paraguay: fundada por alguien que vivió el proceso de mudanza en persona. Residencia, banca, bienes raíces e instalación.",

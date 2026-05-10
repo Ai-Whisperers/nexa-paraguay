@@ -308,6 +308,15 @@
     ]
   },
   "aboutPage": {
+    "cta": {
+      "title": "Möchtest du das Team kennenlernen?",
+      "subtitle": "Vereinbare ein kostenloses 30-minütiges Gespräch. Kein Druck, nur ein Kennenlernen.",
+      "buttonText": "Kennenlernen buchen",
+      "buttonHref": "/contacto",
+      "eyebrow": "",
+      "tagline": "",
+      "whatsapp": ""
+    },
     "seo": {
       "title": "Über Nexa Paraguay",
       "description": "Nexa Paraguay: gegründet von jemandem, der den Umzugsprozess selbst erlebt hat. Aufenthalt, Bank, Immobilien und Eingliederung.",

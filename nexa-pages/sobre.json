@@ -40,9 +40,9 @@
             "variant": "credentials",
             "content": "aboutPage.trust"
         },
-        {
-            "id": "cta-banner",
-            "variant": "solid",
+    {
+            "id": "cta",
+            "variant": "default",
             "content": "aboutPage.cta"
         },
         {
