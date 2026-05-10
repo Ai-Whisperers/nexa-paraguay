@@ -9,7 +9,7 @@ function getPages(): string[] {
   try {
     const dir = join(process.cwd(), 'nexa-pages')
     return require('fs').readdirSync(dir).filter((f: string) => f.endsWith('.json')).map((f: string) => f.replace('.json', ''))
-  } catch { return ['programas', 'nosotros', 'contacto', 'faq', 'glosario'] }
+  } catch { return ['nosotros', 'contacto', 'faq', 'glosario'] }
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {

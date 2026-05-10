@@ -24,10 +24,10 @@ test.describe('Nexa Paraguay Critical Flows', () => {
 
   test('navigation links work across locales', async ({ page }) => {
     for (const locale of ['es', 'en', 'nl', 'de']) {
-      await page.goto(`${BASE}/${locale}/programas`);
+      await page.goto(`${BASE}/${locale}/faq`);
       await page.waitForLoadState('networkidle');
       const currentUrl = page.url();
-      expect(currentUrl).toContain(`/${locale}/programas`);
+      expect(currentUrl).toContain(`/${locale}/faq`);
       // Page should have content
       const bodyText = await page.locator('body').innerText();
       expect(bodyText.length).toBeGreaterThan(50);

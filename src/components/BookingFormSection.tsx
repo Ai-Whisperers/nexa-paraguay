@@ -60,7 +60,7 @@ export function BookingFormSection({ data, locale }: any) {
           <div className="w-16 h-16 bg-success rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">✓</div>
           <h2 className="text-2xl font-bold text-primary mb-2">{t('confirmTitle', '¡Recibido!')}</h2>
           <p className="text-text-muted mb-6">{t('confirmText', 'Te contactaremos en las próximas 24 horas para coordinar los siguientes pasos.')}</p>
-          <a href={`/${lang}/programas`} className="inline-block px-8 py-3 bg-accent text-primary rounded-full font-bold text-sm no-underline">{t('backCta', 'Ver programas')}</a>
+          <a href={`/${lang}/`} className="inline-block px-8 py-3 bg-accent text-primary rounded-full font-bold text-sm no-underline">{t('backCta', 'Ver programas')}</a>
         </div>
       </section>
     )

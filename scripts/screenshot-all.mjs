@@ -14,7 +14,6 @@ const PAGES = [
   { name: 'servicios', url: '/servicios' },
   { name: 'contacto', url: '/contacto' },
   { name: 'faq', url: '/faq' },
-  { name: 'programas', url: '/programas' },
   { name: 'proceso', url: '/proceso' },
   { name: 'sobre', url: '/sobre' },
   { name: 'por-que-paraguay', url: '/por-que-paraguay' },

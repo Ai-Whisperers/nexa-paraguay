@@ -10,7 +10,6 @@ export interface SiteContent {
   aboutPage?: PageSectionContent
   servicesPage?: PageSectionContent
   processPage?: PageSectionContent
-  programasPage?: PageSectionContent
   contactPage?: PageSectionContent
   whyCountryPage?: PageSectionContent
   qualityOfLifePage?: PageSectionContent

@@ -1,87 +1,66 @@
 #!/usr/bin/env node
-// Pre-build script: copies all @ai-whisperers/* file: linked packages to node_modules
-// Turbopack doesn't resolve file: symlinks properly, so we copy the dist instead.
+// Copy @ai-whisperers packages into node_modules after npm install creates broken symlinks
 const fs = require('fs')
 const path = require('path')
 
-const pkgJson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
-const deps = { ...pkgJson.dependencies, ...pkgJson.devDependencies }
+const aiDir = path.resolve('node_modules/@ai-whisperers')
 
-const aiDeps = Object.entries(deps).filter(
-  ([name, link]) => name.startsWith('@ai-whisperers/') && typeof link === 'string' && link.startsWith('file:')
-)
-
-if (aiDeps.length === 0) {
-  console.log('copy-ai-packages: no @ai-whisperers file: dependencies found')
+if (!fs.existsSync(aiDir)) {
+  console.log('copy-ai-packages: @ai-whisperers node_modules directory not found')
   process.exit(0)
 }
 
-const BASE_DIR = path.resolve('node_modules/@ai-whisperers')
-if (!fs.existsSync(BASE_DIR)) {
-  console.log('copy-ai-packages: node_modules/@ai-whisperers does not exist. Run npm install first.')
-  process.exit(0)
-}
+const packages = fs.readdirSync(aiDir)
+let copied = 0
 
-function copyRecursive(src, dest) {
-  if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true })
-  const entries = fs.readdirSync(src, { withFileTypes: true })
-  for (const entry of entries) {
-    const s = path.join(src, entry.name)
-    const d = path.join(dest, entry.name)
-    if (entry.isDirectory()) {
-      copyRecursive(s, d)
+for (const pkg of packages) {
+  const pkgPath = path.join(aiDir, pkg)
+  const pkgJson = path.join(pkgPath, 'package.json')
+
+  if (!fs.existsSync(pkgJson)) continue
+
+  let stat
+  try {
+    stat = fs.lstatSync(pkgPath)
+  } catch {
+    continue
+  }
+
+  let sourcePath = pkgPath
+  if (stat.isSymbolicLink()) {
+    const realPath = fs.readlinkSync(pkgPath)
+    const absPath = path.resolve(path.dirname(pkgPath), realPath)
+    sourcePath = absPath
+  }
+
+  if (!fs.existsSync(sourcePath)) {
+    console.log(`copy-ai-packages: ${pkg} target ${sourcePath} does not exist, skipping`)
+    continue
+  }
+
+  // Check if package already has dist
+  const distSrc = path.join(sourcePath, 'dist')
+  const distDst = path.join(pkgPath, 'dist')
+
+  if (fs.existsSync(distSrc) && !fs.existsSync(distDst)) {
+    // Symlink case: need to copy package contents over
+    fs.rmSync(pkgPath, { recursive: true, force: true })
+    fs.cpSync(sourcePath, pkgPath, { recursive: true })
+    copied++
+    console.log(`copy-ai-packages: copied ${pkg} (${sourcePath} → ${pkgPath})`)
+  } else if (!fs.existsSync(distSrc)) {
+    // Check for src directory (unbuilt package)
+    const srcSrc = path.join(sourcePath, 'src')
+    if (fs.existsSync(srcSrc)) {
+      console.log(`copy-ai-packages: ${pkg} has src but no dist at ${sourcePath}`)
     } else {
-      fs.copyFileSync(s, d)
+      console.log(`copy-ai-packages: ${pkg} has no dist or src at ${sourcePath}`)
     }
   }
 }
 
-let count = 0
-for (const [name, link] of aiDeps) {
-  const pkgName = name.replace('@ai-whisperers/', '')
-  const targetPath = path.join(BASE_DIR, pkgName)
-
-  if (!fs.existsSync(targetPath)) {
-    console.log(`copy-ai-packages: ${name} does not exist in node_modules, skipping`)
-    continue
-  }
-
-  let stat
-  try {
-    stat = fs.lstatSync(targetPath)
-  } catch {
-    console.log(`copy-ai-packages: ${name} cannot stat, skipping`)
-    continue
-  }
-
-  if (!stat.isSymbolicLink()) {
-    console.log(`copy-ai-packages: ${name} already a real directory, skipping`)
-    continue
-  }
-
-  let realPath
-  try {
-    realPath = fs.readlinkSync(targetPath)
-  } catch {
-    console.log(`copy-ai-packages: ${name} cannot read link, skipping`)
-    continue
-  }
-
-  const absRealPath = path.resolve(path.dirname(targetPath), realPath)
-
-  if (!fs.existsSync(absRealPath)) {
-    // file: dependency points outside the Docker build context
-    // Try to use npm link or copy from node_modules if pre-installed
-    console.log(`copy-ai-packages: ${name} linked path ${absRealPath} not found (outside build context?)`)
-    // Write a placeholder so later npm steps don't fail
-    fs.writeFileSync(path.join(targetPath, '../.ai-packages-stub'), `${name}\n`)
-    continue
-  }
-
-  fs.rmSync(targetPath, { recursive: true, force: true })
-  copyRecursive(absRealPath, targetPath)
-  count++
-  console.log(`copy-ai-packages: copied ${name} (${absRealPath} → ${targetPath})`)
+if (copied === 0) {
+  console.log('copy-ai-packages: no packages needed copying (already resolved)')
+} else {
+  console.log(`copy-ai-packages: done (${copied} packages copied)`)
 }
-
-console.log(`copy-ai-packages: done (${count} package${count !== 1 ? 's' : ''} copied)`)
