@@ -216,25 +216,24 @@ Todos los documentos extranjeros deben:
 | Requisitos de residencia en EN y NL | Previo |
 | 9 servicios en 3 categorías | Previo |
 
-### 🔴 No implementado / Pendiente
+### 🟡 No implementado / Pendiente
 | Item | Prioridad | Notas |
 |------|-----------|-------|
-| **Historia completa de Sonia** (7 años, música, mamá, reinventarse) | Alta | Acabo de recibirla — hay que actualizar sobre-nexa |
-| **10 personas ayudadas, todas holandesas** en el About | Alta | Prueba social real |
-| **Proceso real post-aplicación** (Airbnb, chip, colegios, seguro, etc.) | Alta | Muestra el acompañamiento real |
-| **Requisitos de residencia en ES y DE** | Alta | Sonia pidió explícitamente "en cada idioma" |
-| **{{taxRate}} renderizándose literal** en EN/NL/DE | Alta | Bug visible en producción |
-| **Footer links desactualizados** (Programas, Benelux desk) | Alta | Sonia pidió sacarlos |
-| **Hero image auténtica paraguaya** | Media | Placeholder AI genérico |
-| **"Acompañamiento casi familiar"** como frase clave | Alta | Mejor diferencial |
-| **"Logro: propiedades a buen precio"** como caso visible | Media | Historia real concreta |
-| **Fotos reales de Sonia** para about/página | Media | Placeholder actual |
-| **Contaduría/abogados como red de confianza** (no in-house) | Media | Muestra honestidad |
-| **Estructura jurídica para outsourcing** como servicio | Media | Nicho rentable |
-| **Primer blog post de Sonia** en primera persona | Alta | Contenido más auténtico posible |
-| **WhatsApp bot QR escaneado** | Alta | Sin leads activos |
-| **Dominio nexaparaguay.com apuntando al sitio real** | Alta | Apunta a Shopify |
-| **site.json defaultLocale=EN inconsistente con middleware NL** | Baja | Conflicto menor |
+| **Historia completa de Sonia** (7 años, música, mamá, reinventarse) | ✅ Hecho | Actualizado en los 4 idiomas |
+| **10 personas ayudadas, todas holandesas** en el About | ✅ Hecho | Agregado como "results" section |
+| **Proceso real post-aplicación** (Airbnb, chip, colegios, seguro, etc.) | 🟡 Medio | No está explicitado como timeline, solo en About |
+| **Requisitos de residencia en ES y DE** | ✅ Hecho | Sonia pidió en 4 idiomas — ya están los 4 |
+| **{{taxRate}} renderizándose literal** en EN/NL/DE | ✅ Hecho | Reemplazado por "10%" |
+| **Footer links desactualizados** (Programas, Benelux desk) | ✅ Hecho | Eliminados de los 4 idiomas |
+| **Hero image auténtica paraguaya** | 🔴 Pendiente | Placeholder AI genérico — necesita foto de Sonia |
+| **"Acompañamiento casi familiar"** como frase clave | ✅ Hecho | En About de los 4 idiomas |
+| **"Logro: propiedades a buen precio"** como caso visible | ✅ Hecho | En About de los 4 idiomas |
+| **Fotos reales de Sonia** para about/página | 🔴 Pendiente | Placeholder actual |
+| **Contaduría/abogados como red de confianza** (no in-house) | 🟡 Pendiente | En documentación pero no en sitio |
+| **Estructura jurídica para outsourcing** como servicio | 🟡 Pendiente | Nicho rentable |
+| **Primer blog post de Sonia** en primera persona | 🔴 Pendiente | Contenido más auténtico posible |
+| **WhatsApp bot QR escaneado** | 🔴 Pendiente | Sin leads activos |
+| **Dominio nexaparaguay.com apuntando al sitio real** | 🔴 Pendiente | Apunta a Shopify |
 
 ---
 
