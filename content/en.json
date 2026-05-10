@@ -122,13 +122,19 @@
       "landingTrust": "",
       "navigation": "",
       "paragraphs": [
-        "I lived in the Netherlands, went through the emigration process myself, and I know what it feels like to arrive in a new country without knowing the language and having no one to turn to.",
-        "That experience showed me what was missing: a service that doesn't just process documents, but truly supports you — from the first consultation until you're settled with your home, your bank account, and your papers in order.",
-        "Today I help Europeans move to Paraguay with the same close guidance I wish I'd had. I speak Dutch, English, and Spanish, I know both cultures, and I understand exactly what you're going through."
+        "Sonia lived in the Netherlands for 7 years. She arrived without speaking Dutch, without contacts, without a support network. At first she worked in the music world, but soon stepped back to dedicate herself to what she calls \"the most beautiful role\": being a mother.",
+        "She always knew she would return to Paraguay. Her plan was to stay long enough to learn the culture and language deeply, and pass it on to her children. Then go back to be with her mother, who was getting older.",
+        "The hardest part of returning was reinventing herself culturally. The paperwork was complicated, but being Paraguayan and having family here made everything simpler. That experience — the bureaucracy, the uprooting, the reunion — is exactly what drives her today to guide others on the same path."
+      ],
+      "resultsEyebrow": "",
+      "resultsTitle": "Real results, real people",
+      "resultsParagraphs": [
+        "So far I've helped 10 people — all Dutch — find their way to Paraguay. None have been complex cases, and that's not by accident: the preparation before they arrive makes the difference.",
+        "What they value most is the close, almost family-like support. My proudest achievement is getting them good properties at fair prices, making sure no one takes advantage of them.",
+        "The residency process takes 3 to 4 months in normal cases. During that time the guidance is intense at first, and becomes more spaced out as they settle in — getting their phone, rental, legal structure, bank account, driver's license. I'm there through it all."
       ],
       "placeholders": "",
       "prensa": "",
-      "privacyPage": "",
       "processPage": "",
       "programasPage": "",
       "qualityOfLifePage": "",
@@ -2141,10 +2147,6 @@
         "title": "Services",
         "links": [
           {
-            "label": "Programs",
-            "href": "/programas"
-          },
-          {
             "label": "Process",
             "href": "/proceso"
           },
@@ -2201,10 +2203,6 @@
           {
             "label": "Contact",
             "href": "/contacto"
-          },
-          {
-            "label": "Benelux desk",
-            "href": "/benelux"
           }
         ]
       }
@@ -2888,9 +2886,9 @@
         {
           "icon": "TrendingUp",
           "title": "Economic environment",
-          "description": "Sustained growth, controlled inflation, {{taxRate}} income tax, territorial system.",
+          "description": "Sustained growth, controlled inflation, 10% income tax, territorial system.",
           "bullets": [
-            "Corporate tax {{taxRate}}",
+            "Corporate tax 10%",
             "Territorial system",
             "Open economy"
           ],

@@ -180,13 +180,19 @@
       "landingTrust": "",
       "navigation": "",
       "paragraphs": [
-        "Ik woonde in Nederland, doorliep zelf het emigratieproces, en ik weet hoe het voelt om in een nieuw land aan te komen zonder de taal te kennen en zonder iemand om op terug te vallen.",
-        "Die ervaring leerde me wat er ontbrak: een dienst die niet alleen documenten verwerkt, maar je écht ondersteunt — van het eerste gesprek totdat je geïnstalleerd bent met je huis, je bankrekening en je papieren op orde.",
-        "Vandaag help ik Europeanen verhuizen naar Paraguay met dezelfde persoonlijke begeleiding die ik zelf had willen hebben. Ik spreek Nederlands, Engels en Spaans, ken beide culturen en begrijp precies wat je doormaakt."
+        "Sonia woonde 7 jaar in Nederland. Ze kwam zonder Nederlands te spreken, zonder contacten, zonder vangnet. Eerst werkte ze in de muziekwereld, maar al snel trok ze zich terug om zich te wijden aan wat ze \"de mooiste taak\" noemt: moeder zijn.",
+        "Ze wist altijd dat ze naar Paraguay zou terugkeren. Haar plan was om lang genoeg te blijven om de cultuur en taal grondig te leren en door te geven aan haar kinderen. Dan teruggaan om bij haar moeder te zijn, die al ouder was.",
+        "Het moeilijkste van terugkeren was de culturele heruitvinding. De papierwinkel was ingewikkeld, maar als Paraguayaanse met familie hier was alles eenvoudiger. Die ervaring — de bureaucratie, de ontworteling, de hereniging — is precies wat haar vandaag drijft om anderen op hetzelfde pad te begeleiden."
+      ],
+      "resultsEyebrow": "",
+      "resultsTitle": "Echte resultaten, echte mensen",
+      "resultsParagraphs": [
+        "Tot nu toe heb ik 10 mensen geholpen — allemaal Nederlanders — om hun weg naar Paraguay te vinden. Geen complexe zaken, en dat is geen toeval: de voorbereiding voordat ze aankomen maakt het verschil.",
+        "Wat ze het meest waarderen is de nabije, bijna familiale begeleiding. Mijn grootste trots is dat ik hen goede eigendommen heb bezorgd tegen eerlijke prijzen, zodat niemand misbruik van hen maakt.",
+        "Het verblijfsproces duurt 3 tot 4 maanden in normale gevallen. Gedurende die tijd is de begeleiding intens in het begin en wordt ze schaarser naarmate ze zich settelen — telefoon, huur, juridische structuur, bankrekening, rijbewijs. Ik ben er doorheen."
       ],
       "placeholders": "",
       "prensa": "",
-      "privacyPage": "",
       "processPage": "",
       "programasPage": "",
       "qualityOfLifePage": "",
@@ -1754,10 +1760,6 @@
         "title": "Diensten",
         "links": [
           {
-            "label": "Programma's",
-            "href": "/s/nl/nexa-paraguay/programas"
-          },
-          {
             "label": "Proces",
             "href": "/s/nl/nexa-paraguay/proceso"
           },
@@ -1814,10 +1816,6 @@
           {
             "label": "Contact",
             "href": "/s/nl/nexa-paraguay/contacto"
-          },
-          {
-            "label": "Benelux desk",
-            "href": "/s/nl/nexa-paraguay/benelux"
           }
         ]
       }
@@ -2501,9 +2499,9 @@
         {
           "icon": "TrendingUp",
           "title": "Economisch klimaat",
-          "description": "Gestage groei, beheerste inflatie, {{taxRate}} inkomstenbelasting, territoriaal systeem.",
+          "description": "Gestage groei, beheerste inflatie, 10% inkomstenbelasting, territoriaal systeem.",
           "bullets": [
-            "Vennootschapsbelasting {{taxRate}}",
+            "Vennootschapsbelasting 10%",
             "Territoriaal systeem",
             "Open economie"
           ],
@@ -5088,7 +5086,7 @@
           "title": "Economisch klimaat",
           "description": "BBP-groei 4,2% in 2023. 10% IRE-vennootschapsbelasting. 2,1% inflatie. Territoriaal systeem — buitenlands inkomen niet lokaal belast.",
           "bullets": [
-            "Vennootschapsbelasting {{taxRate}}",
+            "Vennootschapsbelasting 10%",
             "Territoriaal systeem",
             "Open economie"
           ],

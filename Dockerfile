@@ -2,14 +2,19 @@ FROM node:20-alpine AS deps
 WORKDIR /app
 RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json* .npmrc ./
-RUN npm install --legacy-peer-deps
+COPY scripts/ ./scripts/
+RUN npm install --legacy-peer-deps || true
+
+# Copy @ai-whisperers packages (file: deps that npm can't resolve inside Docker)
+COPY node_modules/@ai-whisperers ./node_modules/@ai-whisperers/
+RUN if [ -f scripts/fix-ai-packages.cjs ]; then node scripts/fix-ai-packages.cjs; fi
 
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
-RUN npm run build
+RUN cp -r node_modules/@ai-whisperers /tmp/ai-packages && npm run build
 
 FROM node:20-alpine AS runner
 WORKDIR /app

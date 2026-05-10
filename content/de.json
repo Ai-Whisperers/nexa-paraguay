@@ -246,10 +246,6 @@
         "title": "Dienstleistungen",
         "links": [
           {
-            "label": "Programme",
-            "href": "/programas"
-          },
-          {
             "label": "Prozess",
             "href": "/proceso"
           },
@@ -306,13 +302,145 @@
           {
             "label": "Kontakt",
             "href": "/contacto"
-          },
-          {
-            "label": "Benelux Desk",
-            "href": "/benelux"
           }
         ]
       }
     ]
+  },
+  "aboutPage": {
+    "seo": {
+      "title": "Über Nexa Paraguay",
+      "description": "Nexa Paraguay: gegründet von jemandem, der den Umzugsprozess selbst erlebt hat. Aufenthalt, Bank, Immobilien und Eingliederung.",
+      "targetKeyword": "über Nexa Paraguay"
+    },
+    "hero": {
+      "headline": "Erfahrung in Wissen verwandelt",
+      "subheadline": "Nexa Paraguay wurde mit einer einzigen Mission gegründet: den Umzugsprozess von einem bürokratischen Hindernis in eine herzliche Erfahrung zu verwandeln."
+    },
+    "story": {
+      "title": "Lernen Sie Sonia kennen",
+      "eyebrow": "Persönlicher Werdegang",
+      "paragraphs": [
+        "Sonia lebte 7 Jahre in den Niederlanden. Sie kam ohne Niederländischkenntnisse, ohne Kontakte, ohne Unterstützungsnetzwerk. Zunächst arbeitete sie in der Musikbranche, zog sich aber bald zurück, um sich dem zu widmen, was sie als die schönste Aufgabe beschreibt: Mutter zu sein.",
+        "Sie war sich immer sicher, dass sie nach Paraguay zurückkehren würde. Ihr Plan war, lange genug zu bleiben, um die Kultur und die Sprache gründlich zu lernen und sie an ihre Kinder weiterzugeben. Dann zurückzukehren, um bei ihrer Mutter zu sein, die schon älter war.",
+        "Das Schwierigste bei der Rückkehr war die kulturelle Neuerfindung. Die Behördengänge waren etwas kompliziert, aber als Paraguayerin mit Familie hier war alles einfacher. Diese Erfahrung — die Bürokratie, die Entwurzelung, das Wiedersehen — ist genau das, was sie heute dazu bewegt, andere auf dem gleichen Weg zu begleiten."
+      ],
+      "resultsEyebrow": "",
+      "resultsTitle": "Echte Ergebnisse, echte Menschen",
+      "resultsParagraphs": [
+        "Bisher habe ich 10 Menschen geholfen — alles Niederländer — ihren Weg nach Paraguay zu finden. Keine komplizierten Fälle, und das ist kein Zufall: die Vorbereitung vor ihrer Ankunft macht den Unterschied.",
+        "Was sie am meisten schätzen, ist die nahezu familiäre Begleitung. Mein größter Stolz ist es, ihnen gute Immobilien zu fairen Preisen besorgt zu haben, damit niemand sie ausnutzt.",
+        "Der Aufenthaltsprozess dauert in normalen Fällen 3 bis 4 Monate. Während dieser Zeit ist die Betreuung anfangs intensiv und wird mit der Zeit seltener, je mehr sie sich einleben — Telefon, Miete, Rechtsstruktur, Bankkonto, Führerschein. Ich bin durchgehend da."
+      ]
+    },
+    "whyNexa": {
+      "eyebrow": "Warum Nexa Paraguay",
+      "title": "Was uns auszeichnet",
+      "pillars": [
+        {
+          "icon": "Users",
+          "title": "Multidisziplinäres Team",
+          "description": "Anwälte, Buchhalter, Notare und Finanzberater arbeiten koordiniert zusammen.",
+          "badge": "Unser Unterschied"
+        },
+        {
+          "icon": "Shield",
+          "title": "Beziehungskapital",
+          "description": "Institutioneller Zugang, der über Jahre mit Banken, Notaren und Behörden aufgebaut wurde.",
+          "badge": "Unser Unterschied"
+        },
+        {
+          "icon": "Clock",
+          "title": "Zeit als Wert",
+          "description": "Wir komprimieren an einem Tag, was sonst mehrere Reisen erfordert.",
+          "badge": "Unser Unterschied"
+        },
+        {
+          "icon": "Package",
+          "title": "Ein einziges Programm",
+          "description": "Aufenthalt, Gesellschaft und Bankkonto integriert.",
+          "badge": "Warum man uns wählt"
+        },
+        {
+          "icon": "Plane",
+          "title": "Eine einzige Reise",
+          "description": "Persönliche Abwicklung an einem koordinierten Tag.",
+          "badge": "Warum man uns wählt"
+        },
+        {
+          "icon": "Users",
+          "title": "Ein einziges Team",
+          "description": "Anwälte, Buchhalter, Notare, Finanzberater.",
+          "badge": "Warum man uns wählt"
+        },
+        {
+          "icon": "Shield",
+          "title": "Transparenter Preis",
+          "description": "Alles inklusive. Keine versteckten Kosten.",
+          "badge": "Warum man uns wählt"
+        }
+      ]
+    },
+    "requirements": {
+      "eyebrow": "Voraussetzungen",
+      "title": "Erforderliche Dokumente für Ihren Aufenthalt in Paraguay",
+      "subtitle": "Der Prozess ist einfacher als es scheint. Wir begleiten Sie Schritt für Schritt.",
+      "basicDocuments": {
+        "title": "Grundlegende Dokumente",
+        "items": [
+          "Gültiger Reisepass",
+          "Personalausweis des Herkunftslandes (falls zutreffend)",
+          "Geburtsurkunde",
+          "Strafregisterbescheinigung des Herkunftslandes",
+          "Polizeiliches Führungszeugnis — Interpol Paraguay",
+          "Lebens- und Aufenthaltsbescheinigung in Paraguay",
+          "Ausländisches Strafregisterzeugnis ausgestellt in Paraguay",
+          "Ärztliches Attest ausgestellt in Paraguay",
+          "Nachweis der legalen Einreise in das Land",
+          "Passfotos",
+          "Einwanderungsformular",
+          "Zahlung der Einwanderungsgebühren"
+        ]
+      },
+      "importantNotes": {
+        "title": "Wichtige Anforderungen",
+        "items": [
+          "Alle ausländischen Dokumente müssen apostilliert oder legalisiert sein",
+          "Sie müssen von einem vereidigten Übersetzer ins Spanische übersetzt werden, wenn sie in einer anderen Sprache vorliegen"
+        ]
+      },
+      "processedLocally": {
+        "title": "Was wir bereits in Paraguay erledigen",
+        "items": [
+          "Interpol-Bescheinigung",
+          "Hintergrundprüfung in Paraguay",
+          "Ärztliches Attest",
+          "Lebens- und Aufenthaltsbescheinigung",
+          "Fotos",
+          "Offizielle Übersetzungen"
+        ]
+      },
+      "residenceTypes": {
+        "title": "Häufigste Aufenthaltsarten",
+        "types": [
+          {
+            "name": "Temporärer Aufenthalt",
+            "description": "In der Regel gültig für 2 Jahre. Danach können Sie einen Antrag auf dauerhaften Aufenthalt stellen."
+          },
+          {
+            "name": "Dauerhafter Aufenthalt",
+            "description": "Je nach Fall: familiäre Bindung, Investition, Mercosur, nach temporärem Aufenthalt oder für Rentner und Pensionäre."
+          }
+        ]
+      },
+      "mercosur": {
+        "title": "Für Mercosur-Bürger",
+        "description": "Die Anforderungen sind in der Regel einfacher und schneller."
+      },
+      "costs": {
+        "title": "Ungefähre Kosten",
+        "description": "Variieren je nach Nationalität, Übersetzungen, Verwaltungskosten, Apostillen und Aufenthaltsart. Wir erstellen Ihnen ein unverbindliches persönliches Angebot."
+      }
+    }
   }
 }

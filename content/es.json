@@ -537,6 +537,13 @@
         "Sonia vivió 7 años en Holanda. Llegó sin hablar neerlandés, sin contactos, sin red de apoyo. Al principio trabajó en el mundo musical, pero pronto se retiró para dedicarse a lo que describe como \"la labor más bella\": ser mamá.",
         "Siempre tuvo claro que regresaría a Paraguay. Su plan era quedarse el tiempo suficiente para aprender la cultura y el idioma a fondo, y transmitírselo a sus hijos. Luego volver para estar con su mamá, que ya era mayor.",
         "Lo más difícil al regresar fue reinventarse culturalmente. Los trámites fueron algo complicados, pero siendo paraguaya y teniendo familia aquí, todo fue más simple. Esa experiencia — la burocracia, el desarraigo, el reencuentro — es exactamente lo que hoy la lleva a acompañar a otros en el mismo camino."
+      ],
+      "resultsEyebrow": "",
+      "resultsTitle": "Resultados reales, personas reales",
+      "resultsParagraphs": [
+        "Hasta ahora he ayudado a 10 personas — todas holandesas — a encontrar su camino a Paraguay. No hubo casos complejos, y eso no es casualidad: la preparación antes de que lleguen hace la diferencia.",
+        "Lo que más valoran es el acompañamiento casi familiar. Mi mayor orgullo es haberles conseguido propiedades a buen precio, evitando que alguien se aproveche de ellos.",
+        "El proceso de residencia toma de 3 a 4 meses en casos normales. Durante ese tiempo el acompañamiento es intenso al principio, y se vuelve más esporádico a medida que se van instalando — teléfono, alquiler, estructura jurídica, cuenta bancaria, registro de conducir. Estoy ahí en todo."
       ]
     },
     "whyNexa": {
@@ -1357,10 +1364,6 @@
         "title": "Servicios",
         "links": [
           {
-            "label": "Programas",
-            "href": "/programas"
-          },
-          {
             "label": "Proceso",
             "href": "/proceso"
           },
@@ -1417,10 +1420,6 @@
           {
             "label": "Contacto",
             "href": "/contacto"
-          },
-          {
-            "label": "Escritorio Benelux",
-            "href": "/benelux"
           }
         ]
       }
