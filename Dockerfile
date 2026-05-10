@@ -23,6 +23,7 @@ ENV PGPASSWORD=
 ENV PGDATABASE=nexa
 ENV USE_DB=true
 ENV REVALIDATION_SECRET=nexa-isr-secret-dev
+ENV SUPABASE_SERVICE_ROLE_KEY=sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH
 RUN npm run build
 
 FROM node:20-alpine AS runner
@@ -40,6 +41,7 @@ ENV PGPASSWORD=
 ENV PGDATABASE=nexa
 ENV USE_DB=true
 ENV REVALIDATION_SECRET=nexa-isr-secret-dev
+ENV SUPABASE_SERVICE_ROLE_KEY=sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH
 RUN addgroup --system --gid 1001 nodejs && \
     adduser --system --uid 1001 nextjs
 USER nextjs
