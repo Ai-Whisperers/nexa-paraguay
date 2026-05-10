@@ -3,7 +3,7 @@
   "country": "Paraguay",
   "domain": "nexaparaguay.com",
   "stagingDomain": "staging.nexaparaguay.com",
-  "defaultLocale": "en",
+  "defaultLocale": "nl",
   "locales": [
     "nl",
     "en",
