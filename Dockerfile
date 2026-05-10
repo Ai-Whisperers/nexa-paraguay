@@ -1,27 +1,21 @@
+# ── Nexa Paraguay Dockerfile (Phase 1: Migration) ──
+# Uses pre-installed @ai-whisperers tarballs (resolved in node_modules/)
+
 FROM node:20-alpine AS deps
 WORKDIR /app
 RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json* .npmrc ./
 COPY scripts/ ./scripts/
-
+COPY .packages/ ./.packages/
 RUN npm install --legacy-peer-deps 2>&1 || true
-
-# Remove npm-installed @ai-whisperers (they're broken symlinks in Docker)
-RUN rm -rf node_modules/@ai-whisperers
 
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
-COPY ai-packages /tmp/ai-packages/
-RUN mkdir -p node_modules/@ai-whisperers && \
-    for pkg in client-kit content i18n sections; do \
-      if [ -d "/tmp/ai-packages/$pkg" ]; then \
-        cp -r "/tmp/ai-packages/$pkg" "node_modules/@ai-whisperers/$pkg"; \
-        echo "copied @ai-whisperers/$pkg"; \
-      fi \
-    done
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV NEXT_PUBLIC_SUPABASE_URL=https://qyvokpribmbrosafntqa.supabase.co
+ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_KQ-sFNr7r6AauoG0B4nyTg_vuPHmeCm
 RUN npm run build
 
 FROM node:20-alpine AS runner
@@ -30,6 +24,8 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+ENV NEXT_PUBLIC_SUPABASE_URL=https://qyvokpribmbrosafntqa.supabase.co
+ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_KQ-sFNr7r6AauoG0B4nyTg_vuPHmeCm
 RUN addgroup --system --gid 1001 nodejs && \
     adduser --system --uid 1001 nextjs
 USER nextjs

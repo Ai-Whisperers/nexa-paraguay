@@ -26,36 +26,33 @@ for (const pkg of packages) {
     continue
   }
 
-  let sourcePath = pkgPath
+  // If it's a symlink, resolve it
   if (stat.isSymbolicLink()) {
     const realPath = fs.readlinkSync(pkgPath)
     const absPath = path.resolve(path.dirname(pkgPath), realPath)
-    sourcePath = absPath
-  }
-
-  if (!fs.existsSync(sourcePath)) {
-    console.log(`copy-ai-packages: ${pkg} target ${sourcePath} does not exist, skipping`)
+    
+    if (!fs.existsSync(absPath)) {
+      console.log(`copy-ai-packages: ${pkg} symlink target ${absPath} not found — replacing with existing dist dir`)
+      // The dist/ directory already exists in the pkgPath (pre-copied from host)
+      // npm just replaced the dir with a broken symlink
+      // Remove the broken symlink, keep the dist content that was there
+      fs.rmSync(pkgPath, { recursive: true, force: true })
+      console.log(`copy-ai-packages: removed broken symlink for ${pkg}`)
+      continue
+    }
+    
+    // Target exists — copy package contents over the symlink
+    fs.rmSync(pkgPath, { recursive: true, force: true })
+    fs.cpSync(absPath, pkgPath, { recursive: true })
+    copied++
+    console.log(`copy-ai-packages: resolved ${pkg} (${absPath} → ${pkgPath})`)
     continue
   }
 
-  // Check if package already has dist
-  const distSrc = path.join(sourcePath, 'dist')
+  // Real directory — nothing to do
   const distDst = path.join(pkgPath, 'dist')
-
-  if (fs.existsSync(distSrc) && !fs.existsSync(distDst)) {
-    // Symlink case: need to copy package contents over
-    fs.rmSync(pkgPath, { recursive: true, force: true })
-    fs.cpSync(sourcePath, pkgPath, { recursive: true })
-    copied++
-    console.log(`copy-ai-packages: copied ${pkg} (${sourcePath} → ${pkgPath})`)
-  } else if (!fs.existsSync(distSrc)) {
-    // Check for src directory (unbuilt package)
-    const srcSrc = path.join(sourcePath, 'src')
-    if (fs.existsSync(srcSrc)) {
-      console.log(`copy-ai-packages: ${pkg} has src but no dist at ${sourcePath}`)
-    } else {
-      console.log(`copy-ai-packages: ${pkg} has no dist or src at ${sourcePath}`)
-    }
+  if (fs.existsSync(distDst)) {
+    console.log(`copy-ai-packages: ${pkg} already resolved`)
   }
 }
 

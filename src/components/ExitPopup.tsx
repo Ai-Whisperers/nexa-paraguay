@@ -12,9 +12,10 @@ export function ExitPopup({ data }: any) {
   useEffect(() => {
     if (dismissed) return
     const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 5 && !visible) setVisible(true)
+      if (e.clientY <= 5 && !visible && !dismissed) setVisible(true)
     }
-    const timer = setTimeout(() => { if (!visible && !dismissed) setVisible(true) }, 30000)
+    // Show after 45s on idle, or on exit intent
+    const timer = setTimeout(() => { if (!visible && !dismissed) setVisible(true) }, 45000)
     document.addEventListener('mouseleave', handleMouseLeave)
     return () => { document.removeEventListener('mouseleave', handleMouseLeave); clearTimeout(timer) }
   }, [visible, dismissed])

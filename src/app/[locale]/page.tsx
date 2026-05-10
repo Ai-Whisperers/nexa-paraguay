@@ -1,5 +1,5 @@
-import { loadPageData } from '../../lib/page-data'
-import SectionsRenderer from '../../components/SectionsRenderer'
+import { loadPageData } from '@/lib/page-data'
+import SectionsRenderer from '@/components/SectionsRenderer'
 import type { Metadata } from 'next'
 import { LOCALES } from '@/lib/locales'
 

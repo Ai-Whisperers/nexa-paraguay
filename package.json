@@ -15,10 +15,11 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@ai-whisperers/client-kit": "^0.1.0",
-    "@ai-whisperers/content": "file:../ai-whisperers-base/packages/content",
-    "@ai-whisperers/i18n": "file:../ai-whisperers-base/packages/i18n",
-    "@ai-whisperers/sections": "file:../ai-whisperers-base/packages/sections",
+    "@ai-whisperers/client-kit": "file:.packages/ai-whisperers-client-kit-0.1.0.tgz",
+    "@ai-whisperers/content": "file:.packages/ai-whisperers-content-0.1.0.tgz",
+    "@ai-whisperers/i18n": "file:.packages/ai-whisperers-i18n-0.2.0.tgz",
+    "@ai-whisperers/sections": "file:.packages/ai-whisperers-sections-0.1.0.tgz",
+    "@supabase/supabase-js": "^2.105.4",
     "next": "^16.2.4",
     "pg": "^8.20.0",
     "react": "^19.2.0",

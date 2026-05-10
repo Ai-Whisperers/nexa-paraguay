@@ -1,95 +1,140 @@
-import { readFileSync, existsSync } from 'fs'
+import { readFileSync, existsSync, readdirSync } from 'fs'
 import { join } from 'path'
-import { loadJSON } from './loader'
-import { LOCALES } from './locales'
-import { getTenantData } from './tenant-loader'
+import { supabaseAdmin, TENANT_SLUG } from '@/lib/supabase'
 
 const REPO = process.cwd()
 
-// ── Multi-tenant loader with Postgres + file fallback ──
-// In production: reads from local Postgres with in-memory cache
-// Fallback: reads from local JSON files (backward compat, dev, CI)
+// ── In-memory LRU cache ──
+interface CacheEntry { data: any; timestamp: number }
+const cache = new Map<string, CacheEntry>()
+const TTL = 30_000 // 30s
 
-let _useDatabase: boolean | null = null
+function getCached(key: string): any | null {
+  const entry = cache.get(key)
+  if (entry && (Date.now() - entry.timestamp) < TTL) return entry.data
+  return null
+}
 
-function shouldUseDatabase(): boolean {
-  if (_useDatabase !== null) return _useDatabase
+function setCache(key: string, data: any) {
+  cache.set(key, { data, timestamp: Date.now() })
+  if (cache.size > 20) {
+    const entries = [...cache.entries()].sort((a, b) => a[1].timestamp - b[1].timestamp)
+    for (const [key] of entries.slice(0, cache.size - 20)) cache.delete(key)
+  }
+}
+
+// ── Tenant config (loaded once) ──
+let _tenantConfig: any = null
+
+async function loadTenantConfig(): Promise<any> {
+  if (_tenantConfig) return _tenantConfig
+
+  // Try Supabase first
   try {
-    // Check if the "nexa" database is accessible
-    const { execSync } = require('child_process')
-    const result = execSync(
-      `docker exec $(docker ps --filter name=postgres --format '{{.ID}}' | head -1) ` +
-      `psql -U postgres -d nexa -t -c "SELECT 1" 2>/dev/null || echo "no"`,
-      { timeout: 2000, encoding: 'utf-8' }
-    )
-    _useDatabase = result.trim() === '1'
+    const { data, error } = await supabaseAdmin
+      .from('tenant_config')
+      .select('*')
+      .eq('tenant_slug', TENANT_SLUG)
+      .single()
+
+    if (data && !error) {
+      _tenantConfig = data
+      return data
+    }
   } catch {
-    _useDatabase = false
-  }
-  return _useDatabase
-}
-
-export async function loadPageData(locale: string, slug: string) {
-  // Try database first (production path)
-  if (shouldUseDatabase()) {
-    try {
-      const data = await getTenantData('nexa-paraguay', locale)
-      if (data && data.content) {
-        let pageConfig: any = null
-        const pageId = slug === 'home' ? 'home' : slug
-        if (data.pageConfig && data.pageConfig[pageId]) {
-          pageConfig = data.pageConfig[pageId]
-        }
-        // Inject testimonials
-        if (data.content.testimonials) {
-          // Already included in the content from DB
-        }
-        return {
-          content: data.content,
-          pageConfig: pageConfig || data.pageConfig?.[slug] || null,
-          images: data.images,
-          pageId,
-          locale
-        }
-      }
-    } catch (err) {
-      console.warn('[page-data] DB load failed, falling back to file:', err)
-    }
+    // Supabase unavailable — file fallback
   }
 
-  // File fallback (dev, CI, DB unavailable)
+  // File fallback
   try {
-    const content = JSON.parse(readFileSync(join(REPO, 'content', `${locale}.json`), 'utf-8'))
-    let pageConfig: any = null
-    const pageId = slug === 'home' ? 'home' : slug
-    let pageConfigPath = slug
-    if (slug === 'home') pageConfigPath = 'home'
-    try { pageConfig = JSON.parse(readFileSync(join(REPO, 'nexa-pages', `${pageConfigPath}.json`), 'utf-8')) } catch {}
+    const site = JSON.parse(readFileSync(join(REPO, 'site.json'), 'utf-8'))
+    const content: Record<string, any> = {}
+    for (const locale of site.locales || ['es', 'en', 'nl', 'de']) {
+      try { content[locale] = JSON.parse(readFileSync(join(REPO, 'content', `${locale}.json`), 'utf-8')) } catch {}
+    }
     const images = JSON.parse(readFileSync(join(REPO, 'images.json'), 'utf-8'))
-    try {
-      const testimonials = JSON.parse(readFileSync(join(REPO, 'testimonials.json'), 'utf-8'))
-      content.testimonials = testimonials.testimonials
-    } catch {}
-    return { content, pageConfig, images, pageId, locale }
+    const testimonials = JSON.parse(readFileSync(join(REPO, 'testimonials.json'), 'utf-8'))
+    const pages: Record<string, any> = {}
+    const pagesDir = join(REPO, 'nexa-pages')
+    if (existsSync(pagesDir)) {
+      for (const f of readdirSync(pagesDir)) {
+        if (f.endsWith('.json')) pages[f.replace('.json', '')] = JSON.parse(readFileSync(join(pagesDir, f), 'utf-8'))
+      }
+    }
+    const blogPosts: Record<string, any> = {}
+    const blogDir = join(REPO, 'content', 'blog')
+    if (existsSync(blogDir)) {
+      for (const f of readdirSync(blogDir)) {
+        if (f.startsWith('posts') && f.endsWith('.json')) blogPosts[f] = JSON.parse(readFileSync(join(blogDir, f), 'utf-8'))
+      }
+    }
+    _tenantConfig = { tenant_slug: TENANT_SLUG, site, content, images, testimonials, pages, blog_posts: blogPosts }
+    return _tenantConfig
   } catch { return null }
 }
 
-export function loadBlogPost(locale: string, slug: string) {
+// ── loadPageData: async version supporting Supabase + file fallback ──
+export async function loadPageData(locale: string, slug: string): Promise<any> {
+  const cacheKey = `page:${locale}:${slug}`
+  const cached = getCached(cacheKey)
+  if (cached) return cached
+
+  const config = await loadTenantConfig()
+  if (!config) return null
+
+  const content = config.content?.[locale] || config.content?.['es']
+  if (!content) return null
+
+  const pageId = slug === 'home' ? 'home' : slug
+  const pageConfig = config.pages?.[pageId] || null
+  const images = config.images || {}
+  const testimonials = config.testimonials?.testimonials || []
+
+  if (testimonials.length) content.testimonials = testimonials
+
+  const result = { content, pageConfig, images, pageId, locale }
+  setCache(cacheKey, result)
+  return result
+}
+
+// ── loadBlogPost: async version ──
+export async function loadBlogPost(locale: string, slug: string): Promise<any> {
+  const cacheKey = `blog:${locale}:${slug}`
+  const cached = getCached(cacheKey)
+  if (cached) return cached
+
+  const config = await loadTenantConfig()
+  if (!config) return null
+
+  const content = config.content?.[locale] || config.content?.['es']
+  if (!content) return null
+
+  const posts = config.blog_posts?.[`posts-${locale}.json`] || config.blog_posts?.['posts.json'] || null
+  if (!posts) return null
+
+  const list = posts.posts || posts
+  const post = Array.isArray(list) ? list.find((p: any) => p.slug === slug) : null
+  if (!post) return null
+
+  const result = { content, locale, post }
+  setCache(cacheKey, result)
+  return result
+}
+
+// ── Sync helpers for generateStaticParams (always file-based at build time) ──
+export function getPageSlugs(): string[] {
+  const pagesDir = join(REPO, 'nexa-pages')
+  if (!existsSync(pagesDir)) return []
+  return readdirSync(pagesDir).filter((f: string) => f.endsWith('.json')).map((f: string) => f.replace('.json', ''))
+}
+
+export function getBlogSlugs(locale: string): string[] {
+  const localePath = join(REPO, 'content', 'blog', `posts-${locale}.json`)
+  const fallbackPath = join(REPO, 'content', 'blog', 'posts.json')
+  const path = existsSync(localePath) ? localePath : (existsSync(fallbackPath) ? fallbackPath : null)
+  if (!path) return []
   try {
-    const content = JSON.parse(readFileSync(join(REPO, 'content', `${locale}.json`), 'utf-8'))
-    const localePath = join(REPO, 'content', 'blog', `posts-${locale}.json`)
-    const fallbackPath = join(REPO, 'content', 'blog', 'posts.json')
-    const postsPath = existsSync(localePath) ? localePath : (existsSync(fallbackPath) ? fallbackPath : null)
-    if (!postsPath) return null
-    const posts = JSON.parse(readFileSync(postsPath, 'utf-8'))
-    const list = posts.posts || posts
-    const post = list.find((p: any) => p.slug === slug)
-    if (!post) {
-      try {
-        const mdx = readFileSync(join(REPO, 'content', 'blog', locale, `${slug}.mdx`), 'utf-8')
-        return { content, locale, post: { slug, body: mdx, title: slug.replace(/-/g,' '), excerpt: '' } }
-      } catch { return null }
-    }
-    return { content, locale, post }
-  } catch { return null }
+    const posts = JSON.parse(readFileSync(path, 'utf-8'))
+    return (posts.posts || posts).filter((p: any) => p.slug).map((p: any) => p.slug)
+  } catch { return [] }
 }

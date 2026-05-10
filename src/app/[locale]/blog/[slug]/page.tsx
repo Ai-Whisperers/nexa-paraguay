@@ -1,9 +1,7 @@
 import { Suspense } from 'react'
-import { readFileSync, existsSync } from 'fs'
-import { join } from 'path'
-import { loadBlogPost } from '../../../../lib/page-data'
-import { Header } from '../../../../components/Header'
-import { Footer } from '../../../../components/Footer'
+import { loadBlogPost, getBlogSlugs } from '@/lib/page-data'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 import type { Metadata } from 'next'
 import { LOCALES } from '@/lib/locales'
 
@@ -12,17 +10,8 @@ interface Props { params: Promise<{ locale: string; slug: string }> }
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = []
   for (const locale of LOCALES) {
-    const localePath = join(process.cwd(), 'content', 'blog', `posts-${locale}.json`)
-    const fallbackPath = join(process.cwd(), 'content', 'blog', 'posts.json')
-    const path = existsSync(localePath) ? localePath : (existsSync(fallbackPath) ? fallbackPath : null)
-    if (path) {
-      try {
-        const posts = JSON.parse(readFileSync(path, 'utf-8'))
-        const list = posts.posts || posts
-        const slugs = list.filter((p: any) => p.slug).map((p: any) => p.slug)
-        for (const slug of slugs) params.push({ locale, slug })
-      } catch {}
-    }
+    const slugs = getBlogSlugs(locale)
+    for (const slug of slugs) params.push({ locale, slug })
   }
   return params
 }
@@ -48,7 +37,7 @@ function BlogSkeleton() {
 }
 
 async function BlogContent({ locale, slug }: { locale: string; slug: string }) {
-  const data = loadBlogPost(locale, slug)
+  const data = await loadBlogPost(locale, slug)
   if (!data?.post) return <div className="text-center p-16 text-text-muted">Post not found</div>
   const { content, post } = data
   return (

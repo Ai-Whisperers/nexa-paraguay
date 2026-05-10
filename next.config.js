@@ -7,7 +7,7 @@ const securityHeaders = [
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
   {
     key: 'Content-Security-Policy',
-    value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://*.google-analytics.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://static.cloudflareinsights.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';",
+    value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://*.google-analytics.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com https://qyvokpribmbrosafntqa.supabase.co; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://static.cloudflareinsights.com https://qyvokpribmbrosafntqa.supabase.co; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';",
   },
 ]
 
@@ -15,9 +15,9 @@ const securityHeaders = [
 const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
-  transpilePackages: ['@ai-whisperers/sections', '@ai-whisperers/i18n', '@ai-whisperers/content'],
   experimental: {
     webpackBuildWorker: false,
+    serverExternalPackages: ['@supabase/supabase-js'],
   },
   async headers() {
     return [
