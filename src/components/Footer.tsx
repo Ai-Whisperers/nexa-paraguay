@@ -11,7 +11,7 @@ export function Footer({ footer }: { footer?: any }) {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 mb-8">
           {columns.map((col: any, i: number) => (
             <div key={i}>
-              <h4 className="text-accent font-bold text-sm mb-3 uppercase tracking-wider">{col.title}</h4>
+              <h4 className="text-white font-bold text-sm mb-3 uppercase tracking-wider">{col.title}</h4>
               <ul className="list-none p-0 m-0">
                 {col.links?.map((link: any, j: number) => (
                   <li key={j} className="mb-2">

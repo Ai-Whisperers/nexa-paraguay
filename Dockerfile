@@ -4,25 +4,23 @@ RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json* .npmrc ./
 COPY scripts/ ./scripts/
 
-# Copy @ai-whisperers packages to a temp location (they become symlinks after npm install)
-COPY packages/@ai-whisperers /tmp/ai-packages/
-
 RUN npm install --legacy-peer-deps 2>&1 || true
 
-# After npm install, remove symlinks and copy real packages
-RUN mkdir -p node_modules/@ai-whisperers && \
-    rm -rf node_modules/@ai-whisperers/* && \
-    for pkg in client-kit content i18n sections; do \
-      if [ -d "/tmp/ai-packages/$pkg" ]; then \
-        cp -r "/tmp/ai-packages/$pkg" "node_modules/@ai-whisperers/$pkg"; \
-        echo "resolved @ai-whisperers/$pkg"; \
-      fi \
-    done
+# Remove npm-installed @ai-whisperers (they're broken symlinks in Docker)
+RUN rm -rf node_modules/@ai-whisperers
 
 FROM node:20-alpine AS builder
 WORKDIR /app
-COPY . .
 COPY --from=deps /app/node_modules ./node_modules
+COPY ai-packages /tmp/ai-packages/
+RUN mkdir -p node_modules/@ai-whisperers && \
+    for pkg in client-kit content i18n sections; do \
+      if [ -d "/tmp/ai-packages/$pkg" ]; then \
+        cp -r "/tmp/ai-packages/$pkg" "node_modules/@ai-whisperers/$pkg"; \
+        echo "copied @ai-whisperers/$pkg"; \
+      fi \
+    done
+COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
 

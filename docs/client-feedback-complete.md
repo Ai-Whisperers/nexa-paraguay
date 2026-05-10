@@ -1,6 +1,6 @@
 # Nexa Paraguay — Documentación Completa de Cliente
 
-| Última actualización: 9 de mayo de 2026 (22:30 — sesión Erebus: todos los bugs de UI verificados y desplegados)
+| Última actualización: 9 de mayo de 2026 (23:00 — deploy final: aliases de registry, WhatsApp float, content pollution limpiada, header/footer bypass en renderer)
 > Fuente: conversaciones con Sonia (fundadora) vía Iván, más feedback transmitido por Luana
 
 ---
