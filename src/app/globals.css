@@ -59,3 +59,14 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
 }
+
+/* ── Process step images ── */
+img.process-step-img {
+  max-width: 150px !important;
+  width: 150px !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1) !important;
+  display: block !important;
+  margin-bottom: 12px !important;
+}
