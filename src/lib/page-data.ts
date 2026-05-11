@@ -1,7 +1,12 @@
+// ── Universal Content Loader ──
+// Supabase first, file fallback. Same API as before.
 import { readFileSync, existsSync, readdirSync } from 'fs'
 import { join } from 'path'
 
 const REPO = process.cwd()
+const TENANT = 'nexa-paraguay'
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://qyvokpribmbrosafntqa.supabase.co'
+const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_KQ-sFNr7r6AauoG0B4nyTg_vuPHmeCm'
 
 interface CacheEntry { data: any; timestamp: number }
 const cache = new Map<string, CacheEntry>()
@@ -22,28 +27,73 @@ function setCache(key: string, data: any) {
 }
 
 function loadJson<T>(...pathSegments: string[]): T | null {
+  try { return JSON.parse(readFileSync(join(REPO, ...pathSegments), 'utf-8')) }
+  catch { return null }
+}
+
+// ── Load from Supabase REST API ──
+async function loadFromSupabase(locale: string): Promise<Record<string, any> | null> {
   try {
-    return JSON.parse(readFileSync(join(REPO, ...pathSegments), 'utf-8'))
+    const url = `${SUPABASE_URL}/rest/v1/site_content?select=key_path,content&tenant_slug=eq.${TENANT}&locale=eq.${locale}`
+    const res = await fetch(url, {
+      headers: {
+        apikey: SUPABASE_KEY,
+        Authorization: `Bearer ${SUPABASE_KEY}`,
+      },
+      next: { revalidate: 30 },
+    })
+    if (!res.ok) return null
+
+    const data = await res.json()
+    if (!data || data.length === 0) return null
+
+    // Reconstruct nested object from flat key_paths
+    const result: Record<string, any> = {}
+    for (const row of data) {
+      const keys = row.key_path.split('.')
+      let current = result
+      for (let i = 0; i < keys.length; i++) {
+        if (i === keys.length - 1) {
+          current[keys[i]] = row.content
+        } else {
+          current[keys[i]] = current[keys[i]] || {}
+          current = current[keys[i]]
+        }
+      }
+    }
+    return result
   } catch {
     return null
   }
 }
+
+// ── Public API ──
 
 export async function loadPageData(locale: string, slug: string): Promise<any> {
   const cacheKey = `page:${locale}:${slug}`
   const cached = getCached(cacheKey)
   if (cached) return cached
 
-  const content = loadJson<Record<string, any>>('content', `${locale}.json`)
-  if (!content) return null
+  // Try Supabase first
+  const content = await loadFromSupabase(locale)
+  if (!content) {
+    // File fallback
+    const content = loadJson<Record<string, any>>('content', `${locale}.json`)
+    if (!content) return null
+    const pageConfig = loadJson<any>('nexa-pages', `${slug}.json`)
+    const images = loadJson<any>('images.json')
+    const testimonials = loadJson<any>('testimonials.json')
+    if (testimonials?.testimonials?.length) content.testimonials = testimonials.testimonials
+    const result = { content, pageConfig, images, pageId: slug, locale }
+    setCache(cacheKey, result)
+    return result
+  }
 
+  // From DB: page config and images still come from files (for now)
   const pageConfig = loadJson<any>('nexa-pages', `${slug}.json`)
   const images = loadJson<any>('images.json')
   const testimonials = loadJson<any>('testimonials.json')
-
-  if (testimonials?.testimonials?.length) {
-    content.testimonials = testimonials.testimonials
-  }
+  if (testimonials?.testimonials?.length) content.testimonials = testimonials.testimonials
 
   const result = { content, pageConfig, images, pageId: slug, locale }
   setCache(cacheKey, result)
@@ -55,13 +105,11 @@ export async function loadBlogPost(locale: string, slug: string): Promise<any> {
   const cached = getCached(cacheKey)
   if (cached) return cached
 
-  const content = loadJson<Record<string, any>>('content', `${locale}.json`)
+  const content = await loadFromSupabase(locale) || loadJson<Record<string, any>>('content', `${locale}.json`)
   if (!content) return null
 
-  const posts = loadJson<any>('content', 'blog', `posts-${locale}.json`)
-    || loadJson<any>('content', 'blog', 'posts.json')
+  const posts = loadJson<any>('content', 'blog', `posts-${locale}.json`) || loadJson<any>('content', 'blog', 'posts.json')
   if (!posts) return null
-
   const list = posts.posts || posts
   const post = Array.isArray(list) ? list.find((p: any) => p.slug === slug) : null
   if (!post) return null
