@@ -41,6 +41,13 @@ export function TeamSection({ pageContent, data, images }: any) {
                 {/* Top accent bar */}
                 <div className={`h-1.5 w-full ${layout.bg.split(' ')[0]}`} />
 
+                {/* AI Headshot Badge */}
+                <div className="absolute top-2 right-2 z-10">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full border border-amber-300 shadow-sm">
+                    ⚠️ IA
+                  </span>
+                </div>
+
                 <div className="p-6 text-center">
                   {/* Avatar */}
                   <div className="relative mx-auto mb-4 w-20 h-20">

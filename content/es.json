@@ -308,7 +308,7 @@
         {
           "icon": "TrendingUp",
           "title": "Entorno económico",
-          "description": "Crecimiento PBI 4,2% en 2023. IRE 10%. Inflación 2,1%. Sistema territorial — la renta extranjera no tributa localmente.",
+          "description": "[Datos reales pendientes — preguntar a Sonia] IRE 10%. Sistema territorial — la renta extranjera no tributa localmente.",
           "bullets": [
             "Impuesto corporativo 10%",
             "Sistema territorial",
@@ -352,7 +352,7 @@
         {
           "icon": "LineChart",
           "title": "Trayectoria de crecimiento",
-          "description": "PBI creciendo 4–5% anual 2021–2024. Sector construcción +12% anual. Inversión en infraestructura activa.",
+          "description": "[Datos reales pendientes — preguntar a Sonia] Economía en crecimiento con inversión en infraestructura activa.",
           "bullets": [
             "Construcción +12% anual",
             "PBI 4–5% anual",
@@ -374,7 +374,7 @@
         {
           "icon": "Users",
           "title": "Comunidad internacional",
-          "description": "Comunidades alemana, española, italiana y holandesa establecidas. +5.000 europeos radicados en la última década.",
+          "description": "[Datos reales pendientes — preguntar a Sonia] Comunidades alemana, española, italiana y holandesa establecidas.",
           "bullets": [
             "Comunidades europea +5.000",
             "Colegios internacionales",
@@ -567,7 +567,7 @@
       "members": [
         {
           "name": "Dirección de Operaciones (Paraguay)",
-          "role": "Líder de operaciones: +10 años coordinando con Migraciones, DGII y aperturas bancarias. Red institucional sólida en Asunción.",
+          "role": "[Rol real pendiente — preguntar a Sonia] Líder de operaciones en Paraguay.",
           "languages": [
             "ES",
             "EN"
@@ -624,7 +624,7 @@
           "memberImage": "@src:team.clientSuccess"
         }
       ],
-      "_note": "placeholder — reemplazar con fotos reales del equipo"
+      "_note": "placeholder — reemplazar con fotos reales del equipo. Las imágenes actuales son IA. TODO: Sesión de fotos profesional con el equipo real."
     },
     "trust": {
       "eyebrow": "Nuestra diferencia",
@@ -968,7 +968,7 @@
         },
         {
           "q": "¿Qué pasa si mi solicitud de residencia es rechazada?",
-          "a": "Las solicitudes de residencia rara vez son rechazadas si los documentos están en orden. En caso de algún problema, trabajamos contigo para subsanar los requisitos y volver a presentar. Nuestro índice de éxito supera el 99% en los últimos 3 años."
+          "a": "[Dato real pendiente — preguntar a Sonia] Las solicitudes de residencia rara vez son rechazadas si los documentos están en orden. En caso de algún problema, trabajamos contigo para subsanar los requisitos y volver a presentar."
         }
       ]
     },
@@ -2282,7 +2282,7 @@
         {
           "icon": "Users",
           "title": "Comunidad de Expats Activa",
-          "description": "Más de 800 familias holandesas, 600+ belgas y 2.000+ alemanas viven en Paraguay. Grupos de WhatsApp, eventos semanales, ferias internacionales y colegios con currículo europeo."
+          "description": "[Datos reales pendientes — preguntar a Sonia] Comunidad de expats activa con grupos, eventos y colegios internacionales."
         },
         {
           "icon": "Shield",

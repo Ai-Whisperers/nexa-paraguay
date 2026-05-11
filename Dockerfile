@@ -1,12 +1,10 @@
-# ── Nexa Paraguay Dockerfile (Phase 1: Migration) ──
-# Uses pre-installed @ai-whisperers tarballs (resolved in node_modules/)
+# ── Nexa Paraguay Dockerfile (Phase 2: npm registry) ──
+# Dependencies installed from GitHub Packages registry
 
 FROM node:20-alpine AS deps
 WORKDIR /app
 RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json* .npmrc ./
-COPY scripts/ ./scripts/
-COPY .packages/ ./.packages/
 RUN npm install --legacy-peer-deps 2>&1 || true
 
 FROM node:20-alpine AS builder
@@ -14,16 +12,10 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV NEXT_PUBLIC_GA4_ID=G-XE49GLEP34
 ENV NEXT_PUBLIC_SUPABASE_URL=https://qyvokpribmbrosafntqa.supabase.co
 ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_KQ-sFNr7r6AauoG0B4nyTg_vuPHmeCm
-ENV PGHOST=postgres
-ENV PGPORT=5432
-ENV PGUSER=postgres
-ENV PGPASSWORD=
-ENV PGDATABASE=nexa
-ENV USE_DB=true
-ENV REVALIDATION_SECRET=nexa-isr-secret-dev
-ENV SUPABASE_SERVICE_ROLE_KEY=sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH
+ENV NEXT_PUBLIC_APP_URL=https://nexa.paragu-ai.com
 RUN npm run build
 
 FROM node:20-alpine AS runner
@@ -32,16 +24,11 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+ENV NEXT_PUBLIC_GA4_ID=G-XE49GLEP34
 ENV NEXT_PUBLIC_SUPABASE_URL=https://qyvokpribmbrosafntqa.supabase.co
 ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_KQ-sFNr7r6AauoG0B4nyTg_vuPHmeCm
-ENV PGHOST=postgres
-ENV PGPORT=5432
-ENV PGUSER=postgres
-ENV PGPASSWORD=
-ENV PGDATABASE=nexa
-ENV USE_DB=true
-ENV REVALIDATION_SECRET=nexa-isr-secret-dev
 ENV SUPABASE_SERVICE_ROLE_KEY=sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH
+ENV NEXT_PUBLIC_APP_URL=https://nexa.paragu-ai.com
 RUN addgroup --system --gid 1001 nodejs && \
     adduser --system --uid 1001 nextjs
 USER nextjs
