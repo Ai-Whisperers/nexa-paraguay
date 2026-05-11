@@ -1,10 +1,12 @@
-# ── Nexa Paraguay Dockerfile (Phase 2: npm registry) ──
-# Dependencies installed from GitHub Packages registry
+# ── Nexa Paraguay Dockerfile ──
+# Hybrid: sections/i18n/client-kit from .tgz, rest from GitHub Packages
 
 FROM node:20-alpine AS deps
 WORKDIR /app
 RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json* .npmrc ./
+COPY .packages ./.packages/
+COPY scripts/copy-ai-packages.cjs ./scripts/copy-ai-packages.cjs
 RUN npm install --legacy-peer-deps 2>&1 || true
 RUN node scripts/copy-ai-packages.cjs
 
