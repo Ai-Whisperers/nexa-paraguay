@@ -47,6 +47,10 @@
 |------|------|----------------|
 | **meeting-report-may-11.md** | 10KB | **THE KEY DOCUMENT** — 58-min meeting outcome, pricing resolved |
 | **meeting-transcript-may-11-raw.txt** | 48KB | Raw auto-transcription (~40% accurate) |
+| **meeting-sonia-questions-final.md** | 20KB | 40 questions for Sonia organized in 7 blocks |
+| **service-matrix-questions-sonia.md** | 24KB | **210 services** — Sonia marks Sí/No/Investigar |
+| **propuesta-completa-sonia.md** | 18KB | Full proposal with options A/B/C for every decision |
+| **meeting-may-11-questions.md** | 42KB | Original 51 questions (pre-meeting draft) |
 
 ---
 
@@ -58,6 +62,7 @@
 | **Pricing matrix (old)** | `docs/09-market-intelligence/pricing-matrix-complete.md` | 24KB | 32 services, 12 competitors, wrong tiers | ⚠️ DEPRECATED |
 | **Financial model (old)** | `docs/09-market-intelligence/financial-model.md` | 15KB | 3 scenarios, off by 10x | ⚠️ DEPRECATED |
 | **Competitor landscape** | `docs/09-market-intelligence/competitor-landscape.md` | 10KB | 15 competitors analyzed | 🟡 Needs update |
+| **Project Paraguay analysis** | `docs/09-market-intelligence/competitor-analysis-projectparaguay.md` | 15KB | **Deep competitive analysis** — pricing, structure, what to steal/avoid | ✅ Current |
 | **Dutch channel map** | `docs/09-market-intelligence/dutch-channel-map.md` | 13KB | Dutch market channel strategy | 🟡 Needs review |
 | **Referral partners** | `docs/09-market-intelligence/referral-partners.md` | 14KB | Referral partner network | 🟡 Needs review |
 | **AI opportunity map** | `docs/09-market-intelligence/ai-opportunity-map.md` | 13KB | 8 AI opportunities for Nexa | ✅ Current |
@@ -76,6 +81,7 @@
 | **central-asuncion-complete-analysis.md** | 17KB | Central dept deep dive with neighborhood profiles |
 | **complete-paraguay-department-analysis.md** | 19KB | All 17 departments analyzed |
 | **paraguay-location-intelligence.md** | 13KB | City profiles, costs, safety, tourism |
+| **gps-data-for-sonia.md** | 5KB | **Quick reference** — what GPS data Sonia can use, how, and what's missing |
 
 ### Category Coverage (1,485 places in Asunción)
 
@@ -103,6 +109,7 @@
 |------|----------|------|----------------|--------|
 | **CLAUDE.md** | `claude.md` | — | AI agent guide — architecture, files, deploy commands | ✅ |
 | **Site audit** | `docs/02-site/site-audit.md` | 14KB | Full site audit | ⚠️ Pre-May 8 |
+| **Site changelog** | `docs/02-site/SITE_CHANGELOG.md` | 16KB | **Everything that needs to change on the site** — 25 items P0-P6 | ✅ Current |
 | **Page improvements** | `docs/02-site/PAGE_IMPROVEMENT_SPEC.md` | 10KB | Page improvement specifications | 🟡 |
 | **Component registry** | `docs/02-site/COMPONENT_REGISTRY.md` | 12KB | 26 components documented | 🟡 |
 | **Deep audit** | `docs/02-site/deep-audit.md` | 4KB | Deep technical audit | 🟡 |
