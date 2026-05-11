@@ -13,31 +13,54 @@
 | 🌐 **Live site** | `https://nexa.paragu-ai.com` (VPS) / `http://localhost:3000` (local) |
 | 📁 **All docs** | `docs/` |
 | 📋 **What changed May 11** | `docs/CHANGELOG.md` — **start here** |
-| 👤 **Founder profile** | `docs/01-client/sonia-weiss-complete-profile.md` |
+| 👤 **Founder profile** | `docs/01-client/profile/sonia-weiss-complete-profile.md` |
 | 💰 **Pricing (confirmed)** | `docs/meetings/meeting-report-may-11.md` §1 |
-| 🗺️ **Location data** | `docs/09-market-intelligence/asuncion-complete-1485-places.csv` |
-| 📊 **Full report** | `docs/01-client/client-analysis-complete.md` |
+| 🗺️ **Location data** | `docs/09-market-intelligence/location/asuncion-complete-1485-places.csv` |
+| 📊 **Full report** | `docs/01-client/feedback/client-analysis-complete.md` |
+| 📋 **Site changes needed** | `docs/02-site/config/SITE_CHANGELOG.md` |
+| 🏢 **Competitor deep-dive** | `docs/09-market-intelligence/competitors/competitor-analysis-projectparaguay.md` |
+| 📝 **210 services questionaire** | `docs/meetings/service-matrix-questions-sonia.md` |
+| 💡 **Full proposal for Sonia** | `docs/meetings/propuesta-completa-sonia.md` |
 | ℹ️ **Raw transcript** | `docs/meetings/meeting-transcript-may-11-raw.txt` |
 
 ---
 
 ## 1. CLIENT INTELLIGENCE (docs/01-client/)
 
+### profile/ — Who Sonia Is
+
 | File | Size | What It Covers |
 |------|------|----------------|
 | **sonia-weiss-complete-profile.md** | 10KB | Complete Sonia biography — personal, businesses, ethics, network |
 | **client-intelligence.json** | 12KB | Structured data: all businesses, kabbalah, digital footprint, team |
-| **services-opportunities-matrix.md** | 20KB | 210 potential services across 12 categories |
-| **client-analysis-complete.md** | 16KB | Complete client analysis from May 8 briefing + May 10 audio |
-| **client-feedback-complete.md** | 18KB | Full feedback history (May 8-May 11, bilingual) |
-| **client-feedback-2026-05-08.md** | 1.3KB | Initial Luana/Sonia feedback round |
-| **CLIENT-QUESTIONNAIRE.md** | 65KB | Full onboarding questionnaire (historical) |
-| **complete-questionnaire.md** | 18KB | 100-question master — **83/100 now answered** |
-| **client-questions-for-sonia.md** | 8KB | Questions → Answers mapping |
-| **client-tools-deliverables.md** | 16KB | Client tools and deliverables inventory |
-| **complete-implementation-plan.md** | 20KB | Full implementation plan |
 | **stakeholder-qa.md** | 6KB | Pre-launch Q&A for leadership |
 | **stakeholder-review.md** | 3KB | **⚠️ STALE** — references wrong pricing tiers |
+
+### feedback/ — What Sonia Said
+
+| File | Size | What It Covers |
+|------|------|----------------|
+| **client-feedback-complete.md** | 18KB | Full feedback history (May 8-May 11, bilingual) |
+| **client-analysis-complete.md** | 16KB | Complete client analysis from May 8 briefing + May 10 audio |
+| **client-feedback-2026-05-08.md** | 1.3KB | Initial Luana/Sonia feedback round |
+
+### services/ — What Sonia Does
+
+| File | Size | What It Covers |
+|------|------|----------------|
+| **services-opportunities-matrix.md** | 20KB | 210 potential services across 12 categories |
+| **client-tools-deliverables.md** | 16KB | Client tools and deliverables inventory |
+| **client-update-questionnaire.md** | 3KB | Service update tracker |
+
+### plans/ — Questionnaires & Implementation
+
+| File | Size | What It Covers |
+|------|------|----------------|
+| **CLIENT-QUESTIONNAIRE.md** | 65KB | Full onboarding questionnaire (historical) |
+| **complete-questionnaire.md** | 18KB | 100-question master — **83/100 now answered** |
+| **complete-implementation-plan.md** | 20KB | Full implementation plan |
+| **client-questions-for-sonia.md** | 8KB | Questions → Answers mapping |
+| **client-questionnaire-responses.md** | 3KB | Responses summary |
 
 ---
 
@@ -59,29 +82,28 @@
 | File | Location | Size | What It Covers | Status |
 |------|----------|------|----------------|--------|
 | **Pricing (confirmed)** | `docs/meetings/meeting-report-may-11.md` §1 | — | **$1,500 confirmed** | ✅ Current |
-| **Pricing matrix (old)** | `docs/09-market-intelligence/pricing-matrix-complete.md` | 24KB | 32 services, 12 competitors, wrong tiers | ⚠️ DEPRECATED |
-| **Financial model (old)** | `docs/09-market-intelligence/financial-model.md` | 15KB | 3 scenarios, off by 10x | ⚠️ DEPRECATED |
-| **Competitor landscape** | `docs/09-market-intelligence/competitor-landscape.md` | 10KB | 15 competitors analyzed | 🟡 Needs update |
-| **Project Paraguay analysis** | `docs/09-market-intelligence/competitor-analysis-projectparaguay.md` | 15KB | **Deep competitive analysis** — pricing, structure, what to steal/avoid | ✅ Current |
-| **Dutch channel map** | `docs/09-market-intelligence/dutch-channel-map.md` | 13KB | Dutch market channel strategy | 🟡 Needs review |
-| **Referral partners** | `docs/09-market-intelligence/referral-partners.md` | 14KB | Referral partner network | 🟡 Needs review |
-| **AI opportunity map** | `docs/09-market-intelligence/ai-opportunity-map.md` | 13KB | 8 AI opportunities for Nexa | ✅ Current |
+| **Pricing matrix (old)** | `docs/09-market-intelligence/pricing/pricing-matrix-complete.md` | 24KB | 32 services, 12 competitors, wrong tiers | ⚠️ DEPRECATED |
+| **Financial model (old)** | `docs/09-market-intelligence/pricing/financial-model.md` | 15KB | 3 scenarios, off by 10x | ⚠️ DEPRECATED |
+| **Competitor landscape** | `docs/09-market-intelligence/competitors/competitor-landscape.md` | 10KB | 15 competitors analyzed | 🟡 Needs update |
+| **Project Paraguay analysis** | `docs/09-market-intelligence/competitors/competitor-analysis-projectparaguay.md` | 15KB | **Deep competitive analysis** — pricing, structure, what to steal/avoid | ✅ Current |
+| **Dutch channel map** | `docs/09-market-intelligence/location/dutch-channel-map.md` | 13KB | Dutch market channel strategy | 🟡 Needs review |
+| **AI opportunity map** | `docs/09-market-intelligence/research/ai-opportunity-map.md` | 13KB | 8 AI opportunities for Nexa | ✅ Current |
 
 ---
 
-## 4. LOCATION INTELLIGENCE (docs/09-market-intelligence/)
+## 4. LOCATION INTELLIGENCE (docs/09-market-intelligence/location/)
 
 | File | Size | What It Covers |
 |------|------|----------------|
 | **asuncion-complete-1485-places.csv** | 203KB | **1,485 places in Asunción** — all with GPS, phone, rating |
-| **asuncion-1485-places.geojson** | 288KB | Ready for Google Maps / GIS import |
 | **paraguay-locations-database.json** | 536KB | **1,548 locations nationwide** — 36 categories |
-| **central-asuncion-complete.csv** | 91KB | 534 core Central Dept places |
-| **central-asuncion-places.geojson** | 164KB | Central Dept GeoJSON |
+| **gps-data-for-sonia.md** | 5KB | **Quick reference** — what GPS data Sonia can use, how, and what's missing |
+| **paraguay-location-intelligence.md** | 13KB | City profiles, costs, safety, tourism |
 | **central-asuncion-complete-analysis.md** | 17KB | Central dept deep dive with neighborhood profiles |
 | **complete-paraguay-department-analysis.md** | 19KB | All 17 departments analyzed |
-| **paraguay-location-intelligence.md** | 13KB | City profiles, costs, safety, tourism |
-| **gps-data-for-sonia.md** | 5KB | **Quick reference** — what GPS data Sonia can use, how, and what's missing |
+| **dutch-channel-map.md** | 13KB | Dutch market channel strategy |
+| **dutch-channels-full-report.md** | 12KB | Deep Dutch channel analysis |
+| *Various CSV + GeoJSON files* | — | Central dept, embassies, hospitals, schools, malls |
 
 ### Category Coverage (1,485 places in Asunción)
 
@@ -105,16 +127,37 @@
 
 ## 5. SITE ARCHITECTURE & DEVELOPMENT
 
+### specs/ — What to Build (docs/02-site/specs/)
+
+| File | Size | What It Covers | Status |
+|------|------|----------------|--------|
+| **PAGE_IMPROVEMENT_SPEC.md** | 10KB | Page improvement specifications | 🟡 |
+| **COMPONENT_REGISTRY.md** | 12KB | 26 components documented | 🟡 |
+| **improvement-plan.md** | 6KB | Improvement roadmap | 🟡 |
+| **new-content-pages-opportunities.md** | 5KB | New content pages ideas | 🟡 |
+| **ai-meeting-system-design.md** | 4KB | AI meeting system design | 🟡 |
+
+### audits/ — What's Wrong (docs/02-site/audits/)
+
+| File | Size | What It Covers | Status |
+|------|------|----------------|--------|
+| **site-audit.md** | 14KB | Full site audit | ⚠️ Pre-May 8 |
+| **deep-audit.md** | 4KB | Deep technical audit | 🟡 |
+| **gps-data-gaps-100-items.md** | 3KB | 100 GPS data gaps | 🟡 |
+| **new-pages-complete-analysis.md** | 4KB | New pages requirements analysis | 🟡 |
+
+### config/ — DNS & Changelog (docs/02-site/config/)
+
+| File | Size | What It Covers | Status |
+|------|------|----------------|--------|
+| **SITE_CHANGELOG.md** | 16KB | **Everything that needs to change** — 25 items P0-P6 | ✅ Current |
+| **dns.md** | 2KB | DNS configuration | ✅ |
+
+### Other
+
 | File | Location | Size | What It Covers | Status |
 |------|----------|------|----------------|--------|
 | **CLAUDE.md** | `claude.md` | — | AI agent guide — architecture, files, deploy commands | ✅ |
-| **Site audit** | `docs/02-site/site-audit.md` | 14KB | Full site audit | ⚠️ Pre-May 8 |
-| **Site changelog** | `docs/02-site/SITE_CHANGELOG.md` | 16KB | **Everything that needs to change on the site** — 25 items P0-P6 | ✅ Current |
-| **Page improvements** | `docs/02-site/PAGE_IMPROVEMENT_SPEC.md` | 10KB | Page improvement specifications | 🟡 |
-| **Component registry** | `docs/02-site/COMPONENT_REGISTRY.md` | 12KB | 26 components documented | 🟡 |
-| **Deep audit** | `docs/02-site/deep-audit.md` | 4KB | Deep technical audit | 🟡 |
-| **Improvement plan** | `docs/02-site/improvement-plan.md` | 6KB | Improvement roadmap | 🟡 |
-| **DNS** | `docs/02-site/dns.md` | 2KB | DNS configuration | ✅ |
 | **Architecture** | `docs/00-architecture/ARCHITECTURE.md` | 6KB | System architecture | 🟡 Generic |
 | **Upgrade roadmap** | `docs/13-upgrades/complete-roadmap.md` | 13KB | Upgrade roadmap | 🟡 |
 
@@ -122,17 +165,38 @@
 
 ## 6. MARKETING & CONTENT (docs/06-marketing/)
 
+### content/ — What to Publish
+
 | File | Size | What It Covers | Status |
 |------|------|----------------|--------|
 | **lead-magnets.md** | 3KB | Lead magnet strategy (4 proposed) | 🟡 Needs review |
 | **email-sequences.md** | 3KB | Email nurture sequences | 🟡 Stale (Apr) |
 | **comparisons.md** | 3KB | Competitive comparisons | 🟡 Stale (Apr) |
 | **faq-dealclosing.md** | 3KB | FAQ for closing deals | 🟡 Stale (Apr) |
-| **ADS_ASSETS.md** | 7KB | Ad creative assets | 🟡 |
 | **testimonials-system.md** | 2KB | Testimonial collection system | 🟡 Stale (Apr) |
+| **testimonials-google-form.md** | 2KB | Google Form for client testimonials | 🟡 |
+| **case-study-questionnaire.md** | 2KB | Case study template | 🟡 |
+| **TESTIMONIALS_GATING.md** | 2KB | Testimonial gating strategy | 🟡 |
+
+### ads/ — Paid Media
+
+| File | Size | What It Covers | Status |
+|------|------|----------------|--------|
+| **ADS_ASSETS.md** | 7KB | Ad creative assets | 🟡 |
+| *Startup deals* | — | Moved to `docs/_archive/` | ❌ Not Sonia-specific |
+
+### social/ — Social Media
+
+| File | Size | What It Covers | Status |
+|------|------|----------------|--------|
 | **whatsapp-integration.md** | 2KB | WhatsApp marketing | 🟡 Stale (Apr) |
-| **SEO keyword strategy** | `docs/07-seo/seo-keyword-strategy.md` | 3KB | SEO strategy | 🟡 |
-| **Content gaps** | `docs/07-seo/content-gaps.md` | 2KB | Content gap analysis | 🟡 |
+
+### SEO (docs/07-seo/)
+
+| File | Size | What It Covers | Status |
+|------|------|----------------|--------|
+| **seo-keyword-strategy.md** | 3KB | SEO keyword strategy | 🟡 |
+| **content-gaps.md** | 2KB | Content gap analysis | 🟡 |
 
 ---
 
@@ -149,14 +213,28 @@
 
 ## 8. DEPLOYMENT & OPERATIONS
 
-| File | Location | What It Covers | Status |
-|------|----------|----------------|--------|
-| **Deployment** | `docs/10-deployment/deployment-runbook.md` | Full deployment steps | ✅ |
-| **CI/CD** | `docs/10-deployment/ci-cd.md` | CI/CD configuration | 🟡 |
-| **Pre-launch** | `docs/11-launch/pre-launch-inventory.md` | Complete inventory | 🟡 |
-| **Integration guide** | `docs/08-integrations/integration-setup-guide.md` | HubSpot, Mailchimp, GA4 | 🟡 |
-| **WhatsApp runbook** | `docs/08-integrations/whatsapp-ai-runbook.md` | WhatsApp bot runbook | 🟡 |
-| **GA4** | `docs/08-integrations/ga4.md` | Google Analytics 4 | 🟡 Stale |
+### Deployments (docs/10-deployment/)
+
+| File | Size | What It Covers | Status |
+|------|------|----------------|--------|
+| **deployment-runbook.md** | 171 lines | Full deployment steps | ✅ |
+| **ci-cd.md** | 3KB | CI/CD configuration | 🟡 |
+| **onboarding-checklist.md** | 4KB | Onboarding checklist (from 00-deploy) | ✅ |
+| **ai-setup-runbook.md** | 3KB | AI setup runbook (from 00-deploy) | ✅ |
+
+### Integrations (docs/08-integrations/)
+
+| Subdirectory | What It Covers | Status |
+|-------------|----------------|--------|
+| **hubspot/** | HubSpot + Mailchimp setup | 🟡 Env keys not set |
+| **whatsapp/** | WhatsApp bot runbook | 🟡 Needs SIM chip |
+| **analytics/** | GA4 setup | 🟡 Tag not firing |
+
+### Launch (docs/11-launch/)
+
+| File | Size | What It Covers | Status |
+|------|------|----------------|--------|
+| **pre-launch-inventory.md** | 12KB | Complete pre-launch inventory | 🟡 |
 
 ---
 
