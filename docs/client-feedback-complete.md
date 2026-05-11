@@ -1,6 +1,6 @@
 # Nexa Paraguay — Documentación Completa de Cliente
 
-| Última actualización: 9 de mayo de 2026 (23:00 — deploy final: aliases de registry, WhatsApp float, content pollution limpiada, header/footer bypass en renderer)
+| Última actualización: 10 de mayo de 2026 (22:00 — briefing completo de Sonia responde TODAS las preguntas pendientes)
 > Fuente: conversaciones con Sonia (fundadora) vía Iván, más feedback transmitido por Luana
 
 ---
@@ -283,13 +283,12 @@ Basado en el feedback textual de Sonia, el tono correcto es:
 | Mayo 8 noche | WhatsApp | Iván | Se implementaron: default locale NL, SVG flags, bandera paraguaya para ES. Se identificó hero image pendiente. Build fue interrumpido. |
 | Mayo 9 | WhatsApp | Iván | Se prepararon preguntas detalladas para Sonia (4 grupos: historia, servicios, clientes, propuesta de valor). Quedaron en lista de espera. |
 | Mayo 9 | WhatsApp | **Sonia (TEXTO DIRECTO)** | **FEEDBACK MASIVO.** Historia completa de 7 años en Holanda, proceso paso a paso, 10 clientes holandeses, requisitos de residencia completos, frase "acompañamiento casi familiar", logro de propiedades a buen precio. Pide que los requisitos aparezcan en los 4 idiomas. |
-
----
+| Mayo 10 | Telegram (voz) | **Sonia (audio briefing)** | **BRIEFING COMPLETO — RESPUESTA A TODAS LAS PREGUNTAS.** Transcripción completa de 26 minutos. Se cubrieron: pricing real ($1,500 vs $2,800 competencia), Day 1 protocol (aeropuerto→Interpol→chip), servicios para familias (colegios por ciudad/presupuesto), modelo de red/comisiones (2.75% propiedades, referidos legales/contables), historia personal (colapso nervioso en Holanda, por qué volvió), miedos de clientes (inseguridad), eslogan ("Relax, I can help you"), targeting (prefiere familias, inversores le intimidan), fotos (no tiene aún), próxima reunión con inversores holandeses (grabará audio para Iván). |
 
 ## 11. ANÁLISIS ESTRATÉGICO
 
 ### Posición actual
-Nexa está en **pre-lanzamiento funcional**: el sitio es profesional, honesto y visualmente atractivo, pero tiene 0 clientes que puedan dar testimonio. Sonia tiene 10 personas ayudadas (todas holandesas) pero sin presencia digital ni proceso de clientes formalizado.
+Nexa está en **pre-lanzamiento funcional**: el sitio es profesional, honesto y visualmente atractivo. Sonia tiene 10 personas ayudadas (todas holandesas) pero sin presencia digital ni proceso de clientes formalizado. El briefing del 10 de mayo completó todas las preguntas pendientes — el modelo de negocio está completamente documentado.
 
 ### Riesgos identificados
 1. **Sin casos de estudio ni testimonios** = no hay prueba social en el sitio
@@ -298,26 +297,31 @@ Nexa está en **pre-lanzamiento funcional**: el sitio es profesional, honesto y 
 4. **{{taxRate}} bug visible** en producción — resta profesionalismo
 5. **Links del footer desactualizados** ("Programas", "Benelux desk") que Sonia ya pidió sacar
 6. **Dominio real nexaparaguay.com apunta a Shopify** — el sitio real está en nexa.paragu-ai.com
+7. **Sonia prefiere no mostrar precios en el sitio** — $1,500 es interno, no publicable
+8. **Sin fotos reales** — Sonia confirmó que no tiene fotos personales aún
+9. **Inversores le intimidan** — necesita apoyo técnico de Iván para reuniones financieras
 
 ### Oportunidades inmediatas
-1. Publicar la historia completa de Sonia en Sobre Nexa (4 idiomas) — su mayor diferencial
-2. Publicar los requisitos de residencia en ES y DE (Sonia lo pidió explícitamente)
-3. Primer blog post de Sonia en primera persona: *"Waarom ik Nederland verliet en terugkeerde naar Paraguay"*
-4. 10 personas ayudadas = 10 potenciales testimonios (pedir permiso para foto + frase)
-5. Usar "acompañamiento casi familiar" y "propiedades a buen precio" como frases fuerza
-6. Escanear QR del WhatsApp bot para activar captación de leads
+1. ✅ **TODAS las preguntas respondidas** — Briefing del 10 de mayo completó los 15 gaps
+2. Eslogan confirmado: **"Relax, I can help you"** — usar en hero y branding
+3. Día 1 protocol detallado: aeropuerto → chip local → Interpol → Migraciones (en 24h)
+4. Historia poderosa: colapso nervioso en Holanda → reinvención en Paraguay (PG-friendly)
+5. Modelo de comisiones documentado: 2.75% propiedades, referidos legales/contables
+6. Próxima reunión con inversores holandeses (Mayo 11) → Iván analizará audio
+7. 10 personas ayudadas = 10 potenciales testimonios (pedir permiso para foto + frase)
 
-### Recomendación de prioridades
+### Recomendación de prioridades (updated May 10)
 
 **Orden sugerido:**
-1. 🔴 Arreglar `{{taxRate}}` en EN/NL/DE y footer links
-2. 🔴 Publicar historia completa de Sonia en los 4 idiomas (acabo de recibirla)
-3. 🔴 Publicar requisitos de residencia en ES y DE
-4. 🔴 Escanear QR del WhatsApp bot
-5. 🟡 Hero image auténtica paraguaya
-6. 🟡 Primer blog post de Sonia en primera persona
-7. 🟡 Contactar a las 10 personas ayudadas para testimonios
-8. 🟡 Mover dominio nexaparaguay.com al sitio real
+1. 🔴 **Procesar audio de reunión con inversores (Mayo 11)** — Sonia grabará, Iván analiza
+2. 🔴 Incorporar "Relax, I can help you" como eslogan en hero del sitio
+3. 🔴 Actualizar sección de servicios con Day 1 protocol y acompañamiento post-residencia
+4. 🔴 Agregar contenido sobre familias (colegios por ciudad/presupuesto) al FAQ/servicios
+5. 🟡 Escanear QR del WhatsApp bot
+6. 🟡 Hero image auténtica paraguaya (Sonia no tiene fotos aún — placeholder temporal)
+7. 🟡 Primer blog post de Sonia en primera persona
+8. 🟡 Contactar a las 10 personas ayudadas para testimonios
+9. 🟡 Mover dominio nexaparaguay.com al sitio real
 
 ---
 

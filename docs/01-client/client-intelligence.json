@@ -1,16 +1,184 @@
 {
-  "source": "solstein-manda-research",
+  "source": "deep-research-may-2026 + client-briefing-may-10",
   "target": "Nexa Paraguay (Ai-Whisperers client)",
-  "analyzed_at": "2026-05-07T13:20:00-04:00",
+  "analyzed_at": "2026-05-10T22:00:00-04:00",
+  "last_client_briefing": "2026-05-10 — Audio transcription (26 min), all questions answered",
   "vertical": "Relocation & Residency Services",
   "country": "Paraguay",
   "live_url": "https://nexa.paragu-ai.com",
   "primary_domain": "nexaparaguay.com (parked/redirects to Shopify placeholder)",
   "locales": ["en", "es", "nl", "de"],
-  "status": "Active client — P3 maintenance (green)",
+  "default_locale": "nl",
+  "status": "Active client — P3 maintenance (green). All business intelligence gaps closed.",
   "owner": "Ivan — ParaguAI",
   "team": {
     "client_success_lead": "Kyrian (remote management/ops)",
-    "account_manager": "Sonia (client liaison)"
+    "account_manager": "Sonia (client liaison — also founder/CEO)"
+  },
+  "founder_profile": {
+    "full_name": "Sonia Weiss (Edith López van der Pol)",
+    "tax_name": "Sonia Edith López Charotti Ramírez (from SET tax records)",
+    "role": "Founder & CEO",
+    "location": "Asunción / Fernando de la Mora / San Lorenzo, Paraguay",
+    "phone_personal": "0982 515138 (Tigo Paraguay)",
+    "languages": ["Spanish", "Dutch", "English", "Guarani", "Portuguese", "German", "French"],
+    "background": {
+      "lived_in": "Netherlands (7 years)",
+      "reason": "Worked in the music industry, then became full-time mother",
+      "return_reason": "Returned to Paraguay to be with her aging mother. Also: nervous breakdown in Holland, didn't fit in, wanted children to grow up in Paraguay.",
+      "nervous_breakdown": true,
+      "reinvention_reason": "Same reason clients come to Paraguay — wanted to reinvent herself",
+      "children": [
+        { "name": "Iván", "role": "Technical, Ai-Whisperers" },
+        { "name": "Kiki (Hermana)", "role": "Works at Ai-Whisperers" },
+        { "name": "Luana", "role": "Content & org, feedback relay" }
+      ]
+    },
+    "core_differentiator": "She lived the emigration experience herself — arrived in NL without language or contacts. Her service is 'acompañamiento casi familiar' (almost family-like accompaniment).",
+    "brand_slogan": "Relax, I can help you (confirmed by Sonia)",
+    "biggest_pride": "Working with Luana (her daughter). Also: getting clients properties at good prices and preventing them from getting scammed.",
+    "ethical_stance": "Strong ethical compass — refuses fake testimonials, fabricated stats, or empty claims. Prefers empty sections over lies.",
+    "tone": "First-person, warm, personal, maternal. Sonia speaks as Sonia, not as a company. 'Acompañamiento de cerca' is the identity phrase.",
+    "cultural_advice": "Europeans should become 'relaxed Europeans' — keep their essence but adopt Paraguayan flexibility",
+    "prefers_families_over_investors": true,
+    "intimidated_by_investors": true,
+    "investor_meeting_may_11": "Will record audio for Iván to analyze investor concerns",
+    "has_real_photos": false,
+    "kabbalah": "Connected to Kabbalah Centre Paraguay (Asunción, Charles de Gaulle 1892). Phone number was listed in 2013 for Kabbalah study group."
+  },
+  "all_businesses": {
+    "wpg_weiss_van_der_pol_group_srl": {
+      "legal_name": "Weiss Van Der Pol Group SRL",
+      "ruc": "800281063",
+      "status": "Active",
+      "type": "Software Development Outsourcing + Import/Trading",
+      "hq": "San Lorenzo, Central, Paraguay",
+      "website": "wpg.com.py, wpgsoftware.nl",
+      "description": "High-end offshore software development. Enterprise apps, system integration, custom programming, web development. Mostly European market, entered local Paraguay market in June 2004.",
+      "clients": ["Energy21 (multinational utility software, deployed worldwide)", "Various European and Paraguayan private/public sector companies"],
+      "awards": ["Honorable mention at JBoss Innovation Awards (category: Business Process Management)"],
+      "team_size": "Multinational staff (communicates in English, Spanish, German, Dutch, French, Portuguese). Employees documented from 2008-2022+",
+      "import_activity": {
+        "total_shipments": 33,
+        "top_sourcing_country": "China",
+        "products_imported": ["Plastic caps", "Toiletries kits", "Judo mats"],
+        "key_suppliers": ["Yangzhou Mingxin Plastic Chemical Co., Ltd", "Shanghai Teaway International Logistics Co., Ltd", "Nantong Qunjiao Gong Mao Co., Ltd"]
+      },
+      "classification_sic": "50450000 - Computers, accessories, and software",
+      "linkedin": "WPG Software SRL",
+      "associates": ["Gerold Manders (Netherlands contact)", "Roberto Weiss (family, buyer)", "José Alberto G. (Software Tester 2008-2022)"]
+    },
+    "la_vieja_holanda": {
+      "type": "Antique furniture & decor import retail",
+      "status": "Active",
+      "instagram": "@laviejaholanda (8,140 followers, 2,992 posts)",
+      "tiktok": "@laviejaholanda (active)",
+      "facebook": "facebook.com/LaViejaHolanda (6,700+ photos)",
+      "domestika": "laviejaholanda3",
+      "whatsapp_business": "0985 882 975 / 0983 275 987",
+      "address_current": "Pirizal 590 e/ Campo Vía, Fernando de la Mora",
+      "address_old": "Senador Huey Pierce Long 370, Asunción",
+      "hours": "Mon-Fri 10-19, Sat by appointment only",
+      "delivery": "Envíos a todo Paraguay",
+      "products": ["Antique furniture (Dutch, German, Turkish)", "Decorative objects", "Rugs (Dutch, German, Turkish)", "English porcelain dishes (blue/white)", "Delftware", "Copper items", "Antique irons", "Bells", "Soup tureens", "Candelabras", "Porcelain figurines"],
+      "price_range": "From ~650,000 Gs (~$85 USD) for medium decor pieces",
+      "import_source": "Netherlands (used/antique furniture and decor)"
+    },
+    "casa_weiss_van_der_pol": {
+      "type": "Restaurant",
+      "location": "San Lorenzo, Paraguay",
+      "phone": "0982 515138",
+      "status": "Listed in todosnegocios.com — possibly past venture"
+    },
+    "nexa_paraguay": {
+      "type": "Relocation & residency services",
+      "status": "Pre-revenue launch phase — 10 informal clients served, no formal web-originated clients yet",
+      "clients_helped": "10 Dutch nationals (all informal, word-of-mouth, no formal process yet)",
+      "process_duration": "3-6 months for residency; accompaniment up to 12 months",
+      "pricing_internal": {
+        "flagship_service": "Residencia Estándar — $1,500 (DO NOT publish on website — Sonia's explicit request)",
+        "competitor_comparison": "Agencies charge $2,800 for 1 month 20 days",
+        "price_differential": "$1,300 savings for client choosing personal service over corporate speed",
+        "post_residence": "Day rate for Sonia + driver (bank, purchases, accompaniment) — price flexible, Sonia doesn't want to overcharge",
+        "property_commission": "2.75% of sale value (half of intermediary's 5.5%)",
+        "school_research": "One-time research fee (amount TBD — needs recommendation)",
+        "vehicle_purchase": "Free to client (commission from seller)",
+        "appliance_purchase": "Free to client (commission from store)"
+      },
+      "competitor_positioning": "Artisanal, personalized, 3-6 months, $1,500 vs corporate $2,800 / 1.5 months",
+      "day_1_protocol": {
+        "airport_pickup": true,
+        "immediate_actions": "If docs sent ahead: Interpol → Migraciones. Goal: critical bureaucracy in 24 hours.",
+        "first_purchase": "Local SIM chip (client stops using European roaming)",
+        "document_translation": "Official public translator in Paraguay — arranged before arrival"
+      },
+      "post_residence_services": [
+        { "name": "Bank account opening", "pricing": "Per day (Sonia + driver)", "description": "Physical accompaniment to bank" },
+        { "name": "Vehicle purchase", "pricing": "Free to client (seller commission)", "description": "Takes client to most economical & reliable places" },
+        { "name": "Appliance purchase", "pricing": "Free to client (store commission)", "description": "Fridge, freezer, electronics at trusted stores" },
+        { "name": "Property verification", "pricing": "2.75% commission", "description": "Shows red zones/flood areas, prevents scams" },
+        { "name": "School research", "pricing": "One-time research fee", "description": "Deep research by city (Asunción/SL/Encarnación/CdE) and budget" },
+        { "name": "Spanish teacher", "pricing": "Free referral", "description": "Connects with trusted teachers" },
+        { "name": "Medical accompaniment", "pricing": "Undefined (heart-based)", "description": "Has taken clients to hospital personally" },
+        { "name": "Social integration", "pricing": "Free (calls) / Paid (mobilization)", "description": "Clubs, activities, sign-ups" },
+        { "name": "Tours & orientation", "pricing": "Built into accompaniment", "description": "Supermarkets, cheapest places, city orientation" }
+      ],
+      "commission_network": {
+        "law_firms_accounting": "Commission from professional margin (not charged to client). Sonia presents 2 trusted firms.",
+        "real_estate": "2.75% (half of intermediary's 5.5%). Sonia contacts intermediary on client's behalf.",
+        "vehicle_sellers": "Variable commission when client buys through her referral.",
+        "appliance_stores": "Variable commission on referral purchases.",
+        "notaries_escribanos": "Part of real estate transaction — Sonia presents trusted notaries."
+      },
+      "target_personas": {
+        "primary": "Families relocating for lifestyle change (Sonia's preference)",
+        "secondary": "Investors bringing capital to build something (intimidates Sonia — needs tech support from Iván)",
+        "slogan": "Relax, I can help you"
+      },
+      "services": [
+        "Residency application guidance (full process 3-6 months)",
+        "Document apostille & translation coordination (official translator in PY)",
+        "Temporary housing (Airbnb) setup",
+        "Local SIM chip on Day 1",
+        "Bank account opening (physical accompaniment)",
+        "Property search with scam prevention (red zone tours)",
+        "School research & comparison (by city/budget)",
+        "Health insurance guidance",
+        "Legal structure for remote workers",
+        "Trusted referral network (2 accounting-legal firms, notaries, intermediaries)"
+      ],
+      "differentiator": "Acompañamiento casi familiar — she did it herself and understands the process personally. Also: $1,300 cheaper than competitors.",
+      "what_she_doesnt_do_directly": "Accounting, legal — refers trusted partners and takes commission from their margin",
+      "biggest_personal_challenge": "Had a nervous breakdown in Holland. Returned to Paraguay to reinvent herself. Now helps others do the same.",
+      "client_fears_handled": {
+        "most_common_fear": "Insecurity",
+        "her_answer": "Insecurity exists everywhere. Be careful but it's latent in both Europe and Paraguay."
+      }
+    }
+  },
+  "digital_footprint": {
+    "instagram": {
+      "laviejaholanda": { "followers": 8140, "following": 3384, "posts": 2992, "handle": "@laviejaholanda" }
+    },
+    "tiktok": {
+      "laviejaholanda": { "hashtags": ["#laviejaholanda", "#antiguedadesparaguay", "#mueblesantiguosderoble", "#articulosdelujo", "#antiguedadestraidosdeholanda"] }
+    },
+    "facebook": {
+      "laviejaholanda_page": "facebook.com/LaViejaHolanda (business page)",
+      "kabbalah_paraguay_group": "Facebook group 'Kabbalah Paraguay' (810 likes)"
+    },
+    "linkedin": "WPG Software SRL (company page)",
+    "slideshare": "Sonia Ainos (linked to Weiss van der Pol Group)",
+    "import_records": ["ImportGenius", "Panjiva", "Trademo", "Seair", "Veritrade", "Dun & Bradstreet"],
+    "tax_records": "SET Paraguay (RUC 800281063, active)"
+  },
+  "kabbalah_connection": {
+    "organization": "Kabbalah Centre Paraguay (Asunción)",
+    "address": "Charles de Gaulle 1892, Asunción (also Ciudad del Este)",
+    "instagram": "@kabbalahpy (8,336 followers, 1,493 posts)",
+    "facebook": "KabbalahParaguay (810 likes)",
+    "lead_teacher": "Yigal Kutnovsky",
+    "evidence": "Sonia's phone 0982 515138 was used in 2013 for Kabbalah study group registration at Omni Center Asunción",
+    "likley_role": "Long-term student/participant, possibly involved in organizing events"
   }
 }

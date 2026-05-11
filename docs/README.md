@@ -7,8 +7,11 @@
 
 ## Documentation Structure
 
+> **🆕 SOURCE OF TRUTH:** Start at `docs/SOURCE_OF_TRUTH.md` for the authoritative client & business model reference. All other docs derive from it.
+
 ```
 ├── README.md                        ← This file — docs index & navigation
+├── SOURCE_OF_TRUTH.md               ← 🏆 Master reference: client, business model, branding, prices, partners
 ├── CLAUDE.md                        ← AI agent guide (repo root)
 ├── research-catalog.md              ← Master catalog of ALL research done for Nexa
 │
