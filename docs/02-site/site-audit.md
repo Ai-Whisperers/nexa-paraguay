@@ -1,5 +1,9 @@
 # Nexa Paraguay — Complete Site Audit (May 5, 2026)
 
+> **⚠️ NOTE:** This audit pre-dates Sonia's May 8 feedback and May 11 meeting.
+> The "orphan pages" section (items 26-41) recommends linking pages that Sonia explicitly **rejected** (wizard, team, stats, comparisons).
+> See `docs/CHANGELOG.md` and `docs/meeting-report-may-11.md` for current status.
+
 ## EXECUTIVE SUMMARY
 
 **Status:** Content restructured to match client questionnaire. Core pages (Home, Programs, Process, About) updated in all 4 locales. Landing pages updated. Critical gaps remain in analytics, SEO descriptions, navigation, and localizations flagged for professional translation.

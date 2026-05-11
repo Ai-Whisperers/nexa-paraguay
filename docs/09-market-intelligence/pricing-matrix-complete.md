@@ -1,6 +1,12 @@
 # Nexa Paraguay — Complete Pricing Matrix & Financial Analysis
 
-> **Date:** 2026-05-11 | **Market data sourced from:** ExpatSettle, MoveToParaguay, ImmigrantInvest, NTL Trust, TuLugar, BuscaEscribanía, Gold Harbor, Independent Territory, Numbeo
+> **⚠️⚠️⚠️ DEPRECATED — NOT CURRENT ⚠️⚠️⚠️**
+> This document was built on the $2,900-$6,900 assumption model that was **invalidated** by the May 11 meeting.
+> **Sonia confirmed $1,500** as the complete price for residency service.
+> See `docs/meeting-report-may-11.md` and `docs/CHANGELOG.md` for current pricing.
+> Keep this file as historical reference only. DO NOT use for business decisions.
+
+> **Date:** 2026-05-11 (pre-resolution — assumptions only) | **Market data sourced from:** ExpatSettle, MoveToParaguay, ImmigrantInvest, NTL Trust, TuLugar, BuscaEscribanía, Gold Harbor, Independent Territory, Numbeo
 > **Legend:** ✅ = Confirmed by Sonia | ❓ = Needs Sonia validation | 💡 = Estimated from market | 📊 = Calculated from data
 
 ---

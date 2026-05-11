@@ -1,7 +1,9 @@
 # SOURCE OF TRUTH — Nexa Paraguay
 
-> **Version:** 2.0 — 2026-05-11
-> **Status:** COMPLETE + ENRICHED with location/pricing/data intelligence.
+> **Version:** 2.1 — 2026-05-11
+> **Status:** ✅ Pricing resolved. All client questions answered.
+> **⚠️ NOTE:** This document captures the full client picture as of May 10. For the **May 11 meeting outcome** (pricing confirmation, brand decisions), see `docs/meetings/meeting-report-may-11.md`.
+> **What changed after May 11:** See `docs/CHANGELOG.md`.
 > **Purpose:** Single authoritative document. Every other file derives from this.
 > **Sources:** 
 >   - 26-min client briefing (May 10, Telegram audio)
@@ -11,7 +13,7 @@
 >   - Competitor market research (15+ competitors)
 >   - ImportGenius / public records (WPG RUC, 33 Chinese shipments)
 >   - Web research (La Vieja Holanda, Kabbalah Centre, social media)
-> **Cross-reference:** `docs/01-client/`, `docs/pricing-matrix-complete.md`, `docs/nexa-complete-intelligence-report.md`
+> **Cross-reference:** `docs/01-client/`, `docs/meetings/meeting-report-may-11.md`, `docs/09-market-intelligence/pricing-matrix-complete.md` (⚠️ deprecated), `docs/CHANGELOG.md`
 
 ---
 
@@ -260,34 +262,55 @@ Sonia's biggest operational pride:
 
 ---
 
-## 10. UPCOMING: INVESTOR MEETING (May 11)
+## 10. MAY 11 MEETING — OUTCOME
 
-- Sonia meeting with Dutch investors (Stef & Magda's contact)
-- She's scared — doesn't understand financial terminology
-- **Plan:** Record audio → send to Iván → Iván produces report of investor's main concerns about Paraguay
-- This is a test case for Sonia's ability to serve investors vs families
+The May 11 meeting with Sonia **resolved all pricing ambiguity and validated key brand decisions.**
+
+See `docs/meetings/meeting-report-may-11.md` for the full outcome, or `docs/CHANGELOG.md` for a summary of every assumption that changed.
+
+**TL;DR:**
+- ✅ $1,500 confirmed as the complete residency price
+- ✅ Commission model is the real revenue engine (properties 2.75%, vehicles, appliances)
+- ✅ Her story approved ("sin drama" — including the nervous breakdown)
+- ✅ Voice: 1st person for story, plural for services, institutional for legal
+- ✅ Luana is the only team member — 5 fake AI people to be removed
+- ✅ $200/day post-residency rate confirmed
+- ❌ The 4-tier program structure ($2,900/$4,400/$6,900) does not exist
+- ❌ Our financial model was wrong by 10x on both revenue and costs
 
 ---
 
-## 11. DOCUMENT HIERARCHY
+## 11. DOCUMENT HIERARCHY (updated May 11)
 
 ```
-docs/SOURCE_OF_TRUTH.md          ← YOU ARE HERE. Master reference.
-├── docs/client-analysis-complete.md    ← Full analysis, all Q&A answers
-├── docs/client-feedback-complete.md    ← Chronological feedback history
-├── docs/client-questions-for-sonia.md  ← Questions → Answers mapping
+docs/README.md                       ← Navigation. Start here.
+├── docs/CHANGELOG.md                ← What changed after May 11. READ FIRST.
+├── docs/SOURCE_OF_TRUTH.md          ← Master reference (pre-May 11 base + May 11 outcome)
+├── docs/meetings/
+│   ├── meeting-report-may-11.md     ← THE KEY DOCUMENT — pricing + brand resolved
+│   └── meeting-transcript-may-11-raw.txt ← Raw auto-transcription
 ├── docs/01-client/
-│   ├── client-intelligence.json        ← Structured data (all businesses)
-│   └── sonia-weiss-complete-profile.md ← Full founder profile
-├── docs/05-content/
-│   └── content-locales.md              ← Content by locale strategy
-├── docs/06-marketing/
-│   └── faq-dealclosing.md              ← 15 deal-closing Q&A (needs update)
-└── content/
-    ├── es.json                         ← Spanish website content
-    ├── en.json                         ← English website content
-    ├── nl.json                         ← Dutch website content
-    └── de.json                         ← German website content
+│   ├── sonia-weiss-complete-profile.md  ← Full founder profile
+│   ├── client-analysis-complete.md      ← Full analysis from May 8+10
+│   ├── client-feedback-complete.md      ← Chronological feedback history (bilingual)
+│   ├── client-intelligence.json         ← Structured data (all businesses)
+│   └── complete-questionnaire.md        ← 100 questions (83/100 answered)
+├── docs/09-market-intelligence/
+│   ├── pricing-matrix-complete.md       ← ⚠️ DEPRECATED — wrong pricing
+│   ├── financial-model.md               ← ⚠️ DEPRECATED — off by 10x
+│   ├── competitor-landscape.md          ← 15 competitors analyzed
+│   └── ... location data files
+├── docs/02-site/                        ← Site audit, components, specs
+├── docs/06-marketing/                   ← Lead magnets, emails, ads, testimonials
+├── docs/03-brand/                       ← Brand guide, social assets
+├── docs/10-deployment/                  ← Deployment runbooks
+├── docs/08-integrations/               ← HubSpot, GA4, WhatsApp setup
+├── docs/deliverables/                   ← HTML exports (checklists, cards, guides)
+└── content/                             ← Actual site content JSONs
+    ├── es.json                          ← Spanish website content
+    ├── en.json                          ← English website content
+    ├── nl.json                          ← Dutch website content
+    └── de.json                          ← German website content
 ```
 
 ---
@@ -339,10 +362,11 @@ docs/SOURCE_OF_TRUTH.md          ← YOU ARE HERE. Master reference.
 | All 4 locales filled | ✅ | ES/EN/NL/DE each have 34+ sections |
 | Site content file-based | ✅ | No Supabase dependency — pure JSON |
 | Section overrides built | ✅ | 8 component overrides in `src/components/` |
-| Pricing ambiguity flagged | ⚠️ | **$1,500 vs $2,900 — needs Sonia to resolve** |
-| Real photos taken | ❌ | Still AI placeholders |
-| WhatsApp QR scanned | ❌ | Bot configured but dead |
-| SEPRELAD status | ❌ | Ask her lawyer |
-| nexaparaguay.com DNS moved | ❌ | Still on Shopify |
-| GA4 wired | ❌ | Tag not loaded |
-| HubSpot/Mailchimp configured | ❌ | No API keys set |
+| Pricing resolved (May 11) | ✅ | **$1,500 confirmed**. Old $2,900-$6,900 model deprecated. |
+| Real photos taken | ❌ | Still AI placeholders. Sonia will send. |
+| WhatsApp QR scanned | ❌ | Bot configured but dead — needs chip first. |
+| SEPRELAD status | ❌ | Ask her lawyer. |
+| nexaparaguay.com DNS moved | ❌ | Still on Shopify. |
+| GA4 wired | ❌ | Tag not loaded. |
+| HubSpot/Mailchimp/GA4 configured | ❌ | Keys not set. |
+| Fake team photos removed | ❌ | 5 AI-generated portraits still on site. |

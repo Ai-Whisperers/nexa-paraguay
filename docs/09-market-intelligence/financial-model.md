@@ -1,5 +1,9 @@
-> **Status:** Current | **Last validated:** 2026-05-07
+> **Status:** ⚠️ DEPRECATED | **Last validated:** 2026-05-07 — **PRE-MAY-11 ASSUMPTIONS ARE WRONG**
 >
+> **⚠️⚠️⚠️ This document assumes 5-10 clients/month at $4,500 avg ticket = $270K-$540K/yr.**
+> **Reality from May 11 meeting:** 0.5-1 client/month at $1,500 avg = ~$18K-$36K/yr.
+> **Costs shown ($10K-$18K/mo) are 10x higher than reality (~$0 fixed costs).**
+> See `docs/meeting-report-may-11.md` and `docs/CHANGELOG.md` for current data.
 
 # Financial Model — Unit Economics, Revenue Projections & Valuation
 
