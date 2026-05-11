@@ -1,0 +1,38 @@
+{
+  "id": "comparar",
+  "targetKeyword": "comparativa Paraguay Portugal España residencia",
+  "slug": "comparar",
+  "titleKey": "comparisonPage.seo.title",
+  "descriptionKey": "comparisonPage.seo.description",
+  "sections": [
+    {
+      "id": "header",
+      "variant": "standard",
+      "content": "navigation"
+    },
+    {
+      "id": "hero",
+      "variant": "minimal",
+      "content": "comparisonPage.hero"
+    },
+    {
+      "id": "comparison-table",
+      "content": "comparisonPage.matrix"
+    },
+    {
+      "id": "cta-banner",
+      "variant": "solid",
+      "content": "comparisonPage"
+    },
+    {
+      "id": "footer",
+      "variant": "standard",
+      "content": "footer"
+    },
+    {
+      "id": "whatsapp-float",
+      "variant": "standard",
+      "content": "whatsapp"
+    }
+  ]
+}

@@ -1,10 +1,17 @@
 # SOURCE OF TRUTH — Nexa Paraguay
 
-> **Version:** 1.0 — 2026-05-10
-> **Status:** COMPLETE — All client questions answered.
-> **Purpose:** Single authoritative document. Every other file in this repo derives from this.
-> **Source:** 26-minute client briefing (May 10, 2026, Telegram audio) + prior text/WhatsApp feedback.
-> **Cross-reference:** `docs/client-analysis-complete.md`, `docs/client-feedback-complete.md`, `docs/client-questions-for-sonia.md`, `docs/01-client/client-intelligence.json`
+> **Version:** 2.0 — 2026-05-11
+> **Status:** COMPLETE + ENRICHED with location/pricing/data intelligence.
+> **Purpose:** Single authoritative document. Every other file derives from this.
+> **Sources:** 
+>   - 26-min client briefing (May 10, Telegram audio)
+>   - WhatsApp chat analysis (2,069 messages, Apr 21-May 10)
+>   - Google Maps API scrape (1,485 places in Asunción with GPS)
+>   - paragu-ai-leads dataset (6,796 businesses nationwide)
+>   - Competitor market research (15+ competitors)
+>   - ImportGenius / public records (WPG RUC, 33 Chinese shipments)
+>   - Web research (La Vieja Holanda, Kabbalah Centre, social media)
+> **Cross-reference:** `docs/01-client/`, `docs/pricing-matrix-complete.md`, `docs/nexa-complete-intelligence-report.md`
 
 ---
 
@@ -285,19 +292,57 @@ docs/SOURCE_OF_TRUTH.md          ← YOU ARE HERE. Master reference.
 
 ---
 
-## 12. AUDIT: INTEGRITY CHECKS
+## 12. COMPLETE DATA INVENTORY — WHAT WE HAVE
 
-| Check | Status |
-|-------|--------|
-| All 15 questions from client-questions-for-sonia.md answered | ✅ |
-| Business model fully documented (pricing, commissions, partners) | ✅ |
-| Sonia's personal story captured (PG + internal versions) | ✅ |
-| Day 1 protocol documented | ✅ |
-| Target personas confirmed by Sonia | ✅ |
-| Slogan confirmed | ✅ |
-| Commission network documented | ✅ |
-| Client fears & FAQ answers captured | ✅ |
-| Real client data documented (10 people, all Dutch) | ✅ |
-| What she rejected documented | ✅ |
-| What NOT to publish documented ($1,500, nervous breakdown details) | ✅ |
-| Upcoming actions documented (investor meeting May 11) | ✅ |
+### Location Data (Live Scraped — Google Maps API)
+| Dataset | Records | GPS | Format | Notes |
+|---------|---------|-----|--------|-------|
+| Asunción complete places | 1,485 | ✅ All | CSV + GeoJSON | Gyms, cafes, banks, schools, etc. |
+| National locations DB | 1,548 | ✅ All | JSON | 36 categories across 17 depts |
+| Central dept base scrape | 534 | ✅ All | CSV + GeoJSON | Original scrape before deep run |
+| Beauty/salon dataset | 348 (Asu) | ✅ All | CSV | From paragu-ai-leads repo |
+
+### Service Coverage (Total: 210 items documented)
+| Category | Count | Documented In |
+|----------|-------|---------------|
+| Currently on site | 8 | Site content JSONs |
+| Done but not on site | 17 | `docs/services-opportunities-matrix.md` |
+| Lead magnet opportunities | 4 | `docs/services-opportunities-matrix.md` |
+| Monthly retainer opportunities | 3 | `docs/services-opportunities-matrix.md` |
+| Additional opportunities | 178 | `docs/services-opportunities-matrix.md` |
+
+### Competitor Intelligence
+| Competitor | Price Range | Weakness Doc |
+|-----------|-------------|-------------|
+| DIY | $750-$1K | `docs/09-market-intelligence/competitor-landscape.md` |
+| MoveToParaguay | $1,200-$2,300 | `docs/09-market-intelligence/competitor-weaknesses.md` |
+| WeParaguay | $1,400-$6,500 | `docs/09-market-intelligence/competitor-weaknesses-full-audit.md` |
+| Paraguay Sovereign | $2,290-$5,490 | `docs/09-market-intelligence/competitor_research_report.md` |
+| Low Cost Paraguay | $350 | Sonia's mention |
+| Nexa (her price) | $1,500 (❓) | **AMBIGUITY — must resolve** |
+| Nexa (our model) | $2,900-$6,900 | `docs/pricing-matrix-complete.md` |
+
+## 13. AUDIT: INTEGRITY CHECKS
+
+| Check | Status | Notes |
+|-------|--------|-------|
+| All client questions documented | ✅ | 51 questions in `docs/01-client/meeting-may-11-questions.md` |
+| Business model documented | ✅ | `docs/pricing-matrix-complete.md` (32 services, 12 competitors) |
+| Sonia's personal story captured | ✅ | Full + PG versions in `docs/01-client/sonia-weiss-complete-profile.md` |
+| Day 1 protocol documented | ✅ | `docs/central-asuncion-complete-analysis.md` §14 |
+| Target personas defined | ✅ | 5 profiles in `docs/09-market-intelligence/customer_persona_dossiers.md` |
+| Commission network documented | ✅ | Properties 2.75%, vehicles/appliances/partners in `docs/pricing-matrix-complete.md` |
+| Client fears & FAQ captured | ✅ | On site + `docs/06-marketing/faq-dealclosing.md` |
+| Real client data | ✅ | 10 Dutch clients helped |
+| WhatsApp bot configured | ✅ | QR ready at `public/qr-nexa-whatsapp.png` — **NOT SCANNED** |
+| Location data completed | ✅ | 1,485 places with GPS in Asunción |
+| All 4 locales filled | ✅ | ES/EN/NL/DE each have 34+ sections |
+| Site content file-based | ✅ | No Supabase dependency — pure JSON |
+| Section overrides built | ✅ | 8 component overrides in `src/components/` |
+| Pricing ambiguity flagged | ⚠️ | **$1,500 vs $2,900 — needs Sonia to resolve** |
+| Real photos taken | ❌ | Still AI placeholders |
+| WhatsApp QR scanned | ❌ | Bot configured but dead |
+| SEPRELAD status | ❌ | Ask her lawyer |
+| nexaparaguay.com DNS moved | ❌ | Still on Shopify |
+| GA4 wired | ❌ | Tag not loaded |
+| HubSpot/Mailchimp configured | ❌ | No API keys set |

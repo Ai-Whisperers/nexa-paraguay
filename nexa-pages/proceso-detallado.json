@@ -1,9 +1,9 @@
 {
-  "id": "inversor",
-  "targetKeyword": "programa inversor Paraguay residencia inversion",
-  "slug": "inversor",
-  "titleKey": "landingInversor.seo.title",
-  "descriptionKey": "landingInversor.seo.description",
+  "id": "proceso-detallado",
+  "targetKeyword": "proceso residencia Paraguay paso a paso",
+  "slug": "proceso-detallado",
+  "titleKey": "processPage.seo.title",
+  "descriptionKey": "processPage.seo.description",
   "sections": [
     {
       "id": "header",
@@ -13,24 +13,24 @@
     {
       "id": "hero",
       "variant": "minimal",
-      "content": "landingInversor.hero"
+      "content": "processPage.hero"
     },
     {
       "id": "process-timeline",
-      "content": "landingInversor"
+      "content": "processPage"
     },
     {
-      "id": "programs",
-      "content": "landingInversor"
+      "id": "highlights",
+      "content": "processPage.highlights"
     },
     {
-      "id": "trust-signals",
-      "content": "landingInversor"
+      "id": "faq",
+      "content": "processPage.faq"
     },
     {
       "id": "cta-banner",
       "variant": "solid",
-      "content": "landingInversor"
+      "content": "processPage"
     },
     {
       "id": "footer",

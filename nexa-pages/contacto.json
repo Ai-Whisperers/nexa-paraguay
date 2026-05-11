@@ -24,10 +24,6 @@
       "content": "contactPage.contact"
     },
     {
-      "id": "booking-form",
-      "content": "contactPage.booking"
-    },
-    {
       "id": "footer",
       "variant": "standard",
       "content": "footer"

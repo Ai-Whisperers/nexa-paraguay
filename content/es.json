@@ -114,18 +114,98 @@
       ]
     },
     "whyCountry": {
-      "eyebrow": "POR QUÉ PARAGUAY",
-      "title": "Una oportunidad real para el inversor europeo",
-      "subtitle": "Descubrí por qué Paraguay es el destino ideal para establecer tu residencia, proteger tus ingresos y mejorar tu calidad de vida.",
-      "ctaText": "Conocer más sobre Paraguay →",
-      "ctaHref": "/por-que-paraguay"
+      "eyebrow": "Por qué Paraguay",
+      "honestNote": "La oportunidad es real, pero el proceso no es simple sin la guía adecuada. Para eso estamos.",
+      "pillars": [
+        {
+          "icon": "TrendingUp",
+          "title": "Entorno económico",
+          "description": "Crecimiento sostenido, inflación controlada, 10% de impuesto a la renta, sistema territorial.",
+          "bullets": [
+            "Impuesto corporativo 10%",
+            "Sistema territorial",
+            "Economía abierta"
+          ],
+          "imageUrl": "@src:whyParaguay.economic"
+        },
+        {
+          "icon": "Heart",
+          "title": "Calidad de vida",
+          "description": "Clima cálido, comunidad internacional creciente, poder adquisitivo significativo.",
+          "bullets": [
+            "Costo de vida favorable",
+            "Comunidad internacional",
+            "Seguridad personal"
+          ],
+          "imageUrl": "@src:whyParaguay.lifestyle"
+        },
+        {
+          "icon": "Landmark",
+          "title": "Estabilidad fiscal",
+          "description": "Régimen fiscal territorial con reglas transparentes y entorno predecible.",
+          "bullets": [
+            "Sistema territorial",
+            "Regulación estable",
+            "Sin impuestos sobre ingresos del exterior"
+          ],
+          "imageUrl": "@src:whyParaguay.tax"
+        }
+      ],
+      "title": "Una oportunidad real para el inversor europeo"
     },
     "process": {
-      "eyebrow": "CÓMO FUNCIONA",
+      "ctaHref": "/nl/contacto",
+      "ctaLabel": "Iniciá mi proceso",
+      "eyebrow": "Cómo funciona",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Elegí tus Servicios",
+          "description": "Elegí el apoyo específico que necesitás. Creamos una lista personalizada de documentos que debés reunir en tu país de origen.",
+          "icon": "ClipboardCheck",
+          "image": {
+            "$img": "process.consultation"
+          }
+        },
+        {
+          "number": 2,
+          "title": "Procesamiento Paralelo",
+          "description": "Mientras preparás tus documentos en casa, nosotros comenzamos el trabajo en el terreno. Preparamos todas las gestiones locales.",
+          "icon": "Layers",
+          "image": {
+            "$img": "process.documents"
+          }
+        },
+        {
+          "number": 3,
+          "title": "El Día Operativo",
+          "description": "Con tus documentos en mano viajás a Paraguay. Te acompañamos en todas las citas presenciales en un solo día.",
+          "icon": "CalendarCheck",
+          "image": {
+            "$img": "process.arrival"
+          }
+        },
+        {
+          "number": 4,
+          "title": "Cédula y Activación Financiera",
+          "description": "Una vez emitida tu cédula, activamos tu infraestructura financiera. Gestionamos tu RUC y abrimos tus cuentas bancarias.",
+          "icon": "Building",
+          "image": {
+            "$img": "process.banking"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Instalación y Estilo de Vida",
+          "description": "Con tu base legal y financiera lista, te ayudamos a instalarte: encontrar la casa o departamento perfecto y un vehículo confiable.",
+          "icon": "Home",
+          "image": {
+            "$img": "process.completion"
+          }
+        }
+      ],
       "title": "Un proceso claro, paso a paso",
-      "totalDuration": "Tiempo total estimado: 8-12 semanas",
-      "ctaLabel": "Ver el proceso completo →",
-      "ctaHref": "/proceso"
+      "totalDuration": "Tiempo total estimado: 8–12 semanas."
     },
     "finalCta": {
       "title": "Dé el primer paso",
@@ -134,11 +214,71 @@
       "buttonHref": "/contacto"
     },
     "services": {
-      "eyebrow": "NUESTROS SERVICIOS",
-      "title": "Todo lo que necesitás para tu mudanza",
-      "subtitle": "Nueve servicios profesionales en tres áreas: documentación legal, banca e impuestos, y bienes raíces.",
-      "ctaText": "Ver todos los servicios →",
-      "ctaHref": "/es/servicios"
+      "eyebrow": "Nuestros Servicios",
+      "groups": [
+        {
+          "id": "residency-legal",
+          "title": "Residencia y Documentos Legales",
+          "subtitle": "Los primeros pasos esenciales para tu vida en Paraguay.",
+          "items": [
+            {
+              "title": "Residencia Permanente",
+              "description": "Gestión profesional de tu solicitud de residencia.",
+              "icon": "FileText"
+            },
+            {
+              "title": "Cédula de Identidad Paraguaya",
+              "description": "Asistencia completa para obtener tu cédula local.",
+              "icon": "CreditCard"
+            },
+            {
+              "title": "Apostilla y Traducción",
+              "description": "Gestionamos la traducción certificada y verificación legal de todos tus documentos extranjeros.",
+              "icon": "Globe"
+            }
+          ]
+        },
+        {
+          "id": "banking-tax",
+          "title": "Banca e Impuestos",
+          "subtitle": "Estableciendo tu huella financiera en el país.",
+          "items": [
+            {
+              "title": "Apertura de Cuenta Bancaria",
+              "description": "Orientación para abrir cuentas bancarias locales.",
+              "icon": "Building"
+            },
+            {
+              "title": "Registro Tributario (RUC)",
+              "description": "Configuración de tu RUC para uso personal o empresarial.",
+              "icon": "Calculator"
+            }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "title": "Bienes Raíces",
+          "subtitle": "Encontrar el lugar ideal para vivir, ya sea por un mes o toda la vida.",
+          "items": [
+            {
+              "title": "Alquiler de Departamentos y Casas",
+              "description": "Ayuda para encontrar alquileres de calidad en el mercado local.",
+              "icon": "Home"
+            },
+            {
+              "title": "Compra de Propiedades",
+              "description": "Asistencia experta para encontrar y comprar propiedades.",
+              "icon": "Search"
+            },
+            {
+              "title": "Debida Diligencia",
+              "description": "Verificamos títulos y situación legal de cualquier propiedad.",
+              "icon": "Shield"
+            }
+          ]
+        }
+      ],
+      "title": "Soluciones profesionales para cada paso de tu mudanza"
     },
     "feedback": {
       "eyebrow": "TU OPINIÓN",
@@ -405,9 +545,9 @@
   },
   "aboutPage": {
     "cta": {
-      "title": "¿Querés conocer al equipo?",
-      "subtitle": "Agendá una llamada gratuita de 30 minutos. Sin presión, solo una charla.",
-      "buttonText": "Agendar conocernos",
+      "title": "¿Quieres conocer al equipo?",
+      "subtitle": "Agenda una llamada gratuita de 30 minutos. Sin presión, solo una conversación.",
+      "buttonText": "Agenda presentación",
       "buttonHref": "/contacto",
       "eyebrow": "",
       "tagline": "",
@@ -506,15 +646,6 @@
           "image": "@src:images.trust.migraciones"
         }
       ]
-    },
-    "cta": {
-      "title": "¿Quieres conocer al equipo?",
-      "subtitle": "Agenda una llamada gratuita de 30 minutos. Sin presión, solo una conversación.",
-      "buttonText": "Agenda presentación",
-      "buttonHref": "/contacto",
-      "eyebrow": "",
-      "tagline": "",
-      "whatsapp": ""
     },
     "gallery": {
       "title": "Nuestra oficina en Asunción",
@@ -3136,6 +3267,14 @@
       "title": "Comentarios — Nexa Paraguay",
       "description": "Opiniones y comentarios de clientes sobre Nexa Paraguay y el proceso de mudanza.",
       "targetKeyword": "comentarios Nexa Paraguay"
+    },
+    "fallback": {
+      "eyebrow": "TU OPINIÓN",
+      "title": "Compartí tu experiencia",
+      "namePlaceholder": "Tu nombre (opcional)",
+      "messagePlaceholder": "Escribí tu comentario o pregunta...",
+      "button": "Enviar",
+      "thanks": "¡Gracias por tu mensaje!"
     }
   },
   "bookingPage": {
@@ -3143,6 +3282,11 @@
       "title": "Agendar consulta — Nexa Paraguay",
       "description": "Agende una consulta gratuita de 30 minutos con Nexa Paraguay para su mudanza.",
       "targetKeyword": "agendar consulta Paraguay"
+    },
+    "fallback": {
+      "confirmTitle": "¡Recibido!",
+      "confirmText": "Te contactaremos en las próximas 24 horas para coordinar los siguientes pasos.",
+      "backCta": "Ver programas"
     }
   },
   "datosPersonalesPage": {
@@ -3151,5 +3295,274 @@
       "description": "Política de protección de datos personales y cumplimiento GDPR de Nexa Paraguay.",
       "targetKeyword": "protección datos Paraguay"
     }
+  },
+  "exitPopup": {
+    "title": "¿Considerando mudarte a Paraguay?",
+    "subtitle": "Descargá nuestra guía completa con todo lo que necesitás saber: costos, requisitos, trámites y más.",
+    "placeholder": "tu@email.com",
+    "ctaLabel": "Descargar guía gratuita",
+    "closeLabel": "No, gracias",
+    "disclaimer": "Sin spam. Te enviaremos la guía y 1-2 correos más. Podés cancelar cuando quieras."
+  },
+  "retainerPlans": {
+    "title": "Planes de Suscripción",
+    "subtitle": "Soporte continuo después de tu instalación",
+    "tiers": [
+      {
+        "name": "Básico",
+        "price": "$50-100/mes",
+        "includes": [
+          "Recordatorios de renovación de documentos",
+          "Consultas rápidas por WhatsApp",
+          "Actualizaciones regulatorias"
+        ]
+      },
+      {
+        "name": "Estándar",
+        "price": "$150-250/mes",
+        "includes": [
+          "Todo lo de Básico",
+          "Coordinación de pagos de servicios",
+          "Gestión de trámites menores",
+          "Acompañamiento médico"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "$300-500/mes",
+        "includes": [
+          "Todo lo de Estándar",
+          "Gestión de propiedades",
+          "Coordinación escolar",
+          "Conserje personal 24/7"
+        ]
+      }
+    ]
+  },
+  "familiesPage": {
+    "seo": {
+      "title": "Mudarse a Paraguay con hijos — Guía para familias",
+      "description": "Todo lo que necesitás saber para mudarte a Paraguay con tu familia: colegios, salud, seguridad, actividades y costos."
+    },
+    "hero": {
+      "headline": "Tu mudanza a Paraguay con toda la familia",
+      "subheadline": "Colegios internacionales, salud de primer nivel, barrios seguros. Te ayudamos con cada detalle.",
+      "trustBadges": [
+        "8 colegios internacionales",
+        "12 consultorios dentales",
+        "19 parques",
+        "Acompañamiento familiar"
+      ]
+    },
+    "schools": {
+      "eyebrow": "Educación",
+      "title": "Colegios internacionales en Asunción",
+      "subtitle": "Opciones para todas las nacionalidades y presupuestos.",
+      "items": [
+        {
+          "name": "St. Mary's School",
+          "curriculum": "Británico / IB",
+          "language": "EN/ES",
+          "tuition": "$9,000-12,000/año",
+          "ages": "3-18",
+          "location": "Villa Morra",
+          "best_for": "Familias británicas/holandesas"
+        },
+        {
+          "name": "American School",
+          "curriculum": "Americano / IB",
+          "language": "EN/ES",
+          "tuition": "$10,000-14,000/año",
+          "ages": "3-18",
+          "location": "Asunción",
+          "best_for": "Familias estadounidenses"
+        },
+        {
+          "name": "Colegio Goethe",
+          "curriculum": "Alemán",
+          "language": "DE/ES",
+          "tuition": "$7,000-10,000/año",
+          "ages": "3-18",
+          "location": "Asunción",
+          "best_for": "Familias alemanas"
+        },
+        {
+          "name": "Colegio del Sol",
+          "curriculum": "Nacional bilingüe",
+          "language": "ES/EN",
+          "tuition": "$4,000-6,000/año",
+          "ages": "3-18",
+          "location": "Varios",
+          "best_for": "Presupuesto bilingüe"
+        }
+      ]
+    },
+    "healthcare": {
+      "eyebrow": "Salud",
+      "title": "Atención médica para tu familia",
+      "description": "Paraguay cuenta con hospitales privados de primer nivel, dentistas, pediatras y especialistas. Todos los datos con GPS para que puedas ubicarlos.",
+      "items": [
+        {
+          "name": "Hospital Bautista",
+          "type": "General + Emergencias 24h",
+          "phone": "(021) 501-112",
+          "area": "Santísima Trinidad"
+        },
+        {
+          "name": "Hospital San Roque",
+          "type": "General + Emergencias",
+          "phone": "(021) 670-441",
+          "area": "Villa Morra"
+        },
+        {
+          "name": "12 consultorios dentales",
+          "type": "Promedio 4.77★",
+          "phone": "",
+          "area": "Distribuidos en Asunción"
+        },
+        {
+          "name": "10 consultorios médicos",
+          "type": "Promedio 4.63★",
+          "phone": "",
+          "area": "Distribuidos en Asunción"
+        }
+      ]
+    },
+    "safety": {
+      "eyebrow": "Seguridad",
+      "title": "Los barrios más seguros para familias",
+      "description": "Asunción tiene zonas muy seguras para criar hijos. Villa Morra y Carmelitas son las mejores opciones para familias europeas.",
+      "neighborhoods": [
+        {
+          "name": "Villa Morra",
+          "safety": "10/10",
+          "parks": "5 min",
+          "schools": "5 min",
+          "hospitals": "5 min",
+          "verdict": "★ Mejor para familias"
+        },
+        {
+          "name": "Carmelitas",
+          "safety": "10/10",
+          "parks": "5 min",
+          "schools": "10 min",
+          "hospitals": "5 min",
+          "verdict": "★ Tranquilidad"
+        },
+        {
+          "name": "San Cristóbal",
+          "safety": "9/10",
+          "parks": "10 min",
+          "schools": "10 min",
+          "hospitals": "10 min",
+          "verdict": "★ Zona en crecimiento"
+        },
+        {
+          "name": "San Bernardino",
+          "safety": "10/10",
+          "parks": "0 min (lago)",
+          "schools": "30 min",
+          "hospitals": "30 min",
+          "verdict": "★ Finde semana / retiro"
+        }
+      ]
+    },
+    "activities": {
+      "eyebrow": "Actividades",
+      "title": "Parques y espacios verdes",
+      "description": "Asunción tiene 19+ parques y espacios verdes con GPS registrados. Desde el enorme Ñu Guasu hasta plazas de barrio.",
+      "park_count": 19,
+      "gym_count": 98,
+      "stadium_count": 2
+    },
+    "costs": {
+      "eyebrow": "Costos",
+      "title": "Presupuesto mensual para una familia de 4",
+      "description": "Costos reales en Asunción para una familia con dos hijos en colegio internacional.",
+      "items": [
+        {
+          "category": "Alquiler (3 dorm, Villa Morra)",
+          "amount": "$1,200-2,000"
+        },
+        {
+          "category": "Colegio internacional (x2 hijos)",
+          "amount": "$1,800-2,500"
+        },
+        {
+          "category": "Alimentación",
+          "amount": "$600-800"
+        },
+        {
+          "category": "Seguro médico familiar",
+          "amount": "$200-350"
+        },
+        {
+          "category": "Transporte",
+          "amount": "$200-400"
+        },
+        {
+          "category": "Servicios",
+          "amount": "$150-250"
+        },
+        {
+          "category": "Entretenimiento",
+          "amount": "$200-400"
+        },
+        {
+          "category": "Ayuda doméstica",
+          "amount": "$100-200"
+        },
+        {
+          "category": "TOTAL ESTIMADO",
+          "amount": "$4,450-6,900/mes"
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para dar el paso con tu familia?",
+      "subtitle": "Agendá una consulta gratuita de 30 minutos. Sin compromiso.",
+      "buttonText": "Agendar consulta familiar",
+      "buttonHref": "/contacto"
+    }
+  },
+  "guidesPage": {
+    "seo": {
+      "title": "Guías para mudarse a Paraguay — Recursos gratuitos",
+      "description": "Descargá guías gratuitas sobre residencia, colegios, costo de vida y más."
+    },
+    "hero": {
+      "headline": "Guías gratuitas para tu mudanza",
+      "subheadline": "Descargá recursos prácticos preparados por Sonia. Sin spam, sin compromiso."
+    },
+    "guides": [
+      {
+        "title": "Checklist de documentos",
+        "description": "Todos los documentos que necesitás para tu residencia. Con estado de apóstilla y traducción.",
+        "download_url": "#",
+        "lang": "ES/NL/EN/DE",
+        "type": "PDF"
+      },
+      {
+        "title": "10 cosas que nadie te dice",
+        "description": "Lo que realmente significa mudarse a Paraguay. Tips que solo alguien que lo vivió puede contarte.",
+        "download_url": "#",
+        "lang": "ES/EN",
+        "type": "PDF"
+      },
+      {
+        "title": "Guía de colegios internacionales",
+        "description": "Comparativa completa de 8 colegios: currículum, idioma, costos y ubicación.",
+        "download_url": "#",
+        "lang": "ES/EN",
+        "type": "PDF"
+      },
+      {
+        "title": "Primeros 30 días en Paraguay",
+        "description": "Plan día por día desde que llegás al aeropuerto hasta que tenés todo funcionando.",
+        "download_url": "#",
+        "lang": "ES/EN",
+        "type": "PDF"
+      }
+    ]
   }
 }

@@ -2,89 +2,120 @@
 
 **Live:** https://nexa.paragu-ai.com  
 **Repo:** github.com/Ai-Whisperers/nexa-paraguay  
-**Docker service:** nexa_web (1 replica)
+**Docker service:** nexa_web (1 replica)  
+**Local dev:** `http://localhost:3000`  
 
 ## Core Architecture
 
-- **Framework:** `@ai-whisperers/*` package ecosystem (client imports via npm `file:` links)
-- **Pages Router** (Next.js 16, React 19, TypeScript 5)
-- **Content:** JSON-driven — `content/es.json`, `nexa-pages/*.json`, `images.json`, `site.json`
-- **Loading:** `src/lib/loader.ts` with 60s in-memory TTL cache (replaces raw `readFileSync`)
-- **Section map:** 26 components in `SECTION_MAP` (see `docs/02-site/COMPONENT_REGISTRY.md`)
-- **Types:** 30+ interfaces in `src/types.ts` define the full data contract
-- **Styling:** `src/theme.ts` — 20+ color tokens, all inline styles reference this
+- **Framework:** Next.js 16 App Router (React 19, TypeScript 5)
+- **Content:** Purely file-based — `content/{locale}.json`, `nexa-pages/{slug}.json`, `images.json`, `site.json`, `testimonials.json`
+- **No database:** All content loads from JSON files via `src/lib/page-data.ts` (no Supabase)
+- **Loading:** In-memory LRU cache with 30s TTL
+- **Section overrides:** Component overrides live in `src/components/` and are registered in `src/components/SectionsRenderer.tsx`
+- **Locales:** 4 complete — ES, EN, NL, DE (all 34 sections, all properly translated)
+- **Styling:** Tailwind CSS v4 with `@theme` tokens in `src/app/globals.css`
 
 ## Key Files
 
 | File | Purpose |
 |------|---------|
-| `content/es.json` | All text content (100KB, 15+ page sections) |
-| `content/en.json`, `nl.json`, `de.json` | Multi-locale content (currently only ES served) |
-| `nexa-pages/*.json` | Page configs — section ordering + content key references |
-| `images.json` | Image manifest — 82 entries across 14 categories |
+| `content/{locale}.json` | All text content per locale (34 sections each) |
+| `nexa-pages/{slug}.json` | Page configs — section ordering + content key references |
+| `images.json` | Image manifest — 82+ entries across 14 categories |
 | `site.json` | Domain, features, booking URL, social links |
-| `src/pages/[slug].tsx` | Main page renderer — SSR, SECTION_MAP dispatch |
-| `src/pages/index.tsx` | Homepage renderer (separate file) |
-| `src/pages/blog/[slug].tsx` | Individual blog post renderer — MDX-driven SSR |
-| `src/lib/loader.ts` | Shared JSON loader with 60s cache |
-| `src/types.ts` | 30+ TypeScript interfaces |
-| `src/theme.ts` | Brand design tokens |
-| `scripts/screenshot-all.mjs` | Full-page screenshot automation — builds, starts server, captures 22 pages |
-| `docs/06-marketing/testimonials-google-form.md` | Google Form template for collecting client testimonials |
-| `content/blog/posts-en.json` | English full-article blog posts (translated from ES) |
-| `content/blog/posts-nl.json` | Dutch full-article blog posts (translated from ES) |
-| `content/blog/posts-de.json` | German full-article blog posts (translated from ES) |
-| `blog/en/*.mdx` | 16 English MDX blog articles (6 originals + 10 translated from ES) |
-| `blog/nl/*.mdx` | 11 Dutch MDX blog articles (1 original + 10 translated from ES) |
-| `blog/de/*.mdx` | 10 German MDX blog articles (translated from ES) |
+| `src/lib/page-data.ts` | File-based content loader (no Supabase) |
+| `src/components/SectionsRenderer.tsx` | Section registry with overrides |
+| `src/components/ProcessSection.tsx` | Timeline component override |
+| `src/components/TeamSection.tsx` | Team cards override |
+| `src/components/StorySection.tsx` | Story layout override |
+| `src/components/PageHeroSection.tsx` | Hero section override |
+| `src/components/CtaBanner.tsx` | CTA banner override |
+| `src/components/BlogSection.tsx` | Blog grid override |
+| `src/components/FaqSection.tsx` | FAQ with categories override |
+| `src/components/BookingEmbedSection.tsx` | Booking section override |
+| `src/components/ContactDetailsSection.tsx` | Contact card override |
+| `src/components/ExitPopup.tsx` | Exit popup (strings from content JSON) |
 
 ## Build & Deploy
 
+### Local Development
+```bash
+npm run dev          # Dev server with Turbopack (compiles in ~350ms)
+npm run build        # Production build
+npm run start        # Production server
+```
+
+### Docker Deploy (VPS)
 ```bash
 npm run build
-npm run screenshots      # Full-page screenshot automation (22 pages → screenshots/<iter>/)
 docker build -t nexa-paraguay:prod --no-cache .
 docker service update --force --image nexa-paraguay:prod nexa_web
 ```
 
-Requires `NODE_AUTH_TOKEN` for `@ai-whisperers/client-kit` (if building with unpublished packages).
+### Screenshots
+```bash
+npm run screenshots  # Captures 22 pages
+```
 
-## Documentation (docs/)
+## Documentation
 
-| Category | Contents |
-|----------|----------|
-| `00-architecture/` | Core framework, bridge points, data flow, standards |
-| `01-client/` | Stakeholder info, intake, questionnaire responses |
-| `02-site/` | Architecture, audit, improvement plan, DNS, component registry |
-| `03-brand/` | Brand guide, tokens, image prompts, social assets |
-| `04-images/` | Image manifest (111 images), prompt library |
-| `05-content/` | Locales, blog catalog, editorial calendar |
-| `06-marketing/` | Comparisons, email nurture, FAQ, lead magnets, ads, testimonials |
-| `07-seo/` | Keyword strategy, content gaps |
-| `08-integrations/` | HubSpot, Mailchimp, GA4, WhatsApp AI bridge |
-| `09-market-intelligence/` | Solstein analysis, market sizing, competition, financial model |
-| `10-deployment/` | Deployment runbook, CI/CD |
-| `11-launch/` | Launch runbook, pre-launch checklist |
-| `12-factory/` | NEW_CLIENT_BOOTSTRAP.md — template for creating new client repos |
+| Category | Key Files |
+|----------|-----------|
+| **Client Profile** | `docs/01-client/sonia-weiss-complete-profile.md`, `docs/01-client/client-intelligence.json` |
+| **Services Matrix** | `docs/01-client/services-opportunities-matrix.md` (210 items) |
+| **Pricing** | `docs/pricing-matrix-complete.md` (32 services, 12 competitors) |
+| **Asunción Data** | `docs/asuncion-complete-1485-places.csv` (1,485 places with GPS) |
+| **Full Report** | `docs/nexa-complete-intelligence-report.md` |
+| **Location Intel** | `docs/central-asuncion-complete-analysis.md` |
+| **Department Analysis** | `docs/complete-paraguay-department-analysis.md` |
+| **Location DB** | `docs/paraguay-locations-database.json` (1,548 nationwide) |
+| **Meeting Prep** | `docs/01-client/meeting-may-11-questions.md` (51 questions) |
+| **Deployment** | `docs/10-deployment/deployment-runbook.md` |
+| **Launch** | `docs/11-launch/launch-runbook.md` |
+| **Full Index** | `docs/README.md` |
+
+## Client: Sonia Weiss
+
+| Field | Value |
+|-------|-------|
+| Known as | Sonia Weiss (tax: Sonia Edith López Charotti Ramírez) |
+| Phone | +595 982 515 138 |
+| Languages | Spanish, Dutch (7 yrs), English, Guarani |
+| Background | 7 years in Netherlands (music industry → mother) |
+| Businesses | WPG Group SRL, La Vieja Holanda, Casa Weiss, Nexa Paraguay |
+| Children | Iván (you), Kiki, Luana |
+| Referral commission | Properties 2.75%, vehicles/appliances (undocumented) |
+| See full profile | `docs/01-client/sonia-weiss-complete-profile.md` |
 
 ## Critical Notes
 
-- `is_demo: true` in site.json — flip when placeholders replaced
-- Team portraits, testimonials, and stock imagery are AI placeholders as of May 2026
-- Nexa's primary domain (nexaparaguay.com) still points to Shopify — needs DNS A record to 72.61.44.159
-- GA4 measurement ID: G-XE49GLEP34
-- See `docs/00-architecture/ARCHITECTURE.md` for the Core-to-Client bridge explanation
+- **Pricing AMBIGUITY:** Sonia said "$1,500 todo incluido" in audio. Our model says $2,900-$6,900. Most likely: $1,500 her fee + ~$1,400 costs = $2,900 total. **Must resolve with Sonia.**
+- **No real photos on site** — all AI placeholders. Need to take photos.
+- **WhatsApp bot QR not scanned** — QR ready but bot is dead. Scan from WhatsApp Settings → Linked Devices.
+- **nexaparaguay.com** still points to Shopify — needs DNS A record to `72.61.44.159`.
+- **SEPRELAD** registration status unknown — ask her lawyer.
+- **All content is file-based** — edit `content/{locale}.json` for text, `nexa-pages/{slug}.json` for page config.
+- **GA4 measurement ID:** G-XE49GLEP34 (not wired — gtag not loaded).
+- **Section overrides** live in `src/components/` and are registered in `SectionsRenderer.tsx`.
 
-## WhatsApp AI Bot Setup
+## WhatsApp AI Bot
 
 | Item | Value |
 |------|-------|
 | Bridge URL | https://whatsapp-ai.sunstein.cloud |
-| Nexa client instance | `client-nexa-paraguay-5138` (phone: 595982515138) |
+| Instance | `client-nexa-paraguay-5138` (phone: 595982515138) |
 | Mode | `ventas` (sales) — auto-qualifies leads |
-| Personality | Loaded with full FAQ, programs, tax data, qualification flow |
 | Evolution instance | `nexa-paraguay` |
 | QR scan image | `public/qr-nexa-whatsapp.png` |
-| **NEXT STEP** | Team must scan QR from WhatsApp (Settings → Linked Devices) |
+| **NEXT STEP** | Scan QR from WhatsApp (Settings → Linked Devices) |
 
-After QR scan: AI responds in EN/NL/DE/ES, qualifies leads (hot/warm/cold), books consultations. See `docs/08-integrations/whatsapp-ai-bridge.md`.
+## Services Sonia Offers (32 total)
+
+### On Site (8)
+Residencia Permanente, Cédula, Apostilla y Traducción, Cuenta Bancaria, RUC, Alquiler, Compra de Propiedades, Debida Diligencia
+
+### Off Site (17 — Add these!)
+Vehicle purchase (commission), Appliance purchase, SIM chip, School research, Medical accompaniment, Health insurance, Spanish teacher, Social integration, Supermarket tours, Airbnb setup, Legal structure, Partner referrals, Interpol cert, Driving license, Work permit, Post-residency support (12mo), Scam prevention tours
+
+### Revenue Opportunities (8)
+Document Checklist PDF, "10 Things" PDF, Schools Guide, First 30 Days, Monthly retainer ($50-500/mo), Property commissions (2.75%), Vehicle/appliance commissions, Partner referral commissions

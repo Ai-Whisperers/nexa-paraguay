@@ -1,0 +1,49 @@
+{
+  "id": "deutschland",
+  "targetKeyword": "nach Paraguay auswandern deutsch",
+  "slug": "deutschland",
+  "titleKey": "deutschlandPage.seo.title",
+  "descriptionKey": "deutschlandPage.seo.description",
+  "sections": [
+    {
+      "id": "header",
+      "content": "navigation"
+    },
+    {
+      "id": "hero",
+      "content": "deutschlandPage.hero"
+    },
+    {
+      "id": "story",
+      "content": "deutschlandPage.whySonia"
+    },
+    {
+      "id": "comparison-table",
+      "content": "deutschlandPage.taxComparison"
+    },
+    {
+      "id": "process-timeline",
+      "content": "deutschlandPage.process"
+    },
+    {
+      "id": "programs",
+      "content": "deutschlandPage.targetClients"
+    },
+    {
+      "id": "guides",
+      "content": "deutschlandPage.costs"
+    },
+    {
+      "id": "cta-banner",
+      "content": "deutschlandPage"
+    },
+    {
+      "id": "footer",
+      "content": "footer"
+    },
+    {
+      "id": "whatsapp-float",
+      "content": "whatsapp"
+    }
+  ]
+}

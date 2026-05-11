@@ -1,13 +1,11 @@
 import { readFileSync, existsSync, readdirSync } from 'fs'
 import { join } from 'path'
-import { supabaseAdmin, TENANT_SLUG } from '@/lib/supabase'
 
 const REPO = process.cwd()
 
-// ── In-memory LRU cache ──
 interface CacheEntry { data: any; timestamp: number }
 const cache = new Map<string, CacheEntry>()
-const TTL = 30_000 // 30s
+const TTL = 30_000
 
 function getCached(key: string): any | null {
   const entry = cache.get(key)
@@ -23,134 +21,45 @@ function setCache(key: string, data: any) {
   }
 }
 
-// ── Tenant config (loaded once) ──
-let _tenantConfig: any = null
-
-async function loadTenantConfig(): Promise<any> {
-  if (_tenantConfig) return _tenantConfig
-
-  // Try Supabase first
+function loadJson<T>(...pathSegments: string[]): T | null {
   try {
-    const { data, error } = await supabaseAdmin
-      .from('tenant_config')
-      .select('*')
-      .eq('tenant_slug', TENANT_SLUG)
-      .single()
-
-    if (data && !error) {
-      _tenantConfig = data
-      return data
-    }
+    return JSON.parse(readFileSync(join(REPO, ...pathSegments), 'utf-8'))
   } catch {
-    // Supabase unavailable — file fallback
+    return null
   }
-
-  // File fallback
-  try {
-    const site = JSON.parse(readFileSync(join(REPO, 'site.json'), 'utf-8'))
-    const content: Record<string, any> = {}
-    for (const locale of site.locales || ['es', 'en', 'nl', 'de']) {
-      try { content[locale] = JSON.parse(readFileSync(join(REPO, 'content', `${locale}.json`), 'utf-8')) } catch {}
-    }
-    const images = JSON.parse(readFileSync(join(REPO, 'images.json'), 'utf-8'))
-    const testimonials = JSON.parse(readFileSync(join(REPO, 'testimonials.json'), 'utf-8'))
-    const pages: Record<string, any> = {}
-    const pagesDir = join(REPO, 'nexa-pages')
-    if (existsSync(pagesDir)) {
-      for (const f of readdirSync(pagesDir)) {
-        if (f.endsWith('.json')) pages[f.replace('.json', '')] = JSON.parse(readFileSync(join(pagesDir, f), 'utf-8'))
-      }
-    }
-    const blogPosts: Record<string, any> = {}
-    const blogDir = join(REPO, 'content', 'blog')
-    if (existsSync(blogDir)) {
-      for (const f of readdirSync(blogDir)) {
-        if (f.startsWith('posts') && f.endsWith('.json')) blogPosts[f] = JSON.parse(readFileSync(join(blogDir, f), 'utf-8'))
-      }
-    }
-    _tenantConfig = { tenant_slug: TENANT_SLUG, site, content, images, testimonials, pages, blog_posts: blogPosts }
-    return _tenantConfig
-  } catch { return null }
 }
 
-// ── loadPageData: async version supporting Supabase + file fallback ──
 export async function loadPageData(locale: string, slug: string): Promise<any> {
   const cacheKey = `page:${locale}:${slug}`
   const cached = getCached(cacheKey)
   if (cached) return cached
 
-  // Try Postgres via pg Pool (local Docker network) first
-  if (process.env.USE_DB === 'true' || process.env.PGHOST) {
-    try {
-      const { loadTenantData } = require('./tenant-loader')
-      const dbData = await loadTenantData(TENANT_SLUG, locale)
-      if (dbData && dbData.content) {
-        const pageId = slug === 'home' ? 'home' : slug
-        const pageConfig = dbData.pageConfig?.[pageId] || null
-        const images = dbData.images || {}
-        const result = { content: dbData.content, pageConfig, images, pageId, locale }
-        setCache(cacheKey, result)
-        return result
-      }
-    } catch (err) {
-      console.warn('[page-data] DB loader failed, fallback to Supabase/client:', (err as Error).message)
-    }
-  }
-
-  // Try Supabase via JS client (cloud Supabase) as secondary
-  if (process.env.NEXT_PUBLIC_SUPABASE_URL) {
-    try {
-      const config = await loadTenantConfig()
-      if (config) {
-        const content = config.content?.[locale] || config.content?.['es']
-        if (content) {
-          const pageId = slug === 'home' ? 'home' : slug
-          const pageConfig = config.pages?.[pageId] || null
-          const images = config.images || {}
-          const testimonials = config.testimonials?.testimonials || []
-          if (testimonials.length) content.testimonials = testimonials
-          const result = { content, pageConfig, images, pageId, locale }
-          setCache(cacheKey, result)
-          return result
-        }
-      }
-    } catch {
-      console.warn('[page-data] Supabase fallback failed')
-    }
-  }
-
-  // File fallback (dev, CI, no DB available)
-  const config = await loadTenantConfig()
-  if (!config) return null
-
-  const content = config.content?.[locale] || config.content?.['es']
+  const content = loadJson<Record<string, any>>('content', `${locale}.json`)
   if (!content) return null
 
-  const pageId = slug === 'home' ? 'home' : slug
-  const pageConfig = config.pages?.[pageId] || null
-  const images = config.images || {}
-  const testimonials = config.testimonials?.testimonials || []
+  const pageConfig = loadJson<any>('nexa-pages', `${slug}.json`)
+  const images = loadJson<any>('images.json')
+  const testimonials = loadJson<any>('testimonials.json')
 
-  if (testimonials.length) content.testimonials = testimonials
+  if (testimonials?.testimonials?.length) {
+    content.testimonials = testimonials.testimonials
+  }
 
-  const result = { content, pageConfig, images, pageId, locale }
+  const result = { content, pageConfig, images, pageId: slug, locale }
   setCache(cacheKey, result)
   return result
 }
 
-// ── loadBlogPost: async version ──
 export async function loadBlogPost(locale: string, slug: string): Promise<any> {
   const cacheKey = `blog:${locale}:${slug}`
   const cached = getCached(cacheKey)
   if (cached) return cached
 
-  const config = await loadTenantConfig()
-  if (!config) return null
-
-  const content = config.content?.[locale] || config.content?.['es']
+  const content = loadJson<Record<string, any>>('content', `${locale}.json`)
   if (!content) return null
 
-  const posts = config.blog_posts?.[`posts-${locale}.json`] || config.blog_posts?.['posts.json'] || null
+  const posts = loadJson<any>('content', 'blog', `posts-${locale}.json`)
+    || loadJson<any>('content', 'blog', 'posts.json')
   if (!posts) return null
 
   const list = posts.posts || posts
@@ -162,20 +71,18 @@ export async function loadBlogPost(locale: string, slug: string): Promise<any> {
   return result
 }
 
-// ── Sync helpers for generateStaticParams (always file-based at build time) ──
 export function getPageSlugs(): string[] {
   const pagesDir = join(REPO, 'nexa-pages')
   if (!existsSync(pagesDir)) return []
-  return readdirSync(pagesDir).filter((f: string) => f.endsWith('.json')).map((f: string) => f.replace('.json', ''))
+  return readdirSync(pagesDir).filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', ''))
 }
 
 export function getBlogSlugs(locale: string): string[] {
-  const localePath = join(REPO, 'content', 'blog', `posts-${locale}.json`)
-  const fallbackPath = join(REPO, 'content', 'blog', 'posts.json')
-  const path = existsSync(localePath) ? localePath : (existsSync(fallbackPath) ? fallbackPath : null)
-  if (!path) return []
-  try {
-    const posts = JSON.parse(readFileSync(path, 'utf-8'))
-    return (posts.posts || posts).filter((p: any) => p.slug).map((p: any) => p.slug)
-  } catch { return [] }
+  const path = join(REPO, 'content', 'blog', `posts-${locale}.json`)
+  const fallback = join(REPO, 'content', 'blog', 'posts.json')
+  const target = existsSync(path) ? path : (existsSync(fallback) ? fallback : null)
+  if (!target) return []
+  const posts = loadJson<any>(...target.replace(REPO + '/', '').split('/'))
+  if (!posts) return []
+  return (posts.posts || posts).filter((p: any) => p.slug).map((p: any) => p.slug)
 }
