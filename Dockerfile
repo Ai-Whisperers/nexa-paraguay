@@ -6,11 +6,13 @@ WORKDIR /app
 RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json* .npmrc ./
 RUN npm install --legacy-peer-deps 2>&1 || true
+RUN node scripts/copy-ai-packages.cjs
 
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+COPY .packages ./.packages
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NEXT_PUBLIC_GA4_ID=G-XE49GLEP34
 ENV NEXT_PUBLIC_SUPABASE_URL=https://qyvokpribmbrosafntqa.supabase.co
