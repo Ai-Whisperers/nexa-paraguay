@@ -1,4 +1,4 @@
-import { LOCALES, DEFAULT_LOCALE, LOCALE_COOKIE, resolveLocale } from '@ai-whisperers/i18n'
+import { LOCALES, DEFAULT_LOCALE, LOCALE_COOKIE } from '@ai-whisperers/i18n'
 import { NextRequest, NextResponse } from 'next/server'
 
 function getLocale(request: NextRequest): string {
@@ -10,7 +10,7 @@ function getLocale(request: NextRequest): string {
   return DEFAULT_LOCALE
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname
   if (pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith('/images') || pathname.startsWith('/fonts') || pathname === '/favicon.ico' || pathname.includes('.')) return NextResponse.next()
   const segments = pathname.split('/').filter(Boolean)

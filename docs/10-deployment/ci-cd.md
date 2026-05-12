@@ -1,87 +1,59 @@
-> **Status:** Current | **Last validated:** 2026-05-07
->
+> **Status:** Current | **Last validated:** 2026-05-12
 
 # CI/CD — Nexa Paraguay
 
-> CI/CD is **not managed locally** in this repository. There is no
-> `.github/workflows/` directory in the `nexa-paraguay` repo.
+CI/CD is managed in this repository through local GitHub Actions workflows in `.github/workflows/`.
 
-## Centralized CI/CD Architecture
+## Active Workflows
 
-Pipeline orchestration is handled by the **Ai-Whisperers/ci-cd** central
-workflows repository. This repo is registered in the **clients.json**
-registry, which maps each client site to its deployment configuration.
-
-### How it works
-
-1. A push/merge to the `main` branch triggers a webhook to the
-   `Ai-Whisperers/ci-cd` central orchestrator.
-2. The orchestrator looks up `nexa-paraguay` in `clients.json` to
-   determine:
-   - Build command (`npm run build`)
-   - Docker image name and tag
-   - Target environment (staging / production)
-   - Secrets to inject (from the central vault)
-   - Deployment target (Docker Swarm node)
-3. The pipeline runs the build, creates the Docker image, and triggers
-   a rolling update on the Swarm cluster.
-
-### clients.json Registry (conceptual)
-
-```json
-{
-  "nexa-paraguay": {
-    "repo": "Ai-Whisperers/nexa-paraguay",
-    "branch": "main",
-    "build": "npm run build",
-    "dockerfile": "Dockerfile",
-    "image": "nexa-paraguay:prod",
-    "service": "nexa_web",
-    "replicas": 2,
-    "domains": [
-      "nexa.paragu-ai.com",
-      "nexa-paraguay.paragu-ai.com"
-    ],
-    "env": {
-      "NODE_ENV": "production",
-      "NEXT_PUBLIC_APP_URL": "https://nexaparaguay.com"
-    }
-  }
-}
-```
-
-### What the central pipeline does
-
-| Step | Action |
+| Workflow | Purpose |
 |---|---|
-| 1. Checkout | Clones `Ai-Whisperers/nexa-paraguay@main` |
-| 2. Install | `npm ci --legacy-peer-deps` (with `NODE_AUTH_TOKEN` from vault) |
-| 3. Lint | `npm run lint` |
-| 4. Build | `npm run build` |
-| 5. Docker build | `docker build -t nexa-paraguay:prod .` |
-| 6. Deploy | `docker stack deploy -c docker-compose.yml nexa` |
-| 7. Health check | HTTP GET to `https://nexa.paragu-ai.com` expects 200 |
+| `.github/workflows/deploy.yml` | Builds, pushes, deploys staging, promotes production, health-checks, and notifies on failure |
+| `.github/workflows/visual-regression.yml` | Visual regression support |
+| `.github/workflows/deploy-status.yml` | Deployment status support |
 
-### If you need to add local workflows
+## Deploy Workflow
 
-Currently there are none. To add a GitHub Actions workflow in the future,
-create `.github/workflows/deploy.yml` and reference the central
-orchestrator as a reusable workflow or composite action:
+`deploy.yml` runs on pushes to `main` and manual `workflow_dispatch`.
 
-```yaml
-name: Deploy
-on:
-  push:
-    branches: [main]
-jobs:
-  deploy:
-    uses: Ai-Whisperers/ci-cd/.github/workflows/deploy-client.yml@main
-    with:
-      client: nexa-paraguay
-    secrets: inherit
-```
+| Step | Current behavior |
+|---|---|
+| Checkout | `actions/checkout@v4` |
+| Node | `actions/setup-node@v4` with Node `22` and npm cache |
+| Install | `npm ci --legacy-peer-deps` |
+| Build | `npm run build` |
+| Tests | `npm test || echo "Tests skipped (no Playwright)"` |
+| Docker build | Tags `ghcr.io/ai-whisperers/nexa-paraguay:latest` and `:<sha>` |
+| Registry push | Logs into GHCR with `GITHUB_TOKEN` and pushes both tags |
+| Staging deploy | SSH to `root@nexa.paragu-ai.com`, update `${SERVICE}-staging` |
+| Visual check | `curl -sI https://staging.nexa.paragu-ai.com` |
+| Production promote | SSH update of `nexa_web` to the same commit SHA image |
+| Health check | `https://nexa.paragu-ai.com` must return HTTP `200` within retries |
+| Failure notification | Telegram webhook via repository secrets |
 
-### Manual fallback
+## Required GitHub Secrets
 
-If the central CI/CD pipeline is unavailable, deploy manually using the
-steps in `deployment-runbook.md`.
+| Secret | Purpose |
+|---|---|
+| `GITHUB_TOKEN` | Built-in token used for GHCR login |
+| `TELEGRAM_WEBHOOK_URL` | Failure notification endpoint |
+| `TELEGRAM_CHAT_ID` | Failure notification destination |
+| SSH credentials | Required by the runner environment for `root@nexa.paragu-ai.com` access |
+
+Runtime app secrets are not baked into the Dockerfile. Configure them on the Docker service, stack environment, or host secret manager:
+
+- `NEXT_PUBLIC_APP_URL`
+- `NEXT_PUBLIC_GA4_ID`
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `CRM_PORTAL_ID`
+- `CRM_ENDPOINT`
+- `MAILCHIMP_API_KEY`
+- `MAILCHIMP_LIST_ID`
+
+## Manual Fallback
+
+If GitHub Actions is unavailable, deploy manually using `docs/10-deployment/deployment-runbook.md`.
+
+Do not use old central-orchestrator or `docker stack deploy` instructions unless that workflow is intentionally reintroduced.

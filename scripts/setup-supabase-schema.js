@@ -5,9 +5,17 @@
  */
 const { createClient } = require('@supabase/supabase-js')
 
+function requireEnv(name) {
+  const value = process.env[name]
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${name}`)
+  }
+  return value
+}
+
 const supabase = createClient(
-  'https://qyvokpribmbrosafntqa.supabase.co',
-  'sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH'
+  requireEnv('NEXT_PUBLIC_SUPABASE_URL'),
+  requireEnv('SUPABASE_SERVICE_ROLE_KEY')
 )
 
 async function setup() {
@@ -17,7 +25,8 @@ async function setup() {
   const { data, error } = await supabase.from('site_content').select('count(*)', { count: 'exact', head: true })
   if (error && error.code === 'PGRST301') {
     console.log('Creating tables via Supabase Dashboard required.')
-    console.log('Go to: https://supabase.com/dashboard/project/qyvokpribmbrosafntqa/sql/new')
+    const projectRef = process.env.SUPABASE_PROJECT_REF || '<project-ref>'
+    console.log(`Go to: https://supabase.com/dashboard/project/${projectRef}/sql/new`)
     console.log('')
     console.log('Paste this SQL:')
     console.log('')

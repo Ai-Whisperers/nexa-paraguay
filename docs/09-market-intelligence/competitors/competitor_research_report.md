@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Competitor Research Report: Paraguay Relocation/Residency Market
 
 **Date:** May 7, 2026
@@ -291,3 +293,5 @@
 5. **Community aspect is valued** — WeParaguay's meetups and Paraguay Easy Residency's Telegram group show community features are appreciated.
 
 6. **Bureau Paraguay and Truenorth don't exist** — These may be old/defunct names or the user had incorrect information.
+
+

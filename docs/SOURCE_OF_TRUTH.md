@@ -1,10 +1,11 @@
 # SOURCE OF TRUTH — Nexa Paraguay
 
 > **Version:** 2.1 — 2026-05-11
-> **Status:** ✅ Pricing resolved. All client questions answered.
+> **Status:** Sensitive client intelligence reference. Not the first-stop operational guide.
+> **Current operating truth:** Start with `docs/CURRENT_STATE.md`.
 > **⚠️ NOTE:** This document captures the full client picture as of May 10. For the **May 11 meeting outcome** (pricing confirmation, brand decisions), see `docs/meetings/meeting-report-may-11.md`.
 > **What changed after May 11:** See `docs/CHANGELOG.md`.
-> **Purpose:** Single authoritative document. Every other file derives from this.
+> **Purpose:** Client intelligence and source context. Operational facts now derive from `docs/CURRENT_STATE.md`.
 > **Sources:** 
 >   - 26-min client briefing (May 10, Telegram audio)
 >   - WhatsApp chat analysis (2,069 messages, Apr 21-May 10)
@@ -13,7 +14,7 @@
 >   - Competitor market research (15+ competitors)
 >   - ImportGenius / public records (WPG RUC, 33 Chinese shipments)
 >   - Web research (La Vieja Holanda, Kabbalah Centre, social media)
-> **Cross-reference:** `docs/01-client/`, `docs/meetings/meeting-report-may-11.md`, `docs/09-market-intelligence/pricing-matrix-complete.md` (⚠️ deprecated), `docs/CHANGELOG.md`
+> **Cross-reference:** `docs/CURRENT_STATE.md`, `docs/01-client/`, `docs/meetings/meeting-report-may-11.md`, `docs/09-market-intelligence/pricing/pricing-matrix-complete.md` (deprecated), `docs/CHANGELOG.md`
 
 ---
 

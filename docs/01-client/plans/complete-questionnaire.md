@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Complete Client Questionnaire — 100 Preguntas para Sonia
 
 > **Versión:** 2.0 | **Fecha:** 2026-05-11
@@ -471,3 +473,5 @@
 | Página nueva: alemana | `/de/deutschland` |
 | Página nueva: familias | `/*/familias` |
 | Sitio live | https://nexa.paragu-ai.com |
+
+

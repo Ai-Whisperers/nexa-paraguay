@@ -1,4 +1,4 @@
-# Nexa Paraguay — Architecture Refactor Plan
+﻿# Nexa Paraguay — Architecture Refactor Plan
 
 ## Current State (Problems)
 
@@ -54,7 +54,7 @@ src/
 ├── app/
 │   ├── layout.tsx              # ✅ Root layout
 │   ├── globals.css             # ✅ Tailwind 4 @theme
-│   ├── middleware.ts           # ✅ Locale detection
+│   ├── proxy.ts           # ✅ Locale detection
 │   ├── sitemap.ts              # ✅ Hreflang sitemap
 │   ├── [locale]/page.tsx      # ✅ Home page (ISR 1h)
 │   ├── [locale]/[slug]/page.tsx # ✅ Dynamic pages (ISR 1h)
@@ -132,3 +132,4 @@ See `globals.css` for the full `@theme` block. Key values:
 - `src/lib/page-data.ts` — already server-only
 - `src/types.ts` — no changes needed
 - `src/theme.ts` — reference only (values are now in CSS @theme)
+

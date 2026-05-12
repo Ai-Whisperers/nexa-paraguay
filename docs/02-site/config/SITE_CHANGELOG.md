@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Nexa Paraguay — Everything That Needs to Change on the Site
 
 > **Source:** All client feedback synthesized (May 8 → May 9 → May 10 → May 11)
@@ -414,3 +416,5 @@ P6 — BLOCKED (Waiting on Sonia)
 | App Router | ✅ Keep | Current architecture |
 | Docker Swarm deployment | ✅ Keep | Proven pipeline |
 | Supabase admin auth | ✅ Keep | Works for Sonia's admin needs |
+
+

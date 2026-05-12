@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Client Tools & Deliverables — Nexa Paraguay
 
 > **Purpose:** Ready-to-use materials Sonia can give clients immediately.
@@ -257,3 +259,5 @@ A 2-page PDF that sets expectations. For each language:
 - *"Un solo viaje, todo incluido."* (one trip, all included)
 - *"Acompañamiento de cerca, no una oficina de trámites."* (close accompaniment, not a paperwork office)
 - *"Te ayudo a evitar que te estafen con propiedades."* (I help you avoid property scams)
+
+

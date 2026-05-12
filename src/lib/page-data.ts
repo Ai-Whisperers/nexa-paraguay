@@ -3,10 +3,9 @@
 import { readFileSync, existsSync, readdirSync } from 'fs'
 import { join } from 'path'
 
-const REPO = process.cwd()
 const TENANT = 'nexa-paraguay'
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://qyvokpribmbrosafntqa.supabase.co'
-const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_KQ-sFNr7r6AauoG0B4nyTg_vuPHmeCm'
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
 
 interface CacheEntry { data: any; timestamp: number }
 const cache = new Map<string, CacheEntry>()
@@ -27,12 +26,18 @@ function setCache(key: string, data: any) {
 }
 
 function loadJson<T>(...pathSegments: string[]): T | null {
-  try { return JSON.parse(readFileSync(join(REPO, ...pathSegments), 'utf-8')) }
+  try { return JSON.parse(readFileSync(join(/* turbopackIgnore: true */ process.cwd(), ...pathSegments), 'utf-8')) }
   catch { return null }
+}
+
+function hasSupabaseConfig(): boolean {
+  return !!SUPABASE_URL && !!SUPABASE_KEY && !SUPABASE_URL.includes('<') && !SUPABASE_KEY.includes('<')
 }
 
 // ── Load from Supabase REST API ──
 async function loadFromSupabase(locale: string): Promise<Record<string, any> | null> {
+  if (!hasSupabaseConfig()) return null
+
   try {
     const url = `${SUPABASE_URL}/rest/v1/site_content?select=key_path,content&tenant_slug=eq.${TENANT}&locale=eq.${locale}`
     const res = await fetch(url, {
@@ -120,17 +125,17 @@ export async function loadBlogPost(locale: string, slug: string): Promise<any> {
 }
 
 export function getPageSlugs(): string[] {
-  const pagesDir = join(REPO, 'nexa-pages')
+  const pagesDir = join(/* turbopackIgnore: true */ process.cwd(), 'nexa-pages')
   if (!existsSync(pagesDir)) return []
   return readdirSync(pagesDir).filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', ''))
 }
 
 export function getBlogSlugs(locale: string): string[] {
-  const path = join(REPO, 'content', 'blog', `posts-${locale}.json`)
-  const fallback = join(REPO, 'content', 'blog', 'posts.json')
-  const target = existsSync(path) ? path : (existsSync(fallback) ? fallback : null)
-  if (!target) return []
-  const posts = loadJson<any>(...target.replace(REPO + '/', '').split('/'))
+  const localizedPosts = join(/* turbopackIgnore: true */ process.cwd(), 'content', 'blog', `posts-${locale}.json`)
+  const fallbackPosts = join(/* turbopackIgnore: true */ process.cwd(), 'content', 'blog', 'posts.json')
+  const posts = existsSync(localizedPosts)
+    ? loadJson<any>('content', 'blog', `posts-${locale}.json`)
+    : (existsSync(fallbackPosts) ? loadJson<any>('content', 'blog', 'posts.json') : null)
   if (!posts) return []
   return (posts.posts || posts).filter((p: any) => p.slug).map((p: any) => p.slug)
 }

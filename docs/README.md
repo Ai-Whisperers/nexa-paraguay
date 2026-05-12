@@ -12,6 +12,7 @@
 | 🏠 **Site lives here** | `/root/nexa-paraguay` |
 | 🌐 **Live site** | `https://nexa.paragu-ai.com` (VPS) / `http://localhost:3000` (local) |
 | 📁 **All docs** | `docs/` |
+| ✅ **Current operating truth** | `docs/CURRENT_STATE.md` — **start here before older docs** |
 | 📋 **What changed May 11** | `docs/CHANGELOG.md` — **start here** |
 | 👤 **Founder profile** | `docs/01-client/profile/sonia-weiss-complete-profile.md` |
 | 💰 **Pricing (confirmed)** | `docs/meetings/meeting-report-may-11.md` §1 |
@@ -242,8 +243,9 @@
 
 | File | What It Is | Start Here? |
 |------|-----------|-------------|
-| **SOURCE_OF_TRUTH.md** | Original master reference (pre-May 11) | No — read CHANGELOG first |
-| **CHANGELOG.md** | **Every assumption that changed after May 11** | **✅ YES** |
+| **CURRENT_STATE.md** | Current product, tech, deployment, integration, and security truth | **✅ YES** |
+| **SOURCE_OF_TRUTH.md** | Client intelligence reference with sensitive details | No — read CURRENT_STATE first |
+| **CHANGELOG.md** | Every assumption that changed after May 11 | Yes, after CURRENT_STATE |
 | **README.md** | This file | Navigation |
 
 ---
@@ -251,8 +253,9 @@
 ## How to Use This Documentation
 
 ### For the Team (Sonia + Iván + Kyrian)
-1. **Start with** `docs/CHANGELOG.md` — what changed and why
-2. **For the May 11 meeting outcome:** `docs/meetings/meeting-report-may-11.md`
-3. **For Sonia's profile:** `docs/01-client/sonia-weiss-complete-profile.md`
+1. **Start with** `docs/CURRENT_STATE.md` — current operating truth
+2. **Then read** `docs/CHANGELOG.md` — what changed and why
+3. **For the May 11 meeting outcome:** `docs/meetings/meeting-report-may-11.md`
+4. **For Sonia's profile:** `docs/01-client/profile/sonia-weiss-complete-profile.md`
 4. **For pricing decisions:** `docs/meetings/meeting-report-may-11.md` §1
 5. **For site development:** `CLAUDE.md` + `docs/10-deployment/deployment-runbook.md`

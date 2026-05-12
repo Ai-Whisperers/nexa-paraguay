@@ -1,4 +1,6 @@
-> **Status:** Current | **Last validated:** 2026-05-07
+> **Status:** Historical cleanup notes | **Last validated:** 2026-05-12
+>
+> **Current-state warning:** This document contains Pages Router and `getServerSideProps` references from the pre-App-Router implementation. Use `docs/00-architecture/ARCHITECTURE.md`, `docs/00-architecture/DATA_FLOW.md`, and `docs/CURRENT_STATE.md` for current architecture before executing any task here.
 >
 
 # Nexa Paraguay — Standardization & Cleanup

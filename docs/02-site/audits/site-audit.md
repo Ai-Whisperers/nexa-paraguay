@@ -1,8 +1,8 @@
-# Nexa Paraguay — Complete Site Audit (May 5, 2026)
+﻿# Nexa Paraguay — Complete Site Audit (May 5, 2026)
 
 > **⚠️ NOTE:** This audit pre-dates Sonia's May 8 feedback and May 11 meeting.
 > The "orphan pages" section (items 26-41) recommends linking pages that Sonia explicitly **rejected** (wizard, team, stats, comparisons).
-> See `docs/CHANGELOG.md` and `docs/meeting-report-may-11.md` for current status.
+> See `docs/CHANGELOG.md` and `docs/meetings/meeting-report-may-11.md` for current status.
 
 ## EXECUTIVE SUMMARY
 
@@ -348,3 +348,4 @@ All now consistent with the main process narrative.
 25. **Asistente page** — link from nav or remove if unused
 26. **Calendar/mailchimp integration** for abandoned-form recovery
 27. **SEPRELAD registration number** — replace "Pending" with actual number
+

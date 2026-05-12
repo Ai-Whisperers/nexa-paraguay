@@ -1,4 +1,4 @@
-> **Status:** Review | **Last validated:** 2026-05-07
+﻿> **Status:** Review | **Last validated:** 2026-05-07
 >
 
 ---
@@ -31,7 +31,7 @@ cross_refs:
 
 7. **Pages router duplication** — index.tsx + [slug].tsx 90% identical. Fix: merge into one, handling `/` as slug === 'home'.
 
-8. **middleware.ts does almost nothing useful** — 25 lines for favicon redirect and console logging. Add CSP headers, locale detection.
+8. **proxy.ts does almost nothing useful** — 25 lines for favicon redirect and console logging. Add CSP headers, locale detection.
 
 9. **GallerySection uses resolveImage?.() with optional chaining** — bad typing. Remove `?.`.
 
@@ -85,3 +85,4 @@ cross_refs:
 | P1 | 9 | 0% TS types, router duplication, weak middleware, broken typings, empty blog bodies, hardcoded paths, no error boundaries |
 | P2 | 16 | Terse variables, dead code, layout shift, Docker deps, no sitemap, no 404, no GA4 events, fake strict mode |
 | P3 | 10 | Accessibility, SEO, UX polish |
+

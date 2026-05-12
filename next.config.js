@@ -15,9 +15,9 @@ const securityHeaders = [
 const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
+  serverExternalPackages: ['@supabase/supabase-js', 'pg'],
   experimental: {
     webpackBuildWorker: false,
-    serverExternalPackages: ['@supabase/supabase-js', 'pg'],
   },
   async headers() {
     return [

@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Nexa Paraguay — Complete Implementation Plan
 
 > **Version:** 1.0 | **Date:** 2026-05-11
@@ -463,3 +465,5 @@ const gaId = process.env.NEXT_PUBLIC_GA4_ID || 'G-XE49GLEP34'
 | Pricing confirmed | `content/*.json` has one consistent price |
 | All 1,485 places in GeoJSON | File exists, valid GeoJSON |
 | 20 missing categories added | CSV has 1,505+ rows |
+
+

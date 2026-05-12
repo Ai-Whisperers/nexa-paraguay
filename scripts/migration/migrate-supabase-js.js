@@ -1,12 +1,20 @@
 #!/usr/bin/env node
 // Migrate data to remote Supabase using the Supabase JS client
-// This handles the sb_secret_ key format correctly
+// Reads the service-role key from SUPABASE_SERVICE_ROLE_KEY.
 
 const { createClient } = require('@supabase/supabase-js');
 const { execSync } = require('child_process');
 
-const SUPABASE_URL = 'https://qyvokpribmbrosafntqa.supabase.co';
-const SERVICE_ROLE_KEY = 'sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH';
+function requireEnv(name) {
+  const value = process.env[name];
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${name}`);
+  }
+  return value;
+}
+
+const SUPABASE_URL = requireEnv('NEXT_PUBLIC_SUPABASE_URL');
+const SERVICE_ROLE_KEY = requireEnv('SUPABASE_SERVICE_ROLE_KEY');
 
 const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, {
   auth: { persistSession: false }

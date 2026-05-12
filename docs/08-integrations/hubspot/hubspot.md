@@ -1,4 +1,4 @@
-> **Status:** Draft | **Last validated:** 2026-05-07
+> **Status:** Implemented, credentials pending | **Last validated:** 2026-05-12
 >
 
 # HubSpot — CRM Integration
@@ -7,28 +7,23 @@
 automated email journeys. HubSpot CRM integration with the Nexa Paraguay
 website.
 
-**Last updated:** 2026-04
+**Last updated:** 2026-05-12
 
-**Cross-references:** `mailchimp.md`, `ga4.md`,
-`/root/nexa-paraguay/docs/integration-setup-guide.md` (source),
-`/root/nexa-paraguay/site.json` (config)
+**Cross-references:** `mailchimp.md`, `../analytics/ga4.md`, `src/app/api/contact/route.ts`, `site.json`
 
 ---
 
 ## Status
 
-Portal and form IDs are pre-filled in site.json but may need updating with
-the actual HubSpot account credentials.
+The contact API route exists at `src/app/api/contact/route.ts`. It posts to the HubSpot Forms API with `CRM_PORTAL_ID` and `CRM_ENDPOINT`. If HubSpot rejects or is unreachable, the route logs the lead payload and returns success so the user-facing form does not fail.
 
-## site.json Config
+This integration does **not** currently insert into a Supabase `leads` table.
+
+## Runtime Environment
 
 ```json
-{
-  "hubspot": {
-    "portalId": "HS-PORTAL-PARAGUAI",
-    "formId": "contact-form-paragu-ai"
-  }
-}
+CRM_PORTAL_ID=<hubspot-portal-id>
+CRM_ENDPOINT=<hubspot-form-guid>
 ```
 
 ## Setup Steps
@@ -52,10 +47,17 @@ HubSpot account email: ___________
 
 ## Implementation
 
-Once credentials are received:
-- Create contact form component with API route posting to HubSpot
-- Connect form submissions to lead magnet downloads and Sequence A trigger
-- Estimated time: 2-3 hours
+Implemented:
+- `POST /api/contact`
+- Hourly in-memory rate limit by IP: 10 submissions
+- Field mapping: `firstname`, `email`, `phone`, `message`, `program`
+- HubSpot context includes IP and referring page
+- Fallback logging for failed HubSpot calls
+
+Still pending:
+- Replace placeholder portal/form values with real HubSpot IDs
+- Decide whether fallback logs should also persist to a database or alert channel
+- Confirm HubSpot legal consent fields match the client account configuration
 
 ## What HubSpot Handles
 

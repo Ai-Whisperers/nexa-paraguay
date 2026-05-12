@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Nexa Paraguay — Complete Intelligence & Market Data Report
 
 > **Date:** 2026-05-11 | **Prepared for:** Sonia (founder) & Iván (technical lead)
@@ -280,3 +282,5 @@
 - Run `scripts/scrape_all_types.py --dept Central --types all` with a fresh API key (Google Cloud $200 free credit)
 - The checkpoint at `data/py_all_types_checkpoint.json` has 1,485 businesses saved and will auto-resume
 - 20 remaining types are mostly niche (embassy, fire station, airport, etc.) — manual entry for these is faster than API scraping
+
+

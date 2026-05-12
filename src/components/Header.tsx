@@ -1,7 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
-import { usePathname } from 'next/navigation'
+import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 
 interface NavItem {
   label: string
@@ -23,6 +24,7 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
   const [langOpen, setLangOpen] = useState(false)
   const navItems: NavItem[] = navigation?.navItems || []
   const pathname = usePathname()
+  const router = useRouter()
   const currentLocale = locale || 'nl'
 
   function switchLocale(newLocale: string) {
@@ -33,15 +35,15 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
       cleanPath = '/' + parts.slice(1).join('/') || '/'
     }
     const newPath = '/' + newLocale + cleanPath
-    window.location.href = newPath
+    router.push(newPath)
   }
 
   return (
     <header style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 1px 3px rgba(0,0,0,0.04)', position: 'sticky', top: 0, zIndex: 100 }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+        <Link href={`/${currentLocale}`} style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
           <img src="/images/brand/logo.svg" alt="Nexa Paraguay" style={{ height: '36px', width: 'auto' }} />
-        </a>
+        </Link>
         <button onClick={() => setOpen(!open)} style={{ display: 'none', background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', padding: '0.25rem', color: '#1B2A4A' }}>
           {open ? '✕' : '☰'}
         </button>

@@ -1,57 +1,63 @@
-> **Status:** Current | **Last validated:** 2026-05-07
+> **Status:** Current | **Last validated:** 2026-05-12
 >
 
 ---
-purpose: DNS cutover sequence for nexaparaguay.com — Cloudflare Pages configuration, records to publish, settings to verify, and rollback procedure
-last_updated: 2026-05-07
-version: 1.0
+purpose: DNS cutover sequence for nexaparaguay.com — point primary domain at current VPS/Traefik deployment
+last_updated: 2026-05-12
+version: 2.0
 cross_refs:
-  - STAKEHOLDER-QA.md (Section D6: email MX setup)
-  - LAUNCH.md (launch sequence)
-  - docs/10-deployment/deployment-guide.md (deployment pipeline)
+  - docs/CURRENT_STATE.md
+  - docs/11-launch/launch-runbook.md
+  - docs/10-deployment/deployment-runbook.md
 ---
 
 # DNS Cutover — nexaparaguay.com
 
-**Target:** nexaparaguay.com serves from Cloudflare Pages.
-**Staging:** Already green at staging.nexaparaguay.com.
+**Target:** `nexaparaguay.com` serves the same Docker Swarm/Traefik app currently live at `https://nexa.paragu-ai.com`.
+**Current issue:** `nexaparaguay.com` still points to Shopify.
 
 ## Preconditions
 
-- Domain nexaparaguay.com registered (Cloudflare Registrar recommended)
-- Cloudflare Pages project nexa-paraguay linked to Main branch
-- Staging verified green at staging.nexaparaguay.com
+- DNS access for `nexaparaguay.com`
+- VPS public IP confirmed: `72.61.44.159`
+- Traefik route/certificate configuration supports `nexaparaguay.com` and `www.nexaparaguay.com`
+- Production health check passes at `https://nexa.paragu-ai.com`
+- Stakeholder confirms cutover timing
 
 ## Records to Publish (Production)
 
 | Type | Name | Target | Proxy |
 |------|------|--------|-------|
-| CNAME | @ (apex alias) | <pages-project>.pages.dev | Proxied (orange cloud) |
-| CNAME | www | <pages-project>.pages.dev | Proxied |
-| CNAME | staging | <pages-project>-<preview-branch>.pages.dev | Proxied |
-| TXT | @ | SPF for transactional email (Resend/Postmark) | -- |
-| MX | @ | Google Workspace MX set (if hola@nexaparaguay.com is Google) | -- |
+| A | @ | `72.61.44.159` | DNS-only or proxied, depending on Traefik/Cloudflare TLS setup |
+| CNAME | www | `nexaparaguay.com` | Match apex setting |
+| TXT | @ | SPF for transactional email provider | DNS-only |
+| MX | @ | Google Workspace or chosen mail provider | DNS-only |
 
 ## Settings to Verify
 
-- SSL/TLS: Full (strict)
+- SSL/TLS: Full strict if proxied through Cloudflare
 - HTTPS: Always Use HTTPS ON
-- Redirect rule: http://www.nexaparaguay.com/* -> https://nexaparaguay.com/$1 (301)
-- Page rule / Worker: None required — hostname rewrite handled in web/middleware.ts
+- Redirect rule: `http://www.nexaparaguay.com/*` -> `https://nexaparaguay.com/$1` (301)
+- Traefik router includes both apex and `www`
+- Certificate resolver can issue/renew for both hostnames
 
 ## Cutover Sequence
 
-1. Lower TTL on current nexaparaguay.com A/CNAME record to 300s, 24 hours before cutover
-2. At cutover T-0: swap CNAME to Pages project, enable proxy, enable HTTPS, verify SSL certificate
-3. T+5 min: `curl -I https://nexaparaguay.com` should return 200 from Cloudflare. If 522/525, wait or switch to DNS-only until cert issues.
-4. T+15 min: submit sitemaps per locale:
-   - https://nexaparaguay.com/s/nl/nexa-paraguay/sitemap.xml
-   - https://nexaparaguay.com/s/en/nexa-paraguay/sitemap.xml
-   - https://nexaparaguay.com/s/de/nexa-paraguay/sitemap.xml
-   - https://nexaparaguay.com/s/es/nexa-paraguay/sitemap.xml
+1. Lower TTL on current Shopify A/CNAME records to 300s at least 24 hours before cutover.
+2. Confirm `https://nexa.paragu-ai.com` returns `200`.
+3. Confirm Traefik has a router rule for `Host(\`nexaparaguay.com\`) || Host(\`www.nexaparaguay.com\`)`.
+4. Replace Shopify DNS with the A/CNAME records above.
+5. Verify propagation:
+   ```bash
+   dig +short nexaparaguay.com
+   curl -sI https://nexaparaguay.com | head -5
+   curl -sI https://www.nexaparaguay.com | head -5
+   ```
+6. Confirm locale redirects, sitemap, contact form, and GA4 on the primary domain.
 
 ## Post-Cutover
 
-- Enable Cloudflare Web Analytics (consent-gated by cookie banner)
+- Submit sitemap: `https://nexaparaguay.com/sitemap.xml`
 - Leave TTL at 300s for 72 hours, then raise to 3600s
-- If problems: revert DNS to prior target — CDN caches are edge-only and flush fast
+- Monitor Traefik logs, GitHub deploy status, GA4 realtime, and contact form logs for the first hour
+- If problems: revert DNS to Shopify or holding page, then run `docker service rollback nexa_web` if the app deploy is at fault

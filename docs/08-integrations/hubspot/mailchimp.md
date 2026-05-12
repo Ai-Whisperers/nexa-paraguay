@@ -1,4 +1,4 @@
-> **Status:** Draft | **Last validated:** 2026-05-07
+> **Status:** Implemented, credentials pending | **Last validated:** 2026-05-12
 >
 
 # Mailchimp — Email Marketing Integration
@@ -6,29 +6,21 @@
 **Purpose:** Manages email newsletter subscribers and sends automated nurture
 campaigns via Mailchimp Customer Journeys.
 
-**Last updated:** 2026-04
+**Last updated:** 2026-05-12
 
-**Cross-references:** `hubspot.md`, `ga4.md`,
-`/root/nexa-paraguay/email-nurture.json` (sequence data),
-`/root/nexa-paraguay/docs/06-marketing/email-sequences.md`,
-`/root/nexa-paraguay/docs/integration-setup-guide.md` (source),
-`/root/nexa-paraguay/site.json` (config)
+**Cross-references:** `hubspot.md`, `../analytics/ga4.md`, `src/app/api/subscribe/route.ts`, `docs/06-marketing/content/email-sequences.md`
 
 ---
 
 ## Status
 
-Audience ID is pre-filled in site.json. API key and actual connection pending
-client credentials.
+The subscribe API route exists at `src/app/api/subscribe/route.ts`. It uses `MAILCHIMP_API_KEY` and `MAILCHIMP_LIST_ID`. If `MAILCHIMP_API_KEY` is missing, it logs the subscription and returns success.
 
-## site.json Config
+## Runtime Environment
 
-```json
-{
-  "mailchimp": {
-    "audienceId": "audience-paragu-ai-newsletter"
-  }
-}
+```text
+MAILCHIMP_API_KEY=<mailchimp-api-key>
+MAILCHIMP_LIST_ID=<mailchimp-list-id>
 ```
 
 ## Setup Steps
@@ -65,7 +57,15 @@ spanning 35 days. Import as a Customer Journey triggered by tag
 
 ## Implementation
 
-Once credentials are received:
-- Add subscribe endpoint for newsletter signup on Resources page
-- Import the JSON nurture sequence as a Customer Journey
-- Estimated time: 2-3 hours
+Implemented:
+- `POST /api/subscribe`
+- Validates email contains `@`
+- Upserts subscriber through the Mailchimp member endpoint
+- Uses `FNAME` and `MMERGE3` for name and locale
+- Treats already-subscribed responses as success
+- Logs fallback when API key is absent
+
+Still pending:
+- Replace placeholder list ID with the real Mailchimp audience/list ID
+- Import or rebuild the nurture sequence in Mailchimp Customer Journeys
+- Confirm merge field names in the real audience match `FNAME` and `MMERGE3`

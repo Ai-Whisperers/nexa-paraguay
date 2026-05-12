@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 > **Status:** Current | **Last validated:** 2026-05-07
 >
 
@@ -59,3 +61,5 @@ For each of nl/en/de/es:
 - [ ] Footer has correct copyright year + privacy link
 - [ ] Cookie banner only appears on first visit; choice persists on refresh
 - [ ] GA4 fires ONLY after "Accept all" (verify in DevTools Network)
+
+

@@ -1,4 +1,6 @@
-> **Status:** Review | **Last validated:** 2026-05-07
+> **Status:** Historical review | **Last validated:** 2026-05-12
+>
+> **Current-state warning:** This plan predates the current App Router/Supabase-first architecture and May 11 pricing decisions. Use `docs/CURRENT_STATE.md` for current truth before executing any item here.
 >
 
 ---
@@ -48,7 +50,7 @@ cross_refs:
 
 **Stats numbers — P0:** +500 families, +10 years, 98% success — need real numbers.
 **Team — P0:** Replace 5 role titles with real names, replace AI-generated headshots, add credentials.
-**Pricing — P0:** Confirm retail prices for all 4 tiers. Price note "IVA incluido" needs legal review.
+**Pricing — P0:** Old 4-tier model is deprecated. Core service is `$1,500` complete price and internal/private unless Sonia approves publication.
 **Testimonials — P0:** Replace 5 AI-generated portraits. Either real photos with GDPR consent or quote-only.
 **Content claims — P0:** "Mas de 200 familias neerlandesas" — confirm or remove.
 
@@ -56,7 +58,7 @@ cross_refs:
 
 3.1 Calendly/Booking — P0: create account, event, update site.json
 3.2 WhatsApp — P0: confirm number, add floating button on all pages
-3.3 Contact form — P0: working form submits to Supabase leads table
+3.3 Contact form — P0: implemented route posts to HubSpot Forms API and logs fallback; no Supabase `leads` insert exists
 3.4 Lead capture — P1: newsletter signup, Mailchimp sync
 
 ## Section 4: Trust & Credibility

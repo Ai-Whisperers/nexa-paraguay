@@ -1,4 +1,4 @@
-> **Status:** Draft | **Last validated:** 2026-05-07
+> **Status:** Draft | **Last validated:** 2026-05-12
 >
 
 # Launch Runbook — Nexa Paraguay
@@ -14,8 +14,8 @@ Before any production deployment, confirm all items below.
 ### Blocking Decisions
 
 - [ ] **Final company name** confirmed (default: "Nexa Paraguay" working name)
-- [ ] **Nexa retail pricing** locked (LEALTIS wholesale + margin for Base/Business/Investor)
-- [ ] **Compra de Tierras** scope confirmed (ship as product or "coming soon" CTA)
+- [x] **Core pricing decision** confirmed: `$1,500` complete price, internal/private unless Sonia approves publication
+- [ ] **Add-on scope** confirmed for post-residency support, property, vehicle, appliances, school research, and medical accompaniment
 - [ ] **Calendly account** created with event type URL
 - [ ] **HubSpot portal ID + form ID** configured
 - [ ] **Mailchimp API key + audience ID** configured
@@ -26,7 +26,7 @@ Before any production deployment, confirm all items below.
 - [ ] **Attorney review** of privacy policy + legal templates signed off
 - [ ] **SEPRELAD/AML compliance** status confirmed
 
-### Required Environment Variables (Cloudflare Pages / Docker)
+### Required Environment Variables (Docker / GitHub Actions)
 
 ```
 NEXT_PUBLIC_APP_URL            = https://nexaparaguay.com
@@ -36,8 +36,8 @@ SUPABASE_SERVICE_ROLE_KEY      = <service-role-key>
 NEXT_PUBLIC_GA4_ID             = G-XXXXXXXX
 CRM_PORTAL_ID                  = <hubspot-portal-id>
 CRM_ENDPOINT                   = <hubspot-form-guid>
-EMAIL_API_KEY                  = <mailchimp-api-key>
-EMAIL_LIST_ID                  = <mailchimp-audience-id>
+MAILCHIMP_API_KEY              = <mailchimp-api-key>
+MAILCHIMP_LIST_ID              = <mailchimp-audience-id>
 EMAIL_FROM_ADDRESS             = hola@nexaparaguay.com
 EMAIL_FROM_NAME                = Nexa Paraguay
 ```
@@ -55,7 +55,8 @@ All env vars must be set in the target environment before deployment.
    - Open each locale home page
    - Verify hreflang tags present on all pages
    - Verify `/privacidad` and `/faq` render legal content
-   - Submit test lead via `/contacto`, verify row in Supabase `leads`
+   - Submit test lead via `/contacto`, verify HubSpot submission or fallback log from `src/app/api/contact/route.ts`
+   - Submit newsletter subscription, verify Mailchimp member or fallback log from `src/app/api/subscribe/route.ts`
 4. Stakeholder walkthrough (NL + EN content, legal sign-off)
 5. Translator pass: NL locked, DE polished
 6. Photography swap in asset directories
@@ -80,7 +81,7 @@ All env vars must be set in the target environment before deployment.
 ## DNS Cutover
 
 1. Set TTL to 300 (5 min) on the staging DNS record 24h before cutover
-2. At cutover time, change CNAME from staging target to production target
+2. At cutover time, point the apex A record to `72.61.44.159` and `www` to `nexaparaguay.com`
 3. Verify propagation:
    ```bash
    dig +short nexaparaguay.com
@@ -95,36 +96,34 @@ After cutover, the new site must serve the primary domain directly.
 
 | Metric | Check | Alert threshold |
 |---|---|---|
-| HTTP 200 rate | Cloudflare Analytics | Any 5xx > 1% |
-| Lead submissions | Supabase `leads` table | 0 leads after 100 visitors |
+| HTTP 200 rate | Traefik/Cloudflare/health checks | Any 5xx > 1% |
+| Lead submissions | HubSpot portal or contact route fallback logs | 0 leads after 100 visitors |
 | GA4 events | Real-time report | No events after 1h |
 | Hreflang errors | Google Search Console | Any errors in coverage report |
-| Page load time | Cloudflare / Lighthouse | > 3s on any locale |
+| Page load time | Lighthouse / browser checks | > 3s on any locale |
 | Bot traffic % | Cloudflare analytics | > 50% triggers WAF review |
 
 ## Rollback Plan
 
 ### If issues detected within 1 hour of cutover:
 
-1. **Cloudflare Pages:** One-click rollback to previous deployment
-2. **Docker Swarm:** If using Swarm deployment instead:
+1. **Docker Swarm:** Roll back the production service:
    ```bash
    docker service rollback nexa_web
    ```
-3. **DNS:** If Cloudflare is down entirely, switch CNAME back to holding
+2. **DNS:** If primary domain cutover is at fault, switch DNS back to holding
    page or the previous Shopify site
-4. **Data:** `leads` table remains intact across rollbacks; RLS prevents
-   public read. No data migration needed.
+3. **Data:** Contact submissions are HubSpot/fallback-log based. Check route logs before retrying the launch.
 
 ### Post-rollback verification
 
 - Confirm HTTP 200 on the rolled-back domain
-- Check Cloudflare analytics for error rate drop
+- Check Traefik/health check output for error rate drop
 - Notify stakeholders of rollback and ETA for re-attempt
 
 ## Monitoring Schedule
 
 - **Hour 0-1:** Active watch by operations team
-- **Hour 1-24:** Dashboard monitoring (GA4 + Cloudflare + Supabase)
+- **Hour 1-24:** Dashboard monitoring (GA4 + Traefik/Cloudflare + HubSpot/Mailchimp)
 - **Day 2-7:** Daily lead count + Search Console check
 - **Week 2+:** Weekly conversion report per locale

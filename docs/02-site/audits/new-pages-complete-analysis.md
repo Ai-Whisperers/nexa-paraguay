@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Nexa Paraguay — Complete New Page Architecture & Build Analysis
 
 > **Date:** 2026-05-11 | **Total pages analyzed:** 9 new | **Data sources:** 45+ across location data, client profile, pricing, competitor intelligence
@@ -324,3 +326,5 @@ These can be live in 20 minutes.
 | **Dutch-specific tax charts** | — | ✅ | Needs formatting |
 
 **45 data sources identified, 90%+ ready for page building.**
+
+

@@ -1,109 +1,95 @@
-# Architecture — Core Framework & Client Bridge
+﻿# Architecture — Current App
 
-**Status:** Current | **Last Validated:** 2026-05-07 | **Scope:** `@ai-whisperers/*` package ecosystem, bridge points, abstraction boundaries
-
----
+> **Status:** Current  
+> **Last validated:** 2026-05-12  
+> **Canonical reference:** `docs/CURRENT_STATE.md`
 
 ## Overview
 
-Nexa Paraguay is built on a **package-based core framework** (`@ai-whisperers/*`). The framework provides shared logic, UI components, and AI agentic workflows reused across all clients. Nexa Paraguay imports these packages and supplies only client-specific data, configuration, and custom components.
+Nexa Paraguay is a standalone Next.js 16 App Router site. It uses shared `@ai-whisperers/*` packages for sections, i18n, UI/admin helpers, SEO, theme, and WhatsApp-related capabilities, while keeping the client-specific content, page ordering, section overrides, and deployment configuration inside this repository.
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    @ai-whisperers/*                      │
-│                      (Core Framework)                     │
-│                                                         │
-│  admin  auth  client-kit  commerce  i18n  seo           │
-│  theme  ui    whatsapp                                   │
-└────────────────────┬────────────────────────────────────┘
-                     │ npm link / GitHub Packages
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│                  nexa-paraguay (Client)                   │
-│                                                         │
-│  content/es.json  nexa-pages/*.json  images.json         │
-│  src/types.ts     src/theme.ts       src/lib/loader.ts   │
-│  src/components/* sections          Dockerfile           │
-└─────────────────────────────────────────────────────────┘
+Request
+  -> src/proxy.ts locale redirect
+  -> src/app/[locale]/page.tsx or src/app/[locale]/[slug]/page.tsx
+  -> src/lib/page-data.ts
+       -> Supabase site_content when env vars exist
+       -> JSON file fallback when Supabase is unavailable
+  -> src/components/SectionsRenderer.tsx
+       -> @ai-whisperers/sections base renderer
+       -> local component overrides
 ```
 
-## Package Ecosystem
+## Runtime Layers
 
-| Package | Source | Used In Nexa? | Purpose |
-|---------|--------|---------------|---------|
-| `@ai-whisperers/admin` | `file:../ai-whisperers-base/packages/admin` | ❌ Not imported | Admin panel UI |
-| `@ai-whisperers/auth` | `file:../ai-whisperers-base/packages/auth` | ❌ Not imported | Authentication flows |
-| `@ai-whisperers/client-kit` | `file:../ai-whisperers-base/packages/client-kit` | ✅ `admin/content.tsx` | Content editor, dynamic import |
-| `@ai-whisperers/commerce` | `file:../ai-whisperers-base/packages/commerce` | ❌ Not imported | E-commerce backend |
-| `@ai-whisperers/i18n` | `file:../ai-whisperers-base/packages/i18n` | ❌ Not imported | Internationalization engine |
-| `@ai-whisperers/seo` | `file:../ai-whisperers-base/packages/seo` | ❌ Not imported | SEO meta generation |
-| `@ai-whisperers/theme` | `file:../ai-whisperers-base/packages/theme` | ❌ Not imported | Base design tokens |
-| `@ai-whisperers/ui` | `file:../ai-whisperers-base/packages/ui` | ❌ Not imported | Reusable UI component library |
-| `@ai-whisperers/whatsapp` | `file:../ai-whisperers-base/packages/whatsapp` | ❌ Not imported | WhatsApp API integration |
+| Layer | Current implementation |
+|---|---|
+| Routing | `src/app/[locale]/page.tsx`, `src/app/[locale]/[slug]/page.tsx`, and `src/app/[locale]/blog/[slug]/page.tsx` |
+| Locale handling | `src/proxy.ts` redirects unprefixed routes to a locale using `@ai-whisperers/i18n` |
+| Content loading | `src/lib/page-data.ts` queries Supabase REST first, then falls back to local JSON |
+| Page configuration | `nexa-pages/{slug}.json` remains file-based |
+| Images | `images.json` remains file-based; `src/lib/supabase.ts` exposes Supabase storage helpers |
+| Rendering | `src/components/SectionsRenderer.tsx` composes shared renderer plus local overrides |
+| Styling | Tailwind CSS v4 with tokens in `src/app/globals.css` |
+| APIs | Contact, subscribe, content, revalidate, and data-deletion routes in `src/app/api/` |
 
-## Bridge Points
+## Content Model
 
-### 1. npm Dependencies (package.json)
+Supabase is the primary runtime source only when these env vars are configured:
 
-All `@ai-whisperers/*` packages are declared in `package.json` as:
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
-```json
-"@ai-whisperers/client-kit": "file:/root/ai-whisperers-base/packages/client-kit"
+If either value is missing, `src/lib/page-data.ts` returns `null` from the Supabase path and loads local JSON files instead. This keeps local development and Docker builds functional without baking Supabase credentials into the image.
+
+Files still used in both modes:
+
+- `content/{locale}.json`
+- `content/blog/posts-{locale}.json`
+- `nexa-pages/{slug}.json`
+- `images.json`
+- `testimonials.json`
+
+## Package Bridge Points
+
+| Package | Current use |
+|---|---|
+| `@ai-whisperers/sections` | Base section renderer created by `createSectionsRenderer()` |
+| `@ai-whisperers/i18n` | Locale constants, default locale, cookie name, and locale handling |
+| `@ai-whisperers/client-kit` | Local packaged dependency used by admin/content tooling |
+| `@ai-whisperers/admin`, `auth`, `ui`, `seo`, `theme`, `whatsapp` | Not imported by current code and removed from `package.json` until a feature needs them |
+
+Local section overrides currently registered in `src/components/SectionsRenderer.tsx`:
+
+- `process-timeline` / `process`
+- `team`
+- `story`
+- `page-hero` / `hero`
+- `cta-banner` / `cta`
+- `booking-embed`
+- `blog` / `blog-index`
+- `faq`
+- `contact` / `contact-details`
+
+## Deployment Architecture
+
+The current production path is Docker Swarm behind Traefik:
+
+```
+GitHub Actions
+  -> npm ci
+  -> npm run build
+  -> docker build
+  -> push ghcr.io/ai-whisperers/nexa-paraguay:<sha>
+  -> docker service update nexa_web-staging
+  -> docker service update nexa_web
 ```
 
-The `file:` protocol points to the local clone of the core monorepo. In CI/Docker, this path must exist or be replaced with a published version (GitHub Packages).
+The active live domain is `https://nexa.paragu-ai.com`. The `nexaparaguay.com` cutover is a DNS task, not an app rewrite.
 
-### 2. Dynamic Import (admin/content.tsx)
+## Known Risks
 
-The only active bridge point in code:
+- Previously committed Supabase service-role keys must be treated as exposed and rotated.
+- Some older docs still describe Pages Router, Cloudflare Pages, and file-only content. Those docs are historical unless explicitly updated after 2026-05-12.
+- Contact form submissions go to HubSpot and log fallback; they do not currently insert into a Supabase `leads` table.
 
-```tsx
-const ContentEditor = dynamic(
-  () => import('@ai-whisperers/client-kit').then(m => ({ default: m.ContentEditor })),
-  { ssr: false }
-)
-```
-
-This is used for the `/admin/content` page only.
-
-### 3. Theme Override (src/theme.ts)
-
-Nexa defines its own `src/theme.ts` with brand-specific tokens. This shadows the base `@ai-whisperers/theme` package when it exists — the local theme takes precedence.
-
-### 4. Docker Build Context
-
-When building the Docker image, `file:` dependencies must resolve. Currently they rely on `node_modules` pre-installed at build time on the VPS. A clean build requires the core repo to be accessible at `/root/ai-whisperers-base/`.
-
-## Abstraction Boundaries
-
-| Layer | Global (Core) | Local (Nexa) |
-|-------|--------------|--------------|
-| **Design tokens** | Base colors, spacing, fonts in `@ai-whisperers/theme` | Override in `src/theme.ts` → navy #1B2A4A, gold #C9A96E |
-| **Components** | Reusable UI in `@ai-whisperers/ui` | All 26 SECTION_MAP components in `src/components/` |
-| **Content** | Template schemas | `content/es.json`, `site.json`, `images.json` |
-| **Page routing** | Base `[slug].tsx` pattern | `src/pages/[slug].tsx`, `src/pages/index.tsx` |
-| **Data loading** | `lib/loader.ts` with cache (in Core eventually) | Local copy at `src/lib/loader.ts` |
-| **Deployment** | Multi-tenant builder (`paragu-ai-builder`) | Standalone Docker Swarm + Dockerfile |
-| **Config** | Defaults | `site.json` (features, URLs, booking, social) |
-
-## Key Distinction: Standalone vs Multi-Tenant
-
-Nexa Paraguay has **two deployment paths**:
-
-1. **Standalone** (`/root/nexa-paraguay`) — Pages Router, ES-only content, Docker Swarm at `nexa.paragu-ai.com`
-2. **Multi-tenant** (`/root/paragu-ai-builder/sites/nexa-paraguay`) — Part of a larger builder, auto-deploys to Cloudflare Pages at `paragu-ai.com/s/en/nexa-paraguay`
-
-Both share content at `content/es.json` but differ in routing, image paths, and deployment. The standalone version is the primary.
-
-## Deployed but Unused Packages
-
-The following 8 packages remain in `package.json` but **have zero imports** in any `src/` file. They inflate Docker images and add install time. Candidates for removal:
-
-- `@ai-whisperers/admin` — No admin UI beyond content editor (which uses `client-kit`)
-- `@ai-whisperers/auth` — No auth system implemented
-- `@ai-whisperers/commerce` — No e-commerce
-- `@ai-whisperers/i18n` — i18n handled by manual locale JSON loading
-- `@ai-whisperers/seo` — SEO handled by page-level meta tags
-- `@ai-whisperers/theme` — Overridden entirely by `src/theme.ts`
-- `@ai-whisperers/ui` — No core UI components used
-- `@ai-whisperers/whatsapp` — WhatsApp integrated via direct links, not API

@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Nexa Paraguay — AI Meeting System Design
 
 > **Purpose:** Enable AI to talk with Sonia in Google Meets, work on the repo, and handle client meetings.
@@ -322,3 +324,5 @@ Pre-call: AI sends Sonia the client pack (10 min before)
 During call: AI listens, suggests responses
 Post-call: AI sends follow-up email to client + updates CRM
 ```
+
+

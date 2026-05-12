@@ -1,50 +1,53 @@
-> **Status:** Current | **Last validated:** 2026-05-07
+> **Status:** Current | **Last validated:** 2026-05-12
 >
 
 # Deployment Runbook — Nexa Paraguay
 
 > Covers building, containerizing, and deploying the Next.js app via Docker
-> Swarm with Traefik reverse proxy. 2 replicas, zero-downtime deploys.
+> Swarm with Traefik reverse proxy. Current production service: `nexa_web`.
 
 ## Architecture Overview
 
 ```
                          Traefik (agent-net)
                         /                  \
-               nexa_web:0               nexa_web:1
-               (replica 1)              (replica 2)
+               nexa_web
+               (current production service)
                     \                      /
                     Port 3000 (internal)
 ```
 
 - **Base image:** `node:20-alpine` (multi-stage: deps → builder → runner)
 - **Runtime:** Standalone Next.js server (`server.js`)
-- **Orchestrator:** Docker Stack (Swarm mode)
+- **Orchestrator:** Docker Swarm service updates
 - **Reverse proxy:** Traefik v2 (external `agent-net`)
-- **Replicas:** 2 (rolling update, no downtime)
+- **Replicas:** Current service reports 1 replica unless explicitly scaled
 
 ## Dockerfile Anatomy
 
 | Stage | Purpose |
 |---|---|
 | `deps` | Installs `libc6-compat`, copies `package.json` + `.npmrc`, runs `npm install --legacy-peer-deps` |
-| `builder` | Copies node_modules from deps, copies source, runs `npm run build` |
+| `builder` | Copies node_modules from deps, copies source, runs `npm run build` without committed secrets |
 | `runner` | Creates `nextjs` user (uid 1001), copies standalone output + static + public assets, runs `node server.js` on port 3000 |
 
-**Key detail:** The `.npmrc` contains the `@ai-whisperers` registry token
-for GitHub Packages. Without it, `npm install` fails for the `@ai-whisperers/client-kit` dependency.
+**Key detail:** Do not bake runtime secrets into the image. Configure Supabase, HubSpot, Mailchimp, GA4, and app URL through CI/CD, Docker service env, stack env, or a secret manager.
 
 ## Environment Variables
 
 | Variable | Source | Required | Notes |
 |---|---|---|---|
-| `NODE_AUTH_TOKEN` | GitHub PAT | Yes | In `.npmrc` for `@ai-whisperers/client-kit` install; use `--secret` in Docker BuildKit |
+| `NODE_AUTH_TOKEN` | GitHub PAT | Yes | Injected through `.npmrc` placeholder for `@ai-whisperers/*` package install |
 | `NODE_ENV` | docker-compose.yml | Yes | Set to `production` |
 | `NEXT_PUBLIC_APP_URL` | Docker env / runtime | Yes | `https://nexaparaguay.com` |
-| `NEXT_PUBLIC_SUPABASE_URL` | Runtime env | Yes | Supabase project URL |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Runtime env | Yes | Supabase anon key |
-| `SUPABASE_SERVICE_ROLE_KEY` | Runtime env | Yes | Server-side only |
+| `NEXT_PUBLIC_SUPABASE_URL` | Runtime env | Conditional | Required for Supabase content/admin; JSON fallback works without it |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Runtime env | Conditional | Required with `NEXT_PUBLIC_SUPABASE_URL` |
+| `SUPABASE_SERVICE_ROLE_KEY` | Runtime env | Conditional | Server-side only; required for admin/migration writes |
 | `NEXT_PUBLIC_GA4_ID` | Runtime env | Conditional | Analytics; skip if not configured |
+| `CRM_PORTAL_ID` | Runtime env | Conditional | HubSpot contact form portal ID |
+| `CRM_ENDPOINT` | Runtime env | Conditional | HubSpot form GUID |
+| `MAILCHIMP_API_KEY` | Runtime env | Conditional | Newsletter subscribe endpoint |
+| `MAILCHIMP_LIST_ID` | Runtime env | Conditional | Mailchimp audience/list ID |
 
 ## docker-compose.yml Services
 
@@ -55,6 +58,11 @@ services:
     image: nexa-paraguay:prod
     environment:
       - NODE_ENV=production
+      - NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL:-https://nexa.paragu-ai.com}
+      - NEXT_PUBLIC_GA4_ID=${NEXT_PUBLIC_GA4_ID:-G-XE49GLEP34}
+      - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=agent-net"
@@ -77,7 +85,8 @@ networks:
 
 ```bash
 cd /root/nexa-paraguay
-NODE_AUTH_TOKEN=ghp_... npm run build
+npm ci --legacy-peer-deps
+npm run build
 ```
 
 Produces standalone output in `.next/standalone/`.
@@ -85,30 +94,25 @@ Produces standalone output in `.next/standalone/`.
 ### 2. Build the Docker image
 
 ```bash
-# Using BuildKit for secret injection (avoids baking token into image)
-DOCKER_BUILDKIT=1 docker build \
-  --secret id=npm_token,src=<(echo "$NODE_AUTH_TOKEN") \
-  -t nexa-paraguay:prod \
-  .
-
-# Or if .npmrc already has the token locally:
 docker build -t nexa-paraguay:prod .
 ```
 
-### 3. Push to registry (if using private registry)
+### 3. Push to registry
 
 ```bash
-docker tag nexa-paraguay:prod registry.example.com/nexa-paraguay:latest
-docker push registry.example.com/nexa-paraguay:latest
+docker tag nexa-paraguay:prod ghcr.io/ai-whisperers/nexa-paraguay:latest
+docker push ghcr.io/ai-whisperers/nexa-paraguay:latest
 ```
 
 ### 4. Deploy to Swarm
 
 ```bash
-docker stack deploy -c docker-compose.yml nexa
+docker service update \
+  --image ghcr.io/ai-whisperers/nexa-paraguay:latest \
+  nexa_web
 ```
 
-This creates the `nexa_web` service with 2 replicas behind Traefik.
+The GitHub Actions workflow deploys the commit SHA tag to `nexa_web-staging` first, then promotes the same image to `nexa_web`.
 
 ### 5. Verify deployment
 
@@ -122,7 +126,7 @@ docker service logs nexa_web --tail 50
 
 # Health check (via Traefik)
 curl -I https://nexa.paragu-ai.com
-curl -I https://nexa-paraguay.paragu-ai.com
+curl -I https://nexa.paragu-ai.com
 ```
 
 ## Rolling Update
@@ -130,7 +134,7 @@ curl -I https://nexa-paraguay.paragu-ai.com
 ```bash
 # Update image without downtime
 docker service update \
-  --image nexa-paraguay:prod \
+  --image ghcr.io/ai-whisperers/nexa-paraguay:<sha> \
   --update-parallelism 1 \
   --update-delay 10s \
   nexa_web

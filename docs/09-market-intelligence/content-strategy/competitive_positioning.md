@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Nexa Paraguay — Competitive Positioning Document
 
 **Date:** May 7, 2026  
@@ -191,3 +193,5 @@ This is the single unifying message across all touchpoints. Everything else supp
 3. **Price is a feature, not a problem** — at $2,900-$6,900, Nexa is premium. That premium buys: AI processing speed, native-language support, real legal partners, and end-to-end concierge. Never apologize for the price.
 4. **Avoid macro lifestyle comparisons** against EU/Southeast Asia destinations. Win on the numbers (tax, time, cost, citizenship speed). Lose on brand/sentiment. Stick to the data.
 5. **Terravida is the only competitor to actively monitor** — they're the only other AI-native player. Track their pricing, feature set, and positioning closely.
+
+

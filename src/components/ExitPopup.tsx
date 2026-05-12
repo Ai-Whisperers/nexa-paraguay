@@ -7,7 +7,9 @@ export function ExitPopup({ data }: any) {
   const [visible, setVisible] = useState(false)
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
-  const [dismissed, setDismissed] = useState(false)
+  const [dismissed, setDismissed] = useState(() => (
+    typeof window !== 'undefined' && !!localStorage.getItem('nexa-exit-popup')
+  ))
 
   useEffect(() => {
     if (dismissed) return
@@ -32,10 +34,6 @@ export function ExitPopup({ data }: any) {
     setSubmitted(true)
     localStorage.setItem('nexa-exit-popup', 'submitted')
   }
-
-  useEffect(() => {
-    if (localStorage.getItem('nexa-exit-popup')) setDismissed(true)
-  }, [])
 
   if (!visible || dismissed) return null
 

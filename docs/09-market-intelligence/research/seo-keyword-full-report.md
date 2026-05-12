@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # SEO Keyword Research: Paraguay Relocation Services
 ## Client: Nexa Paraguay (nexa.paragu-ai.com)
 ## Date: May 7, 2026
@@ -319,3 +321,5 @@
 - Build internal links between program pages and content
 - Target "near me" / local terms like "paraguay residency consultant asuncion"
 - Build backlinks from Dutch/Belgian expat forums and Facebook groups
+
+

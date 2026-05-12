@@ -1,4 +1,4 @@
-# Nexa Paraguay — Hardcoded Data Audit
+﻿# Nexa Paraguay — Hardcoded Data Audit
 
 ## Already Abstracted ✅
 - `@ai-whisperers/sections` — 30+ section components (SectionsRenderer uses factory pattern)
@@ -18,7 +18,7 @@
 - `src/components/ExitPopupWrapper.tsx` — 4-locale TRANSLATIONS replaced with @ai-whisperers/i18n
 - `src/components/ExitPopup.tsx` — hardcoded ES fallbacks removed (purely data-driven now)
 - `src/lib/content-resolver.ts` — re-exports from @ai-whisperers/content
-- `src/middleware.ts` — LOCALES/DEFAULT already consuming @ai-whisperers/i18n
+- `src/proxy.ts` — LOCALES/DEFAULT already consuming @ai-whisperers/i18n
 - `src/lib/locales.ts` — already re-exporting from @ai-whisperers/i18n
 
 ## Remaining (intentionally Nexa-specific, low reuse value)
@@ -55,3 +55,4 @@ Exports from main entry:
 - **New** `COOKIE_BANNER`, `GATEWAY_POPUP`, `EXIT_POPUP`, `FEEDBACK_SECTION` string sets
 - **New** `getLocaleStrings(set, locale)` — get all strings for a locale
 - **New** `t(set, locale, key, fallback?)` — get single string key
+

@@ -1,9 +1,11 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Nexa Paraguay — Complete Pricing Matrix & Financial Analysis
 
 > **⚠️⚠️⚠️ DEPRECATED — NOT CURRENT ⚠️⚠️⚠️**
 > This document was built on the $2,900-$6,900 assumption model that was **invalidated** by the May 11 meeting.
 > **Sonia confirmed $1,500** as the complete price for residency service.
-> See `docs/meeting-report-may-11.md` and `docs/CHANGELOG.md` for current pricing.
+> See `docs/meetings/meeting-report-may-11.md` and `docs/CHANGELOG.md` for current pricing.
 > Keep this file as historical reference only. DO NOT use for business decisions.
 
 > **Date:** 2026-05-11 (pre-resolution — assumptions only) | **Market data sourced from:** ExpatSettle, MoveToParaguay, ImmigrantInvest, NTL Trust, TuLugar, BuscaEscribanía, Gold Harbor, Independent Territory, Numbeo
@@ -490,3 +492,6 @@ The #1 issue: Sonia said $1,500 in her audio, but our research/model says $2,900
 | **P6** | Appliance commission: how much per setup? | Undocumented revenue stream |
 | **P7** | Monthly retainer: would clients pay $150-250/mo? | Recurring revenue |
 | **P8** | Capacity: how many clients can you handle? | Scaling limits |
+
+
+

@@ -1,19 +1,18 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'next/navigation'
 import { GATEWAY_POPUP, getLocaleStrings } from '@ai-whisperers/i18n'
 
 export function GatewayPopup() {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(() => (
+    typeof window !== 'undefined' && window.location.search.includes('gateway=true')
+  ))
   const params = useParams()
   const locale = (params?.locale as string) || (typeof window !== 'undefined' ? window.location.pathname.split('/')[1] : 'es')
 
   const t = getLocaleStrings(GATEWAY_POPUP, locale)
 
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.location.search.includes('gateway=true')) setShow(true)
-  }, [])
   if (!show) return null
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">

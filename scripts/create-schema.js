@@ -6,9 +6,21 @@
  */
 const { createClient } = require('@supabase/supabase-js')
 
+function requireEnv(name) {
+  const value = process.env[name]
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${name}`)
+  }
+  return value
+}
+
+const SUPABASE_URL = requireEnv('NEXT_PUBLIC_SUPABASE_URL')
+const SUPABASE_SERVICE_ROLE_KEY = requireEnv('SUPABASE_SERVICE_ROLE_KEY')
+const SUPABASE_PROJECT_REF = requireEnv('SUPABASE_PROJECT_REF')
+
 const supabase = createClient(
-  'https://qyvokpribmbrosafntqa.supabase.co',
-  'sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH',
+  SUPABASE_URL,
+  SUPABASE_SERVICE_ROLE_KEY,
   {
     auth: {
       autoRefreshToken: false,
@@ -71,10 +83,10 @@ async function run() {
     `.trim()
 
     // Try via the Supabase platform API with service_role
-    const res = await fetch('https://api.supabase.com/v1/projects/qyvokpribmbrosafntqa/database/query', {
+    const res = await fetch(`https://api.supabase.com/v1/projects/${SUPABASE_PROJECT_REF}/database/query`, {
       method: 'POST',
       headers: {
-        'Authorization': 'Bearer sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH',
+        'Authorization': `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ query: sql }),
@@ -87,10 +99,10 @@ async function run() {
       console.log('\nManagement API failed. Trying direct Postgres REST API...')
       
       // Try the pg_dump endpoint
-      const res2 = await fetch('https://api.supabase.com/v1/projects/qyvokpribmbrosafntqa/database/query', {
+      const res2 = await fetch(`https://api.supabase.com/v1/projects/${SUPABASE_PROJECT_REF}/database/query`, {
         method: 'POST',
         headers: {
-          'Authorization': 'Bearer sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH',
+          'Authorization': `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ query: 'SELECT 1 AS test' }),

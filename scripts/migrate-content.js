@@ -12,8 +12,16 @@ const { createClient } = require('@supabase/supabase-js')
 const fs = require('fs')
 const path = require('path')
 
-const SUPABASE_URL = 'https://qyvokpribmbrosafntqa.supabase.co'
-const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || 'sb_secret_J7n1igQHaVSKn35OrMe93A_p-_FEBvH'
+function requireEnv(name) {
+  const value = process.env[name]
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${name}`)
+  }
+  return value
+}
+
+const SUPABASE_URL = requireEnv('NEXT_PUBLIC_SUPABASE_URL')
+const SUPABASE_SERVICE_KEY = requireEnv('SUPABASE_SERVICE_ROLE_KEY')
 const TENANT = 'nexa-paraguay'
 const LOCALES = ['es', 'en', 'nl', 'de']
 

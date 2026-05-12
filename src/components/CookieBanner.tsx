@@ -1,18 +1,15 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'next/navigation'
 import { COOKIE_BANNER, getLocaleStrings } from '@ai-whisperers/i18n'
 
 export function CookieBanner() {
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(() => (
+    typeof window !== 'undefined' && !localStorage.getItem('nexa-cookie-consent')
+  ))
   const params = useParams()
   const locale = (params?.locale as string) || (typeof window !== 'undefined' ? window.location.pathname.split('/')[1] : 'es')
-
-  useEffect(() => {
-    const consent = localStorage.getItem('nexa-cookie-consent')
-    if (!consent) setVisible(true)
-  }, [])
 
   const accept = () => {
     localStorage.setItem('nexa-cookie-consent', 'accepted')

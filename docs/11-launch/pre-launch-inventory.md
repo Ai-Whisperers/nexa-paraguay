@@ -1,4 +1,6 @@
-> **Status:** Draft | **Last validated:** 2026-05-07
+> **Status:** Draft | **Last validated:** 2026-05-12
+>
+> **Current-state warning:** Read `docs/CURRENT_STATE.md` first. Rows below were updated for current integration/env names, but this remains a launch checklist, not a source of truth.
 >
 
 # Pre-Launch Inventory — Nexa Paraguay
@@ -37,9 +39,9 @@
 | # | Item | Impact | Current State | Needed | Status |
 |---|---|---|---|---|---|
 | 3.1 | Calendly URL | 🔴 | Placeholder `calendly.com/nexaparaguay/consulta` (404) | Real Calendly account + event type | [ ] |
-| 3.2 | HubSpot portal + form ID | 🔴 | Not configured -> 502 on CRM forward | `CRM_PORTAL_ID` + `CRM_FORM_ID` env vars | [ ] |
+| 3.2 | HubSpot portal + form ID | 🔴 | API route exists; placeholder IDs log fallback | `CRM_PORTAL_ID` + `CRM_ENDPOINT` env vars | [ ] |
 | 3.3 | Mailchimp API key + list ID | 🔴 | Not configured -> newsletter fails soft | `MAILCHIMP_API_KEY` + `MAILCHIMP_LIST_ID` | [ ] |
-| 3.4 | GA4 measurement ID | 🔴 | Not configured | `NEXT_PUBLIC_GA4_ID` env var | [ ] |
+| 3.4 | GA4 measurement ID | 🟠 | Measurement ID known (`G-XE49GLEP34`); verify firing after consent | `NEXT_PUBLIC_GA4_ID` env var | [ ] |
 | 3.5 | Crisp live chat ID | 🟠 | Not configured | `NEXT_PUBLIC_CRISP_WEBSITE_ID` | [ ] |
 | 3.6 | WhatsApp number | 🔴 | `+595 000 000 000` placeholder | Real Nexa WhatsApp Business line | [ ] |
 | 3.7 | Contact phone + email | 🔴 | Placeholder values | Real contact details | [ ] |
@@ -67,11 +69,11 @@
 
 | # | Item | Current State | Needed | Status |
 |---|---|---|---|---|
-| 6.1 | Paraguay Base price | "USD 2.900" | Confirm retail price + scope | [ ] |
-| 6.2 | Paraguay Business price | "USD 4.400+" | Confirm floor + variables | [ ] |
-| 6.3 | Paraguay Investor price | "USD 6.900+" | Confirm pricing | [ ] |
-| 6.4 | Compra de Tierras pricing | "Desde USD 3.500" placeholder | Lock retail or remove tier | [ ] |
-| 6.5 | "Todo incluido" claims | Per-tier priceNote text | Legal sign-off on accuracy + exclusions | [ ] |
+| 6.1 | Core residency price | `$1,500` complete price, internal/private | Keep off public site unless Sonia explicitly approves publishing | [ ] |
+| 6.2 | Old Business tier | Deprecated | Remove from active site/content unless rebuilt as add-on | [ ] |
+| 6.3 | Old Investor tier | Deprecated | Remove from active site/content unless rebuilt as add-on | [ ] |
+| 6.4 | Property services | Commission-based add-on | Document scope and commission disclosure policy | [ ] |
+| 6.5 | "Todo incluido" claims | Applies to core service only if exclusions are clear | Legal sign-off on accuracy + exclusions | [ ] |
 | 6.6 | Tax savings calculator numbers | Hard-coded rates + generic bands | Legal review + disclaimer | [ ] |
 
 ## 7. Stats & Social Proof

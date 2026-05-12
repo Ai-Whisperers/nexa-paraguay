@@ -1,6 +1,8 @@
-# Activation Roadmap — From Dormant to Production
+﻿# Activation Roadmap — From Dormant to Production
 
-**Status:** Current | **Last validated:** 2026-05-07
+**Status:** Historical roadmap | **Last validated:** 2026-05-12
+
+> **Current-state warning:** Locale routing is already App Router based and handled through `src/proxy.ts` plus `src/app/[locale]/`. Treat any `getServerSideProps` or “only ES is served” guidance below as historical.
 
 ---
 
@@ -114,3 +116,4 @@ From this point forward:
 2. **Placeholders are acceptable** — Team initials, "Próximamente", demo stats, and AI-generated portraits are valid for demo/pre-launch. Flag them clearly in `docs/` as `Status: Draft` or `Status: Placeholder`.
 
 3. **Client sign-off required for** — Real team photos, real testimonials (GDPR), real pricing, real case studies, domain cutover, and any deletion.
+

@@ -1,7 +1,7 @@
 # CHANGELOG — What Changed After May 11, 2026
 
 > **Purpose:** Every assumption that was invalidated by the May 11 meeting with Sonia.
-> If you read one document to understand current state, read `docs/meeting-report-may-11.md`.
+> If you read one document to understand current state, read `docs/CURRENT_STATE.md`. For the May 11 meeting outcome, read `docs/meetings/meeting-report-may-11.md`.
 
 ---
 
@@ -24,12 +24,12 @@
 
 ### Files That Need Deprecation/Warning
 These files were built on the $2,900-$6,900 model and are now **dangerously misleading**:
-- `pricing-matrix-complete.md` — 486 lines assuming wrong tiers
-- `financial-model.md` — Revenue/cost projections 10x off
-- `site-audit.md` — Orphan page recommendations override Sonia's rejections
-- `competitor-landscape.md`, `competitor_research_report.md`, `competitor-weaknesses.md` — All reference wrong pricing
-- `stakeholder-review.md` — References 4 tiers that don't exist
-- `seo-keyword-full-report.md`, `seo-keyword-report.md` — Wrong pricing
+- `docs/09-market-intelligence/pricing/pricing-matrix-complete.md` — assumes wrong tiers
+- `docs/09-market-intelligence/pricing/financial-model.md` — revenue/cost projections 10x off
+- `docs/02-site/audits/site-audit.md` — orphan page recommendations override Sonia's rejections
+- `docs/09-market-intelligence/competitors/competitor-landscape.md`, `docs/09-market-intelligence/competitors/competitor_research_report.md`, `docs/09-market-intelligence/competitors/competitor-weaknesses.md` — reference wrong pricing
+- `docs/01-client/profile/stakeholder-review.md` — references 4 tiers that don't exist
+- `docs/09-market-intelligence/research/seo-keyword-full-report.md`, `docs/09-market-intelligence/research/seo-keyword-report.md` — wrong pricing
 
 ### 🟡 Brand & Content Decisions
 

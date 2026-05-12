@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 > **Status:** Current | **Last validated:** 2026-05-07
 >
 
@@ -85,3 +87,5 @@ Paraguay relocation demand is on an upward trend driven by European tax refugees
 5. **WhatsApp automation** — Build a lead qualification bot using the Ai-Whisperers WhatsApp bridge
 6. **CRM pipeline** — Define HubSpot stages and tracking for lead-to-client conversion metrics
 7. **Cross-sell with Golden Visa** — Bundle residency + visa advisory for a combined value prop
+
+

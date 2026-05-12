@@ -1,3 +1,5 @@
+﻿> **Deprecated pricing warning (2026-05-12):** This document contains pre-May-11 assumptions such as `$2,900/$4,400/$6,900` tiers. Current truth: one core `$1,500` service, private/internal unless Sonia approves publication. Read `docs/CURRENT_STATE.md` before using this document.
+
 # Complete Paraguay Location Analysis — Department-by-Department
 
 > **Date:** 2026-05-11 | **Source:** Google Maps data (6,796 businesses) + field research  
@@ -473,4 +475,6 @@
 | Pricing ambiguity | High | Resolve: $1,500 or $2,900 |
 | No client testimonials | Medium | Ask 10 clients for consent |
 | No office address | Low | Can use "Asunción, Paraguay" |
+
+
 
