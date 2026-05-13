@@ -1506,7 +1506,8 @@
         "label": "Instagram",
         "url": "https://instagram.com/nexaparaguay"
       }
-    ]
+    ],
+    "whatsapp": "595982515138"
   },
   "founderPage": {
     "cta": {
@@ -1916,6 +1917,33 @@
         }
       ],
       "title": "What Paraguay Business covers"
+    },
+    "programs": {
+      "eyebrow": "Recomendado",
+      "title": "Paraguay Business",
+      "subtitle": "Residencia + empresa + cuenta bancaria, integrado en un solo programa.",
+      "tiers": [
+        {
+          "id": "business",
+          "name": "Paraguay Business",
+          "description": "Residencia + empresa + cuenta bancaria.",
+          "price": "USD 4,400+",
+          "priceNote": "Precio inicial. Cotización final según requerimientos.",
+          "highlighted": true,
+          "included": [
+            "Residencia + cédula",
+            "Constitución de empresa + RUC",
+            "Cuenta bancaria corporativa",
+            "Tour inmobiliario estratégico",
+            "Honorarios, IVA e impuestos incluidos"
+          ],
+          "ctaLabel": "Solicitar consulta",
+          "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-business-es",
+          "image": {
+            "$img": "programs.tierBusiness"
+          }
+        }
+      ]
     }
   },
   "landingInversor": {
@@ -2014,6 +2042,34 @@
         }
       ],
       "title": "What sets the investor program apart"
+    },
+    "programs": {
+      "eyebrow": "Recomendado",
+      "title": "Programa Inversor",
+      "subtitle": "Todo lo necesario para operar en Paraguay — más 12 meses de acompañamiento.",
+      "tiers": [
+        {
+          "id": "investor",
+          "name": "Paraguay Inversor",
+          "description": "Residencia + empresa + banco + 12 meses de apoyo.",
+          "price": "USD 6,900+",
+          "priceNote": "Precio inicial. Cotización final según requerimientos.",
+          "highlighted": true,
+          "included": [
+            "Residencia paraguaya y cédula",
+            "Constitución de empresa + RUC",
+            "Cuenta bancaria corporativa",
+            "Contabilidad (12 meses)",
+            "Asesoría legal y fiscal (12 meses)",
+            "Acceso directo al equipo técnico"
+          ],
+          "ctaLabel": "Solicitar consulta",
+          "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-investor-es",
+          "image": {
+            "$img": "programs.tierInvestor"
+          }
+        }
+      ]
     }
   },
   "landingLifestyle": {
@@ -2110,6 +2166,33 @@
         }
       ],
       "title": "Three real reasons to move"
+    },
+    "programs": {
+      "eyebrow": "Recomendado",
+      "title": "Paraguay Base",
+      "subtitle": "El punto de partida más simple: residencia + cédula. Podés ampliar después.",
+      "tiers": [
+        {
+          "id": "base",
+          "name": "Paraguay Base",
+          "description": "Residencia paraguaya + cédula.",
+          "price": "USD 2,900",
+          "priceNote": "Paquete completo con honorarios e impuestos.",
+          "highlighted": true,
+          "included": [
+            "Residencia paraguaya",
+            "Cédula de identidad",
+            "Prevalidación de documentos",
+            "Día operativo presencial",
+            "Soporte logístico"
+          ],
+          "ctaLabel": "Solicitar consulta",
+          "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-base-es",
+          "image": {
+            "$img": "programs.tierBase"
+          }
+        }
+      ]
     }
   },
   "landingTrust": {
@@ -2202,6 +2285,33 @@
         {
           "title": "End-to-end",
           "description": "From document pre-validation to post-arrival settlement."
+        }
+      ]
+    },
+    "programs": {
+      "eyebrow": "Recomendado",
+      "title": "Paraguay Business",
+      "subtitle": "El programa central — un viaje, un equipo, un resultado integrado.",
+      "tiers": [
+        {
+          "id": "business",
+          "name": "Paraguay Business",
+          "description": "Residencia + empresa + cuenta bancaria.",
+          "price": "USD 4,400+",
+          "priceNote": "Precio inicial. Cotización final según requerimientos.",
+          "highlighted": true,
+          "included": [
+            "Residencia + cédula",
+            "Constitución de empresa + RUC",
+            "Cuenta bancaria corporativa",
+            "Tour inmobiliario estratégico",
+            "Honorarios, IVA e impuestos incluidos"
+          ],
+          "ctaLabel": "Solicitar consulta",
+          "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-business-es",
+          "image": {
+            "$img": "programs.tierBusiness"
+          }
         }
       ]
     }

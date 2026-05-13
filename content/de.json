@@ -337,6 +337,17 @@
           }
         ]
       }
+    ],
+    "phone": "",
+    "socialLinks": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/nexa-paraguay"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/nexaparaguay"
+      }
     ]
   },
   "aboutPage": {
@@ -482,6 +493,114 @@
         "title": "Ungefähre Kosten",
         "description": "Variieren je nach Nationalität, Übersetzungen, Verwaltungskosten, Apostillen und Aufenthaltsart. Wir erstellen Ihnen ein unverbindliches persönliches Angebot."
       }
+    },
+    "team": {
+      "title": "Nuestro equipo",
+      "members": [
+        {
+          "name": "Dirección de Operaciones (Paraguay)",
+          "role": "[Rol real pendiente — preguntar a Sonia] Líder de operaciones en Paraguay.",
+          "languages": [
+            "ES",
+            "EN"
+          ],
+          "icon": "Briefcase",
+          "imageUrl": "@src:team.operationsDirector",
+          "memberImage": "@src:team.operationsDirector"
+        },
+        {
+          "name": "Dirección Comercial (Europa)",
+          "role": "Líder europea: holandés y alemán nativos, con base en Ámsterdam. Traduce inquietudes fiscales de la UE a la práctica paraguaya.",
+          "languages": [
+            "NL",
+            "EN",
+            "DE",
+            "ES"
+          ],
+          "icon": "Globe",
+          "imageUrl": "@src:team.commercialDirector",
+          "memberImage": "@src:team.commercialDirector"
+        },
+        {
+          "name": "Equipo Legal",
+          "role": "Abogados matriculados en Paraguay. Especialización en inmigración, corporativo y due diligence inmobiliario.",
+          "languages": [
+            "ES",
+            "EN"
+          ],
+          "icon": "Scale",
+          "imageUrl": "@src:team.legalLead",
+          "memberImage": "@src:team.legalLead"
+        },
+        {
+          "name": "Equipo Contable",
+          "role": "Contadores públicos matriculados. Ley 6380 IRE, renta territorial, estructuración de ingresos del exterior.",
+          "languages": [
+            "ES",
+            "EN"
+          ],
+          "icon": "Calculator",
+          "imageUrl": "@src:team.accountingLead",
+          "memberImage": "@src:team.accountingLead"
+        },
+        {
+          "name": "Client Success",
+          "role": "Onboarding y acompañamiento bilingüe ES/EN. Punto de contacto único durante las 8–12 semanas del proceso.",
+          "languages": [
+            "NL",
+            "EN",
+            "ES"
+          ],
+          "icon": "UserCheck",
+          "imageUrl": "@src:team.clientSuccess",
+          "memberImage": "@src:team.clientSuccess"
+        }
+      ],
+      "_note": "placeholder — reemplazar con fotos reales del equipo. Las imágenes actuales son IA. TODO: Sesión de fotos profesional con el equipo real."
+    },
+    "trust": {
+      "eyebrow": "Nuestra diferencia",
+      "title": "What sets us apart",
+      "items": [
+        {
+          "title": "Multidisciplinary team",
+          "description": "Lawyers, accountants, notaries and financial advisors working in coordination.",
+          "image": "@src:images.team.group"
+        },
+        {
+          "title": "Relational capital",
+          "description": "Institutional access built over years with banks, notaries and authorities.",
+          "image": "@src:images.trust.registry"
+        },
+        {
+          "title": "Time as value",
+          "description": "We compress into one day what otherwise requires multiple trips.",
+          "image": "@src:images.trust.migraciones"
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Nuestra oficina en Asunción",
+      "subtitle": "Donde consulta, firma y banco realmente ocurren. Placeholders de IA abajo — reemplazar por fotos reales antes del lanzamiento.",
+      "columns": 3,
+      "images": [
+        {
+          "$img": "office.exterior"
+        },
+        {
+          "$img": "office.reception"
+        },
+        {
+          "$img": "office.meetingRoom"
+        },
+        {
+          "$img": "office.signing"
+        },
+        {
+          "$img": "office.teamHuddle"
+        }
+      ],
+      "lightbox": true
     }
   },
   "datosPersonalesPage": {
