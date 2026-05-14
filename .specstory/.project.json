@@ -1,7 +1,13 @@
 {
   "workspace_id": "9e0e-ab8b-fb62-a910",
+<<<<<<< Updated upstream
   "workspace_id_at": "2026-05-12T09:33:04Z",
   "git_id": "59e2-e8f3-ca4d-ca11",
   "git_id_at": "2026-05-12T09:33:04Z",
+=======
+  "workspace_id_at": "2026-05-05T19:28:02Z",
+  "git_id": "59e2-e8f3-ca4d-ca11",
+  "git_id_at": "2026-05-05T19:28:02Z",
+>>>>>>> Stashed changes
   "project_name": "nexa-paraguay"
 }
