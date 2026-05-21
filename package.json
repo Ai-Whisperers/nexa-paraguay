@@ -9,20 +9,25 @@
     "postinstall": "node scripts/copy-ai-packages.cjs",
     "start": "next start",
     "lint": "eslint",
-<<<<<<< Updated upstream
     "screenshots": "node scripts/screenshot-all.mjs",
-    "test": "playwright test",
-    "test:ci": "playwright test --reporter=line",
+    "test": "vitest run",
+    "test:playwright": "playwright test",
+    "test:ui": "vitest --ui",
+    "test:ci": "vitest run",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
-=======
+    "format:check": "prettier --check .",
     "generate:assets": "node scripts/generate-placeholder-assets.mjs"
->>>>>>> Stashed changes
   },
   "dependencies": {
+    "@ai-whisperers/admin": "^0.2.1",
+    "@ai-whisperers/auth": "^0.2.0",
     "@ai-whisperers/client-kit": "file:.packages/ai-whisperers-client-kit-0.1.0.tgz",
     "@ai-whisperers/i18n": "file:.packages/ai-whisperers-i18n-0.2.0.tgz",
     "@ai-whisperers/sections": "file:.packages/ai-whisperers-sections-0.1.0.tgz",
+    "@ai-whisperers/seo": "^0.2.0",
+    "@ai-whisperers/theme": "^0.2.0",
+    "@ai-whisperers/ui": "^0.4.0",
+    "@ai-whisperers/whatsapp": "^0.2.0",
     "@supabase/supabase-js": "^2.105.4",
     "next": "^16.2.4",
     "pg": "^8.20.0",
@@ -32,15 +37,20 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.0.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "jsdom": "^29.1.1",
     "playwright": "^1.59.1",
+    "png-to-ico": "^2.1.8",
+    "sharp": "^0.34.1",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "png-to-ico": "^2.1.8",
-    "sharp": "^0.34.1"
+    "vitest": "^4.1.7"
   }
 }
