@@ -1,0 +1,43 @@
+{
+  "url": "http://localhost:3456/trust",
+  "capturedAt": "2026-05-18T13:04:01.719Z",
+  "attempt": 1,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "consoleLogs": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "performanceTimings": {
+    "domContentLoaded": 239.89999997615814,
+    "load": 349.39999997615814,
+    "domInteractive": 239.89999997615814,
+    "firstPaint": 368,
+    "firstContentfulPaint": 368,
+    "domSize": 348.39999997615814,
+    "transferSize": 66546,
+    "encodedBodySize": 66246,
+    "decodedBodySize": 262905,
+    "duration": 349.39999997615814,
+    "serverTiming": []
+  },
+  "metrics": {},
+  "structure": {
+    "totalElements": 293,
+    "imgTags": 9,
+    "imgBroken": 0,
+    "scripts": 65,
+    "links": 26,
+    "headings": {
+      "h1": 1,
+      "h2": 4,
+      "h3": 10,
+      "h4": 3
+    },
+    "forms": 0,
+    "iframes": 0,
+    "buttons": 4,
+    "textNodes": 2440
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "url": "http://localhost:3456/comparacion",
+  "capturedAt": "2026-05-18T13:03:41.213Z",
+  "attempt": 1,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "consoleLogs": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "performanceTimings": {
+    "domContentLoaded": 198.69999998807907,
+    "load": 199,
+    "domInteractive": 198.60000002384186,
+    "firstPaint": 160,
+    "firstContentfulPaint": 160,
+    "domSize": 198.89999997615814,
+    "transferSize": 65021,
+    "encodedBodySize": 64721,
+    "decodedBodySize": 255294,
+    "duration": 199,
+    "serverTiming": []
+  },
+  "metrics": {},
+  "structure": {
+    "totalElements": 286,
+    "imgTags": 2,
+    "imgBroken": 0,
+    "scripts": 65,
+    "links": 23,
+    "headings": {
+      "h1": 1,
+      "h2": 1,
+      "h3": 0,
+      "h4": 3
+    },
+    "forms": 0,
+    "iframes": 0,
+    "buttons": 4,
+    "textNodes": 1544
+  }
+}

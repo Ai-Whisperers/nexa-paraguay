@@ -1,211 +1,211 @@
-#,Fase,Categoría,Servicio,¿Sonia lo hace?,Precio (USD),Notas
-1,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Pre-validación de documentos (checklist remoto),☐ Sí ☐ No,$________,
-2,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Coordinación de Apostilla,☐ Sí ☐ No,$________,
-3,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Traducción certificada (al español),☐ Sí ☐ No,$________,
-4,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Recepción de documentos en Paraguay,☐ Sí ☐ No,$________,
-5,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Poder notarial (para compras remotas),☐ Sí ☐ No,$________,🔴 PREGUNTA CLAVE
-6,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Digitalización de documentos + cloud,☐ Sí ☐ No,$________,💡 Oportunidad
-7,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Certificado de antecedentes internacionales (Interpol),☐ Sí ☐ No,$________,✅ Confirmado previo
-8,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Apostilla de acta de nacimiento/matrimonio,☐ Sí ☐ No,$________,
-9,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Apostilla de título educativo,☐ Sí ☐ No,$________,💡 Para profesionales
-10,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Certificado médico en Paraguay,☐ Sí ☐ No,$________,
-11,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Certificado de Vida y Residencia,☐ Sí ☐ No,$________,
-12,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Carta de referencia bancaria del país de origen,☐ Sí ☐ No,$________,🟡 PREGUNTA
-13,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Antecedentes policiales (Interpol PY),☐ Sí ☐ No,$________,
-14,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Traducción inglés → español,☐ Sí ☐ No,$________,
-15,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Traducción neerlandés → español,☐ Sí ☐ No,$________,✅ Especialidad
-16,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Traducción alemán → español,☐ Sí ☐ No,$________,💡 Mercado creciente
-17,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Certificación de traductor público,☐ Sí ☐ No,$________,
-18,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Cadena de legalización de documentos,☐ Sí ☐ No,$________,
-19,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Auditoría de documentos pre-arrivo (Zoom 30min),☐ Sí ☐ No,$________,💡 Oportunidad
-20,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.1 Preparación de Documentos,Preparación de copias notariadas,☐ Sí ☐ No,$________,💡 Para trámites remotos
-21,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,Consulta gratuita 30 min,☐ Sí ☐ No,✅ Ya en el sitio,
-22,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,Consulta paga profunda (1hr),☐ Sí ☐ No,💡,
-23,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,"Evaluación familiar (colegios, trabajo, hijos)",☐ Sí ☐ No,💡,
-24,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,Análisis de situación fiscal,☐ Sí ☐ No,🟡 PREGUNTA — ¿ella o contador?,
-25,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,Taller de planificación de inversión,☐ Sí ☐ No,💡 Para inversores,
-26,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,Sesión de planificación de presupuesto,☐ Sí ☐ No,💡 Calculadora costo de vida,
-27,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,Planificación de timeline,☐ Sí ☐ No,✅ 8-12 semanas,
-28,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,Checklist de documentos (digital),☐ Sí ☐ No,💡 Lead magnet,
-29,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,Orientación laboral / trabajo remoto,☐ Sí ☐ No,💡,
-30,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.2 Consultoría Pre-Arrivo,Consulta para pareja/cónyuge,☐ Sí ☐ No,💡,
-31,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,Ayuda con reserva de vuelos,☐ Sí ☐ No,🟡 PREGUNTA,
-32,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,Reserva de alojamiento temporal (Airbnb),☐ Sí ☐ No,✅ Lo hace,
-33,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,Coordinación de mudanza de mascotas,☐ Sí ☐ No,💡 Demanda creciente,
-34,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,Coordinación de envío internacional (mudanza),☐ Sí ☐ No,💡,
-35,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,Redirección de correo (forwarding),☐ Sí ☐ No,💡,
-36,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,Análisis de seguro de viaje,☐ Sí ☐ No,💡,
-37,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,Verificación de vacunas requeridas,☐ Sí ☐ No,💡,
-38,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,Asesoría de cambio de divisas,☐ Sí ☐ No,💡 USD/PYG,
-39,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,Transferencia bancaria internacional,☐ Sí ☐ No,🟡 PREGUNTA,
-40,FASE 0 — PRE-ARRIVAL (Antes de que el cliente llegue),0.3 Logística Pre-Arrivo,SIM card prepaga activa al llegar,☐ Sí ☐ No,💡,
-41,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Recogida en aeropuerto,☐ Sí ☐ No,$________,🟡 PREGUNTA — ¿incluido?
-42,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Briefing de bienvenida (primeras 24h),☐ Sí ☐ No,$________,
-43,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Activación de chip local (Day 1),☐ Sí ☐ No,$________,
-44,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Check-in en alojamiento temporal,☐ Sí ☐ No,$________,
-45,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Tour de orientación del barrio,☐ Sí ☐ No,$________,
-46,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Gestión de transporte (alquiler auto / chofer),☐ Sí ☐ No,$________,💡 Comisión?
-47,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Configuración de maps y navegación,☐ Sí ☐ No,$________,💡
-48,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Servicio de compras / supermercado,☐ Sí ☐ No,$________,💡
-49,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Referencia de servicio de comidas,☐ Sí ☐ No,$________,💡
-50,FASE 1 — LLEGADA & PRIMERA SEMANA,1.1 Aeropuerto & Transporte,Briefing de contactos de emergencia,☐ Sí ☐ No,$________,"💡 Hospital, policía, embajada"
-51,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,Solicitud de residencia,☐ Sí ☐ No,✅ Core service,
-52,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,Cédula de Identidad (provisional),☐ Sí ☐ No,✅,
-53,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,"Cédula de Identidad (permanente, 2 años)",☐ Sí ☐ No,✅,
-54,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,Registro RUC (contribuyente),☐ Sí ☐ No,✅ Para Business,
-55,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,Cita de huellas dactilares,☐ Sí ☐ No,,
-56,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,Antecedentes policiales (Paraguay),☐ Sí ☐ No,,
-57,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,Solicitud en Migraciones,☐ Sí ☐ No,✅,
-58,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,Registro de extranjero (Mercosur),☐ Sí ☐ No,💡,
-59,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,Registro consular (país de origen),☐ Sí ☐ No,💡,
-60,FASE 1 — LLEGADA & PRIMERA SEMANA,1.2 Identificación & Registro,Configuración de identidad digital,☐ Sí ☐ No,💡,
-61,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Apertura de cuenta bancaria (personal),☐ Sí ☐ No,$________,✅
-62,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Apertura de cuenta bancaria (empresa),☐ Sí ☐ No,$________,✅
-63,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Introducción y relación con banco,☐ Sí ☐ No,$________,✅ Valor clave
-64,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Configuración de banca online,☐ Sí ☐ No,$________,
-65,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Transferencia internacional (SWIFT),☐ Sí ☐ No,$________,🟡 PREGUNTA
-66,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Cuenta de cambio de divisas,☐ Sí ☐ No,$________,💡
-67,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Solicitud de tarjeta de crédito,☐ Sí ☐ No,$________,🟡 PREGUNTA
-68,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Emisión de tarjeta de débito,☐ Sí ☐ No,$________,✅ Implícito
-69,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Caja de seguridad (banco),☐ Sí ☐ No,$________,💡
-70,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Apertura de cuenta de inversión,☐ Sí ☐ No,$________,💡
-71,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,"Cuenta de crypto local (X4T, Ueno)",☐ Sí ☐ No,$________,💡
-72,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Cuenta multi-moneda,☐ Sí ☐ No,$________,💡
-73,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Establecimiento de historial crediticio,☐ Sí ☐ No,$________,🟡 PREGUNTA
-74,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,Pre-aprobación hipotecaria,☐ Sí ☐ No,$________,💡
-75,FASE 1 — LLEGADA & PRIMERA SEMANA,1.3 Bancos & Finanzas,"Seguros (hogar, auto, salud)",☐ Sí ☐ No,$________,🟡 PREGUNTA
-76,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Alquiler temporal (1-3 meses),☐ Sí ☐ No,$________,✅
-77,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Alquiler largo plazo (12+ meses),☐ Sí ☐ No,$________,✅
-78,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Búsqueda de barrios,☐ Sí ☐ No,$________,✅
-79,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Revisión de contrato de alquiler,☐ Sí ☐ No,$________,✅
-80,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Gestión de depósito de garantía,☐ Sí ☐ No,$________,💡 Escrow
-81,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Conexión de agua (ESSAP),☐ Sí ☐ No,$________,🟡 PREGUNTA
-82,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Conexión de luz (ANDE),☐ Sí ☐ No,$________,🟡 PREGUNTA
-83,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Instalación de internet,☐ Sí ☐ No,$________,🟡 PREGUNTA
-84,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Servicio de gas,☐ Sí ☐ No,$________,💡
-85,FASE 1 — LLEGADA & PRIMERA SEMANA,1.4 Bienes Raíces — Alquiler,Paquete de muebles para alquiler,☐ Sí ☐ No,$________,💡
-86,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Búsqueda de propiedad (compra),☐ Sí ☐ No,Comisión,✅
-87,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Coordinación de visitas a propiedades,☐ Sí ☐ No,Comisión,✅
-88,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Verificación de título (due diligence),☐ Sí ☐ No,$________,✅ Diferenciador
-89,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Verificación de zona inundable / zona roja,☐ Sí ☐ No,$________,✅ ORGULLO
-90,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Auditoría anti-estafas,☐ Sí ☐ No,$________,✅ MÁXIMO VALOR
-91,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Negociación de precio,☐ Sí ☐ No,Comisión,✅
-92,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Coordinación notarial,☐ Sí ☐ No,$________,✅
-93,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Gestión de depósito en garantía (escrow),☐ Sí ☐ No,$________,💡
-94,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Registro de propiedad (Registro Público),☐ Sí ☐ No,$________,✅
-95,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Verificación de impuestos prediales,☐ Sí ☐ No,$________,✅
-96,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Coordinación de agrimensura,☐ Sí ☐ No,$________,💡 Para terrenos rurales
-97,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Análisis de tierra agrícola,☐ Sí ☐ No,$________,🟡 PREGUNTA — programa de tierras
-98,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Búsqueda de propiedad comercial,☐ Sí ☐ No,$________,💡
-99,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,Inspección estructural de propiedad,☐ Sí ☐ No,$________,💡 Terceros
-100,FASE 1 — LLEGADA & PRIMERA SEMANA,1.5 Bienes Raíces — Compra,"Seguro de propiedad (incendio, robo)",☐ Sí ☐ No,$________,💡
-101,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Investigación y selección de colegios,☐ Sí ☐ No,✅ Lo hace,
-102,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Inscripción en colegio (trámites),☐ Sí ☐ No,🟡 PREGUNTA,
-103,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Tour de colegios (visitas físicas),☐ Sí ☐ No,🟡 PREGUNTA,
-104,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Solicitud a colegios internacionales,☐ Sí ☐ No,"💡 St. Mary's, etc.",
-105,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Orientación universitaria (hijos mayores),☐ Sí ☐ No,💡,
-106,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Referencia de niñera / cuidado de niños,☐ Sí ☐ No,💡,
-107,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Referencia de pediatra,☐ Sí ☐ No,💡,
-108,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Documentos legales familiares (tutela),☐ Sí ☐ No,💡,
-109,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Orientación laboral para cónyuge,☐ Sí ☐ No,💡 Permiso automático,
-110,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,"Inscripción en actividades (deportes, arte)",☐ Sí ☐ No,✅ Mencionado,
-111,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Compra de útiles / uniformes escolares,☐ Sí ☐ No,💡,
-112,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Inscripción en programas extraescolares,☐ Sí ☐ No,💡,
-113,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Inscripción en campamento de verano,☐ Sí ☐ No,💡,
-114,FASE 2 — POST-LLEGADA (Semanas 2-12),2.1 Servicios Familiares,Programas de integración para adolescentes,☐ Sí ☐ No,💡,
-115,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Afiliación a seguro de salud (local),☐ Sí ☐ No,✅ Mencionado,
-116,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Seguro de salud internacional,☐ Sí ☐ No,"💡 Cigna, Allianz",
-117,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Referencia de médico general,☐ Sí ☐ No,💡 Hospital Bautista,
-118,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Referencia de especialista,☐ Sí ☐ No,🟡 PREGUNTA,
-119,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Referencia de dentista,☐ Sí ☐ No,💡 Más barato que UE,
-120,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Registro en hospital (pre-emergencia),☐ Sí ☐ No,💡,
-121,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Orientación de farmacias,☐ Sí ☐ No,💡,
-122,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Acompañamiento médico (traducción),☐ Sí ☐ No,💡 Para no hispanohablantes,
-123,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Alineación de calendario de vacunas,☐ Sí ☐ No,💡,
-124,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Briefing de números de emergencia,☐ Sí ☐ No,"💡 911, ambulancia",
-125,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Referencia de terapia / counseling,☐ Sí ☐ No,💡 Salud mental,
-126,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Referencia de óptica,☐ Sí ☐ No,💡,
-127,FASE 2 — POST-LLEGADA (Semanas 2-12),2.2 Salud,Coordinación de análisis de laboratorio,☐ Sí ☐ No,💡,
-128,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Asistencia en compra de vehículo,☐ Sí ☐ No,✅ Comisión del vendedor,
-129,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Orientación para licencia de conducir,☐ Sí ☐ No,✅ Mencionado,
-130,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Traducción de licencia de conducir,☐ Sí ☐ No,💡 Permiso internacional,
-131,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Preparación para examen de conducir PY,☐ Sí ☐ No,💡,
-132,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Importación de vehículo (desde UE),☐ Sí ☐ No,💡,
-133,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Seguro de vehículo,☐ Sí ☐ No,💡 Requerido en PY,
-134,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Referencia de chofer / conductor,☐ Sí ☐ No,✅ Carlos,
-135,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Orientación de transporte público,☐ Sí ☐ No,"💡 Buses, ride-sharing",
-136,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Compra de bicicleta / monopatín,☐ Sí ☐ No,💡,
-137,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Registro de vehículo (patente),☐ Sí ☐ No,💡,
-138,FASE 2 — POST-LLEGADA (Semanas 2-12),2.3 Transporte,Orientación de estacionamiento / peajes,☐ Sí ☐ No,💡 Apps móviles,
-139,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Compra de muebles (asistencia),☐ Sí ☐ No,✅ Comisión,
-140,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Compra de electrodomésticos,☐ Sí ☐ No,✅ Comisión,
-141,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Contratación de personal doméstico,☐ Sí ☐ No,💡,
-142,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Instalación de sistema de seguridad,☐ Sí ☐ No,💡,
-143,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Seguro de hogar,☐ Sí ☐ No,💡,
-144,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Orientación de reciclaje / basura,☐ Sí ☐ No,💡,
-145,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Referencia de mantenimiento de piscina,☐ Sí ☐ No,💡 Muchas casas tienen,
-146,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Referencia de jardinero,☐ Sí ☐ No,💡,
-147,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Referencia de control de plagas,☐ Sí ☐ No,"💡 Termitas, mosquitos",
-148,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Referencia de cerrajero,☐ Sí ☐ No,💡,
-149,FASE 2 — POST-LLEGADA (Semanas 2-12),2.4 Setup del Hogar,Referencia de mantero / reparaciones,☐ Sí ☐ No,💡,
-150,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Creación de empresa (EAS),☐ Sí ☐ No,✅,
-151,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Creación de empresa (SA),☐ Sí ☐ No,✅,
-152,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Estructura legal para trabajo remoto,☐ Sí ☐ No,✅ Aconseja,
-153,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Introducción a estudio contable,☐ Sí ☐ No,✅ Comisión,
-154,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Introducción a estudio jurídico,☐ Sí ☐ No,✅ Comisión,
-155,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Setup de facturación electrónica,☐ Sí ☐ No,💡,
-156,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Setup de nómina local (empleados),☐ Sí ☐ No,💡,
-157,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Licencia municipal de negocio,☐ Sí ☐ No,💡,
-158,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Registro de importación/exportación,☐ Sí ☐ No,💡,
-159,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Registro de propiedad intelectual,☐ Sí ☐ No,💡 Marcas en PY,
-160,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Seguro empresarial,☐ Sí ☐ No,💡,
-161,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Cuenta bancaria corporativa,☐ Sí ☐ No,✅,
-162,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,"Onboarding de empleados (ESS, IPS)",☐ Sí ☐ No,💡,
-163,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Referencia de coworking,☐ Sí ☐ No,💡 Para nómadas digitales,
-164,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Búsqueda de oficina comercial,☐ Sí ☐ No,💡,
-165,FASE 2 — POST-LLEGADA (Semanas 2-12),2.5 Negocios & Profesional,Introducción a socios de negocio locales,☐ Sí ☐ No,💡,
-166,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Declaración de impuestos anual (personal),☐ Sí ☐ No,🟡 Deriva a contador,
-167,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Declaración de impuestos anual (empresa),☐ Sí ☐ No,🟡 Deriva a contador,
-168,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Cumplimiento mensual de RUC,☐ Sí ☐ No,💡,
-169,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Declaración trimestral de IVA,☐ Sí ☐ No,💡 Contador,
-170,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Certificado de residencia fiscal,☐ Sí ☐ No,💡 Para salir de NL,
-171,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Asesoría de tratado de doble imposición,☐ Sí ☐ No,🟡 Puede no saber,
-172,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Revisión de optimización fiscal,☐ Sí ☐ No,🟡,
-173,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Orientación de impuestos crypto,☐ Sí ☐ No,💡 0% en PY,
-174,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Cumplimiento SEPRELAD,☐ Sí ☐ No,❓ PENDIENTE,
-175,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Filing AML/KYC,☐ Sí ☐ No,❓ PENDIENTE,
-176,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.1 Impuestos & Compliance,Declaración de patrimonio anual,☐ Sí ☐ No,💡,
-177,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.2 Camino a Residencia Permanente,Temporal → Permanente (Año 2),☐ Sí ☐ No,✅ Mencionado,
-178,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.2 Camino a Residencia Permanente,Solicitud de ciudadanía (Año 3),☐ Sí ☐ No,💡,
-179,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.2 Camino a Residencia Permanente,Solicitud de pasaporte,☐ Sí ☐ No,💡 140+ países,
-180,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.2 Camino a Residencia Permanente,Consultoría de segundo pasaporte,☐ Sí ☐ No,💡 Para europeos,
-181,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.2 Camino a Residencia Permanente,Reunificación familiar,☐ Sí ☐ No,✅ Mencionado,
-182,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.2 Camino a Residencia Permanente,"Renovación de documentos (cédula, RUC)",☐ Sí ☐ No,💡,
-183,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.2 Camino a Residencia Permanente,Cambio de domicilio (en Migraciones),☐ Sí ☐ No,💡,
-184,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.2 Camino a Residencia Permanente,Carta de salida de emigración (NL),☐ Sí ☐ No,💡 BRP deregistration,
-185,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Introducción a clubes sociales,☐ Sí ☐ No,✅ Lo hace,
-186,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Introducción a comunidad de expats,☐ Sí ☐ No,✅ Grupos WhatsApp,
-187,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Referencia de profesor de español,☐ Sí ☐ No,✅ Lo hace,
-188,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Clases de guaraní básico,☐ Sí ☐ No,💡 Integración,
-189,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Clases de cocina paraguaya,☐ Sí ☐ No,"💡 Chipa, sopa",
-190,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Coordinación de eventos de networking,☐ Sí ☐ No,💡,
-191,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Inscripción en club deportivo / gym,☐ Sí ☐ No,💡,
-192,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Introducción a comunidad religiosa,☐ Sí ☐ No,"💡 Iglesias, sinagoga",
-193,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Conexión con voluntariado / ONG,☐ Sí ☐ No,💡,
-194,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Planificación de viaje de fin de semana,☐ Sí ☐ No,"🟡 ""Turismo según el cliente""",
-195,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Recordatorio de renovación de visa/residencia,☐ Sí ☐ No,💡,
-196,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Consulta de check-up al año,☐ Sí ☐ No,💡,
-197,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Consultoría de estrategia de salida,☐ Sí ☐ No,💡 Si cliente se va,
-198,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Introducción a administración de propiedades,☐ Sí ☐ No,💡 Dueños no residentes,
-199,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.3 Estilo de Vida & Integración,Redirección de correo (continuo),☐ Sí ☐ No,💡,
-200,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Conserjería de emergencia 24/7 (teléfono),☐ Sí ☐ No,💡 Toque personal,
-201,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Transfer privado aeropuerto (vehículo de lujo),☐ Sí ☐ No,💡,
-202,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Tour VIP de propiedades (¿helicóptero?),☐ 😂 Broma,💡 Pero posible,
-203,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Asistente personal (servicio continuo),☐ Sí ☐ No,💡 Retainer mensual,
-204,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Setup de family office,☐ Sí ☐ No,💡 Para HNW,
-205,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Gestión de portafolio inmobiliario,☐ Sí ☐ No,💡 Múltiples propiedades,
-206,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Consultoría de inversión agrícola,☐ Sí ☐ No,🟡 PREGUNTA — programa tierras,
-207,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Introducción a socios de negocio,☐ Sí ☐ No,💡 Joint ventures,
-208,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Representación legal (retainer continuo),☐ Sí ☐ No,💡,
-209,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Reubicación de empresa completa,☐ Sí ☐ No,💡 Paquete enterprise,
-210,FASE 3 — SOPORTE CONTINUO (Meses 3-12),3.4 Servicios Premium / White-Glove,Visa de inversor / golden visa alternativa,☐ Sí ☐ No,💡 PY no tiene pero comparable,
+#,Fase,Categoría,Servicio,¿Sonia lo hace?,Tipo de precio,Precio/Comisión recomendado,Justificación de pricing,Notas adicionales
+1,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Pre-validación de documentos (checklist remoto),FALSE,Incluido,,"Incluido en el paquete de $1,500. Es el primer paso del proceso.",$________
+2,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Coordinación de Apostilla,FALSE,Incluido,,"Incluido en $1,500. Coordinación básica del proceso.",$________
+3,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Traducción certificada (al español),FALSE,Incluido,,"Incluido en $1,500. Traducción al español por traductor público.",$________
+4,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Recepción de documentos en Paraguay,FALSE,Incluido,,"Incluido en $1,500. Recepción y verificación de documentos.",$________
+5,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Poder notarial (para compras remotas),FALSE,Fee,$50-100,Servicio extra. Poder notarial requiere coordinación con escribanía.,$________
+6,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Digitalización de documentos + cloud,FALSE,Gratis (bono),,Digitalización simple: gratis. Cloud vault: oportunidad futura.,$________
+7,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Certificado de antecedentes internacionales (Interpol),FALSE,Incluido,,"Incluido en $1,500. Trámite estándar en Migraciones.",$________
+8,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Apostilla de acta de nacimiento/matrimonio,FALSE,Incluido,,"Incluido en $1,500. Forma parte de la gestión documental.",$________
+9,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Apostilla de título educativo,FALSE,Fee,$50-100,Solo si el cliente lo solicita. No es estándar.,$________
+10,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Certificado médico en Paraguay,FALSE,Incluido,,"Incluido en $1,500. Se tramita localmente durante el proceso.",$________
+11,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Certificado de Vida y Residencia,FALSE,Incluido,,"Incluido en $1,500. Requisito obligatorio de Migraciones.",$________
+12,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Carta de referencia bancaria del país de origen,FALSE,Gratis (info),,El cliente la gestiona en su país. Sonia solo avisa que la necesita.,$________
+13,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Antecedentes policiales (Interpol PY),FALSE,Incluido,,"Incluido en $1,500. Trámite estándar en Interpol PY.",$________
+14,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Traducción inglés → español,FALSE,Incluido,,"Incluido en $1,500. Traducción estándar incluida.",$________
+15,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Traducción neerlandés → español,FALSE,Incluido,,"Incluido en $1,500. Especialidad de Sonia — valor agregado.",$________
+16,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Traducción alemán → español,FALSE,Fee,$50-100,Solo si hay clientes alemán-parlantes. No es estándar hoy.,$________
+17,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Certificación de traductor público,FALSE,Incluido,,"Incluido en $1,500. Certificación del traductor público.",$________
+18,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Cadena de legalización de documentos,FALSE,Incluido,,"Incluido en $1,500. Gestión completa de documentos.",$________
+19,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Auditoría de documentos pre-arrivo (Zoom 30min),FALSE,Gratis (bono),,Bueno como valor agregado. Se puede hacer en la llamada inicial gratuita.,$________
+20,Fase 0: Pre-Arrival,0.1 Preparación de Documentos,Preparación de copias notariadas,FALSE,Fee,$30-50,Solo si el cliente lo solicita para trámites específicos.,$________
+21,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,Consulta gratuita 30 min,FALSE,Gratis,,Ya está en el sitio y funciona. 30 min de consulta gratuita.,✅ Ya en el sitio
+22,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,Consulta paga profunda (1hr),FALSE,Fee,$150-250,Consulta profunda de 1 hora para casos complejos. Competencia cobra $200-400.,💡
+23,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,"Evaluación familiar (colegios, trabajo, hijos)",FALSE,Fee,$100-150,Evaluación familiar — precio único por familia.,💡
+24,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,Análisis de situación fiscal,FALSE,Fee,$100-200,"Depende: si Sonia puede responder, $100. Si deriva a contador, $0 para ella (comisión).",🟡 PREGUNTA — ¿ella o contador?
+25,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,Taller de planificación de inversión,FALSE,Fee,$200-300,Para inversores. Incluye análisis de opciones.,💡 Para inversores
+26,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,Sesión de planificación de presupuesto,FALSE,Gratis (bono),,Se puede hacer con la calculadora de costo de vida que ya tenemos.,💡 Calculadora costo de vida
+27,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,Planificación de timeline,FALSE,Incluido,,"Incluido en $1,500. Forma parte del acompañamiento estándar.",✅ 8-12 semanas
+28,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,Checklist de documentos (digital),FALSE,Gratis (lead magnet),,"Lead magnet. Genera leads, no se cobra.",💡 Lead magnet
+29,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,Orientación laboral / trabajo remoto,FALSE,Fee,$100-150,Si el cliente necesita orientación específica.,💡
+30,Fase 0: Pre-Arrival,0.2 Consultoría Pre-Arrivo,Consulta para pareja/cónyuge,FALSE,Fee,$100-150,Similar a la evaluación familiar. Precio único.,💡
+31,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,Ayuda con reserva de vuelos,FALSE,Gratis (info),,El cliente reserva su vuelo. Sonia solo aconseja.,🟡 PREGUNTA
+32,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,Reserva de alojamiento temporal (Airbnb),FALSE,Incluido,,"Incluido en $1,500. Coordinación de alojamiento temporal.",✅ Lo hace
+33,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,Coordinación de mudanza de mascotas,FALSE,Fee,$100-200,Mercado nicho. Puede cobrarse como consulta.,💡 Demanda creciente
+34,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,Coordinación de envío internacional (mudanza),FALSE,Fee,$200-500,Mudanza grande. Sonia coordina con empresa de shipping — posible comisión.,💡
+35,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,Redirección de correo (forwarding),FALSE,Gratis (bono),,Bajo esfuerzo. Buen valor agregado.,💡
+36,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,Análisis de seguro de viaje,FALSE,Gratis (info),,Información que Sonia ya conoce.,💡
+37,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,Verificación de vacunas requeridas,FALSE,Gratis (info),,Información estándar.,💡
+38,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,Asesoría de cambio de divisas,FALSE,Gratis (info),,Información que Sonia ya maneja.,💡 USD/PYG
+39,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,Transferencia bancaria internacional,FALSE,Fee,$50-100,Si el cliente necesita ayuda con la transferencia inicial.,🟡 PREGUNTA
+40,Fase 0: Pre-Arrival,0.3 Logística Pre-Arrivo,SIM card prepaga activa al llegar,FALSE,Incluido,,"Incluido en $1,500. Compra del chip el Day 1.",💡
+41,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Recogida en aeropuerto,FALSE,Incluido,,"Incluido en $1,500. Sonia recoge al cliente en el aeropuerto.",$________
+42,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Briefing de bienvenida (primeras 24h),FALSE,Incluido,,"Incluido en $1,500. Forma parte del Day 1 protocol.",$________
+43,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Activación de chip local (Day 1),FALSE,Incluido,,"Incluido en $1,500. Compra y activación del chip local.",$________
+44,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Check-in en alojamiento temporal,FALSE,Incluido,,"Incluido en $1,500. Acompañamiento al alojamiento.",$________
+45,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Tour de orientación del barrio,FALSE,Incluido,,"Incluido en $1,500. Tour básico del barrio.",$________
+46,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Gestión de transporte (alquiler auto / chofer),FALSE,Comisión,5-10%,Posible comisión de la empresa de alquiler. Bajo esfuerzo.,$________
+47,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Configuración de maps y navegación,FALSE,Gratis (bono),,2 min de trabajo. Buen valor agregado.,$________
+48,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Servicio de compras / supermercado,FALSE,Gratis (bono),,Parte del tour de orientación.,$________
+49,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Referencia de servicio de comidas,FALSE,Gratis (info),,Recomendación rápida.,$________
+50,Fase 1: Llegada,1.1 Aeropuerto & Transporte,Briefing de contactos de emergencia,FALSE,Gratis (bono),,Valor agregado. Se hace una vez.,$________
+51,Fase 1: Llegada,1.2 Identificación & Registro,Solicitud de residencia,FALSE,Incluido,,"SERVICIO PRINCIPAL. Incluido en $1,500.",✅ Core service
+52,Fase 1: Llegada,1.2 Identificación & Registro,Cédula de Identidad (provisional),FALSE,Incluido,,"Incluido en $1,500.",✅
+53,Fase 1: Llegada,1.2 Identificación & Registro,"Cédula de Identidad (permanente, 2 años)",FALSE,Fee,$200-300,A los 2 años. Servicio adicional.,✅
+54,Fase 1: Llegada,1.2 Identificación & Registro,Registro RUC (contribuyente),FALSE,Fee,$100-200,Si el cliente necesita RUC. No siempre es necesario.,✅ Para Business
+55,Fase 1: Llegada,1.2 Identificación & Registro,Cita de huellas dactilares,FALSE,Incluido,,Parte del proceso de cédula.,
+56,Fase 1: Llegada,1.2 Identificación & Registro,Antecedentes policiales (Paraguay),FALSE,Incluido,,Parte del proceso estándar.,
+57,Fase 1: Llegada,1.2 Identificación & Registro,Solicitud en Migraciones,FALSE,Incluido,,SERVICIO PRINCIPAL.,✅
+58,Fase 1: Llegada,1.2 Identificación & Registro,Registro de extranjero (Mercosur),FALSE,Gratis (info),,Solo si aplica. Información que Sonia ya conoce.,💡
+59,Fase 1: Llegada,1.2 Identificación & Registro,Registro consular (país de origen),FALSE,Gratis (info),,El cliente lo hace. Sonia solo le dice qué embajada visitar.,💡
+60,Fase 1: Llegada,1.2 Identificación & Registro,Configuración de identidad digital,FALSE,Gratis (bono),,Configuración rápida.,💡
+61,Fase 1: Llegada,1.3 Bancos & Finanzas,Apertura de cuenta bancaria (personal),FALSE,Incluido,,"Incluido en $1,500. Acompañamiento al banco.",$________
+62,Fase 1: Llegada,1.3 Bancos & Finanzas,Apertura de cuenta bancaria (empresa),FALSE,Fee,$200/día,Cuenta empresarial requiere más trámites. Entra dentro del día de acompañamiento.,$________
+63,Fase 1: Llegada,1.3 Bancos & Finanzas,Introducción y relación con banco,FALSE,Incluido,,"Incluido en $1,500.",$________
+64,Fase 1: Llegada,1.3 Bancos & Finanzas,Configuración de banca online,FALSE,Incluido,,"Incluido en $1,500.",$________
+65,Fase 1: Llegada,1.3 Bancos & Finanzas,Transferencia internacional (SWIFT),FALSE,Gratis (info),,El banco lo gestiona. Sonia solo guía.,$________
+66,Fase 1: Llegada,1.3 Bancos & Finanzas,Cuenta de cambio de divisas,FALSE,Gratis (info),,Información que Sonia ya conoce.,$________
+67,Fase 1: Llegada,1.3 Bancos & Finanzas,Solicitud de tarjeta de crédito,FALSE,Fee,$50-100,Si el cliente necesita tarjeta de crédito internacional.,$________
+68,Fase 1: Llegada,1.3 Bancos & Finanzas,Emisión de tarjeta de débito,FALSE,Incluido,,Viene con la cuenta bancaria.,$________
+69,Fase 1: Llegada,1.3 Bancos & Finanzas,Caja de seguridad (banco),FALSE,Gratis (info),,El banco lo ofrece. Sonia solo informa.,$________
+70,Fase 1: Llegada,1.3 Bancos & Finanzas,Apertura de cuenta de inversión,FALSE,Fee,$100-200,Para inversores. Consulta especializada.,$________
+71,Fase 1: Llegada,1.3 Bancos & Finanzas,"Cuenta de crypto local (X4T, Ueno)",FALSE,Gratis (info),,Información general. Sonia no necesita ser experta.,$________
+72,Fase 1: Llegada,1.3 Bancos & Finanzas,Cuenta multi-moneda,FALSE,Gratis (info),,Información general.,$________
+73,Fase 1: Llegada,1.3 Bancos & Finanzas,Establecimiento de historial crediticio,FALSE,Gratis (info),,No es algo que Sonia gestione activamente.,$________
+74,Fase 1: Llegada,1.3 Bancos & Finanzas,Pre-aprobación hipotecaria,FALSE,Fee,$100-200,Derivar a contacto bancario. Posible comisión.,$________
+75,Fase 1: Llegada,1.3 Bancos & Finanzas,"Seguros (hogar, auto, salud)",FALSE,Fee,$50-100,Derivar a broker de seguros. Posible comisión.,$________
+76,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Alquiler temporal (1-3 meses),FALSE,Incluido,,"Incluido en $1,500. Búsqueda de alquiler temporal.",$________
+77,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Alquiler largo plazo (12+ meses),FALSE,Incluido,,"Incluido en $1,500. Búsqueda de alquiler largo plazo.",$________
+78,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Búsqueda de barrios,FALSE,Incluido,,"Incluido en $1,500.",$________
+79,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Revisión de contrato de alquiler,FALSE,Incluido,,"Incluido en $1,500.",$________
+80,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Gestión de depósito de garantía,FALSE,Fee,$50-100,Gestión adicional que puede cobrarse.,$________
+81,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Conexión de agua (ESSAP),FALSE,Gratis (bono),,"Bajo esfuerzo, incluido en el acompañamiento.",$________
+82,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Conexión de luz (ANDE),FALSE,Gratis (bono),,"Bajo esfuerzo, incluido en el acompañamiento.",$________
+83,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Instalación de internet,FALSE,Gratis (bono),,"Bajo esfuerzo, incluido en el acompañamiento.",$________
+84,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Servicio de gas,FALSE,Gratis (info),,Recomendación.,$________
+85,Fase 1: Llegada,1.4 Bienes Raíces — Alquiler,Paquete de muebles para alquiler,FALSE,Comisión,5-10%,Posible comisión de la tienda de muebles.,$________
+86,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Búsqueda de propiedad (compra),FALSE,Comisión,2.75%,YA CONFIRMADO. 2.75% del precio de venta.,Comisión
+87,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Coordinación de visitas a propiedades,FALSE,Comisión,2.75%,YA CONFIRMADO. Incluido en la comisión.,Comisión
+88,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Verificación de título (due diligence),FALSE,Incluido,,Incluido en la comisión del 2.75%. Diferenciador clave.,$________
+89,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Verificación de zona inundable / zona roja,FALSE,Incluido,,Incluido en la comisión. ORGULLO de Sonia.,$________
+90,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Auditoría anti-estafas,FALSE,Incluido,,Incluido en la comisión. MÁXIMO VALOR.,$________
+91,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Negociación de precio,FALSE,Comisión,2.75%,Incluido en la comisión.,Comisión
+92,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Coordinación notarial,FALSE,Incluido,,Incluido en la comisión.,$________
+93,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Gestión de depósito en garantía (escrow),FALSE,Fee,$100-200,Servicio adicional si el cliente lo requiere.,$________
+94,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Registro de propiedad (Registro Público),FALSE,Incluido,,Incluido en la comisión.,$________
+95,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Verificación de impuestos prediales,FALSE,Incluido,,Incluido en la comisión.,$________
+96,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Coordinación de agrimensura,FALSE,Fee,$100-200,Solo para terrenos rurales. Coordinación con agrimensor.,$________
+97,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Análisis de tierra agrícola,FALSE,Fee,$200-500,Requiere conocimiento especializado. Puede derivar.,$________
+98,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Búsqueda de propiedad comercial,FALSE,Comisión,2.75%,Misma comisión que propiedades residenciales.,$________
+99,Fase 1: Llegada,1.5 Bienes Raíces — Compra,Inspección estructural de propiedad,FALSE,Fee,$100-200,Derivar a inspector profesional. Posible comisión.,$________
+100,Fase 1: Llegada,1.5 Bienes Raíces — Compra,"Seguro de propiedad (incendio, robo)",FALSE,Fee,$50-100,Derivar a broker. Posible comisión.,$________
+101,Fase 1: Llegada,2.1 Servicios Familiares,Investigación y selección de colegios,FALSE,Fee,$200/día,Investigación de colegios — puede tomar medio día o día completo.,✅ Lo hace
+102,Fase 1: Llegada,2.1 Servicios Familiares,Inscripción en colegio (trámites),FALSE,Fee,$100-150,Trámite de inscripción — medio día.,🟡 PREGUNTA
+103,Fase 1: Llegada,2.1 Servicios Familiares,Tour de colegios (visitas físicas),FALSE,Fee,$100-150,Tour físico a colegios — medio día.,🟡 PREGUNTA
+104,Fase 1: Llegada,2.1 Servicios Familiares,Solicitud a colegios internacionales,FALSE,Fee,$100-200,Gestión de solicitud a colegios internacionales.,"💡 St. Mary's, etc."
+105,Fase 1: Llegada,2.1 Servicios Familiares,Orientación universitaria (hijos mayores),FALSE,Fee,$100-150,Orientación para hijos mayores.,💡
+106,Fase 1: Llegada,2.1 Servicios Familiares,Referencia de niñera / cuidado de niños,FALSE,Gratis (referido),,Recomendación sin costo.,💡
+107,Fase 1: Llegada,2.1 Servicios Familiares,Referencia de pediatra,FALSE,Gratis (referido),,Recomendación.,💡
+108,Fase 1: Llegada,2.1 Servicios Familiares,Documentos legales familiares (tutela),FALSE,Fee,$100-200,Requiere coordinación con abogado.,💡
+109,Fase 1: Llegada,2.1 Servicios Familiares,Orientación laboral para cónyuge,FALSE,Gratis (info),,Información estándar.,💡 Permiso automático
+110,Fase 1: Llegada,2.1 Servicios Familiares,"Inscripción en actividades (deportes, arte)",FALSE,Fee,$50-100,Inscripción en actividades — bajo esfuerzo.,✅ Mencionado
+111,Fase 1: Llegada,2.1 Servicios Familiares,Compra de útiles / uniformes escolares,FALSE,Gratis (bono),,Acompañamiento de compras — parte del día.,💡
+112,Fase 1: Llegada,2.1 Servicios Familiares,Inscripción en programas extraescolares,FALSE,Gratis (referido),,Recomendación.,💡
+113,Fase 1: Llegada,2.1 Servicios Familiares,Inscripción en campamento de verano,FALSE,Gratis (referido),,Recomendación.,💡
+114,Fase 1: Llegada,2.1 Servicios Familiares,Programas de integración para adolescentes,FALSE,Fee,$100-200,Requiere investigación de programas específicos.,💡
+115,Fase 1: Llegada,2.2 Salud,Afiliación a seguro de salud (local),FALSE,Gratis (referido),,Derivar a broker de seguros. Posible comisión.,✅ Mencionado
+116,Fase 1: Llegada,2.2 Salud,Seguro de salud internacional,FALSE,Gratis (referido),,Derivar a broker internacional. Posible comisión.,"💡 Cigna, Allianz"
+117,Fase 1: Llegada,2.2 Salud,Referencia de médico general,FALSE,Gratis (referido),,Recomendación.,💡 Hospital Bautista
+118,Fase 1: Llegada,2.2 Salud,Referencia de especialista,FALSE,Gratis (referido),,Recomendación.,🟡 PREGUNTA
+119,Fase 1: Llegada,2.2 Salud,Referencia de dentista,FALSE,Gratis (referido),,Recomendación.,💡 Más barato que UE
+120,Fase 1: Llegada,2.2 Salud,Registro en hospital (pre-emergencia),FALSE,Gratis (bono),,Bajo esfuerzo.,💡
+121,Fase 1: Llegada,2.2 Salud,Orientación de farmacias,FALSE,Gratis (info),,Información básica.,💡
+122,Fase 1: Llegada,2.2 Salud,Acompañamiento médico (traducción),FALSE,Fee,$200/día,Acompañamiento médico con traducción — día completo.,💡 Para no hispanohablantes
+123,Fase 1: Llegada,2.2 Salud,Alineación de calendario de vacunas,FALSE,Gratis (info),,Información general.,💡
+124,Fase 1: Llegada,2.2 Salud,Briefing de números de emergencia,FALSE,Gratis (bono),,Se hace una vez.,"💡 911, ambulancia"
+125,Fase 1: Llegada,2.2 Salud,Referencia de terapia / counseling,FALSE,Gratis (referido),,Recomendación.,💡 Salud mental
+126,Fase 1: Llegada,2.2 Salud,Referencia de óptica,FALSE,Gratis (referido),,Recomendación.,💡
+127,Fase 1: Llegada,2.2 Salud,Coordinación de análisis de laboratorio,FALSE,Gratis (referido),,Recomendación a laboratorio.,💡
+128,Fase 1: Llegada,2.3 Transporte,Asistencia en compra de vehículo,FALSE,Comisión,3-5%,Comisión del vendedor. Sin costo para el cliente.,✅ Comisión del vendedor
+129,Fase 1: Llegada,2.3 Transporte,Orientación para licencia de conducir,FALSE,Fee,$100-150,Orientación y acompañamiento — medio día.,✅ Mencionado
+130,Fase 1: Llegada,2.3 Transporte,Traducción de licencia de conducir,FALSE,Fee,$30-50,Traducción simple.,💡 Permiso internacional
+131,Fase 1: Llegada,2.3 Transporte,Preparación para examen de conducir PY,FALSE,Fee,$100-200,Preparación para el examen — medio día.,💡
+132,Fase 1: Llegada,2.3 Transporte,Importación de vehículo (desde UE),FALSE,Fee,$200-500,Requiere conocimiento de importación. Puede derivar.,💡
+133,Fase 1: Llegada,2.3 Transporte,Seguro de vehículo,FALSE,Gratis (referido),,Derivar a broker. Posible comisión.,💡 Requerido en PY
+134,Fase 1: Llegada,2.3 Transporte,Referencia de chofer / conductor,FALSE,Gratis (referido),,Carlos ya trabaja con Sonia.,✅ Carlos
+135,Fase 1: Llegada,2.3 Transporte,Orientación de transporte público,FALSE,Gratis (info),,Información básica.,"💡 Buses, ride-sharing"
+136,Fase 1: Llegada,2.3 Transporte,Compra de bicicleta / monopatín,FALSE,Gratis (referido),,Recomendación.,💡
+137,Fase 1: Llegada,2.3 Transporte,Registro de vehículo (patente),FALSE,Fee,$50-100,Trámite administrativo.,💡
+138,Fase 1: Llegada,2.3 Transporte,Orientación de estacionamiento / peajes,FALSE,Gratis (info),,Información.,💡 Apps móviles
+139,Fase 1: Llegada,2.4 Setup del Hogar,Compra de muebles (asistencia),FALSE,Comisión,3-5%,Comisión de la tienda. Sin costo para el cliente.,✅ Comisión
+140,Fase 1: Llegada,2.4 Setup del Hogar,Compra de electrodomésticos,FALSE,Comisión,3-5%,Comisión de la tienda. Sin costo para el cliente.,✅ Comisión
+141,Fase 1: Llegada,2.4 Setup del Hogar,Contratación de personal doméstico,FALSE,Gratis (referido),,Recomendación.,💡
+142,Fase 1: Llegada,2.4 Setup del Hogar,Instalación de sistema de seguridad,FALSE,Gratis (referido),,Recomendación a empresa de seguridad.,💡
+143,Fase 1: Llegada,2.4 Setup del Hogar,Seguro de hogar,FALSE,Gratis (referido),,Derivar a broker.,💡
+144,Fase 1: Llegada,2.4 Setup del Hogar,Orientación de reciclaje / basura,FALSE,Gratis (info),,Info básica.,💡
+145,Fase 1: Llegada,2.4 Setup del Hogar,Referencia de mantenimiento de piscina,FALSE,Gratis (referido),,Recomendación.,💡 Muchas casas tienen
+146,Fase 1: Llegada,2.4 Setup del Hogar,Referencia de jardinero,FALSE,Gratis (referido),,Recomendación.,💡
+147,Fase 1: Llegada,2.4 Setup del Hogar,Referencia de control de plagas,FALSE,Gratis (referido),,Recomendación.,"💡 Termitas, mosquitos"
+148,Fase 1: Llegada,2.4 Setup del Hogar,Referencia de cerrajero,FALSE,Gratis (referido),,Recomendación.,💡
+149,Fase 1: Llegada,2.4 Setup del Hogar,Referencia de mantero / reparaciones,FALSE,Gratis (referido),,Recomendación.,💡
+150,Fase 1: Llegada,2.5 Negocios & Profesional,Creación de empresa (EAS),FALSE,Fee,$200-500,Creación de EAS — puede tomar medio día + coordinación.,✅
+151,Fase 1: Llegada,2.5 Negocios & Profesional,Creación de empresa (SA),FALSE,Fee,"$500-1,000","Creación de SA — más complejo, deriva a abogado. Comisión.",✅
+152,Fase 1: Llegada,2.5 Negocios & Profesional,Estructura legal para trabajo remoto,FALSE,Fee,$100-200,Consultoría sobre estructura legal para remoto.,✅ Aconseja
+153,Fase 1: Llegada,2.5 Negocios & Profesional,Introducción a estudio contable,FALSE,Gratis (referido),,Derivar a contador. Posible comisión del contador.,✅ Comisión
+154,Fase 1: Llegada,2.5 Negocios & Profesional,Introducción a estudio jurídico,FALSE,Gratis (referido),,Derivar a abogado. Posible comisión.,✅ Comisión
+155,Fase 1: Llegada,2.5 Negocios & Profesional,Setup de facturación electrónica,FALSE,Fee,$100-200,Configuración del sistema de facturación.,💡
+156,Fase 1: Llegada,2.5 Negocios & Profesional,Setup de nómina local (empleados),FALSE,Fee,$200-400,Configuración de nómina. Deriva a contador.,💡
+157,Fase 1: Llegada,2.5 Negocios & Profesional,Licencia municipal de negocio,FALSE,Fee,$100-200,Trámite municipal. Puede tomar medio día.,💡
+158,Fase 1: Llegada,2.5 Negocios & Profesional,Registro de importación/exportación,FALSE,Fee,$200-500,Requiere coordinación con despachante.,💡
+159,Fase 1: Llegada,2.5 Negocios & Profesional,Registro de propiedad intelectual,FALSE,Fee,$200-400,Derivar a abogado especializado.,💡 Marcas en PY
+160,Fase 1: Llegada,2.5 Negocios & Profesional,Seguro empresarial,FALSE,Gratis (referido),,Derivar a broker.,💡
+161,Fase 1: Llegada,2.5 Negocios & Profesional,Cuenta bancaria corporativa,FALSE,Incluido,,"Incluido en $1,500 o en el día de acompañamiento bancario.",✅
+162,Fase 1: Llegada,2.5 Negocios & Profesional,"Onboarding de empleados (ESS, IPS)",FALSE,Fee,$100-200,Trámite de ESS/IPS. Puede tomar medio día.,💡
+163,Fase 1: Llegada,2.5 Negocios & Profesional,Referencia de coworking,FALSE,Gratis (referido),,Recomendación.,💡 Para nómadas digitales
+164,Fase 1: Llegada,2.5 Negocios & Profesional,Búsqueda de oficina comercial,FALSE,Fee,$200/día,Búsqueda de oficina — día de acompañamiento.,💡
+165,Fase 1: Llegada,2.5 Negocios & Profesional,Introducción a socios de negocio locales,FALSE,Gratis (referido),,Recomendación basada en su red.,💡
+166,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Declaración de impuestos anual (personal),FALSE,Gratis (referido),,Derivar a contador. Sonia no prepara declaraciones.,🟡 Deriva a contador
+167,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Declaración de impuestos anual (empresa),FALSE,Gratis (referido),,Derivar a contador.,🟡 Deriva a contador
+168,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Cumplimiento mensual de RUC,FALSE,Gratis (referido),,El contador lo maneja.,💡
+169,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Declaración trimestral de IVA,FALSE,Gratis (referido),,El contador lo maneja.,💡 Contador
+170,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Certificado de residencia fiscal,FALSE,Fee,$100-200,Tramitar certificado de residencia fiscal.,💡 Para salir de NL
+171,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Asesoría de tratado de doble imposición,FALSE,Gratis (referido),,Derivar a contador o abogado tributario.,🟡 Puede no saber
+172,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Revisión de optimización fiscal,FALSE,Gratis (referido),,Derivar a contador.,🟡
+173,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Orientación de impuestos crypto,FALSE,Gratis (info),,Información general sobre crypto en PY.,💡 0% en PY
+174,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Cumplimiento SEPRELAD,FALSE,Fee,$200-500,Requiere coordinación con abogado para registro SEPRELAD.,❓ PENDIENTE
+175,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Filing AML/KYC,FALSE,Fee,$200-500,Depende del tipo de negocio. Deriva a abogado.,❓ PENDIENTE
+176,Fase 3: Soporte Continuo,3.1 Impuestos & Compliance,Declaración de patrimonio anual,FALSE,Gratis (referido),,Derivar a contador.,💡
+177,Fase 3: Soporte Continuo,3.2 Camino a Residencia Permanente,Temporal → Permanente (Año 2),FALSE,Fee,$200-300,Tramitar el cambio de temporal a permanente — año 2.,✅ Mencionado
+178,Fase 3: Soporte Continuo,3.2 Camino a Residencia Permanente,Solicitud de ciudadanía (Año 3),FALSE,Fee,"$500-1,000",Solicitud de ciudadanía. Proceso más complejo.,💡
+179,Fase 3: Soporte Continuo,3.2 Camino a Residencia Permanente,Solicitud de pasaporte,FALSE,Fee,$100-200,Tramitar pasaporte paraguayo.,💡 140+ países
+180,Fase 3: Soporte Continuo,3.2 Camino a Residencia Permanente,Consultoría de segundo pasaporte,FALSE,Fee,$200-500,Consultoría sobre opciones de segundo pasaporte.,💡 Para europeos
+181,Fase 3: Soporte Continuo,3.2 Camino a Residencia Permanente,Reunificación familiar,FALSE,Fee,$200-400,Trámite de reunificación familiar.,✅ Mencionado
+182,Fase 3: Soporte Continuo,3.2 Camino a Residencia Permanente,"Renovación de documentos (cédula, RUC)",FALSE,Fee,$50-100,Renovación de documentos. Bajo esfuerzo.,💡
+183,Fase 3: Soporte Continuo,3.2 Camino a Residencia Permanente,Cambio de domicilio (en Migraciones),FALSE,Gratis (info),,Información sobre cambio de domicilio.,💡
+184,Fase 3: Soporte Continuo,3.2 Camino a Residencia Permanente,Carta de salida de emigración (NL),FALSE,Fee,$100-200,Ayuda con la carta de salida de NL (BRP deregistration).,💡 BRP deregistration
+185,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Introducción a clubes sociales,FALSE,Gratis (referido),,Recomendación.,✅ Lo hace
+186,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Introducción a comunidad de expats,FALSE,Gratis (referido),,Recomendación a grupos de WhatsApp.,✅ Grupos WhatsApp
+187,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Referencia de profesor de español,FALSE,Gratis (referido),,Recomendación de profesor.,✅ Lo hace
+188,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Clases de guaraní básico,FALSE,Fee,$50-100,Si Sonia conoce a alguien que dé clases.,💡 Integración
+189,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Clases de cocina paraguaya,FALSE,Gratis (referido),,Recomendación.,"💡 Chipa, sopa"
+190,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Coordinación de eventos de networking,FALSE,Gratis (referido),,Recomendación.,💡
+191,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Inscripción en club deportivo / gym,FALSE,Gratis (referido),,Recomendación.,💡
+192,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Introducción a comunidad religiosa,FALSE,Gratis (referido),,Recomendación.,"💡 Iglesias, sinagoga"
+193,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Conexión con voluntariado / ONG,FALSE,Gratis (referido),,Recomendación.,💡
+194,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Planificación de viaje de fin de semana,FALSE,Fee,$200/día,Tour turístico — día de acompañamiento.,"🟡 ""Turismo según el cliente"""
+195,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Recordatorio de renovación de visa/residencia,FALSE,Gratis (bono),,Recordatorio simple — buen valor agregado.,💡
+196,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Consulta de check-up al año,FALSE,Gratis (bono),,Llamada de seguimiento.,💡
+197,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Consultoría de estrategia de salida,FALSE,Fee,$100-200,Consultoría si el cliente decide irse.,💡 Si cliente se va
+198,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Introducción a administración de propiedades,FALSE,Gratis (referido),,Derivar a administrador de propiedades. Comisión.,💡 Dueños no residentes
+199,Fase 3: Soporte Continuo,3.3 Estilo de Vida & Integración,Redirección de correo (continuo),FALSE,Fee,$30-50/mes,Servicio continuo de redirección de correo.,💡
+200,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Conserjería de emergencia 24/7 (teléfono),FALSE,Fee,$50-100/mes,Retainer mensual por disponibilidad 24/7.,💡 Toque personal
+201,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Transfer privado aeropuerto (vehículo de lujo),FALSE,Fee,$50-100,Coordinación de transfer. Puede tener comisión.,💡
+202,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Tour VIP de propiedades (¿helicóptero?),FALSE,Fee,$500+,Tour VIP. Depende del tipo de propiedad.,💡 Pero posible
+203,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Asistente personal (servicio continuo),FALSE,Fee,$200-500/mes,Retainer mensual por asistencia continua.,💡 Retainer mensual
+204,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Setup de family office,FALSE,Fee,"$500-2,000",Setup de family office. Proyecto grande.,💡 Para HNW
+205,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Gestión de portafolio inmobiliario,FALSE,Fee,$200-500/mes,Gestión de propiedades. Retainer mensual.,💡 Múltiples propiedades
+206,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Consultoría de inversión agrícola,FALSE,Fee,$300-500,Consultoría agrícola. Requiere conocimiento.,🟡 PREGUNTA — programa tierras
+207,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Introducción a socios de negocio,FALSE,Gratis (referido),,Recomendación basada en red.,💡 Joint ventures
+208,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Representación legal (retainer continuo),FALSE,Fee,$200-500/mes,Retainer legal a través de abogado socio.,💡
+209,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Reubicación de empresa completa,FALSE,Fee,"$2,000-5,000",Proyecto enterprise. Requiere coordinación con abogados.,💡 Paquete enterprise
+210,Fase 3: Soporte Continuo,3.4 Servicios Premium / White-Glove,Visa de inversor / golden visa alternativa,FALSE,Fee,$200-500,Consultoría sobre opciones de visa/residencia.,💡 PY no tiene pero comparable

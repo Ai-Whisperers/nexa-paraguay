@@ -1,0 +1,43 @@
+{
+  "url": "http://localhost:3456/inversor",
+  "capturedAt": "2026-05-18T13:03:51.301Z",
+  "attempt": 1,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "consoleLogs": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "performanceTimings": {
+    "domContentLoaded": 401.60000002384186,
+    "load": 522.3999999761581,
+    "domInteractive": 401.5,
+    "firstPaint": 492,
+    "firstContentfulPaint": 492,
+    "domSize": 522.1999999880791,
+    "transferSize": 66560,
+    "encodedBodySize": 66260,
+    "decodedBodySize": 263356,
+    "duration": 522.3999999761581,
+    "serverTiming": []
+  },
+  "metrics": {},
+  "structure": {
+    "totalElements": 296,
+    "imgTags": 9,
+    "imgBroken": 0,
+    "scripts": 66,
+    "links": 26,
+    "headings": {
+      "h1": 1,
+      "h2": 4,
+      "h3": 10,
+      "h4": 3
+    },
+    "forms": 0,
+    "iframes": 0,
+    "buttons": 4,
+    "textNodes": 2490
+  }
+}

@@ -1,0 +1,14 @@
+
+> nexa-paraguay@0.2.0 start
+> next start -p 3456
+
+▲ Next.js 16.2.6
+- Local:         http://localhost:3456
+- Network:       http://72.61.44.159:3456
+✓ Ready in 167ms
+⚠ Invalid next.config.js options detected: 
+⚠     Unrecognized key(s) in object: 'serverExternalPackages' at "experimental"
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
+[nexa] Application startup
+[nexa] Application startup
