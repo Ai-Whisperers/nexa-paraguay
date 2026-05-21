@@ -31,8 +31,23 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
+    <html lang='es'>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: "Nexa Paraguay",
+              url: "https://nexaparaguay.com",
+              description: "Desarrollo web, automatización de procesos e inteligencia artificial para empresas en Paraguay",
+              areaServed: { "@type": "Country", name: "PY" },
+              availableLanguage: ["Español", "English", "Nederlands", "Deutsch"],
+              contactPoint: { "@type": "ContactPoint", contactType: "customer service", url: "https://nexaparaguay.com/contacto" },
+            }),
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
