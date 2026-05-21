@@ -23,8 +23,10 @@ export const metadata: Metadata = {
     siteName: 'Nexa Paraguay',
     locale: 'es_PY',
     type: 'website',
+    images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
   alternates: { canonical: 'https://nexaparaguay.com' },
+  verification: { google: 'YOUR_GSC_VERIFICATION_CODE' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
