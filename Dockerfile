@@ -7,6 +7,8 @@ RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json* .npmrc ./
 COPY .packages ./.packages/
 COPY scripts/copy-ai-packages.cjs ./scripts/copy-ai-packages.cjs
+ARG NODE_AUTH_TOKEN
+RUN if [ -n "$NODE_AUTH_TOKEN" ]; then echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" >> .npmrc; fi
 RUN npm install --legacy-peer-deps 2>&1 || true
 RUN node scripts/copy-ai-packages.cjs
 
@@ -15,6 +17,8 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 COPY .packages ./.packages
+ENV NODE_AUTH_TOKEN=dummy
+RUN node scripts/copy-ai-packages.cjs || true
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
 
