@@ -28,7 +28,7 @@
     "@ai-whisperers/theme": "^0.2.0",
     "@ai-whisperers/ui": "^0.4.0",
     "@ai-whisperers/whatsapp": "^0.2.0",
-    "@supabase/supabase-js": "^2.105.4",
+    "@supabase/supabase-js": "^2.106.1",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "next": "^16.2.4",
