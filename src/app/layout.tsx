@@ -1,12 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import Script from 'next/script'
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { CookieBanner } from '../components/CookieBanner'
 import ExitPopupWrapper from '../components/ExitPopupWrapper'
-
-const GA_ID = process.env.NEXT_PUBLIC_GA4_ID || 'G-XE49GLEP34'
+import { CookieConsent } from "@ai-whisperers/seo"
+import { WhatsAppFloat } from "@ai-whisperers/whatsapp"
 
 export const metadata: Metadata = {
   title: {
@@ -51,10 +47,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GA_ID}', { cookie_flags: 'max-age=7200;secure;samesite=none' });`}
-        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -73,11 +65,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="font-inter bg-background text-text">
-        <CookieBanner />
         <ExitPopupWrapper />
         {children}
-        <Analytics />
-        <SpeedInsights />
+        <WhatsAppFloat />
+        <CookieConsent />
       </body>
     </html>
   )
