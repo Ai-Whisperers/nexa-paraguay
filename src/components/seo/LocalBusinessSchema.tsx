@@ -1,17 +1,23 @@
-'use client'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-interface LocalBusinessData {
-  name?: string
-  description?: string
-  locale?: string
+function loadSiteConfig() {
+  try {
+    return JSON.parse(readFileSync(join(process.cwd(), 'site.json'), 'utf-8'))
+  } catch {
+    return {}
+  }
 }
 
 export function LocalBusinessSchema({ locale = 'es' }: { locale?: string }) {
+  const siteConfig = loadSiteConfig()
+  const phone = siteConfig?.contact?.whatsapp || '595982515138'
+  const email = siteConfig?.contact?.email || 'hola@nexaparaguay.com'
   const localeText = {
-    es: { name: 'Nexa Paraguay', description: 'Asesoría profesional para radicación, banca y constitución de sociedad en Paraguay para ciudadanos europeos.', telephone: '+595 982 515138', email: 'hola@nexaparaguay.com' },
-    en: { name: 'Nexa Paraguay', description: 'Professional advisory for residency, banking and company incorporation in Paraguay for European citizens.', telephone: '+595 982 515138', email: 'hola@nexaparaguay.com' },
-    nl: { name: 'Nexa Paraguay', description: 'Professioneel advies voor vestiging, bankieren en bedrijfsoprichting in Paraguay voor Europese burgers.', telephone: '+595 982 515138', email: 'hola@nexaparaguay.com' },
-    de: { name: 'Nexa Paraguay', description: 'Professionelle Beratung für Aufenthalt, Bankgeschäfte und Firmengründung in Paraguay für europäische Bürger.', telephone: '+595 982 515138', email: 'hola@nexaparaguay.com' },
+    es: { name: 'Nexa Paraguay', description: 'Asesoría profesional para radicación, banca y constitución de sociedad en Paraguay para ciudadanos europeos.', telephone: `+595 ${phone.slice(3,6)} ${phone.slice(6,9)}${phone.slice(9)}`, email },
+    en: { name: 'Nexa Paraguay', description: 'Professional advisory for residency, banking and company incorporation in Paraguay for European citizens.', telephone: `+595 ${phone.slice(3,6)} ${phone.slice(6,9)}${phone.slice(9)}`, email },
+    nl: { name: 'Nexa Paraguay', description: 'Professioneel advies voor vestiging, bankieren en bedrijfsoprichting in Paraguay voor Europese burgers.', telephone: `+595 ${phone.slice(3,6)} ${phone.slice(6,9)}${phone.slice(9)}`, email },
+    de: { name: 'Nexa Paraguay', description: 'Professionelle Beratung für Aufenthalt, Bankgeschäfte und Firmengründung in Paraguay für europäische Bürger.', telephone: `+595 ${phone.slice(3,6)} ${phone.slice(6,9)}${phone.slice(9)}`, email },
   }
   const t = localeText[locale as keyof typeof localeText] || localeText.es
 

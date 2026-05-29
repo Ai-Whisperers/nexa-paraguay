@@ -30,7 +30,9 @@ export function ExitPopup({ data }: any) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type: 'exit-popup', email, timestamp: new Date().toISOString() }),
       })
-    } catch {}
+    } catch (err) {
+      console.warn('[ExitPopup] Submit failed:', err)
+    }
     setSubmitted(true)
     localStorage.setItem('nexa-exit-popup', 'submitted')
   }

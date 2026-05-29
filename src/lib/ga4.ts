@@ -197,7 +197,9 @@ export function useOutboundLinkTracker(containerSelector = 'main') {
         if (url.hostname !== window.location.hostname) {
           trackOutboundClick(url.href, target.textContent?.trim() || undefined)
         }
-      } catch {}
+      } catch (err) {
+        console.warn('[GA4] Invalid outbound URL:', href, err)
+      }
     }
 
     container.addEventListener('click', handler)

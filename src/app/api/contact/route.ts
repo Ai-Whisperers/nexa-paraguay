@@ -38,7 +38,9 @@ function logLead(data: Record<string, string>) {
     mkdirSync(dir, { recursive: true })
     const logPath = join(dir, `${new Date().toISOString().slice(0, 10)}.jsonl`)
     appendFileSync(logPath, JSON.stringify({ timestamp: new Date().toISOString(), ...data }) + '\n')
-  } catch {}
+  } catch (err) {
+    console.warn('[Contact] logLead failed:', err)
+  }
 }
 
 export async function POST(req: NextRequest) {

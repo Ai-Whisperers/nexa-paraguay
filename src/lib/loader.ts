@@ -57,7 +57,9 @@ async function loadTenantConfig(): Promise<any> {
     for (const locale of site.locales || ['es', 'en', 'nl', 'de']) {
       try {
         content[locale] = JSON.parse(readFileSync(join(REPO, 'content', `${locale}.json`), 'utf-8'))
-      } catch {}
+      } catch (err) {
+        console.warn('[Loader] Failed to load locale', locale, err)
+      }
     }
     const images = JSON.parse(readFileSync(join(REPO, 'images.json'), 'utf-8'))
     const testimonials = JSON.parse(readFileSync(join(REPO, 'testimonials.json'), 'utf-8'))

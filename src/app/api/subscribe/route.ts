@@ -41,7 +41,6 @@ export async function POST(request: NextRequest) {
 
     if (!MAILCHIMP_API_KEY) {
       console.warn('[Subscribe] MAILCHIMP_API_KEY not set — logging subscription')
-      console.log('[Subscribe] Logged:', JSON.stringify({ email, name, locale }))
       return NextResponse.json({ ok: true, mailchimp: 'logged', note: 'API key not configured' })
     }
 
@@ -67,7 +66,6 @@ export async function POST(request: NextRequest) {
     })
 
     if (response.ok) {
-      console.log('[Subscribe] Mailchimp success:', email)
       return NextResponse.json({ ok: true, mailchimp: 'subscribed' })
     }
 
