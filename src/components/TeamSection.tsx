@@ -1,5 +1,8 @@
 'use client'
 
+import { TiltCard } from './ui/TiltCard'
+import { AnimatedSection } from './ui/AnimatedSection'
+
 function resolveImage(images: any, ref: string | undefined): string {
   if (!ref || !images) return ''
   const key = ref.replace('@img:', '').replace('@src:', '')
@@ -13,14 +16,21 @@ function resolveImage(images: any, ref: string | undefined): string {
 }
 
 const TEAM_LAYOUTS = [
-  { label: 'K', bg: 'bg-rose-100 text-rose-600' },
-  { label: 'L', bg: 'bg-amber-100 text-amber-600' },
-  { label: 'M', bg: 'bg-emerald-100 text-emerald-600' },
-  { label: 'N', bg: 'bg-indigo-100 text-indigo-600' },
-  { label: 'P', bg: 'bg-cyan-100 text-cyan-600' },
+  { label: 'K', bg: 'bg-rose-100 text-rose-600', accent: 'bg-rose-500' },
+  { label: 'L', bg: 'bg-amber-100 text-amber-600', accent: 'bg-amber-500' },
+  { label: 'M', bg: 'bg-emerald-100 text-emerald-600', accent: 'bg-emerald-500' },
+  { label: 'N', bg: 'bg-indigo-100 text-indigo-600', accent: 'bg-indigo-500' },
+  { label: 'P', bg: 'bg-cyan-100 text-cyan-600', accent: 'bg-cyan-500' },
 ]
 
-export function TeamSection({ pageContent, data, images }: any) {
+function pickLocale(value: any, locale: string) {
+  if (value && typeof value === 'object' && !Array.isArray(value)) {
+    return value[locale] || value.es || value.en || value.nl || value.de || ''
+  }
+  return value
+}
+
+export function TeamSection({ pageContent, data, images, locale = 'es' }: any) {
   const d = data || pageContent || {}
   const members = d.members || d.items || []
   if (!members.length) return null
@@ -29,51 +39,69 @@ export function TeamSection({ pageContent, data, images }: any) {
     <section className="py-20 md:py-28 bg-surface-alt">
       <div className="max-w-6xl mx-auto px-4">
         {d.title && (
-          <h2 className="text-[clamp(1.5rem_3vw_2.2rem)] font-bold text-primary text-center mb-14">{d.title}</h2>
+          <AnimatedSection animation="fade-up" className="text-center mb-14">
+            <h2 className="text-[clamp(1.5rem_3vw_2.2rem)] font-bold text-primary mb-4">{pickLocale(d.title, locale)}</h2>
+            <div className="w-12 h-0.5 bg-accent mx-auto" />
+          </AnimatedSection>
         )}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {members.map((m: any, i: number) => {
             const img = resolveImage(images, m.memberImage || m.image || m.imageUrl)
             const layout = TEAM_LAYOUTS[i % TEAM_LAYOUTS.length]
+
             return (
-              <div key={i} className="group relative bg-white rounded-2xl shadow-sm border border-border/40 hover:shadow-md transition-all duration-300 overflow-hidden">
-                {/* Top accent bar */}
-                <div className={`h-1.5 w-full ${layout.bg.split(' ')[0]}`} />
+              <AnimatedSection
+                key={i}
+                animation="fade-up"
+                delay={i * 70}
+                className="[&>*:first-child]:h-full"
+              >
+                <TiltCard
+                  tiltIntensity={3}
+                  className="bg-white rounded-2xl shadow-sm border border-border/40 hover:shadow-lg transition-shadow duration-300 overflow-hidden group h-full"
+                >
+                  {/* Top accent bar */}
+                  <div className={`h-1.5 w-full ${layout.accent} transition-all duration-300`} />
 
-                {/* AI Headshot Badge */}
-                <div className="absolute top-2 right-2 z-10">
-                  <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full border border-amber-300 shadow-sm">
-                    ⚠️ IA
-                  </span>
-                </div>
-
-                <div className="p-6 text-center">
-                  {/* Avatar */}
-                  <div className="relative mx-auto mb-4 w-20 h-20">
-                    {img ? (
-                      <img src={img} alt={m.name} className="w-20 h-20 object-cover rounded-full ring-2 ring-border/50" />
-                    ) : (
-                      <div className={`w-20 h-20 rounded-full ${layout.bg} flex items-center justify-center text-xl font-bold mx-auto`}>
-                        {m.name?.[0] || '?'}
-                      </div>
-                    )}
+                  {/* AI Headshot Badge */}
+                  <div className="absolute top-2 right-2 z-10">
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full border border-amber-300 shadow-sm">
+                      ⚠️ IA
+                    </span>
                   </div>
 
-                  {/* Name */}
-                  <h3 className="font-bold text-primary text-sm leading-tight mb-0.5">{m.name}</h3>
+                  <div className="p-6 text-center">
+                    {/* Avatar with hover scale */}
+                    <div className="relative mx-auto mb-4 w-20 h-20">
+                      {img ? (
+                        <img
+                          src={img}
+                          alt={m.name}
+                          className="w-20 h-20 object-cover rounded-full ring-2 ring-border/50 group-hover:ring-accent/40 transition-all duration-300 group-hover:scale-105"
+                        />
+                      ) : (
+                        <div className={`w-20 h-20 rounded-full ${layout.bg} flex items-center justify-center text-xl font-bold mx-auto group-hover:scale-105 transition-transform duration-300`}>
+                          {m.name?.[0] || '?'}
+                        </div>
+                      )}
+                    </div>
 
-                  {/* Role */}
-                  {m.role && (
-                    <p className="text-xs text-accent font-semibold mb-2 line-clamp-2">{m.role}</p>
-                  )}
+                    {/* Name */}
+                    <h3 className="font-bold text-primary text-sm leading-tight mb-0.5 group-hover:text-accent transition-colors duration-200">{pickLocale(m.name, locale)}</h3>
 
-                  {/* Description */}
-                  {m.description && (
-                    <p className="text-xs text-text-muted leading-relaxed line-clamp-4">{m.description}</p>
-                  )}
-                </div>
-              </div>
+                    {/* Role */}
+                    {m.role && (
+                      <p className="text-xs text-accent font-semibold mb-2 line-clamp-2">{pickLocale(m.role, locale)}</p>
+                    )}
+
+                    {/* Description */}
+                    {m.description && (
+                      <p className="text-xs text-text-muted leading-relaxed line-clamp-4 group-hover:text-text transition-colors duration-200">{pickLocale(m.description, locale)}</p>
+                    )}
+                  </div>
+                </TiltCard>
+              </AnimatedSection>
             )
           })}
         </div>

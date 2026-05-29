@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import type { Metadata } from 'next'
 import { LOCALES } from '@/lib/locales'
 import { ShareButtons } from '@/components/ShareButtons'
+import { generateArticleSchema, generateBreadcrumbSchema, generateOrganizationSchema } from '@/lib/schemas'
 
 interface Props { params: Promise<{ locale: string; slug: string }> }
 
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       authors: post.author ? [post.author] : undefined,
       images: post.image ? [{ url: post.image, width: 1200, height: 630 }] : undefined,
     },
-    alternates: { canonical: `https://nexaparaguay.com/${locale}/blog/${slug}` },
+    alternates: { canonical: `https://nexa.paragu-ai.com/${locale}/blog/${slug}` },
   }
 }
 
@@ -57,36 +58,14 @@ async function BlogContent({ locale, slug }: { locale: string; slug: string }) {
   const data = await loadBlogPost(locale, slug)
   if (!data?.post) return <div className="text-center p-16 text-text-muted">Post not found</div>
   const { content, post } = data
-  const baseUrl = `https://nexaparaguay.com/${locale}`
+  const baseUrl = `https://nexa.paragu-ai.com/${locale}`
   const postUrl = `${baseUrl}/blog/${post.slug}`
-
-  // JSON-LD schemas
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.excerpt || post.title,
-    datePublished: post.date,
-    author: post.author ? { "@type": "Person", name: post.author } : undefined,
-    publisher: { "@type": "Organization", name: "Nexa Paraguay", url: "https://nexaparaguay.com" },
-    image: post.image,
-    mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
-  }
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: baseUrl },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${baseUrl}/blog` },
-      { "@type": "ListItem", position: 3, name: post.title, item: postUrl },
-    ],
-  }
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateArticleSchema({ title: post.title, description: post.excerpt || post.title, slug: post.slug, author: post.author, datePublished: post.date, image: post.image, locale })) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(baseUrl, postUrl, post.title)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateOrganizationSchema()) }} />
       {content?.navigation && <Header navigation={content.navigation} locale={locale} />}
       <main className="max-w-3xl mx-auto px-4 py-16">
         {post.date && <span className="text-sm font-semibold text-accent uppercase tracking-wider">{post.date}</span>}

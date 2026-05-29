@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1.7
 # ── Nexa Paraguay Dockerfile ──
 # Hybrid: sections/i18n/client-kit from .tgz, rest from GitHub Packages
 
@@ -7,17 +8,20 @@ RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json* .npmrc ./
 COPY .packages ./.packages/
 COPY scripts/copy-ai-packages.cjs ./scripts/copy-ai-packages.cjs
-ARG NODE_AUTH_TOKEN
-RUN if [ -n "$NODE_AUTH_TOKEN" ]; then echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" >> .npmrc; fi
-RUN npm install --legacy-peer-deps 2>&1 || true
-RUN node scripts/copy-ai-packages.cjs
+RUN --mount=type=secret,id=NODE_AUTH_TOKEN \
+    set -eu; \
+    TOK=""; \
+    if [ -f /run/secrets/NODE_AUTH_TOKEN ]; then TOK="$(cat /run/secrets/NODE_AUTH_TOKEN)"; fi; \
+    if [ -n "$TOK" ]; then printf "\n//npm.pkg.github.com/:_authToken=%s\n" "$TOK" >> .npmrc; fi; \
+    npm install --legacy-peer-deps 2>&1 || true; \
+    node scripts/copy-ai-packages.cjs; \
+    if [ -n "$TOK" ]; then sed -i '/npm.pkg.github.com\/:_authToken=/d' .npmrc; fi
 
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 COPY .packages ./.packages
-ENV NODE_AUTH_TOKEN=dummy
 RUN node scripts/copy-ai-packages.cjs || true
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build

@@ -1,6 +1,6 @@
 {
   "tenant": "nexa-paraguay",
-  "totalImages": 111,
+  "totalImages": 118,
   "basePath": "/images",
   "fallback": "/images/brand/placeholder.png",
   "images": {
@@ -389,6 +389,63 @@
           "nl": "Plaatsaanduiding groepsfoto: Nexa Paraguay-team (echte foto volgt)",
           "de": "Platzhalter-Gruppenfoto: Nexa Paraguay Team (echtes Foto ausstehend)"
         }
+      },
+      "sonia": {
+        "src": "/images/team/sonia.webp",
+        "alt": "Sonia Wehrli, Fundadora y Guía Legal de Nexa Paraguay",
+        "fallbackSrc": "/images/team/sonia.png",
+        "altByLocale": {
+          "es": "Sonia Wehrli, Fundadora y Guía Legal de Nexa Paraguay",
+          "en": "Sonia Wehrli, Founder & Legal Guide at Nexa Paraguay",
+          "nl": "Sonia Wehrli, Oprichtster & Juridisch Gids bij Nexa Paraguay",
+          "de": "Sonia Wehrli, Gründerin & Rechtliche Beraterin bei Nexa Paraguay"
+        },
+        "status": "REAL_PHOTO_NEEDED",
+        "note": "Replace with real photo of Sonia. Consent required."
+      },
+      "operations": {
+        "src": "/images/team/operations-director.webp",
+        "alt": "Operations Director portrait (staging placeholder)",
+        "fallbackSrc": "/images/team/operations-director.png",
+        "altByLocale": {
+          "en": "Placeholder portrait: Operations Director (Paraguay)",
+          "es": "Retrato marcador: Director de Operaciones (Paraguay)",
+          "nl": "Plaatsaanduiding portret: Operationeel Directeur (Paraguay)",
+          "de": "Platzhalter-Porträt: Operativer Direktor (Paraguay)"
+        }
+      },
+      "europe": {
+        "src": "/images/team/commercial-director.webp",
+        "alt": "Commercial Director portrait (staging placeholder)",
+        "fallbackSrc": "/images/team/commercial-director.png",
+        "altByLocale": {
+          "en": "Placeholder portrait: Commercial Director (Europe)",
+          "es": "Retrato marcador: Director Comercial (Europa)",
+          "nl": "Plaatsaanduiding portret: Commercieel Directeur (Europa)",
+          "de": "Platzhalter-Porträt: Kaufmännischer Direktor (Europa)"
+        }
+      },
+      "legal": {
+        "src": "/images/team/legal-lead.webp",
+        "alt": "Legal Lead portrait (staging placeholder)",
+        "fallbackSrc": "/images/team/legal-lead.png",
+        "altByLocale": {
+          "en": "Placeholder portrait: Legal team lead",
+          "es": "Retrato marcador: Responsable del equipo legal",
+          "nl": "Plaatsaanduiding portret: Juridische teamleider",
+          "de": "Platzhalter-Porträt: Leitung Rechtsteam"
+        }
+      },
+      "accounting": {
+        "src": "/images/team/accounting-lead.webp",
+        "alt": "Accounting Lead portrait (staging placeholder)",
+        "fallbackSrc": "/images/team/accounting-lead.png",
+        "altByLocale": {
+          "en": "Placeholder portrait: Accounting team lead",
+          "es": "Retrato marcador: Responsable del equipo contable",
+          "nl": "Plaatsaanduiding portret: Leider van het boekhoudteam",
+          "de": "Platzhalter-Porträt: Leitung Buchhaltung"
+        }
       }
     },
     "office": {
@@ -686,6 +743,58 @@
           "nl": "Video-testimoniumposter 5 (plaatsaanduiding tot echte video)",
           "de": "Video-Testimonial-Posterbild 5 (Platzhalter bis echtes Video)"
         }
+      },
+      "tm1": {
+        "src": "/images/testimonials/testimonial-client-1.webp",
+        "alt": "Testimonial portrait: Argentine entrepreneur client",
+        "fallbackSrc": "/images/testimonials/testimonial-client-1.png",
+        "altByLocale": {
+          "en": "Placeholder testimonial portrait 1 (AI-generated, not consented)",
+          "es": "Retrato testimonial marcador 1 (IA, sin consentimiento)",
+          "nl": "Plaatsaanduiding testimoniumportret 1 (AI, niet ingestemd)",
+          "de": "Platzhalter-Testimonial-Porträt 1 (KI, nicht eingewilligt)"
+        },
+        "status": "REAL_PHOTO_NEEDED",
+        "note": "Replace with real client photo (testimonial t1). Consent + release required."
+      },
+      "tm2": {
+        "src": "/images/testimonials/testimonial-client-2.webp",
+        "alt": "Testimonial portrait: Latin American female consultant client",
+        "fallbackSrc": "/images/testimonials/testimonial-client-2.png",
+        "altByLocale": {
+          "en": "Placeholder testimonial portrait 2 (AI-generated, not consented)",
+          "es": "Retrato testimonial marcador 2 (IA, sin consentimiento)",
+          "nl": "Plaatsaanduiding testimoniumportret 2 (AI, niet ingestemd)",
+          "de": "Platzhalter-Testimonial-Porträt 2 (KI, nicht eingewilligt)"
+        },
+        "status": "REAL_PHOTO_NEEDED",
+        "note": "Replace with real client photo (testimonial t2). Consent + release required."
+      },
+      "tm3": {
+        "src": "/images/testimonials/testimonial-client-3.webp",
+        "alt": "Testimonial portrait: European professional client",
+        "fallbackSrc": "/images/testimonials/testimonial-client-3.png",
+        "altByLocale": {
+          "en": "Placeholder testimonial portrait 3 (AI-generated, not consented)",
+          "es": "Retrato testimonial marcador 3 (IA, sin consentimiento)",
+          "nl": "Plaatsaanduiding testimoniumportret 3 (AI, niet ingestemd)",
+          "de": "Platzhalter-Testimonial-Porträt 3 (KI, nicht eingewilligt)"
+        },
+        "status": "REAL_PHOTO_NEEDED",
+        "note": "Replace with real client photo (testimonial t3). Consent + release required."
+      },
+      "tm4": {
+        "src": "/images/testimonials/testimonial-client-4.webp",
+        "alt": "Testimonial portrait: senior investor client",
+        "fallbackSrc": "/images/testimonials/testimonial-client-4.png",
+        "altByLocale": {
+          "en": "Placeholder testimonial portrait 4 (AI-generated, not consented)",
+          "es": "Retrato testimonial marcador 4 (IA, sin consentimiento)",
+          "nl": "Plaatsaanduiding testimoniumportret 4 (AI, niet ingestemd)",
+          "de": "Platzhalter-Testimonial-Porträt 4 (KI, nicht eingewilligt)"
+        },
+        "status": "REAL_PHOTO_NEEDED",
+        "note": "Replace with real client photo (testimonial t4). Consent + release required."
       }
     },
     "programs": {

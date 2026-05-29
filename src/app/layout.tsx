@@ -1,70 +1,68 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import ExitPopupWrapper from '../components/ExitPopupWrapper'
-import { CookieConsent } from "@ai-whisperers/seo"
-import { WhatsAppFloat } from "@ai-whisperers/whatsapp"
+import { LocalBusinessSchema } from '../components/seo/LocalBusinessSchema'
+import { OrganizationSchema } from '../components/seo/OrganizationSchema'
+import { resolveLocale } from '@ai-whisperers/i18n'
+
+const GA_ID = process.env.NEXT_PUBLIC_GA4_ID || 'G-XE49GLEP34'
+const BASE_URL = 'https://nexa.paragu-ai.com'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Nexa Paraguay — Desarrollo Web, Automatización e Inteligencia Artificial',
+    default: 'Nexa Paraguay — Residency, Banking & Company for Europeans',
     template: '%s | Nexa Paraguay',
   },
-  description: 'Desarrollo web, automatización de procesos e inteligencia artificial para empresas en Paraguay. Soluciones digitales que impulsan tu negocio.',
-  metadataBase: new URL('https://nexaparaguay.com'),
+  description:
+    'Professional advisory for permanent residency, banking & company incorporation in Paraguay. Close guidance for citizens of the Netherlands, Belgium, Germany and all of Europe.',
   icons: { icon: '/images/brand/favicon.webp' },
   openGraph: {
-    title: 'Nexa Paraguay',
-    description: 'Desarrollo web, automatización e IA para empresas en Paraguay',
-    url: 'https://nexaparaguay.com',
+    title: 'Nexa Paraguay — Residency, Banking & Company for Europeans',
+    description:
+      'Professional advisory for permanent residency, banking and company incorporation in Paraguay. Close guidance for European citizens.',
+    url: BASE_URL,
     siteName: 'Nexa Paraguay',
-    locale: 'es_PY',
+    locale: 'en_US',
     type: 'website',
     images: [{ url: '/images/og-default.svg', width: 1200, height: 630 }],
   },
-  alternates: { canonical: 'https://nexaparaguay.com' },
+  alternates: {
+    canonical: BASE_URL,
+    languages: {
+      es: `${BASE_URL}/es`,
+      en: `${BASE_URL}/en`,
+      nl: `${BASE_URL}/nl`,
+      de: `${BASE_URL}/de`,
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   verification: { google: 'YOUR_GSC_VERIFICATION_CODE' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='es'>
+    <html lang='en'>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              name: "Nexa Paraguay",
-              url: "https://nexaparaguay.com",
-              description: "Desarrollo web, automatización de procesos e inteligencia artificial para empresas en Paraguay",
-              areaServed: { "@type": "Country", name: "PY" },
-              availableLanguage: ["Español", "English", "Nederlands", "Deutsch"],
-              contactPoint: { "@type": "ContactPoint", contactType: "customer service", url: "https://nexaparaguay.com/contacto" },
-            }),
-          }}
+        {/* Organization schema — site-wide */}
+        <OrganizationSchema />
+        {/* LocalBusiness / ProfessionalService schema — site-wide */}
+        <LocalBusinessSchema locale='es' />
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy='afterInteractive'
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              name: "Nexa Paraguay",
-              description: "Desarrollo web, automatización e inteligencia artificial",
-              url: "https://nexaparaguay.com",
-              telephone: "+595 984 009751",
-              email: "info@nexaparaguay.com",
-              address: { "@type": "PostalAddress", addressLocality: "Asunción", addressCountry: "PY" },
-              priceRange: "$$",
-            }),
-          }}
-        />
+        <Script id='ga4-init' strategy='afterInteractive'>
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GA_ID}', { cookie_flags: 'max-age=7200;secure;samesite=none' });`}
+        </Script>
       </head>
-      <body className="font-inter bg-background text-text">
+      <body className='font-inter bg-background text-text'>
+        <CookieBanner />
         <ExitPopupWrapper />
         {children}
         <WhatsAppFloat />

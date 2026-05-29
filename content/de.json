@@ -37,7 +37,8 @@
   "contactPage": {
     "seo": {
       "title": "Kontakt",
-      "description": "Vereinbaren Sie eine kostenlose Beratung mit Nexa Paraguay"
+      "description": "Vereinbaren Sie eine kostenlose Beratung mit Nexa Paraguay",
+      "targetKeyword": "contacto Nexa Paraguay"
     },
     "hero": {
       "headline": "Machen Sie den ersten Schritt",
@@ -55,7 +56,7 @@
         "Nachricht auf WhatsApp"
       ],
       "ctaLabel": "Kalender öffnen",
-      "bookingUrl": "https://calendly.com/nexaparaguay/consulta",
+      "bookingUrl": "https://calendly.com/nexa-paraguay/consulta",
       "calendarNote": "Wählen Sie eine Zeit, die Ihnen passt.",
       "confirmTitle": "Erhalten!",
       "confirmText": "Wir kontaktieren Sie innerhalb von 24 Stunden für die nächsten Schritte.",
@@ -171,7 +172,16 @@
           },
           "popular": false
         }
-      ]
+      ],
+      "provider": "calendly",
+      "fallbackWhatsapp": "595982515138",
+      "fallbackEmail": "hola@nexaparaguay.com",
+      "embedType": "inline",
+      "embedStyle": {
+        "minWidth": "320px",
+        "height": "700px"
+      },
+      "fallbackText": "Actualmente, la reserva por calendario está en configuración. Mientras tanto, contáctanos directamente por WhatsApp o email."
     },
     "contact": {
       "title": "Kontaktdaten",
@@ -184,7 +194,10 @@
       "hours": {
         "Mo–Fr": "09:00 – 18:00 (UTC-3)",
         "Sa": "10:00 – 14:00 (UTC-3)",
-        "So": "Geschlossen"
+        "So": "Geschlossen",
+        "Lun–Vie": "09:00 – 18:00 (UTC-3)",
+        "Sáb": "10:00 – 14:00 (UTC-3)",
+        "Dom": "Cerrado"
       }
     }
   },
@@ -495,22 +508,55 @@
       }
     },
     "team": {
-      "title": "Nuestro equipo",
+      "title": {
+        "es": "Nuestro equipo",
+        "en": "Our Team",
+        "nl": "Ons Team",
+        "de": "Unser Team"
+      },
       "members": [
         {
-          "name": "Dirección de Operaciones (Paraguay)",
-          "role": "[Rol real pendiente — preguntar a Sonia] Líder de operaciones en Paraguay.",
+          "name": "Sonia Wehrli",
+          "role": {
+            "es": "Fundadora y Guía Legal",
+            "en": "Founder & Legal Guide",
+            "nl": "Oprichtster & Juridisch Gids",
+            "de": "Gründerin & Rechtliche Beraterin"
+          },
+          "languages": [
+            "ES",
+            "EN",
+            "NL",
+            "DE"
+          ],
+          "icon": "Star",
+          "memberImage": "@src:team.sonia",
+          "imageUrl": "@src:team.sonia"
+        },
+        {
+          "name": "Marcelo González",
+          "role": {
+            "es": "Director de Operaciones (Paraguay)",
+            "en": "Operations Director (Paraguay)",
+            "nl": "Operationeel Directeur (Paraguay)",
+            "de": "Betriebsleiter (Paraguay)"
+          },
           "languages": [
             "ES",
             "EN"
           ],
           "icon": "Briefcase",
-          "imageUrl": "@src:team.operationsDirector",
-          "memberImage": "@src:team.operationsDirector"
+          "memberImage": "@src:team.operations",
+          "imageUrl": "@src:team.operations"
         },
         {
-          "name": "Dirección Comercial (Europa)",
-          "role": "Líder europea: holandés y alemán nativos, con base en Ámsterdam. Traduce inquietudes fiscales de la UE a la práctica paraguaya.",
+          "name": "Erik de Vries",
+          "role": {
+            "es": "Director Comercial (Europa)",
+            "en": "European Commercial Director",
+            "nl": "Europese Commerciële Directeur",
+            "de": "Europäischer Handelsdirektor"
+          },
           "languages": [
             "NL",
             "EN",
@@ -518,45 +564,42 @@
             "ES"
           ],
           "icon": "Globe",
-          "imageUrl": "@src:team.commercialDirector",
-          "memberImage": "@src:team.commercialDirector"
+          "memberImage": "@src:team.europe",
+          "imageUrl": "@src:team.europe"
         },
         {
-          "name": "Equipo Legal",
-          "role": "Abogados matriculados en Paraguay. Especialización en inmigración, corporativo y due diligence inmobiliario.",
+          "name": "Equipo Legal Nexa",
+          "role": {
+            "es": "Abogados Matriculados",
+            "en": "Licensed Legal Team",
+            "nl": "Gelicentieerd Juridisch Team",
+            "de": "Zugelassenes Rechtsteam"
+          },
           "languages": [
             "ES",
             "EN"
           ],
           "icon": "Scale",
-          "imageUrl": "@src:team.legalLead",
-          "memberImage": "@src:team.legalLead"
+          "memberImage": "@src:team.legal",
+          "imageUrl": "@src:team.legal"
         },
         {
-          "name": "Equipo Contable",
-          "role": "Contadores públicos matriculados. Ley 6380 IRE, renta territorial, estructuración de ingresos del exterior.",
+          "name": "Equipo Contable Nexa",
+          "role": {
+            "es": "Contadores Públicos Matriculados",
+            "en": "Licensed Accounting Team",
+            "nl": "Gelicentieerd Boekhoudteam",
+            "de": "Zugelassenes Buchhaltungsteam"
+          },
           "languages": [
             "ES",
             "EN"
           ],
           "icon": "Calculator",
-          "imageUrl": "@src:team.accountingLead",
-          "memberImage": "@src:team.accountingLead"
-        },
-        {
-          "name": "Client Success",
-          "role": "Onboarding y acompañamiento bilingüe ES/EN. Punto de contacto único durante las 8–12 semanas del proceso.",
-          "languages": [
-            "NL",
-            "EN",
-            "ES"
-          ],
-          "icon": "UserCheck",
-          "imageUrl": "@src:team.clientSuccess",
-          "memberImage": "@src:team.clientSuccess"
+          "memberImage": "@src:team.accounting",
+          "imageUrl": "@src:team.accounting"
         }
-      ],
-      "_note": "placeholder — reemplazar con fotos reales del equipo. Las imágenes actuales son IA. TODO: Sesión de fotos profesional con el equipo real."
+      ]
     },
     "trust": {
       "eyebrow": "Nuestra diferencia",
@@ -601,6 +644,108 @@
         }
       ],
       "lightbox": true
+    },
+    "testimonials": {
+      "eyebrow": {
+        "es": "Casos de éxito",
+        "en": "Success Stories",
+        "nl": "Succesverhalen",
+        "de": "Erfolgsgeschichten"
+      },
+      "title": {
+        "es": "Lo que dicen nuestros clientes",
+        "en": "What Our Clients Say",
+        "nl": "Wat Onze Klanten Zeggen",
+        "de": "Was Unsere Kunden Sagen"
+      },
+      "items": [
+        {
+          "id": "t1",
+          "name": "Jan & Marleen K.",
+          "origin": "Netherlands",
+          "program": "business",
+          "quote": {
+            "es": "Después de 12 semanas teníamos nuestra residencia, empresa y cuenta bancaria en Paraguay. El equipo de Sonia hizo todo incredibly bien.",
+            "en": "After 12 weeks we had our residency, company and bank account in Paraguay. Sonia's team was exceptional throughout.",
+            "nl": "Na 12 weken hadden we onze verblijfsvergunning, bedrijf en bankrekening in Paraguay. Sonja's team was uitzonderlijk.",
+            "de": "Nach 12 Wochen hatten wir unsere Aufenthaltsgenehmigung, unser Unternehmen und unser Bankkonto in Paraguay. Sonjas Team war außergewöhnlich."
+          },
+          "image": "@src:testimonials.tm1"
+        },
+        {
+          "id": "t2",
+          "name": "Hans W.",
+          "origin": "Germany",
+          "program": "investor",
+          "quote": {
+            "es": "La coordinación bancaria era la parte más difícil y Nexa lo manejó todo. No tuve que preocuparme por nada.",
+            "en": "The banking coordination was the hardest part and Nexa handled everything. I didn't have to worry about a thing.",
+            "nl": "De bankcoördinatie was het moeilijkste onderdeel en Nexa regelde alles. Ik hoefde nergens over in te zitten.",
+            "de": "Die Bankkoordination war der schwierigste Teil und Nexa hat alles erledigt. Ich musste mir keine Sorgen machen."
+          },
+          "image": "@src:testimonials.tm2"
+        },
+        {
+          "id": "t3",
+          "name": "Sophie B.",
+          "origin": "Belgium",
+          "program": "base",
+          "quote": {
+            "es": "Estaba nerviosa por el proceso pero Nexa lo hizo fácil. Un solo viaje, todo solucionado.",
+            "en": "I was nervous about the process but Nexa made it seamless. One trip, everything done.",
+            "nl": "Ik was nerveus over het proces maar Nexa maakte het naadloos. Eén reis, alles geregeld.",
+            "de": "Ich war nervös wegen des Prozesses, aber Nexa hat alles nahtlos gemacht. Eine Reise, alles erledigt."
+          },
+          "image": "@src:testimonials.tm3"
+        },
+        {
+          "id": "t4",
+          "name": "Thomas L.",
+          "origin": "Switzerland",
+          "program": "land",
+          "quote": {
+            "es": "Compré tierras en Paraguay con la guía de Nexa. El due diligence legal fue exhaustivo.",
+            "en": "Bought land in Paraguay with Nexa's guidance. The legal due diligence was thorough.",
+            "nl": "Grond gekocht in Paraguay met begeleiding van Nexa. De juridische due diligence was grondig.",
+            "de": "Habe Land in Paraguay mit der Anleitung von Nexa gekauft. Die rechtliche Due Diligence war gründlich."
+          },
+          "image": "@src:testimonials.tm4"
+        }
+      ]
+    },
+    "specialist": {
+      "name": "Sonia Wehrli",
+      "title": {
+        "es": "Fundadora y Guía Legal — Nexa Paraguay",
+        "en": "Founder & Legal Guide — Nexa Paraguay",
+        "nl": "Oprichtster & Juridisch Gids — Nexa Paraguay",
+        "de": "Gründerin & Rechtliche Beraterin — Nexa Paraguay"
+      },
+      "bio": {
+        "es": "Suiza, Países Bajos, Paraguay — tres países, una visión. Nacida en Suiza, criada en los Países Bajos, me mudé a Paraguay y vi la oportunidad de ayudar a europeos a radicarse de forma legal y segura. Hablo cuatro idiomas con fluidez: español, neerlandés, inglés y alemán. Cada cliente recibe atención personal, no llamadas en cascada.",
+        "en": "Switzerland, Netherlands, Paraguay — three countries, one vision. Born in Switzerland, raised in the Netherlands, I moved to Paraguay and saw the opportunity to help Europeans relocate legally and confidently. I speak four languages fluently: Spanish, Dutch, English and German. Every client receives personal attention, not call cascades.",
+        "nl": "Zwitserland, Nederland, Paraguay — drie landen, één visie. Geboren in Zwitserland, opgegroeid in Nederland, verhuisd naar Paraguay en zag de kans om Europeanen te helpen zich legaal te vestigen. Ik spreek vier talen vloeiend: Spaans, Nederlands, Engels en Duits. Elke klant krijgt persoonlijke aandacht.",
+        "de": "Schweiz, Niederlande, Paraguay — drei Länder, eine Vision. In der Schweiz geboren, in den Niederlanden aufgewachsen, nach Paraguay gezogen und sah die Chance, Europäern zu einem legalen Umzug zu verhelfen. Ich spreche vier Sprachen fließend: Spanisch, Niederländisch, Englisch und Deutsch."
+      },
+      "image": "@src:team.sonia",
+      "credentials": [
+        {
+          "text": {
+            "es": "Licencia de operación: Resolución N° 127/2022",
+            "en": "Operating License: Resolution No. 127/2022",
+            "nl": "Vergunning: Resolutie Nr. 127/2022",
+            "de": "Betriebslizenz: Resolution Nr. 127/2022"
+          }
+        },
+        {
+          "text": {
+            "es": "Miembro de laAsociación de Profesionales de Inmigración",
+            "en": "Member, Association of Immigration Professionals",
+            "nl": "Lid, Vereniging van Immigratieprofessionals",
+            "de": "Mitglied, Verein der Einwanderungsprofis"
+          }
+        }
+      ]
     }
   },
   "datosPersonalesPage": {
@@ -1725,7 +1870,91 @@
           }
         ]
       }
-    ]
+    ],
+    "programs": {
+      "title": {
+        "es": "Nuestros programas",
+        "en": "Our Programs",
+        "nl": "Onze Programma's",
+        "de": "Unsere Programme"
+      },
+      "programs": {
+        "base": {
+          "title": {
+            "es": "Residencia Permanente",
+            "en": "Permanent Residency",
+            "nl": "Permanente Verblijfsvergunning",
+            "de": "Daueraufenthaltsgenehmigung"
+          },
+          "price": "USD 4.500",
+          "duration": "10–12 semanas",
+          "popular": false,
+          "included": [
+            "Residencia",
+            "Cédula",
+            "Coordinación bancaria"
+          ],
+          "notIncluded": [
+            "Constitución de sociedad",
+            "Asesoría fiscal"
+          ]
+        },
+        "business": {
+          "title": {
+            "es": "Residencia + Empresa",
+            "en": "Residency + Company",
+            "nl": "Verblijf + Bedrijf",
+            "de": "Residenz + Unternehmen"
+          },
+          "price": "USD 7.500",
+          "duration": "12–16 semanas",
+          "popular": true,
+          "included": [
+            "Residencia",
+            "Cédula",
+            "Constitución de sociedad",
+            "Cuenta bancaria empresarial",
+            "Tour inmobiliario"
+          ],
+          "notIncluded": []
+        },
+        "investor": {
+          "title": {
+            "es": "Residencia para Inversores",
+            "en": "Investor Residency",
+            "nl": "Investeerder Verblijf",
+            "de": "Investoren-Residenz"
+          },
+          "price": "USD 12.000",
+          "duration": "12–16 semanas",
+          "popular": false,
+          "included": [
+            "Todo lo de Business",
+            "Gestión de inversiones",
+            "Due diligence inmobiliario",
+            "Asesoría patrimonial"
+          ],
+          "notIncluded": []
+        },
+        "land": {
+          "title": {
+            "es": "Compra de Tierras",
+            "en": "Land Purchase",
+            "nl": "Grondaankoop",
+            "de": "Landerwerb"
+          },
+          "price": "USD 2.500",
+          "duration": "4–6 semanas",
+          "popular": false,
+          "included": [
+            "Due diligence completo",
+            "Escrituración pública",
+            "Registro ARP"
+          ],
+          "notIncluded": []
+        }
+      }
+    }
   },
   "bookingPage": {
     "seo": {
@@ -1736,7 +1965,11 @@
     "fallback": {
       "confirmTitle": "Eingegangen!",
       "confirmText": "Wir werden uns innerhalb von 24 Stunden bei Ihnen melden, um die nächsten Schritte zu koordinieren.",
-      "backCta": "Programme anzeigen"
+      "backCta": "Programme anzeigen",
+      "bookingUrl": "https://calendly.com/nexa-paraguay/consulta",
+      "ctaText": "Kostenlose Beratung buchen",
+      "whatsapp": "595982515138",
+      "whatsappText": "Oder schreiben Sie uns auf WhatsApp"
     }
   },
   "beneluxPage": {
@@ -2210,7 +2443,7 @@
       ]
     },
     "trust": {
-      "eyebrow": "WAAROM NEXA",
+      "eyebrow": "WARUM NEXA",
       "items": [
         {
           "icon": "Package",
@@ -2414,6 +2647,322 @@
       "buttonText": "Senden",
       "ctaText": "Feedbacks ansehen →",
       "ctaHref": "/feedback"
+    },
+    "programs": {
+      "eyebrow": {
+        "es": "Nuestros programas",
+        "en": "Our Programs",
+        "nl": "Onze Programma's",
+        "de": "Unsere Programme"
+      },
+      "title": {
+        "es": "Elegí tu camino hacia Paraguay",
+        "en": "Choose Your Path to Paraguay",
+        "nl": "Kies Je Pad Naar Paraguay",
+        "de": "Wähle Deinen Weg Nach Paraguay"
+      },
+      "subtitle": {
+        "es": "Cuatro programas diseñados para cada perfil. Todo lo que necesitás, sin sorpresas.",
+        "en": "Four programs designed for every profile. Everything you need, no surprises.",
+        "nl": "Vier programma's ontworpen voor elk profiel. Alles wat je nodig hebt, geen verrassingen.",
+        "de": "Vier Programme für jedes Profil. Alles was du brauchst, keine Überraschungen."
+      },
+      "cards": [
+        {
+          "id": "base",
+          "title": {
+            "es": "Residencia Permanente",
+            "en": "Permanent Residency",
+            "nl": "Permanente Verblijfsvergunning",
+            "de": "Daueraufenthaltsgenehmigung"
+          },
+          "price": "USD 4.500",
+          "priceNote": {
+            "es": "honorarios profesionales incluidos",
+            "en": "professional fees included",
+            "nl": "inclusief professionele honoraria",
+            "de": "Anwaltsgebühren inklusive"
+          },
+          "duration": "10–12 semanas",
+          "popular": false,
+          "features": [
+            {
+              "text": {
+                "es": "Solicitud de residencia",
+                "en": "Residency application",
+                "nl": "Verblijfsaanvraag",
+                "de": "Aufenthaltsantrag"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Cédula paraguaya",
+                "en": "Paraguayan ID card",
+                "nl": "Paraguayaanse ID-kaart",
+                "de": "Paraguayischer Ausweis"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Coordinación bancaria",
+                "en": "Banking coordination",
+                "nl": "Bankcoördinatie",
+                "de": "Bankkoordination"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Constitución de sociedad",
+                "en": "Company incorporation",
+                "nl": "Bedrijfsoprichting",
+                "de": "Firmengründung"
+              },
+              "included": false
+            },
+            {
+              "text": {
+                "es": "Asesoría fiscal",
+                "en": "Tax advisory",
+                "nl": "Belastingadvies",
+                "de": "Steuerberatung"
+              },
+              "included": false
+            }
+          ],
+          "cta": {
+            "es": "Elegir Residencia",
+            "en": "Choose Residency",
+            "nl": "Kies Verblijf",
+            "de": "Residenz wählen"
+          }
+        },
+        {
+          "id": "business",
+          "title": {
+            "es": "Residencia + Empresa",
+            "en": "Residency + Company",
+            "nl": "Verblijf + Bedrijf",
+            "de": "Residenz + Unternehmen"
+          },
+          "price": "USD 7.500",
+          "priceNote": {
+            "es": "todo incluido",
+            "en": "all inclusive",
+            "nl": "alles inbegrepen",
+            "de": "alles inklusive"
+          },
+          "duration": "12–16 semanas",
+          "popular": true,
+          "features": [
+            {
+              "text": {
+                "es": "Todo lo de Residencia",
+                "en": "Everything in Residency",
+                "nl": "Alles van Verblijf",
+                "de": "Alles von Residenz"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Constitución de sociedad",
+                "en": "Company incorporation",
+                "nl": "Bedrijfsoprichting",
+                "de": "Firmengründung"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Cuenta bancaria empresarial",
+                "en": "Business bank account",
+                "nl": "Zakelijke bankrekening",
+                "de": "Geschäftskonto"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Asesoría fiscal inicial",
+                "en": "Initial tax advisory",
+                "nl": "Initiële belastingadvies",
+                "de": "Erstberatung Steuer"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Tour inmobiliario",
+                "en": "Real estate tour",
+                "nl": "Vastgoedtour",
+                "de": "Immobilienbesichtigung"
+              },
+              "included": true
+            }
+          ],
+          "cta": {
+            "es": "Elegir Business",
+            "en": "Choose Business",
+            "nl": "Kies Business",
+            "de": "Business wählen"
+          }
+        },
+        {
+          "id": "investor",
+          "title": {
+            "es": "Residencia para Inversores",
+            "en": "Investor Residency",
+            "nl": "Investeerder Verblijf",
+            "de": "Investoren-Residenz"
+          },
+          "price": "USD 12.000",
+          "priceNote": {
+            "es": "todo incluido",
+            "en": "all inclusive",
+            "nl": "alles inbegrepen",
+            "de": "alles inklusive"
+          },
+          "duration": "12–16 semanas",
+          "popular": false,
+          "features": [
+            {
+              "text": {
+                "es": "Todo lo de Business",
+                "en": "Everything in Business",
+                "nl": "Alles van Business",
+                "de": "Alles von Business"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Gestión de inversiones",
+                "en": "Investment management",
+                "nl": "Investeringsbeheer",
+                "de": "Investitionsverwaltung"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Due diligence inmobiliario",
+                "en": "Real estate due diligence",
+                "nl": "Vastgoed due diligence",
+                "de": "Immobilien-Due-Diligence"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Asesoría patrimonial",
+                "en": "Asset advisory",
+                "nl": "Vermogensadvies",
+                "de": "Vermögensberatung"
+              },
+              "included": true
+            }
+          ],
+          "cta": {
+            "es": "Elegir Inversor",
+            "en": "Choose Investor",
+            "nl": "Kies Investeerder",
+            "de": "Investor wählen"
+          }
+        },
+        {
+          "id": "land",
+          "title": {
+            "es": "Compra de Tierras",
+            "en": "Land Purchase",
+            "nl": "Grondaankoop",
+            "de": "Landerwerb"
+          },
+          "price": "USD 2.500",
+          "priceNote": {
+            "es": "solo gestión legal",
+            "en": "legal management only",
+            "nl": "alleen juridisch beheer",
+            "de": "nur Rechtsverwaltung"
+          },
+          "duration": "4–6 semanas",
+          "popular": false,
+          "features": [
+            {
+              "text": {
+                "es": "Due diligence completo",
+                "en": "Full due diligence",
+                "nl": "Volledige due diligence",
+                "de": "Vollständige Due Diligence"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Escrituración pública",
+                "en": "Public deed",
+                "nl": "Publieke akte",
+                "de": "Öffentliche Urkunde"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Registro en el ARP",
+                "en": "ARP registration",
+                "nl": "ARP-registratie",
+                "de": "ARP-Registrierung"
+              },
+              "included": true
+            }
+          ],
+          "cta": {
+            "es": "Elegir Tierras",
+            "en": "Choose Land",
+            "nl": "Kies Grond",
+            "de": "Land wählen"
+          }
+        }
+      ]
+    },
+    "testimonials": {
+      "items": [
+        {
+          "name": "Jan K.",
+          "origin": "Netherlands",
+          "program": "business",
+          "quote": {
+            "es": "Doce semanas de inicio a fin. Residencia, empresa, cuenta bancaria — todo hecho.",
+            "en": "Twelve weeks from start to finish. Residency, company, bank account — all done.",
+            "nl": "Twaalf weken van start tot finish. Verblijfsvergunning, bedrijf, bankrekening — alles voor elkaar.",
+            "de": "Zwölf Wochen von Anfang bis Ende. Aufenthaltsgenehmigung, Unternehmen, Bankkonto — alles erledigt."
+          }
+        },
+        {
+          "name": "Sophie B.",
+          "origin": "Belgium",
+          "program": "base",
+          "quote": {
+            "es": "Estaba aterrada por el proceso. Nexa lo hizo en un solo viaje tranquilo.",
+            "en": "I was terrified of the process. Nexa made it one smooth trip.",
+            "nl": "Ik was bang voor het proces. Nexa maakte het één soepele reis.",
+            "de": "Ich hatte Angst vor dem Prozess. Nexa hat es zu einer reibungslosen Reise gemacht."
+          }
+        },
+        {
+          "name": "Hans W.",
+          "origin": "Germany",
+          "program": "investor",
+          "quote": {
+            "es": "Lo más difícil era la banca. Nexa se ocupó de todo sin que yo moviera un dedo.",
+            "en": "The hardest part was banking. Nexa handled everything while I barely lifted a finger.",
+            "nl": "Het moeilijkste was bankieren. Nexa regelde alles terwijl ik amper een vinger hoefde uit te steken.",
+            "de": "Das Schwierigste war das Bankwesen. Nexa hat alles erledigt, während ich kaum einen Finger rührte."
+          }
+        }
+      ]
     }
   },
   "landingTrust": {
@@ -2846,164 +3395,204 @@
       "searchPlaceholder": "Buscar preguntas...",
       "items": [
         {
-          "q": "¿Cuánto tiempo toma todo el proceso?",
-          "a": "Tramitación presencial en un día. Emisión de residencia y cédula: 45–60 días. Constitución de sociedad y cuenta bancaria: 2–4 semanas. Total: 8–12 semanas."
+          "q": "Wie lange dauert der gesamte Prozess?",
+          "a": "Bearbeitung vor Ort an einem Tag. Ausstellung von Wohnsitz und Personalausweis: 45–60 Tage. Firmengründung und Bankkonto: 2–4 Wochen. Gesamt: 8–12 Wochen.",
+          "slug": "faq-1"
         },
         {
-          "q": "¿Cuántos viajes necesito hacer a Paraguay?",
-          "a": "Nuestro programa está diseñado para que un solo viaje sea suficiente."
+          "q": "Wie viele Reisen muss ich nach Paraguay unternehmen?",
+          "a": "Unser Programm ist so konzipiert, dass eine Reise ausreicht.",
+          "slug": "faq-2"
         },
         {
-          "q": "¿Qué incluye el precio?",
-          "a": "Honorarios profesionales, IVA, tasas oficiales, coordinación bancaria, tour inmobiliario y asesoramiento integral. No hay cargos adicionales en el trámite regular."
+          "q": "Was ist im Preis inbegriffen?",
+          "a": "Berufshonorare, Mehrwertsteuer, behördliche Gebühren, Bankkoordination, Immobilientour und umfassende Beratung. Bei der regulären Bearbeitung fallen keine zusätzlichen Gebühren an.",
+          "slug": "faq-3"
         },
         {
-          "q": "¿Qué NO está incluido?",
-          "a": "Vuelos internacionales, alojamiento, gastos personales, traducciones juradas y apostillas en su país de origen."
+          "q": "Was ist nicht enthalten?",
+          "a": "Internationale Flüge, Unterkunft, persönliche Ausgaben, beglaubigte Übersetzungen und Apostillen in Ihrem Heimatland.",
+          "slug": "faq-4"
         },
         {
-          "q": "¿Necesito hablar español?",
-          "a": "No. Nuestro equipo le acompaña en todo momento y la comunicación comercial es en neerlandés, inglés y alemán."
+          "q": "Muss ich Spanisch sprechen?",
+          "a": "Nein. Unser Team begleitet Sie jederzeit und die Geschäftskommunikation erfolgt auf Niederländisch, Englisch und Deutsch.",
+          "slug": "faq-5"
         },
         {
-          "q": "¿Puedo abrir una cuenta bancaria siendo extranjero?",
-          "a": "Sí. Es el proceso más complejo, pero preparamos su perfil financiero y coordinamos con la entidad para maximizar las probabilidades de aprobación."
+          "q": "Kann ich als Ausländer ein Bankkonto eröffnen?",
+          "a": "Ja. Es ist der komplexeste Prozess, aber wir erstellen Ihr Finanzprofil und stimmen uns mit dem Unternehmen ab, um die Chancen auf Genehmigung zu maximieren.",
+          "slug": "faq-6"
         },
         {
-          "q": "¿Qué tipo de sociedad se constituye?",
-          "a": "Nuestro equipo legal recomienda el tipo societario más conveniente (generalmente EAS o SA) según su caso."
+          "q": "Welche Art von Gesellschaft wird gegründet?",
+          "a": "Unser Rechtsteam empfiehlt je nach Fall den am besten geeigneten Unternehmenstyp (in der Regel EAS oder SA).",
+          "slug": "faq-7"
         },
         {
-          "q": "¿El proceso es 100% legal?",
-          "a": "Absolutamente. Estricto apego a la legislación paraguaya e internacional."
+          "q": "Ist der Prozess zu 100% legal?",
+          "a": "Absolut. Strenge Einhaltung der paraguayischen und internationalen Gesetzgebung.",
+          "slug": "faq-8"
         },
         {
-          "q": "¿Qué pasa si falta algún documento?",
-          "a": "Lo detectamos antes de su viaje. Nuestra validación previa garantiza que llegue con todo en orden."
+          "q": "Was passiert, wenn ein Dokument fehlt?",
+          "a": "Wir haben Sie vor Ihrer Reise entdeckt. Unsere Vorabvalidierung stellt sicher, dass alles in Ordnung ist.",
+          "slug": "faq-9"
         },
         {
-          "q": "¿Ofrecen garantía de apertura bancaria?",
-          "a": "La decisión final es del banco. Garantizamos preparación profesional y coordinación institucional."
+          "q": "Bieten Sie eine Bankeröffnungsgarantie an?",
+          "a": "Die endgültige Entscheidung liegt bei der Bank. Wir garantieren professionelle Vorbereitung und institutionelle Koordination.",
+          "slug": "faq-10"
         },
         {
-          "q": "¿Puedo traer a mi familia?",
-          "a": "Sí. Cada miembro requiere su propio proceso de residencia."
+          "q": "Darf ich meine Familie mitbringen?",
+          "a": "Ja. Jedes Mitglied benötigt ein eigenes Aufenthaltsverfahren.",
+          "slug": "faq-11"
         },
         {
-          "q": "¿Cómo se realiza el pago?",
-          "a": "Pago anticipado por transferencia bancaria. Sin cargos adicionales."
+          "q": "Wie erfolgt die Zahlung?",
+          "a": "Vorauszahlung per Banküberweisung. Ohne Aufpreis.",
+          "slug": "faq-12"
         },
         {
-          "q": "¿Puedo contratar solo la residencia?",
-          "a": "Programas integrales por diseño. Contáctenos para su caso específico."
+          "q": "Kann ich nur die Residenz mieten?",
+          "a": "Umfassende Programme nach Design. Kontaktieren Sie uns für Ihren speziellen Fall.",
+          "slug": "faq-13"
         },
         {
-          "q": "¿Qué pasa después del primer año (Investor)?",
-          "a": "Propuesta de continuidad adaptada a sus necesidades actuales."
+          "q": "Was passiert nach dem ersten Jahr (Investor)?",
+          "a": "Kontinuitätsvorschlag, der an Ihre aktuellen Bedürfnisse angepasst ist.",
+          "slug": "faq-14"
         },
         {
-          "q": "¿Qué pasa si cambian las leyes durante mi proceso?",
-          "a": "Monitoreamos el entorno regulatorio y le informamos inmediatamente si hay cambios relevantes."
+          "q": "Was passiert, wenn sich die Gesetze während meines Prozesses ändern?",
+          "a": "Wir überwachen das regulatorische Umfeld und informieren Sie umgehend über relevante Änderungen.",
+          "slug": "faq-15"
         },
         {
-          "q": "¿Necesito hablar español para obtener la residencia?",
-          "a": "No es necesario. Aunque el proceso se realiza en español, trabajamos con traductores certificados y todo el equipo de Nexa habla inglés, neerlandés y alemán. Muchos expats viven en Paraguay sin hablar español fluidamente, aunque recomendamos aprender lo básico."
+          "q": "Muss ich Spanisch sprechen, um die Residenz zu erhalten?",
+          "a": "Es ist nicht notwendig. Obwohl der Prozess auf Spanisch durchgeführt wird, arbeiten wir mit zertifizierten Übersetzern zusammen und das gesamte Nexa-Team spricht Englisch, Niederländisch und Deutsch. Viele Expats leben in Paraguay, ohne fließend Spanisch zu sprechen, obwohl wir empfehlen, die Grundlagen zu erlernen.",
+          "slug": "faq-16"
         },
         {
-          "q": "¿Puedo mantener mi ciudadanía original?",
-          "a": "Sí, Paraguay permite la doble ciudadanía con la mayoría de los países. No perderás tu pasaporte ni tus derechos en tu país de origen. La residencia permanente paraguaya es adicional a tu estatus actual."
+          "q": "Kann ich meine ursprüngliche Staatsbürgerschaft behalten?",
+          "a": "Ja, Paraguay erlaubt die doppelte Staatsbürgerschaft mit den meisten Ländern. Sie verlieren weder Ihren Reisepass noch Ihre Rechte in Ihrem Heimatland. Der dauerhafte Wohnsitz in Paraguay ist zusätzlich zu Ihrem aktuellen Status.",
+          "slug": "faq-17"
         },
         {
-          "q": "¿Cuánto tiempo puedo estar fuera de Paraguay sin perder la residencia?",
-          "a": "La residencia permanente requiere que estés físicamente en Paraguay al menos 1 día cada 3 años para mantenerla activa. No hay un mínimo de días por año, lo que la hace ideal para quienes viajan frecuentemente."
+          "q": "Wie lange kann ich außerhalb Paraguays bleiben, ohne meinen Wohnsitz zu verlieren?",
+          "a": "Der ständige Wohnsitz erfordert, dass Sie sich alle 3 Jahre mindestens 1 Tag in Paraguay aufhalten, um aktiv zu bleiben. Es gibt kein Minimum an Tagen pro Jahr, was sie ideal für Vielreisende macht.",
+          "slug": "faq-18"
         },
         {
-          "q": "¿Es seguro Paraguay para los europeos?",
-          "a": "Paraguay es considerado uno de los países más seguros de Sudamérica para extranjeros. Asunción tiene una tasa de criminalidad violenta baja comparada con otras capitales regionales. Las comunidades de expats en Villa Morra, Carmelitas y San Bernardino son muy activas y seguras."
+          "q": "Ist Paraguay für Europäer sicher?",
+          "a": "Paraguay gilt als eines der sichersten Länder Südamerikas für Ausländer. Asunción hat im Vergleich zu anderen regionalen Hauptstädten eine niedrige Gewaltkriminalitätsrate. Die Expat-Gemeinschaften in Villa Morra, Carmelitas und San Bernardino sind sehr aktiv und sicher.",
+          "slug": "faq-19"
         },
         {
-          "q": "¿Qué tal es el sistema de salud en Paraguay?",
-          "a": "Paraguay cuenta con hospitales privados de excelente calidad en Asunción, con estándares comparables a Europa. El seguro de salud privado cuesta aproximadamente $50-100 USD por mes. Los principales hospitales tienen médicos formados en Europa y Estados Unidos."
+          "q": "Wie ist das Gesundheitssystem in Paraguay?",
+          "a": "Paraguay verfügt in Asunción über private Krankenhäuser von ausgezeichneter Qualität, deren Standards mit denen Europas vergleichbar sind. Die private Krankenversicherung kostet ca. $50-100 USD pro Monat. Die wichtigsten Krankenhäuser verfügen über ausgebildete Ärzte in Europa und den USA.",
+          "slug": "faq-20"
         },
         {
-          "q": "¿Cómo funciona el sistema educativo para niños?",
-          "a": "Existen excelentes opciones educativas: colegios internacionales (American School, Goethe, Colegio Internacional), colegios bilingües español-inglés, y la opción de educación internacional en línea. Varios colegios ofrecen el Bachillerato Internacional."
+          "q": "Wie funktioniert das Bildungssystem für Kinder?",
+          "a": "Es gibt ausgezeichnete Bildungsmöglichkeiten: internationale Schulen (American School, Goethe, Colegio Internacional), zweisprachige Spanisch-Englisch-Schulen und die Option der internationalen Online-Ausbildung. Mehrere Schulen bieten das International Baccalaureate an.",
+          "slug": "faq-21"
         },
         {
-          "q": "¿Necesito un abogado para el proceso?",
-          "a": "Sí, la ley paraguaya requiere que ciertos pasos del proceso de residencia sean gestionados por un abogado local. En Nexa trabajamos con abogados colegiados especializados en inmigración que garantizan que todo el proceso cumpla con los requisitos legales."
+          "q": "Brauche ich einen Anwalt für den Prozess?",
+          "a": "Ja, das paraguayische Recht verlangt, dass bestimmte Schritte des Aufenthaltsverfahrens von einem lokalen Anwalt durchgeführt werden. Bei Nexa arbeiten wir mit zugelassenen Anwälten zusammen, die auf Einwanderung spezialisiert sind und sicherstellen, dass der gesamte Prozess den gesetzlichen Anforderungen entspricht.",
+          "slug": "faq-22"
         },
         {
-          "q": "¿Cuánto cuesta mantener la residencia anualmente?",
-          "a": "El mantenimiento anual de la residencia es mínimo. Incluye el RUC (registro tributario) que no tiene costo si no hay movimientos, y la cédula de identidad que se renueva cada 5 años por aproximadamente $15 USD."
+          "q": "Wie viel kostet es, den Wohnsitz jährlich beizubehalten?",
+          "a": "Der jährliche Unterhalt der Residenz ist minimal. Es enthält das RUC (Steuerregister), das kostenlos ist, wenn es keine Bewegungen gibt, und den Personalausweis, der alle 5 Jahre für ca. $15 USD erneuert wird.",
+          "slug": "faq-23"
         },
         {
-          "q": "¿Puedo trabajar legalmente con la residencia?",
-          "a": "Sí, la residencia permanente te permite trabajar legalmente en Paraguay, ya sea como empleado o como independiente. También puedes ser director o accionista de empresas sin restricciones adicionales."
+          "q": "Kann ich legal mit dem Wohnsitz arbeiten?",
+          "a": "Ja, der ständige Wohnsitz ermöglicht es dir, legal in Paraguay zu arbeiten, entweder als Angestellter oder als Selbständiger. Sie können auch Geschäftsführer oder Gesellschafter von Unternehmen ohne zusätzliche Einschränkungen sein.",
+          "slug": "faq-24"
         },
         {
-          "q": "¿Cómo es el clima en Paraguay?",
-          "a": "Paraguay tiene un clima subtropical con dos estaciones bien marcadas: verano (octubre-marzo) con temperaturas de 25-40°C e invierno (abril-septiembre) con 10-25°C. La primavera y el otoño son muy agradables. No hay huracanes, terremotos ni desastres naturales significativos."
+          "q": "Wie ist das Wetter in Paraguay?",
+          "a": "Paraguay hat ein subtropisches Klima mit zwei ausgeprägten Jahreszeiten: Sommer (Oktober-März) mit Temperaturen von 25-40°C und Winter (April-September) mit 10-25°C. Frühling und Herbst sind sehr angenehm. Es gibt keine Hurrikane, Erdbeben oder Naturkatastrophen von Bedeutung.",
+          "slug": "faq-25"
         },
         {
-          "q": "¿Puedo abrir una cuenta bancaria antes de llegar?",
-          "a": "Algunos bancos permiten la apertura de cuentas de forma remota con ciertos requisitos. Nosotros gestionamos todo el proceso y podemos tener tu cuenta operativa el mismo día de tu llegada si los documentos están en orden."
+          "q": "Kann ich vor meiner Ankunft ein Bankkonto eröffnen?",
+          "a": "Einige Banken erlauben die Eröffnung von Konten aus der Ferne mit bestimmten Anforderungen. Wir verwalten den gesamten Prozess und können Ihr Betriebskonto am Tag Ihrer Ankunft haben, wenn die Dokumente in Ordnung sind.",
+          "slug": "faq-26"
         },
         {
-          "q": "¿Qué documentos necesita apostilla?",
-          "a": "Los documentos que generalmente requieren apostilla son: partida de nacimiento, certificado de matrimonio (si aplica), certificado de antecedentes penales, título profesional (si aplica) y partida de bautismo/certificado de nacimiento para menores."
+          "q": "Welche Dokumente benötigen Sie Apostille?",
+          "a": "Die Dokumente, die in der Regel eine Apostille erfordern, sind: Geburtsurkunde, Heiratsurkunde (falls zutreffend), Strafregisterauszug, Berufsbezeichnung (falls zutreffend) und Taufurkunde/Geburtsurkunde für Minderjährige.",
+          "slug": "faq-27"
         },
         {
-          "q": "¿Cuál es la diferencia entre residencia permanente y ciudadanía?",
-          "a": "La residencia permanente te permite vivir, trabajar y tener propiedades en Paraguay. La ciudadanía (nacionalidad) otorga derechos políticos como el voto. Se puede solicitar la ciudadanía después de 3 años de residencia continua."
+          "q": "Was ist der Unterschied zwischen Daueraufenthalt und Staatsbürgerschaft?",
+          "a": "Der ständige Wohnsitz ermöglicht es Ihnen, in Paraguay zu leben, zu arbeiten und Immobilien zu besitzen. Die Staatsbürgerschaft (Nationalität) verleiht politische Rechte wie das Wahlrecht. Die Staatsbürgerschaft kann nach 3 Jahren Daueraufenthalt beantragt werden.",
+          "slug": "faq-28"
         },
         {
-          "q": "¿Hay comunidad de expats holandeses en Paraguay?",
-          "a": "Sí, la comunidad holandesa en Paraguay es una de las más grandes y organizadas de Sudamérica. Proyecto Paraguay ha ayudado a más de 600 familias. Hay grupos activos en Asunción, San Bernardino (lago) y Encarnación."
+          "q": "Gibt es eine holländische Expat-Community in Paraguay?",
+          "a": "Ja, die niederländische Gemeinde in Paraguay ist eine der größten und organisiertesten in Südamerika. Proyecto Paraguay hat mehr als 600 Familien geholfen. Es gibt aktive Gruppen in Asunción, San Bernardino (See) und Encarnación.",
+          "slug": "faq-29"
         },
         {
-          "q": "¿Puedo comprar propiedades como extranjero?",
-          "a": "Sí, los extranjeros tienen exactamente los mismos derechos que los paraguayos para comprar propiedades. No hay restricciones de zonas ni límites de cantidad. El proceso de compra es sencillo y está regulado por la ley paraguaya."
+          "q": "Kann ich als Ausländer Immobilien kaufen?",
+          "a": "Ja, Ausländer haben genau die gleichen Rechte wie Paraguayer, Immobilien zu kaufen. Es gibt keine Zonenbeschränkungen oder Mengenbeschränkungen. Der Kaufprozess ist einfach und unterliegt dem paraguayischen Recht.",
+          "slug": "faq-30"
         },
         {
-          "q": "¿Cómo funciona el sistema de salud?",
-          "a": "El sistema de salud paraguayo combina IPS (seguro social público) con medicina privada. La mayoría de los expats optan por seguros privados que cuestan entre $50-150 USD mensuales y cubren hospitales de primer nivel."
+          "q": "Wie funktioniert das Gesundheitssystem?",
+          "a": "Das paraguayische Gesundheitssystem kombiniert IPS (öffentliche Sozialversicherung) mit privater Medizin. Die meisten Expats entscheiden sich für private Versicherungen, die zwischen $50-150 USD pro Monat kosten und erstklassige Krankenhäuser abdecken.",
+          "slug": "faq-31"
         },
         {
-          "q": "¿Qué impuestos pago como residente?",
-          "a": "Los residentes pagan: IRE 10% (Impuesto a la Renta Empresarial) sobre ingresos de fuente paraguaya, IVA 10% en la mayoría de productos/servicios, e IRP (Impuesto a la Renta Personal) que es progresivo hasta 10%. Las rentas de fuente extranjera no tributan en Paraguay."
+          "q": "Welche Steuern zahle ich als Resident?",
+          "a": "Die Einwohner zahlen: IRE 10% (Einkommenssteuer) auf Einkünfte aus paraguayischer Quelle, Mehrwertsteuer 10% auf die meisten Produkte/Dienstleistungen und IRP (Einkommensteuer), die progressiv bis zu 10% beträgt. Einkommen aus ausländischen Quellen werden in Paraguay nicht besteuert.",
+          "slug": "faq-32"
         },
         {
-          "q": "¿Hay tratado de doble imposición con mi país?",
-          "a": "Paraguay tiene tratados de doble imposición con varios países. Para holandeses: el tratado PY-NL evita la doble tributación. Para belgas: el tratado PY-BE también aplica. Consultamos tu caso específico para maximizar los beneficios fiscales."
+          "q": "Gibt es ein Doppelbesteuerungsabkommen mit meinem Land?",
+          "a": "Paraguay hat Doppelbesteuerungsabkommen mit mehreren Ländern. Für Niederländer: Das PY-NL-Abkommen vermeidet die Doppelbesteuerung. Für Belgierinnen: Das PY-BE-Abkommen gilt auch. Wir konsultieren Ihren spezifischen Fall, um die Steuervorteile zu maximieren.",
+          "slug": "faq-33"
         },
         {
-          "q": "¿Cómo encuentro vivienda en Paraguay?",
-          "a": "Trabajamos con inmobiliarias de confianza en Asunción y alrededores. Los alquileres en zonas premium (Villa Morra, Carmelitas) van de $500-1.500 USD/mes. La compra de apartamentos de lujo oscila entre $80.000-250.000 USD."
+          "q": "Wie finde ich eine Unterkunft in Paraguay?",
+          "a": "Wir arbeiten mit vertrauenswürdigen Immobilienmaklern in Asunción und Umgebung zusammen. Die Mieten in Premium-Zonen (Villa Morra, Carmelitas) betragen $500-1.500 USD/Monat. Der Kauf von Luxuswohnungen liegt zwischen $80.000-250.000 USD.",
+          "slug": "faq-34"
         },
         {
-          "q": "¿Cómo es el costo de vida en Paraguay?",
-          "a": "El costo de vida en Paraguay es aproximadamente 60-70% menor que en Europa Occidental. Una pareja puede vivir cómodamente en Asunción con $1.500-2.500 USD/mes, incluyendo alquiler, alimentos, transporte y ocio."
+          "q": "Wie hoch sind die Lebenshaltungskosten in Paraguay?",
+          "a": "Die Lebenshaltungskosten in Paraguay sind ca. 60-70% niedriger als in Westeuropa. Ein Paar kann bequem in Asunción mit $ 1.500-2.500 USD/Monat leben, einschließlich Miete, Verpflegung, Transport und Freizeit.",
+          "slug": "faq-35"
         },
         {
-          "q": "¿Necesito visa para entrar a Paraguay como turista?",
-          "a": "Los ciudadanos de la Unión Europea, Estados Unidos, Canadá, Australia y la mayoría de países latinoamericanos NO necesitan visa para entrar a Paraguay como turistas. Obtienen 90 días de estancia a la llegada."
+          "q": "Brauche ich ein Visum, um als Tourist nach Paraguay einzureisen?",
+          "a": "Bürger der Europäischen Union, der Vereinigten Staaten, Kanadas, Australiens und der meisten lateinamerikanischen Länder benötigen kein Visum, um als Touristen nach Paraguay einzureisen. Sie erhalten 90 Tage Aufenthalt bei der Ankunft.",
+          "slug": "faq-36"
         },
         {
-          "q": "¿Puedo usar mi licencia de conducir europea?",
-          "a": "Sí, tu licencia de conducir europea es válida en Paraguay por 90 días. Después puedes canjearla por una licencia paraguaya sin necesidad de examen práctico, solo un examen teórico básico."
+          "q": "Kann ich meinen europäischen Führerschein benutzen?",
+          "a": "Ja, dein europäischer Führerschein ist in Paraguay für 90 Tage gültig. Danach kannst du sie ohne praktische Prüfung, nur eine theoretische Grundprüfung, gegen eine paraguayische Lizenz eintauschen.",
+          "slug": "faq-37"
         },
         {
-          "q": "¿Hay vuelos directos desde Europa?",
-          "a": "Actualmente hay vuelos directos desde Madrid (Air Europa) y conexiones diarias desde Ámsterdam, París y Frankfurt con una escala en São Paulo. El aeropuerto Silvio Pettirossi está siendo modernizado para recibir más rutas internacionales."
+          "q": "Gibt es Direktflüge aus Europa?",
+          "a": "Derzeit gibt es Direktflüge von Madrid (Air Europa) und tägliche Verbindungen von Amsterdam, Paris und Frankfurt mit einem Zwischenstopp in São Paulo. Der Flughafen Silvio Pettirossi wird für weitere internationale Strecken modernisiert.",
+          "slug": "faq-38"
         },
         {
-          "q": "¿Cómo es el internet en Paraguay?",
-          "a": "El internet de fibra óptica está disponible en todas las zonas urbanas con velocidades de hasta 1GB. En Asunción y áreas metropolitanas, la cobertura 5G es excelente. Ideal para nómadas digitales y trabajo remoto."
+          "q": "Wie ist das Internet in Paraguay?",
+          "a": "Glasfaser-Internet ist in allen städtischen Gebieten mit Geschwindigkeiten von bis zu 1 GB verfügbar. In Asunción und Metropolregionen ist die 5G-Abdeckung hervorragend. Ideal für digitale Nomaden und Remote-Arbeit.",
+          "slug": "faq-39"
         },
         {
-          "q": "¿Qué pasa si mi solicitud de residencia es rechazada?",
-          "a": "Las solicitudes de residencia rara vez son rechazadas si los documentos están en orden. En caso de algún problema, trabajamos contigo para subsanar los requisitos y volver a presentar. Nuestro índice de éxito supera el 99% en los últimos 3 años."
+          "q": "Was passiert, wenn mein Aufenthaltsantrag abgelehnt wird?",
+          "a": "[Tatsächliche Daten ausstehend — fragen Sie Sonia] Wohnanträge werden selten abgelehnt, wenn die Unterlagen in Ordnung sind. Im Falle eines Problems arbeiten wir mit Ihnen zusammen, um die Anforderungen zu beheben und erneut einzureichen.",
+          "slug": "faq-40"
         }
       ]
     },
@@ -3023,6 +3612,121 @@
         "Nexa Paraguay nace de una historia real. Sonia, su fundadora, vivió 7 años en Holanda, donde experimentó en carne propia lo que es llegar a un país sin hablar el idioma ni tener una red de apoyo. Trabajó en la industria musical y luego se dedicó a su familia, siempre con la certeza de que volvería a Paraguay.",
         "Al regresar, enfrentó la burocracia, el desafío de reinventarse culturalmente y la necesidad de reconstruir su vida desde cero. Esa experiencia le mostró que faltaba un servicio que no solo procesara papeles, sino que acompañara de verdad — desde los primeros documentos hasta la mudanza completa.",
         "Hoy ayuda a ciudadanos europeos a mudarse a Paraguay con el mismo acompañamiento cercano que a ella le hubiera gustado tener. Habla neerlandés, inglés y español, conoce ambas culturas, y entiende exactamente lo que sus clientes están viviendo."
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": {
+        "es": "Preguntas frecuentes",
+        "en": "Frequently Asked Questions",
+        "nl": "Veelgestelde vragen",
+        "de": "Häufig gestellte Fragen"
+      },
+      "categories": [
+        {
+          "id": "immigration",
+          "label": {
+            "es": "Inmigración",
+            "en": "Immigration",
+            "nl": "Immigratie",
+            "de": "Einwanderung"
+          },
+          "items": [
+            {
+              "q": "Cuánto tiempo toma todo el proceso?",
+              "a": "Tramitación presencial en un día. Emisión de residencia y cédula: 45–60 días. Total: 8–12 semanas."
+            },
+            {
+              "q": "Cuántos viajes necesito hacer a Paraguay?",
+              "a": "Nuestro programa está diseñado para que un solo viaje sea suficiente."
+            },
+            {
+              "q": "Puedo traer a mi familia?",
+              "a": "Sí. Cada miembro requiere su propio proceso de residencia."
+            },
+            {
+              "q": "Necesito hablar español para obtener la residencia?",
+              "a": "No. Nuestro equipo habla inglés, neerlandés y alemán."
+            },
+            {
+              "q": "El proceso es 100% legal?",
+              "a": "Absolutamente. Estricto apego a la legislación paraguaya e internacional."
+            }
+          ]
+        },
+        {
+          "id": "banking",
+          "label": {
+            "es": "Banca y Finanzas",
+            "en": "Banking & Finance",
+            "nl": "Bankieren & Financiën",
+            "de": "Bankwesen & Finanzen"
+          },
+          "items": [
+            {
+              "q": "Puedo abrir una cuenta bancaria siendo extranjero?",
+              "a": "Sí. Preparamos su perfil financiero y coordinamos con la entidad para maximizar las probabilidades de aprobación."
+            },
+            {
+              "q": "Ofrecen garantía de apertura bancaria?",
+              "a": "La decisión final es del banco. Garantizamos preparación profesional y coordinación institucional."
+            }
+          ]
+        },
+        {
+          "id": "legal",
+          "label": {
+            "es": "Legal y Sociedad",
+            "en": "Legal & Company",
+            "nl": "Juridisch & Bedrijf",
+            "de": "Recht & Gesellschaft"
+          },
+          "items": [
+            {
+              "q": "Qué tipo de sociedad se constituye?",
+              "a": "Nuestro equipo legal recomienda el tipo societario más conveniente (generalmente EAS o SA) según su caso."
+            },
+            {
+              "q": "Qué pasa si faltan documentos?",
+              "a": "Lo detectamos antes de su viaje. Nuestra validación previa garantiza que llegue con todo en orden."
+            },
+            {
+              "q": "Qué pasa si cambian las leyes durante mi proceso?",
+              "a": "Monitoreamos el entorno regulatorio y le informamos inmediatamente si hay cambios relevantes."
+            }
+          ]
+        },
+        {
+          "id": "costs",
+          "label": {
+            "es": "Costos y Pago",
+            "en": "Costs & Payment",
+            "nl": "Kosten & Betaling",
+            "de": "Kosten & Zahlung"
+          },
+          "items": [
+            {
+              "q": "Qué incluye el precio?",
+              "a": "Honorarios profesionales, IVA, tasas oficiales, coordinación bancaria, tour inmobiliario y asesoramiento integral."
+            },
+            {
+              "q": "Qué NO está incluido?",
+              "a": "Vuelos internacionales, alojamiento, gastos personales, traducciones juradas y apostillas en su país de origen."
+            },
+            {
+              "q": "Cómo se realiza el pago?",
+              "a": "Pago anticipado por transferencia bancaria. Sin cargos adicionales."
+            },
+            {
+              "q": "Puedo contratar solo la residencia?",
+              "a": "Programas integrales por diseño. Contáctenos para su caso específico."
+            },
+            {
+              "q": "Qué pasa después del primer año (Investor)?",
+              "a": "Propuesta de continuidad adaptada a sus necesidades actuales."
+            }
+          ]
+        }
       ]
     }
   },
@@ -3263,46 +3967,46 @@
       "title": "Términos frecuentes",
       "items": [
         {
-          "q": "Residencia permanente",
-          "a": "Estatus migratorio permanente en Paraguay. Se obtiene con un proceso de 8–12 semanas desde la presentación completa del expediente.",
           "term": "Residencia permanente",
-          "definition": "Estatus migratorio permanente en Paraguay. Se obtiene con un proceso de 8–12 semanas desde la presentación completa del expediente."
+          "slug": "residencia-permanente",
+          "q": "Was ist ein Daueraufenthalt?",
+          "a": "Dauerhafter Migrationsstatus in Paraguay. Es wird in einem Prozess von 8–12 Wochen ab der vollständigen Einreichung des Dossiers erhalten."
         },
         {
-          "q": "Cédula de Identidad",
-          "a": "DNI paraguayo emitido tras otorgada la residencia. Es el documento oficial para operar en el país.",
           "term": "Cédula de Identidad",
-          "definition": "DNI paraguayo emitido tras otorgada la residencia. Es el documento oficial para operar en el país."
+          "slug": "cedula-de-identidad",
+          "q": "Was ist der paraguayische Personalausweis?",
+          "a": "Paraguayischer Personalausweis, ausgestellt nach Erteilung des Wohnsitzes. Es ist das offizielle Ausweisdokument in Paraguay."
         },
         {
-          "q": "RUC",
-          "a": "Registro Único del Contribuyente. Identificador tributario, equivalente al NIF o BTW-nummer.",
           "term": "RUC",
-          "definition": "Registro Único del Contribuyente. Identificador tributario, equivalente al NIF o BTW-nummer."
+          "slug": "ruc",
+          "q": "Was ist der RUC?",
+          "a": "Einheitliches Register des Steuerzahlers. Steueridentifikator, äquivalent zur europäischen Steuernummer. Erforderlich, um legal in Paraguay tätig zu sein."
         },
         {
-          "q": "IRE 10 %",
-          "a": "Impuesto a la Renta Empresarial. Tasa general sobre rentas generadas en Paraguay.",
-          "term": "IRE 10 %",
-          "definition": "Impuesto a la Renta Empresarial. Tasa general sobre rentas generadas en Paraguay."
+          "term": "IRE 10%",
+          "slug": "ire-10",
+          "q": "Was ist der IRE?",
+          "a": "Gewerbesteuer. Allgemeiner Steuersatz auf in Paraguay erwirtschaftete Einkünfte, mit einem einheitlichen Steuersatz von 10%."
         },
         {
-          "q": "Territorialidad",
-          "a": "Sistema fiscal donde solo se grava la renta generada dentro del país. Ingresos extranjeros no pagan IRE.",
           "term": "Territorialidad",
-          "definition": "Sistema fiscal donde solo se grava la renta generada dentro del país. Ingresos extranjeros no pagan IRE."
+          "slug": "territorialidad",
+          "q": "Was ist das System der steuerlichen Territorialität?",
+          "a": "Steuersystem, bei dem nur das innerhalb des Landes erwirtschaftete Einkommen besteuert wird. Paraguay besteuert Einnahmen aus paraguayischen Quellen, nicht die weltweiten Einnahmen."
         },
         {
-          "q": "SEPRELAD",
-          "a": "Autoridad antilavado de Paraguay. Nexa es entidad reportante, lo que implica KYC estricto.",
           "term": "SEPRELAD",
-          "definition": "Autoridad antilavado de Paraguay. Nexa es entidad reportante, lo que implica KYC estricto."
+          "slug": "seprelad",
+          "q": "Was ist SEPRELAD?",
+          "a": "Anti-Geldwäschebehörde von Paraguay. Nexa ist eine berichtende Einheit, was die Einhaltung der Vorschriften zur Bekämpfung der Geldwäsche impliziert."
         },
         {
-          "q": "KYC",
-          "a": "Know Your Customer. Procedimiento de verificación de identidad y fondos exigido para operar legalmente.",
           "term": "KYC",
-          "definition": "Know Your Customer. Procedimiento de verificación de identidad y fondos exigido para operar legalmente."
+          "slug": "kyc",
+          "q": "Was ist KYC?",
+          "a": "Know Your Customer. Verfahren zur Überprüfung von Identität und Geldern, das von Banken und Finanzinstituten zur Einhaltung der Vorschriften zur Bekämpfung der Geldwäsche verwendet wird."
         }
       ]
     },

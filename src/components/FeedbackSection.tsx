@@ -3,10 +3,12 @@
 import React, { useState } from 'react'
 import { SectionComponentProps } from '../types'
 import { FEEDBACK_SECTION, t as localeT } from '@ai-whisperers/i18n'
+import { trackFormStart, trackFormSubmit } from '@/lib/ga4'
+import { resolveClientLocale } from '@/lib/resolve-client-locale'
 
 export function FeedbackSection({ data, locale }: SectionComponentProps) {
   const d = data || {}
-  const lang = locale || 'es'
+  const lang = resolveClientLocale(locale)
 
   const tr = (key: string): string => {
     return d[key] || localeT(FEEDBACK_SECTION, lang, key)
@@ -19,13 +21,17 @@ export function FeedbackSection({ data, locale }: SectionComponentProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!message.trim()) return
+    trackFormStart('feedback-form', 'feedback')
     try {
       await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type: 'feedback', locale: lang, name: name.trim() || 'Anónimo', message: message.trim(), timestamp: new Date().toISOString() }),
       })
-    } catch {}
+      trackFormSubmit('feedback-form', 'feedback', true)
+    } catch {
+      trackFormSubmit('feedback-form', 'feedback', false)
+    }
     setName('')
     setMessage('')
     setSent(true)

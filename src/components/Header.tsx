@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
+import { trackCtaClick, trackLanguageSwitch } from '@/lib/ga4'
 
 interface NavItem {
   label: string
@@ -25,7 +26,10 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
   const navItems: NavItem[] = navigation?.navItems || []
   const pathname = usePathname()
   const router = useRouter()
-  const currentLocale = locale || 'nl'
+  const pathLocale = pathname?.split('/').filter(Boolean)?.[0]
+  const currentLocale = (locale && LOCALES.includes(locale))
+    ? locale
+    : (pathLocale && LOCALES.includes(pathLocale) ? pathLocale : 'en')
 
   function switchLocale(newLocale: string) {
     // Get current path without locale prefix
@@ -35,6 +39,7 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
       cleanPath = '/' + parts.slice(1).join('/') || '/'
     }
     const newPath = '/' + newLocale + cleanPath
+    trackLanguageSwitch(currentLocale, newLocale)
     router.push(newPath)
   }
 
@@ -94,7 +99,7 @@ export function Header({ navigation, locale }: { navigation: any; locale?: strin
               </div>
             )}
           </div>
-          {navigation?.ctaText && <a href={(() => { let h = navigation.ctaHref || '#'; h = h.replace(/^\/s\/[^/]+\/[^/]+/, ''); if (!h.startsWith('http') && !h.startsWith('/' + currentLocale)) h = '/' + currentLocale + h; return h; })()} style={{ padding: '0.5rem 1.25rem', background: '#C9A96E', color: '#1B2A4A', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.85rem' }}>{navigation.ctaText}</a>}
+          {navigation?.ctaText && <a href={(() => { let h = navigation.ctaHref || '#'; h = h.replace(/^\/s\/[^/]+\/[^/]+/, ''); if (!h.startsWith('http') && !h.startsWith('/' + currentLocale)) h = '/' + currentLocale + h; return h; })()} onClick={() => trackCtaClick(navigation?.ctaText || 'header_cta', 'header')} style={{ padding: '0.5rem 1.25rem', background: '#C9A96E', color: '#1B2A4A', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.85rem' }}>{navigation.ctaText}</a>}
         </nav>
       </div>
       {open && <div onClick={() => setOpen(false)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.3)', zIndex: 99 }} />}

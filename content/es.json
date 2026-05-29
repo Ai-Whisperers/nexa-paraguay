@@ -288,6 +288,322 @@
       "buttonText": "Enviar",
       "ctaText": "Ver comentarios →",
       "ctaHref": "/feedback"
+    },
+    "programs": {
+      "eyebrow": {
+        "es": "Nuestros programas",
+        "en": "Our Programs",
+        "nl": "Onze Programma's",
+        "de": "Unsere Programme"
+      },
+      "title": {
+        "es": "Elegí tu camino hacia Paraguay",
+        "en": "Choose Your Path to Paraguay",
+        "nl": "Kies Je Pad Naar Paraguay",
+        "de": "Wähle Deinen Weg Nach Paraguay"
+      },
+      "subtitle": {
+        "es": "Cuatro programas diseñados para cada perfil. Todo lo que necesitás, sin sorpresas.",
+        "en": "Four programs designed for every profile. Everything you need, no surprises.",
+        "nl": "Vier programma's ontworpen voor elk profiel. Alles wat je nodig hebt, geen verrassingen.",
+        "de": "Vier Programme für jedes Profil. Alles was du brauchst, keine Überraschungen."
+      },
+      "cards": [
+        {
+          "id": "base",
+          "title": {
+            "es": "Residencia Permanente",
+            "en": "Permanent Residency",
+            "nl": "Permanente Verblijfsvergunning",
+            "de": "Daueraufenthaltsgenehmigung"
+          },
+          "price": "USD 4.500",
+          "priceNote": {
+            "es": "honorarios profesionales incluidos",
+            "en": "professional fees included",
+            "nl": "inclusief professionele honoraria",
+            "de": "Anwaltsgebühren inklusive"
+          },
+          "duration": "10–12 semanas",
+          "popular": false,
+          "features": [
+            {
+              "text": {
+                "es": "Solicitud de residencia",
+                "en": "Residency application",
+                "nl": "Verblijfsaanvraag",
+                "de": "Aufenthaltsantrag"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Cédula paraguaya",
+                "en": "Paraguayan ID card",
+                "nl": "Paraguayaanse ID-kaart",
+                "de": "Paraguayischer Ausweis"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Coordinación bancaria",
+                "en": "Banking coordination",
+                "nl": "Bankcoördinatie",
+                "de": "Bankkoordination"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Constitución de sociedad",
+                "en": "Company incorporation",
+                "nl": "Bedrijfsoprichting",
+                "de": "Firmengründung"
+              },
+              "included": false
+            },
+            {
+              "text": {
+                "es": "Asesoría fiscal",
+                "en": "Tax advisory",
+                "nl": "Belastingadvies",
+                "de": "Steuerberatung"
+              },
+              "included": false
+            }
+          ],
+          "cta": {
+            "es": "Elegir Residencia",
+            "en": "Choose Residency",
+            "nl": "Kies Verblijf",
+            "de": "Residenz wählen"
+          }
+        },
+        {
+          "id": "business",
+          "title": {
+            "es": "Residencia + Empresa",
+            "en": "Residency + Company",
+            "nl": "Verblijf + Bedrijf",
+            "de": "Residenz + Unternehmen"
+          },
+          "price": "USD 7.500",
+          "priceNote": {
+            "es": "todo incluido",
+            "en": "all inclusive",
+            "nl": "alles inbegrepen",
+            "de": "alles inklusive"
+          },
+          "duration": "12–16 semanas",
+          "popular": true,
+          "features": [
+            {
+              "text": {
+                "es": "Todo lo de Residencia",
+                "en": "Everything in Residency",
+                "nl": "Alles van Verblijf",
+                "de": "Alles von Residenz"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Constitución de sociedad",
+                "en": "Company incorporation",
+                "nl": "Bedrijfsoprichting",
+                "de": "Firmengründung"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Cuenta bancaria empresarial",
+                "en": "Business bank account",
+                "nl": "Zakelijke bankrekening",
+                "de": "Geschäftskonto"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Asesoría fiscal inicial",
+                "en": "Initial tax advisory",
+                "nl": "Initiële belastingadvies",
+                "de": "Erstberatung Steuer"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Tour inmobiliario",
+                "en": "Real estate tour",
+                "nl": "Vastgoedtour",
+                "de": "Immobilienbesichtigung"
+              },
+              "included": true
+            }
+          ],
+          "cta": {
+            "es": "Elegir Business",
+            "en": "Choose Business",
+            "nl": "Kies Business",
+            "de": "Business wählen"
+          }
+        },
+        {
+          "id": "investor",
+          "title": {
+            "es": "Residencia para Inversores",
+            "en": "Investor Residency",
+            "nl": "Investeerder Verblijf",
+            "de": "Investoren-Residenz"
+          },
+          "price": "USD 12.000",
+          "priceNote": {
+            "es": "todo incluido",
+            "en": "all inclusive",
+            "nl": "alles inbegrepen",
+            "de": "alles inklusive"
+          },
+          "duration": "12–16 semanas",
+          "popular": false,
+          "features": [
+            {
+              "text": {
+                "es": "Todo lo de Business",
+                "en": "Everything in Business",
+                "nl": "Alles van Business",
+                "de": "Alles von Business"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Gestión de inversiones",
+                "en": "Investment management",
+                "nl": "Investeringsbeheer",
+                "de": "Investitionsverwaltung"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Due diligence inmobiliario",
+                "en": "Real estate due diligence",
+                "nl": "Vastgoed due diligence",
+                "de": "Immobilien-Due-Diligence"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Asesoría patrimonial",
+                "en": "Asset advisory",
+                "nl": "Vermogensadvies",
+                "de": "Vermögensberatung"
+              },
+              "included": true
+            }
+          ],
+          "cta": {
+            "es": "Elegir Inversor",
+            "en": "Choose Investor",
+            "nl": "Kies Investeerder",
+            "de": "Investor wählen"
+          }
+        },
+        {
+          "id": "land",
+          "title": {
+            "es": "Compra de Tierras",
+            "en": "Land Purchase",
+            "nl": "Grondaankoop",
+            "de": "Landerwerb"
+          },
+          "price": "USD 2.500",
+          "priceNote": {
+            "es": "solo gestión legal",
+            "en": "legal management only",
+            "nl": "alleen juridisch beheer",
+            "de": "nur Rechtsverwaltung"
+          },
+          "duration": "4–6 semanas",
+          "popular": false,
+          "features": [
+            {
+              "text": {
+                "es": "Due diligence completo",
+                "en": "Full due diligence",
+                "nl": "Volledige due diligence",
+                "de": "Vollständige Due Diligence"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Escrituración pública",
+                "en": "Public deed",
+                "nl": "Publieke akte",
+                "de": "Öffentliche Urkunde"
+              },
+              "included": true
+            },
+            {
+              "text": {
+                "es": "Registro en el ARP",
+                "en": "ARP registration",
+                "nl": "ARP-registratie",
+                "de": "ARP-Registrierung"
+              },
+              "included": true
+            }
+          ],
+          "cta": {
+            "es": "Elegir Tierras",
+            "en": "Choose Land",
+            "nl": "Kies Grond",
+            "de": "Land wählen"
+          }
+        }
+      ]
+    },
+    "testimonials": {
+      "items": [
+        {
+          "name": "Jan K.",
+          "origin": "Netherlands",
+          "program": "business",
+          "quote": {
+            "es": "Doce semanas de inicio a fin. Residencia, empresa, cuenta bancaria — todo hecho.",
+            "en": "Twelve weeks from start to finish. Residency, company, bank account — all done.",
+            "nl": "Twaalf weken van start tot finish. Verblijfsvergunning, bedrijf, bankrekening — alles voor elkaar.",
+            "de": "Zwölf Wochen von Anfang bis Ende. Aufenthaltsgenehmigung, Unternehmen, Bankkonto — alles erledigt."
+          }
+        },
+        {
+          "name": "Sophie B.",
+          "origin": "Belgium",
+          "program": "base",
+          "quote": {
+            "es": "Estaba aterrada por el proceso. Nexa lo hizo en un solo viaje tranquilo.",
+            "en": "I was terrified of the process. Nexa made it one smooth trip.",
+            "nl": "Ik was bang voor het proces. Nexa maakte het één soepele reis.",
+            "de": "Ich hatte Angst vor dem Prozess. Nexa hat es zu einer reibungslosen Reise gemacht."
+          }
+        },
+        {
+          "name": "Hans W.",
+          "origin": "Germany",
+          "program": "investor",
+          "quote": {
+            "es": "Lo más difícil era la banca. Nexa se ocupó de todo sin que yo moviera un dedo.",
+            "en": "The hardest part was banking. Nexa handled everything while I barely lifted a finger.",
+            "nl": "Het moeilijkste was bankieren. Nexa regelde alles terwijl ik amper een vinger hoefde uit te steken.",
+            "de": "Das Schwierigste war das Bankwesen. Nexa hat alles erledigt, während ich kaum einen Finger rührte."
+          }
+        }
+      ]
     }
   },
   "whyCountryPage": {
@@ -563,22 +879,55 @@
       "subheadline": "Nexa Paraguay fue fundada con una sola misión: transformar el proceso de mudanza de un obstáculo burocrático en una experiencia acogedora."
     },
     "team": {
-      "title": "Nuestro equipo",
+      "title": {
+        "es": "Nuestro equipo",
+        "en": "Our Team",
+        "nl": "Ons Team",
+        "de": "Unser Team"
+      },
       "members": [
         {
-          "name": "Dirección de Operaciones (Paraguay)",
-          "role": "[Rol real pendiente — preguntar a Sonia] Líder de operaciones en Paraguay.",
+          "name": "Sonia Wehrli",
+          "role": {
+            "es": "Fundadora y Guía Legal",
+            "en": "Founder & Legal Guide",
+            "nl": "Oprichtster & Juridisch Gids",
+            "de": "Gründerin & Rechtliche Beraterin"
+          },
+          "languages": [
+            "ES",
+            "EN",
+            "NL",
+            "DE"
+          ],
+          "icon": "Star",
+          "memberImage": "@src:team.sonia",
+          "imageUrl": "@src:team.sonia"
+        },
+        {
+          "name": "Marcelo González",
+          "role": {
+            "es": "Director de Operaciones (Paraguay)",
+            "en": "Operations Director (Paraguay)",
+            "nl": "Operationeel Directeur (Paraguay)",
+            "de": "Betriebsleiter (Paraguay)"
+          },
           "languages": [
             "ES",
             "EN"
           ],
           "icon": "Briefcase",
-          "imageUrl": "@src:team.operationsDirector",
-          "memberImage": "@src:team.operationsDirector"
+          "memberImage": "@src:team.operations",
+          "imageUrl": "@src:team.operations"
         },
         {
-          "name": "Dirección Comercial (Europa)",
-          "role": "Líder europea: holandés y alemán nativos, con base en Ámsterdam. Traduce inquietudes fiscales de la UE a la práctica paraguaya.",
+          "name": "Erik de Vries",
+          "role": {
+            "es": "Director Comercial (Europa)",
+            "en": "European Commercial Director",
+            "nl": "Europese Commerciële Directeur",
+            "de": "Europäischer Handelsdirektor"
+          },
           "languages": [
             "NL",
             "EN",
@@ -586,45 +935,42 @@
             "ES"
           ],
           "icon": "Globe",
-          "imageUrl": "@src:team.commercialDirector",
-          "memberImage": "@src:team.commercialDirector"
+          "memberImage": "@src:team.europe",
+          "imageUrl": "@src:team.europe"
         },
         {
-          "name": "Equipo Legal",
-          "role": "Abogados matriculados en Paraguay. Especialización en inmigración, corporativo y due diligence inmobiliario.",
+          "name": "Equipo Legal Nexa",
+          "role": {
+            "es": "Abogados Matriculados",
+            "en": "Licensed Legal Team",
+            "nl": "Gelicentieerd Juridisch Team",
+            "de": "Zugelassenes Rechtsteam"
+          },
           "languages": [
             "ES",
             "EN"
           ],
           "icon": "Scale",
-          "imageUrl": "@src:team.legalLead",
-          "memberImage": "@src:team.legalLead"
+          "memberImage": "@src:team.legal",
+          "imageUrl": "@src:team.legal"
         },
         {
-          "name": "Equipo Contable",
-          "role": "Contadores públicos matriculados. Ley 6380 IRE, renta territorial, estructuración de ingresos del exterior.",
+          "name": "Equipo Contable Nexa",
+          "role": {
+            "es": "Contadores Públicos Matriculados",
+            "en": "Licensed Accounting Team",
+            "nl": "Gelicentieerd Boekhoudteam",
+            "de": "Zugelassenes Buchhaltungsteam"
+          },
           "languages": [
             "ES",
             "EN"
           ],
           "icon": "Calculator",
-          "imageUrl": "@src:team.accountingLead",
-          "memberImage": "@src:team.accountingLead"
-        },
-        {
-          "name": "Client Success",
-          "role": "Onboarding y acompañamiento bilingüe ES/EN. Punto de contacto único durante las 8–12 semanas del proceso.",
-          "languages": [
-            "NL",
-            "EN",
-            "ES"
-          ],
-          "icon": "UserCheck",
-          "imageUrl": "@src:team.clientSuccess",
-          "memberImage": "@src:team.clientSuccess"
+          "memberImage": "@src:team.accounting",
+          "imageUrl": "@src:team.accounting"
         }
-      ],
-      "_note": "placeholder — reemplazar con fotos reales del equipo. Las imágenes actuales son IA. TODO: Sesión de fotos profesional con el equipo real."
+      ]
     },
     "trust": {
       "eyebrow": "Nuestra diferencia",
@@ -794,6 +1140,108 @@
         "title": "Costos aproximados",
         "description": "Varían según nacionalidad, traducciones, gestoría, apostillas y tipo de residencia. Te damos un presupuesto personalizado sin compromiso."
       }
+    },
+    "testimonials": {
+      "eyebrow": {
+        "es": "Casos de éxito",
+        "en": "Success Stories",
+        "nl": "Succesverhalen",
+        "de": "Erfolgsgeschichten"
+      },
+      "title": {
+        "es": "Lo que dicen nuestros clientes",
+        "en": "What Our Clients Say",
+        "nl": "Wat Onze Klanten Zeggen",
+        "de": "Was Unsere Kunden Sagen"
+      },
+      "items": [
+        {
+          "id": "t1",
+          "name": "Jan & Marleen K.",
+          "origin": "Netherlands",
+          "program": "business",
+          "quote": {
+            "es": "Después de 12 semanas teníamos nuestra residencia, empresa y cuenta bancaria en Paraguay. El equipo de Sonia hizo todo incredibly bien.",
+            "en": "After 12 weeks we had our residency, company and bank account in Paraguay. Sonia's team was exceptional throughout.",
+            "nl": "Na 12 weken hadden we onze verblijfsvergunning, bedrijf en bankrekening in Paraguay. Sonja's team was uitzonderlijk.",
+            "de": "Nach 12 Wochen hatten wir unsere Aufenthaltsgenehmigung, unser Unternehmen und unser Bankkonto in Paraguay. Sonjas Team war außergewöhnlich."
+          },
+          "image": "@src:testimonials.tm1"
+        },
+        {
+          "id": "t2",
+          "name": "Hans W.",
+          "origin": "Germany",
+          "program": "investor",
+          "quote": {
+            "es": "La coordinación bancaria era la parte más difícil y Nexa lo manejó todo. No tuve que preocuparme por nada.",
+            "en": "The banking coordination was the hardest part and Nexa handled everything. I didn't have to worry about a thing.",
+            "nl": "De bankcoördinatie was het moeilijkste onderdeel en Nexa regelde alles. Ik hoefde nergens over in te zitten.",
+            "de": "Die Bankkoordination war der schwierigste Teil und Nexa hat alles erledigt. Ich musste mir keine Sorgen machen."
+          },
+          "image": "@src:testimonials.tm2"
+        },
+        {
+          "id": "t3",
+          "name": "Sophie B.",
+          "origin": "Belgium",
+          "program": "base",
+          "quote": {
+            "es": "Estaba nerviosa por el proceso pero Nexa lo hizo fácil. Un solo viaje, todo solucionado.",
+            "en": "I was nervous about the process but Nexa made it seamless. One trip, everything done.",
+            "nl": "Ik was nerveus over het proces maar Nexa maakte het naadloos. Eén reis, alles geregeld.",
+            "de": "Ich war nervös wegen des Prozesses, aber Nexa hat alles nahtlos gemacht. Eine Reise, alles erledigt."
+          },
+          "image": "@src:testimonials.tm3"
+        },
+        {
+          "id": "t4",
+          "name": "Thomas L.",
+          "origin": "Switzerland",
+          "program": "land",
+          "quote": {
+            "es": "Compré tierras en Paraguay con la guía de Nexa. El due diligence legal fue exhaustivo.",
+            "en": "Bought land in Paraguay with Nexa's guidance. The legal due diligence was thorough.",
+            "nl": "Grond gekocht in Paraguay met begeleiding van Nexa. De juridische due diligence was grondig.",
+            "de": "Habe Land in Paraguay mit der Anleitung von Nexa gekauft. Die rechtliche Due Diligence war gründlich."
+          },
+          "image": "@src:testimonials.tm4"
+        }
+      ]
+    },
+    "specialist": {
+      "name": "Sonia Wehrli",
+      "title": {
+        "es": "Fundadora y Guía Legal — Nexa Paraguay",
+        "en": "Founder & Legal Guide — Nexa Paraguay",
+        "nl": "Oprichtster & Juridisch Gids — Nexa Paraguay",
+        "de": "Gründerin & Rechtliche Beraterin — Nexa Paraguay"
+      },
+      "bio": {
+        "es": "Suiza, Países Bajos, Paraguay — tres países, una visión. Nacida en Suiza, criada en los Países Bajos, me mudé a Paraguay y vi la oportunidad de ayudar a europeos a radicarse de forma legal y segura. Hablo cuatro idiomas con fluidez: español, neerlandés, inglés y alemán. Cada cliente recibe atención personal, no llamadas en cascada.",
+        "en": "Switzerland, Netherlands, Paraguay — three countries, one vision. Born in Switzerland, raised in the Netherlands, I moved to Paraguay and saw the opportunity to help Europeans relocate legally and confidently. I speak four languages fluently: Spanish, Dutch, English and German. Every client receives personal attention, not call cascades.",
+        "nl": "Zwitserland, Nederland, Paraguay — drie landen, één visie. Geboren in Zwitserland, opgegroeid in Nederland, verhuisd naar Paraguay en zag de kans om Europeanen te helpen zich legaal te vestigen. Ik spreek vier talen vloeiend: Spaans, Nederlands, Engels en Duits. Elke klant krijgt persoonlijke aandacht.",
+        "de": "Schweiz, Niederlande, Paraguay — drei Länder, eine Vision. In der Schweiz geboren, in den Niederlanden aufgewachsen, nach Paraguay gezogen und sah die Chance, Europäern zu einem legalen Umzug zu verhelfen. Ich spreche vier Sprachen fließend: Spanisch, Niederländisch, Englisch und Deutsch."
+      },
+      "image": "@src:team.sonia",
+      "credentials": [
+        {
+          "text": {
+            "es": "Licencia de operación: Resolución N° 127/2022",
+            "en": "Operating License: Resolution No. 127/2022",
+            "nl": "Vergunning: Resolutie Nr. 127/2022",
+            "de": "Betriebslizenz: Resolution Nr. 127/2022"
+          }
+        },
+        {
+          "text": {
+            "es": "Miembro de laAsociación de Profesionales de Inmigración",
+            "en": "Member, Association of Immigration Professionals",
+            "nl": "Lid, Vereniging van Immigratieprofessionals",
+            "de": "Mitglied, Verein der Einwanderungsprofis"
+          }
+        }
+      ]
     }
   },
   "faqPage": {
@@ -988,6 +1436,121 @@
         "Nexa Paraguay nace de una historia real. Sonia, su fundadora, vivió 7 años en Holanda, donde experimentó en carne propia lo que es llegar a un país sin hablar el idioma ni tener una red de apoyo. Trabajó en la industria musical y luego se dedicó a su familia, siempre con la certeza de que volvería a Paraguay.",
         "Al regresar, enfrentó la burocracia, el desafío de reinventarse culturalmente y la necesidad de reconstruir su vida desde cero. Esa experiencia le mostró que faltaba un servicio que no solo procesara papeles, sino que acompañara de verdad — desde los primeros documentos hasta la mudanza completa.",
         "Hoy ayuda a ciudadanos europeos a mudarse a Paraguay con el mismo acompañamiento cercano que a ella le hubiera gustado tener. Habla neerlandés, inglés y español, conoce ambas culturas, y entiende exactamente lo que sus clientes están viviendo."
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": {
+        "es": "Preguntas frecuentes",
+        "en": "Frequently Asked Questions",
+        "nl": "Veelgestelde vragen",
+        "de": "Häufig gestellte Fragen"
+      },
+      "categories": [
+        {
+          "id": "immigration",
+          "label": {
+            "es": "Inmigración",
+            "en": "Immigration",
+            "nl": "Immigratie",
+            "de": "Einwanderung"
+          },
+          "items": [
+            {
+              "q": "Cuánto tiempo toma todo el proceso?",
+              "a": "Tramitación presencial en un día. Emisión de residencia y cédula: 45–60 días. Total: 8–12 semanas."
+            },
+            {
+              "q": "Cuántos viajes necesito hacer a Paraguay?",
+              "a": "Nuestro programa está diseñado para que un solo viaje sea suficiente."
+            },
+            {
+              "q": "Puedo traer a mi familia?",
+              "a": "Sí. Cada miembro requiere su propio proceso de residencia."
+            },
+            {
+              "q": "Necesito hablar español para obtener la residencia?",
+              "a": "No. Nuestro equipo habla inglés, neerlandés y alemán."
+            },
+            {
+              "q": "El proceso es 100% legal?",
+              "a": "Absolutamente. Estricto apego a la legislación paraguaya e internacional."
+            }
+          ]
+        },
+        {
+          "id": "banking",
+          "label": {
+            "es": "Banca y Finanzas",
+            "en": "Banking & Finance",
+            "nl": "Bankieren & Financiën",
+            "de": "Bankwesen & Finanzen"
+          },
+          "items": [
+            {
+              "q": "Puedo abrir una cuenta bancaria siendo extranjero?",
+              "a": "Sí. Preparamos su perfil financiero y coordinamos con la entidad para maximizar las probabilidades de aprobación."
+            },
+            {
+              "q": "Ofrecen garantía de apertura bancaria?",
+              "a": "La decisión final es del banco. Garantizamos preparación profesional y coordinación institucional."
+            }
+          ]
+        },
+        {
+          "id": "legal",
+          "label": {
+            "es": "Legal y Sociedad",
+            "en": "Legal & Company",
+            "nl": "Juridisch & Bedrijf",
+            "de": "Recht & Gesellschaft"
+          },
+          "items": [
+            {
+              "q": "Qué tipo de sociedad se constituye?",
+              "a": "Nuestro equipo legal recomienda el tipo societario más conveniente (generalmente EAS o SA) según su caso."
+            },
+            {
+              "q": "Qué pasa si faltan documentos?",
+              "a": "Lo detectamos antes de su viaje. Nuestra validación previa garantiza que llegue con todo en orden."
+            },
+            {
+              "q": "Qué pasa si cambian las leyes durante mi proceso?",
+              "a": "Monitoreamos el entorno regulatorio y le informamos inmediatamente si hay cambios relevantes."
+            }
+          ]
+        },
+        {
+          "id": "costs",
+          "label": {
+            "es": "Costos y Pago",
+            "en": "Costs & Payment",
+            "nl": "Kosten & Betaling",
+            "de": "Kosten & Zahlung"
+          },
+          "items": [
+            {
+              "q": "Qué incluye el precio?",
+              "a": "Honorarios profesionales, IVA, tasas oficiales, coordinación bancaria, tour inmobiliario y asesoramiento integral."
+            },
+            {
+              "q": "Qué NO está incluido?",
+              "a": "Vuelos internacionales, alojamiento, gastos personales, traducciones juradas y apostillas en su país de origen."
+            },
+            {
+              "q": "Cómo se realiza el pago?",
+              "a": "Pago anticipado por transferencia bancaria. Sin cargos adicionales."
+            },
+            {
+              "q": "Puedo contratar solo la residencia?",
+              "a": "Programas integrales por diseño. Contáctenos para su caso específico."
+            },
+            {
+              "q": "Qué pasa después del primer año (Investor)?",
+              "a": "Propuesta de continuidad adaptada a sus necesidades actuales."
+            }
+          ]
+        }
       ]
     }
   },
@@ -2625,46 +3188,46 @@
       "title": "Términos frecuentes",
       "items": [
         {
-          "q": "Residencia permanente",
-          "a": "Estatus migratorio permanente en Paraguay. Se obtiene con un proceso de 8–12 semanas desde la presentación completa del expediente.",
           "term": "Residencia permanente",
-          "definition": "Estatus migratorio permanente en Paraguay. Se obtiene con un proceso de 8–12 semanas desde la presentación completa del expediente."
+          "slug": "residencia-permanente",
+          "q": "¿Qué es la residencia permanente?",
+          "a": "Estatus migratorio permanente en Paraguay. Se obtiene con un proceso de 8–12 semanas desde la presentación completa del expediente."
         },
         {
-          "q": "Cédula de Identidad",
-          "a": "DNI paraguayo emitido tras otorgada la residencia. Es el documento oficial para operar en el país.",
           "term": "Cédula de Identidad",
-          "definition": "DNI paraguayo emitido tras otorgada la residencia. Es el documento oficial para operar en el país."
+          "slug": "cedula-de-identidad",
+          "q": "¿Qué es la cédula de identidad paraguaya?",
+          "a": "DNI paraguayo emitido tras otorgada la residencia. Es el documento oficial de identificación en Paraguay."
         },
         {
-          "q": "RUC",
-          "a": "Registro Único del Contribuyente. Identificador tributario, equivalente al NIF o BTW-nummer.",
           "term": "RUC",
-          "definition": "Registro Único del Contribuyente. Identificador tributario, equivalente al NIF o BTW-nummer."
+          "slug": "ruc",
+          "q": "¿Qué es el RUC?",
+          "a": "Registro Único del Contribuyente. Identificador tributario, equivalente al NIF europeo. Necesario para operar legalmente en Paraguay."
         },
         {
-          "q": "IRE 10 %",
-          "a": "Impuesto a la Renta Empresarial. Tasa general sobre rentas generadas en Paraguay.",
-          "term": "IRE 10 %",
-          "definition": "Impuesto a la Renta Empresarial. Tasa general sobre rentas generadas en Paraguay."
+          "term": "IRE 10%",
+          "slug": "ire-10",
+          "q": "¿Qué es el IRE?",
+          "a": "Impuesto a la Renta Empresarial. Tasa general sobre rentas generadas en Paraguay, con un tipo único del 10%."
         },
         {
-          "q": "Territorialidad",
-          "a": "Sistema fiscal donde solo se grava la renta generada dentro del país. Ingresos extranjeros no pagan IRE.",
           "term": "Territorialidad",
-          "definition": "Sistema fiscal donde solo se grava la renta generada dentro del país. Ingresos extranjeros no pagan IRE."
+          "slug": "territorialidad",
+          "q": "¿Qué es el sistema de territorialidad fiscal?",
+          "a": "Sistema fiscal donde solo se grava la renta generada dentro del país. Paraguay grava ingresos de fuente paraguaya, no los ingresos mundiales."
         },
         {
-          "q": "SEPRELAD",
-          "a": "Autoridad antilavado de Paraguay. Nexa es entidad reportante, lo que implica KYC estricto.",
           "term": "SEPRELAD",
-          "definition": "Autoridad antilavado de Paraguay. Nexa es entidad reportante, lo que implica KYC estricto."
+          "slug": "seprelad",
+          "q": "¿Qué es SEPRELAD?",
+          "a": "Autoridad antilavado de Paraguay. Nexa es entidad reportante, lo que implica cumplimiento con regulaciones antilavado de dinero."
         },
         {
-          "q": "KYC",
-          "a": "Know Your Customer. Procedimiento de verificación de identidad y fondos exigido para operar legalmente.",
           "term": "KYC",
-          "definition": "Know Your Customer. Procedimiento de verificación de identidad y fondos exigido para operar legalmente."
+          "slug": "kyc",
+          "q": "¿Qué es KYC?",
+          "a": "Know Your Customer. Procedimiento de verificación de identidad y fondos usado por bancos y entidades financieras para cumplir normativas antilavado."
         }
       ]
     },
@@ -3096,7 +3659,91 @@
           }
         ]
       }
-    ]
+    ],
+    "programs": {
+      "title": {
+        "es": "Nuestros programas",
+        "en": "Our Programs",
+        "nl": "Onze Programma's",
+        "de": "Unsere Programme"
+      },
+      "programs": {
+        "base": {
+          "title": {
+            "es": "Residencia Permanente",
+            "en": "Permanent Residency",
+            "nl": "Permanente Verblijfsvergunning",
+            "de": "Daueraufenthaltsgenehmigung"
+          },
+          "price": "USD 4.500",
+          "duration": "10–12 semanas",
+          "popular": false,
+          "included": [
+            "Residencia",
+            "Cédula",
+            "Coordinación bancaria"
+          ],
+          "notIncluded": [
+            "Constitución de sociedad",
+            "Asesoría fiscal"
+          ]
+        },
+        "business": {
+          "title": {
+            "es": "Residencia + Empresa",
+            "en": "Residency + Company",
+            "nl": "Verblijf + Bedrijf",
+            "de": "Residenz + Unternehmen"
+          },
+          "price": "USD 7.500",
+          "duration": "12–16 semanas",
+          "popular": true,
+          "included": [
+            "Residencia",
+            "Cédula",
+            "Constitución de sociedad",
+            "Cuenta bancaria empresarial",
+            "Tour inmobiliario"
+          ],
+          "notIncluded": []
+        },
+        "investor": {
+          "title": {
+            "es": "Residencia para Inversores",
+            "en": "Investor Residency",
+            "nl": "Investeerder Verblijf",
+            "de": "Investoren-Residenz"
+          },
+          "price": "USD 12.000",
+          "duration": "12–16 semanas",
+          "popular": false,
+          "included": [
+            "Todo lo de Business",
+            "Gestión de inversiones",
+            "Due diligence inmobiliario",
+            "Asesoría patrimonial"
+          ],
+          "notIncluded": []
+        },
+        "land": {
+          "title": {
+            "es": "Compra de Tierras",
+            "en": "Land Purchase",
+            "nl": "Grondaankoop",
+            "de": "Landerwerb"
+          },
+          "price": "USD 2.500",
+          "duration": "4–6 semanas",
+          "popular": false,
+          "included": [
+            "Due diligence completo",
+            "Escrituración pública",
+            "Registro ARP"
+          ],
+          "notIncluded": []
+        }
+      }
+    }
   },
   "processPage": {
     "seo": {
@@ -3286,7 +3933,11 @@
     "fallback": {
       "confirmTitle": "¡Recibido!",
       "confirmText": "Te contactaremos en las próximas 24 horas para coordinar los siguientes pasos.",
-      "backCta": "Ver programas"
+      "backCta": "Ver programas",
+      "bookingUrl": "https://calendly.com/nexa-paraguay/consulta",
+      "ctaText": "Agendar consulta gratuita",
+      "whatsapp": "595982515138",
+      "whatsappText": "O escribinos por WhatsApp"
     }
   },
   "datosPersonalesPage": {

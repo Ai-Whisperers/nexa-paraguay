@@ -2,6 +2,9 @@
 
 import Link from 'next/link'
 import { useState, useMemo } from 'react'
+import { TiltCard } from './ui/TiltCard'
+import { AnimatedSection } from './ui/AnimatedSection'
+import { resolveClientLocale } from '@/lib/resolve-client-locale'
 
 const POSTS_PER_PAGE = 9
 
@@ -12,7 +15,7 @@ export function BlogSection({ data, pageContent, locale }: any) {
   const allPosts = section.posts || section.items || []
   if (!allPosts.length) return null
 
-  const lang = locale || 'es'
+  const lang = resolveClientLocale(locale)
   const [page, setPage] = useState(1)
   const [categoryFilter, setCategoryFilter] = useState('all')
 
@@ -46,26 +49,26 @@ export function BlogSection({ data, pageContent, locale }: any) {
   return (
     <section className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Category filter */}
+        {/* Category filter with animated pills */}
         {categories.length > 1 && (
-          <div className="flex flex-wrap gap-2 mb-8">
+          <AnimatedSection animation="fade-up" className="flex flex-wrap gap-2 mb-8">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => { setCategoryFilter(cat); setPage(1) }}
-                className={`px-4 py-1.5 text-xs font-semibold rounded-full transition-all ${
+                className={`px-4 py-1.5 text-xs font-semibold rounded-full transition-all duration-200 ${
                   categoryFilter === cat
-                    ? 'bg-accent text-white'
+                    ? 'bg-accent text-white shadow-sm'
                     : 'bg-surface-alt text-text-muted hover:bg-surface-alt/70'
                 }`}
               >
                 {cat === 'all' ? l.all : cat}
               </button>
             ))}
-          </div>
+          </AnimatedSection>
         )}
 
-        {/* Posts grid */}
+        {/* Posts grid with staggered animations */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {pagePosts.map((post: any, i: number) => {
             const href = post.href || `/${lang}/blog/${post.slug}`
@@ -73,52 +76,65 @@ export function BlogSection({ data, pageContent, locale }: any) {
             const imgSrc = rawImg || '/images/blog/residencia-2024.webp'
 
             return (
-              <Link
+              <AnimatedSection
                 key={i}
-                href={href}
-                className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-border/40 hover:shadow-md transition-all duration-200 flex flex-col"
+                animation="fade-up"
+                delay={i * 70}
               >
-                <div className="aspect-[16/10] bg-surface-alt overflow-hidden relative">
-                  <img
-                    src={imgSrc}
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  {post.category && (
-                    <span className="absolute top-3 left-3 px-3 py-1 bg-primary/80 backdrop-blur-sm text-white text-[10px] font-semibold uppercase tracking-wider rounded-full">
-                      {post.category}
-                    </span>
-                  )}
-                </div>
-                <div className="p-5 flex flex-col flex-1">
-                  {post.title && (
-                    <h3 className="font-bold text-primary text-sm leading-snug group-hover:text-accent transition-colors duration-200 mb-2">
-                      {post.title}
-                    </h3>
-                  )}
-                  {post.excerpt && (
-                    <p className="text-xs text-text-muted leading-relaxed line-clamp-2 mb-3 flex-1">
-                      {post.excerpt}
-                    </p>
-                  )}
-                  <div className="flex items-center gap-3 text-[10px] text-text-muted/70 mt-auto pt-2 border-t border-border/30">
-                    {post.date && <span>{post.date}</span>}
-                    {post.readingMinutes && (
-                      <>
-                        <span className="w-1 h-1 rounded-full bg-text-muted/30" />
-                        <span>{post.readingMinutes} min de lectura</span>
-                      </>
-                    )}
-                  </div>
-                </div>
-              </Link>
+                <TiltCard
+                  tiltIntensity={2}
+                  className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-border/40 hover:shadow-lg transition-all duration-200 flex flex-col h-full"
+                >
+                  <Link
+                    href={href}
+                    className="flex flex-col h-full no-underline"
+                  >
+                    {/* Image with zoom on hover */}
+                    <div className="aspect-[16/10] bg-surface-alt overflow-hidden relative">
+                      <img
+                        src={imgSrc}
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400"
+                        style={{ transitionDuration: '400ms' }}
+                      />
+                      {post.category && (
+                        <span className="absolute top-3 left-3 px-3 py-1 bg-primary/80 backdrop-blur-sm text-white text-[10px] font-semibold uppercase tracking-wider rounded-full">
+                          {post.category}
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="p-5 flex flex-col flex-1">
+                      {post.title && (
+                        <h3 className="font-bold text-primary text-sm leading-snug group-hover:text-accent transition-colors duration-200 mb-2">
+                          {post.title}
+                        </h3>
+                      )}
+                      {post.excerpt && (
+                        <p className="text-xs text-text-muted leading-relaxed line-clamp-2 mb-3 flex-1">
+                          {post.excerpt}
+                        </p>
+                      )}
+                      <div className="flex items-center gap-3 text-[10px] text-text-muted/70 mt-auto pt-2 border-t border-border/30">
+                        {post.date && <span>{post.date}</span>}
+                        {post.readingMinutes && (
+                          <>
+                            <span className="w-1 h-1 rounded-full bg-text-muted/30" />
+                            <span>{post.readingMinutes} min</span>
+                          </>
+                        )}
+                      </div>
+                    </div>
+                  </Link>
+                </TiltCard>
+              </AnimatedSection>
             )
           })}
         </div>
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="flex items-center justify-center gap-3 mt-12">
+          <AnimatedSection animation="fade-up" delay={300} className="flex items-center justify-center gap-3 mt-12">
             <button
               onClick={() => setPage(Math.max(1, currentPage - 1))}
               disabled={currentPage <= 1}
@@ -144,7 +160,7 @@ export function BlogSection({ data, pageContent, locale }: any) {
             >
               {l.next} &rarr;
             </button>
-          </div>
+          </AnimatedSection>
         )}
       </div>
     </section>

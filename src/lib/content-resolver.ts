@@ -57,8 +57,8 @@ export function localizedField(obj: any, locale: string): string {
   if (!obj) return ''
   if (typeof obj === 'string') return obj
   if (typeof obj === 'object' && obj[locale]) return obj[locale]
-  // fallback chain: nl > en > any
-  const fallbacks = ['nl', 'en', 'de', 'es']
+  // fallback chain (prefer English before other locales)
+  const fallbacks = ['en', 'es', 'nl', 'de']
   for (const fb of fallbacks) {
     if (obj[fb]) return obj[fb]
   }

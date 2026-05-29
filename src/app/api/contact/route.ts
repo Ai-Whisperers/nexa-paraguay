@@ -1,92 +1,123 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { supabaseAdmin } from '@/lib/supabase'
 
-const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000
-const RATE_LIMIT_MAX = 10
-const ipBuckets = new Map<string, { count: number; resetAt: number }>()
-
-const HUBSPOT_PORTAL_ID = process.env.CRM_PORTAL_ID || 'HS-PORTAL-PARAGUAI'
-const HUBSPOT_FORM_ID = process.env.CRM_ENDPOINT || 'contact-form-paragu-ai'
-const HUBSPOT_API_URL = `https://api.hsforms.com/submissions/v3/integration/secure/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_ID}`
-
-function getRateLimitInfo(ip: string): { allowed: boolean; remaining: number; resetAt: number } {
-  const now = Date.now()
-  const bucket = ipBuckets.get(ip)
-  if (!bucket || now > bucket.resetAt) {
-    ipBuckets.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS })
-    return { allowed: true, remaining: RATE_LIMIT_MAX - 1, resetAt: now + RATE_LIMIT_WINDOW_MS }
-  }
-  const allowed = bucket.count < RATE_LIMIT_MAX
-  if (allowed) bucket.count++
-  return { allowed, remaining: Math.max(0, RATE_LIMIT_MAX - bucket.count), resetAt: bucket.resetAt }
+function validatePhone(phone: string): boolean {
+  return !phone || /^[\d\s\+\-\(\)]{7,20}$/.test(phone)
 }
 
-export async function POST(request: NextRequest) {
-  try {
-    const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || request.headers.get('x-real-ip') || 'unknown'
-    const { allowed, remaining, resetAt } = getRateLimitInfo(ip)
-    if (!allowed) {
-      return NextResponse.json(
-        { error: 'Too many requests. Try again later.', retryAfter: Math.ceil((resetAt - Date.now()) / 1000) },
-        { status: 429, headers: { 'Retry-After': String(Math.ceil((resetAt - Date.now()) / 1000)) } }
-      )
-    }
+function sanitize(val: unknown): string {
+  if (typeof val !== 'string') return ''
+  return val.replace(/[<>]/g, '').trim().slice(0, 2000)
+}
 
-    const body = await request.json()
-    const { name, email, phone, message, program } = body
-
-    // Send to HubSpot
-    const hubspotPayload = {
-      fields: [
-        { name: 'firstname', value: name || '' },
-        { name: 'email', value: email || '' },
-        { name: 'phone', value: phone || '' },
-        { name: 'message', value: message || '' },
-        { name: 'program', value: program || '' },
-      ],
-      context: {
-        ipAddress: ip,
-        pageUri: request.headers.get('referer') || 'https://nexa.paragu-ai.com',
-        pageName: 'Contact Form',
-      },
-      legalConsentOptions: {
-        consent: {
-          consentToProcess: true,
-          text: 'I agree to be contacted',
-          communications: [
-            {
-              value: true,
-              subscriptionTypeId: 999,
-              text: 'I agree to receive communications',
-            },
-          ],
+async function submitHubspot(fields: { name: string; value: string }[], pageName: string, req: NextRequest) {
+  const HUBSPOT_PORTAL_ID = process.env.HUBSPOT_PORTAL_ID
+  const HUBSPOT_CONTACT_FORM = process.env.HUBSPOT_CONTACT_FORM
+  if (!HUBSPOT_PORTAL_ID || !HUBSPOT_CONTACT_FORM) return
+  await fetch(
+    `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_CONTACT_FORM}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        fields,
+        context: {
+          pageUri: req.headers.get('referer') || 'https://nexa.paragu-ai.com',
+          pageName,
         },
-      },
+      }),
     }
+  )
+}
 
-    try {
-      const hsResponse = await fetch(HUBSPOT_API_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(hubspotPayload),
+function logLead(data: Record<string, string>) {
+  try {
+    const { appendFileSync, mkdirSync } = require('fs')
+    const { join } = require('path')
+    const dir = join(process.cwd(), '.leads')
+    mkdirSync(dir, { recursive: true })
+    const logPath = join(dir, `${new Date().toISOString().slice(0, 10)}.jsonl`)
+    appendFileSync(logPath, JSON.stringify({ timestamp: new Date().toISOString(), ...data }) + '\n')
+  } catch {}
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json()
+    const { name, email, phone, program, message, locale, honeypot, type } = body
+
+    // Honeypot — silent success for bots
+    if (honeypot) return NextResponse.json({ success: true })
+
+    // Exit popup: email only
+    if (type === 'exit-popup') {
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        return NextResponse.json({ error: 'Invalid email' }, { status: 400 })
+      }
+      await submitHubspot(
+        [{ name: 'email', value: sanitize(email) }, { name: 'source', value: 'exit-popup' }],
+        'Exit Popup', req
+      )
+
+      await supabaseAdmin.rpc('insert_form_submission', {
+        p_form_type: 'exit-popup',
+        p_payload: { email: sanitize(email), source: 'exit-popup' },
+        p_locale: sanitize(locale) || 'es',
+        p_source_url: req.headers.get('referer') || null,
+        p_user_agent: req.headers.get('user-agent') || null,
+        p_utm: {},
       })
 
-      if (hsResponse.ok) {
-        console.log('[Contact] HubSpot success:', email)
-        return NextResponse.json({ ok: true, remaining, hubspot: 'submitted' })
-      } else {
-        const hsError = await hsResponse.text()
-        console.warn('[Contact] HubSpot API error:', hsResponse.status, hsError)
-        // Fallback: log it so we don't lose it
-        console.log('[Contact] Fallback log:', JSON.stringify({ ip, name, email, phone, message, program }))
-        return NextResponse.json({ ok: true, remaining, hubspot: 'logged', note: 'HubSpot submission logged (check portal config)' })
-      }
-    } catch (hubspotErr) {
-      // HubSpot unreachable — log and return ok (don't break the form)
-      console.warn('[Contact] HubSpot unreachable:', String(hubspotErr))
-      console.log('[Contact] Fallback log:', JSON.stringify({ ip, name, email, phone, message, program }))
-      return NextResponse.json({ ok: true, remaining, hubspot: 'logged' })
+      logLead({ email: sanitize(email), source: 'exit-popup', locale: sanitize(locale) || 'es' })
+      return NextResponse.json({ success: true })
     }
-  } catch (err) {
-    return NextResponse.json({ error: String(err) }, { status: 500 })
+
+    // Full contact form
+    if (!name || typeof name !== 'string' || name.length < 2) {
+      return NextResponse.json({ error: 'Name required' }, { status: 400 })
+    }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return NextResponse.json({ error: 'Valid email required' }, { status: 400 })
+    }
+    if (!validatePhone(sanitize(phone))) {
+      return NextResponse.json({ error: 'Invalid phone' }, { status: 400 })
+    }
+
+    const firstName = sanitize(name).split(' ')[0]
+    const lastName = sanitize(name).split(' ').slice(1).join(' ') || ''
+
+    await submitHubspot([
+      { name: 'firstname', value: firstName },
+      { name: 'lastname', value: lastName },
+      { name: 'email', value: sanitize(email) },
+      { name: 'phone', value: sanitize(phone) },
+      { name: 'program_interest', value: sanitize(program) },
+      { name: 'message', value: sanitize(message) },
+      { name: 'locale', value: sanitize(locale) || 'es' },
+    ], 'Contact Form', req)
+
+    await supabaseAdmin.rpc('insert_form_submission', {
+      p_form_type: sanitize(type) || 'contact',
+      p_payload: {
+        name: sanitize(name),
+        email: sanitize(email),
+        phone: sanitize(phone),
+        program: sanitize(program),
+        message: sanitize(message),
+      },
+      p_locale: sanitize(locale) || 'es',
+      p_source_url: req.headers.get('referer') || null,
+      p_user_agent: req.headers.get('user-agent') || null,
+      p_utm: {},
+    })
+
+    logLead({
+      name: sanitize(name), email: sanitize(email), phone: sanitize(phone),
+      program: sanitize(program), locale: sanitize(locale), source: 'contact-form',
+    })
+
+    return NextResponse.json({ success: true })
+  } catch {
+    return NextResponse.json({ error: 'Server error' }, { status: 500 })
   }
 }

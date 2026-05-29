@@ -30,6 +30,49 @@ function loadJson<T>(...pathSegments: string[]): T | null {
   catch { return null }
 }
 
+function localizeDeep(value: any, locale: string): any {
+  if (Array.isArray(value)) return value.map((v) => localizeDeep(v, locale))
+  if (!value || typeof value !== 'object') return value
+
+  const keys = Object.keys(value)
+  const localeKeys = ['es', 'en', 'nl', 'de']
+  if (keys.length > 0 && keys.every((k) => localeKeys.includes(k))) {
+    return value[locale] ?? value.en ?? value.es ?? value.nl ?? value.de ?? ''
+  }
+
+  const out: Record<string, any> = {}
+  for (const [k, v] of Object.entries(value)) out[k] = localizeDeep(v, locale)
+  return out
+}
+
+function localizeInternalHref(href: string, locale: string): string {
+  if (!href) return href
+  if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#') || href.startsWith('?')) return href
+
+  const normalized = href.startsWith('/') ? href : `/${href}`
+  const first = normalized.split('/').filter(Boolean)[0]
+  if (first && ['es', 'en', 'nl', 'de'].includes(first)) return normalized
+  return `/${locale}${normalized}`
+}
+
+function localizeLinkFieldsDeep(value: any, locale: string): any {
+  if (Array.isArray(value)) return value.map((v) => localizeLinkFieldsDeep(v, locale))
+  if (!value || typeof value !== 'object') return value
+
+  const out: Record<string, any> = {}
+  const hrefKeys = new Set(['href', 'ctaHref', 'buttonHref', 'ctaPrimaryHref', 'ctaSecondaryHref'])
+
+  for (const [k, v] of Object.entries(value)) {
+    if (typeof v === 'string' && hrefKeys.has(k)) {
+      out[k] = localizeInternalHref(v, locale)
+      continue
+    }
+    out[k] = localizeLinkFieldsDeep(v, locale)
+  }
+
+  return out
+}
+
 function hasSupabaseConfig(): boolean {
   return !!SUPABASE_URL && !!SUPABASE_KEY && !SUPABASE_URL.includes('<') && !SUPABASE_KEY.includes('<')
 }
@@ -83,9 +126,11 @@ export async function loadPageData(locale: string, slug: string): Promise<any> {
   const content = await loadFromSupabase(locale)
   if (!content) {
     // File fallback
-    const content = loadJson<Record<string, any>>('content', `${locale}.json`)
-    if (!content) return null
-    const pageConfig = loadJson<any>('nexa-pages', `${slug}.json`)
+    const contentRaw = loadJson<Record<string, any>>('content', `${locale}.json`)
+    if (!contentRaw) return null
+    const content = localizeLinkFieldsDeep(localizeDeep(contentRaw, locale), locale)
+    const pageConfigRaw = loadJson<any>('nexa-pages', `${slug}.json`)
+    const pageConfig = localizeDeep(pageConfigRaw, locale)
     const images = loadJson<any>('images.json')
     const testimonials = loadJson<any>('testimonials.json')
     if (testimonials?.testimonials?.length) content.testimonials = testimonials.testimonials
@@ -94,13 +139,16 @@ export async function loadPageData(locale: string, slug: string): Promise<any> {
     return result
   }
 
+  const contentLocalized = localizeLinkFieldsDeep(localizeDeep(content, locale), locale)
+
   // From DB: page config and images still come from files (for now)
-  const pageConfig = loadJson<any>('nexa-pages', `${slug}.json`)
+  const pageConfigRaw = loadJson<any>('nexa-pages', `${slug}.json`)
+  const pageConfig = localizeDeep(pageConfigRaw, locale)
   const images = loadJson<any>('images.json')
   const testimonials = loadJson<any>('testimonials.json')
-  if (testimonials?.testimonials?.length) content.testimonials = testimonials.testimonials
+  if (testimonials?.testimonials?.length) contentLocalized.testimonials = testimonials.testimonials
 
-  const result = { content, pageConfig, images, pageId: slug, locale }
+  const result = { content: contentLocalized, pageConfig, images, pageId: slug, locale }
   setCache(cacheKey, result)
   return result
 }
@@ -110,8 +158,9 @@ export async function loadBlogPost(locale: string, slug: string): Promise<any> {
   const cached = getCached(cacheKey)
   if (cached) return cached
 
-  const content = await loadFromSupabase(locale) || loadJson<Record<string, any>>('content', `${locale}.json`)
-  if (!content) return null
+  const contentRaw = await loadFromSupabase(locale) || loadJson<Record<string, any>>('content', `${locale}.json`)
+  if (!contentRaw) return null
+  const content = localizeLinkFieldsDeep(localizeDeep(contentRaw, locale), locale)
 
   const posts = loadJson<any>('content', 'blog', `posts-${locale}.json`) || loadJson<any>('content', 'blog', 'posts.json')
   if (!posts) return null

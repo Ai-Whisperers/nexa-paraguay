@@ -1,6 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
+import { trackCtaClick, trackFormStart, trackFormStep, trackFormSubmit } from '@/lib/ga4'
+import { resolveClientLocale } from '@/lib/resolve-client-locale'
 
 const DEFAULT_PROGRAMS = [
   { id: 'base', title: 'Residencia Permanente', subtitle: 'Base', duration: '10-12 semanas', popular: false },
@@ -13,7 +15,7 @@ const DEFAULT_STEP_LABELS = ['Programa', 'Datos', 'Confirmar']
 
 export function BookingFormSection({ data, locale }: any) {
   const d = data || {}
-  const lang = locale || 'es'
+  const lang = resolveClientLocale(locale)
 
   // Resolve programs from data (4-locale format), fall back to hardcoded
   const rawPrograms: any[] = d.programs || DEFAULT_PROGRAMS
@@ -47,7 +49,10 @@ export function BookingFormSection({ data, locale }: any) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type: 'booking', program: selected, locale: lang, ...form, timestamp: new Date().toISOString() }),
       })
-    } catch {}
+      trackFormSubmit('booking-form', 'booking', true)
+    } catch {
+      trackFormSubmit('booking-form', 'booking', false)
+    }
     setSubmitted(true)
   }
 
@@ -92,7 +97,7 @@ export function BookingFormSection({ data, locale }: any) {
               <p className="text-sm text-text-muted mb-6">{t('step1Subtitle', 'Seleccioná el programa que te interesa.')}</p>
               <div className="grid gap-3">
                 {programs.map((p: any) => (
-                  <button key={p.id} onClick={() => { setSelected(p.id); setTimeout(() => setStep(1), 250) }}
+                  <button key={p.id} onClick={() => { trackFormStart('booking-form', 'booking'); trackFormStep('booking-form', 1, 'program_selected'); setSelected(p.id); setTimeout(() => setStep(1), 250) }}
                     className={`w-full text-left p-5 rounded-xl border-2 cursor-pointer transition-all ${selected === p.id ? 'border-accent bg-accent/5' : 'border-border hover:border-accent/50 bg-surface-alt'}`}>
                     <div className="flex items-center gap-3 md:gap-4">
                       <div className="flex-1 min-w-0">
@@ -136,7 +141,7 @@ export function BookingFormSection({ data, locale }: any) {
               </div>
               <div className="flex gap-3 mt-6">
                 <button onClick={() => setStep(0)} className="px-6 py-3 border border-border rounded-full text-sm font-semibold text-text-muted cursor-pointer hover:border-accent">{t('backLabel', 'Atrás')}</button>
-                <button onClick={() => setStep(2)} disabled={!form.name || !form.email}
+                <button onClick={() => { trackFormStep('booking-form', 2, 'contact_details'); setStep(2) }} disabled={!form.name || !form.email}
                   className={`px-8 py-3 rounded-full text-sm font-bold cursor-pointer transition-all ${form.name && form.email ? 'bg-accent text-primary' : 'bg-border text-text-muted cursor-not-allowed'}`}>{t('nextLabel', 'Revisar')}</button>
               </div>
             </>
