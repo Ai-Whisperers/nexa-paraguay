@@ -386,35 +386,39 @@ export function IntakeWizard({ locale = 'en' }: Props) {
         {/* Step 0: Personal info */}
         {currentStep === 0 && (
           <div className='p-8 space-y-5'>
-            <FormField label={t.name} error={errors.fullName} optional={false}>
+            <FormField label={t.name} error={errors.fullName} optional={false} inputId="intake-fullName">
               <input
+                id="intake-fullName"
                 type='text' value={data.fullName} onChange={e => set('fullName', e.target.value)}
                 placeholder={t.namePH} autoFocus
                 className={fieldCls(!!errors.fullName)}
               />
             </FormField>
-            <FormField label={t.email} error={errors.email} optional={false}>
+            <FormField label={t.email} error={errors.email} optional={false} inputId="intake-email">
               <input
+                id="intake-email"
                 type='email' value={data.email} onChange={e => set('email', e.target.value)}
                 placeholder={t.emailPH}
                 className={fieldCls(!!errors.email)}
               />
             </FormField>
-            <FormField label={t.phone} optional>
+            <FormField label={t.phone} optional inputId="intake-phone">
               <input
+                id="intake-phone"
                 type='tel' value={data.phone} onChange={e => set('phone', e.target.value)}
                 placeholder={t.phonePH}
                 className={fieldCls(false)}
               />
             </FormField>
-            <FormField label={t.country} optional>
-              <select value={data.country} onChange={e => set('country', e.target.value)} className={fieldCls(false) + ' cursor-pointer'}>
+            <FormField label={t.country} optional inputId="intake-country">
+              <select id="intake-country" value={data.country} onChange={e => set('country', e.target.value)} className={fieldCls(false) + ' cursor-pointer'}>
                 <option value=''>{t.countryPH}</option>
                 {countries.map(c => <option key={c} value={c}>{c}</option>)}
               </select>
             </FormField>
-            <FormField label={t.nationality} optional>
+            <FormField label={t.nationality} optional inputId="intake-nationality">
               <input
+                id="intake-nationality"
                 type='text' value={data.nationality} onChange={e => set('nationality', e.target.value)}
                 placeholder={t.nationalityPH}
                 className={fieldCls(false)}
@@ -507,14 +511,15 @@ export function IntakeWizard({ locale = 'en' }: Props) {
         {/* Step 4: Extra */}
         {currentStep === 4 && (
           <div className='p-8 space-y-5'>
-            <FormField label={t.hearAboutQ}>
-              <select value={data.hearAbout} onChange={e => set('hearAbout', e.target.value)} className={fieldCls(false) + ' cursor-pointer'}>
+            <FormField label={t.hearAboutQ} inputId="intake-hearAbout">
+              <select id="intake-hearAbout" value={data.hearAbout} onChange={e => set('hearAbout', e.target.value)} className={fieldCls(false) + ' cursor-pointer'}>
                 <option value=''>{t.hearAboutPH}</option>
                 {hearAboutOptions.map(o => <option key={o} value={o}>{o}</option>)}
               </select>
             </FormField>
-            <FormField label={t.notesQ}>
+            <FormField label={t.notesQ} inputId="intake-notes">
               <textarea
+                id="intake-notes"
                 value={data.notes} onChange={e => set('notes', e.target.value)}
                 placeholder={t.notesPH}
                 rows={4}
@@ -578,15 +583,16 @@ export function IntakeWizard({ locale = 'en' }: Props) {
 }
 
 // ── Helper components ───────────────────────────────────
-function FormField({ label, error, optional = false, children }: {
+function FormField({ label, error, optional = false, inputId, children }: {
   label: string
   error?: string
   optional?: boolean
+  inputId?: string
   children: React.ReactNode
 }) {
   return (
     <div>
-      <label className='block text-sm font-medium text-primary mb-1.5'>
+      <label htmlFor={inputId} className='block text-sm font-medium text-primary mb-1.5'>
         {label}
         {optional && <span className='text-text-muted font-normal ml-1 text-xs'>(optional)</span>}
       </label>

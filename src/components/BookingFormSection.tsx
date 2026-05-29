@@ -41,8 +41,11 @@ export function BookingFormSection({ data, locale }: any) {
   const [selected, setSelected] = useState('')
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
 
   const handleSubmit = async () => {
+    if (submitting) return
+    setSubmitting(true)
     try {
       await fetch('/api/contact', {
         method: 'POST',
@@ -52,8 +55,10 @@ export function BookingFormSection({ data, locale }: any) {
       trackFormSubmit('booking-form', 'booking', true)
     } catch {
       trackFormSubmit('booking-form', 'booking', false)
+    } finally {
+      setSubmitting(false)
+      setSubmitted(true)
     }
-    setSubmitted(true)
   }
 
   const t = (key: string, fallback: string) => d[key] || fallback
@@ -117,25 +122,25 @@ export function BookingFormSection({ data, locale }: any) {
               <p className="text-sm text-text-muted mb-6">{t('step2Subtitle', 'Te contactaremos por WhatsApp o email.')}</p>
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-semibold text-primary mb-1">{t('nameLabel', 'Nombre completo')}</label>
-                  <input type="text" value={form.name} onChange={e => setForm({...form, name: e.target.value})}
+                  <label htmlFor="booking-name" className="block text-sm font-semibold text-primary mb-1">{t('nameLabel', 'Nombre completo')}</label>
+                  <input id="booking-name" type="text" value={form.name} onChange={e => setForm({...form, name: e.target.value})}
                     className="w-full p-3 border border-border rounded-lg text-sm" required />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-semibold text-primary mb-1">{t('emailLabel', 'Email')}</label>
-                    <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})}
+                    <label htmlFor="booking-email" className="block text-sm font-semibold text-primary mb-1">{t('emailLabel', 'Email')}</label>
+                    <input id="booking-email" type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})}
                       className="w-full p-3 border border-border rounded-lg text-sm" required />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-primary mb-1">{t('phoneLabel', 'WhatsApp')}</label>
-                    <input type="tel" value={form.phone} onChange={e => setForm({...form, phone: e.target.value})}
+                    <label htmlFor="booking-phone" className="block text-sm font-semibold text-primary mb-1">{t('phoneLabel', 'WhatsApp')}</label>
+                    <input id="booking-phone" type="tel" value={form.phone} onChange={e => setForm({...form, phone: e.target.value})}
                       className="w-full p-3 border border-border rounded-lg text-sm" required />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-primary mb-1">{t('messageLabel', 'Mensaje (opcional)')}</label>
-                  <textarea value={form.message} onChange={e => setForm({...form, message: e.target.value})}
+                  <label htmlFor="booking-message" className="block text-sm font-semibold text-primary mb-1">{t('messageLabel', 'Mensaje (opcional)')}</label>
+                  <textarea id="booking-message" value={form.message} onChange={e => setForm({...form, message: e.target.value})}
                     className="w-full p-3 border border-border rounded-lg text-sm min-h-[80px]" placeholder={t('messagePlaceholder', '¿Tienes alguna pregunta?')} />
                 </div>
               </div>
@@ -160,8 +165,10 @@ export function BookingFormSection({ data, locale }: any) {
               </div>
               <div className="flex gap-3">
                 <button onClick={() => setStep(1)} className="px-6 py-3 border border-border rounded-full text-sm font-semibold text-text-muted cursor-pointer">{t('backLabel', 'Atrás')}</button>
-                <button onClick={handleSubmit}
-                  className="px-10 py-3 bg-accent text-primary rounded-full text-sm font-bold cursor-pointer hover:opacity-90">{t('submitLabel', 'Enviar solicitud')}</button>
+                <button onClick={handleSubmit} disabled={submitting}
+                  className={`px-10 py-3 rounded-full text-sm font-bold cursor-pointer transition-all ${submitting ? 'bg-border text-text-muted cursor-not-allowed' : 'bg-accent text-primary hover:opacity-90'}`}>
+                  {submitting ? 'Enviando...' : t('submitLabel', 'Enviar solicitud')}
+                </button>
               </div>
             </>
           )}

@@ -17,6 +17,17 @@ function loadJson<T>(...pathSegments: string[]): T | null {
   }
 }
 
+function deepReplacePhone(obj: any, phone: string): any {
+  if (typeof obj === 'string') return obj.replaceAll('595982515138', phone)
+  if (Array.isArray(obj)) return obj.map((item) => deepReplacePhone(item, phone))
+  if (obj && typeof obj === 'object') {
+    const result: Record<string, any> = {}
+    for (const [k, v] of Object.entries(obj)) result[k] = deepReplacePhone(v, phone)
+    return result
+  }
+  return obj
+}
+
 export function resolveContent(locale: string, key: string): any {
   const content = loadJson<Record<string, any>>('content', `${locale}.json`)
   if (!content) return null
@@ -26,7 +37,9 @@ export function resolveContent(locale: string, key: string): any {
     if (current?.[part] !== undefined) current = current[part]
     else return null
   }
-  return current
+  const site = loadJson<any>('site.json')
+  const phone = site?.contact?.whatsapp || '595982515138'
+  return deepReplacePhone(current, phone)
 }
 
 export function resolveImage(images: any, ref: string | undefined): string {

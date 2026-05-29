@@ -21,9 +21,24 @@ export function AdminGuard({ children }: { children: React.ReactNode }) {
           setTimeout(() => router.push('/'), 2000)
           return
         }
-        // Allow through even without admin role for now — simple auth gate
+
+        // Role check: require 'admin' in user_roles table
+        const { data: roleData, error: roleError } = await sb
+          .from('user_roles')
+          .select('role')
+          .eq('user_id', session.user.id)
+          .single()
+
+        if (roleError || !roleData || roleData.role !== 'admin') {
+          console.warn('[AdminGuard] Access denied: user is not admin')
+          setState('denied')
+          setTimeout(() => router.push('/'), 2000)
+          return
+        }
+
         setState('granted')
-      } catch {
+      } catch (err) {
+        console.warn('[AdminGuard] Auth check failed:', err)
         setState('denied')
       }
     }
