@@ -1,6 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import ExitPopupWrapper from '../components/ExitPopupWrapper'
+import { CookieBanner } from '../components/CookieBanner'
+import { CookieConsent } from '../components/ui/CookieConsent'
+import WhatsAppButton from '../../components/WhatsAppButton'
 import { LocalBusinessSchema } from '../components/seo/LocalBusinessSchema'
 import { OrganizationSchema } from '../components/seo/OrganizationSchema'
 import { resolveLocale } from '@ai-whisperers/i18n'
@@ -65,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CookieBanner />
         <ExitPopupWrapper />
         {children}
-        <WhatsAppFloat />
+        <WhatsAppButton phone="595982515138" />
         <CookieConsent />
       </body>
     </html>

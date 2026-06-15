@@ -30,6 +30,13 @@ function pickLocale(value: any, locale: string) {
   return value
 }
 
+const HONEST_NOTICE: Record<string, string> = {
+  es: 'Las fotografías son referenciales y se actualizarán con retratos reales del equipo.',
+  en: 'Photographs are placeholder references and will be replaced with real team portraits.',
+  nl: 'Foto\'s zijn referentiebeelden en worden vervangen door echte teamportretten.',
+  de: 'Die Fotos sind Referenzbilder und werden durch echte Teamporträts ersetzt.',
+}
+
 export function TeamSection({ pageContent, data, images, locale = 'es' }: any) {
   const d = data || pageContent || {}
   const members = d.members || d.items || []
@@ -39,11 +46,17 @@ export function TeamSection({ pageContent, data, images, locale = 'es' }: any) {
     <section className="py-20 md:py-28 bg-surface-alt">
       <div className="max-w-6xl mx-auto px-4">
         {d.title && (
-          <AnimatedSection animation="fade-up" className="text-center mb-14">
+          <AnimatedSection animation="fade-up" className="text-center mb-4">
             <h2 className="text-[clamp(1.5rem_3vw_2.2rem)] font-bold text-primary mb-4">{pickLocale(d.title, locale)}</h2>
             <div className="w-12 h-0.5 bg-accent mx-auto" />
           </AnimatedSection>
         )}
+
+        <AnimatedSection animation="fade-up" className="text-center mb-10">
+          <p className="text-sm text-amber-800 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 inline-block">
+            ⚠️ {HONEST_NOTICE[locale] || HONEST_NOTICE.es}
+          </p>
+        </AnimatedSection>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {members.map((m: any, i: number) => {
@@ -64,10 +77,10 @@ export function TeamSection({ pageContent, data, images, locale = 'es' }: any) {
                   {/* Top accent bar */}
                   <div className={`h-1.5 w-full ${layout.accent} transition-all duration-300`} />
 
-                  {/* AI Headshot Badge */}
-                  <div className="absolute top-2 right-2 z-10">
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full border border-amber-300 shadow-sm">
-                      ⚠️ IA
+                  {/* AI Headshot Badge — prominent */}
+                  <div className="absolute top-3 right-3 z-10">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-amber-100 text-amber-800 text-[11px] font-bold rounded-full border border-amber-300 shadow-sm">
+                      📷 Referencial
                     </span>
                   </div>
 

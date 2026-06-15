@@ -9,54 +9,114 @@
         "src": "/images/brand/logo.webp",
         "alt": "Nexa Paraguay logo",
         "fallbackSrc": "/images/brand/logo.png",
-        "srcSvg": "/images/brand/logo.svg"
+        "srcSvg": "/images/brand/logo.svg",
+        "altByLocale": {
+          "es": "Logotipo de Nexa Paraguay",
+          "en": "Nexa Paraguay logo",
+          "nl": "Nexa Paraguay-logo",
+          "de": "Nexa Paraguay Logo"
+        }
       },
       "logoDark": {
         "src": "/images/brand/logo-dark.webp",
         "alt": "Nexa Paraguay logo (monochrome white)",
         "fallbackSrc": "/images/brand/logo-dark.png",
-        "srcSvg": "/images/brand/logo-dark.svg"
+        "srcSvg": "/images/brand/logo-dark.svg",
+        "altByLocale": {
+          "es": "Logotipo de Nexa Paraguay (monocromo blanco)",
+          "en": "Nexa Paraguay logo (white monochrome)",
+          "nl": "Nexa Paraguay-logo (witte monochrome versie)",
+          "de": "Nexa Paraguay Logo (weiße Monochrom-Version)"
+        }
       },
       "logoIcon": {
         "src": "/images/brand/logo-icon.webp",
         "alt": "Nexa Paraguay icon mark",
         "fallbackSrc": "/images/brand/logo-icon.png",
-        "srcSvg": "/images/brand/logo-icon.svg"
+        "srcSvg": "/images/brand/logo-icon.svg",
+        "altByLocale": {
+          "es": "Icono de Nexa Paraguay",
+          "en": "Nexa Paraguay icon mark",
+          "nl": "Nexa Paraguay-pictogram",
+          "de": "Nexa Paraguay Icon"
+        }
       },
       "favicon": {
         "src": "/images/brand/favicon.webp",
         "alt": "Nexa Paraguay favicon",
-        "fallbackSrc": "/images/brand/favicon.png"
+        "fallbackSrc": "/images/brand/favicon.png",
+        "altByLocale": {
+          "es": "Favicon de Nexa Paraguay",
+          "en": "Nexa Paraguay favicon",
+          "nl": "Nexa Paraguay-favicon",
+          "de": "Nexa Paraguay Favicon"
+        }
       },
       "appleTouchIcon": {
         "src": "/images/brand/apple-touch-icon.webp",
         "alt": "Nexa Paraguay Apple touch icon",
-        "fallbackSrc": "/images/brand/apple-touch-icon.png"
+        "fallbackSrc": "/images/brand/apple-touch-icon.png",
+        "altByLocale": {
+          "es": "Icono Apple Touch de Nexa Paraguay",
+          "en": "Nexa Paraguay Apple touch icon",
+          "nl": "Nexa Paraguay Apple-touch-pictogram",
+          "de": "Nexa Paraguay Apple-Touch-Icon"
+        }
       },
       "maskable": {
         "src": "/images/brand/maskable-512.webp",
         "alt": "Nexa Paraguay PWA maskable icon",
-        "fallbackSrc": "/images/brand/maskable-512.png"
+        "fallbackSrc": "/images/brand/maskable-512.png",
+        "altByLocale": {
+          "es": "Icono PWA maskable de Nexa Paraguay",
+          "en": "Nexa Paraguay PWA maskable icon",
+          "nl": "Nexa Paraguay PWA-maskable pictogram",
+          "de": "Nexa Paraguay PWA-maskierbares Icon"
+        }
       },
       "ogDefault": {
         "src": "/images/brand/og-default.webp",
         "alt": "Nexa Paraguay Open Graph share card",
-        "fallbackSrc": "/images/brand/og-default.png"
+        "fallbackSrc": "/images/brand/og-default.png",
+        "altByLocale": {
+          "es": "Tarjeta Open Graph de Nexa Paraguay",
+          "en": "Nexa Paraguay Open Graph share card",
+          "nl": "Nexa Paraguay Open Graph-deelkaart",
+          "de": "Nexa Paraguay Open Graph-Karte"
+        }
       },
       "twitterCard": {
         "src": "/images/brand/twitter-card.webp",
         "alt": "Nexa Paraguay Twitter summary card",
-        "fallbackSrc": "/images/brand/twitter-card.png"
+        "fallbackSrc": "/images/brand/twitter-card.png",
+        "altByLocale": {
+          "es": "Tarjeta de Twitter de Nexa Paraguay",
+          "en": "Nexa Paraguay Twitter summary card",
+          "nl": "Nexa Paraguay Twitter-samenvattingskaart",
+          "de": "Nexa Paraguay Twitter-Zusammenfassungskarte"
+        }
       },
       "whatsappSquare": {
         "src": "/images/brand/whatsapp-square.webp",
         "alt": "Nexa Paraguay WhatsApp link preview",
-        "fallbackSrc": "/images/brand/whatsapp-square.png"
+        "fallbackSrc": "/images/brand/whatsapp-square.png",
+        "altByLocale": {
+          "es": "Vista previa de enlace de WhatsApp de Nexa Paraguay",
+          "en": "Nexa Paraguay WhatsApp link preview",
+          "nl": "Nexa Paraguay WhatsApp-linkvoorbeeld",
+          "de": "Nexa Paraguay WhatsApp-Link-Vorschau"
+        }
       },
       "placeholder": {
         "src": "/images/brand/placeholder.webp",
         "alt": "Nexa Paraguay branded fallback",
-        "fallbackSrc": "/images/brand/placeholder.png"
+        "fallbackSrc": "/images/brand/placeholder.png",
+        "altByLocale": {
+          "es": "Marcador de posición con marca Nexa Paraguay",
+          "en": "Nexa Paraguay branded placeholder",
+          "nl": "Nexa Paraguay-merkplaceholder",
+          "de": "Nexa Paraguay Marken-Platzhalter"
+        }
       }
     },
     "hero": {
@@ -847,198 +907,426 @@
       "metaFeedNl": {
         "src": "/images/ads/meta-feed-nl.webp",
         "alt": "Meta feed ad creative (Dutch market)",
-        "fallbackSrc": "/images/ads/meta-feed-nl.png"
+        "fallbackSrc": "/images/ads/meta-feed-nl.png",
+        "altByLocale": {
+          "en": "Meta feed ad creative (Dutch market)",
+          "nl": "Meta feed ad creative (Dutch market)",
+          "de": "Meta feed ad creative (Dutch market)",
+          "es": "Meta feed ad creative (Dutch market)"
+        }
       },
       "metaFeedEn": {
         "src": "/images/ads/meta-feed-en.webp",
         "alt": "Meta feed ad creative (English market)",
-        "fallbackSrc": "/images/ads/meta-feed-en.png"
+        "fallbackSrc": "/images/ads/meta-feed-en.png",
+        "altByLocale": {
+          "en": "Meta feed ad creative (English market)",
+          "nl": "Meta feed ad creative (English market)",
+          "de": "Meta feed ad creative (English market)",
+          "es": "Meta feed ad creative (English market)"
+        }
       },
       "metaFeedDe": {
         "src": "/images/ads/meta-feed-de.webp",
         "alt": "Meta feed ad creative (German market)",
-        "fallbackSrc": "/images/ads/meta-feed-de.png"
+        "fallbackSrc": "/images/ads/meta-feed-de.png",
+        "altByLocale": {
+          "en": "Meta feed ad creative (German market)",
+          "nl": "Meta feed ad creative (German market)",
+          "de": "Meta feed ad creative (German market)",
+          "es": "Meta feed ad creative (German market)"
+        }
       },
       "metaFeedEs": {
         "src": "/images/ads/meta-feed-es.webp",
         "alt": "Meta feed ad creative (Spanish market)",
-        "fallbackSrc": "/images/ads/meta-feed-es.png"
+        "fallbackSrc": "/images/ads/meta-feed-es.png",
+        "altByLocale": {
+          "en": "Meta feed ad creative (Spanish market)",
+          "nl": "Meta feed ad creative (Spanish market)",
+          "de": "Meta feed ad creative (Spanish market)",
+          "es": "Meta feed ad creative (Spanish market)"
+        }
       },
       "metaStoryNl": {
         "src": "/images/ads/meta-story-nl.webp",
         "alt": "Meta story ad creative (Dutch market)",
-        "fallbackSrc": "/images/ads/meta-story-nl.png"
+        "fallbackSrc": "/images/ads/meta-story-nl.png",
+        "altByLocale": {
+          "en": "Meta story ad creative (Dutch market)",
+          "nl": "Meta story ad creative (Dutch market)",
+          "de": "Meta story ad creative (Dutch market)",
+          "es": "Meta story ad creative (Dutch market)"
+        }
       },
       "metaStoryEn": {
         "src": "/images/ads/meta-story-en.webp",
         "alt": "Meta story ad creative (English market)",
-        "fallbackSrc": "/images/ads/meta-story-en.png"
+        "fallbackSrc": "/images/ads/meta-story-en.png",
+        "altByLocale": {
+          "en": "Meta story ad creative (English market)",
+          "nl": "Meta story ad creative (English market)",
+          "de": "Meta story ad creative (English market)",
+          "es": "Meta story ad creative (English market)"
+        }
       },
       "metaStoryDe": {
         "src": "/images/ads/meta-story-de.webp",
         "alt": "Meta story ad creative (German market)",
-        "fallbackSrc": "/images/ads/meta-story-de.png"
+        "fallbackSrc": "/images/ads/meta-story-de.png",
+        "altByLocale": {
+          "en": "Meta story ad creative (German market)",
+          "nl": "Meta story ad creative (German market)",
+          "de": "Meta story ad creative (German market)",
+          "es": "Meta story ad creative (German market)"
+        }
       },
       "metaStoryEs": {
         "src": "/images/ads/meta-story-es.webp",
         "alt": "Meta story ad creative (Spanish market)",
-        "fallbackSrc": "/images/ads/meta-story-es.png"
+        "fallbackSrc": "/images/ads/meta-story-es.png",
+        "altByLocale": {
+          "en": "Meta story ad creative (Spanish market)",
+          "nl": "Meta story ad creative (Spanish market)",
+          "de": "Meta story ad creative (Spanish market)",
+          "es": "Meta story ad creative (Spanish market)"
+        }
       },
       "linkedinTrustNl": {
         "src": "/images/ads/linkedin-trust-nl.webp",
         "alt": "LinkedIn sponsored ad, institutional trust angle (Dutch)",
-        "fallbackSrc": "/images/ads/linkedin-trust-nl.png"
+        "fallbackSrc": "/images/ads/linkedin-trust-nl.png",
+        "altByLocale": {
+          "en": "LinkedIn sponsored ad, institutional trust angle (Dutch)",
+          "nl": "LinkedIn sponsored ad, institutional trust angle (Dutch)",
+          "de": "LinkedIn sponsored ad, institutional trust angle (Dutch)",
+          "es": "LinkedIn sponsored ad, institutional trust angle (Dutch)"
+        }
       },
       "linkedinTrustEn": {
         "src": "/images/ads/linkedin-trust-en.webp",
         "alt": "LinkedIn sponsored ad, institutional trust angle (English)",
-        "fallbackSrc": "/images/ads/linkedin-trust-en.png"
+        "fallbackSrc": "/images/ads/linkedin-trust-en.png",
+        "altByLocale": {
+          "en": "LinkedIn sponsored ad, institutional trust angle (English)",
+          "nl": "LinkedIn sponsored ad, institutional trust angle (English)",
+          "de": "LinkedIn sponsored ad, institutional trust angle (English)",
+          "es": "LinkedIn sponsored ad, institutional trust angle (English)"
+        }
       },
       "linkedinTrustDe": {
         "src": "/images/ads/linkedin-trust-de.webp",
         "alt": "LinkedIn sponsored ad, institutional trust angle (German)",
-        "fallbackSrc": "/images/ads/linkedin-trust-de.png"
+        "fallbackSrc": "/images/ads/linkedin-trust-de.png",
+        "altByLocale": {
+          "en": "LinkedIn sponsored ad, institutional trust angle (German)",
+          "nl": "LinkedIn sponsored ad, institutional trust angle (German)",
+          "de": "LinkedIn sponsored ad, institutional trust angle (German)",
+          "es": "LinkedIn sponsored ad, institutional trust angle (German)"
+        }
       },
       "linkedinTrustEs": {
         "src": "/images/ads/linkedin-trust-es.webp",
         "alt": "LinkedIn sponsored ad, institutional trust angle (Spanish)",
-        "fallbackSrc": "/images/ads/linkedin-trust-es.png"
+        "fallbackSrc": "/images/ads/linkedin-trust-es.png",
+        "altByLocale": {
+          "en": "LinkedIn sponsored ad, institutional trust angle (Spanish)",
+          "nl": "LinkedIn sponsored ad, institutional trust angle (Spanish)",
+          "de": "LinkedIn sponsored ad, institutional trust angle (Spanish)",
+          "es": "LinkedIn sponsored ad, institutional trust angle (Spanish)"
+        }
       },
       "linkedinInvestorNl": {
         "src": "/images/ads/linkedin-investor-nl.webp",
         "alt": "LinkedIn sponsored ad, investor angle (Dutch)",
-        "fallbackSrc": "/images/ads/linkedin-investor-nl.png"
+        "fallbackSrc": "/images/ads/linkedin-investor-nl.png",
+        "altByLocale": {
+          "en": "LinkedIn sponsored ad, investor angle (Dutch)",
+          "nl": "LinkedIn sponsored ad, investor angle (Dutch)",
+          "de": "LinkedIn sponsored ad, investor angle (Dutch)",
+          "es": "LinkedIn sponsored ad, investor angle (Dutch)"
+        }
       },
       "linkedinInvestorEn": {
         "src": "/images/ads/linkedin-investor-en.webp",
         "alt": "LinkedIn sponsored ad, investor angle (English)",
-        "fallbackSrc": "/images/ads/linkedin-investor-en.png"
+        "fallbackSrc": "/images/ads/linkedin-investor-en.png",
+        "altByLocale": {
+          "en": "LinkedIn sponsored ad, investor angle (English)",
+          "nl": "LinkedIn sponsored ad, investor angle (English)",
+          "de": "LinkedIn sponsored ad, investor angle (English)",
+          "es": "LinkedIn sponsored ad, investor angle (English)"
+        }
       },
       "linkedinInvestorDe": {
         "src": "/images/ads/linkedin-investor-de.webp",
         "alt": "LinkedIn sponsored ad, investor angle (German)",
-        "fallbackSrc": "/images/ads/linkedin-investor-de.png"
+        "fallbackSrc": "/images/ads/linkedin-investor-de.png",
+        "altByLocale": {
+          "en": "LinkedIn sponsored ad, investor angle (German)",
+          "nl": "LinkedIn sponsored ad, investor angle (German)",
+          "de": "LinkedIn sponsored ad, investor angle (German)",
+          "es": "LinkedIn sponsored ad, investor angle (German)"
+        }
       },
       "linkedinInvestorEs": {
         "src": "/images/ads/linkedin-investor-es.webp",
         "alt": "LinkedIn sponsored ad, investor angle (Spanish)",
-        "fallbackSrc": "/images/ads/linkedin-investor-es.png"
+        "fallbackSrc": "/images/ads/linkedin-investor-es.png",
+        "altByLocale": {
+          "en": "LinkedIn sponsored ad, investor angle (Spanish)",
+          "nl": "LinkedIn sponsored ad, investor angle (Spanish)",
+          "de": "LinkedIn sponsored ad, investor angle (Spanish)",
+          "es": "LinkedIn sponsored ad, investor angle (Spanish)"
+        }
       },
       "google728x90": {
         "src": "/images/ads/google-728x90.webp",
         "alt": "Google display leaderboard banner 728x90",
-        "fallbackSrc": "/images/ads/google-728x90.png"
+        "fallbackSrc": "/images/ads/google-728x90.png",
+        "altByLocale": {
+          "en": "Google display leaderboard banner 728x90",
+          "nl": "Google display leaderboard banner 728x90",
+          "de": "Google display leaderboard banner 728x90",
+          "es": "Google display leaderboard banner 728x90"
+        }
       },
       "google300x250": {
         "src": "/images/ads/google-300x250.webp",
         "alt": "Google display medium rectangle banner 300x250",
-        "fallbackSrc": "/images/ads/google-300x250.png"
+        "fallbackSrc": "/images/ads/google-300x250.png",
+        "altByLocale": {
+          "en": "Google display medium rectangle banner 300x250",
+          "nl": "Google display medium rectangle banner 300x250",
+          "de": "Google display medium rectangle banner 300x250",
+          "es": "Google display medium rectangle banner 300x250"
+        }
       },
       "google336x280": {
         "src": "/images/ads/google-336x280.webp",
         "alt": "Google display large rectangle banner 336x280",
-        "fallbackSrc": "/images/ads/google-336x280.png"
+        "fallbackSrc": "/images/ads/google-336x280.png",
+        "altByLocale": {
+          "en": "Google display large rectangle banner 336x280",
+          "nl": "Google display large rectangle banner 336x280",
+          "de": "Google display large rectangle banner 336x280",
+          "es": "Google display large rectangle banner 336x280"
+        }
       },
       "google970x250": {
         "src": "/images/ads/google-970x250.webp",
         "alt": "Google display large leaderboard banner 970x250",
-        "fallbackSrc": "/images/ads/google-970x250.png"
+        "fallbackSrc": "/images/ads/google-970x250.png",
+        "altByLocale": {
+          "en": "Google display large leaderboard banner 970x250",
+          "nl": "Google display large leaderboard banner 970x250",
+          "de": "Google display large leaderboard banner 970x250",
+          "es": "Google display large leaderboard banner 970x250"
+        }
       },
       "youtubeThumb1": {
         "src": "/images/ads/youtube-thumb-1.webp",
         "alt": "YouTube pre-roll thumbnail: founder silhouette and Asunción skyline",
-        "fallbackSrc": "/images/ads/youtube-thumb-1.png"
+        "fallbackSrc": "/images/ads/youtube-thumb-1.png",
+        "altByLocale": {
+          "en": "YouTube pre-roll thumbnail: founder silhouette and Asunción skyline",
+          "nl": "YouTube pre-roll thumbnail: founder silhouette and Asunción skyline",
+          "de": "YouTube pre-roll thumbnail: founder silhouette and Asunción skyline",
+          "es": "YouTube pre-roll thumbnail: founder silhouette and Asunción skyline"
+        }
       },
       "youtubeThumb2": {
         "src": "/images/ads/youtube-thumb-2.webp",
         "alt": "YouTube pre-roll thumbnail: cédula placed on passport",
-        "fallbackSrc": "/images/ads/youtube-thumb-2.png"
+        "fallbackSrc": "/images/ads/youtube-thumb-2.png",
+        "altByLocale": {
+          "en": "YouTube pre-roll thumbnail: cédula placed on passport",
+          "nl": "YouTube pre-roll thumbnail: cédula placed on passport",
+          "de": "YouTube pre-roll thumbnail: cédula placed on passport",
+          "es": "YouTube pre-roll thumbnail: cédula placed on passport"
+        }
       }
     },
     "email": {
       "welcome": {
         "src": "/images/email/01-welcome.webp",
         "alt": "Email nurture header: welcome café scene",
-        "fallbackSrc": "/images/email/01-welcome.png"
+        "fallbackSrc": "/images/email/01-welcome.png",
+        "altByLocale": {
+          "es": "Encabezado email: escena de cafetería de bienvenida",
+          "en": "Email nurture header: welcome café scene",
+          "nl": "E-mail nurture-header: welkomstcaféscène",
+          "de": "E-Mail-Nurture-Header: Willkommens-Café-Szene"
+        }
       },
       "paraguayDifferent": {
         "src": "/images/email/02-paraguay-different.webp",
         "alt": "Email nurture header: Asunción sunrise skyline",
-        "fallbackSrc": "/images/email/02-paraguay-different.png"
+        "fallbackSrc": "/images/email/02-paraguay-different.png",
+        "altByLocale": {
+          "es": "Encabezado email: skyline de Asunción al amanecer",
+          "en": "Email nurture header: Asunción sunrise skyline",
+          "nl": "E-mail nurture-header: zonsopgang skyline van Asunción",
+          "de": "E-Mail-Nurture-Header: Asunción-Sonnenaufgangs-Skyline"
+        }
       },
       "process": {
         "src": "/images/email/03-process.webp",
         "alt": "Email nurture header: five-step process flat-lay",
-        "fallbackSrc": "/images/email/03-process.png"
+        "fallbackSrc": "/images/email/03-process.png",
+        "altByLocale": {
+          "es": "Encabezado email: proceso de cinco pasos en flat-lay",
+          "en": "Email nurture header: five-step process flat-lay",
+          "nl": "E-mail nurture-header: vijfstappenproces flat-lay",
+          "de": "E-Mail-Nurture-Header: Fünf-Schritte-Prozess Flat-Lay"
+        }
       },
       "oneTrip": {
         "src": "/images/email/04-one-trip.webp",
         "alt": "Email nurture header: vintage map of Paraguay with pins",
-        "fallbackSrc": "/images/email/04-one-trip.png"
+        "fallbackSrc": "/images/email/04-one-trip.png",
+        "altByLocale": {
+          "es": "Encabezado email: mapa vintage de Paraguay con pines",
+          "en": "Email nurture header: vintage map of Paraguay with pins",
+          "nl": "E-mail nurture-header: vintage kaart van Paraguay met pins",
+          "de": "E-Mail-Nurture-Header: Vintage-Karte von Paraguay mit Markierungen"
+        }
       },
       "banking": {
         "src": "/images/email/05-banking.webp",
         "alt": "Email nurture header: champagne bank card on leather desk",
-        "fallbackSrc": "/images/email/05-banking.png"
+        "fallbackSrc": "/images/email/05-banking.png",
+        "altByLocale": {
+          "es": "Encabezado email: tarjeta bancaria champán sobre escritorio de cuero",
+          "en": "Email nurture header: champagne bank card on leather desk",
+          "nl": "E-mail nurture-header: champagne bankkaart op leren bureau",
+          "de": "E-Mail-Nurture-Header: Champagner-Bankkarte auf Lederschreibtisch"
+        }
       },
       "whichProgram": {
         "src": "/images/email/06-which-program.webp",
         "alt": "Email nurture header: four leather folders with roman-numeral tabs",
-        "fallbackSrc": "/images/email/06-which-program.png"
+        "fallbackSrc": "/images/email/06-which-program.png",
+        "altByLocale": {
+          "es": "Encabezado email: cuatro carpetas de cuero con pestañas en números romanos",
+          "en": "Email nurture header: four leather folders with roman-numeral tabs",
+          "nl": "E-mail nurture-header: vier leren mappen met romeinse cijfer-tabs",
+          "de": "E-Mail-Nurture-Header: vier Leder-Ordner mit römischen Zahlen-Reitern"
+        }
       },
       "nextStep": {
         "src": "/images/email/07-next-step.webp",
         "alt": "Email nurture header: laptop with calendar booking interface",
-        "fallbackSrc": "/images/email/07-next-step.png"
+        "fallbackSrc": "/images/email/07-next-step.png",
+        "altByLocale": {
+          "es": "Encabezado email: laptop con interfaz de reserva de calendario",
+          "en": "Email nurture header: laptop with calendar booking interface",
+          "nl": "E-mail nurture-header: laptop met kalenderboekingsinterface",
+          "de": "E-Mail-Nurture-Header: Laptop mit Kalender-Buchungsoberfläche"
+        }
       }
     },
     "social": {
       "villaMorra": {
         "src": "/images/social/villa-morra.webp",
         "alt": "Social template: Villa Morra café patio at golden hour",
-        "fallbackSrc": "/images/social/villa-morra.png"
+        "fallbackSrc": "/images/social/villa-morra.png",
+        "altByLocale": {
+          "es": "Plantilla social: patio de cafetería en Villa Morra al atardecer",
+          "en": "Social template: Villa Morra café patio at golden hour",
+          "nl": "Sociale template: Villa Morra caféterras bij gouden uur",
+          "de": "Social-Vorlage: Villa Morra Café-Terrasse zur goldenen Stunde"
+        }
       },
       "carmelitas": {
         "src": "/images/social/carmelitas.webp",
         "alt": "Social template: Carmelitas tree-lined boulevard",
-        "fallbackSrc": "/images/social/carmelitas.png"
+        "fallbackSrc": "/images/social/carmelitas.png",
+        "altByLocale": {
+          "es": "Plantilla social: boulevard arbolado de Carmelitas",
+          "en": "Social template: Carmelitas tree-lined boulevard",
+          "nl": "Sociale template: door bomen omzoomde boulevard van Carmelitas",
+          "de": "Social-Vorlage: Alleen-Carmelitas-Boulevard"
+        }
       },
       "sanBernardino": {
         "src": "/images/social/san-bernardino.webp",
         "alt": "Social template: San Bernardino lakeside pier",
-        "fallbackSrc": "/images/social/san-bernardino.png"
+        "fallbackSrc": "/images/social/san-bernardino.png",
+        "altByLocale": {
+          "es": "Plantilla social: muelle del lago San Bernardino",
+          "en": "Social template: San Bernardino lakeside pier",
+          "nl": "Sociale template: pier aan het meer van San Bernardino",
+          "de": "Social-Vorlage: San Bernardino Seeufer-Anlegestelle"
+        }
       },
       "dataTip": {
         "src": "/images/social/data-tip.webp",
         "alt": "Social template: abstract navy-champagne data-tip background",
-        "fallbackSrc": "/images/social/data-tip.png"
+        "fallbackSrc": "/images/social/data-tip.png",
+        "altByLocale": {
+          "es": "Plantilla social: fondo navy-champán abstracto para dato destacado",
+          "en": "Social template: abstract navy-champagne data-tip background",
+          "nl": "Sociale template: abstract navy-champagne achtergrond voor data-tip",
+          "de": "Social-Vorlage: abstrakter Navy-Champagner-Hintergrund für Datentipp"
+        }
       },
       "btsOffice": {
         "src": "/images/social/bts-office.webp",
         "alt": "Social template: behind-the-scenes office life",
-        "fallbackSrc": "/images/social/bts-office.png"
+        "fallbackSrc": "/images/social/bts-office.png",
+        "altByLocale": {
+          "es": "Plantilla social: vida de oficina detrás de cámaras",
+          "en": "Social template: behind-the-scenes office life",
+          "nl": "Sociale template: kijkje achter de schermen op kantoor",
+          "de": "Social-Vorlage: Backstage-Büroleben"
+        }
       },
       "clientJourney": {
         "src": "/images/social/client-journey.webp",
         "alt": "Social template: client journey still-life",
-        "fallbackSrc": "/images/social/client-journey.png"
+        "fallbackSrc": "/images/social/client-journey.png",
+        "altByLocale": {
+          "es": "Plantilla social: bodegón del recorrido del cliente",
+          "en": "Social template: client journey still-life",
+          "nl": "Sociale template: stilleven klantreis",
+          "de": "Social-Vorlage: Kundenerlebnis-Stillleben"
+        }
       }
     },
     "press": {
       "brandBookCover": {
         "src": "/images/press/brand-book-cover.webp",
         "alt": "Press kit: brand book cover with embossed N",
-        "fallbackSrc": "/images/press/brand-book-cover.png"
+        "fallbackSrc": "/images/press/brand-book-cover.png",
+        "altByLocale": {
+          "es": "Kit de prensa: portada del libro de marca con N repujado",
+          "en": "Press kit: brand book cover with embossed N",
+          "nl": "Perskit: omslag merkboek met reliëf N",
+          "de": "Pressemappe: Markenbuch-Cover mit geprägtem N"
+        }
       },
       "factsheetInfographic": {
         "src": "/images/press/factsheet-infographic.webp",
         "alt": "Press kit: factsheet infographic layout",
-        "fallbackSrc": "/images/press/factsheet-infographic.png"
+        "fallbackSrc": "/images/press/factsheet-infographic.png",
+        "altByLocale": {
+          "es": "Kit de prensa: disposición de infografía de hoja informativa",
+          "en": "Press kit: factsheet infographic layout",
+          "nl": "Perskit: factsheet infographic-indeling",
+          "de": "Pressemappe: Factsheet-Infografik-Layout"
+        }
       },
       "countryDataInfographic": {
         "src": "/images/press/country-data-infographic.webp",
         "alt": "Press kit: Paraguay country-data infographic layout",
-        "fallbackSrc": "/images/press/country-data-infographic.png"
+        "fallbackSrc": "/images/press/country-data-infographic.png",
+        "altByLocale": {
+          "es": "Kit de prensa: disposición de infografía de datos del país Paraguay",
+          "en": "Press kit: Paraguay country-data infographic layout",
+          "nl": "Perskit: Paraguay landendata-infographic-indeling",
+          "de": "Pressemappe: Paraguay-Länderdaten-Infografik-Layout"
+        }
       }
     }
   }

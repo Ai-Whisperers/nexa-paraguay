@@ -94,7 +94,12 @@
         "description": "Variëren afhankelijk van nationaliteit, vertalingen, beheerkosten, apostilles en verblijfstype. Wij geven u een persoonlijke offerte zonder verplichtingen."
       },
       "eyebrow": "Requisitos",
-      "title": "Documentación necesaria para tu residencia en Paraguay",
+      "title": {
+        "es": "Documentación necesaria para tu residencia en Paraguay",
+        "en": "Documents needed for your Paraguay residency",
+        "nl": "Benodigde documenten voor je Paraguay-residency",
+        "de": "Erforderliche Unterlagen für Ihren Paraguay-Aufenthalt"
+      },
       "subtitle": "El proceso es más simple de lo que parece. Te guiamos paso a paso."
     },
     "story": {
@@ -892,18 +897,18 @@
         {
           "id": "nexa",
           "name": "Nexa",
-          "description": "Geïntegreerd programma.",
-          "price": "USD 2.900–6.900+",
-          "priceNote": "alles inbegrepen",
+          "description": "Volledige professionele begeleiding.",
+          "price": "Desde $1.500",
+          "priceNote": "basisdienst + add-ons per uur",
           "highlighted": true,
           "badge": "Aanbevolen",
           "included": [
-            "Verblijf + vennootschap + bank",
-            "Eén reis",
-            "Volledig technisch team",
-            "12 maanden ondersteuning (Investor)"
+            "Verblijf + bedrijf + bank (gecoördineerd)",
+            "Eén persoonlijke reis",
+            "Volledig technisch team (juridisch + boekhouding)",
+            "Nazorg: $200/dag bij mobilisatie"
           ],
-          "ctaLabel": "Begin",
+          "ctaLabel": "Aan de slag",
           "ctaHref": "/contacto"
         }
       ],
@@ -921,8 +926,7 @@
   "complianceDisclaimer": {
     "licenseNumbers": [
       {
-        "label": "SEPRELAD",
-        "number": "Registratie in behandeling"
+        "label": "SEPRELAD — Paraguayaans Secretariaat voor de Preventie van Witwassen"
       }
     ],
     "linkHref": "/nl/privacidad#aml",
@@ -1879,289 +1883,215 @@
     },
     "programs": {
       "eyebrow": {
-        "es": "Nuestros programas",
-        "en": "Our Programs",
-        "nl": "Onze Programma's",
-        "de": "Unsere Programme"
+        "es": "Nuestros servicios",
+        "en": "Our services",
+        "nl": "Onze diensten",
+        "de": "Unsere Dienstleistungen"
       },
       "title": {
-        "es": "Elegí tu camino hacia Paraguay",
-        "en": "Choose Your Path to Paraguay",
-        "nl": "Kies Je Pad Naar Paraguay",
-        "de": "Wähle Deinen Weg Nach Paraguay"
+        "es": "Cuatro servicios, un equipo",
+        "en": "Four services, one team",
+        "nl": "Vier diensten, één team",
+        "de": "Vier Dienste, ein Team"
       },
       "subtitle": {
-        "es": "Cuatro programas diseñados para cada perfil. Todo lo que necesitás, sin sorpresas.",
-        "en": "Four programs designed for every profile. Everything you need, no surprises.",
-        "nl": "Vier programma's ontworpen voor elk profiel. Alles wat je nodig hebt, geen verrassingen.",
-        "de": "Vier Programme für jedes Profil. Alles was du brauchst, keine Überraschungen."
+        "es": "Residencia, banca, empresa y bienes raíces. Cotización personalizada para cada caso.",
+        "en": "Residency, banking, company and real estate. Personalized quote for every case.",
+        "nl": "Verblijf, bank, bedrijf en vastgoed. Persoonlijke offerte per zaak.",
+        "de": "Aufenthalt, Bank, Unternehmen und Immobilien. Persönliches Angebot pro Fall."
       },
       "cards": [
         {
-          "id": "base",
+          "id": "residencia",
           "title": {
-            "es": "Residencia Permanente",
-            "en": "Permanent Residency",
-            "nl": "Permanente Verblijfsvergunning",
-            "de": "Daueraufenthaltsgenehmigung"
+            "es": "Residencia",
+            "en": "Residency",
+            "nl": "Verblijfsvergunning",
+            "de": "Aufenthalt"
           },
-          "price": "USD 4.500",
-          "priceNote": {
-            "es": "honorarios profesionales incluidos",
-            "en": "professional fees included",
-            "nl": "inclusief professionele honoraria",
-            "de": "Anwaltsgebühren inklusive"
+          "tagline": {
+            "es": "Residencia permanente + cédula paraguaya. Un día operativo, un solo equipo.",
+            "en": "Permanent residency + Paraguayan ID. One operational day, one team.",
+            "nl": "Permanente verblijfsvergunning + Paraguayaanse ID. Eén operationele dag, één team.",
+            "de": "Daueraufenthalt + paraguayischer Ausweis. Ein operativer Tag, ein Team."
           },
-          "duration": "10–12 semanas",
-          "popular": false,
-          "features": [
+          "icon": "Home",
+          "included": [
             {
-              "text": {
-                "es": "Solicitud de residencia",
-                "en": "Residency application",
-                "nl": "Verblijfsaanvraag",
-                "de": "Aufenthaltsantrag"
-              },
-              "included": true
+              "es": "Solicitud de residencia",
+              "en": "Residency application",
+              "nl": "Verblijfsaanvraag",
+              "de": "Aufenthaltsantrag"
             },
             {
-              "text": {
-                "es": "Cédula paraguaya",
-                "en": "Paraguayan ID card",
-                "nl": "Paraguayaanse ID-kaart",
-                "de": "Paraguayischer Ausweis"
-              },
-              "included": true
+              "es": "Cédula de identidad",
+              "en": "Paraguayan ID card",
+              "nl": "Paraguayaanse ID-kaart",
+              "de": "Paraguayischer Ausweis"
             },
             {
-              "text": {
-                "es": "Coordinación bancaria",
-                "en": "Banking coordination",
-                "nl": "Bankcoördinatie",
-                "de": "Bankkoordination"
-              },
-              "included": true
-            },
-            {
-              "text": {
-                "es": "Constitución de sociedad",
-                "en": "Company incorporation",
-                "nl": "Bedrijfsoprichting",
-                "de": "Firmengründung"
-              },
-              "included": false
-            },
-            {
-              "text": {
-                "es": "Asesoría fiscal",
-                "en": "Tax advisory",
-                "nl": "Belastingadvies",
-                "de": "Steuerberatung"
-              },
-              "included": false
+              "es": "Acompañamiento día operativo",
+              "en": "Operational-day guidance",
+              "nl": "Begeleiding operationele dag",
+              "de": "Begleitung am Operationstag"
             }
           ],
           "cta": {
-            "es": "Elegir Residencia",
-            "en": "Choose Residency",
-            "nl": "Kies Verblijf",
-            "de": "Residenz wählen"
+            "es": "Cotizar",
+            "en": "Get a quote",
+            "nl": "Offerte aanvragen",
+            "de": "Angebot anfragen"
           }
         },
         {
-          "id": "business",
+          "id": "banca-empresa",
           "title": {
             "es": "Residencia + Empresa",
             "en": "Residency + Company",
             "nl": "Verblijf + Bedrijf",
             "de": "Residenz + Unternehmen"
           },
-          "price": "USD 7.500",
-          "priceNote": {
-            "es": "todo incluido",
-            "en": "all inclusive",
-            "nl": "alles inbegrepen",
-            "de": "alles inklusive"
+          "tagline": {
+            "es": "Residencia, sociedad anónima y apertura de cuenta bancaria, todo coordinado.",
+            "en": "Residency, company incorporation and bank account, all coordinated.",
+            "nl": "Verblijf, bedrijfsoprichting en bankrekening, volledig gecoördineerd.",
+            "de": "Aufenthalt, Firmengründung und Bankkonto, komplett koordiniert."
           },
-          "duration": "12–16 semanas",
-          "popular": true,
-          "features": [
+          "icon": "Building2",
+          "included": [
             {
-              "text": {
-                "es": "Todo lo de Residencia",
-                "en": "Everything in Residency",
-                "nl": "Alles van Verblijf",
-                "de": "Alles von Residenz"
-              },
-              "included": true
+              "es": "Todo lo de Residencia",
+              "en": "Everything in Residency",
+              "nl": "Alles van Verblijf",
+              "de": "Alles von Residenz"
             },
             {
-              "text": {
-                "es": "Constitución de sociedad",
-                "en": "Company incorporation",
-                "nl": "Bedrijfsoprichting",
-                "de": "Firmengründung"
-              },
-              "included": true
+              "es": "Constitución de sociedad (S.A.)",
+              "en": "Company incorporation (S.A.)",
+              "nl": "Bedrijfsoprichting (S.A.)",
+              "de": "Firmengründung (S.A.)"
             },
             {
-              "text": {
-                "es": "Cuenta bancaria empresarial",
-                "en": "Business bank account",
-                "nl": "Zakelijke bankrekening",
-                "de": "Geschäftskonto"
-              },
-              "included": true
+              "es": "Apertura de cuenta bancaria local",
+              "en": "Local bank account opening",
+              "nl": "Lokale bankrekening openen",
+              "de": "Lokales Bankkonto eröffnen"
             },
             {
-              "text": {
-                "es": "Asesoría fiscal inicial",
-                "en": "Initial tax advisory",
-                "nl": "Initiële belastingadvies",
-                "de": "Erstberatung Steuer"
-              },
-              "included": true
-            },
-            {
-              "text": {
-                "es": "Tour inmobiliario",
-                "en": "Real estate tour",
-                "nl": "Vastgoedtour",
-                "de": "Immobilienbesichtigung"
-              },
-              "included": true
+              "es": "RUC + inscripción tributaria",
+              "en": "Tax ID + tax registration",
+              "nl": "Belastingnummer + inschrijving",
+              "de": "Steuernummer + Anmeldung"
             }
           ],
           "cta": {
-            "es": "Elegir Business",
-            "en": "Choose Business",
-            "nl": "Kies Business",
-            "de": "Business wählen"
+            "es": "Cotizar",
+            "en": "Get a quote",
+            "nl": "Offerte aanvragen",
+            "de": "Angebot anfragen"
           }
         },
         {
-          "id": "investor",
+          "id": "inversores",
           "title": {
-            "es": "Residencia para Inversores",
-            "en": "Investor Residency",
-            "nl": "Investeerder Verblijf",
-            "de": "Investoren-Residenz"
+            "es": "Asesoría para Inversores",
+            "en": "Investor Advisory",
+            "nl": "Investeringsadvies",
+            "de": "Investorenberatung"
           },
-          "price": "USD 12.000",
-          "priceNote": {
-            "es": "todo incluido",
-            "en": "all inclusive",
-            "nl": "alles inbegrepen",
-            "de": "alles inklusive"
+          "tagline": {
+            "es": "Acompañamiento continuo para residentes con actividad económica en Paraguay.",
+            "en": "Ongoing support for residents with economic activity in Paraguay.",
+            "nl": "Doorlopende begeleiding voor bewoners met economische activiteit in Paraguay.",
+            "de": "Laufende Betreuung für Residenten mit wirtschaftlicher Aktivität in Paraguay."
           },
-          "duration": "12–16 semanas",
-          "popular": false,
-          "features": [
+          "icon": "TrendingUp",
+          "included": [
             {
-              "text": {
-                "es": "Todo lo de Business",
-                "en": "Everything in Business",
-                "nl": "Alles van Business",
-                "de": "Alles von Business"
-              },
-              "included": true
+              "es": "Constitución y mantenimiento de sociedad",
+              "en": "Company setup and maintenance",
+              "nl": "Bedrijfsoprichting en -beheer",
+              "de": "Firmengründung und -verwaltung"
             },
             {
-              "text": {
-                "es": "Gestión de inversiones",
-                "en": "Investment management",
-                "nl": "Investeringsbeheer",
-                "de": "Investitionsverwaltung"
-              },
-              "included": true
+              "es": "Contabilidad e impuestos (cotización aparte)",
+              "en": "Accounting and tax (quoted separately)",
+              "nl": "Boekhouding en belasting (apart geprijsd)",
+              "de": "Buchhaltung und Steuern (separat angeboten)"
             },
             {
-              "text": {
-                "es": "Due diligence inmobiliario",
-                "en": "Real estate due diligence",
-                "nl": "Vastgoed due diligence",
-                "de": "Immobilien-Due-Diligence"
-              },
-              "included": true
-            },
-            {
-              "text": {
-                "es": "Asesoría patrimonial",
-                "en": "Asset advisory",
-                "nl": "Vermogensadvies",
-                "de": "Vermögensberatung"
-              },
-              "included": true
+              "es": "Asesoría fiscal y jurídica por hora",
+              "en": "Tax and legal advisory by hour",
+              "nl": "Fiscaal en juridisch advies per uur",
+              "de": "Steuer- und Rechtsberatung pro Stunde"
             }
           ],
           "cta": {
-            "es": "Elegir Inversor",
-            "en": "Choose Investor",
-            "nl": "Kies Investeerder",
-            "de": "Investor wählen"
+            "es": "Cotizar",
+            "en": "Get a quote",
+            "nl": "Offerte aanvragen",
+            "de": "Angebot anfragen"
           }
         },
         {
-          "id": "land",
+          "id": "bienes-raices",
           "title": {
-            "es": "Compra de Tierras",
-            "en": "Land Purchase",
-            "nl": "Grondaankoop",
-            "de": "Landerwerb"
+            "es": "Bienes Raíces",
+            "en": "Real Estate",
+            "nl": "Vastgoed",
+            "de": "Immobilien"
           },
-          "price": "USD 2.500",
-          "priceNote": {
-            "es": "solo gestión legal",
-            "en": "legal management only",
-            "nl": "alleen juridisch beheer",
-            "de": "nur Rechtsverwaltung"
+          "tagline": {
+            "es": "Búsqueda, due diligence y escrituración para compra o alquiler.",
+            "en": "Search, due diligence and closing for purchase or rental.",
+            "nl": "Zoeken, due diligence en afsluiting voor aankoop of huur.",
+            "de": "Suche, Prüfung und Abschluss für Kauf oder Miete."
           },
-          "duration": "4–6 semanas",
-          "popular": false,
-          "features": [
+          "icon": "KeyRound",
+          "included": [
             {
-              "text": {
-                "es": "Due diligence completo",
-                "en": "Full due diligence",
-                "nl": "Volledige due diligence",
-                "de": "Vollständige Due Diligence"
-              },
-              "included": true
+              "es": "Definición de perfil y criterios",
+              "en": "Profile and criteria definition",
+              "nl": "Profiel- en criteriumdefinitie",
+              "de": "Profil- und Kriteriendefinition"
             },
             {
-              "text": {
-                "es": "Escrituración pública",
-                "en": "Public deed",
-                "nl": "Publieke akte",
-                "de": "Öffentliche Urkunde"
-              },
-              "included": true
+              "es": "Búsqueda y short-list de propiedades",
+              "en": "Search and short-list of properties",
+              "nl": "Zoeken en shortlist van eigendommen",
+              "de": "Suche und Shortlist von Immobilien"
             },
             {
-              "text": {
-                "es": "Registro en el ARP",
-                "en": "ARP registration",
-                "nl": "ARP-registratie",
-                "de": "ARP-Registrierung"
-              },
-              "included": true
+              "es": "Due diligence legal y técnica",
+              "en": "Legal and technical due diligence",
+              "nl": "Juridische en technische due diligence",
+              "de": "Rechtliche und technische Due Diligence"
+            },
+            {
+              "es": "Negociación y escrituración",
+              "en": "Negotiation and closing",
+              "nl": "Onderhandeling en afsluiting",
+              "de": "Verhandlung und Abschluss"
             }
           ],
           "cta": {
-            "es": "Elegir Tierras",
-            "en": "Choose Land",
-            "nl": "Kies Grond",
-            "de": "Land wählen"
+            "es": "Cotizar",
+            "en": "Get a quote",
+            "nl": "Offerte aanvragen",
+            "de": "Angebot anfragen"
           }
         }
       ]
     },
     "testimonials": {
+      "eyebrow": "Clientes",
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Nombres disponibles bajo solicitud, con consentimiento. Casos verificados en cartera.",
       "items": [
         {
-          "name": "Jan K.",
-          "origin": "Netherlands",
-          "program": "business",
+          "name": "Cliente 1",
+          "origin": "Países Bajos",
+          "program": "residencia",
           "quote": {
             "es": "Doce semanas de inicio a fin. Residencia, empresa, cuenta bancaria — todo hecho.",
             "en": "Twelve weeks from start to finish. Residency, company, bank account — all done.",
@@ -2170,25 +2100,25 @@
           }
         },
         {
-          "name": "Sophie B.",
-          "origin": "Belgium",
-          "program": "base",
+          "name": "Cliente 2",
+          "origin": "Bélgica",
+          "program": "residencia",
           "quote": {
             "es": "Estaba aterrada por el proceso. Nexa lo hizo en un solo viaje tranquilo.",
-            "en": "I was terrified of the process. Nexa made it one smooth trip.",
-            "nl": "Ik was bang voor het proces. Nexa maakte het één soepele reis.",
-            "de": "Ich hatte Angst vor dem Prozess. Nexa hat es zu einer reibungslosen Reise gemacht."
+            "en": "I was terrified of the process. Nexa did it in one calm trip.",
+            "nl": "Ik was bang voor het proces. Nexa deed het in één rustige reis.",
+            "de": "Ich hatte Angst vor dem Prozess. Nexa hat es in einer ruhigen Reise erledigt."
           }
         },
         {
-          "name": "Hans W.",
-          "origin": "Germany",
-          "program": "investor",
+          "name": "Cliente 3",
+          "origin": "Alemania",
+          "program": "inversores",
           "quote": {
-            "es": "Lo más difícil era la banca. Nexa se ocupó de todo sin que yo moviera un dedo.",
-            "en": "The hardest part was banking. Nexa handled everything while I barely lifted a finger.",
-            "nl": "Het moeilijkste was bankieren. Nexa regelde alles terwijl ik amper een vinger hoefde uit te steken.",
-            "de": "Das Schwierigste war das Bankwesen. Nexa hat alles erledigt, während ich kaum einen Finger rührte."
+            "es": "Acompañamiento profesional y honesto. Sin sorpresas en los costos.",
+            "en": "Professional and honest guidance. No surprises in costs.",
+            "nl": "Professionele en eerlijke begeleiding. Geen verrassingen in de kosten.",
+            "de": "Professionelle und ehrliche Begleitung. Keine Überraschungen bei den Kosten."
           }
         }
       ]
@@ -2208,521 +2138,6 @@
       "title": "Asistente IA — Nexa Paraguay",
       "description": "Responde unas preguntas y obtén tu programa recomendado al instante.",
       "targetKeyword": "asistente residencia Paraguay"
-    }
-  },
-  "landingEmpresa": {
-    "cta": {
-      "buttonHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-final-nl",
-      "buttonText": "Consult boeken",
-      "subtitle": "Boek een gratis consult van 30 minuten.",
-      "title": "Richt uw Paraguayaans bedrijf goed op"
-    },
-    "hero": {
-      "backgroundImage": "@img:programs.tierBusiness",
-      "ctaPrimaryHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-hero-primary-nl",
-      "ctaPrimaryText": "Boek een gratis consult",
-      "ctaSecondaryHref": "/nl/proceso",
-      "ctaSecondaryText": "Bekijk de programmas",
-      "eyebrow": "Bedrijfsoprichting",
-      "headline": "Open je Paraguayaanse bedrijf correct",
-      "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay."
-    },
-    "process": {
-      "ctaHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-process-nl",
-      "ctaLabel": "Start mijn proces",
-      "eyebrow": "How it works",
-      "steps": [
-        {
-          "number": 1,
-          "title": "Kies Je Diensten",
-          "description": "Kies de ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist.",
-          "icon": "MessageCircle",
-          "image": {
-            "$img": "process.consultation"
-          }
-        },
-        {
-          "number": 2,
-          "title": "Parallelle Verwerking",
-          "description": "Terwijl jij documenten regelt, bereiden wij alle lokale zaken in Paraguay voor.",
-          "icon": "FileCheck",
-          "image": {
-            "$img": "process.documents"
-          }
-        },
-        {
-          "number": 3,
-          "title": "De Operationele Dag",
-          "description": "Alle persoonlijke afspraken — migratie, politie, identificatie — in één dag.",
-          "icon": "MapPin",
-          "image": {
-            "$img": "process.arrival"
-          }
-        },
-        {
-          "number": 4,
-          "title": "Cédula & Financiële Activering",
-          "description": "We activeren je RUC en openen je bankrekeningen zodra je ID is afgegeven.",
-          "icon": "Building",
-          "image": {
-            "$img": "process.banking"
-          }
-        },
-        {
-          "number": 5,
-          "title": "Vestiging & Levensstijl",
-          "description": "We helpen je het juiste huis te vinden en je dagelijkse leven in Paraguay op te zetten.",
-          "icon": "CheckCircle",
-          "image": {
-            "$img": "process.completion"
-          }
-        }
-      ],
-      "title": "Oprichten in 5 stappen",
-      "totalDuration": "Typical total: 8–12 weeks."
-    },
-    "trust": {
-      "eyebrow": "Wat u krijgt",
-      "items": [
-        {
-          "icon": "Package",
-          "title": "Bedrijf + residentie",
-          "description": "Beide processen geïntegreerd — niet apart verkocht."
-        },
-        {
-          "icon": "Landmark",
-          "title": "Bankrekening",
-          "description": "Zakelijke rekening gecoördineerd met onze bankpartners."
-        },
-        {
-          "icon": "Users",
-          "title": "Technisch team",
-          "description": "Advocaten, accountants en notarissen die samenwerken."
-        },
-        {
-          "icon": "Shield",
-          "title": "Transparante prijs",
-          "description": "Honoraria, BTW en belastingen inbegrepen."
-        }
-      ],
-      "title": "Wat Paraguay Business dekt"
-    },
-    "programs": {
-      "eyebrow": "Recomendado",
-      "title": "Paraguay Business",
-      "subtitle": "Residencia + empresa + cuenta bancaria, integrado en un solo programa.",
-      "tiers": [
-        {
-          "id": "business",
-          "name": "Paraguay Business",
-          "description": "Residencia + empresa + cuenta bancaria.",
-          "price": "USD 4,400+",
-          "priceNote": "Precio inicial. Cotización final según requerimientos.",
-          "highlighted": true,
-          "included": [
-            "Residencia + cédula",
-            "Constitución de empresa + RUC",
-            "Cuenta bancaria corporativa",
-            "Tour inmobiliario estratégico",
-            "Honorarios, IVA e impuestos incluidos"
-          ],
-          "ctaLabel": "Solicitar consulta",
-          "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=company&utm_content=cta-business-es",
-          "image": {
-            "$img": "programs.tierBusiness"
-          }
-        }
-      ]
-    },
-    "seo": {
-      "title": "Una empresa paraguaya, abierta correctamente",
-      "description": "Residencia + empresa + RUC + cuenta bancaria. Integrado en un programa con Nexa Paraguay.",
-      "targetKeyword": "empresa Paraguay mudanza"
-    }
-  },
-  "landingInversor": {
-    "cta": {
-      "buttonHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-final-nl",
-      "buttonText": "Consult boeken",
-      "subtitle": "Boek een gratis consult van 30 minuten — Nederlands, Engels, Spaans of Duits.",
-      "title": "Klaar om uw project te structureren?"
-    },
-    "hero": {
-      "backgroundImage": "@img:whyParaguay.growth",
-      "ctaPrimaryHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-hero-primary-nl",
-      "ctaPrimaryText": "Boek een gratis consult van 30 min",
-      "ctaSecondaryHref": "/nl/proceso",
-      "ctaSecondaryText": "Bekijk het investeerdersprogramma",
-      "eyebrow": "Investeerdersprogramma",
-      "headline": "Gestructureerd pad voor investeerders in Paraguay",
-      "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay."
-    },
-    "process": {
-      "ctaHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-process-nl",
-      "ctaLabel": "Start mijn proces",
-      "eyebrow": "How it works",
-      "steps": [
-        {
-          "number": 1,
-          "title": "Kies Je Diensten",
-          "description": "Kies de ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist.",
-          "icon": "MessageCircle",
-          "image": {
-            "$img": "process.consultation"
-          }
-        },
-        {
-          "number": 2,
-          "title": "Parallelle Verwerking",
-          "description": "Terwijl jij documenten regelt, bereiden wij alle lokale zaken in Paraguay voor.",
-          "icon": "FileCheck",
-          "image": {
-            "$img": "process.documents"
-          }
-        },
-        {
-          "number": 3,
-          "title": "De Operationele Dag",
-          "description": "Alle persoonlijke afspraken — migratie, politie, identificatie — in één dag.",
-          "icon": "MapPin",
-          "image": {
-            "$img": "process.arrival"
-          }
-        },
-        {
-          "number": 4,
-          "title": "Cédula & Financiële Activering",
-          "description": "We activeren je RUC en openen je bankrekeningen zodra je ID is afgegeven.",
-          "icon": "Building",
-          "image": {
-            "$img": "process.banking"
-          }
-        },
-        {
-          "number": 5,
-          "title": "Vestiging & Levensstijl",
-          "description": "We helpen je het juiste huis te vinden en je dagelijkse leven in Paraguay op te zetten.",
-          "icon": "CheckCircle",
-          "image": {
-            "$img": "process.completion"
-          }
-        }
-      ],
-      "title": "5 stappen, ongeveer 8–12 weken",
-      "totalDuration": "Typical total: 8–12 weeks."
-    },
-    "trust": {
-      "eyebrow": "Wat u krijgt",
-      "items": [
-        {
-          "icon": "TrendingUp",
-          "title": "Gestructureerde groei",
-          "description": "Fiscaal advies inclusief 12 maanden — u runt, wij zorgen voor compliance."
-        },
-        {
-          "icon": "Shield",
-          "title": "Institutioneel vertrouwen",
-          "description": "Advocaten, accountants en notarissen in één gecoördineerd team."
-        },
-        {
-          "icon": "Users",
-          "title": "Directe toegang",
-          "description": "Directe lijn met het technisch team voor residentie, banken en operaties."
-        },
-        {
-          "icon": "LineChart",
-          "title": "Transparante prijs",
-          "description": "Alles-inclusief. Geen verborgen kosten."
-        }
-      ],
-      "title": "Wat het investeerdersprogramma onderscheidt"
-    },
-    "programs": {
-      "eyebrow": "Recomendado",
-      "title": "Programa Inversor",
-      "subtitle": "Todo lo necesario para operar en Paraguay — más 12 meses de acompañamiento.",
-      "tiers": [
-        {
-          "id": "investor",
-          "name": "Paraguay Inversor",
-          "description": "Residencia + empresa + banco + 12 meses de apoyo.",
-          "price": "USD 6,900+",
-          "priceNote": "Precio inicial. Cotización final según requerimientos.",
-          "highlighted": true,
-          "included": [
-            "Residencia paraguaya y cédula",
-            "Constitución de empresa + RUC",
-            "Cuenta bancaria corporativa",
-            "Contabilidad (12 meses)",
-            "Asesoría legal y fiscal (12 meses)",
-            "Acceso directo al equipo técnico"
-          ],
-          "ctaLabel": "Solicitar consulta",
-          "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=investor&utm_content=cta-investor-es",
-          "image": {
-            "$img": "programs.tierInvestor"
-          }
-        }
-      ]
-    },
-    "seo": {
-      "title": "Paraguay para inversionistas — un camino estructurado",
-      "description": "Residencia, empresa, cuenta bancaria y compra de tierras — un programa inversor integrado. Sin sorpresas.",
-      "targetKeyword": "inversor Paraguay"
-    }
-  },
-  "landingLifestyle": {
-    "cta": {
-      "buttonHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-final-nl",
-      "buttonText": "Consult boeken",
-      "subtitle": "Boek een gratis consult van 30 minuten.",
-      "title": "Uw nieuwe start in Paraguay"
-    },
-    "hero": {
-      "backgroundImage": "@img:whyParaguay.lifestyle",
-      "ctaPrimaryHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-hero-primary-nl",
-      "ctaPrimaryText": "Boek een gratis consult",
-      "ctaSecondaryHref": "/nl/proceso",
-      "ctaSecondaryText": "Waarom Paraguay",
-      "eyebrow": "Levenskwaliteit",
-      "headline": "Een rustiger basis in Paraguay",
-      "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay."
-    },
-    "process": {
-      "ctaHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-process-nl",
-      "ctaLabel": "Start mijn proces",
-      "eyebrow": "How it works",
-      "steps": [
-        {
-          "number": 1,
-          "title": "Kies Je Diensten",
-          "description": "Kies de ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist.",
-          "icon": "MessageCircle",
-          "image": {
-            "$img": "process.consultation"
-          }
-        },
-        {
-          "number": 2,
-          "title": "Parallelle Verwerking",
-          "description": "Terwijl jij documenten regelt, bereiden wij alle lokale zaken in Paraguay voor.",
-          "icon": "FileCheck",
-          "image": {
-            "$img": "process.documents"
-          }
-        },
-        {
-          "number": 3,
-          "title": "De Operationele Dag",
-          "description": "Alle persoonlijke afspraken — migratie, politie, identificatie — in één dag.",
-          "icon": "MapPin",
-          "image": {
-            "$img": "process.arrival"
-          }
-        },
-        {
-          "number": 4,
-          "title": "Cédula & Financiële Activering",
-          "description": "We activeren je RUC en openen je bankrekeningen zodra je ID is afgegeven.",
-          "icon": "Building",
-          "image": {
-            "$img": "process.banking"
-          }
-        },
-        {
-          "number": 5,
-          "title": "Vestiging & Levensstijl",
-          "description": "We helpen je het juiste huis te vinden en je dagelijkse leven in Paraguay op te zetten.",
-          "icon": "CheckCircle",
-          "image": {
-            "$img": "process.completion"
-          }
-        }
-      ],
-      "title": "5 stappen, één reis",
-      "totalDuration": "Typical total: 8–12 weeks."
-    },
-    "whyCountry": {
-      "eyebrow": "Wat u krijgt",
-      "pillars": [
-        {
-          "icon": "Heart",
-          "title": "Levenskwaliteit",
-          "description": "Warm klimaat, toegankelijke kosten, aanzienlijke koopkracht.",
-          "imageUrl": "@src:whyParaguay.lifestyle"
-        },
-        {
-          "icon": "Users",
-          "title": "Internationale gemeenschap",
-          "description": "Groeiende gemeenschap van expats en investeerders.",
-          "imageUrl": "@src:whyParaguay.community"
-        },
-        {
-          "icon": "Landmark",
-          "title": "Fiscale stabiliteit",
-          "description": "Territoriaal systeem — buitenlands inkomen wordt niet belast.",
-          "imageUrl": "@src:whyParaguay.tax"
-        }
-      ],
-      "title": "Drie echte redenen om te verhuizen"
-    },
-    "programs": {
-      "eyebrow": "Recomendado",
-      "title": "Paraguay Base",
-      "subtitle": "El punto de partida más simple: residencia + cédula. Podés ampliar después.",
-      "tiers": [
-        {
-          "id": "base",
-          "name": "Paraguay Base",
-          "description": "Residencia paraguaya + cédula.",
-          "price": "USD 2,900",
-          "priceNote": "Paquete completo con honorarios e impuestos.",
-          "highlighted": true,
-          "included": [
-            "Residencia paraguaya",
-            "Cédula de identidad",
-            "Prevalidación de documentos",
-            "Día operativo presencial",
-            "Soporte logístico"
-          ],
-          "ctaLabel": "Solicitar consulta",
-          "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=lifestyle&utm_content=cta-base-es",
-          "image": {
-            "$img": "programs.tierBase"
-          }
-        }
-      ]
-    },
-    "seo": {
-      "title": "Una base más tranquila en Paraguay",
-      "description": "Buen clima, bajo costo de vida, comunidad internacional en crecimiento, sistema fiscal territorial.",
-      "targetKeyword": "lifestyle Paraguay"
-    }
-  },
-  "landingTrust": {
-    "cta": {
-      "buttonHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-final-nl",
-      "buttonText": "Consult boeken",
-      "subtitle": "Boek een gratis consult van 30 minuten met ons team.",
-      "title": "Doe het één keer, doe het goed"
-    },
-    "hero": {
-      "backgroundImage": "@img:trust.migraciones",
-      "ctaPrimaryHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-hero-primary-nl",
-      "ctaPrimaryText": "Boek een gratis consult",
-      "ctaSecondaryHref": "/nl/proceso",
-      "ctaSecondaryText": "Bekijk het proces",
-      "eyebrow": "Institutioneel vertrouwen",
-      "headline": "Professioneel team, institutioneel vertrouwen",
-      "subheadline": "Een gestroomlijnde samenwerking tussen je thuisland en Paraguay."
-    },
-    "process": {
-      "ctaHref": "https://calendly.com/nexa-paraguay/consulta?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-process-nl",
-      "ctaLabel": "Start mijn proces",
-      "eyebrow": "How it works",
-      "steps": [
-        {
-          "number": 1,
-          "title": "Kies Je Diensten",
-          "description": "Kies de ondersteuning die je nodig hebt. We maken een gepersonaliseerde checklist.",
-          "icon": "MessageCircle",
-          "image": {
-            "$img": "process.consultation"
-          }
-        },
-        {
-          "number": 2,
-          "title": "Parallelle Verwerking",
-          "description": "Terwijl jij documenten regelt, bereiden wij alle lokale zaken in Paraguay voor.",
-          "icon": "FileCheck",
-          "image": {
-            "$img": "process.documents"
-          }
-        },
-        {
-          "number": 3,
-          "title": "De Operationele Dag",
-          "description": "Alle persoonlijke afspraken — migratie, politie, identificatie — in één dag.",
-          "icon": "MapPin",
-          "image": {
-            "$img": "process.arrival"
-          }
-        },
-        {
-          "number": 4,
-          "title": "Cédula & Financiële Activering",
-          "description": "We activeren je RUC en openen je bankrekeningen zodra je ID is afgegeven.",
-          "icon": "Building",
-          "image": {
-            "$img": "process.banking"
-          }
-        },
-        {
-          "number": 5,
-          "title": "Vestiging & Levensstijl",
-          "description": "We helpen je het juiste huis te vinden en je dagelijkse leven in Paraguay op te zetten.",
-          "icon": "CheckCircle",
-          "image": {
-            "$img": "process.completion"
-          }
-        }
-      ],
-      "title": "Een helder proces, zonder improvisatie",
-      "totalDuration": "Typical total: 8–12 weeks."
-    },
-    "trust": {
-      "eyebrow": "Why trust Nexa",
-      "title": "Built on experience and institutional relationships",
-      "items": [
-        {
-          "title": "Track record",
-          "description": "200+ European families relocated since 2022."
-        },
-        {
-          "title": "Licensed professionals",
-          "description": "Paraguayan bar-admitted lawyers and CPA accountants."
-        },
-        {
-          "title": "Institutional access",
-          "description": "Direct relationships with migration, banks, and notaries."
-        },
-        {
-          "title": "End-to-end",
-          "description": "From document pre-validation to post-arrival settlement."
-        }
-      ]
-    },
-    "programs": {
-      "eyebrow": "Recomendado",
-      "title": "Paraguay Business",
-      "subtitle": "El programa central — un viaje, un equipo, un resultado integrado.",
-      "tiers": [
-        {
-          "id": "business",
-          "name": "Paraguay Business",
-          "description": "Residencia + empresa + cuenta bancaria.",
-          "price": "USD 4,400+",
-          "priceNote": "Precio inicial. Cotización final según requerimientos.",
-          "highlighted": true,
-          "included": [
-            "Residencia + cédula",
-            "Constitución de empresa + RUC",
-            "Cuenta bancaria corporativa",
-            "Tour inmobiliario estratégico",
-            "Honorarios, IVA e impuestos incluidos"
-          ],
-          "ctaLabel": "Solicitar consulta",
-          "ctaHref": "https://wa.me/595982515138?text=Quiero%20agendar%20una%20consulta%20gratuita?utm_source=linkedin&utm_medium=paid&utm_campaign=trust&utm_content=cta-business-es",
-          "image": {
-            "$img": "programs.tierBusiness"
-          }
-        }
-      ]
-    },
-    "seo": {
-      "title": "Confianza institucional, construida por profesionales locales",
-      "description": "Un sistema integrado, no una gestoría. Abogados, contadores, escribanos y asesores financieros.",
-      "targetKeyword": "confianza Nexa Paraguay"
     }
   },
   "navigation": {

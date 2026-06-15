@@ -12,6 +12,7 @@ import { BookingEmbedSection } from './BookingEmbedSection'
 import { BlogSection } from './BlogSection'
 import { FaqSection } from './FaqSection'
 import { ContactDetailsSection } from './ContactDetailsSection'
+import { ComplianceSection } from './ComplianceSection'
 
 const BaseRenderer = createSectionsRenderer(Header as any, Footer as any)
 
@@ -30,6 +31,8 @@ const OVERRIDES: Record<string, any> = {
   'faq': FaqSection,
   'contact': ContactDetailsSection,
   'contact-details': ContactDetailsSection,
+  'compliance': ComplianceSection,
+  'compliance-disclaimer': ComplianceSection,
 }
 
 export default function SectionsRenderer(props: any) {

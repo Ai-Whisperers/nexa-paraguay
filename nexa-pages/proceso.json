@@ -36,6 +36,11 @@
       "content": "processPage.cta"
     },
     {
+      "id": "compliance",
+      "variant": "default",
+      "content": "complianceDisclaimer"
+    },
+    {
       "id": "footer",
       "variant": "standard",
       "content": "footer"

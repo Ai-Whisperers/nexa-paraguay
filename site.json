@@ -12,45 +12,43 @@
   ],
   "navigation": [
     {
-      "labelKey": "navigation.home",
-      "path": ""
+      "_note": "Deprecated shape: this site.json.navigation uses {label, path}. The Header component reads from content/{locale}.json → navigation.navItems. Kept for backwards compat with docs/audit reports."
     },
     {
-      "labelKey": "navigation.whyCountry",
-      "path": "por-que-paraguay"
+      "label": "Inicio",
+      "path": "/"
     },
     {
-      "labelKey": "navigation.process",
-      "path": "proceso"
+      "label": "Servicios",
+      "path": "/servicios"
     },
     {
-      "labelKey": "navigation.about",
-      "path": "sobre"
+      "label": "Por qué Paraguay",
+      "path": "/por-que-paraguay"
     },
     {
-      "labelKey": "navigation.faq",
-      "path": "faq"
+      "label": "Sobre Nexa",
+      "path": "/sobre"
     },
     {
-      "labelKey": "navigation.blog",
-      "path": "blog"
+      "label": "FAQ",
+      "path": "/faq"
     },
     {
-      "labelKey": "navigation.press",
-      "path": "prensa"
+      "label": "Blog",
+      "path": "/blog"
     },
     {
-      "labelKey": "navigation.contact",
-      "path": "contacto"
+      "label": "Contacto",
+      "path": "/contacto"
     }
   ],
   "integrations": {
     "hubspot": {
-      "portalId": "HS-PORTAL-PARAGUAI",
-      "formId": "contact-form-paragu-ai"
+      "_note": "Set real HUBSPOT_PORTAL_ID and HUBSPOT_FORM_GUID via env vars. Until then, /api/contact falls back to console.log."
     },
     "mailchimp": {
-      "audienceId": "audience-paragu-ai-newsletter"
+      "_note": "Set real MAILCHIMP_AUDIENCE_ID and MAILCHIMP_API_KEY via env vars. Until then, /api/subscribe falls back to console.log."
     },
     "analytics": {
       "ga4": {
@@ -93,14 +91,14 @@
         "variant": "standard",
         "content": "whatsapp"
       },
-{
-  "id": "footer",
-  "variant": "standard",
-  "content": "footer",
-  "styling": {
-    "padding": "none"
-  }
-}
+      {
+        "id": "footer",
+        "variant": "standard",
+        "content": "footer",
+        "styling": {
+          "padding": "none"
+        }
+      }
     ]
   },
   "path": "",

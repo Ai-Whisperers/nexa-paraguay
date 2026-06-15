@@ -1,38 +1,43 @@
 {
-    "id": "home",
-    "targetKeyword": "residencia en Paraguay",
-    "slug": "",
-    "titleKey": "home.seo.title",
-    "descriptionKey": "home.seo.description",
-    "schemaType": "LocalBusiness",
-    "sections": [
-        {
-            "id": "hero",
-            "content": "home"
-        },
-        {
-            "id": "trust-signals",
-            "content": "home"
-        },
-        {
-            "id": "why-destination",
-            "content": "home"
-        },
-        {
-            "id": "services",
-            "content": "home"
-        },
-        {
-            "id": "process-timeline",
-            "content": "home"
-        },
-        {
-            "id": "feedback",
-            "content": "home.feedback"
-        },
-        {
-            "id": "cta-banner",
-            "content": "home"
-        }
-    ]
+  "id": "home",
+  "targetKeyword": "residencia en Paraguay",
+  "slug": "",
+  "titleKey": "home.seo.title",
+  "descriptionKey": "home.seo.description",
+  "schemaType": "LocalBusiness",
+  "sections": [
+    {
+      "id": "hero",
+      "content": "home"
+    },
+    {
+      "id": "trust-signals",
+      "content": "home"
+    },
+    {
+      "id": "why-destination",
+      "content": "home"
+    },
+    {
+      "id": "services",
+      "content": "home"
+    },
+    {
+      "id": "process-timeline",
+      "content": "home"
+    },
+    {
+      "id": "feedback",
+      "content": "home.feedback"
+    },
+    {
+      "id": "cta-banner",
+      "content": "home"
+    },
+    {
+      "id": "compliance",
+      "variant": "default",
+      "content": "complianceDisclaimer"
+    }
+  ]
 }
