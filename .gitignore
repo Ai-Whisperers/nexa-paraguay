@@ -1,13 +1,22 @@
-node_modules
-.next
-.git
-.DS_Store
+# Env / secrets
 .env
 .env.local
 .env.*.local
 !.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+.cursorindexingignore
+
+# Node / build artifacts (defensive — should never appear after the website was moved out)
+node_modules/
+.next/
+dist/
+*.tsbuildinfo
 packages/
 ai-packages/
 
-# Test artifacts (untracked test output dirs like screenshots/5/)
-screenshots/[2-9]/
+# Local Python tooling used by ops scripts
+__pycache__/

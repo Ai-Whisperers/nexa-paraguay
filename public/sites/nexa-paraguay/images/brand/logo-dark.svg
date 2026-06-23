@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none">
-  <rect width="240" height="64" rx="6" fill="#0f1729"/>
-  <path d="M24 16 L24 48 L32 48 L32 34 L44 48 L54 48 L40 32 L52 16 L42 16 L32 28 L32 16 Z" fill="#C9A96E"/>
-  <text x="66" y="42" fill="#FFFFFF" font-family="Segoe UI,system-ui,sans-serif" font-size="22" font-weight="600">Nexa Paraguay</text>
-</svg>

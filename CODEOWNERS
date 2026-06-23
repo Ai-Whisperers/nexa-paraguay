@@ -1,0 +1,22 @@
+# CODEOWNERS — nexa-paraguay (research repo)
+# Auto-assigns reviewers for PRs touching specific paths.
+
+# Default: any Ai-Whisperers engineer can review
+*           @Ai-Whisperers/eng
+
+# Decision and issue logs need the founder
+/NEXA_DECISIONS.md   @Ai-Whisperers/ivan
+/NEXA_ISSUES.md      @Ai-Whisperers/ivan
+
+# Client-facing research and brand need sales + founder
+/docs/01-client/     @Ai-Whisperers/kiki @Ai-Whisperers/ivan
+/docs/03-brand/      @Ai-Whisperers/kiki
+/docs/09-market-intelligence/  @Ai-Whisperers/kiki
+
+# Sales collateral is sales-owned
+/marketing/          @Ai-Whisperers/kiki
+
+# Top-level README and changelog need founder
+/README.md           @Ai-Whisperers/ivan
+/CHANGELOG.md        @Ai-Whisperers/ivan
+/CONTRIBUTING.md     @Ai-Whisperers/ivan
