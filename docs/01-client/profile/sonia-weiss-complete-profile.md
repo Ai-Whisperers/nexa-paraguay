@@ -1,6 +1,7 @@
-# Sonia Weiss (Edith López van der Pol) — Complete Profile
+# Sonia Weiss — Complete Profile
 
 > Compiled: 2026-05-10 | Sources: Public records, web search, WhatsApp chat analysis, import databases, social media
+> **Identity corrections applied 2026-07-23** based on Ivan's authoritative answers in `psycology/docs/identity-corrections/ANSWERS.md`. See cross-ref note at end of file.
 
 ---
 
@@ -8,9 +9,9 @@
 
 | Field | Value |
 |-------|-------|
-| **Full Name** | Sonia Weiss (known as), Sonia Edith López (tax records) |
-| **Tax Name** | Sonia Edith López Charotti Ramírez |
-| **Associated Names** | Sonia Ainos (SlideShare), Sonia Edith López |
+| **Full Name** | Sonia Edith Weiss López (per Ivan, 2026-07-23) |
+| **Tax Name (SET records)** | Sonia Edith López Charotti Ramírez — discrepancy noted; possibly a different legal naming convention or outdated record. May also include surnames from earlier generations. See cross-ref note. |
+| **Associated Names** | Sonia Ainos (SlideShare), Sonia Edith López, Sonia Weiss |
 | **Phone** | 0982 515138 (Tigo Paraguay — same across all businesses) |
 | **Languages** | Spanish, Dutch, English, Guarani |
 | **Location** | Asunción / Fernando de la Mora / San Lorenzo, Paraguay |
@@ -20,8 +21,9 @@
 | Name | Relationship | Role |
 |------|-------------|------|
 | **Iván Weiss van der Pol** | Son | Technical — Ai-Whisperers, built Nexa site |
-| **Kiki (Hermana) Weiss** | Daughter | Works at Ai-Whisperers |
-| **Luana (Hermana) Weiss** | Daughter | Content & organization, feedback relay for Nexa |
+| **Kyrian "Kiki" Weiss** | Daughter | Works at Ai-Whisperers. Per Ivan (2026-07-23): Kiki = Kyrian (not Saskia) |
+| **Luana Weiss** | Daughter | Content & organization, feedback relay for Nexa. Age 24. |
+| **Saskia Weiss Van Der Pol** | Daughter | Lives in Netherlands (NL). Bank accounts at ABN (EUR) + Banco Familiar (PYG). See `SaskiaPersonal` repo for her full financial analysis. |
 
 ---
 
@@ -66,8 +68,8 @@ Her goal was to stay in the Netherlands long enough to learn the culture and lan
 **Import/Trading Arm:** 33 recorded shipments from China. Products include plastic caps, toiletries kits ("kit de aseo"), and judo mats. Key suppliers in Yangzhou, Shanghai, and Nantong.
 
 **Known Associates:**
-- **Gerold Manders** — Netherlands-based contact (6+ years at WPG per Xing profile)
-- **Roberto Weiss** — Judo mat buyer (family member)
+- **Gerold Manders** — Netherlands-based contact (6+ years at WPG per Xing profile). **Per Ivan (2026-07-23):** family role = **uncle** (John van der Pol's adoptive brother). May be both WPG associate AND family member.
+- **Roberto Weiss** — Judo mat buyer for WPG imports. **Family role unconfirmed by Ivan** — flagged for follow-up. Possibly Sonia's brother or nephew.
 - **José Alberto G.** — Software Tester (2008-2022, 14+ years tenure)
 
 **Digital Presence:**
@@ -220,9 +222,35 @@ From direct WhatsApp communication (May 2026):
 
 | Person | Connection | Notes |
 |--------|-----------|-------|
-| **Gerold Manders** | WPG business associate | Netherlands-based, 6+ years at WPG |
-| **Roberto Weiss** | Family member | Judo mat buyer for WPG imports |
+| **Gerold Manders** | Uncle (Ivan's) + WPG associate | Netherlands-based, 6+ years at WPG. Per Ivan (2026-07-23): John's adoptive brother (uncle role). |
+| **Roberto Weiss** | Family (role TBD) | Judo mat buyer for WPG imports. Per Ivan: role not confirmed in 2026-07-23 questionnaire. May be Sonia's brother, nephew, or cousin. |
 | **Yigal Kutnovsky** | Kabbalah Centre | Lead teacher at Centro de Kabbalah Paraguay |
 | **Energy21** | WPG client | Multinational utility software |
 | **Sonia Ainos** | Herself (WPG) | Alternate profile name on SlideShare |
 | **José Alberto G.** | WPG employee | Software Tester, 14+ years |
+
+---
+
+## Identity Cross-Reference (added 2026-07-23)
+
+**Source of truth:** `psycology/docs/identity-corrections/ANSWERS.md` (Ivan's questionnaire answers, 2026-07-23).
+
+### Corrections applied to this document
+
+1. **Sonia's full family name** is **Sonia Edith Weiss López** (per Ivan). The SET tax records show "Sonia Edith López Charotti Ramírez" — likely a different naming convention. This is **flagged for verification**: ask Sonia directly to confirm which surname chain she uses officially.
+
+2. **Children** = 4 (not 3): Iván, Kyrian "Kiki", Luana, Saskia. Saskia was previously omitted from this profile (she lives in NL and the profile was sourced mostly from PY-channel data). Saskia has her own financial repo at `SaskiaPersonal/`.
+
+3. **Gerold Manders** family role = **uncle** (per Ivan, John's adoptive brother). The "WPG business associate" label is **also true** (he works at WPG) — but he is NOT just a business contact.
+
+4. **Roberto Weiss** family role = **unconfirmed** in Ivan's 2026-07-23 questionnaire. Per nexa-paraguay he's "Judo mat buyer / family member". Ivan: please clarify (brother? nephew? cousin?).
+
+5. **Toni Weiss** (Antonio López Weiss) — formerly mislabeled in `psycology` as "Dad" — is actually **Sonia's brother / Ivan's uncle**. He lives in Santa Fe USA. He is NOT the father of Ivan; that role belongs to **John van der Pol** (software dev for Netherlands, lives with Sonia).
+
+### Open follow-ups
+
+- [ ] Confirm Sonia's official tax name (Weiss López vs López Charotti Ramírez vs another variant)
+- [ ] Confirm Roberto Weiss's exact family role
+- [ ] Confirm Gerold's role overlap (uncle + WPG associate)
+- [ ] Verify no other profile files in this repo still claim "Kiki = Saskia" or "Toni = Dad"
+

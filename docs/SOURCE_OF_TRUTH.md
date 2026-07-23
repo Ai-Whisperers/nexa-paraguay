@@ -22,7 +22,7 @@
 
 | Attribute | Value |
 |-----------|-------|
-| Legal name | Sonia Edith López Charotti Ramírez |
+| Legal name | Sonia Edith Weiss López (per Ivan, 2026-07-23; SET tax records show "Sonia Edith López Charotti Ramírez" — see cross-ref note below) |
 | Known as | Sonia Weiss |
 | Role | Founder & CEO, Nexa Paraguay |
 | Location | Asunción / Fernando de la Mora / San Lorenzo |
@@ -30,9 +30,11 @@
 | Languages | Spanish (native), Dutch (fluent, 7 yrs), English, Portuguese, German, French |
 | NL history | 7 years in the Netherlands — music industry, then full-time mother |
 | Reason for return | Nervous breakdown in Holland. "No me hallaba en Holanda. No era feliz allá. Iba a terminar mal." Wanted to reinvent herself. |
-| Children | Iván (tech/ops, Ai-Whisperers), Kiki (Ai-Whisperers), Luana (content & site) |
+| Children | Iván (tech/ops, Ai-Whisperers), Kiki/Kyrian (Ai-Whisperers), Luana (content & site), Saskia (lives in NL, bank accounts at ABN — see SaskiaPersonal repo) |
 | Other businesses | WPG Group SRL (software/import), La Vieja Holanda (antiques), Casa Weiss van der Pol (restaurant) |
 | Kabbalah | Long-term participant, Kabbalah Centre Paraguay |
+
+> **Identity cross-reference (2026-07-23):** Per Ivan's authoritative answer in `psycology/docs/identity-corrections/ANSWERS.md`, Sonia's full family name is **Sonia Edith Weiss López** — not "López Charotti Ramírez" as the SET tax records show. The tax-name discrepancy is unresolved: it may be a surname ordering, an outdated tax record, or another identifier. Gerold Manders is Ivan's **uncle** (John's adoptive brother), not a "WPG business associate" only. Roberto Weiss's exact family role is unconfirmed by Ivan — flagged for follow-up.
 
 ---
 

@@ -2,6 +2,7 @@
   "source": "deep-research-may-2026 + client-briefing-may-10",
   "target": "Nexa Paraguay (Ai-Whisperers client)",
   "analyzed_at": "2026-05-10T22:00:00-04:00",
+  "family_identity_correction_applied": "2026-07-23 — see psycology/docs/identity-corrections/ANSWERS.md",
   "last_client_briefing": "2026-05-10 — Audio transcription (26 min), all questions answered",
   "vertical": "Relocation & Residency Services",
   "country": "Paraguay",
@@ -16,8 +17,8 @@
     "account_manager": "Sonia (client liaison — also founder/CEO)"
   },
   "founder_profile": {
-    "full_name": "Sonia Weiss (Edith López van der Pol)",
-    "tax_name": "Sonia Edith López Charotti Ramírez (from SET tax records)",
+    "full_name": "Sonia Edith Weiss López (per Ivan, 2026-07-23)",
+    "tax_name": "Sonia Edith López Charotti Ramírez (from SET tax records) — discrepancy noted; see cross-ref at end of file",
     "role": "Founder & CEO",
     "location": "Asunción / Fernando de la Mora / San Lorenzo, Paraguay",
     "phone_personal": "0982 515138 (Tigo Paraguay)",
@@ -66,7 +67,11 @@
       },
       "classification_sic": "50450000 - Computers, accessories, and software",
       "linkedin": "WPG Software SRL",
-      "associates": ["Gerold Manders (Netherlands contact)", "Roberto Weiss (family, buyer)", "José Alberto G. (Software Tester 2008-2022)"]
+      "associates": [
+        "Gerold Manders (uncle per Ivan 2026-07-23, John's adoptive brother; also WPG associate, Netherlands-based, 6+ years at WPG)",
+        "Roberto Weiss (family role TBD — Ivan to confirm: brother/nephew/cousin? Judo mat buyer for WPG imports)",
+        "José Alberto G. (Software Tester 2008-2022)"
+      ]
     },
     "la_vieja_holanda": {
       "type": "Antique furniture & decor import retail",
