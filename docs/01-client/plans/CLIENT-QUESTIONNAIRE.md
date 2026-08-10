@@ -358,7 +358,7 @@ Today = text-only wordmark in Playfair navy. Need full suite:
 Delivery path: drop files into `sites/nexa-paraguay/assets/brand/`.
 
 ### 5.4 OG / social preview image 🟠
-The image shown when someone pastes `nexaparaguay.com` into WhatsApp, LinkedIn, Slack, X, etc.
+The image shown when someone pastes `nexaparaguay.com` into Messaging, LinkedIn, Slack, X, etc.
 - [ ] Commission dedicated 1200×630 OG image (logo + tagline overlay on brand gradient)
 - [ ] Keep hero-crop (current behaviour, suboptimal)
 - [ ] Per-locale OG images (4 versions)? [ ] Yes / [ ] One EN version
@@ -652,7 +652,7 @@ Backing store for leads, KYC, analytics events.
 - [ ] **API key** (format `xxx-us1`): `___`
 - [ ] **Audience (list) ID:** `___`
 - [ ] **Double opt-in** enabled (EU-recommended): [ ] Yes / [ ] No
-- [ ] **Tags to pre-create:** `nexa-paraguay-lead`, `program:base`, `program:business`, `program:investor`, `program:tierras`, `locale:es`, `locale:en`, `locale:nl`, `locale:de`, `source:hero-cta`, `source:programs-cta`, `source:whatsapp`, `source:calendly`
+- [ ] **Tags to pre-create:** `nexa-paraguay-lead`, `program:base`, `program:business`, `program:investor`, `program:tierras`, `locale:es`, `locale:en`, `locale:nl`, `locale:de`, `source:hero-cta`, `source:programs-cta`, `source:messaging`, `source:calendly`
   - [ ] Confirm / [ ] Add: `___`
 - [ ] **7-email nurture sequence** (days 0, 3, 7, 12, 18, 25, 35) defined in `email-nurture.json` — [ ] Approved as-is / [ ] Changes per email: `___`
 - [ ] **Welcome email** auto-send on lead capture: [ ] Enable / [ ] Disable
@@ -670,10 +670,10 @@ Hardcoded: `https://calendly.com/nexaparaguay/consulta` — currently **404s**.
 - [ ] **Cancellation policy:** 24h default / [ ] Other: `___`
 - [ ] **Tracking:** UTM parameters preserved in Calendly form hidden fields? [ ] Yes / [ ] Verify
 
-### 11.5 WhatsApp Business 🔴
+### 11.5 Messaging Business 🔴
 Current placeholder: `595000000000` (from GitHub `sitio-web` folder) or `595982515138` (local fallback).
 - [ ] **Real number** (format `595XXXXXXXXX`, no `+` or spaces): `___`
-- [ ] **WhatsApp Business account** (not personal): [ ] Created / [ ] Pending
+- [ ] **Messaging Business account** (not personal): [ ] Created / [ ] Pending
 - [ ] **Business profile** (name, category, description, hours, email, address): [ ] Completed / [ ] Pending
 - [ ] **Message templates** pre-approved (for proactive replies): [ ] Yes `___` / [ ] Reactive-only
 - [ ] **Response-time SLA** shown to user: `___` business hours
@@ -706,9 +706,9 @@ Required for auto-replies, lead notifications, Mailchimp-triggered emails.
 **Owner: Marketing.**
 
 ### 12.1 GA4 event taxonomy 🟡
-Proposed events: `program_tier_clicked`, `cta_clicked`, `form_started`, `form_submitted`, `form_error`, `calendly_opened`, `whatsapp_clicked`, `blog_read`, `language_switched`.
+Proposed events: `program_tier_clicked`, `cta_clicked`, `form_started`, `form_submitted`, `form_error`, `calendly_opened`, `messaging_clicked`, `blog_read`, `language_switched`.
 - [ ] **Confirm taxonomy** / [ ] Add/remove: `___`
-- [ ] **Conversion events** (count as "conversion"): [ ] `form_submitted` (primary) [ ] `calendly_opened` (secondary) [ ] `whatsapp_clicked` (tertiary) / [ ] Other: `___`
+- [ ] **Conversion events** (count as "conversion"): [ ] `form_submitted` (primary) [ ] `calendly_opened` (secondary) [ ] `messaging_clicked` (tertiary) / [ ] Other: `___`
 
 ### 12.2 Meta Pixel / Conversions API 🟡
 If running paid Meta ads:
@@ -1126,7 +1126,7 @@ Status per page (✅/⚠️/🛑): Home ___ Programs ___ Process ___ WhyPY ___
 11.2 HubSpot portal ___ / form GUID ___
 11.3 Mailchimp API key ___ / list ID ___
 11.4 Calendly URL slug ___ / owners ___
-11.5 WhatsApp ___ / owner ___ / SLA ___
+11.5 Messaging ___ / owner ___ / SLA ___
 11.6 GA4 measurement ID G-___
 11.7 Crisp: [ ] Yes ID ___ / [ ] Skip
 11.8 Sentry: [ ] Yes DSN ___ / [ ] Skip
@@ -1198,7 +1198,7 @@ Status per page (✅/⚠️/🛑): Home ___ Programs ___ Process ___ WhyPY ___
 1. **Engineering** replaces placeholders, wires integrations, updates AML disclosure template, clears placeholder-hash gate.
 2. **Legal** signs off on privacy, TOS, SEPRELAD disclosures.
 3. **Content / media** producers swap AI assets for real photography + consented testimonials.
-4. **Ops** provisions Supabase, HubSpot, Mailchimp, Calendly, GA4, WhatsApp Business, email hosting.
+4. **Ops** provisions Supabase, HubSpot, Mailchimp, Calendly, GA4, Messaging Business, email hosting.
 5. **Commercial** prepares launch announcement, paid-ad creatives, social schedule.
 6. **Three-person QA sign-off** (commercial + ops + legal).
 7. **DNS cutover** on agreed date (Tue/Wed AM PYT).

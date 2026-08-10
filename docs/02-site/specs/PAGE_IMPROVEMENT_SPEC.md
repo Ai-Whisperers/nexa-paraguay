@@ -52,8 +52,8 @@ Based on synthesis of: market sizing (47K apps, 63% growth, Dutch 189%), competi
 - Star ratings per service category
 
 **CTA Banner:**
-- Add WhatsApp click-to-chat with automated pre-qualification bot
-- Multi-CTA: 'Book free consult' + 'Download guide' + 'Join WhatsApp community'
+- Add Messaging click-to-chat with automated pre-qualification bot
+- Multi-CTA: 'Book free consult' + 'Download guide' + 'Join Messaging community'
 - Show availability: 'Next available consultation: tomorrow 10:00 AM'
 
 **Footer:**
@@ -68,14 +68,14 @@ Based on synthesis of: market sizing (47K apps, 63% growth, Dutch 189%), competi
 - Country comparison tool — let them see Paraguay vs their home country side by side
 - Dutch-specific content throughout — 'we speak your language and understand your context'
 - Video testimonials from real Dutch families — the #1 trust builder for skeptics
-- Automated WhatsApp pre-qual — 'get your questions answered in 2 minutes, not 2 days'
+- Automated Messaging pre-qual — 'get your questions answered in 2 minutes, not 2 days'
 - Free relocation guide download — low-friction value before booking
 
 ---
 
 ## /servicios
 
-**Current sections:** hero, services, cta, footer, whatsapp
+**Current sections:** hero, services, cta, footer, messaging
 
 ### Improvements
 
@@ -116,7 +116,7 @@ Based on synthesis of: market sizing (47K apps, 63% growth, Dutch 189%), competi
 
 **CTA:**
 - Add program comparison PDF download
-- Add WhatsApp consultation with program recommendations
+- Add Messaging consultation with program recommendations
 
 ### What Customers Will Love
 
@@ -177,7 +177,7 @@ Based on synthesis of: market sizing (47K apps, 63% growth, Dutch 189%), competi
 ### Improvements
 
 **Booking:**
-- Replace placeholder with functional Calendly or WhatsApp scheduling
+- Replace placeholder with functional Calendly or Messaging scheduling
 - Add timezone selector (CET → PYST conversion)
 - Add 'What service are you interested in?' dropdown → pre-fills consultation context
 
@@ -185,18 +185,18 @@ Based on synthesis of: market sizing (47K apps, 63% growth, Dutch 189%), competi
 - Physical address with Google Maps embed
 - Office hours in both PYST and CET
 - Social links: LinkedIn, Instagram, YouTube (channel with expat content)
-- Add emergency contact: 'Current client with urgent need? WhatsApp our 24h line'
+- Add emergency contact: 'Current client with urgent need? Messaging our 24h line'
 
 **Contact Form:**
 - Build functional contact form (name, email, phone, country, service interest, message)
 - POST to HubSpot CRM or webhook → auto-creates lead
-- Auto-reply with guide download + WhatsApp invite
+- Auto-reply with guide download + Messaging invite
 
 ### What Customers Will Love
 
 - Timezone-aware booking — no calendar math
 - Pre-qualification dropdown — saves time
-- 24h WhatsApp for current clients — peace of mind
+- 24h Messaging for current clients — peace of mind
 
 ---
 

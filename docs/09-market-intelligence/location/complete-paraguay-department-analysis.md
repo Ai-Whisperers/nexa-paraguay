@@ -426,7 +426,7 @@
 |--------|------|--------|
 | Google Maps (via paragu-ai-leads) | Business listings with GPS | 6,796 businesses |
 | Competitor websites | Pricing research | 12 competitors |
-| WhatsApp chat with Sonia | Direct client intelligence | 2,069 messages |
+| Messaging chat with Sonia | Direct client intelligence | 2,069 messages |
 | Previous docs repository | Client history, feedback | 50+ documents |
 | Public records (SET, ImportGenius) | Business registration, trade data | WPG RUC, 33 shipments |
 | Social media | Sonia's businesses | 8K IG followers, 2.9K posts |
@@ -469,7 +469,7 @@
 | Risk | Severity | Mitigation |
 |------|----------|------------|
 | No real photos on site | High | Schedule 15-min photo shoot this week |
-| WhatsApp bot not activated | High | Scan QR (takes 1 minute) |
+| Messaging bot not activated | High | Scan QR (takes 1 minute) |
 | Domain still on Shopify | Medium | DNS change to 72.61.44.159 |
 | SEPRELAD status unknown | Medium | Ask lawyer if needed |
 | Pricing ambiguity | High | Resolve: $1,500 or $2,900 |

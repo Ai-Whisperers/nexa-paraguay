@@ -64,7 +64,7 @@ The site should frame property/vehicle/appliance assistance as **free to the cli
 |---------|---------|----------|
 | Headline | Generic relocation copy | **"Relax, I can help you"** — Sonia's confirmed slogan |
 | Subheadline | Corporate tone | First person: "Soy Sonia. Viví en Holanda 7 años. Ahora ayudo a europeos a mudarse a Paraguay sin estrés." |
-| CTA | "Contactanos" | "Hablemos por WhatsApp" (direct to bot, then to Sonia) |
+| CTA | "Contactanos" | "Hablemos por Messaging" (direct to bot, then to Sonia) |
 
 **Slogan placement:** Hero must display slogan prominently. Use across all landing pages and marketing materials.
 
@@ -113,7 +113,7 @@ The site should frame property/vehicle/appliance assistance as **free to the cli
 |----------|--------|
 | Hero | **"Relax, I can help you"** as the first thing visitors see |
 | Meta title/description | Include slogan or variant |
-| WhatsApp bot greeting | "Hola, soy el asistente de Nexa Paraguay. Relax, I can help you." |
+| Messaging bot greeting | "Hola, soy el asistente de Nexa Paraguay. Relax, I can help you." |
 | All landing pages | Slogan in hero or CTA area |
 | Marketing materials | Consistent use across social, email, ads |
 
@@ -270,7 +270,7 @@ Remove dead links from footer: "Programas", "Benelux desk". They were already id
 
 **Fix:** Verify gtag scripts are executing. Test with a page view event.
 
-### 20. Activate WhatsApp Bot
+### 20. Activate Messaging Bot
 
 **Source:** May 11 meeting §3.3
 
@@ -353,7 +353,7 @@ Remove dead links from footer: "Programas", "Benelux desk". They were already id
 | New migration info | Details for first blog post | P2 |
 | Dutch client testimonials | 2-3 clients to write short feedback | P2 |
 | Tax info | Her accountant's input for the tax calculator | P2 |
-| SIM chip | For WhatsApp bot activation | P1 |
+| SIM chip | For Messaging bot activation | P1 |
 
 ---
 
@@ -388,7 +388,7 @@ P3 — SOON (Design)
 
 P4 — SOON (Functional)
 ├── 19. Wire GA4                                                 [30 min]
-├── 20. Activate WhatsApp bot (waiting on SIM chip)              [30 min]
+├── 20. Activate Messaging bot (waiting on SIM chip)              [30 min]
 ├── 21. DNS: nexaparaguay.com → nexa.paragu-ai.com               [30 min]
 ├── 22. HubSpot + Mailchimp env keys                             [15 min]
 

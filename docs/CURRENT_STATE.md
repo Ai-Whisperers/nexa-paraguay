@@ -52,7 +52,7 @@
 | Contact fallback | If HubSpot fails, the API logs the lead and returns success; it does not insert into Supabase `leads` |
 | Mailchimp | `src/app/api/subscribe/route.ts` uses `MAILCHIMP_API_KEY` and `MAILCHIMP_LIST_ID`; without API key it logs the subscription |
 | GA4 | `NEXT_PUBLIC_GA4_ID` is configured for analytics |
-| WhatsApp bot | QR/linking remains an operational dependency before bot is usable |
+| Messaging bot | QR/linking remains an operational dependency before bot is usable |
 
 ## Security And Privacy Rules
 

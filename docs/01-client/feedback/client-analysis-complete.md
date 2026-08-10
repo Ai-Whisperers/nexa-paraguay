@@ -8,7 +8,7 @@
 | Role | Name | Relationship |
 |------|------|--------------|
 | **Founder / CEO** | Sonia | Lived in the Netherlands, went through the emigration process herself. Speaks Dutch. The real decision-maker and face of the business. Has traveled the world, now helps Dutch citizens relocate to Paraguay. |
-| **Daughter — Content & Tech** | Luana | Sonia's daughter. Handles site content, organization, keeps the page looking good. Primary WhatsApp contact for content decisions. |
+| **Daughter — Content & Tech** | Luana | Sonia's daughter. Handles site content, organization, keeps the page looking good. Primary Messaging contact for content decisions. |
 | **Daughter — Ai-Whisperers** | Kiki | Sonia's daughter. Works at Ai-Whisperers with Ivan. |
 | **Son — Tech & Operations** | Iván (owner of account) | Sonia's son. Ai-Whisperers. Built the site, manages devops, implements changes. |
 
@@ -254,7 +254,7 @@ When asked what she'd say to her sister about her work: **"Lo que más orgullo m
 |-----|--------|--------|
 | **No real testimonials** | Zero social proof on site | 10 real clients exist but no consent forms signed yet |
 | **No real data** | Site feels thin without stats | Blog as content engine for market trends |
-| **No pricing on site** | May reduce conversion | Intentional choice by Sonia — leads go through WhatsApp |
+| **No pricing on site** | May reduce conversion | Intentional choice by Sonia — leads go through Messaging |
 | **No booking system** | Manual contact only | BookingFormSection exists, not active |
 | **No CRM** | No lead tracking | #31 on roadmap |
 | **No community** | No word-of-mouth or referrals | #75 on roadmap |
@@ -270,7 +270,7 @@ When asked what she'd say to her sister about her work: **"Lo que más orgullo m
 - The site is Sonia's face to the world. Luana is the operational bridge. Iván is the technical executor.
 - Sonia likes the current visual design. No redesign needed — just cleanup and honesty.
 - The blog needs to become Sonia's voice: "I lived this, here's what you need to know."
-- Sonia explicitly does NOT want $1,500 on the public site. She sees "no prices" as a feature, not a bug — forces prospect to call/WhatsApp.
+- Sonia explicitly does NOT want $1,500 on the public site. She sees "no prices" as a feature, not a bug — forces prospect to call/Messaging.
 - The commission network is significant but invisible on site — Sonia earns from 2.75% real estate, seller commissions on cars/appliances, and referral fees from law/accounting firms.
 - Sonia's nervous breakdown in Holland is **emotionally powerful** but needs PG-friendly framing for the site.
 - "Relax, I can help you" is the brand slogan confirmed by Sonia herself.

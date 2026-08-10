@@ -18,7 +18,7 @@ haven't been gathered yet — the placeholders are load-bearing for the
 - AI-generated testimonial portraits + AI-written testimonial quotes.
 - AI-generated office / Paraguay imagery.
 - AI-written blog posts, service copy, FAQ answers, landing copy.
-- Placeholder Calendly URLs, placeholder WhatsApp numbers.
+- Placeholder Calendly URLs, placeholder Messaging numbers.
 
 None of the above is blocked by validator gates while the tenant is in
 demo mode.

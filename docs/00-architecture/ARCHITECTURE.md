@@ -6,7 +6,7 @@
 
 ## Overview
 
-Nexa Paraguay is a standalone Next.js 16 App Router site. It uses shared `@ai-whisperers/*` packages for sections, i18n, UI/admin helpers, SEO, theme, and WhatsApp-related capabilities, while keeping the client-specific content, page ordering, section overrides, and deployment configuration inside this repository.
+Nexa Paraguay is a standalone Next.js 16 App Router site. It uses shared `@ai-whisperers/*` packages for sections, i18n, UI/admin helpers, SEO, theme, and Messaging-related capabilities, while keeping the client-specific content, page ordering, section overrides, and deployment configuration inside this repository.
 
 ```
 Request
@@ -57,7 +57,7 @@ Files still used in both modes:
 | `@ai-whisperers/sections` | Base section renderer created by `createSectionsRenderer()` |
 | `@ai-whisperers/i18n` | Locale constants, default locale, cookie name, and locale handling |
 | `@ai-whisperers/client-kit` | Local packaged dependency used by admin/content tooling |
-| `@ai-whisperers/admin`, `auth`, `ui`, `seo`, `theme`, `whatsapp` | Not imported by current code and removed from `package.json` until a feature needs them |
+| `@ai-whisperers/admin`, `auth`, `ui`, `seo`, `theme`, `messaging` | Not imported by current code and removed from `package.json` until a feature needs them |
 
 Local section overrides currently registered in `src/components/SectionsRenderer.tsx`:
 

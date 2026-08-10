@@ -373,7 +373,7 @@ Hoy: 4.
 Hoy: "Pendiente, agregamos después del primer mes".
 
 - [ ] **Sí, ya tenemos 5+ reviews**
-- [ ] **Sí, publicar 1-2 que tenemos por WhatsApp**
+- [ ] **Sí, publicar 1-2 que tenemos por Messaging**
 - [ ] **No, esperar hasta tener 5+**
 - [ ] **No, no aplica**
 
@@ -414,7 +414,7 @@ Hoy: "Sonia is Paraguayan and married to a Dutch national. She personally handle
 - [ ] **Personal** — "Sonia es la que se despierta a las 6am para ir a Migraciones"
 - [ ] **Mixto** — mitad profesional, mitad personal
 
-### H3. ¿Mostramos WhatsApp directo de cada una?
+### H3. ¿Mostramos Messaging directo de cada una?
 
 - [ ] **Sí, cada una con su número**
 - [ ] **No, solo el número general**
@@ -472,7 +472,7 @@ Hoy: "Iniciá mi proceso".
 
 - [ ] **Sí, agregar form**
 - [ ] **No, no aplica**
-- [ ] **Sí, pero solo WhatsApp**
+- [ ] **Sí, pero solo Messaging**
 
 ### J3. ¿"Hecho en Asunción" visible?
 

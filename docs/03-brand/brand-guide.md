@@ -76,7 +76,7 @@ Requested assets from client:
 | brand.maskable | maskable-512.webp/png | PWA maskable icon |
 | brand.ogDefault | og-default.webp/png | Open Graph share card (1200x630) |
 | brand.twitterCard | twitter-card.webp/png | Twitter summary card |
-| brand.whatsappSquare | whatsapp-square.webp/png | WhatsApp link preview |
+| brand.messagingSquare | messaging-square.webp/png | Messaging link preview |
 | brand.placeholder | placeholder.webp/png | Branded fallback image |
 
 All brand images have WebP primary + PNG fallback format.
@@ -98,6 +98,6 @@ From `site.json`:
 - Domain: nexaparaguay.com
 - Default locale: en
 - Locales: nl, en, de, es
-- Features: testimonials (true), blog (true), whatsappFloat (true), heroImages (true), processImages (true)
-- Contact: WhatsApp +595982515138, email hola@nexaparaguay.com
+- Features: testimonials (true), blog (true), messagingFloat (true), heroImages (true), processImages (true)
+- Contact: Messaging +595982515138, email hola@nexaparaguay.com
 - Social: linkedin.com/company/nexa-paraguay, instagram.com/nexaparaguay

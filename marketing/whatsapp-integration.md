@@ -1,11 +1,11 @@
-# Nexa Paraguay — WhatsApp Integration
+# Nexa Paraguay — Messaging Integration
 **Updated:** April 2026
 
-> **Goal:** Convert website visitors via WhatsApp. Low effort, high conversion.
+> **Goal:** Convert website visitors via Messaging. Low effort, high conversion.
 
 ---
 
-## 1. WhatsApp Business Setup
+## 1. Messaging Business Setup
 
 ### Account Configuration
 
@@ -188,21 +188,21 @@ Resolver Paraguay tu situación fiscal no es una decisión pequeña, pero los n�
 
 ### Implementation Status: ✅ DONE
 
-The WhatsApp floating button is already implemented at:
+The Messaging floating button is already implemented at:
 ```
-web/components/sections/whatsapp-float.tsx
+web/components/sections/messaging-float.tsx
 ```
 
 **Features:**
 - ✅ Multi-language support (ES/EN/NL/DE/PT)
 - ✅ Context-aware messages (home, programas, proceso, calculadora, contacto)
-- ✅ Analytics tracking (`whatsapp_cta_click` event)
+- ✅ Analytics tracking (`messaging_cta_click` event)
 - ✅ Configured on all major pages via `pages/*.json`
 - ✅ Phone number in `site.json`: `595982515138`
 
 **Usage:**
 ```tsx
-<WhatsAppFloat 
+<MessagingFloat 
   phone="595982515138"
   __locale="es"
   __context="home" // auto-selects contextual message
@@ -233,7 +233,7 @@ web/components/sections/whatsapp-float.tsx
 
 ## 4. Labels & Pipeline
 
-### WhatsApp Business Labels
+### Messaging Business Labels
 
 | Label | Color | Use |
 |-------|-------|-----|
@@ -263,11 +263,11 @@ web/components/sections/whatsapp-float.tsx
 
 | Event | When |
 |-------|------|
-| `whatsapp_message_received` | Incoming message |
-| `whatsapp_quick_reply_sent` | Quick reply used |
-| `whatsapp_cta_clicked` | Clicked Calendly link |
-| `whatsapp_booked` | Consultation booked via WhatsApp |
-| `whatsapp_response_time` | Time from lead to first response |
+| `messaging_message_received` | Incoming message |
+| `messaging_quick_reply_sent` | Quick reply used |
+| `messaging_cta_clicked` | Clicked Calendly link |
+| `messaging_booked` | Consultation booked via Messaging |
+| `messaging_response_time` | Time from lead to first response |
 
 ### Response Time Targets
 
@@ -353,11 +353,11 @@ Si tienes prisa, escríbenos un email: hello@nexaparaguay.com
 ### Flow
 
 ```
-WhatsApp → Webhook → Supabase
+Messaging → Webhook → Supabase
            ↓
      Lead created/updated
            ↓
-     Tag: whatsapp_lead
+     Tag: messaging_lead
            ↓
      Email sequence triggered
 ```
@@ -365,7 +365,7 @@ WhatsApp → Webhook → Supabase
 ### Supabase Schema
 
 ```sql
-CREATE TABLE whatsapp_conversations (
+CREATE TABLE messaging_conversations (
   id UUID PRIMARY KEY,
   phone VARCHAR(20),
   lead_id UUID REFERENCES leads(id),
@@ -376,7 +376,7 @@ CREATE TABLE whatsapp_conversations (
   updated_at TIMESTAMPTZ
 );
 
-CREATE TABLE whatsapp_messages (
+CREATE TABLE messaging_messages (
   id UUID PRIMARY KEY,
   conversation_id UUID,
   direction 'inbound' | 'outbound',
@@ -393,7 +393,7 @@ CREATE TABLE whatsapp_messages (
 ### UTM Parameters
 
 ```
-Source: whatsapp
+Source: messaging
 Medium: chat
 Campaign: [specific_campaign]
 Content: [cta_button_variant]
@@ -402,9 +402,9 @@ Content: [cta_button_variant]
 ### Attribution
 
 ```
-Lead source = whatsapp
-  → Attribution: WhatsApp
-  → Revenue: attributed to WhatsApp conversions
+Lead source = messaging
+  → Attribution: Messaging
+  → Revenue: attributed to Messaging conversions
 ```
 
 ---

@@ -13,7 +13,7 @@
 
 | AREA | ITEM | DETAIL | FILE:LINE | PRIORITY |
 |------|------|--------|-----------|----------|
-| Hardcoded | Phone | Client's personal phone `595982515138` hardcoded in WA button | `/components/WhatsAppButton.tsx:10` | HIGH |
+| Hardcoded | Phone | Client's personal phone `595982515138` hardcoded in WA button | `/components/MessagingButton.tsx:10` | HIGH |
 | Hardcoded | Phone | Fallback phone `595982515138` hardcoded in booking embed | `src/components/BookingEmbedSection.tsx:20` | HIGH |
 | Hardcoded | URL | `nexa.paragu-ai.com` hardcoded as base URL in sitemap | `src/app/sitemap.ts:6` | MEDIUM |
 | Hardcoded | URL | `nexaparaguay.com` hardcoded as metadataBase | `src/app/layout.tsx:19` | MEDIUM |
@@ -118,7 +118,7 @@
 | AREA | ITEM | DETAIL | FILE:LINE | PRIORITY |
 |------|------|--------|-----------|----------|
 | Mobile | Header | Mobile hamburger menu uses `styled-jsx` — may not render in all environments | `src/components/Header.tsx:101-106` | MEDIUM |
-| Mobile | WA button | Fixed bottom-right WhatsApp button overlaps with mobile content | `components/WhatsAppButton.tsx:23-24` | LOW |
+| Mobile | WA button | Fixed bottom-right Messaging button overlaps with mobile content | `components/MessagingButton.tsx:23-24` | LOW |
 | Mobile | Touch targets | FAQ filter buttons have small touch targets (< 44px) on mobile | `src/components/FaqSection.tsx:100-114` | LOW |
 
 ---

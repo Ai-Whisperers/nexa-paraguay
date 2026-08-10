@@ -1,6 +1,6 @@
 # Sonia Weiss — Complete Profile
 
-> Compiled: 2026-05-10 | Sources: Public records, web search, WhatsApp chat analysis, import databases, social media
+> Compiled: 2026-05-10 | Sources: Public records, web search, Messaging chat analysis, import databases, social media
 > **Identity corrections applied 2026-07-23** based on Ivan's authoritative answers in `psycology/docs/identity-corrections/ANSWERS.md`. See cross-ref note at end of file.
 
 ---
@@ -90,7 +90,7 @@ Her goal was to stay in the Netherlands long enough to learn the culture and lan
 | **TikTok** | @laviejaholanda — active, ~50+ videos |
 | **Facebook** | facebook.com/LaViejaHolanda — 6,700+ photos |
 | **Domestika** | laviejaholanda3 |
-| **WhatsApp Business** | 0985 882 975 (catalog) / 0983 275 987 (sales) |
+| **Messaging Business** | 0985 882 975 (catalog) / 0983 275 987 (sales) |
 | **Current Address** | Pirizal 590 e/ Campo Vía, Fernando de la Mora |
 | **Old Address** | Senador Huey Pierce Long 370, Asunción |
 | **Hours** | Mon-Fri 10-19, Saturdays by appointment only |
@@ -207,7 +207,7 @@ Sonia's involvement likely dates back over a decade. The phone number linked to 
 
 ## Ethical Profile
 
-From direct WhatsApp communication (May 2026):
+From direct Messaging communication (May 2026):
 
 - **Refuses fake testimonials** — would rather show empty sections than fabricate social proof
 - **Prefers honesty over conversion** — no fabricated stats, no fake case studies

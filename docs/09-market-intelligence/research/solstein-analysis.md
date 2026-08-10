@@ -53,7 +53,7 @@ Moderate. The 8-12 week process creates high switching costs mid-stream (documen
 9 services across 4 programs that cover the full relocation stack: immigration, banking, tax registration, company formation, real estate (rental + purchase + land), due diligence, notarial services. Benelux specialization is a real differentiator in a market where most competitors only operate in Spanish/English. Single-vertical concentration is the main risk.
 
 ### 7. Integration Potential — 5/5 (weight 1)
-Nexa Paraguay is already on the Ai-Whisperers stack: @ai-whisperers/client-kit, shared CI/CD pipelines, ParaguAI VPS infrastructure. This is the highest integration-readiness of any client. Directly applicable: Golden Visa Advisory cross-referrals, paragu-ai-builder landing pages for each program, WhatsApp automation for lead qualification, and HubSpot CRM pipeline tracking. Integration effort is near-zero.
+Nexa Paraguay is already on the Ai-Whisperers stack: @ai-whisperers/client-kit, shared CI/CD pipelines, ParaguAI VPS infrastructure. This is the highest integration-readiness of any client. Directly applicable: Golden Visa Advisory cross-referrals, paragu-ai-builder landing pages for each program, Messaging automation for lead qualification, and HubSpot CRM pipeline tracking. Integration effort is near-zero.
 
 ### 8. Growth Trajectory — 4/5 (weight 1)
 Paraguay relocation demand is on an upward trend driven by European tax refugees, digital nomads, and retirees seeking the 10% territorial tax regime. 200+ Dutch/Belgian families served. Scalable via content marketing (blog exists), paid acquisition (GA4 connected), Benelux partner network (wealth managers, accountants), and AI-automated lead qualification through the ParaguAI platform. Risk: growth metrics are self-reported and unverified.
@@ -84,7 +84,7 @@ Paraguay relocation demand is on an upward trend driven by European tax refugees
 2. **Real team photos** — Replace 5+ AI placeholders with real portraits
 3. **Client case studies** — Move from generic testimonials to named, detailed case studies with measurable outcomes
 4. **Content marketing** — Expand the blog with content targeting Benelux-specific tax/relocation topics
-5. **WhatsApp automation** — Build a lead qualification bot using the Ai-Whisperers WhatsApp bridge
+5. **Messaging automation** — Build a lead qualification bot using the Ai-Whisperers Messaging bridge
 6. **CRM pipeline** — Define HubSpot stages and tracking for lead-to-client conversion metrics
 7. **Cross-sell with Golden Visa** — Bundle residency + visa advisory for a combined value prop
 

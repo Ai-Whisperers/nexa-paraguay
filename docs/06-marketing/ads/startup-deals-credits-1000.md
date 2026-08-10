@@ -122,7 +122,7 @@
 ### 2.6 Groq — Free tier
 | Free | Rate-limited but generous — ultra-fast (~1,000 tok/s) |
 | Key exists | Yes — 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 |
-| Best for | Ultra-fast inference, WhatsApp bot |
+| Best for | Ultra-fast inference, Messaging bot |
 
 ### 2.7 Together AI — $100 sign-up
 | Free | Up to $100 free credits |

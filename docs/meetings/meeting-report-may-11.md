@@ -136,7 +136,7 @@ Sonia mentioned a competitor called **Paraguay Project** (paraguayproject.nl or 
 - **Strong preference for older clients** over younger crowd
 - **Investors intimidate her** but she'll work with them
 
-### 3.3 WhatsApp Bot Decision
+### 3.3 Messaging Bot Decision
 
 | Concern | Detail |
 |---------|--------|
@@ -174,7 +174,7 @@ Her aspirational target: **3-5 clients/month** generating $5-10K/month in combin
 | 4 | **Add "Relax, I can help you"** slogan to hero | P0 | ⏳ Pending |
 | 5 | **Remove fake team photos**, replace with Sonia + Luana | P1 | ⏳ Pending |
 | 6 | **Build cost calculator**: Income → tax comparison across countries | P1 | ⏳ Pending |
-| 7 | **Set up WhatsApp bot** with voice message support | P1 | ⏳ Pending |
+| 7 | **Set up Messaging bot** with voice message support | P1 | ⏳ Pending |
 | 8 | **Get photos from Sonia** | P0 | ⏳ Waiting on Sonia |
 | 9 | **Get Sonia's Google Maps location** (Casa Weiss) | P1 | ⏳ Waiting on Sonia |
 | 10 | **Analyze Paraguay Project** site for reference | P2 | ⏳ Waiting on link |
@@ -193,7 +193,7 @@ Her aspirational target: **3-5 clients/month** generating $5-10K/month in combin
 | 5 | **Ask 2-3 Dutch clients** for written feedback/testimonials | This month |
 | 6 | **Luana to make a short video** introducing herself (in Dutch) | This month |
 | 7 | **Review blog content** when ready | Ongoing |
-| 8 | **Scan WhatsApp QR** when chip arrives | When chip ready |
+| 8 | **Scan Messaging QR** when chip arrives | When chip ready |
 
 ---
 
@@ -222,5 +222,5 @@ Key sections to review carefully (most critical conversations):
 - **0:00-10:00** — Pricing, $1,500 confirmed
 - **10:00-20:00** — Commissions, costs, capacity, competition
 - **20:00-35:00** — Her story, slogan, voice, blog, team
-- **35:00-50:00** — Legal/logistics, WhatsApp bot, Facebook groups
+- **35:00-50:00** — Legal/logistics, Messaging bot, Facebook groups
 - **50:00-58:00** — Services matrix review, closing

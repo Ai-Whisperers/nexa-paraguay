@@ -83,7 +83,7 @@ This inventory is generated from `images.json` and reflects real slots used by t
 | ogDefault | `/images/brand/og-default.webp` | `/images/brand/og-default.png` | Nexa Paraguay Open Graph share card |
 | placeholder | `/images/brand/placeholder.webp` | `/images/brand/placeholder.png` | Nexa Paraguay branded fallback |
 | twitterCard | `/images/brand/twitter-card.webp` | `/images/brand/twitter-card.png` | Nexa Paraguay Twitter summary card |
-| whatsappSquare | `/images/brand/whatsapp-square.webp` | `/images/brand/whatsapp-square.png` | Nexa Paraguay WhatsApp link preview |
+| messagingSquare | `/images/brand/messaging-square.webp` | `/images/brand/messaging-square.png` | Nexa Paraguay Messaging link preview |
 
 ## email (7)
 

@@ -85,7 +85,7 @@
 
 | File | Dimensions | Purpose | Status |
 |------|-----------|--------|--------|
-| `whatsapp-cta-bg.jpg` | 800×600 | WhatsApp CTA section background | ⚠️ Missing |
+| `messaging-cta-bg.jpg` | 800×600 | Messaging CTA section background | ⚠️ Missing |
 | `booking-bg.jpg` | 1920×800 | Booking section background | ⚠️ Missing |
 | `comparison-table-header.jpg` | 1200×400 | Countries comparison page header | ⚠️ Missing |
 

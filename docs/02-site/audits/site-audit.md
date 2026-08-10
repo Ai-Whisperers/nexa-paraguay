@@ -163,8 +163,8 @@ All now consistent with the main process narrative.
 
 | Field | Value | Status |
 |-------|-------|--------|
-| Phone | +595 982 515 138 | 🟡 Confirmed with WhatsApp number |
-| WhatsApp | 595982515138 | 🟡 **Same number for phone and WhatsApp** — fine but verify |
+| Phone | +595 982 515 138 | 🟡 Confirmed with Messaging number |
+| Messaging | 595982515138 | 🟡 **Same number for phone and Messaging** — fine but verify |
 | Email | hola@nexaparaguay.com | ✅ |
 | Address | Asunción, Villa Morra | 🟡 Not verified with client |
 | Hours | Mon-Fri 09:00-18:00, Sat 10:00-14:00 | 🟡 Not verified with client |
@@ -185,7 +185,7 @@ All now consistent with the main process narrative.
 ### Social
 - Instagram: ✅ Set
 - LinkedIn: ✅ In site.json
-- WhatsApp: ✅ Set
+- Messaging: ✅ Set
 - Facebook: null — ❌ If client has FB, should be added
 
 ---
@@ -230,7 +230,7 @@ All now consistent with the main process narrative.
 | HubSpot | 🔴 **Placeholder** — contact forms will not work |
 | Mailchimp | 🔴 **Placeholder** — newsletter signup will not work |
 | Calendly | ✅ Wired to calendly.com/nexaparaguay/consulta |
-| WhatsApp (click-to-chat) | ✅ Working with `wa.me/595982515138` |
+| Messaging (click-to-chat) | ✅ Working with `wa.me/595982515138` |
 | Instagram | ✅ Linked |
 | LinkedIn | ✅ In site.json |
 
@@ -253,7 +253,7 @@ All now consistent with the main process narrative.
 
 | Category | WebP Count | Notes |
 |----------|-----------|-------|
-| Brand logos | 10 | logos, favicon, OG cards, WhatsApp preview |
+| Brand logos | 10 | logos, favicon, OG cards, Messaging preview |
 | Hero | 6 | 1 generic + 5 localized (en/es/nl/de/nl) |
 | Why Paraguay | 9 | economic, investment, lifestyle, tax, growth, agribusiness, community, nature, culture |
 | Process | 9 | 5 main + 4 supplementary |
@@ -306,9 +306,9 @@ All now consistent with the main process narrative.
 ### User Journey
 1. User lands on homepage → sees hero + services + packages + process
 2. CTA: "Book free consultation" → goes to `/contacto` page
-3. Contact page has: Calendly embed link + WhatsApp fallback + email
+3. Contact page has: Calendly embed link + Messaging fallback + email
 4. Secondary flow: Intake wizard at `/asistente` (not nav-linked)
-5. WhatsApp float button on every page
+5. Messaging float button on every page
 
 **Missing:** Post-submission confirmation page, email nurture sequence (asset headers exist but no content), analytics tracking on CTAs.
 

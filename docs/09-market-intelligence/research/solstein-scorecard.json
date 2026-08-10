@@ -35,7 +35,7 @@
     "Tech stack modernity": {
       "score": 4,
       "weight": 2,
-      "rationale": "Next.js 16 + Tailwind v4 + React 19 + TS 5. Modern stack. 4-locale i18n. HubSpot/Mailchimp/GA4. 111 responsive images. SEO-optimized. WhatsApp lead capture.",
+      "rationale": "Next.js 16 + Tailwind v4 + React 19 + TS 5. Modern stack. 4-locale i18n. HubSpot/Mailchimp/GA4. 111 responsive images. SEO-optimized. Messaging lead capture.",
       "risk_factors": [
         "Pages Router (not App Router)",
         "No headless CMS — content in JSON files"
@@ -62,7 +62,7 @@
     "Integration potential": {
       "score": 5,
       "weight": 1,
-      "rationale": "Already on Ai-Whisperers stack: client-kit, CI/CD, ParaguAI infra. Golden Visa cross-referral, builder landing pages, WhatsApp automation, HubSpot CRM — all directly applicable.",
+      "rationale": "Already on Ai-Whisperers stack: client-kit, CI/CD, ParaguAI infra. Golden Visa cross-referral, builder landing pages, Messaging automation, HubSpot CRM — all directly applicable.",
       "risk_factors": []
     },
     "Growth trajectory": {

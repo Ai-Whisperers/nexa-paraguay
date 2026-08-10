@@ -190,7 +190,7 @@
 
 | File | Size | What It Covers | Status |
 |------|------|----------------|--------|
-| **whatsapp-integration.md** | 2KB | WhatsApp marketing | 🟡 Stale (Apr) |
+| **messaging-integration.md** | 2KB | Messaging marketing | 🟡 Stale (Apr) |
 
 ### SEO (docs/07-seo/)
 
@@ -228,7 +228,7 @@
 | Subdirectory | What It Covers | Status |
 |-------------|----------------|--------|
 | **hubspot/** | HubSpot + Mailchimp setup | 🟡 Env keys not set |
-| **whatsapp/** | WhatsApp bot runbook | 🟡 Needs SIM chip |
+| **messaging/** | Messaging bot runbook | 🟡 Needs SIM chip |
 | **analytics/** | GA4 setup | 🟡 Tag not firing |
 
 ### Launch (docs/11-launch/)

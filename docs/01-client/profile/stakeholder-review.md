@@ -32,7 +32,7 @@ cross_refs:
 ## Checklist for Operations Director (Paraguay)
 
 - [ ] Asuncion photography plan — commissioned shoot dates?
-- [ ] WhatsApp number +595 XXX XXX XXX — which number goes live?
+- [ ] Messaging number +595 XXX XXX XXX — which number goes live?
 - [ ] Calendly event "Consulta gratuita 30 min" created on the team calendar?
 - [ ] Team member names + roles on /sobre — replace roles-only placeholders with real names?
 

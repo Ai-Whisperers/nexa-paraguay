@@ -387,7 +387,7 @@ Kept `CLAUDE.md` and `README.md` at root (those are file index / project overvie
 | Date | Fix | Image | Skill ref |
 |---|---|---|---|
 | 2026-06-14 | Replaced platform monorepo stub with personal repo build | `nexa-paraguay:prod-20260614-1828` | Two Repos section |
-| 2026-06-14 | Fixed 4 missing imports in `src/app/layout.tsx` (Script, CookieBanner, CookieConsent, WhatsAppButton) | same | Build-time layout.tsx pitfall |
+| 2026-06-14 | Fixed 4 missing imports in `src/app/layout.tsx` (Script, CookieBanner, CookieConsent, MessagingButton) | same | Build-time layout.tsx pitfall |
 | 2026-06-15 | Added `src/proxy.ts` to fix bare `/` 404 + RSC preflight (Next 16 `proxy` function export) | `nexa-paraguay:prod-20260615-0857` | Orphan i18n pitfall |
 | 2026-06-15 | **Full P0-P3 sweep** (this commit): deleted 4 orphan landing pages, rewrote home.programs as service categories, updated comparisonPage Nexa tier, deleted fabricated `testimonials.json`, anonymized home testimonials, added "📷 Referencial" team badge, created `ComplianceSection` wired to 7 page configs, removed "Pendiente" from SEPRELAD, removed HubSpot/Mailchimp placeholder portal IDs, deleted platform monorepo app + updated CI workflow, aligned nav structure, moved audit docs to `docs/audits/`, bumped next to 16.2.6, added `deutschlandPage` to `de.json`, achieved 100% per-locale image alt coverage | `nexa-paraguay:prod-20260615-0938` | This document |
 

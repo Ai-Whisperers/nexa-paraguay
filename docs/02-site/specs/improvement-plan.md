@@ -57,7 +57,7 @@ cross_refs:
 ## Section 3: Conversion Path
 
 3.1 Calendly/Booking — P0: create account, event, update site.json
-3.2 WhatsApp — P0: confirm number, add floating button on all pages
+3.2 Messaging — P0: confirm number, add floating button on all pages
 3.3 Contact form — P0: implemented route posts to HubSpot Forms API and logs fallback; no Supabase `leads` insert exists
 3.4 Lead capture — P1: newsletter signup, Mailchimp sync
 

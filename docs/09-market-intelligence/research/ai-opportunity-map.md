@@ -11,7 +11,7 @@
 
 ## Executive Summary
 
-Nexa Paraguay has the **strongest AI foundation** of any competitor in the Paraguay relocation market — modern tech stack (Next.js 16, React 19, TypeScript 5), existing WhatsApp bridge, Hermes agent infrastructure, and HubSpot CRM integration. Yet no AI capabilities are currently deployed.
+Nexa Paraguay has the **strongest AI foundation** of any competitor in the Paraguay relocation market — modern tech stack (Next.js 16, React 19, TypeScript 5), existing Messaging bridge, Hermes agent infrastructure, and HubSpot CRM integration. Yet no AI capabilities are currently deployed.
 
 This document maps **8 specific AI opportunities** with descriptions, current state, proposed AI solution, impact assessment, complexity rating, tools available, and build time estimates. Total time to implement all 8: **~3 weeks**.
 
@@ -21,16 +21,16 @@ This document maps **8 specific AI opportunities** with descriptions, current st
 
 ## 2. The 8 AI Opportunities
 
-### 2.1 Lead Qualification WhatsApp Bot
+### 2.1 Lead Qualification Messaging Bot
 
 | Dimension | Detail |
 |-----------|--------|
-| **Description** | AI-powered WhatsApp bot that qualifies incoming leads 24/7 — answers FAQ, collects basic info, scores lead readiness, and books human consult calls |
+| **Description** | AI-powered Messaging bot that qualifies incoming leads 24/7 — answers FAQ, collects basic info, scores lead readiness, and books human consult calls |
 | **Current State** | Basic HubSpot form + manual follow-up during business hours |
-| **AI Solution** | Deploy AI agent on existing WhatsApp bridge that can hold natural conversations in 4 languages (NL/EN/DE/ES), extract lead data, and push to HubSpot |
+| **AI Solution** | Deploy AI agent on existing Messaging bridge that can hold natural conversations in 4 languages (NL/EN/DE/ES), extract lead data, and push to HubSpot |
 | **Impact** | **High** — 24/7 lead capture, 50%+ reduction in sales time, 2x more leads |
-| **Complexity** | **Low** — WhatsApp bridge already running, Hermes agent ready |
-| **Tools Available** | WhatsApp bridge (existing), Hermes agent, HubSpot API, LLM (DeepSeek/GPT) |
+| **Complexity** | **Low** — Messaging bridge already running, Hermes agent ready |
+| **Tools Available** | Messaging bridge (existing), Hermes agent, HubSpot API, LLM (DeepSeek/GPT) |
 | **Build Time** | **1 day** |
 
 ### 2.2 Document Processing & Validation
@@ -61,21 +61,21 @@ This document maps **8 specific AI opportunities** with descriptions, current st
 
 | Dimension | Detail |
 |-----------|--------|
-| **Description** | Automated timeline tracking system that sends milestone updates, document reminders, and check-in messages via WhatsApp/email throughout the 8–12 week residency process |
+| **Description** | Automated timeline tracking system that sends milestone updates, document reminders, and check-in messages via Messaging/email throughout the 8–12 week residency process |
 | **Current State** | Email/manual tracking of each client's process stage |
-| **AI Solution** | CRM-triggered workflow: milestone reached → personalized WhatsApp update sent → next steps shared with checklist → automated reminder if action overdue |
+| **AI Solution** | CRM-triggered workflow: milestone reached → personalized Messaging update sent → next steps shared with checklist → automated reminder if action overdue |
 | **Impact** | **Medium** — better client experience, fewer dropped balls, higher referral rates, 5-star reviews |
-| **Complexity** | **Medium** — needs CRM integration with WhatsApp bridge |
-| **Tools Available** | Cron jobs (existing), WhatsApp bridge, HubSpot workflows, message templates |
+| **Complexity** | **Medium** — needs CRM integration with Messaging bridge |
+| **Tools Available** | Cron jobs (existing), Messaging bridge, HubSpot workflows, message templates |
 | **Build Time** | **2 days** |
 
 ### 2.5 Lead Scoring Engine
 
 | Dimension | Detail |
 |-----------|--------|
-| **Description** | AI system that scores every inbound lead by readiness and potential value — combining Solstein enrichment data with behavioral signals from site visits, WhatsApp interactions, and email engagement |
+| **Description** | AI system that scores every inbound lead by readiness and potential value — combining Solstein enrichment data with behavioral signals from site visits, Messaging interactions, and email engagement |
 | **Current State** | No systematic lead scoring. All leads treated equally. |
-| **AI Solution** | Multi-signal scoring model: (a) Solstein pipeline enriches web data, (b) content engagement tracking, (c) WhatsApp conversation sentiment, (d) tax/policy news triggers. Output: priority queue for sales team. |
+| **AI Solution** | Multi-signal scoring model: (a) Solstein pipeline enriches web data, (b) content engagement tracking, (c) Messaging conversation sentiment, (d) tax/policy news triggers. Output: priority queue for sales team. |
 | **Impact** | **High** — prioritize high-value leads, react to market triggers (tax policy changes, media coverage), 40% better close rate on scored leads |
 | **Complexity** | **Medium** — needs Solstein pipeline integration |
 | **Tools Available** | Solstein enrichment, Brave News, Exa web search, HubSpot API |
@@ -93,16 +93,16 @@ This document maps **8 specific AI opportunities** with descriptions, current st
 | **Tools Available** | LLM reasoning, tax calculation logic, structured data collection |
 | **Build Time** | **5 days** |
 
-### 2.7 WhatsApp Automated Nurture Drip
+### 2.7 Messaging Automated Nurture Drip
 
 | Dimension | Detail |
 |-----------|--------|
-| **Description** | Automated WhatsApp drip campaign that nurtures leads over 14 days: Day 1 intro/value prop, Day 3 testimonial/case study, Day 7 transparent pricing, Day 10 FAQ/cost savings, Day 14 consult booking CTA |
+| **Description** | Automated Messaging drip campaign that nurtures leads over 14 days: Day 1 intro/value prop, Day 3 testimonial/case study, Day 7 transparent pricing, Day 10 FAQ/cost savings, Day 14 consult booking CTA |
 | **Current State** | No automated follow-up sequence — leads who don't book immediately are lost |
-| **AI Solution** | Scheduled WhatsApp drip using message templates with personalization: lead name, origin country, interested program. Track open rate, click rate, and drop-off. Adaptive timing based on engagement. |
+| **AI Solution** | Scheduled Messaging drip using message templates with personalization: lead name, origin country, interested program. Track open rate, click rate, and drop-off. Adaptive timing based on engagement. |
 | **Impact** | **Medium** — recovers 20–30% of dropped leads, pipeline value increase |
-| **Complexity** | **Low** — WhatsApp bridge supports scheduled sends |
-| **Tools Available** | Cron jobs, WhatsApp bridge, message templates, HubSpot lists |
+| **Complexity** | **Low** — Messaging bridge supports scheduled sends |
+| **Tools Available** | Cron jobs, Messaging bridge, message templates, HubSpot lists |
 | **Build Time** | **1 day** |
 
 ### 2.8 Predictive Property Matching
@@ -111,10 +111,10 @@ This document maps **8 specific AI opportunities** with descriptions, current st
 |-----------|--------|
 | **Description** | AI system that analyzes client profile (budget, family size, lifestyle preferences, school requirements, proximity needs) and auto-matches to available properties from Nexa's real estate database |
 | **Current State** | Manual property search and recommendation by consultant |
-| **AI Solution** | Structured client intake → vector embedding of preferences → semantic search of property database → ranked matches with explanation of why each fits → WhatsApp-delivered property cards |
+| **AI Solution** | Structured client intake → vector embedding of preferences → semantic search of property database → ranked matches with explanation of why each fits → Messaging-delivered property cards |
 | **Impact** | **Medium** — upsell opportunity ($500+ commission per property), better client experience, reduced consultant time |
 | **Complexity** | **Medium** — needs property database integration |
-| **Tools Available** | Vector search, Maps API, structured data, WhatsApp image cards |
+| **Tools Available** | Vector search, Maps API, structured data, Messaging image cards |
 | **Build Time** | **5 days** |
 
 ---
@@ -123,13 +123,13 @@ This document maps **8 specific AI opportunities** with descriptions, current st
 
 | # | Opportunity | Impact | Complexity | Build Time | Tools Available | Priority |
 |---|-----------|:------:|:----------:|:----------:|:---------------:|:--------:|
-| 1 | Lead Qualification WhatsApp Bot | High | Low | 1 day | WhatsApp bridge, Hermes, HubSpot | **P0** |
+| 1 | Lead Qualification Messaging Bot | High | Low | 1 day | Messaging bridge, Hermes, HubSpot | **P0** |
 | 2 | Document Processing & Validation | High | Medium | 3–5 days | Vision models, OCR | **P1** |
 | 3 | Personalized Content & Localization | Medium | Low | 2 days | LLM, translation, Brave | **P0** |
-| 4 | Client Journey Automation | Medium | Medium | 2 days | CRM, WhatsApp, Cron | **P1** |
+| 4 | Client Journey Automation | Medium | Medium | 2 days | CRM, Messaging, Cron | **P1** |
 | 5 | Lead Scoring Engine | High | Medium | 3 days | Solstein, Brave, Exa | **P1** |
 | 6 | AI-Powered Pre-Consult | High | Medium-High | 5 days | LLM, tax calculator | **P1** |
-| 7 | WhatsApp Nurture Drip | Medium | Low | 1 day | WhatsApp, Cron, templates | **P0** |
+| 7 | Messaging Nurture Drip | Medium | Low | 1 day | Messaging, Cron, templates | **P0** |
 | 8 | Predictive Property Matching | Medium | Medium | 5 days | Vector search, Maps API | **P2** |
 
 ---
@@ -142,7 +142,7 @@ This document maps **8 specific AI opportunities** with descriptions, current st
 |-----------|:------:|-----------|
 | Tech Stack | 9/10 | Next.js 16, React 19, TS 5, Tailwind v4 |
 | Integrations | 7/10 | HubSpot, GA4, Mailchimp connected |
-| WhatsApp | 8/10 | Bridge exists and running |
+| Messaging | 8/10 | Bridge exists and running |
 | AI/LLM Infrastructure | 8/10 | Hermes agent, multiple model access |
 | Data Pipeline | 5/10 | No CRM pipeline, no document processing |
 | Automation | 4/10 | No automated nurture, no client tracking |
@@ -153,8 +153,8 @@ This document maps **8 specific AI opportunities** with descriptions, current st
 
 | # | Win | Time | Expected Outcome |
 |---|-----|:----:|-----------------|
-| 1 | WhatsApp lead qualification bot | 1 day | 24/7 lead capture, 2x lead volume |
-| 2 | WhatsApp nurture drip sequence | 1 day | 20–30% lead recovery |
+| 1 | Messaging lead qualification bot | 1 day | 24/7 lead capture, 2x lead volume |
+| 2 | Messaging nurture drip sequence | 1 day | 20–30% lead recovery |
 | 3 | Automated content engine | 2 days | 5x blog output, SEO lift |
 
 Total quick wins: **~48 hours** for 3 high-impact AI deployments.
@@ -181,7 +181,7 @@ Total quick wins: **~48 hours** for 3 high-impact AI deployments.
 
 | Component | What's Needed | Status |
 |-----------|--------------|--------|
-| WhatsApp Bridge | AI communication channel | **Already running** |
+| Messaging Bridge | AI communication channel | **Already running** |
 | HubSpot CRM | Lead management, workflows | **Integrated** |
 | LLM (DeepSeek/GPT) | Natural language understanding | **Available via Hermes** |
 | Vision Model (Claude/GPT-4V) | Document OCR and validation | **Available** |
@@ -195,7 +195,7 @@ Total quick wins: **~48 hours** for 3 high-impact AI deployments.
 ## 7. Implementation Roadmap
 
 ### Week 1 (Days 1–3)
-- Day 1: WhatsApp lead qualification bot + nurture drip
+- Day 1: Messaging lead qualification bot + nurture drip
 - Day 2–3: AI content engine + first 10 blog posts
 
 ### Week 2 (Days 4–10)

@@ -1,6 +1,6 @@
-# WhatsApp AI Bot Setup
+# Messaging AI Bot Setup
 
-This guide enables the Nexa WhatsApp AI bot to handle 80% of inquiries automatically.
+This guide enables the Nexa Messaging AI bot to handle 80% of inquiries automatically.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ curl -X POST "http://evolution:8080/instance/create" \
 
 **This is the most important step. Without it, the bot cannot connect.**
 
-1. On the team's phone, open **WhatsApp**
+1. On the team's phone, open **Messaging**
 2. Go to **Settings → Linked Devices → Link a Device**
 3. Open the QR code URL:
    ```
@@ -41,7 +41,7 @@ Run the setup script:
 
 ```bash
 cd /root/nexa-paraguay
-bash scripts/setup-whatsapp-sla.sh
+bash scripts/setup-messaging-sla.sh
 ```
 
 This configures:
@@ -51,7 +51,7 @@ This configures:
 
 ## Step 4: Test the Bot
 
-1. Send a WhatsApp message to the Nexa number: **+595 982 515 138**
+1. Send a Messaging message to the Nexa number: **+595 982 515 138**
 2. Verify you get the auto-reply within 5 seconds
 3. Ask a question about residency (e.g., "How much does residency cost?")
 4. Verify the AI responds with accurate information from the Nexa knowledge base
@@ -70,7 +70,7 @@ docker service logs evolution_evolution_api --tail 100 | grep "nexa-paraguay-ai"
 |---------|----------|
 | QR not showing | Check instance status: `curl -s http://evolution:8080/instance/fetchInstances` |
 | QR expired | Restart connection: `curl -s -X DELETE http://evolution:8080/instance/logout/nexa-paraguay-ai` |
-| AI not responding | Check LightRAG is seeded: verify `/root/nexa-paraguay/docs/08-integrations/whatsapp-ai-bridge.md` |
+| AI not responding | Check LightRAG is seeded: verify `/root/nexa-paraguay/docs/08-integrations/messaging-ai-bridge.md` |
 | Wrong language | AI uses "ventas" mode — it auto-detects user language |
 | Rate limiting | Evolution API handles queue — max 50 messages/min |
 

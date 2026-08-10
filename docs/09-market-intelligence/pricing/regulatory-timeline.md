@@ -170,7 +170,7 @@ This timeline documents the key policy milestones, their impact on the market, a
 
 ### 4.3 Positioning Strategy
 
-Nexa should position as **"the digital-first firm that makes the digital system easy"** — while competitors struggle with digital transition, Nexa (with its Next.js stack, WhatsApp bridge, and AI infrastructure) is already digital-native.
+Nexa should position as **"the digital-first firm that makes the digital system easy"** — while competitors struggle with digital transition, Nexa (with its Next.js stack, Messaging bridge, and AI infrastructure) is already digital-native.
 
 ---
 

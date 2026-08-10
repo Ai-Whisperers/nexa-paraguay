@@ -237,11 +237,11 @@
 
 ### Q5.1 — CRM / Seguimiento (NUEVO)
 
-> "¿Dónde llevás el seguimiento de tus clientes? ¿WhatsApp? ¿Cuaderno? ¿Querés que te arme un CRM simple?"
+> "¿Dónde llevás el seguimiento de tus clientes? ¿Messaging? ¿Cuaderno? ¿Querés que te arme un CRM simple?"
 
-### Q5.2 — Bot de WhatsApp (NUEVO)
+### Q5.2 — Bot de Messaging (NUEVO)
 
-> "El bot de WhatsApp está listo pero necesita que escaneés un QR. ¿Tenés el teléfono ahora? Lo hacemos en 1 minuto."
+> "El bot de Messaging está listo pero necesita que escaneés un QR. ¿Tenés el teléfono ahora? Lo hacemos en 1 minuto."
 
 ### Q5.3 — Dominio nexaparaguay.com
 
@@ -305,7 +305,7 @@
 
 ### Q7.2 — Grupos de holandeses
 
-> "¿Estás en grupos de Facebook/Telegram/WhatsApp de holandeses en Paraguay? ¿Podés compartir el sitio ahí?"
+> "¿Estás en grupos de Facebook/Telegram/Messaging de holandeses en Paraguay? ¿Podés compartir el sitio ahí?"
 
 ### Q7.3 — Contenido para ZZPers
 
@@ -349,7 +349,7 @@
 
 ### Q8.5 — Familia en el negocio
 
-> "Luana maneja contenido. ¿Kiki podría ayudar con WhatsApp y comunicación con clientes?"
+> "Luana maneja contenido. ¿Kiki podría ayudar con Messaging y comunicación con clientes?"
 
 ### Q8.6 — Contratación
 
@@ -373,7 +373,7 @@
 
 ### Q8.11 — AI en el negocio
 
-> "¿Querés AI (bot de WhatsApp, automatización) o todo humano?"
+> "¿Querés AI (bot de Messaging, automatización) o todo humano?"
 
 ---
 
@@ -434,7 +434,7 @@
 | 3 | Versión de su historia (con colapso o PG) | About page, hero, blog | Marca sin diferencial real |
 | 4 | Voz: primera o tercera persona | Todo el contenido del sitio | Tono incorrecto para su marca |
 | 5 | Fotos reales | About, hero, credibilidad | Placeholders AI = poca confianza |
-| 6 | WhatsApp QR escaneado | Lead generation | Bot configurado pero muerto |
+| 6 | Messaging QR escaneado | Lead generation | Bot configurado pero muerto |
 | 7 | Dominio nexaparaguay.com | Marca, credibilidad | Sitio en dominio ajeno |
 | 8 | Cliente ideal (familias? ZZPers? Alemanes?) | Targeting, contenido, SEO | Esfuerzo mal direccionado |
 | 9 | Precios post-residencia ($150-250/día) | Monetización de servicios | Servicios sin precio = sin margen |

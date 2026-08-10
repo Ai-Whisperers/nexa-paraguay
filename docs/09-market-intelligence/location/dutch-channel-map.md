@@ -29,15 +29,15 @@ This document maps every significant Dutch/Belgian channel, community, influence
 
 ---
 
-## 2. WhatsApp Communities
+## 2. Messaging Communities
 
 | Channel | Platform | Reach | Activity | Language |
 |---------|----------|:-----:|:--------:|:--------:|
 | Dutchies in Paraguay | Dutchies.app | 500K+ global users | High | Dutch |
-| MigratieMeesters WhatsApp | migratiemeesters.com | Active | High (daily) | Dutch |
+| MigratieMeesters Messaging | migratiemeesters.com | Active | High (daily) | Dutch |
 | Expats in Paraguay (FB) | Facebook | ~12,000 members | Daily | EN/ES |
 
-**Recommendation:** Get listed on Dutchies.app's Paraguay group (they have 300+ country-specific WhatsApp groups). This is a 30-minute task with ongoing lead flow.
+**Recommendation:** Get listed on Dutchies.app's Paraguay group (they have 300+ country-specific Messaging groups). This is a 30-minute task with ongoing lead flow.
 
 ---
 
@@ -116,7 +116,7 @@ This document maps every significant Dutch/Belgian channel, community, influence
 
 | Detail | Information |
 |--------|------------|
-| **Role** | Direct competitor — Dutch residency service, active Telegram/WhatsApp |
+| **Role** | Direct competitor — Dutch residency service, active Telegram/Messaging |
 | **Reach** | 400+ Telegram members, active blog, community groups |
 | **Fit for Nexa** | **Monitor** — no AI, thin content, but has community presence |
 | **Recommendation** | Monitor for growth. If they add AI or expand, respond. Currently low threat but growing. |

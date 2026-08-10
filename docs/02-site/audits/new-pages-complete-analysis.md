@@ -225,7 +225,7 @@ Guide pages are the #1 SEO driver for relocation sites. Each guide captures emai
 2. Modal: "Enter your email"
 3. Email sent to HubSpot CRM
 4. Auto-email sends PDF link
-5. Sonia gets notification in WhatsApp
+5. Sonia gets notification in Messaging
 6. If user doesn't respond in 48h → auto-nurture sequence
 ```
 

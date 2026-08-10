@@ -271,7 +271,7 @@ The #1 issue: Sonia said $1,500 in her audio, but our research/model says $2,900
 
 | Service Level | Monthly Fee | What's Included |
 |--------------|-------------|-----------------|
-| **Basic** (email/WhatsApp support) | $50-$100/mo | Document renewal reminders, quick questions |
+| **Basic** (email/Messaging support) | $50-$100/mo | Document renewal reminders, quick questions |
 | **Standard** (priority support) | $150-$250/mo | + bill payment coordination, utility issues |
 | **Premium** (concierge) | $300-$500/mo | + doctor appointments, school coordination, property management check |
 | **Investor** (12-month retainer) | Already included | Part of $6,900 Investor program |
@@ -375,7 +375,7 @@ The #1 issue: Sonia said $1,500 in her audio, but our research/model says $2,900
 | Aggressive (with marketing) | 3-5 | $8,700-$14,500 | $104K-$174K |
 | Scale (with team) | 5-10 | $14,500-$29,000 | $174K-$348K |
 
-📊 **Without the website, Sonia is at conservative pace.** The site + WhatsApp bot could push her to moderate in 6 months.
+📊 **Without the website, Sonia is at conservative pace.** The site + Messaging bot could push her to moderate in 6 months.
 
 ---
 

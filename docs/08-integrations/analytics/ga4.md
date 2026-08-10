@@ -52,7 +52,7 @@ property exists and data is flowing.
 | `lead_magnet_complete` | Calculation completed |
 | `lead_magnet_pdf_download` | PDF report requested |
 | `lead_magnet_cta_click` | "Book Consultation" clicked |
-| `whatsapp_cta_click` | WhatsApp button clicked |
+| `messaging_cta_click` | Messaging button clicked |
 | `testimonial_view` | Testimonials section viewed |
 | `testimonial_video_play` | Video testimonial played |
 | `form_submission` | Contact form submitted |

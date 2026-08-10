@@ -41,7 +41,7 @@ These files were built on the $2,900-$6,900 model and are now **dangerously misl
 | Team section | 5 AI people | **Sonia + Luana only** — remove fakes | meeting-report-may-11.md §2.5 |
 | Photos | AI placeholders | Sonia will send real photos + do photoshoot later | meeting-report-may-11.md §2.6 |
 | Blog content | Manual by Sonia | **AI-generated OK** — she reviews before publish | meeting-report-may-11.md §2.4 |
-| WhatsApp bot | Experimental | **Approved** — but needs voice message support + human fallback | meeting-report-may-11.md §3.3 |
+| Messaging bot | Experimental | **Approved** — but needs voice message support + human fallback | meeting-report-may-11.md §3.3 |
 | Post-residency day rate | Undefined | **$200/day confirmed** ($150 Sonia + $50 Carlos) | meeting-report-may-11.md §1.2 |
 | Tax calculator | "Too soon" (May 8) | **Approved** — but must be accurate, test with accountant | meeting-report-may-11.md line 176 |
 | Post-residency services | Free | **$200/day** confirmed; phone calls still free | meeting-report-may-11.md §1.2 |

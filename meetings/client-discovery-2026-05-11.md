@@ -10,7 +10,7 @@
 - Name: Proyecto Zohar (Zohar Project)
 - Role: Relocation consultant for foreigners moving to Paraguay
 - Broker network: Nico (lawyer friend), Luana (assistant/partner)
-- Uses: WhatsApp (primary), Facebook groups, word-of-mouth
+- Uses: Messaging (primary), Facebook groups, word-of-mouth
 - No office — works from phone + car
 
 ### Pricing Model (CONFIRMED)
@@ -68,8 +68,8 @@ Pricing should be visible on site with clear what's-included per tier.
    - Add testimonials from real clients (Dutch couple will write one)
 4. **New features**:
    - **Tax calculator** — compare taxes: user's home country vs Paraguay. Must be accurate (test with client's accountant)
-   - **Contact form** → WhatsApp Business (not generic form)
-   - **WhatsApp bot** that answers initial questions 24/7, can escalate to human
+   - **Contact form** → Messaging Business (not generic form)
+   - **Messaging bot** that answers initial questions 24/7, can escalate to human
    - **Neighborhood scorecards** — schools, hospitals, supermarkets, safety per area
    - **Pricing table** — visible, clear, with what's included per tier
    - **Blog** for SEO (30+ articles already exist, need review)
@@ -94,7 +94,7 @@ Client doesn't know much about competitors. Website should help him stand out.
 ### What's NOT needed
 - User registration/login system
 - Payment gateway (client handles finances directly)
-- Complex CRM (client uses WhatsApp + phone)
+- Complex CRM (client uses Messaging + phone)
 
 ### Immediate Action Items
 1. 📸 Client will send: professional photo, Luana's photo/bio, real Paraguay photos, video testimonial
@@ -103,7 +103,7 @@ Client doesn't know much about competitors. Website should help him stand out.
 4. 📄 Client wants the service list (20+ items) translated to Spanish and priced
 5. 🔗 Client will share Google Maps location for the site
 6. 📊 Client will discuss tax structure with his accountant
-7. 📱 WhatsApp Business chip (separate from personal number) — to be arranged
+7. 📱 Messaging Business chip (separate from personal number) — to be arranged
 
 ### Notes on Site Voice
 - "European relaxed in Latin America" — core positioning

@@ -76,8 +76,8 @@
 
 | # | Idea | Status | Detail |
 |---|------|--------|--------|
-| 30 | **WhatsApp QR scan** | 🟡 Stuck | Evolution API instances created. Needs human to scan QR on phone. |
-| 31 | **WhatsApp → CRM pipeline** | ⬜ Todo | Evolution API webhook → CRM. Auto-create contact. |
+| 30 | **Messaging QR scan** | 🟡 Stuck | Evolution API instances created. Needs human to scan QR on phone. |
+| 31 | **Messaging → CRM pipeline** | ⬜ Todo | Evolution API webhook → CRM. Auto-create contact. |
 | 32 | **Email nurture triggers** | ⬜ Todo | Contact form → automated email sequence. |
 | 33 | **Newsletter auto-blog** | ⬜ Todo | Cron: latest blog → translate → email digest. |
 | 34 | **Lead magnet delivery** | ⬜ Todo | "Download guide" → email → PDF. |
@@ -127,7 +127,7 @@
 | 57 | **Case study section** | ⬜ Todo | Real client stories. |
 | 58 | **Country comparison page** | ⬜ Todo | "Paraguay vs [country]" SEO + conversion. |
 | 59 | **FAQ with schema** | ✅ Done | FAQPage JSON-LD wired in layout.tsx. |
-| 60 | **WhatsApp AI auto-reply SLA** | ✅ Done | `scripts/setup-whatsapp-sla.sh`. |
+| 60 | **Messaging AI auto-reply SLA** | ✅ Done | `scripts/setup-messaging-sla.sh`. |
 
 ---
 
@@ -160,8 +160,8 @@
 |---|------|--------|--------|
 | 70 | **Extract to "Relocation Website Builder" template** | 🔮 Future | Nexa as template for other agencies. Locale + content config. |
 | 71 | **Multi-tenant vertical** | 🔮 Future | One stack, multiple sites. Shared components, separate content. |
-| 72 | **Client dashboard** | 🔮 Future | Track application status, document checklist, payment history. SSO via WhatsApp. |
-| 73 | **AI case assistant** | 🔮 Future | Per-client AI that knows their documents, status, deadlines. WhatsApp interface. |
+| 72 | **Client dashboard** | 🔮 Future | Track application status, document checklist, payment history. SSO via Messaging. |
+| 73 | **AI case assistant** | 🔮 Future | Per-client AI that knows their documents, status, deadlines. Messaging interface. |
 | 74 | **Blog as SEO engine** | 🔮 Future | 50+ articles/locale. Systematic: keyword research → LLM → publish. |
 | 75 | **Referral program** | 🔮 Future | "Refer a friend → €500 off". Track via unique link. |
 
@@ -171,7 +171,7 @@
 
 ```
 NEXT (high impact, low effort)
-  ├─ #30 WhatsApp QR scan (blocked)
+  ├─ #30 Messaging QR scan (blocked)
   ├─ #15 Blog content audit
   ├─ #55 A/B test hero CTA
   └─ #16 Newsletter integration
@@ -206,7 +206,7 @@ FUTURE (high effort, long-term)
 | `docs/13-upgrades/refactor-plan.md` | Architecture + migration status |
 | `docs/13-upgrades/complete-roadmap.md` | This file — all 75 ideas |
 | `upgrade-tracker.json` | Machine-parseable status |
-| `scripts/setup-whatsapp-sla.sh` | WhatsApp SLA setup |
+| `scripts/setup-messaging-sla.sh` | Messaging SLA setup |
 | `scripts/optimize-images.mjs` | Image optimization pipeline |
 | `scripts/deploy-hook.sh` | Deploy verification + screenshot |
 | `scripts/screenshot-all.mjs` | Puppeteer page screenshotter |
@@ -222,4 +222,4 @@ FUTURE (high effort, long-term)
 | # | Item | Blocker | Path to Unblock |
 |---|------|---------|-----------------|
 | 1 | Domain migration | Cloudflare dashboard access | Ask client for DNS credentials |
-| 30 | WhatsApp QR | Human needs to scan QR on phone | Run bot locally once, scan, connection persists |
+| 30 | Messaging QR | Human needs to scan QR on phone | Run bot locally once, scan, connection persists |

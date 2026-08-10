@@ -18,7 +18,7 @@ A 2-page PDF that sets expectations. For each language:
 | Who is Sonia | 3-paragraph bio, her story, her promise | ✅ In content JSONs |
 | What to expect | Timeline 3-4 months, 1 trip, 5-step process | ✅ On site |
 | First steps | Document gathering, apostille, translations | ✅ On site |
-| Contact info | WhatsApp, email, emergency numbers | ✅ On site |
+| Contact info | Messaging, email, emergency numbers | ✅ On site |
 | **→ Printable version** | **Need: formatted PDF generator** | ❌ Needs build |
 
 ### 1.2 Checklist: "What to Bring to Paraguay"
@@ -141,7 +141,7 @@ A 2-page PDF that sets expectations. For each language:
 │  HOSPITAL SAN ROQUE (24h ER)                 │
 │  → (021) 670-441                             │
 │                                              │
-│  NEXA PARAGUAY (Sonia, WhatsApp)             │
+│  NEXA PARAGUAY (Sonia, Messaging)             │
 │  → +595 982 515 138                          │
 │                                              │
 │  MY ADDRESS: ______________________________  │
@@ -254,7 +254,7 @@ A 2-page PDF that sets expectations. For each language:
 ### 30-second elevator pitch (EN — for other Europeans):
 > *"I'm Sonia. I lived 7 years in the Netherlands, speak fluent English, and help Europeans relocate to Paraguay. I handle everything — residency, bank account, company formation, and finding your home. One trip, one program, fixed price. No hidden fees. I guide you from start to finish, up to a year after arrival. Book a free 30-minute consultation."*
 
-### Key phrases for WhatsApp/texting:
+### Key phrases for Messaging/texting:
 - *"Relax, I can help you."* (her personal slogan)
 - *"Un solo viaje, todo incluido."* (one trip, all included)
 - *"Acompañamiento de cerca, no una oficina de trámites."* (close accompaniment, not a paperwork office)

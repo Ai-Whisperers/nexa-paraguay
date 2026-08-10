@@ -267,6 +267,6 @@
 | Expats in Paraguay (FB) | EN | Facebook Group | 15K+ members |
 | Nederlanders in PY (FB) | NL | Facebook Group | 400+ Dutch expats |
 | Alemanes en PY (FB) | DE | Facebook Group | German community |
-| PY Expat Community (WhatsApp) | EN/ES | WhatsApp | Active chats |
+| PY Expat Community (Messaging) | EN/ES | Messaging | Active chats |
 
 

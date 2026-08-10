@@ -229,7 +229,7 @@ ESSENTIAL CONTACTS
 - Police: 911
 - Fire: 911
 - Ambulance: 141
-- Our team: [Phone/WhatsApp]
+- Our team: [Phone/Messaging]
 
 NEIGHBORHOOD RECOMMENDATIONS
 - Expat areas: Manorá, Los Laureles, Villa Morra

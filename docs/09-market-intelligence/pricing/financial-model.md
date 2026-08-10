@@ -74,7 +74,7 @@ All figures are **conservative estimates** based on observable market data, comp
 
 | Metric | Before AI | After AI (6 months) | Improvement Driver |
 |--------|:---------:|:-------------------:|--------------------|
-| Lead capture | Business hours only | **24/7 WhatsApp bot** | 2x lead volume |
+| Lead capture | Business hours only | **24/7 Messaging bot** | 2x lead volume |
 | Consult time/call | 30 min | **15 min** (AI pre-qualifies) | 2x consultant throughput |
 | Close rate | 25% | **35%** (better qualification) | +40% revenue per lead |
 | Blog output | Manual, infrequent | **AI generates 4–5x more** | SEO traffic 5x in 6 months |
@@ -86,7 +86,7 @@ All figures are **conservative estimates** based on observable market data, comp
 | Stage | Before AI | After AI | Change |
 |------|:---------:|:--------:|:------:|
 | Website visitors | 2,000 | 5,000 | +150% (SEO + content) |
-| Lead inquiries | 40 | 120 | +200% (24/7 WhatsApp) |
+| Lead inquiries | 40 | 120 | +200% (24/7 Messaging) |
 | Consults booked | 20 | 50 | +150% (AI pre-qualifies) |
 | Clients closed | 5–7 | 12–18 | +140% (better close + volume) |
 | Avg. ticket | $4,500 | $5,500 | +22% (higher upsell + Investor Pass) |
@@ -186,7 +186,7 @@ All figures are **conservative estimates** based on observable market data, comp
 |------------|-------|:----------:|
 | Paraguay market continues 60%+ growth | DNM data, government projections | **Low-Medium** — trend confirmed |
 | Nexa maintains premium pricing | Competitor pricing validated | **Low** — price justified by AI |
-| AI deployment happens within 3 weeks | WhatsApp bridge exists, Hermes ready | **Low** — infrastructure in place |
+| AI deployment happens within 3 weeks | Messaging bridge exists, Hermes ready | **Low** — infrastructure in place |
 | 4-language SEO captures organic traffic | Content gap validated | **Medium** — depends on content quality |
 | Dutch community channels yield leads | Channel map validated, 4,920+ Telegram subs | **Medium** — requires active engagement |
 | Close rate improves from 25% to 35% | AI pre-qualification benchmark | **Medium** — unproven in this vertical |
@@ -249,9 +249,9 @@ All figures are **conservative estimates** based on observable market data, comp
 
 | AI Opportunity | Build Cost (est.) | Monthly Operational Cost | ROI Timeline |
 |----------------|:-----------------:|:-----------------------:|:------------:|
-| WhatsApp lead qualification bot | $1,000–$2,000 | $100–$300 | **<1 month** |
+| Messaging lead qualification bot | $1,000–$2,000 | $100–$300 | **<1 month** |
 | Content generation engine | $500–$1,000 | $200–$500 | **<1 month** |
-| WhatsApp nurture drip | $500–$1,000 | $50–$150 | **<1 month** |
+| Messaging nurture drip | $500–$1,000 | $50–$150 | **<1 month** |
 | Client journey automation | $2,000–$3,000 | $100–$200 | **2–3 months** |
 | Document processing pipeline | $3,000–$5,000 | $200–$500 | **3–4 months** |
 | Lead scoring engine | $2,000–$4,000 | $100–$300 | **3–4 months** |

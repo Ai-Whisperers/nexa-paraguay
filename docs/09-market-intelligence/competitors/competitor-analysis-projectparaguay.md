@@ -54,7 +54,7 @@ Project Paraguay leans **heavily into freedom/sovereign movement** ideology:
 | **What we get for less** | — | More personal touch, family feel, post-residency support |
 | **Tour/expedition** | €5,397 (10 days, all-in) | **Does not offer** ❌ |
 | **Children pricing** | €1,350 | **Sonia: same price for all ages?** (Needs to confirm) |
-| **Payment options** | Credit card, cash, **Bitcoin (USDT)** | Cash, pending WhatsApp bot payments |
+| **Payment options** | Credit card, cash, **Bitcoin (USDT)** | Cash, pending Messaging bot payments |
 
 ### What This Means for Sonia
 
@@ -78,7 +78,7 @@ Project Paraguay leans **heavily into freedom/sovereign movement** ideology:
 | **FAQ** | Residency + real estate questions | **Excellent.** Comprehensive. Anticipates objections. |
 | **Plan B** | Lead magnet landing page | **"6 reasons why a Plan B outside Europe is a good idea"** |
 | **Waarom Paraguay** (Why Paraguay) | Benefits of the country | Strong macro-arguments. 6 benefits listed. |
-| **Contact** | Simple contact form | Minimal. No WhatsApp integration visible. |
+| **Contact** | Simple contact form | Minimal. No Messaging integration visible. |
 | **Blog** | 20+ posts, YouTube embeds, frequent updates | **Very active.** Multiple posts per week. Heavy on political content + tax updates. |
 | **404 page** | Has a redirect + ebook download offer | Smart — captures leads even on errors. |
 
@@ -89,7 +89,7 @@ Project Paraguay leans **heavily into freedom/sovereign movement** ideology:
 | **Expeditie/group tour** | ✅ 10-day escorted trip | ❌ | 🟡 Sonia could offer informal accompaniment but not a packaged tour |
 | **Blog with YouTube** | ✅ 20+ blog posts, YouTube channel with 60+ videos | ✅ 30 posts (generic AI) | 🟢 Match with real content |
 | **Lead magnets** | ✅ "Free ebook" on Plan B + "Why Paraguay" | ❌ | ✅ **YES — high priority** |
-| **Telegram group** | ✅ Private group for clients | ❌ | 🟡 WhatsApp group might work better for her audience |
+| **Telegram group** | ✅ Private group for clients | ❌ | 🟡 Messaging group might work better for her audience |
 | **FAQ page** | ✅ Comprehensive | ❌ (scattered across site) | ✅ **YES — build this** |
 | **Rekentool (calculator)** | ✅ Residency visit timing calculator | ❌ (tax calculator planned) | 🟢 Different calculators, both good |
 | **Real estate page** | ✅ Dedicated page with Lester's expertise | ❌ (mentioned in services) | 🟢 Commission model means she doesn't need a full RE page |
@@ -147,7 +147,7 @@ Project Paraguay leans **heavily into freedom/sovereign movement** ideology:
 | **Neighborhood intelligence** | **1,485 places with GPS** – no competitor has this. Sonia can hand a client a map of their neighborhood with schools, hospitals, supermarkets, and restaurants. |
 | **Real Paraguayan (not expat)** | Sonia LIVED abroad and returned. She's not a Dutch expat living in Paraguay — she's Paraguayan who understands both worlds. |
 | **Luana (bilingual daughter)** | Young, fresh face. Can connect with younger clients. Speaks Dutch natively. |
-| **WhatsApp bot (soon)** | Automation advantage. Project Paraguay uses Telegram + email. WhatsApp is the dominant platform. |
+| **Messaging bot (soon)** | Automation advantage. Project Paraguay uses Telegram + email. Messaging is the dominant platform. |
 | **Huaste/Spanish bilingual** | Can serve Latin American and European clients. |
 | **Lower cost of operations** | No office, no employees, no expedition logistics. Her overhead is essentially zero. |
 
@@ -180,7 +180,7 @@ Project Paraguay leans **heavily into freedom/sovereign movement** ideology:
 | Not Needed | Why |
 |-----------|-----|
 | YouTube channel | Sonia doesn't want to be a content creator. Blog + testimonials are enough. |
-| Telegram group | WhatsApp is her platform. |
+| Telegram group | Messaging is her platform. |
 | Paid expeditions | Too complex, too expensive. She does NOT have the bandwidth for group tours. |
 | Container transport | Not relevant. Her clients bring luggage, not households. |
 | Political content | Would alienate her target audience (families, retirees). |
@@ -203,7 +203,7 @@ Project Paraguay leans **heavily into freedom/sovereign movement** ideology:
 | **Lead magnets** | ✅ Multiple ebooks | ❌ Not yet |
 | **FAQ** | ✅ Comprehensive | ❌ Not yet |
 | **Video** | YouTube channel, documentaries | ❌ Not yet |
-| **Bot** | Telegram group (manual) | ✅ WhatsApp bot (coming) |
+| **Bot** | Telegram group (manual) | ✅ Messaging bot (coming) |
 | **Location data** | None visible | ✅ 1,485 places with GPS |
 | **Payment** | Card, cash, Bitcoin | Cash, bank transfer |
 | **Team** | 4+ people + partners | Sonia + Luana + 2 lawyers + Carlos |

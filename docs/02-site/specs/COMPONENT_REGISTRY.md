@@ -318,7 +318,7 @@ Each component below shows the `section.id` that triggers it, the `content` key 
 **Triggered by:** `booking-embed`  
 **Content key pattern:** `$PAGE.booking`  
 **Accesses:** `pageContent.data` or `data` prop  
-**Variant:** whatsapp-cta  
+**Variant:** messaging-cta  
 
 ```json
 {
@@ -345,7 +345,7 @@ Each component below shows the `section.id` that triggers it, the `content` key 
 ```json
 {
   "title": "string",
-  "whatsapp": "string",
+  "messaging": "string",
   "email": "string",
   "phone": "string",
   "address": "string",
