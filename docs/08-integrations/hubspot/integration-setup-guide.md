@@ -132,11 +132,11 @@ After we receive this, we'll:
 
 ---
 
-## 5. WhatsApp Business — Already set up
+## 5. Messaging Business — Already set up
 
 **Status: ✅ Already done**
 
-Your WhatsApp number:
+Your Messaging number:
 ```
 +595 982 515 138
 ```
@@ -193,7 +193,7 @@ Booking URL:  https://calendly.com/_________________
 Account email: _________________
 
 --- CONTACT — please confirm ---
-WhatsApp:  +595 982 515 138  (correct? Y/N)
+Messaging:  +595 982 515 138  (correct? Y/N)
 Email:     hola@nexaparaguay.com  (correct? Y/N)
 Address:   Asunción, Villa Morra  (correct? Y/N)
 

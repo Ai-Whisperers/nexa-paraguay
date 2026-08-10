@@ -3,7 +3,7 @@
 # Nexa Paraguay — Complete Intelligence & Market Data Report
 
 > **Date:** 2026-05-11 | **Prepared for:** Sonia (founder) & Iván (technical lead)
-> **Data sources:** Google Maps API (live scrape), paragu-ai-leads (6,796 beauty/salon businesses), competitor market research, WhatsApp chat analysis, public records, web research
+> **Data sources:** Google Maps API (live scrape), paragu-ai-leads (6,796 beauty/salon businesses), competitor market research, Messaging chat analysis, public records, web research
 > **Datasets generated:** 1,485 places with GPS in Asunción, 1,548 locations nationwide, full pricing matrix, competitive landscape, client profile
 
 ---
@@ -233,7 +233,7 @@
 | 1 | **Price: $1,500 or $2,900?** | All site pricing depends on this. Her audio said $1,500. Our model says $2,900. |
 | 2 | **Her full story: include nervous breakdown?** | Defines brand power. "Acompañamiento casi familiar" is hollow without the real story. |
 | 3 | **Photos: when can I come take them?** | Site credibility blocker. Current images are AI placeholders. |
-| 4 | **WhatsApp QR: scan now (1 minute)** | Unlocks lead gen. Bot is configured but dead without QR scan. |
+| 4 | **Messaging QR: scan now (1 minute)** | Unlocks lead gen. Bot is configured but dead without QR scan. |
 
 ### P1 — Site Structure
 | # | Question | Options |
@@ -258,7 +258,7 @@
 | 14 | nexaparaguay.com domain? | Move DNS to 72.61.44.159 |
 | 15 | Investor meeting audio? | Record it → goldmine of market intelligence |
 | 16 | Capacity? | Can she handle 3-4 clients/month? |
-| 17 | AI adoption? | WhatsApp bot for 24/7 lead qualification |
+| 17 | AI adoption? | Messaging bot for 24/7 lead qualification |
 
 ---
 

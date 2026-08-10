@@ -16,7 +16,7 @@ Bloque 2: Pricing — RESOLVEMOS                     (12 min) ← CRÍTICO
 Bloque 3: Servicios — QUÉ SÍ, QUÉ NO               (10 min)
 Bloque 4: Contenido del sitio — voz + historia     (10 min)
 Bloque 5: Fotos, assets, pendientes                 (8 min)
-Bloque 6: WhatsApp bot + lead capture               (8 min)
+Bloque 6: Messaging bot + lead capture               (8 min)
 Bloque 7: Competencia + mercado                     (5 min)
 Bloque 8: Cierre + próximos pasos                   (5 min)
 ```
@@ -93,13 +93,13 @@ Cada pregunta tiene:
 
 **Notas de la reunión:** _______________________________
 
-### 1.4 — Preguntas de WhatsApp gratuitas vs pagas
+### 1.4 — Preguntas de Messaging gratuitas vs pagas
 
-> **Pregunta:** *"Después de la residencia, si un cliente te escribe por WhatsApp una pregunta rápida — ¿eso es gratis? ¿Dónde está el límite entre 'pregunta gratis' y 'necesito que me acompañes'?"*
+> **Pregunta:** *"Después de la residencia, si un cliente te escribe por Messaging una pregunta rápida — ¿eso es gratis? ¿Dónde está el límite entre 'pregunta gratis' y 'necesito que me acompañes'?"*
 
 | Respuesta esperada | Qué hacemos |
 |-------------------|-------------|
-| "WhatsApp siempre gratis, movilizarme paga" | ✅ Poner regla clara en el sitio |
+| "Messaging siempre gratis, movilizarme paga" | ✅ Poner regla clara en el sitio |
 | "Si son más de 10 mensajes al día ya es consulta" | 🟡 Definir límite |
 
 **Notas de la reunión:** _______________________________
@@ -328,7 +328,7 @@ Cada pregunta tiene:
 
 ### 4.3 — Ubicación GPS
 
-> **Pregunta:** *"¿Podés mandarnos la ubicación de Casa Weiss por WhatsApp? Así la ponemos en la página de contacto."*
+> **Pregunta:** *"¿Podés mandarnos la ubicación de Casa Weiss por Messaging? Así la ponemos en la página de contacto."*
 
 **Notas de la reunión:** _______________________________
 
@@ -347,9 +347,9 @@ Cada pregunta tiene:
 
 ---
 
-## BLOQUE 5 — WHATSAPP BOT & LEAD CAPTURE (8 min)
+## BLOQUE 5 — MESSAGING BOT & LEAD CAPTURE (8 min)
 
-> *"El bot de WhatsApp está listo pero necesita un par de definiciones tuyas."*
+> *"El bot de Messaging está listo pero necesita un par de definiciones tuyas."*
 
 ### 5.1 — Horarios de atención
 
@@ -365,7 +365,7 @@ Cada pregunta tiene:
 
 ### 5.2 — Información del lead
 
-> **Pregunta:** *"Cuando alguien escribe al WhatsApp, ¿qué datos querés saber de entrada?"*
+> **Pregunta:** *"Cuando alguien escribe al Messaging, ¿qué datos querés saber de entrada?"*
 
 | Dato | ¿Necesario? |
 |------|-------------|
@@ -390,9 +390,9 @@ Cada pregunta tiene:
 
 **Notas de la reunión:** _______________________________
 
-### 5.4 — Número de WhatsApp
+### 5.4 — Número de Messaging
 
-> **Pregunta:** *"¿El WhatsApp del sitio va a tu número personal o al chip nuevo que estás por comprar?"*
+> **Pregunta:** *"¿El Messaging del sitio va a tu número personal o al chip nuevo que estás por comprar?"*
 
 **Notas de la reunión:** _______________________________
 
@@ -445,12 +445,12 @@ Cada pregunta tiene:
 | **Sonia** | Hablar con pareja holandesa para testimonio | Esta semana |
 | **Sonia** | Mandar link de Paraguay Project | Hoy |
 | **Sonia** | Mandar ubicación GPS | Hoy |
-| **Sonia** | Comprar chip SIM para WhatsApp | Esta semana |
+| **Sonia** | Comprar chip SIM para Messaging | Esta semana |
 | **Nosotros** | Actualizar precios en el sitio | Inmediato |
 | **Nosotros** | Remover fotos falsas del equipo | Inmediato |
 | **Nosotros** | Remover estadísticas falsas | Inmediato |
 | **Nosotros** | Escribir about page con historia aprobada | Post-reunión |
-| **Nosotros** | Activar WhatsApp bot (cuando tengamos chip) | Post-reunión |
+| **Nosotros** | Activar Messaging bot (cuando tengamos chip) | Post-reunión |
 
 ### 7.2 — Pregunta final
 
@@ -475,7 +475,7 @@ Cada pregunta tiene:
 | Calculadora de impuestos | Aprobada (con contador) | May 11 meeting |
 | Blog con AI | Sí, ella revisa | May 11 meeting |
 | Lead magnet | "10 cosas" — tema a decidir | May 11 meeting |
-| WhatsApp bot | Aprobado, necesita chip | May 11 meeting |
+| Messaging bot | Aprobado, necesita chip | May 11 meeting |
 | No atiende alemanes | Confirmado | May 11 meeting |
 | No atiende árabes | Confirmado | May 11 meeting |
 | Comisión 2.75% propiedades | Confirmado | May 11 meeting |

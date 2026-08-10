@@ -99,7 +99,7 @@ Nexa is **priced at market premium**. The AI layer **justifies** the premium —
 
 | Competitor | AI Capabilities | Notes |
 |-----------|----------------|-------|
-| **Nexa Paraguay** | **Can deploy: WhatsApp bot, document AI, content gen, lead scoring** | Ai-Whisperers stack ready |
+| **Nexa Paraguay** | **Can deploy: Messaging bot, document AI, content gen, lead scoring** | Ai-Whisperers stack ready |
 | Terravida | AI-powered relocation concierge (basic) | Only competitor with AI — but early-stage |
 | Paraguay Simply | Automated eligibility check | Single-purpose, not conversational |
 | All others | **None detected** | **Zero AI usage** |
@@ -173,7 +173,7 @@ High AI
 
 | Capability | Nexa | WeParaguay | PY Sovereign | PY Simply | Terravida |
 |-----------|:---:|:----------:|:------------:|:---------:|:---------:|
-| WhatsApp lead qualification bot | Can build (bridge exists) | — | — | — | — |
+| Messaging lead qualification bot | Can build (bridge exists) | — | — | — | — |
 | Automated document validation | Can build | — | — | — | Basic |
 | 24/7 multilingual FAQ | Can build | — | — | — | AI chat |
 | Personalized content generation | Can build | — | — | — | — |
@@ -190,7 +190,7 @@ High AI
 |--------|-------|-----------|
 | WeParaguay brand + community | High | Differentiate on AI + Benelux focus |
 | Terravida AI capability | High | Deploy faster (3 weeks to implement all 8 AI opps) |
-| Paraguay Pathways scale (750+ clients) | Medium | Beat on pricing transparency + WhatsApp |
+| Paraguay Pathways scale (750+ clients) | Medium | Beat on pricing transparency + Messaging |
 | Paraguay Sovereign content dominance | Medium | AI content engine in 4 languages |
 | MigratieMeesters Dutch presence | Medium | Partner or out-community them |
 | Low Cost Paraguay calculator | Low | Build better calculator + trust signals |

@@ -97,9 +97,9 @@
 - URL: https://www.migratiemeesters.com/
 - Operators: Julien and Melvin
 - Services: Residency and Cedula application, company formation, RUC
-- Content: Blog with guides, WhatsApp/Telegram groups
+- Content: Blog with guides, Messaging/Telegram groups
 - Notable blog posts:
-  - "Paraguay WhatsApp Groep Voor Nederlanders"
+  - "Paraguay Messaging Groep Voor Nederlanders"
   - "Nederlanders In Paraguay: Gratis Telegram Chatgroep" (400+ members)
   - "Wakker In Paraguay: Onze Ervaring Na 2 jaar Wonen In Paraguay"
 - Language: Dutch
@@ -256,10 +256,10 @@
 
 ---
 
-## 6. WHATSAPP/TELEGRAM GROUPS
+## 6. MESSAGING/TELEGRAM GROUPS
 
-### MigratieMeesters WhatsApp Group (Nederlanders in Paraguay)
-- URL: https://www.migratiemeesters.com/blog/paraguay-whatsapp-groep-voor-nederlanders
+### MigratieMeesters Messaging Group (Nederlanders in Paraguay)
+- URL: https://www.migratiemeesters.com/blog/paraguay-messaging-groep-voor-nederlanders
 - Community: Active Dutch and Belgian community
 - Activity: Daily discussions, active
 - Run by: Julien and Melvin (MigratieMeesters)
@@ -271,12 +271,12 @@
 - Activity: Active community
 - Language: Dutch
 
-### Dutchies in Paraguay WhatsApp group
+### Dutchies in Paraguay Messaging group
 - URL: https://dutchies.app/paraguay/
-- Platform: Part of larger Dutchies.app network (largest Dutch travel WhatsApp community)
+- Platform: Part of larger Dutchies.app network (largest Dutch travel Messaging community)
 - Activity: 500K+ Dutch travelers have used Dutchies groups globally
-- 300+ active WhatsApp groups for different countries
-- Scale: "Largest WhatsApp community in the world" per their claim
+- 300+ active Messaging groups for different countries
+- Scale: "Largest Messaging community in the world" per their claim
 - KEY OPPORTUNITY: Large reach among Dutch travelers/expats
 
 ### Project Paraguay Telegram Channel (@paraguayadventures)
@@ -374,9 +374,9 @@
 
 2. **Ab Flipse / GRYP** - Already visited Paraguay, discussed it extensively on his platforms (Brands & Flipse podcast, Ongehoord Nederland). Reaches financially-savvy, exit-minded Dutch. Natural cross-referral partner.
 
-3. **Dutchies.app (Paraguay WhatsApp group)** - Massive reach (500K+ users globally), very easy to get listed. Should be a top priority for Nexa presence.
+3. **Dutchies.app (Paraguay Messaging group)** - Massive reach (500K+ users globally), very easy to get listed. Should be a top priority for Nexa presence.
 
-4. **MigratieMeesters** (Julien & Melvin) - Direct competitor in Dutch market. Worth monitoring. They have 400+ Telegram members, active WhatsApp group, active blog.
+4. **MigratieMeesters** (Julien & Melvin) - Direct competitor in Dutch market. Worth monitoring. They have 400+ Telegram members, active Messaging group, active blog.
 
 5. **EigenWijsReis** (Belgian family blog) - Unique Belgian perspective, growing audience, potential guest content partnership.
 

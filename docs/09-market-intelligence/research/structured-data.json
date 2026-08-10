@@ -143,11 +143,11 @@
       {
         "area": "Lead Qualification & CRM Automation",
         "current_state": "Basic HubSpot form + manual follow-up",
-        "ai_solution": "AI WhatsApp bot that qualifies leads, answers FAQ, schedules consults, collects docs",
+        "ai_solution": "AI Messaging bot that qualifies leads, answers FAQ, schedules consults, collects docs",
         "impact": "High — 24/7 lead capture, 50%+ reduction in sales time",
-        "complexity": "Low — WhatsApp bridge already exists",
+        "complexity": "Low — Messaging bridge already exists",
         "tools_available": [
-          "WhatsApp bridge (running)",
+          "Messaging bridge (running)",
           "Hermes agent",
           "HubSpot API"
         ]
@@ -179,12 +179,12 @@
       {
         "area": "Client Journey Automation",
         "current_state": "Email/manual tracking of 8-12 week process",
-        "ai_solution": "Automated timeline tracker with WhatsApp/email check-ins, document reminders, milestone updates",
+        "ai_solution": "Automated timeline tracker with Messaging/email check-ins, document reminders, milestone updates",
         "impact": "Medium — better client experience, fewer dropped balls",
         "complexity": "Medium — needs CRM integration",
         "tools_available": [
           "Cron jobs",
-          "WhatsApp bridge",
+          "Messaging bridge",
           "HubSpot workflows"
         ]
       },
@@ -212,14 +212,14 @@
         ]
       },
       {
-        "area": "WhatsApp Automated Nurture",
+        "area": "Messaging Automated Nurture",
         "current_state": "No automated follow-up sequence",
-        "ai_solution": "Drip campaign via WhatsApp: Day 1 info, Day 3 testimonial, Day 7 pricing, Day 14 consult CTA",
+        "ai_solution": "Drip campaign via Messaging: Day 1 info, Day 3 testimonial, Day 7 pricing, Day 14 consult CTA",
         "impact": "Medium — recovers 20-30% of dropped leads",
-        "complexity": "Low — WhatsApp bridge supports scheduled sends",
+        "complexity": "Low — Messaging bridge supports scheduled sends",
         "tools_available": [
           "Cron jobs",
-          "WhatsApp bridge",
+          "Messaging bridge",
           "Message templates"
         ]
       },
@@ -238,9 +238,9 @@
     ],
     "ai_readiness_score": {
       "score_10": 7,
-      "rationale": "Strong tech foundation (modern stack, integrations), WhatsApp bridge exists, Hermes infrastructure ready. Gaps: no CRM pipeline, no document processing, no automated nurture.",
+      "rationale": "Strong tech foundation (modern stack, integrations), Messaging bridge exists, Hermes infrastructure ready. Gaps: no CRM pipeline, no document processing, no automated nurture.",
       "quick_wins": [
-        "WhatsApp lead qualification bot (1 day)",
+        "Messaging lead qualification bot (1 day)",
         "Automated content generation for blog (2 days)",
         "Drip nurture sequence setup (1 day)"
       ]

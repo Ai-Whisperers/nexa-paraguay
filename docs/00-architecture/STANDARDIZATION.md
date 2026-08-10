@@ -68,12 +68,12 @@ But this breaks the locale switching. Better approach: use `fs` in getServerSide
 **Fix**: Standardize gallery data model or make GallerySection flexible.
 
 ### 9. Footer doesn't render social links
-**Problem**: site.json has `social: { linkedin, instagram }` but Footer component only renders whatsapp/email from `footer` content object. Social links are never shown.
+**Problem**: site.json has `social: { linkedin, instagram }` but Footer component only renders messaging/email from `footer` content object. Social links are never shown.
 **Fix**: Add social icons to Footer component, reading from site.json or a content key.
 
-### 10. WhatsApp float section has no component
-**Problem**: Multiple page configs include `{"id":"whatsapp-float"}` but there's no WhatsAppFloatSection in SECTION_MAP. Falls through to generic fallback which renders whatever `resolveContent(content, 'whatsapp')` returns — likely nothing.
-**Fix**: Add a simple WhatsAppFloatSection (fixed-position button).
+### 10. Messaging float section has no component
+**Problem**: Multiple page configs include `{"id":"messaging-float"}` but there's no MessagingFloatSection in SECTION_MAP. Falls through to generic fallback which renders whatever `resolveContent(content, 'messaging')` returns — likely nothing.
+**Fix**: Add a simple MessagingFloatSection (fixed-position button).
 
 ---
 
@@ -124,6 +124,6 @@ But this breaks the locale switching. Better approach: use `fs` in getServerSide
 2. **No footer social links** — LinkedIn/Instagram URLs in site.json but not rendered anywhere
 3. **readFileSync** — no caching, every request reads JSON from disk. Add `res.setHeader('Cache-Control')` or implement in-memory cache
 4. **GallerySection** on /proceso uses different photo data model than images in gallery content
-5. **WhatsApp float** — no floating button on most pages (only the contact page renders contact info)
+5. **Messaging float** — no floating button on most pages (only the contact page renders contact info)
 6. **No error boundaries** — a single section crash = white screen of death
 7. **Tax calculator** — says "próximamente" for weeks, remove or build

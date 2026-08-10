@@ -124,7 +124,7 @@ Once created, copy the published URL and set it as the testimonial submission li
 
 **Suggested places to share:**
 - Post-delivery follow-up email (30 days after residency card issued)
-- WhatsApp broadcast to completed clients
+- Messaging broadcast to completed clients
 - Link in email signature for the operations team
 - QR code in the physical welcome packet delivered to clients in Asunción
 

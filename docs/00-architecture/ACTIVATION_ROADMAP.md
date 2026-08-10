@@ -42,7 +42,7 @@ Nothing gets deleted without client confirmation. Every dormant asset is an **un
 | `@ai-whisperers/seo` | Need automated meta/schema generation | 0.5d | Replace manual `<Head>` tags |
 | `@ai-whisperers/theme` | Need to share brand tokens across clients | 1d | Port `src/theme.ts` back to package |
 | `@ai-whisperers/ui` | Building shared component library | 2d+ | Extract generic components from Nexa |
-| `@ai-whisperers/whatsapp` | Move from direct wa.me links to API | 1d | Evolution API + webhook handler |
+| `@ai-whisperers/messaging` | Move from direct wa.me links to API | 1d | Evolution API + webhook handler |
 
 **Current state:** All 8 packages are installed but have zero imports. They add ~50MB to `node_modules` but don't affect runtime bundle (tree-shaken by Next.js). **No action needed** until a feature requires them.
 

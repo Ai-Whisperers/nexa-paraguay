@@ -23,7 +23,7 @@ The directory prefix numbering (`00-`, `01-`, `02-`, etc.) suggests a priority/i
 | `05-content/` | Content strategy, blog | Content files | ✅ Correct |
 | `06-marketing/` | Marketing playbooks | Multiple sub-dirs | ✅ Correct |
 | `07-seo/` | SEO strategy | SEO coverage | ✅ Correct |
-| `08-integrations/` | HubSpot, GA4, WhatsApp | Integration specs | ✅ Correct |
+| `08-integrations/` | HubSpot, GA4, Messaging | Integration specs | ✅ Correct |
 | `09-market-intelligence/` | Competitive research | Largest directory (20+ files) | ✅ Correct |
 | `10-deployment/` | Deployment runbook | Duplicates `00-deploy/` | No — merge or delete |
 | `11-launch/` | Pre-launch checklist | Launch planning | ✅ Correct |
@@ -224,12 +224,12 @@ The file header says "Date: 2026-05-11" — the same day as the May 11 meeting t
 | `06-marketing/faq-dealclosing.md` | 2026-04 | 6 weeks stale |
 | `06-marketing/lead-magnets.md` | 2026-04 | 6 weeks stale |
 | `06-marketing/comparisons.md` | 2026-04 | 6 weeks stale |
-| `06-marketing/whatsapp-integration.md` | 2026-04 | 6 weeks stale |
+| `06-marketing/messaging-integration.md` | 2026-04 | 6 weeks stale |
 | `06-marketing/testimonials-system.md` | 2026-04 | 6 weeks stale |
 | `08-integrations/ga4.md` | 2026-04 | 6 weeks stale |
 | `08-integrations/hubspot.md` | 2026-04 | 6 weeks stale |
 | `08-integrations/mailchimp.md` | 2026-04 | 6 weeks stale |
-| `08-integrations/whatsapp-ai-bridge.md` | 2026-04 | 6 weeks stale |
+| `08-integrations/messaging-ai-bridge.md` | 2026-04 | 6 weeks stale |
 | `07-seo/seo-keyword-strategy.md` | 2026-05-07 | Pre-May 11 |
 | `07-seo/content-gaps.md` | 2026-05-07 | Pre-May 11 |
 | `complete-questionnaire.md` | 2026-05-11 | Written May 11 but 83 of 100 questions were answered by May 10 briefing and May 11 meeting; largely historical now |

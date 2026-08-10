@@ -99,7 +99,7 @@ You are priced at market premium. The AI layer **justifies** the premium — fas
 
 | Capability | Nexa | WeParaguay | Paraguay Sovereign | Paraguay Simply | Terravida |
 |---|---|---|---|---|---|
-| WhatsApp bot for lead qualification | **Can build (bridge exists)** | — | — | — | — |
+| Messaging bot for lead qualification | **Can build (bridge exists)** | — | — | — | — |
 | Automated document validation | **Can build** | — | — | — | Basic |
 | 24/7 multilingual FAQ | **Can build** | — | — | — | AI chat |
 | Personalized content generation | **Can build** | — | — | — | — |
@@ -114,19 +114,19 @@ You are priced at market premium. The AI layer **justifies** the premium — fas
 
 ```
 1. LEAD QUALIFICATION BOT      ← 24h build, highest ROI
-   WhatsApp bot that answers FAQ, qualifies leads, books consults
+   Messaging bot that answers FAQ, qualifies leads, books consults
    
 2. DOCUMENT PROCESSING          ← 3-5 day build
    AI scanner for passports, apostilles, translations
    
 3. AUTOMATED NURTURE DRIP       ← 1 day build
-   WhatsApp sequence: Day 1 intro → Day 3 testimonial → Day 7 pricing
+   Messaging sequence: Day 1 intro → Day 3 testimonial → Day 7 pricing
    
 4. CONTENT GENERATION           ← 2 day build
    Blog posts, country guides, tax explainers in 4 languages
    
 5. CLIENT JOURNEY TRACKER       ← 2 day build
-   Automated timeline updates via WhatsApp
+   Automated timeline updates via Messaging
    
 6. LEAD SCORING ENGINE          ← 3 day build
    Prioritize leads by readiness/worth using Solstein pipeline
@@ -199,13 +199,13 @@ This infrastructure can enrich every lead with: tech stack, employee count, fund
 ## 5. Recommendations — What To Show the Owners
 
 ### 5.1 Immediate (This Week)
-1. **WhatsApp lead qualification bot** — Uses existing bridge, 1 day to build. Captures 24/7 leads.
+1. **Messaging lead qualification bot** — Uses existing bridge, 1 day to build. Captures 24/7 leads.
 2. **Fix the domain** — Point nexaparaguay.com to nexa.paragu-ai.com. Current Shopify redirect kills credibility.
 3. **AI content engine** — Generate 2-3 blog posts/week in 4 languages targeting Benelux tax/relocation topics. Google will index you as the AI-powered authority.
 
 ### 5.2 This Month
-4. **Automated nurture sequence** — WhatsApp drip: Day 1 info, Day 3 testimonial, Day 7 pricing, Day 14 consult
-5. **Client journey tracker** — WhatsApp notifications at each milestone. Clients feel managed. Referrals increase.
+4. **Automated nurture sequence** — Messaging drip: Day 1 info, Day 3 testimonial, Day 7 pricing, Day 14 consult
+5. **Client journey tracker** — Messaging notifications at each milestone. Clients feel managed. Referrals increase.
 6. **Real team photos** — Replace AI placeholders. This is table stakes.
 
 ### 5.3 This Quarter

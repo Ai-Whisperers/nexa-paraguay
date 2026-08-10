@@ -12,7 +12,7 @@
 
 ### Pricing Weaknesses
 - No pricing whatsoever on their site. You must book a call to learn costs.
-- "Book Appointment" / "WhatsApp Osher Now" are the only CTAs — feels high-pressure sales.
+- "Book Appointment" / "Messaging Osher Now" are the only CTAs — feels high-pressure sales.
 - No calculator, no self-service, no price list.
 
 ### UX/Design Weaknesses
@@ -33,10 +33,10 @@
 - Shows team (Osher mentioned, co-founder involvement) — good trust signal.
 
 ### Missing Features
-- No chat widget despite heavy WhatsApp focus.
+- No chat widget despite heavy Messaging focus.
 - No cost calculator.
 - No self-service/document checklist tool.
-- **No WhatsApp click-to-chat on mobile** (just a phone number).
+- **No Messaging click-to-chat on mobile** (just a phone number).
 
 ### Social Proof
 - TikTok, Instagram, Facebook, YouTube links exist.
@@ -61,7 +61,7 @@
 - Homepage shows "From $1,480 USD" for residency and "From $2,490 USD" for tax compliance. These are starting prices only.
 - "VIEW PRICING" button exists but leads where? Let me check: it scrolls down on the same page — no detailed pricing breakdown.
 - **No full pricing page.** You just get starting prices.
-- Payment is via WhatsApp/Telegram/email — no checkout, no self-service.
+- Payment is via Messaging/Telegram/email — no checkout, no self-service.
 
 ### UX/Design Weaknesses
 - **Very long single-page site.** Everything is stacked vertically.
@@ -75,7 +75,7 @@
 - **Nexa's multilingual advantage** (Spanish/Portuguese/English) can beat this.
 
 ### Missing Features
-- **No live chat** despite WhatsApp/Telegram being primary contact methods.
+- **No live chat** despite Messaging/Telegram being primary contact methods.
 - **No cost calculator.**
 - **No self-service portal.**
 - **No blog** — just a "Life in Paraguay" and "Permanent Residency Guide" link. **No content marketing.**
@@ -139,8 +139,8 @@
 - Nexa can beat them on multilingual access.
 
 ### Missing Features
-- No live chat or WhatsApp widget.
-- **No WhatsApp CTA** — all communication goes through "Book Strategy Call" (calendar booking).
+- No live chat or Messaging widget.
+- **No Messaging CTA** — all communication goes through "Book Strategy Call" (calendar booking).
 - No self-service document portal.
 - No downloadable resources.
 
@@ -159,7 +159,7 @@
 ### KEY EXPLOITABLE WEAKNESS FOR NEXA:
 - **English-only** — Nexa's trilingual (ES/PT/EN) advantage.
 - **No team faces** — Nexa can show local team.
-- **No WhatsApp/chat** — Nexa can offer instant messaging.
+- **No Messaging/chat** — Nexa can offer instant messaging.
 - **No free resources/downloadables.**
 - **High prices** — $2,290-5,490 vs Nexa's potential lower cost.
 - **Broken packages sub-page** (404) is a bad look.
@@ -181,7 +181,7 @@
 - Clean but very basic design.
 - Google Reviews stars embedded (shows 5-star reviews).
 - Team page exists (unusual — this is rare among competitors).
-- WhatsApp floating widget visible.
+- Messaging floating widget visible.
 - **Language switcher works** (English/Spanish/French likely).
 - Text: Google star images with alt "Google star 1-5" — but review text is visible.
 
@@ -199,7 +199,7 @@
 - **Has team page** — rare among competitors. Shows real faces.
 - Google Reviews displayed (5-star) — good.
 - Physical address shown.
-- Contact form + WhatsApp available.
+- Contact form + Messaging available.
 - **BUT: Two broken service pages = trust killer.**
 
 ### Social Proof
@@ -248,7 +248,7 @@
 ### Missing Features
 - **No cost calculator.**
 - **No live chat widget.**
-- **No WhatsApp widget** (contact page has email only).
+- **No Messaging widget** (contact page has email only).
 - **No self-service document portal.**
 - **No downloadable resources** (checklists, PDFs).
 
@@ -260,7 +260,7 @@
 ### KEY EXPLOITABLE WEAKNESS FOR NEXA:
 - **No pricing at all** — Nexa can show transparent pricing.
 - **No calculator or self-service tools.**
-- **No WhatsApp/chat** — only email contact.
+- **No Messaging/chat** — only email contact.
 - **No downloadable resources** — Nexa can offer checklists.
 - **High-end positioning** — likely expensive. Nexa can undercut.
 - **Larger operation means less personal service** — Nexa can be the boutique alternative.
@@ -279,7 +279,7 @@
 ### UX/Design
 - Clean, functional design.
 - **Calculator is excellent** — interactive, shows real-time pricing.
-- "Get Started on WhatsApp" CTA is prominent.
+- "Get Started on Messaging" CTA is prominent.
 - Mobile-friendly layout.
 
 ### Missing Features
@@ -326,7 +326,7 @@
 | **No cost calculator** | weparaguay, paraguaysimply, paraguaypathways, destination-paraguay, paraguaysovereign (has tax calc but no cost calc) | Nexa builds interactive calculator |
 | **No team page** | paraguaysimply, lowcostparaguay, paraguaysovereign | Nexa shows real local team |
 | **English-only site** | paraguaysimply, paraguaysovereign, lowcostparaguay | Nexa = trilingual (ES/PT/EN) |
-| **No WhatsApp/chat** | paraguaysovereign, paraguaypathways | Nexa offers instant contact |
+| **No Messaging/chat** | paraguaysovereign, paraguaypathways | Nexa offers instant contact |
 | **No downloadable resources** | paraguaysimply, paraguaysovereign, destination-paraguay, paraguaypathways, lowcostparaguay | Nexa offers free guides/checklists |
 | **No blog/content** | paraguaysimply, lowcostparaguay | Nexa publishes regular content |
 | **No social proof widgets** | paraguaysovereign, lowcostparaguay, paraguaysimply | Nexa shows TrustPilot + Google Reviews |
@@ -341,7 +341,7 @@
 ### Tier 2: Strong Differentiators
 
 5. **Interactive cost calculator** — Only lowcostparaguay has one. This is a powerful conversion tool.
-6. **WhatsApp click-to-chat** — Only weparaguay and destination-paraguay have prominent WhatsApp. Most rely on email/forms.
+6. **Messaging click-to-chat** — Only weparaguay and destination-paraguay have prominent Messaging. Most rely on email/forms.
 7. **Free downloadable guides** — None of the audited competitors offer free PDF checklists or guides (weparaguay has a checklist but behind an email capture iframe).
 8. **Real client testimonials with names/photos** — weparaguay has names but no photos. Most have generic quotes.
 
@@ -362,5 +362,5 @@ Beat every competitor on:
 1. **Transparency**: Show all prices upfront with a calculator
 2. **Trust**: Real team photos, real client stories, real office
 3. **Accessibility**: Spanish, Portuguese, AND English
-4. **Utility**: Free guides, checklists, WhatsApp support, cost calculator
+4. **Utility**: Free guides, checklists, Messaging support, cost calculator
 5. **Reliability**: 0 broken pages, clean modern design, mobile-first

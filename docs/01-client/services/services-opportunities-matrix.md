@@ -269,7 +269,7 @@
 | # | Service | Status | Notes |
 |---|---------|--------|-------|
 | 185 | Social club introduction | ✔️ Not listed | She helps with integration |
-| 186 | Expat community introduction | ✔️ Not listed | WhatsApp/Telegram groups |
+| 186 | Expat community introduction | ✔️ Not listed | Messaging/Telegram groups |
 | 187 | Spanish teacher referral | ✔️ Not listed | She does this |
 | 188 | Guaraní basics class | 💡 Opportunity | Cultural integration |
 | 189 | Cooking class referral (local food) | 💡 Opportunity | Chipa, sopa paraguaya |

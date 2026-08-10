@@ -331,7 +331,7 @@ The actual `/api/contact` and `/api/subscribe` routes have graceful fallback (co
 | Date | Fix | Image |
 |---|---|---|
 | 2026-06-14 | Re-anchor prod to personal repo | `nexa-paraguay:prod-20260614-1828` |
-| 2026-06-14 | Fixed 4 missing imports in `src/app/layout.tsx` (Script, CookieBanner, CookieConsent, WhatsAppButton) | same |
+| 2026-06-14 | Fixed 4 missing imports in `src/app/layout.tsx` (Script, CookieBanner, CookieConsent, MessagingButton) | same |
 | 2026-06-15 | Added `src/proxy.ts` to fix bare `/` 404 + RSC preflight | `nexa-paraguay:prod-20260615-0857` |
 | 2026-06-15 | **Removed fake stats from home** (`home.stats` is now `{}`) — by virtue of using the personal repo, not the old monorepo stub | same |
 

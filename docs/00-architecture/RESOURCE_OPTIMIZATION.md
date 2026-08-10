@@ -15,7 +15,7 @@
 | @ai-whisperers/seo | Unused | Uninstall now | Low — no feature requires it |
 | @ai-whisperers/theme | Unused | Uninstall now | Low — no feature requires it |
 | @ai-whisperers/ui | Unused | Uninstall now | Low — no feature requires it |
-| @ai-whisperers/whatsapp | Unused | Uninstall now | Low — no feature requires it |
+| @ai-whisperers/messaging | Unused | Uninstall now | Low — no feature requires it |
 
 **Conclusion:** All 8 packages can be uninstalled immediately. This removes ~50MB+ from node_modules. If a future client needs auth, commerce, or i18n, the @ai-whisperers/* packages can be re-added per-feature. The only active bridge is `@ai-whisperers/client-kit` (dynamic import in admin/content.tsx).
 

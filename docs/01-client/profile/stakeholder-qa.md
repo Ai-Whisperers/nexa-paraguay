@@ -30,7 +30,7 @@ cross_refs:
 ## Section A — Brand & Identity
 
 ### A1. Company name 🔴
-**Proposed answer:** "Nexa Paraguay" — single two-word brand used in siteName (4 locales), navigation, footer, WhatsApp, email, social handles, legal entity. Confirm commercial name, legal entity difference, and tagline.
+**Proposed answer:** "Nexa Paraguay" — single two-word brand used in siteName (4 locales), navigation, footer, Messaging, email, social handles, legal entity. Confirm commercial name, legal entity difference, and tagline.
 
 ### A2. Logo 🔴
 **Proposed answer:** Text-only wordmark in Playfair Display, navy #1B2A4A — temporary placeholder. Request SVG/PNG logo suite, icon mark, monochrome version, favicon set.
@@ -95,7 +95,7 @@ Hardcoded URL https://calendly.com/nexaparaguay/consulta returns 404. Account mu
 ### D4. GA4 🔴
 Measurement ID G-XE49GLEP34 exists as env var placeholder but no gtag script loads. Need GA4 property + default events.
 
-### D5. WhatsApp number 🔴
+### D5. Messaging number 🔴
 Current value: 595000000000 (placeholder). Real number needed: 595982515138 (from improvement plan).
 
 ### D6. Email hola@nexaparaguay.com 🔴

@@ -8,7 +8,7 @@
 > **Purpose:** Client intelligence and source context. Operational facts now derive from `docs/CURRENT_STATE.md`.
 > **Sources:** 
 >   - 26-min client briefing (May 10, Telegram audio)
->   - WhatsApp chat analysis (2,069 messages, Apr 21-May 10)
+>   - Messaging chat analysis (2,069 messages, Apr 21-May 10)
 >   - Google Maps API scrape (1,485 places in Asunción with GPS)
 >   - paragu-ai-leads dataset (6,796 businesses nationwide)
 >   - Competitor market research (15+ competitors)
@@ -255,7 +255,7 @@ Sonia's biggest operational pride:
 |------|--------|-------|
 | Investor meeting analysis | 🔴 May 11 | Sonia records audio → Iván analyzes investor concerns |
 | Real photos | 🔴 No timeline | Sonia has no photos yet — AI placeholders continue |
-| WhatsApp bot QR scan | 🔴 Not done | Team must scan from WhatsApp Settings |
+| Messaging bot QR scan | 🔴 Not done | Team must scan from Messaging Settings |
 | SEPRELAD registration | 🔴 Pending | Compliance blocker |
 | nexaparaguay.com DNS | 🔴 Still Shopify | Needs A record to 72.61.44.159 |
 | Testimonials from 10 clients | 🟡 No consent | Need permission forms |
@@ -307,7 +307,7 @@ docs/README.md                       ← Navigation. Start here.
 ├── docs/06-marketing/                   ← Lead magnets, emails, ads, testimonials
 ├── docs/03-brand/                       ← Brand guide, social assets
 ├── docs/10-deployment/                  ← Deployment runbooks
-├── docs/08-integrations/               ← HubSpot, GA4, WhatsApp setup
+├── docs/08-integrations/               ← HubSpot, GA4, Messaging setup
 ├── docs/deliverables/                   ← HTML exports (checklists, cards, guides)
 └── content/                             ← Actual site content JSONs
     ├── es.json                          ← Spanish website content
@@ -360,14 +360,14 @@ docs/README.md                       ← Navigation. Start here.
 | Commission network documented | ✅ | Properties 2.75%, vehicles/appliances/partners in `docs/pricing-matrix-complete.md` |
 | Client fears & FAQ captured | ✅ | On site + `docs/06-marketing/faq-dealclosing.md` |
 | Real client data | ✅ | 10 Dutch clients helped |
-| WhatsApp bot configured | ✅ | QR ready at `public/qr-nexa-whatsapp.png` — **NOT SCANNED** |
+| Messaging bot configured | ✅ | QR ready at `public/qr-nexa-messaging.png` — **NOT SCANNED** |
 | Location data completed | ✅ | 1,485 places with GPS in Asunción |
 | All 4 locales filled | ✅ | ES/EN/NL/DE each have 34+ sections |
 | Site content file-based | ✅ | No Supabase dependency — pure JSON |
 | Section overrides built | ✅ | 8 component overrides in `src/components/` |
 | Pricing resolved (May 11) | ✅ | **$1,500 confirmed**. Old $2,900-$6,900 model deprecated. |
 | Real photos taken | ❌ | Still AI placeholders. Sonia will send. |
-| WhatsApp QR scanned | ❌ | Bot configured but dead — needs chip first. |
+| Messaging QR scanned | ❌ | Bot configured but dead — needs chip first. |
 | SEPRELAD status | ❌ | Ask her lawyer. |
 | nexaparaguay.com DNS moved | ❌ | Still on Shopify. |
 | GA4 wired | ❌ | Tag not loaded. |

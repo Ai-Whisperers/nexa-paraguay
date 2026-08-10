@@ -183,7 +183,7 @@ Todos los documentos extranjeros deben:
 - ❌ Reemplazar hero image genérica (edificio) por algo auténticamente paraguayo — **pendiente** 🔴
 - ❌ Hero image es locale-specific (hero-bg.webp) — identificado el archivo, falta cambio
 
-### Feedback Round 4 (Mayo 9, 2026 — vía WhatsApp, texto directo de Sonia)
+### Feedback Round 4 (Mayo 9, 2026 — vía Messaging, texto directo de Sonia)
 
 **Historia completa (arriba en sección 2):** entregada por Sonia personalmente
 
@@ -232,7 +232,7 @@ Todos los documentos extranjeros deben:
 | **Contaduría/abogados como red de confianza** (no in-house) | 🟡 Pendiente | En documentación pero no en sitio |
 | **Estructura jurídica para outsourcing** como servicio | 🟡 Pendiente | Nicho rentable |
 | **Primer blog post de Sonia** en primera persona | 🔴 Pendiente | Contenido más auténtico posible |
-| **WhatsApp bot QR escaneado** | 🔴 Pendiente | Sin leads activos |
+| **Messaging bot QR escaneado** | 🔴 Pendiente | Sin leads activos |
 | **Dominio nexaparaguay.com apuntando al sitio real** | 🔴 Pendiente | Apunta a Shopify |
 
 ---
@@ -277,12 +277,12 @@ Basado en el feedback textual de Sonia, el tono correcto es:
 |-------|-------|-------|----------|
 | Mayo 7 | CLI (Iván) | Iván | Primera implementación del sitio standalone. Se corrigieron links de navegación (paths multi-tenant rotos), typos (ñ, acentos), placeholders {{taxRate}}, imágenes.json corrupto. |
 | Mayo 8 mañana | TUI (Iván) | Iván | Auditoría completa de infraestructura. Se detectó que Nexa está en producción pero sin CI/CD. |
-| Mayo 8 tarde | WhatsApp | Luana | **Primer feedback grande.** Rechazo de stats falsas, testimonios, wizard, calculadora, precios. Aprobación del diseño visual. Solicitud de changes: default NL, flags, nav simplificada. |
-| Mayo 8 tarde | WhatsApp | Sonia (audio) | **Dos audios.** Su historia de emigrar, su filosofía de "acompañamiento de cerca". Quedó transcrito en client-analysis-complete.md. |
-| Mayo 8 tarde | WhatsApp | Luana | Corrección: Sonia es fundadora, no Luana. Se aclaró el árbol familiar. |
-| Mayo 8 noche | WhatsApp | Iván | Se implementaron: default locale NL, SVG flags, bandera paraguaya para ES. Se identificó hero image pendiente. Build fue interrumpido. |
-| Mayo 9 | WhatsApp | Iván | Se prepararon preguntas detalladas para Sonia (4 grupos: historia, servicios, clientes, propuesta de valor). Quedaron en lista de espera. |
-| Mayo 9 | WhatsApp | **Sonia (TEXTO DIRECTO)** | **FEEDBACK MASIVO.** Historia completa de 7 años en Holanda, proceso paso a paso, 10 clientes holandeses, requisitos de residencia completos, frase "acompañamiento casi familiar", logro de propiedades a buen precio. Pide que los requisitos aparezcan en los 4 idiomas. |
+| Mayo 8 tarde | Messaging | Luana | **Primer feedback grande.** Rechazo de stats falsas, testimonios, wizard, calculadora, precios. Aprobación del diseño visual. Solicitud de changes: default NL, flags, nav simplificada. |
+| Mayo 8 tarde | Messaging | Sonia (audio) | **Dos audios.** Su historia de emigrar, su filosofía de "acompañamiento de cerca". Quedó transcrito en client-analysis-complete.md. |
+| Mayo 8 tarde | Messaging | Luana | Corrección: Sonia es fundadora, no Luana. Se aclaró el árbol familiar. |
+| Mayo 8 noche | Messaging | Iván | Se implementaron: default locale NL, SVG flags, bandera paraguaya para ES. Se identificó hero image pendiente. Build fue interrumpido. |
+| Mayo 9 | Messaging | Iván | Se prepararon preguntas detalladas para Sonia (4 grupos: historia, servicios, clientes, propuesta de valor). Quedaron en lista de espera. |
+| Mayo 9 | Messaging | **Sonia (TEXTO DIRECTO)** | **FEEDBACK MASIVO.** Historia completa de 7 años en Holanda, proceso paso a paso, 10 clientes holandeses, requisitos de residencia completos, frase "acompañamiento casi familiar", logro de propiedades a buen precio. Pide que los requisitos aparezcan en los 4 idiomas. |
 | Mayo 10 | Telegram (voz) | **Sonia (audio briefing)** | **BRIEFING COMPLETO — RESPUESTA A TODAS LAS PREGUNTAS.** Transcripción completa de 26 minutos. Se cubrieron: pricing real ($1,500 vs $2,800 competencia), Day 1 protocol (aeropuerto→Interpol→chip), servicios para familias (colegios por ciudad/presupuesto), modelo de red/comisiones (2.75% propiedades, referidos legales/contables), historia personal (colapso nervioso en Holanda, por qué volvió), miedos de clientes (inseguridad), eslogan ("Relax, I can help you"), targeting (prefiere familias, inversores le intimidan), fotos (no tiene aún), próxima reunión con inversores holandeses (grabará audio para Iván). |
 
 ## 11. ANÁLISIS ESTRATÉGICO
@@ -293,7 +293,7 @@ Nexa está en **pre-lanzamiento funcional**: el sitio es profesional, honesto y 
 ### Riesgos identificados
 1. **Sin casos de estudio ni testimonios** = no hay prueba social en el sitio
 2. **10 clientes reales** pero no están documentados como casos de éxito
-3. **WhatsApp bot configurado pero no operativo** — QR sin escanear, leads potenciales sin respuesta
+3. **Messaging bot configurado pero no operativo** — QR sin escanear, leads potenciales sin respuesta
 4. **{{taxRate}} bug visible** en producción — resta profesionalismo
 5. **Links del footer desactualizados** ("Programas", "Benelux desk") que Sonia ya pidió sacar
 6. **Dominio real nexaparaguay.com apunta a Shopify** — el sitio real está en nexa.paragu-ai.com
@@ -317,7 +317,7 @@ Nexa está en **pre-lanzamiento funcional**: el sitio es profesional, honesto y 
 2. 🔴 Incorporar "Relax, I can help you" como eslogan en hero del sitio
 3. 🔴 Actualizar sección de servicios con Day 1 protocol y acompañamiento post-residencia
 4. 🔴 Agregar contenido sobre familias (colegios por ciudad/presupuesto) al FAQ/servicios
-5. 🟡 Escanear QR del WhatsApp bot
+5. 🟡 Escanear QR del Messaging bot
 6. 🟡 Hero image auténtica paraguaya (Sonia no tiene fotos aún — placeholder temporal)
 7. 🟡 Primer blog post de Sonia en primera persona
 8. 🟡 Contactar a las 10 personas ayudadas para testimonios
@@ -333,7 +333,7 @@ Nexa está en **pre-lanzamiento funcional**: el sitio es profesional, honesto y 
 | Repo | https://github.com/Ai-Whisperers/nexa-paraguay |
 | Docker service | `nexa_web` (1 réplica) |
 | VPS | `72.61.44.159` / agentzero |
-| Canal WhatsApp cliente | `120363405360232587` |
-| Canal WhatsApp interno | `120363423792577707` |
+| Canal Messaging cliente | `120363405360232587` |
+| Canal Messaging interno | `120363423792577707` |
 | Archivo análisis previo | `docs/client-analysis-complete.md` |
 | Archivo plan implementación | `COMPLETE_IMPLEMENTATION_PLAN.md` |

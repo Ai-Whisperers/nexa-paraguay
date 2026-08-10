@@ -24,7 +24,7 @@
 | **Pricing page = 404** | `/packages-pricing/` returns "Page not found" | **Critical** |
 | No pricing transparency | Must book a call; no prices anywhere | **Critical** |
 | Cluttered homepage | Multiple hero sections, overlapping content | Medium |
-| No mobile WhatsApp CTA | Just a phone number, no click-to-chat | Medium |
+| No mobile Messaging CTA | Just a phone number, no click-to-chat | Medium |
 | No cost calculator | Zero self-service tools | Medium |
 | Iframe for checklist | Poorly integrated PDF form | Low |
 
@@ -51,7 +51,7 @@
 | **Packages sub-page = 404** | `/residency/packages/` returns 404 | **Critical** |
 | English-only site | No Spanish despite operating in Paraguay | High |
 | No team faces | Stock photos only; no real people | Medium |
-| No WhatsApp/chat | All contact via "Book Strategy Call" calendar | Medium |
+| No Messaging/chat | All contact via "Book Strategy Call" calendar | Medium |
 | No free resources | Zero downloadable guides or checklists | Medium |
 
 **Exploit opportunity:** Strongest competitor on SEO/content. Beat them on multilingual + team trust + instant chat.
@@ -72,7 +72,7 @@
 | Issue | Details | Severity |
 |-------|---------|----------|
 | **No pricing anywhere** | Not even starting prices | High |
-| No WhatsApp/chat | Email contact only | Medium |
+| No Messaging/chat | Email contact only | Medium |
 | No cost calculator | Zero self-service tools | Medium |
 | No downloadable resources | No checklists, guides, or PDFs | Medium |
 
@@ -114,7 +114,7 @@
 | **No pricing transparency** | WeParaguay, Dest. PY, PY Pathways, PY Easy Residency | **4/7** | Clear pricing on site |
 | **English-only site** | PY Simply, PY Sovereign, LowCostPY, PY Easy Residency | **4/7** | 4 languages (NL/EN/DE/ES) |
 | **No team page/faceless brand** | PY Simply, PY Sovereign, LowCostPY, PY Easy Residency, PY Residencia | **5/7** | Real team photos |
-| **No WhatsApp/instant chat** | PY Sovereign, PY Pathways, PY Simply | **3/7** | WhatsApp float already live |
+| **No Messaging/instant chat** | PY Sovereign, PY Pathways, PY Simply | **3/7** | Messaging float already live |
 | **No cost calculator** | WeParaguay, PY Simply, PY Sovereign, Dest. PY, PY Pathways, PY Easy Residency | **6/7** | Calculator coming soon |
 | **No blog/content marketing** | PY Simply, LowCostPY, PY Easy Residency, PY Residencia | **4/7** | AI content engine |
 | **No downloadable resources** | PY Simply, PY Sovereign, Dest. PY, PY Pathways, LowCostPY | **5/7** | Planned lead magnets |
@@ -138,9 +138,9 @@
 | # | Opportunity | Why It Works | Implementation |
 |---|-------------|--------------|----------------|
 | 5 | **Interactive cost calculator** | Only LowCostPY has one. Powerful conversion tool. | Build on site |
-| 6 | **WhatsApp click-to-chat** | Only 2/7 have prominent WhatsApp. Instant contact wins. | Already exists |
+| 6 | **Messaging click-to-chat** | Only 2/7 have prominent Messaging. Instant contact wins. | Already exists |
 | 7 | **Free downloadable guides** | None of the audited competitors offer this. Lead magnet. | Blog + PDF |
-| 8 | **AI chatbot for 24/7 FAQ** | No competitor has this. Always-on sales. | WhatsApp bot |
+| 8 | **AI chatbot for 24/7 FAQ** | No competitor has this. Always-on sales. | Messaging bot |
 
 ### 3.3 Tier 3: Premium Positioning
 
@@ -161,7 +161,7 @@ Beat every competitor on:
 1. **Transparency** — Show all prices upfront with a calculator
 2. **Trust** — Real team photos, real client stories, real office
 3. **Accessibility** — 4 languages (NL/EN/DE/ES)
-4. **Utility** — Free guides, checklists, WhatsApp support, cost calculator
+4. **Utility** — Free guides, checklists, Messaging support, cost calculator
 5. **Reliability** — 0 broken pages, clean modern design, mobile-first
 6. **Technology** — AI-powered lead capture, document processing, client journey automation
 

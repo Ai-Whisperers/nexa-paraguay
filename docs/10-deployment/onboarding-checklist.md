@@ -3,7 +3,7 @@
 ## New client setup (estimated: 2-4 hours)
 
 ### Week 1: Foundation
-- [ ] **WhatsApp AI setup**
+- [ ] **Messaging AI setup**
   - Scan QR on Evolution API (run locally, one-time)
   - Verify auto-reply fires within 30s
   - Configure SLA responses (greeting, qualify, book)
@@ -58,7 +58,7 @@
 
 | Issue | Fix |
 |-------|-----|
-| WhatsApp not replying | Check Evolution API is running: `docker ps | grep evolution`. Restart: `docker-compose restart evolution` |
+| Messaging not replying | Check Evolution API is running: `docker ps | grep evolution`. Restart: `docker-compose restart evolution` |
 | Deploy fails (build) | Check `NODE_AUTH_TOKEN` is set. `docker build --no-cache` if cache issues |
 | Domain not resolving | Check Cloudflare A record. Check Traefik: `docker service logs nexa_traefik` |
 | Blog post not appearing | Check `content/blog/posts.json` has the slug. Rebuild if needed |

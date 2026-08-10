@@ -1,6 +1,6 @@
 # Nexa Paraguay — New Pages & Content Opportunities
 
-> **Based on:** All research data — 1,485 places mapped, 32 services identified, 12 competitors analyzed, WhatsApp chat analysis, client profile
+> **Based on:** All research data — 1,485 places mapped, 32 services identified, 12 competitors analyzed, Messaging chat analysis, client profile
 > **Status:** Some pages have content JSONs but no nexa-pages config yet. Others need to be created from scratch.
 
 ---

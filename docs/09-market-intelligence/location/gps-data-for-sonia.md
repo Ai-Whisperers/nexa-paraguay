@@ -63,7 +63,7 @@ Retiree asks: "What hospitals are near me?"
 
 First week in Paraguay — client needs: bank, supermarket, pharmacy, SIM card, restaurant.
 
-> All in the database. Sonia can send a WhatsApp message with a Google Maps link pre-loaded.
+> All in the database. Sonia can send a Messaging message with a Google Maps link pre-loaded.
 
 ### Use Case E — Property Due Diligence
 

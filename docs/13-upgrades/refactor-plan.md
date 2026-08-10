@@ -112,7 +112,7 @@ See `globals.css` for the full `@theme` block. Key values:
 | c.accent | text-accent / bg-accent | #C9A96E |
 | c.bgLight / r.xxl | bg-surface-alt / rounded-2xl | #F5F5F0 / 24px |
 | r.sm / r.md / r.lg | rounded-sm / rounded-lg / rounded-2xl | 8px / 12px / 24px |
-| r.full / c.whatsapp | rounded-full / text-[#25D366] | 50% / custom |
+| r.full / c.messaging | rounded-full / text-[#25D366] | 50% / custom |
 | s.section / s.padding | py-24 / p-8 | 96px / 32px |
 | s.gap | gap-8 | 32px |
 | sz.maxWidth / sz.pageWidth | max-w-6xl / max-w-4xl | 1152px / 896px |

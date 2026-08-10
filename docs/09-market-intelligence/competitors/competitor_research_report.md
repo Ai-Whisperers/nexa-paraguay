@@ -46,7 +46,7 @@
 - 6-12 months ongoing support depending on package
 - Service Completion Commitment (formal T&C)
 
-**AI/Automation:** No visible AI/automation. Human-led service via WhatsApp/Email. Website is standard Webflow-type.
+**AI/Automation:** No visible AI/automation. Human-led service via Messaging/Email. Website is standard Webflow-type.
 
 **Target Audience:** Global, but content clearly targets English-speaking entrepreneurs, digital nomads, retirees, investors.
 
@@ -152,7 +152,7 @@
 - 90-day roadmap for tax disengagement
 - Strategic session with N30 (international taxation perspective)
 
-**AI/Automation:** None. Human service with WhatsApp/email support.
+**AI/Automation:** None. Human service with Messaging/email support.
 
 ---
 
@@ -255,7 +255,7 @@
 |---|---|---|
 | **Terravida** | HIGH (core product) | AI-powered concierge, 24/7, personalized plans |
 | **Paraguay Simply** | LOW (eligibility checker) | Automated pre-check tool, otherwise human |
-| **All others** | NONE | Standard human-led services via WhatsApp/email/calls |
+| **All others** | NONE | Standard human-led services via Messaging/email/calls |
 
 **Key finding:** The market is almost entirely traditional human-led services. **Terravida** is the only AI-native competitor. Nexa Paraguay's AI angle (paragu-ai.com domain) is a unique differentiator in this space.
 

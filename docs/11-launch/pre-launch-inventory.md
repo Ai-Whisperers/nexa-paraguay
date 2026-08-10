@@ -43,7 +43,7 @@
 | 3.3 | Mailchimp API key + list ID | 🔴 | Not configured -> newsletter fails soft | `MAILCHIMP_API_KEY` + `MAILCHIMP_LIST_ID` | [ ] |
 | 3.4 | GA4 measurement ID | 🟠 | Measurement ID known (`G-XE49GLEP34`); verify firing after consent | `NEXT_PUBLIC_GA4_ID` env var | [ ] |
 | 3.5 | Crisp live chat ID | 🟠 | Not configured | `NEXT_PUBLIC_CRISP_WEBSITE_ID` | [ ] |
-| 3.6 | WhatsApp number | 🔴 | `+595 000 000 000` placeholder | Real Nexa WhatsApp Business line | [ ] |
+| 3.6 | Messaging number | 🔴 | `+595 000 000 000` placeholder | Real Nexa Messaging Business line | [ ] |
 | 3.7 | Contact phone + email | 🔴 | Placeholder values | Real contact details | [ ] |
 
 ## 4. Team & Testimonials

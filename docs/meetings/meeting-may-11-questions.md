@@ -159,7 +159,7 @@ El modelo estima 5-10 clientes/mes, con ticket promedio $4,500. Dijiste haber ay
 El sitio no está generando leads (recién lanzado). Sospechamos que todo es boca a boca.
 
 **Pregunta exacta:**
-> "Tus 10 clientes — ¿cómo te encontraron? ¿Boca a boca? ¿Instagram? ¿WhatsApp? ¿Google? ¿O los conocías de antes?"
+> "Tus 10 clientes — ¿cómo te encontraron? ¿Boca a boca? ¿Instagram? ¿Messaging? ¿Google? ¿O los conocías de antes?"
 
 **Posibles respuestas:**
 - **100% boca a boca:** "Todos me conocen o los refirieron amigos"
@@ -715,13 +715,13 @@ El sitio tiene "Villa Morra, Asunción" como dirección. No sabemos si Sonia tie
 - Si no: agenda para la semana siguiente
 
 
-### P32 — WHATSAPP BOT — ¿ESCANEAMOS EL QR AHORA?
+### P32 — MESSAGING BOT — ¿ESCANEAMOS EL QR AHORA?
 
 **Contexto de investigación:**
-Configuramos un bot AI de WhatsApp que califica leads automáticamente. El QR está listo pero nadie lo escaneó.
+Configuramos un bot AI de Messaging que califica leads automáticamente. El QR está listo pero nadie lo escaneó.
 
 **Pregunta exacta:**
-> "El bot de WhatsApp está listo pero necesita que escaneés un QR desde WhatsApp Settings → Linked Devices. ¿Tenés tu teléfono ahora? Lo hacemos en 1 minuto."
+> "El bot de Messaging está listo pero necesita que escaneés un QR desde Messaging Settings → Linked Devices. ¿Tenés tu teléfono ahora? Lo hacemos en 1 minuto."
 
 **Respuesta esperada:**
 Si tiene el teléfono: hacerlo en vivo durante la reunión.
@@ -729,7 +729,7 @@ Si no: coordinar para después.
 
 **Qué hacer con la respuesta:**
 - Si escanea: probar el bot enviando un mensaje
-- Si no: enviarle instrucciones paso a paso por WhatsApp
+- Si no: enviarle instrucciones paso a paso por Messaging
 
 
 ### P33 — SEPRELAD — ¿CÓMO VAMOS?
@@ -805,7 +805,7 @@ Sonia tiene múltiples negocios: La Vieja Holanda (8K seguidores, activa), WPG G
 Tenemos 8 oportunidades AI identificadas. Sonia rechazó la calculadora de impuestos por "demasiado pronto."
 
 **Pregunta exacta:**
-> "Podemos agregar AI a tu negocio: bot de WhatsApp que atiende 24/7, responde preguntas, califica leads. ¿Te interesa? ¿O preferís mantenerlo 100% humano — vos contestás cada mensaje?"
+> "Podemos agregar AI a tu negocio: bot de Messaging que atiende 24/7, responde preguntas, califica leads. ¿Te interesa? ¿O preferís mantenerlo 100% humano — vos contestás cada mensaje?"
 
 **Posibles respuestas:**
 - **Sí, AI:** "Ayudame, no doy abasto"
@@ -813,7 +813,7 @@ Tenemos 8 oportunidades AI identificadas. Sonia rechazó la calculadora de impue
 - **Tal vez:** "Qué más hace? Explícame"
 
 **Qué hacer con la respuesta:**
-- Si acepta AI: implementar WhatsApp bot (P0 del AI opportunity map)
+- Si acepta AI: implementar Messaging bot (P0 del AI opportunity map)
 - Si no: mantener contacto personal como diferencial
 - Si duda: mostrar demo del bot
 
@@ -884,10 +884,10 @@ Sonia puede tener preocupaciones no dichas, ideas que no compartió, o preguntas
 > *2. [Perfil de cliente] → ajustamos el contenido*
 > *3. [Historia] → escribo borrador y te mando*
 > *4. [Fotos] → coordinamos día*
-> *5. [WhatsApp/Dominio/SEPRELAD] → yo me encargo*
+> *5. [Messaging/Dominio/SEPRELAD] → yo me encargo*
 > *6. [Audio inversores] → si lo tenés, pasámelo*
 >
-> **Te mando un resumen por WhatsApp hoy. Cualquier cosa, me decís.** *
+> **Te mando un resumen por Messaging hoy. Cualquier cosa, me decís.** *
 
 ---
 
@@ -900,7 +900,7 @@ Sonia puede tener preocupaciones no dichas, ideas que no compartió, o preguntas
 | 3 | Versión de su historia | About page, hero, blog | Historia genérica = sin diferencial |
 | 4 | Confirmación del eslogan | Hero del sitio, branding | Marca sin identidad fuerte |
 | 5 | Fotos reales | About, hero, credibilidad | Placeholders AI = poca confianza |
-| 6 | WhatsApp QR escaneado | Lead generation inmediata | Bot configurado pero muerto |
+| 6 | Messaging QR escaneado | Lead generation inmediata | Bot configurado pero muerto |
 | 7 | Estado SEPRELAD | Compliance legal del sitio | Riesgo regulatorio no resuelto |
 | 8 | Dominio nexaparaguay.com | Marca, credibilidad | Sitio en dominio ajeno |
 | 9 | Audio reunión inversores | Estrategia inversores | Oportunidad perdida |

@@ -24,7 +24,7 @@
 | See the brand / tone guide | `docs/03-brand/` |
 | Check what was decided and why | [`docs/NEXA_DECISIONS.md`](docs/NEXA_DECISIONS.md) |
 | Check open issues | [`docs/NEXA_ISSUES.md`](docs/NEXA_ISSUES.md) |
-| Pull sales / objection / WhatsApp copy | `marketing/` |
+| Pull sales / objection / Messaging copy | `marketing/` |
 | Read discovery meeting | [`meetings/client-discovery-2026-05-11.md`](meetings/client-discovery-2026-05-11.md) |
 | Read the engagement changelog | [`CHANGELOG.md`](CHANGELOG.md) |
 
@@ -68,7 +68,7 @@ nexa-paraguay/
 │   ├── 05-content/              ← content plans, editorial calendar
 │   ├── 06-marketing/            ← ads, social, content marketing
 │   ├── 07-seo/                  ← SEO research, keyword strategy
-│   ├── 08-integrations/         ← HubSpot, GA4, WhatsApp, Supabase
+│   ├── 08-integrations/         ← HubSpot, GA4, Messaging, Supabase
 │   ├── 09-market-intelligence/  ← competitors, segments, pricing, location, research
 │   ├── 10-deployment/           ← deployment notes
 │   ├── 11-launch/               ← launch planning
@@ -90,7 +90,7 @@ nexa-paraguay/
     ├── lead-magnets.md
     ├── objection-handling.md
     ├── testimonials-system.md
-    └── whatsapp-integration.md
+    └── messaging-integration.md
 ```
 
 ## Conventions
@@ -102,7 +102,7 @@ nexa-paraguay/
 - New research (market, competitor, customer, brand)
 - Decisions, decision updates, and decision reversals
 - Meeting notes, transcripts, proposals
-- Sales collateral (objections, email sequences, lead magnets, WhatsApp playbook)
+- Sales collateral (objections, email sequences, lead magnets, Messaging playbook)
 - Audits, retrospectives, lessons learned
 - Image / content plans
 - Engagement-level changelog entries

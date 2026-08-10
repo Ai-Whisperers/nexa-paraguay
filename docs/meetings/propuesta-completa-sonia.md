@@ -85,9 +85,9 @@ Cada propuesta tiene esta estructura:
 
 | Opción | Descripción |
 |--------|-------------|
-| **A — Botón "Solicitar cotización"** | El cliente llena un formulario corto → Sonia responde por WhatsApp |
+| **A — Botón "Solicitar cotización"** | El cliente llena un formulario corto → Sonia responde por Messaging |
 | **B — Precio por hora** | $XX/hora para cualquier servicio no listado |
-| **C — Sin cotizaciones en el sitio** | "Todo se coordina por WhatsApp" |
+| **C — Sin cotizaciones en el sitio** | "Todo se coordina por Messaging" |
 
 **Recomendación:** Opción A. El botón de cotización permite capturar leads sin comprometer un precio.
 
@@ -109,7 +109,7 @@ Cada propuesta tiene esta estructura:
 | Sobre Nexa / About | ✅ Existe | **REESCRIBIR** con historia personal completa (sin drama) | ☐ |
 | FAQ | ❌ **NUEVA** | Compilar 80+ respuestas de las reuniones | ☐ |
 | Blog | ✅ Existe (30 posts genéricos) | Reescribir posts + agregar sección de guías | ☐ |
-| Contacto | ✅ Existe | Actualizar con WhatsApp + ubicación GPS | ☐ |
+| Contacto | ✅ Existe | Actualizar con Messaging + ubicación GPS | ☐ |
 | Precios | ❌ **NUEVA** | Página dedicada con pricing transparente | ☐ |
 | Calculadora fiscal | ❌ **NUEVA** | Comparación de impuestos país origen vs Paraguay | ☐ |
 | Barrios / Zonas | ❌ **NUEVA** | Mapa con 1,500 lugares de Asunción | ☐ |
@@ -168,7 +168,7 @@ Cada propuesta tiene esta estructura:
 
 | Opción | Lenguaje | Dónde usarlo |
 |--------|----------|--------------|
-| **"Relax, I can help you"** | Inglés | Hero, WhatsApp bot, marketing | ✅ Ya confirmado |
+| **"Relax, I can help you"** | Inglés | Hero, Messaging bot, marketing | ✅ Ya confirmado |
 | **"Donde Europa se relaja"** | Español | Versión en español |
 | **"Where Europe Relaxes"** | Inglés | Versión internacional |
 | **"European, but relaxed"** | Inglés | Subtítulo / tagline secundario |
@@ -214,7 +214,7 @@ Cada propuesta tiene esta estructura:
 
 **Sonia:** ☐ Quiero el mapa ☐ No lo quiero todavía ☐ No lo quiero
 
-### 4.3 — Bot de WhatsApp
+### 4.3 — Bot de Messaging
 
 **Contexto:** Aprobaste el bot. Necesita chip nuevo.
 
@@ -222,12 +222,12 @@ Cada propuesta tiene esta estructura:
 
 | Paso | Quién | Qué pasa |
 |------|-------|----------|
-| 1 | Lead | Escribe al WhatsApp de Nexa |
+| 1 | Lead | Escribe al Messaging de Nexa |
 | 2 | Bot | "Hola, soy el asistente de Nexa Paraguay. Relax, I can help you. ¿En qué puedo ayudarte?" |
 | 3 | Bot | Pregunta: nombre, país, motivo, timeline |
 | 4 | Bot | Responde preguntas básicas (precios, proceso, FAQ) |
 | 5 | Bot | Si no puede responder → **"Te paso con Sonia"** |
-| 6 | Sonia | Responde desde su WhatsApp como siempre |
+| 6 | Sonia | Responde desde su Messaging como siempre |
 
 **Horarios:** ☐ Bot 24/7 ☐ Bot noches + fines de semana, Sonia horario laboral
 
@@ -267,7 +267,7 @@ Cada propuesta tiene esta estructura:
 | Contenido político | Sonia es apacible. Su marca es "relax", no "huida." |
 | Expediciones grupales | Demasiado complejo. Sonia no tiene banda ancha para tours de 10 días. |
 | YouTube channel | Sonia no quiere ser creadora de contenido. |
-| Telegram group | WhatsApp es su plataforma. |
+| Telegram group | Messaging es su plataforma. |
 | Bitcoin payments | No lo necesita todavía. |
 | Container shipping | Sus clientes vienen con valija, no con mudanza. |
 | Fear-based messaging | "Plan B" → "Better Life" es mejor para su target. |
@@ -317,7 +317,7 @@ Cada propuesta tiene esta estructura:
 | Construir lead magnet PDF | 2h | Decisión del tema |
 | Implementar email capture en todas las páginas | 1h | Ninguna |
 | Crear Calculadora de impuestos | 4h | Datos del contador |
-| Activar WhatsApp bot | 30min | Chip SIM nuevo |
+| Activar Messaging bot | 30min | Chip SIM nuevo |
 
 **Total Fase 2:** ~11 horas
 
@@ -350,7 +350,7 @@ Cada propuesta tiene esta estructura:
 - [ ] **2.3** Qué lead magnets quiere?
 - [ ] **4.1** Calculadora de impuestos: sí o no?
 - [ ] **4.2** Mapa de barrios: sí o no?
-- [ ] **4.3** WhatsApp bot: horarios y datos del lead?
+- [ ] **4.3** Messaging bot: horarios y datos del lead?
 - [ ] **5.1** FAQ page: procedemos a compilar?
 - [ ] **6.2** Video de Luana: puede grabarlo?
 - [ ] **6.3** GPS location: puede mandarlo?

@@ -271,22 +271,22 @@ pip install --user weasyprint
 
 **Verification:** All team section shows real photos, hero background is real.
 
-### Task 2.5: Activate WhatsApp bot
+### Task 2.5: Activate Messaging bot
 
 **Objective:** Scan QR code. Takes 1 minute.
 
 **Files:**
-- Reference: `docs/08-integrations/whatsapp-ai-runbook.md`
-- QR: `public/qr-nexa-whatsapp.png`
+- Reference: `docs/08-integrations/messaging-ai-runbook.md`
+- QR: `public/qr-nexa-messaging.png`
 
 **Steps:**
-1. Open WhatsApp on Sonia's phone
+1. Open Messaging on Sonia's phone
 2. Settings → Linked Devices → Link a Device
-3. Scan QR code from `public/qr-nexa-whatsapp.png`
+3. Scan QR code from `public/qr-nexa-messaging.png`
 4. Send test message: "Hola, quiero información sobre residencia"
 5. Verify bot responds
 
-**Verification:** Bot auto-replies to WhatsApp messages in ES/EN/NL/DE.
+**Verification:** Bot auto-replies to Messaging messages in ES/EN/NL/DE.
 
 ### Task 2.6: Add monthly retainer options to pricing page
 
@@ -442,7 +442,7 @@ const gaId = process.env.NEXT_PUBLIC_GA4_ID || 'G-XE49GLEP34'
 | **P2.2** | Lead magnets | 3-4 hours | P0 (what content to offer) |
 | **P2.3** | First-person rewrite | 2 hours | P0 (voice choice) |
 | **P2.4** | Real photos | 1 hour + shoot | P0 (schedule with Sonia) |
-| **P2.5** | WhatsApp QR | **1 minute** | Nothing — DO NOW |
+| **P2.5** | Messaging QR | **1 minute** | Nothing — DO NOW |
 | **P2.6-2.7** | Retainers + SEO | 1-2 hours | P0 |
 | **P3.1-3.4** | Business infrastructure | 2-3 hours | P0 (all decisions) |
 | **P4.1-4.4** | Data & analytics | 2-4 hours | P0, API keys |
@@ -459,7 +459,7 @@ const gaId = process.env.NEXT_PUBLIC_GA4_ID || 'G-XE49GLEP34'
 | All 32 services on site | Check `/es/servicios` shows 32 items |
 | Lead magnets capture emails | Submit form, receive PDF |
 | Real photos replace AI | No more AI-generated team images |
-| WhatsApp bot responds | Send "Hola" to +595 982 515 138, get reply |
+| Messaging bot responds | Send "Hola" to +595 982 515 138, get reply |
 | GA4 tracks visitors | Real-time report shows activity |
 | DNS moved | `curl nexaparaguay.com` → 72.61.44.159 |
 | Pricing confirmed | `content/*.json` has one consistent price |

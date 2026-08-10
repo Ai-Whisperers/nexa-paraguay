@@ -1,19 +1,19 @@
 > **Status:** Draft | **Last validated:** 2026-05-07
 >
 
-# WhatsApp Integration — Business Setup & AI Agent Bridge
+# Messaging Integration — Business Setup & AI Agent Bridge
 
-**Purpose:** Covers the WhatsApp Business account configuration, quick replies,
+**Purpose:** Covers the Messaging Business account configuration, quick replies,
 click-to-chat implementation, CRM pipeline, and AI Agent bridge for automated
 conversations.
 
 **Last updated:** 2026-04
 
 **Cross-references:** `email-sequences.md`,
-`/root/nexa-paraguay/docs/08-integrations/whatsapp-ai-bridge.md`,
+`/root/nexa-paraguay/docs/08-integrations/messaging-ai-bridge.md`,
 `/root/nexa-paraguay/site.json` (contact config),
-`/root/nexa-paraguay/marketing/whatsapp-integration.md` (source),
-`/root/nexa-paraguay/docs/whatsapp-ai-integration.md` (source)
+`/root/nexa-paraguay/marketing/messaging-integration.md` (source),
+`/root/nexa-paraguay/docs/messaging-ai-integration.md` (source)
 
 ---
 
@@ -29,10 +29,10 @@ conversations.
 
 ## 2. Click-to-Chat Button — DONE
 
-Implemented at `web/components/sections/whatsapp-float.tsx`:
+Implemented at `web/components/sections/messaging-float.tsx`:
 - Multi-language (ES/EN/NL/DE/PT)
 - Context-aware messages (home, programas, proceso, calculadora, contacto)
-- Tracks `whatsapp_cta_click` event
+- Tracks `messaging_cta_click` event
 - Phone from site.json: `595982515138`
 
 ## 3. Quick Replies & Automation
@@ -47,11 +47,11 @@ Booked (purple), Not Interested (gray).
 ## 4. CRM Integration Flow
 
 ```
-WhatsApp -> Webhook -> Supabase -> Lead created/updated
-           -> Tag: whatsapp_lead -> Email sequence triggered
+Messaging -> Webhook -> Supabase -> Lead created/updated
+           -> Tag: messaging_lead -> Email sequence triggered
 ```
 
-Schema: `whatsapp_conversations` and `whatsapp_messages` tables in Supabase.
+Schema: `messaging_conversations` and `messaging_messages` tables in Supabase.
 
 ## 5. Response Time Targets
 
@@ -63,12 +63,12 @@ Schema: `whatsapp_conversations` and `whatsapp_messages` tables in Supabase.
 
 ## 6. AI Agent Bridge
 
-An AI agent at `whatsapp-ai.sunstein.cloud` handles conversations using
+An AI agent at `messaging-ai.sunstein.cloud` handles conversations using
 DeepSeek AI with per-client memory (LightRAG) and business tools.
 
 **Status:** Not yet connected to the live number. Requires creating an
 Evolution API instance, seeding LightRAG with FAQ/pricing, and configuring
 AI mode (ventas/soporte/default).
 
-See `/root/nexa-paraguay/docs/08-integrations/whatsapp-ai-bridge.md` for
+See `/root/nexa-paraguay/docs/08-integrations/messaging-ai-bridge.md` for
 detailed integration status.

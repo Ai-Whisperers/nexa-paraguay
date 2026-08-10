@@ -60,7 +60,7 @@
 - Commit all changes
 - Generate action item list
 - Update implementation plan status
-- Send summary to Sonia via WhatsApp
+- Send summary to Sonia via Messaging
 
 ### Implementation
 
@@ -70,7 +70,7 @@
 hermes profile create nexa-sonia-meeting \
   --model deepseek-chat \
   --context-window 128k \
-  --tools repo-read,repo-write,gcal,whatsapp,speech-to-text
+  --tools repo-read,repo-write,gcal,messaging,speech-to-text
 
 # One command to prep for meeting:
 hermes run "nexa-sonia-prep" \
@@ -153,7 +153,7 @@ CLOSE:
 | Build/deploy site | On request | No |
 | Generate meeting prep | Before meetings | No |
 | Update implementation plan | After decisions | No |
-| Send WhatsApp summary | After meetings | No |
+| Send Messaging summary | After meetings | No |
 | Research competitors | Weekly | No |
 
 ### Agent Workflow
@@ -169,20 +169,20 @@ flowchart TD
     F --> H[Update content JSONs if needed]
     H --> I[Commit + push changes]
     G --> J[Next meeting prep includes pending]
-    I --> K[Generate WhatsApp summary to Sonia]
+    I --> K[Generate Messaging summary to Sonia]
 ```
 
 ---
 
 ## SYSTEM 4: CLIENT-FACING AI TOOLS
 
-### 4.1 WhatsApp Lead Qualification Bot
+### 4.1 Messaging Lead Qualification Bot
 
-**Current state:** WhatsApp bridge is configured but QR never scanned. Bot is dead.
+**Current state:** Messaging bridge is configured but QR never scanned. Bot is dead.
 
 **To activate:**
-1. Sonia opens WhatsApp → Settings → Linked Devices
-2. Scans QR from `public/qr-nexa-whatsapp.png`
+1. Sonia opens Messaging → Settings → Linked Devices
+2. Scans QR from `public/qr-nexa-messaging.png`
 3. Bot goes live: answers FAQ in 4 languages, collects contact info, books consult
 
 **Bot flows by client type:**
@@ -261,7 +261,7 @@ def process_meeting_recording(audio_file):
         if decision.affects_content:
             update_content_json(decision)
     generate_summary(transcript, decisions)
-    send_whatsapp(SONIA_NUMBER, summary)
+    send_messaging(SONIA_NUMBER, summary)
 ```
 
 ---
@@ -275,12 +275,12 @@ def process_meeting_recording(audio_file):
 - [ ] Create meeting transcript parser
 
 ### Week 2: Client Tools
-- [ ] Activate WhatsApp bot (scan QR — 1 minute!)
+- [ ] Activate Messaging bot (scan QR — 1 minute!)
 - [ ] Build document pre-validation tool
 - [ ] Build automated cost calculator
 
 ### Week 3: Integration
-- [ ] Connect HubSpot CRM to WhatsApp bot
+- [ ] Connect HubSpot CRM to Messaging bot
 - [ ] Set up automated nurture sequences
 - [ ] Create predictive property matching
 
@@ -304,7 +304,7 @@ def process_meeting_recording(audio_file):
 | 35-40 | **Must decide: Story version** | Present both options on About page |
 | 40-45 | **Must decide: Voice** | Show first-person vs third-person examples |
 | 45-50 | **Must decide: Ideal client** | Show 5 personas, ask which to target |
-| 50-55 | WhatsApp QR scan | Do it live — takes 1 minute |
+| 50-55 | Messaging QR scan | Do it live — takes 1 minute |
 | 55-60 | Next steps | Commit decisions, schedule next meeting |
 
 ### Weekly AI ↔ Sonia Sync (30 min)
@@ -314,7 +314,7 @@ def process_meeting_recording(audio_file):
 | 0-5 | What was built this week (show it) |
 | 5-15 | Show 1-2 pending decisions, ask for answers |
 | 15-20 | Plan next week's work |
-| 20-25 | Show analytics (GA4, leads if WhatsApp active) |
+| 20-25 | Show analytics (GA4, leads if Messaging active) |
 | 25-30 | Any questions from Sonia? |
 
 ### AI-Assisted Client Call Flow

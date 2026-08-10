@@ -296,7 +296,7 @@
 | # | Servicio | ¿Sonia lo hace? | Precio | Notas |
 |---|----------|----------------|--------|-------|
 | 185 | Introducción a clubes sociales | ☐ Sí ☐ No | $________ | ✅ Lo hace |
-| 186 | Introducción a comunidad de expats | ☐ Sí ☐ No | $________ | ✅ Grupos WhatsApp |
+| 186 | Introducción a comunidad de expats | ☐ Sí ☐ No | $________ | ✅ Grupos Messaging |
 | 187 | Referencia de profesor de español | ☐ Sí ☐ No | $________ | ✅ Lo hace |
 | 188 | Clases de guaraní básico | ☐ Sí ☐ No | $________ | 💡 Integración |
 | 189 | Clases de cocina paraguaya | ☐ Sí ☐ No | $________ | 💡 Chipa, sopa |
